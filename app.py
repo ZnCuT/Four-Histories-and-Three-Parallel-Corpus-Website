@@ -151,6 +151,10 @@ def parse_three_parallel_file(file_path):
             content = f.read().strip()
     except FileNotFoundError:
         return {'wenyan': '', 'zh': '', 'en': '', 'paragraphs': []}
+    except Exception as e:
+        # 处理编码或其他读取错误
+        print(f"Error reading file {file_path}: {e}")
+        return {'wenyan': '', 'zh': '', 'en': '', 'paragraphs': []}
     
     if not content:
         return {'wenyan': '', 'zh': '', 'en': '', 'paragraphs': []}
@@ -199,12 +203,15 @@ def parse_three_parallel_file(file_path):
             en_parts.append(en)
             paragraphs.append({'wenyan': wenyan, 'zh': zh, 'en': en})
     
-    return {
+    # 确保始终返回所有必需的键
+    result = {
         'wenyan': '\n\n'.join(wenyan_parts),
         'zh': '\n\n'.join(zh_parts),
         'en': '\n\n'.join(en_parts),
-        'paragraphs': paragraphs  # 新增：保持语义对应的段落组
+        'paragraphs': paragraphs  # 确保这个键始终存在
     }
+    
+    return result
 
 def load_books_from_raw():
     """
@@ -264,7 +271,7 @@ def load_books_from_raw():
                     'wenyan': content['wenyan'],
                     'zh': content['zh'], 
                     'en': content['en'],
-                    'paragraphs': content['paragraphs']  # 新增：语义对齐的段落组
+                    'paragraphs': content.get('paragraphs', [])  # 使用get方法避免KeyError
                 })
             
             if chapters:  # 只添加有章节的分类
