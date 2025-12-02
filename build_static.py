@@ -74,7 +74,7 @@ def load_books_from_raw():
     book_configs = {
         "shiji": {"name": "史记", "categories": {"benji": "本纪", "shijia": "世家", "liezhuan": "列传", "shu": "书", "biao": "表"}},
         "hanshu": {"name": "汉书", "categories": {"benji": "本纪", "biao": "表", "zhi": "志", "liezhuan": "列传"}},
-        "houhanshu": {"name": "后汉书", "categories": {"leibian": "类传"}},
+        "houhanshu": {"name": "后汉书", "categories": {"liezhuan": "列传","diji": "帝纪","shu": "书"}},
         "sanguozhi": {"name": "三国志", "categories": {"wei": "魏书", "shu": "蜀书", "wu": "吴书"}}
     }
     
@@ -122,7 +122,8 @@ def load_books_from_raw():
                         'title': chapter_title,
                         'wenyan': content['wenyan'],
                         'zh': content['zh'], 
-                        'en': content['en']
+                        'en': content['en'],
+                        'paragraphs': content['paragraphs']  # 新增：语义对齐的段落组
                     })
                 
                 if chapters:  # 只添加有章节的分类
@@ -255,7 +256,8 @@ def render_site(books):
                     'title': chapter.get('title', ''),
                     'wenyan': chapter.get('wenyan', ''),
                     'z': chapter.get('zh', ''),  # template expects 'z' not 'zh'
-                    'en': chapter.get('en', '')
+                    'en': chapter.get('en', ''),
+                    'paragraphs': chapter.get('paragraphs', [])  # 新增：段落组
                 }
                 
                 chapter_path = os.path.join(chapter_dir, 'index.html')

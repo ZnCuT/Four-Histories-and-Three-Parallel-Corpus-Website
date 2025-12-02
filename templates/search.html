@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>搜索结果 - 四史三平行语料库</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="/">四史三平行语料库</a>
+            </div>
+            
+            <div class="nav-books">
+                {% for book in books %}
+                <div class="nav-book-dropdown">
+                    <button class="nav-book-btn">{{ book.title }}</button>
+                    <div class="nav-dropdown-content">
+                        {% for category in book.categories %}
+                        <a href="/book/{{ book.id }}/{{ category.id }}/">{{ category.title }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+            <div class="nav-search">
+                <form action="/search" method="GET" class="search-form">
+                    <input type="text" name="q" placeholder="搜索篇目或句子..." value="{{ query }}" class="search-input">
+                    <select name="scope" class="search-scope">
+                        <option value="all" {% if scope == 'all' %}selected{% endif %}>全部</option>
+                        <option value="title" {% if scope == 'title' %}selected{% endif %}>篇目</option>
+                        <option value="content" {% if scope == 'content' %}selected{% endif %}>内容</option>
+                    </select>
+                    <select name="book" class="search-book">
+                        <option value="">所有书籍</option>
+                        {% for book in books %}
+                        <option value="{{ book.id }}" {% if book_filter == book.id %}selected{% endif %}>{{ book.title }}</option>
+                        {% endfor %}
+                    </select>
+                    <button type="submit" class="search-btn">搜索</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- 搜索结果 -->
+        <main class="search-results">
+            <header class="search-header">
+                <h1>搜索结果</h1>
+                {% if query %}
+                <p class="search-summary">
+                    搜索 "{{ query }}" 找到 {{ results|length }} 个结果
+                    {% if scope != 'all' %}
+                    （范围：{% if scope == 'title' %}篇目{% elif scope == 'content' %}内容{% endif %}）
+                    {% endif %}
+                    {% if book_filter %}
+                    （书籍：{{ books|selectattr('id', 'equalto', book_filter)|first|attr('title') }}）
+                    {% endif %}
+                </p>
+                {% endif %}
+            </header>
+
+            {% if results %}
+            <div class="results-list">
+                {% for result in results %}
+                <div class="result-item">
+                    <div class="result-header">
+                        <h3 class="result-title">
+                            <a href="/book/{{ result.book.id }}/{{ result.category.id }}/chapter/{{ result.chapter.id }}/">
+                                {{ result.book.title }} - {{ result.category.title }} - {{ result.chapter.title }}
+                            </a>
+                        </h3>
+                        <span class="result-score">相关度: {{ result.relevance_score }}</span>
+                    </div>
+                    
+                    <div class="result-matches">
+                        {% for match in result.matches %}
+                        <div class="match-item match-{{ match.type }}">
+                            {% if match.type == 'title' %}
+                            <span class="match-label">篇目匹配:</span>
+                            <div class="match-content">{{ match.highlight|safe }}</div>
+                            
+                            {% elif match.type == 'content' %}
+                            <span class="match-label">内容匹配 ({{ match.language }}, 第{{ match.paragraph_id }}段):</span>
+                            <div class="match-content">{{ match.highlight|safe }}</div>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% elif query %}
+            <div class="no-results">
+                <h2>未找到相关结果</h2>
+                <p>请尝试：</p>
+                <ul>
+                    <li>检查拼写是否正确</li>
+                    <li>尝试使用不同的关键词</li>
+                    <li>扩大搜索范围</li>
+                    <li>使用更简单的词语</li>
+                </ul>
+            </div>
+            {% else %}
+            <div class="search-tips">
+                <h2>搜索提示</h2>
+                <ul>
+                    <li>输入关键词搜索篇目标题</li>
+                    <li>搜索文言文、白话文或英文内容</li>
+                    <li>使用高级选项筛选结果</li>
+                    <li>支持部分词匹配</li>
+                </ul>
+            </div>
+            {% endif %}
+        </main>
+
+        <footer>
+            <nav class="category-nav">
+        <a href="/">← 返回首页</a>
+      </nav>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

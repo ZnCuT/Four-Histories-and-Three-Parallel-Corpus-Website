@@ -1,63 +1,559 @@
-商君者,卫之诸庶孽公子也,名鞅，姓公孙氏，其祖本姬姓也。鞅少好刑名之学,事魏相公叔座为中庶子。公叔座知其贤，未及进，会座病，魏惠王亲往问病,曰：“公叔病，有如不可讳,将奈社稷何?”公叔曰：“座之中庶子公孙鞅，年虽少，有奇才，愿王举国而听之。"王嘿然。王且去，座屏人言曰:“王即不听用鞅,必杀之，无令出境。”王许诺而去。公叔座召鞅谢曰:“今者王问可以为相者，我言若,王色不许我。我方先君后臣，因谓王即弗用鞅，当杀之。王许我。汝可疾去矣,且见禽。”鞅曰：“彼王不能用君之言任臣，又安能用君之言杀臣乎?”卒不去。惠王既去，而谓左右曰：“公叔病甚，悲乎，欲令寡人以国听公孙鞅也，岂不悖哉!”
-商君是先前卫国国君的远房后代，名鞅，姓公孙，他的祖先和卫的国君一样，也是姓姬的。公孙鞅年轻时喜好刑名之学，在魏国丞相公叔座手下当侍从官中庶子。公叔座知道他有本事，但还没有来得及向国王推荐，就病倒了。有一天魏惠王亲自来公叔座家探问病情，问公叔座说：“您的病万一有个三长两短，咱们国家的事情该怎么办?”公叔座说：“我的侍从公孙鞅虽然年轻，但有奇才，大王可以把国家大事托付给他。”魏惠王听了没有说话。等到魏惠王要走了，公叔座支开周围的人对魏惠王单独说：“大王如果不愿听我的推荐任用公孙鞅，那就请您把他杀掉，不能让他到别的国家去。”魏惠王答应了公叔座的请求后走了。公叔座立刻派人把公孙鞅找了来，告诉他说：“今天大王向我问起以后谁能做魏国的丞相，我推举了你。但我看大王的意思是不想听我的话。我办事的原则是先忠于国君，而后才是忠于朋友，所以我当时又对大王说，如果您不用公孙鞅，那就立即把他杀掉。大王已经答应了我，你应该马上离开魏国，不然就要被他们杀掉了。”公孙鞅说：“既然大王不能听您的话重用我，又怎么能听您的话杀我呢?”于是他哪里也没去。魏惠王一离开公叔座家，就对左右的人们说：“公叔座真是病得糊涂了，叫人伤心!他竟然想让我把国家大事都托付给公孙鞅，这不是荒唐透顶吗?”
-Lord Shang was a son of the ruling family of Wey by a concubine. His personal name was Yang and his family name Gongsun, the Gongsun being a branch of the Ji clan. In his youth he was fond of the teachings on penalties and names. He served as attendant to the sons of the nobility under Gongshu Cuo, the prime minister of the state of Wei. Gongshu Cuo recognized Yang’s worth but had not yet recommended him for advancement when he was taken ill. King Hui of Wei went in person to call on Gongshu Cuo and inquire how he was. “You are sick, Gongshu,” he said. “If the worst should happen, I am wondering what will become of our altars of the soil and grain.” Gongshu replied, “I have an attendant named Gongsun Yang. He is young in years but has extraordinary talent. I hope Your Majesty will raise him to the position of prime minister and heed his advice.” The king remained silent. When the king was about to leave, Gongshu Cuo dismissed those around him and said, “If you are unwilling to make use of Gongsun Yang, then be sure to have him killed. Don’t allow him to leave the state!” The king agreed to do so and departed. Gongshu Cuo sent for Yang and, apologizing for his action, said, “Just now, when the king asked me who could be appointed prime minister, I mentioned you, but from his expression it appeared he did not agree with me. Since I put concerns of the ruler first and those of his subjects second, I then told the king that if he did not intend to employ you, he should have you killed, and this time he assented. So you had better hurry on your way before you are arrested!” But Gongsun Yang replied, “If the king was unwilling to heed your advice to employ me, then why would he heed your advice to have me killed?” In the end he did not run away. When the king emerged from his interview with Gongshu Cuo, he said to his attendants, “Gongshu is very sick. Sad to say, he actually wanted me to turn over the state to Gongsun Yang! He must be quite out of his mind.”
+商君者，卫之诸庶孽公子也，名鞅，姓公孙氏，其祖本姬姓也。
+商君是先前卫国国君的远房后代，名鞅，姓公孙，他的祖先和卫的国君一样，也是姓姬的。
+Lord Shang was a son of the ruling family of Wey by a concubine. His personal name was Yang and his family name Gongsun, the Gongsun being a branch of the Ji clan.
 
-公叔既死，公孙鞅闻秦孝公下令国中求贤者,将修缪公之业,东复侵地,乃遂西入秦,因孝公宠臣景监以求见孝公。孝公既见卫鞅，语事良久，孝公时时睡，弗听。罢而孝公怒景监曰：“子之客妄人耳,安足用邪!”景监以让卫鞅。卫鞅曰：“吾说公以帝道,其志不开悟矣。后五日，复求见鞅。”鞅复见孝公，益愈，然而未中旨。罢而孝公复让景监，景监亦让鞅。鞅曰：“吾说公以王道而未入也。请复见鞅。”鞅复见孝公，孝公善之而未用也。罢而去。孝公谓景监曰：“汝客善，可与语矣。”鞅曰：“吾说公以霸道,其意欲用之矣。诚复见我，我知之矣。”卫鞅复见孝公。公与语，不自知膝之前于席也。语数日不厌。景监曰：“子何以中吾君?吾君之欢甚也。”鞅曰：“吾说君以帝王之道比三代，而君曰：‘久远，吾不能待。且贤君者，各及其身显名天下，安能邑邑待数十百年以成帝王乎@?’故吾以强国之术说君，君大说之耳。然亦难以比德于殷、周矣。”
-公叔座死了以后，公孙鞅听说秦孝公在国内下了命令招贤纳士，准备重新光大秦缪公的事业，向东方扩展版图，于是他就离开魏国，来到了秦国，通过孝公的宠臣景监见到了秦孝公。公孙鞅跟秦孝公谈了好久，但秦孝公边听边打瞌睡，一点也听不进去。待公孙鞅走后，秦孝公生气地斥责景监说：“你介绍来的客人是个说话不着边际的人，这种人怎么能用呢?”景监出来就用秦孝公的话责备公孙鞅。公孙鞅说：“我当时是拿了五帝治国的办法来开导他的，看来他对这个还不能领悟。希望你在五天之后，再向孝公引见我。”公孙鞅第二次见到孝公后，情况比上次略好了一点，但还是不能让他满意。事情过后秦孝公又斥责景监，景监又去责备公孙鞅。公孙鞅说：“这次我是拿了三王治国的办法来开导他的，他还是听不进去，请你再引见我。”于是公孙鞅第三次见到了秦孝公，这次交谈之后，秦孝公对他的言论已经有所肯定，有所称赞了，只是还没有充分听取。这次过后，秦孝公对景监说：“你这位客人不错，我跟他还谈得来。”公孙鞅说：“这回我是拿了五霸治理国家的办法来开导他的，看他的意思是想采用了。如果他能够再接见我，我知道该进一步和他说什么了。”于是公孙鞅第四次见到了秦孝公。这一次秦孝公和公孙鞅谈话，不知不觉地总是向着公孙鞅凑拢，膝盖都到了座席前头了。一连听他说了几天都没有听够。事后景监问公孙鞅说：“你是拿什么打动了我们的国君?我们的国君和你谈话后高兴极了。”公孙鞅说：“我先是拿五帝三王治国的办法开导他，希望他能把秦国治理得可以和夏、商、周三代相比，可是你们的国君说：‘用这种办法太慢了，我等不了那么久。作为一个贤君，应该在当代就能扬名于天下，我怎么能慢慢腾腾地到几十年以至上百年后再成帝成王呢?'所以我后来只能用富国强兵的办法来帮他出主意了，结果这些使他非常喜欢。但是这样做，秦国也就不可能再达到殷朝、周朝那样的道德水平了。”
-After Gongshu Cuo died, Yang heard that Duke Xiao of Qin had circulated an order throughout his state seeking for men of worth, hoping to carry on the labours of his predecessor Duke Mu and to invade the lands to the east. Yang thereupon journeyed west to Qin, where he requested Duke Xiao’s favourite minister Jing Jian to arrange an interview for him with the duke. Duke Xiao granted Gongsun Yang an interview, and Yang talked to him at great length. Duke Xiao now and then dozed off, not even listening. When the interview was over, the duke remarked angrily to Jing Jian, “That visitor of yours is a mere imposter! What use could a man like that be?” Jing Jian thereupon berated Gongsun Yang, but Yang said, “I discoursed to the duke on the way of an emperor, but it did not seem to take his fancy.” Five days later, Jing Jian asked the duke to see Yang once more. Yang again had an interview with him and spoke with even greater fervour, though he still failed to interest the duke. After the interview, the duke again complained to Jing Jian and Jing Jian in turn berated Yang. Yang said, “I discoursed to the duke on the way of a king, but it did not appeal to him. I would like to be granted another interview.” When Yang was granted another interview, the duke expressed approval, but was still unwilling to employ him. When the interview was over and Yang had withdrawn, Duke Xiao said to Jing Jian, “That visitor of yours is a good man — someone worth talking to!” Yang explained to Jing Jian, “I discoursed to the duke on the way of a hegemon. It seems as though he would like to try it out. If he will see me once more, I will know what to say this time!” When Yang appeared for another interview, the duke talked with him, inching forward until before he knew it he was kneeling on the very edge of his mat. They talked for several days without tiring. Jing Jian said, “How did you manage to impress our ruler so? He is overjoyed!” Gongsun Yang said, “I discoursed to the ruler on the ways of the emperor and the king, such as were in use in the Three Dynasties of old. But he said, ‘That takes too much time. I can’t wait that long. A worthy ruler is one who can make himself famous throughout the world in his own lifetime. Who can sit around fretting for thirty or forty or 100 years in hopes of becoming an emperor or a king?’ Therefore I discoursed to the ruler on the techniques for strengthening the state, and the ruler was pleased. Of course, it will still be hard for him ever to equal the virtue of the Yin or Zhou dynasties.”
+鞅少好刑名之学，事魏相公叔座为中庶子。
+公孙鞅年轻时喜好刑名之学，在魏国丞相公叔座手下当侍从官中庶子。
+In his youth he was fond of the teachings on penalties and names. He served as attendant to the sons of the nobility under Gongshu Cuo, the prime minister of the state of Wei.
 
-孝公既用卫鞅，欲变法，恐天下议己。卫鞅曰：“疑行无名,疑事无功。且夫有高人之行者，固见非于世;有独知之虑者,必见敖于民。愚者暗于成事,知者见于未萌。民不可与虑始，而可与乐成。论至德者不和于俗,成大功者不谋于众。是以圣人苟可以强国，不法其故;苟可以利民，不循其礼。”孝公曰：“善。”甘龙曰:“不然。圣人不易民而教,知者不变法而治。因民而教，不劳而成功；缘法而治者，吏习而民安之。”卫鞅曰：“龙之所言，世俗之言也。常人安于故俗，学者溺于所闻。以此两者居官守法可也，非所与论于法之外也。三代不同礼而王，五伯不同法而霸。智者作法，愚者制焉；贤者更礼，不肖者拘焉。”杜挚曰：“利不百，不变法；功不十，不易器。法古无过，循礼无邪。"卫鞅曰：“治世不一道，便国不法古。故汤武不循古而王，夏殷不易礼而亡。反古者不可非，而循礼者不足多。”孝公曰：“善。”以卫鞅为左庶长,卒定变法之令。
-秦孝公任用公孙鞅后，想要在秦国实行变法，但害怕天下人议论自己。公孙鞅说：“修养操行如果犹豫不定就不能成名，办事情如果犹豫不定就不能成功。一个人的操行如果出类拔萃，就肯定要遭到一般人的攻击；一个人的见解如果特别独到，就必然要受到一般人的诋毁。愚昧的人当别人把事情都办成了，他还在那里迷惑不解；而聪明人则不用等问题发生，早就已经预见到了。对于老百姓，不论做什么事，在开头的时候不能和他们一起商量，而只能在办成以后和他们一起共享成果。讲究最高道德的人不会与一般世俗的人合群，要干大事业的人不能去征求那些芸芸众生的意见。圣人只要能使国家富强，就不必去效法古代的典章；只要能使百姓得利，就不必遵循旧时的礼教。”秦孝公说：“讲得好。”甘龙说：“不对。圣人在教育人的时候从不改变人们旧有的风俗习惯，聪明人在治理国家的时候从不改变国家原有的法度。按照人们旧有的习俗来进行教育，就能不费劲地获得成功；遵照原有的制度来治理国家，就不仅能让官吏们顺手，而且百姓们也能够相安无事。”公孙鞅说：“甘龙所说的都是些最世俗的话。庸人们总是安于一套旧的习俗，书呆子们总是迷信书本的条文。按照甘龙所说的那两条奉公守法地维持旧有秩序是可以的，但不可能和他讨论旧法以外的事情。夏、商、周三代都称王，但他们奉行的礼教是不同的；五伯都是霸主，但执行的法度也不完全相同。法度是聪明人制订的，而愚蠢的人只知道遵行；礼教是有才干的人改立的，而一些无能的人则只能接受约束。”杜挚说：“见不到百倍的好处，不能变法；看不准十倍的功效，不能更换旧的器物。按古代的章程做，就绝不会错；按旧的礼法走，就绝不会邪。”公孙鞅说：“治理天下的办法是不一样的，我们要的是方便有利，而不是为了仿效古人。商汤和周武王都没有遵循古法而成就了王业，夏桀和殷纣倒是没有改变旧礼而结果亡国了。可见改变古法的人不能否定，而遵循旧礼的人不值得赞扬。”秦孝公说：“讲得好。”于是任命公孙鞅为左庶长，并很快地确定了变法的条令。
-After Duke Xiao had appointed Gongsun Yang to official position, the latter wanted to change the laws, but Duke Xiao was afraid the world would criticize him. “The hesitant in action win no fame, the hesitant in execution win no gain,” Gongsun Yang said. “If you are going to act the part of a great man, you must expect the censure of the age. When one is unique in the wisdom of his foresight, he is bound to rouse the animosity of the people. The stupid are blind even to things already done, but the wise can spy what has yet to put out sprouts. One cannot plan with the people the beginning of an affair, one can only rejoice with them in its completion. He who discourses on perfect virtue cannot stay in tune with the vulgar; he who would win great merit cannot consult with the mob. If the sage should wish to strengthen the state, he must not pattern himself on old ways; if he should wish to profit the people, he cannot abide by old rites.” “Excellent!” said Duke Xiao. But Gan Long said, “Not so! The sage does not make the people over, he educates them. The wise man does not change the laws, he makes them work. Go along with the people and educate them and one can achieve results without effort. Leave the laws as they are and see that they work and the officials will know their routine and the people be at ease.” Gongsun Yang said, “Gan Long’s view is the commonly accepted one. Ordinary people feel easy with established ways, scholars are enamoured of what they already know. These two types of men will do to occupy posts and maintain the laws. But one cannot discuss with them what is beyond the law. The Three Dynasties were not alike in their rites, yet their rulers were all kings. The Five Hegemons did not observe the same laws, yet all were ba. Wise men make laws, stupid men are constrained by them. Worthy men change rites, unworthy men merely cling to them.” Du Chi said, “Unless the benefits are a hundredfold one does not change the laws. Unless the advantages are tenfold one does not alter the ritual vessels. Follow the old and you commit no error; abide by ritual and you are without fault.” Gongsun Yang said, “To govern the age one need not adopt a single course, to benefit the state one need not follow the old. Tang and Wu did not follow the old, yet they became kings. The Xia and Yin dynasties did not alter the rites and yet they perished. Going against old ways is not necessarily to be condemned, and abiding by rites is not necessarily deserving of praise.” “Excellent!” said Duke Xiao, and proceeded to elevate Gongsun Yang to the rank of zuoshuzhang. Then he gave the order to carry out changes in the laws.
+公叔座知其贤，未及进，会座病，魏惠王亲往问病，曰：“公叔病，有如不可讳，将奈社稷何？”
+公叔座知道他有本事，但还没有来得及向国王推荐，就病倒了。有一天魏惠王亲自来公叔座家探问病情，问公叔座说：“您的病万一有个三长两短，咱们国家的事情该怎么办？”
+Gongshu Cuo recognized Yang’s worth but had not yet recommended him for advancement when he was taken ill. King Hui of Wei went in person to call on Gongshu Cuo and inquire how he was. “You are sick, Gongshu,” he said. “If the worst should happen, I am wondering what will become of our altars of the soil and grain.”
 
-令民为什伍,而相牧司连坐。不告奸者腰斩，告奸者与斩敌首同赏,匿奸者与降敌同罚。民有二男以上不分异者，倍其赋。有军功者，各以率受上爵;为私斗者，各以轻重被刑大小。缪力本业,耕织致粟帛多者复其身。事末利及怠而贫者，举以为收孥。宗室非有军功论，不得为属籍。明尊卑爵秩等级,各以差次名田宅,臣妾衣服以家次。有功者显荣，无功者虽富无所芬华。
-新法把居民五家编为一“伍”,十家编为一“什”;让他们互相监督，否则一家出事，其他各家都要跟着受牵连。知道谁是坏人而不告发的要被腰斩，而出首告发坏人的与斩获一个敌人首级的奖赏相同，包庇窝藏犯法的人与投降敌人的处罚相同。一家有两个以上的成年男人而不分开过的，要加倍地交纳赋税。立有军功的人，可以根据规定加官进爵；为私仇而打架斗殴的，要根据情节轻重给以惩罚。新法鼓励农民好好发展农业，对于那些在耕田织布方面做出了成绩的，可以免除他们的劳役。对于从事经商或由于懒惰而变穷的，一律把他们没为奴隶。国君的宗族凡是没有军功可以论叙的，一律把他们从贵族谱牒上开除出去。要严格地按照爵位的尊卑划分等级，让人们按照等级的高低来占有不同的田宅，私家的奴婢穿什么样的衣服都要随着主人的地位而定。有军功的人才能显贵荣华，没有军功的人即使有钱，也没有社会地位。
-The people were to be grouped in units of five and ten households, exercising mutual surveillance and mutually responsible before the law. Anyone failing to report an offence was to be cut in two at the waist. Reporting an offence was to be rewarded in the same way as cutting off the head of an enemy. Concealing an offender was to be punished in the same way as surrendering to an enemy. If a family of the common people had more than two sons but failed to establish a separate household, its taxes were to be doubled. Those who had won military merit were to receive ranks in the nobility proportionate to their achievement. Those who engaged in private vendettas were to be penalized according to the gravity of the offence. Old and young were to exert all their strength in the basic occupations of farming and weaving. Those producing large amounts of grain and cloth were to be excused from corvée labour, while those who engaged in secondary occupations for profit, or who became poor out of laziness, were to be rounded up and made government slaves. Even members of the ruling family, if they had achieved no military merit, were not to be listed in the rosters of the nobility. Degrees of social superiority or inferiority, ranks in the nobility, and other marks of status were to be made clear in each case, and the extent of privately owned fields and houses, male and female servants, and articles of clothing were to be fixed for each family. Those who had won merit were to enjoy affluence and social position, but those who had won no merit, even if they were rich, were to be permitted no show of wealth.
+公叔曰：“座之中庶子公孙鞅，年虽少，有奇才，愿王举国而听之。”
+公叔座说：“我的侍从公孙鞅虽然年轻，但有奇才，大王可以把国家大事托付给他。”
+Gongshu replied, “I have an attendant named Gongsun Yang. He is young in years but has extraordinary talent. I hope Your Majesty will raise him to the position of prime minister and heed his advice.”
 
-令既具，未布，恐民之不信己,乃立三丈之木于国都市南门,募民有能徙置北门者予十金。民怪之，莫敢徙。复曰“能徙者予五十金”。有一人徙之，辄予五十金,以明不欺。卒下令。
-新法已经订好，还没有公布，公孙鞅担心百姓们怀疑政府说话是否算数，于是就在国都市场的南门立了一根三丈长的杆子，告诉百姓们谁能把它扛到市场的北门，就赏给他十镒金子。百姓们开始觉得奇怪，没人敢动。于是公孙鞅又对人们说：“谁能把它扛到北门，赏给他五十镒金子。”这时出来一个人把它扛到了北门，公孙鞅立即赏给了他五十镒金子，以表明政府说话是算数的。接着就颁布了新法。
-When the laws had been drawn up but not yet promulgated, Gongsun Yang was afraid the people would not trust him. Therefore he set up a three-yard pole by the south gate of the capital market and announced that any member of the populace who could move it and set it up by the north gate would be given ten pieces of gold. The people were suspicious and no one ventured to move the pole. Then Yang announced, “Anyone who can move it will be given fifty gold pieces!” When one man moved the pole, he was promptly given fifty gold pieces, thus making clear that there was no deception. Then the laws were promulgated.
+王嘿然。
+魏惠王听了没有说话。
+The king remained silent.
 
-令行于民期年,秦民之国都言初令之不便者以千数。于是太子犯法。卫鞅曰：“法之不行，自上犯之。”将法太子。太子，君嗣也,不可施刑，刑其傅公子虔，黥其师公孙贾。明日，秦人皆趋令。行之十年,秦民大说，道不拾遗，山无盗贼，家给人足。民勇于公战，怯于私斗，乡邑大治。秦民初言令不便者有来言令便者，卫鞅曰“此皆乱化之民也”,尽迁之于边城。其后民莫敢议令。
-在推行新法的第一年里，秦国有上千的人跑到都城来反映新法不好。甚至连秦孝公的太子也犯了法。公孙鞅说：“法令之所以行不通，关键就在于上头有人破坏。”于是他准备依法处置太子。但太子是国家的继承人，不能对他施刑，于是就处罚了太子的太傅公子虔，给太子的太师公孙贾脸上刺了字。结果第二天，秦国人就都按着新法办了。到新法实行后的第十年，秦国的百姓们就变得十分喜欢新法了，这时道上掉了东西没人捡，山里头没有盗贼，家家户户都过得很富裕。人们都勇于为国从军，而不敢为私仇殴斗，乡村城镇到处是一片太平。过去那些曾经说过新法不好的人，现在又反过来到都城说新法好了。公孙鞅说“这些都是扰乱国家秩序的刁民”,于是把他们一律都迁到了边境上。从此百姓们谁也不敢再随便议论新法了。
-When the laws had been in effect among the populace for the space of a year, the people of Qin who poured into the capital complaining that the new laws were unsuitable numbered in the thousands. At that time the heir apparent violated the law. Gongsun Yang said, “The reason the laws are not effective is that the superiors themselves violate them!” He was about to punish the heir apparent, but because the heir apparent was the son and heir of the ruler, it was impossible to impose the penalty upon him personally. So his tutor Gongzi Qian was punished instead, and his teacher Gongsun Jia was condemned to be tatooed. The next day the people of Qin all accepted the new laws. By the time the laws had been in effect for ten years, the people of Qin were delighted. No one picked up objects dropped in the road, the mountains were free of robbers and bandits, and each family had enough of what it needed. The people were brave in public warfare and fearful of private vendettas. Profound order prevailed in the hamlets and towns. The people of Qin who had earlier complained that the laws were unsuitable now came forward to say how suitable they were. Gongsun Yang said, “People like these are the source of confusion and bad influence!” and he had them all transported to the border areas. After that none of the people ventured to make any comment whatsoever on the laws.
+王且去，座屏人言曰：“王即不听用鞅，必杀之，无令出境。”
+等到魏惠王要走了，公叔座支开周围的人对魏惠王单独说：“大王如果不愿听我的推荐任用公孙鞅，那就请您把他杀掉，不能让他到别的国家去。”
+When the king was about to leave, Gongshu Cuo dismissed those around him and said, “If you are unwilling to make use of Gongsun Yang, then be sure to have him killed. Don’t allow him to leave the state!”
 
-于是以鞅为大良造。将兵围魏安邑，降之。居三年,作为筑冀阙宫庭于咸阳,秦自雍徙都之。而令民父子兄弟同室内息者为禁。而集小乡邑聚为县,置令、丞,凡三十一县。为田开阡陌封疆，而赋税平。平斗桶权衡丈尺。行之四年,公子虔复犯约，劓之。居五年，秦人富强，天子致胙于孝公，诸侯毕贺。
-于是秦孝公封公孙鞅为大良造，派他率兵包围了魏国的安邑，使安邑投降了秦国。又过了三年，秦国在咸阳建造了高大富丽的城阙宫殿，把国都从雍县迁到了咸阳。接着秦国又下令整顿风化，禁止父子兄弟同住一间屋子。又把若干乡、邑、聚归并为县，各县里设置县令、县丞，全国共设三十一个县。又废除了原有的田埂地界，让人们重新认领土地，公平地向国家交纳赋税。同时又统一了度量衡。这些新制度实行后第四年，公子虔又犯了法，结果被公孙鞅割掉了鼻子。到第五年，秦国就大大地富强起来了，以至于周天子都派人给秦孝公送来了祭肉，表示承认他是天下的霸主，各国的诸侯们都来向秦国朝拜称贺。
-Gongsun Yang was promoted to the rank of daliangzao. He led troops to surround the Wei city of Anyi and forced it to surrender. Three years later he carried out construction of the Memorial Gate and of palaces and gardens in Xianyang, and the state of Qin moved its capital there from Yong. An order was issued prohibiting fathers and sons and older and younger brothers from living in the same house. The smaller cities, towns and hamlets were grouped together to form districts, with a magistrate and his assistant appointed to head each one. There were thirty-one districts in all. The ridges that marked the boundaries of the fields under cultivation were opened up.119 Taxes were made equitable and weights and measures standardized. Four years after this was done, Gongzi Qian, tutor to the heir apparent, once more violated the law and was punished by having his nose cut off. When five years more had gone by, the inhabitants of Qin were so rich and powerful that the Son of Heaven sent a gift of sacrificial flesh to Duke Xiao and the other feudal lords all tendered their congratulations.
+王许诺而去。
+魏惠王答应了公叔座的请求后走了。
+The king agreed to do so and departed.
 
-其明年,齐败魏兵于马陵,虏其太子申,杀将军庞涓。其明年,卫鞅说孝公曰：“秦之与魏，譬若人之有腹心疾,非魏并秦，秦即并魏。何者?魏居领陌之西，都安邑,与秦界河而独擅山东之利。利则西侵秦,病则东收地。今以君之贤圣，国赖以盛。而魏往年大破于齐，诸侯畔之，可因此时伐魏。魏不支秦，必东徙。东徙，秦据河山之固,东乡以制诸侯,此帝王之业也。”孝公以为然，使卫鞅将而伐魏。魏使公子卬将而击之。军既相距，卫鞅遗魏将公子卬书曰：“吾始与公子欢,今俱为两国将，不忍相攻，可与公子面相见，盟，乐饮而罢兵，以安秦魏。”魏公子卬以为然。会盟已，饮,而卫鞅伏甲士而袭虏魏公子卬，因攻其军，尽破之以归秦。魏惠王兵数破于齐秦，国内空，日以削，恐，乃使使割河西之地献于秦以和。而魏遂去安邑，徙都大梁。梁惠王曰：“寡人恨不用公叔座之言也。”卫鞅既破魏还，秦封之於、商十五邑,号为商君。
-秦国称霸的第二年，齐国大败魏兵于马陵，俘虏了魏国的太子申，杀死了魏国的大将庞涓。转过年来，公孙鞅对秦孝公说：“秦、魏两国的对立，就像一个人的心腹里有病一样，不是魏国灭了秦，就是秦国灭了魏，二者不能并存。为什么呢?魏国处在险要的中条山以西，建都安邑，与秦国只隔着一道黄河，实际上是控制着整个崤山以东的大局。条件有利了，他就西下攻秦；条件不利的时候，他可以向东方发展。如今由于您的圣明，咱们秦国强盛起来了。去年魏国被齐国打得大败，各国诸侯都抛弃了它，我们可以乘此机会进攻魏国。魏国抗不住我们，肯定就会向东搬家。魏国一旦搬走，那时我们秦国就可以独自控制黄河、崤山的险要形势了，那时我们再出兵东下控制各国诸侯，这不就可以称帝称王了吗?”秦孝公觉得有理，就派公孙鞅率兵伐魏。魏国派公子卬领兵迎击。两军相对后，公孙鞅派人送给公子卬一封信说：“我在魏国时和你是好朋友，今天我们为敌对的两国领兵，我不忍心互相攻打。我想和你当面订盟，欢宴撤兵，让秦、魏两国都得到安宁。”魏将公子印信以为真，过来与公孙鞅见面会盟，会盟后正在欢饮的时候，公孙鞅让预先埋伏的武士突然逮捕了公子卬，接着又对魏军发起攻击，结果魏军被彻底击溃。魏惠王见到自己的国家连连被齐国、秦国击破，国内空虚，国势越来越弱，心里害怕，于是只好把黄河以西的土地全部割给了秦国，以此作为求和的条件。而后魏惠王也离开了安邑，将国都东迁到大梁去了。魏惠王说：“我真后悔当时没有听公叔座的话。”公孙鞅破魏后，秦孝公把於、商一带的十五邑封给了他，称他为商君。
-The following year Qi defeated the Wei forces at Maling, captured the Wei heir apparent Shen, and killed its general Pang Juan. The year after, Gongsun Yang said to Duke Xiao, “Wei is to the state of Qin like an ailment of the belly or the heart afflicting a person! Either Wei must annex Qin, or Qin will annex Wei. Why? Because Wei is situated west of the rugged mountainous area, with its capital at Anyi. The Yellow River marks the border between it and Qin, but it alone is able to enjoy the advantages of the area east of the mountains. When it is to its advantage, it marches west to invade Qin, and when it is weary of that, it draws on the lands to the east. “Now you are a sage and worthy ruler, with a prosperous state to support you, while Wei last year suffered a major defeat at the hands of Qi and the other feudal lords have deserted it. You must seize this opportunity to attack Wei. If Wei is unable to withstand the attack of Qin, it is bound to move east. And if it moves east, then Qin can rely on the protection of the Yellow River and the mountains to face east and impose its will on the other feudal lords. Such an undertaking will make you an emperor or a king!” Duke Xiao, approving of this, dispatched Gongsun Yang to lead the forces in an attack on Wei. Wei appointed Gongzi Ang as its general to meet the attack. When the two armies confronted each other, Gongsun Yang sent a letter to the Wei general Gonzi Ang, saying, “You and I started out as friends, and now we are both generals of our respective states. I cannot bring myself to attack you. It would be best if we meet face to face, swear an oath of alliance, enjoy a drink together, and then dismiss our troops, thus bringing peace to both Qin and Wei.” The Wei general Gongzi Ang, considering this reasonable, met with his opponent, swore an oath, and afterward drank with him. Meanwhile, Gongsun Yang concealed armed troops, who carried out a surprise attack on Gongzi Ang and took him prisoner. He then proceeded to attack the Wei army and inflicted a total defeat before returning to Qin. The armies of King Hui of Wei had suffered repeated defeats by Qi and Qin, the resources of his state were exhausted, and his territory was dwindling daily. Frightened of the consequences, he dispatched an envoy offering to present the state of Qin with the land west of the Yellow River in exchange for peace. Eventually Wei abandoned Anyi and moved its capital east to Daliang. King Hui said, “How sorry I am that I did not follow the advice of Gongshu Cuo!” When Gongsun Yang returned after having defeated the Wei forces, Qin enfeoffed him with fifteen towns in Shang and Yu, awarding him the title of Lord Shang.
+公叔座召鞅谢曰：“今者王问可以为相者，我言若，王色不许我。我方先君后臣，因谓王即弗用鞅，当杀之。王许我。汝可疾去矣，且见禽。”
+公叔座立刻派人把公孙鞅找了来，告诉他说：“今天大王向我问起以后谁能做魏国的丞相，我推举了你。但我看大王的意思是不想听我的话。我办事的原则是先忠于国君，而后才是忠于朋友，所以我当时又对大王说，如果您不用公孙鞅，那就立即把他杀掉。大王已经答应了我，你应该马上离开魏国，不然就要被他们杀掉了。”
+Gongshu Cuo sent for Yang and, apologizing for his action, said, “Just now, when the king asked me who could be appointed prime minister, I mentioned you, but from his expression it appeared he did not agree with me. Since I put concerns of the ruler first and those of his subjects second, I then told the king that if he did not intend to employ you, he should have you killed, and this time he assented. So you had better hurry on your way before you are arrested!”
 
-商君相秦十年,宗室贵戚多怨望者。赵良见商君。商君曰：“鞅之得见也，从孟兰皋,今鞅请得交,可乎?”赵良曰：“仆弗敢愿也。孔丘有言曰：‘推贤而戴者进，聚不肖而王者退。’仆不肖，故不敢受命。仆闻之曰：‘非其位而居之曰贪位，非其名而有之曰贪名。仆听君之义,则恐仆贪位贪名也。故不敢闻命。”商君曰：“子不说吾治秦与?”赵良曰：“反听之谓聪，内视之谓明,自胜之谓强。虞舜有言曰：‘自卑也尚矣。’君不若道虞舜之道,无为问仆矣。”
-商君在秦国为相十年，秦国的宗室贵戚们有很多人恨他。这时赵良往见商君。商君说：“过去我就曾通过孟兰皋的介绍，见过你，现在我想和你交个朋友，行吗?”赵良说：“我不愿意。孔子曾经说过：‘一个人如果能够推贤荐士，那么善于治国爱民的人们就会来投奔他了；一个人如果他的周围坏蛋成堆，那么讲求王道的人就会自然离去。’我没有什么出息，不能接受您的请求和您做朋友。我听俗话说：‘呆在不该呆的位子上叫作贪位，享有不该享的名誉叫作贪名。'如果我接受了您的请求和您做了朋友，恐怕就成了‘贪位’、‘贪名'了。所以我不能答应您做您的朋友。”商君说：“难道说你不喜欢我治理秦国么?”赵良说：“能够听取不同的意见那叫‘聪’,能够不断地自我反省那叫‘明’,能够克制自己的冲动那叫‘强’。虞舜当年曾说过：‘能够自己谦卑的人才是最值得尊重的。'您不如按照虞舜讲的去做，没有必要再问我了。”
-Lord Shang served as prime minister of Qin for ten years, and many of the members of the ruling family and the families related to it by marriage came to hate him. When Zhao Liang had an interview with Lord Shang, the latter said, “Meng Langao kindly arranged for me to meet you. I would like to become your friend. Is that possible?” Zhao Liang replied, “That is more than I would venture to hope for. Confucius has said, ‘If a man promotes worthy men and employs them, he will advance. But if he gathers unworthy men around him in hopes of becoming a ruler, he will fail.’ I am an unworthy man, and therefore would not venture to accept your offer. “I have heard that to occupy a position one is not qualified for is to be greedy for position, and to bask in fame that is not one’s own is to be greedy for fame. If I were to heed your suggestion, I am afraid I would be greedy for both position and fame. Therefore I dare not consent.” Lord Shang said, “You do not like the way I govern Qin?” Zhao Liang replied, “Listening to the self is true hearing, looking within is true vision, overcoming oneself is true strength. The sage ruler Shun said, ‘To lower oneself is to rise.’ You will do best to follow the way of Shun. There’s no need to question me.”
+鞅曰：“彼王不能用君之言任臣，又安能用君之言杀臣乎？”卒不去。
+公孙鞅说：“既然大王不能听您的话重用我，又怎么能听您的话杀我呢？”于是他哪里也没去。
+But Gongsun Yang replied, “If the king was unwilling to heed your advice to employ me, then why would he heed your advice to have me killed?” In the end he did not run away.
 
-商君曰：“始秦戎翟之教,父子无别，同室而居。今我更制其教，而为其男女之别,大筑冀阙，营如鲁卫矣。子观我治秦也，孰与五羖大夫贤?”赵良曰：“千羊之皮，不如一狐之掖;千人之诺诺,不如一士之谔谔。武王谔谔以昌，殷纣墨墨以亡。君若不非武王乎，则仆请终日正言而无诛，可乎?”商君曰：“语有之矣，貌言华也,至言实也,苦言药也,甘言疾也。夫子果肯终日正言，鞅之药也。鞅将事子,子又何辞焉!”
-商君说：“秦国过去的风俗和戎狄一样，父子无别，都在一间屋子里住。如今我移风易俗，让他们讲究男女有别，又建造了高大的宫殿，把秦国治理得和中原地区鲁国、卫国的文明程度差不多了。你看我治理秦国的成就与五羖大夫百里奚谁好?”赵良说：“一千张羊皮顶不上一块狐腋，一千个人的随声附和顶不上一个人的仗义直言。周武王因为有直臣而国家昌盛，商纣王因为无人敢说话而国家灭亡。您不是不反对周武王那种做法吗?那么我请求从此整天在您面前说直话而没有被杀的危险，您能做得到吗?”商君说：“俗话说，假大空的话像花朵，切合实际的话才是果实，不好听的话是治病的良药，迎合人的甜言蜜语只能是害人的恶疾。你如果能整天在我面前仗义直言，那你就将成为我的良药，那我定将拜你为师，这样你还推辞什么呢?”
-Lord Shang said, “In the past, Qin followed the customs of the Rong and Di barbarians, ignoring the distinction between father and son, living all together in the same house. Now I have decreed that the customs be changed so that the proper distinctions are observed between men and women. I have built great structures like the Memorial Gate, laying them out like those of Lu and Wey. When you observe the way I have governed Qin, who would you say is more worthy, Lord Five Ram Skins or myself?”Zhao Liang replied, “A thousand sheepskins are not worth the fur in the armpit of a single fox, and 1,000 persons going ‘yes, yes!’ are not worth one man with a bold ‘no!’ King Wu had his bold ‘no!’-sayers and he flourished; Zhou of Yin had his silent assenters and he perished. If you do not disapprove of King Wu, then have I your permission to go on all day giving you sound advice without fear of punishment?” Lord Shang said, “The saying has it, appealing words are flowers, apt words are fruit; bitter words are medicine, sweet words are a sickness. If in fact you will consent to go on all day giving me words of sound advice, it will be medicine for me. I am at your service. What counsel do you have for me?”
+惠王既去，而谓左右曰：“公叔病甚，悲乎，欲令寡人以国听公孙鞅也，岂不悖哉！”
+魏惠王一离开公叔座家，就对左右的人们说：“公叔座真是病得糊涂了，叫人伤心！他竟然想让我把国家大事都托付给公孙鞅，这不是荒唐透顶吗？”
+When the king emerged from his interview with Gongshu Cuo, he said to his attendants, “Gongshu is very sick. Sad to say, he actually wanted me to turn over the state to Gongsun Yang! He must be quite out of his mind.”
 
-赵良曰：“夫五羖大夫，荆之鄙人也。闻秦缪公之贤而愿望见，行而无资,自粥于秦客,被褐食牛。期年，缪公知之，举之牛口之下,而加之百姓之上，秦国莫敢望焉。相秦六七年,而东伐郑,三置晋国之君,一救荆国之祸。发教封内，而巴人致贡;施德诸侯，而八戎来服。由余闻之，款关请见。五羖大夫之相秦也，劳不坐乘,暑不张盖,行于国中，不从车乘，不操干戈,功名藏于府库,德行施于后世。五羖大夫死，秦国男女流涕，童子不歌谣，春者不相杵。此五羖大夫之德也。
-赵良说：“五羖大夫百里奚原来是楚国的一个村野之人，他听说秦缪公贤明就想去秦国见他，但由于没有路费，于是就把自己卖给了秦国的一个客人，每天穿着粗布短衣替人家喂牛。就这样过了整整一年，秦缪公知道了，于是就把他从一个喂牛人提拔起来，放在了治理百姓的职位上，秦国对此没有一个人敢说闲话。在百里奚任秦国宰相的六七年内，秦国曾经东出伐郑，三次帮着晋国树立国君，又曾一度挽救了楚国的灾难。他只是在秦国国内实行教化，但这就使得西南的巴国向他纳贡了；又由于他能对各国的诸侯们施行仁德，因而使得西部地区的许多少数民族都归服了他。由余这位大贤人听说了百里奚贤能，也来到秦国求见他。百里奚身为秦国的宰相，走路不坐车子，夏天不打伞，他在京城出出进进，从来没有车马跟着，也没有全副武装的警卫人员。可是有关他赫赫功业的记载永远保存在府库中，他的高尚道德永远流传于后世。等到百里奚死时，秦国的男男女女全都为之痛哭流涕，以至于连孩子们也不唱儿歌，舂米的人也不喊号子。这就是百里奚的德行。
-Zhao Liang replied, “Lord Five Ram Skins was a simple country dweller of the state of Jing. Hearing of the worth of Duke Mu of Qin, he longed for an interview with him. He travelled to Qin but, lacking resources, had to sell himself into service to the state, donning coarse clothing and feeding the oxen. After a year, Duke Mu recognized his worth and lifted him up from below the muzzles of the oxen and set him above the hundred families of the state. Throughout Qin, no one dared to eye him with anger. “He served as prime minister of Qin for six or seven years, attacking Zheng in the east, three times setting up a ruler in the state of Jin, and on one occasion rescuing the state of Jing from misfortune. He spread his teachings within the borders of Qin and the people of Ba came bearing tribute; he bestowed his virtue upon the feudal lords and the eight tribes of Rong came in submission. You Yu, hearing of him, knocked at the Pass, requesting an interview.“When Lord Five Ram Skins was prime minister, though he was weary, he never sat down in his carriage, and though it was hot, he never used a canopy. Travelling about the country, he had no entourage of carriages accompanying him, no bearers of shields or halberds. The record of his merit and fame is stored away in the archives, and his virtuous deeds continue to benefit the ages after. When Lord Five Ram Skins died, the men and women of Qin wept; young boys no longer sang their songs, and the pounders of grain ceased to beat time with their pestles. Such was the virtue of Lord Five Ram Skins.
+公叔既死，公孙鞅闻秦孝公下令国中求贤者，将修缪公之业，东复侵地，乃遂西入秦，因孝公宠臣景监以求见孝公。
+公叔座死了以后，公孙鞅听说秦孝公在国内下了命令招贤纳士，准备重新光大秦缪公的事业，向东方扩展版图，于是他就离开魏国，来到了秦国，通过孝公的宠臣景监见到了秦孝公。
+After Gongshu Cuo died, Yang heard that Duke Xiao of Qin had circulated an order throughout his state seeking for men of worth, hoping to carry on the labours of his predecessor Duke Mu and to invade the lands to the east. Yang thereupon journeyed west to Qin, where he requested Duke Xiao’s favourite minister Jing Jian to arrange an interview for him with the duke.
 
-“今君之见秦王也，因嬖人景监以为主,非所以为名也。相秦不以百姓为事，而大筑冀阙，非所以为功也。刑黥太子之师傅，残伤民以骏刑,是积怨畜祸也。教之化民也深于命，民之效上也捷于令。今君又左建外易,非所以为教也。君又南面而称‘寡人’,日绳秦之贵公子。《诗》曰：‘相鼠有体，人而无礼；人而无礼，何不遗死。’以《诗》观之，非所以为寿也。
-“可是您呢，您见秦孝公，是通过了秦孝公的宠臣景监的推荐，珍惜名誉的人是不这样做的。您做了宰相不是为百姓谋利益，而是去大造宫殿，真正想建功立业的人是不这样做的。您把太子的师、傅用了刑，刺了字，您对百姓们残酷杀戮，严刑峻法，因而给自己积蓄了仇恨，埋下了祸根。以身作则的引导比单纯的下命令更有效果，下头效法上头的行为，比听从命令还来得快。您现在的一切建设一切作为，都是违背常理的，是不能用这一套去教化百姓的。而且您又据有於、商之地，还南面为君，自称‘寡人’,经常用您所定的法令来管制秦国贵族的子弟。《诗经》里曾说：‘老鼠都还有个完整的肢体，作人怎么能不讲究礼仪呢?作人既然不讲礼仪，为什么还不快点死呢?'从《诗经》讲的这些话看来，您的这些所作所为是不能让您长寿的。
-“Now you, sir, when you had your interview with the ruler of Qin, were a guest of the eunuch Jing Jian, which does little to enhance your name. When you became prime minister of Qin, you failed to act on behalf of the hundred families, but instead built elaborate structures such as the Memorial Gate, which is hardly a deed of merit. You inflicted tattooing and other punishments on the tutor and teacher of the heir apparent and brought mutilation and injury to the people with your harsh penalties. This is simply to store up hatred and nourish disaster. Your actions influence the people even more profoundly than do the commands of the ruler, for the people are quicker to ape their superiors than to heed orders. Now you resort to specious measures and initiate outlandish changes — that is no way to educate the people! “Furthermore, you sit facing south and call yourself lord of a domain, day after day inflicting chastisement on the noblemen of Qin. But the Book of Odes says: See the rat — it has a body, but this man has no manners! A man with no manners, why doesn’t he hurry up and die! Judging from the ode, the course you are following will hardly lead to long life.
+孝公既见卫鞅，语事良久，孝公时时睡，弗听。
+公孙鞅跟秦孝公谈了好久，但秦孝公边听边打瞌睡，一点也听不进去。
+Duke Xiao granted Gongsun Yang an interview, and Yang talked to him at great length. Duke Xiao now and then dozed off, not even listening.
 
-公子虔杜门不出已八年矣,君又杀祝懂而黥公孙贾。《诗》曰：‘得人者兴，失人者崩。’此数事者，非所以得人也。君之出也，后车十数，从车载甲,多力而骈胁者为骖乘,持矛而阉戟者旁车而趋。此一物不具，君固不出。《书》曰：‘恃德者昌，恃力者亡。'君之危若朝露,尚将欲延年益寿乎?
-公子虔从被割鼻之后，已经关上门八年不出来了，您还杀了祝惟，给公孙贾在脸上刺了字。《诗经》上说：‘得人心才能兴盛，失人心就要灭亡。’您所做的那几件事，都不是得人心的。您每逢一出门，后面总是跟着大车十几辆，车上拉着兵器铠甲，选了勇猛的大力士在车上给您当保镖，让许多手持武器的士兵夹护着您的车子奔跑。这些保护措施少了一点，您就不出门。《尚书》上说：‘依靠仁德的就能昌盛，单凭武力的只能灭亡。'您现在的危险处境就像早晨的露珠，还能够幻想延年益寿吗?
-One of the noblemen, Gongzi Qian, has shut his gate for eight years now, too ashamed to step outside it. In addition, you have executed Zhu Huan and subjected Gongsun Jia to tattooing. The Book of Odes say: He who wins men over will rise, he who loses them faces downfall. These various actions of yours are not the way to win men over! “When you go out, you have tens of carriages trailing after, carriages heaped with weapons to accompany you, powerful and burly men attending at your side, and others bearing lances and brandishing pikes and spears to run alongside your carriage. If even one of these components is lacking, you refuse to venture forth. But the Book of Documents says: ‘He who relies on virtue prospers, he who relies on arms is lost.’ “Your existence is as precarious as the morning dew. And do you still hope to live out your years and reach old age?
+罢而孝公怒景监曰：“子之客妄人耳，安足用邪！”
+待公孙鞅走后，秦孝公生气地斥责景监说：“你介绍来的客人是个说话不着边际的人，这种人怎么能用呢？”
+When the interview was over, the duke remarked angrily to Jing Jian, “That visitor of yours is a mere imposter! What use could a man like that be?”
 
-文记则何不归十五都,灌园于鄙,劝秦王显岩穴之士,养老存孤，敬父兄，序有功,尊有德，可以少安。君尚将贪商於之富，宠秦国之教,畜百姓之怨，秦王一旦捐宾客而不立朝,秦国之所以收君者,岂其微哉?亡可翘足而待。”商君弗从。
-您应该赶紧把您受封的十五城还给国家，自己去找个僻静的地方耕田为业，劝说国君广泛地招纳隐居山林的贤士，尊养老者，抚恤孤儿。和本族的父兄们搞好关系，对有功的加以褒奖，对有德的予以尊崇，这么做了您或许还可以略好一点。如果您不这样，您还想继续贪恋商、於一带的富饶，想继续独揽秦国的政权以为荣耀，从而让百姓们进一步地增加对您的仇恨，那么等到有一天宠爱您的秦王突然死了，到那时，秦国出来收拾您的人您想还会少吗?您的灭亡简直是一翘脚就可以看得见了。”但是商君听不进去。
-If you do, then why not return the fifteen towns of your fief, retire to the countryside and water your garden? Encourage the Qin ruler to bring to prominence the recluses hidden in their mountain caves, to nourish the aged and protect the orphaned, to show respect to fathers and elder brothers, promote men of merit, and honour those of virtue. Then you may hope for some measure of safety. “And yet you go on coveting the wealth of Shang and Yu, exploiting your favoured position to dictate the ways of Qin, and thereby nourishing the hatred of the hundred families. If one morning the ruler of Qin should take leave of his guests and no longer appear at court, the state of Qin will have more than a few grounds for placing you under arrest. Your demise would be speedy indeed!” Lord Shang ignored this advice.
+景监以让卫鞅。
+景监出来就用秦孝公的话责备公孙鞅。
+Jing Jian thereupon berated Gongsun Yang.
 
-后五月而秦孝公卒,太子立。公子虔之徒告商君欲反,发吏捕商君。商君亡至关下,欲舍客舍。客人不知其是商君也,曰：“商君之法，舍人无验者坐之。”商君喟然叹曰:“嗟乎，为法之敝一至此哉!”去之魏。魏人怨其欺公子卬而破魏师，弗受。商君欲之他国。魏人曰：“商君，秦之贼。秦强而贼入魏，弗归，不可。”遂内秦。商君既复入秦，走商邑，与其徒属发邑兵北出击郑。秦发兵攻商君，杀之于郑黾池。秦惠王车裂商君以徇,曰：“莫如商鞅反者!”遂灭商君之家。
-五个月以后，秦孝公死了。太子即位。这时公子虔等人立刻诬告商君想要造反，派兵捉拿商君。商君逃到了秦国的边境，想找客店住宿，客店的主人不知道他就是商君，对他说：“商君的法令规定，凡是留宿没有证件的客人，店主人是要犯罪的。”商君不由得叹了一口气说：“唉!变法的危害竟然害到了自己头上来了!”于是他离开秦国逃到了魏国，魏国人恨他当初欺骗公子卬打败了魏国军队，不肯收留他。商君于是想再到别的国家去。魏国人说：“商君是秦国的罪犯，秦国强大，它的罪犯逃到了魏国，魏国不把他送回秦国是不行的。"于是魏国人又把商君送进了秦国境内。商君回到秦国后，迅速奔到他的封地商邑，与他的部属一起征集了他领地上的士兵，向北攻打郑邑。秦国出动大军攻打商君，在郑邑附近的黾池把他杀死了。秦惠王进一步把商君车裂示众，说：“谁也不要像商鞅这样反叛国家!”接着又杀光了商君的满门。
-Five months later, Duke Xiao of Qin died and the heir apparent succeeded him as ruler. The followers of Gongzi Qian accused Lord Shang of plotting revolt. The law officials were dispatched to arrest him but he fled. When he reached the Pass, he tried to put up at the guest lodge, but the keeper of the lodge, unaware of who he was, said, “Lord Shang’s laws stipulate that anyone giving lodging to a person who lacks proper credentials will be prosecuted.” Lord Shang sighed and said, “I made the law — and this is what I get!” He left Qin and went to Wei, but the people of Wei, hating him for having deceived Gongzi Ang and defeated the Wei army, refused to give him asylum. He wanted to go to some other state, but the men of Wei said, “Lord Shang is a traitor to Qin. If a traitor to a powerful state like Qin comes to Wei, we have no choice but to send him back.” So they returned him to Qin. Once back in Qin, he hurried to his domain in Shang and joined with his followers in calling out the troops of the domain and heading north for a surprise attack on Zheng. Qin sent out its own forces to attack him and killed him at Min Lake in Zheng. King Hui of Qin had Lord Shang’s body torn in two by carriages to serve as a warning, saying, “Let no one imitate the rebel Yang of Shang!” Eventually the whole of Lord Shang’s family was wiped out.
+卫鞅曰：“吾说公以帝道，其志不开悟矣。后五日，复求见鞅。”
+公孙鞅说：“我当时是拿了五帝治国的办法来开导他的，看来他对这个还不能领悟。希望你在五天之后，再向孝公引见我。”
+but Yang said, “I discoursed to the duke on the way of an emperor, but it did not seem to take his fancy.” Five days later, Jing Jian asked the duke to see Yang once more.
 
-太史公曰：商君，其天资刻薄人也。迹其欲干孝公以帝王术,挟持浮说，非其质矣。且所因由嬖臣，及得用，刑公子虔，欺魏将卬，不师赵良之言，亦足发明商君之少恩矣。余尝读商君《开塞》、《耕战》书,与其人行事相类。卒受恶名于秦,有以也夫!
-太史公说：商君是一个天性残忍狠毒的人，考察一下他当初之所以要用五帝三王治理国家的办法来劝说秦孝公，也不过就是说空话而已，那些根本不是出于他的本心。而且他又是通过秦孝公的一个宠幸作引荐，路子不正；等到受重用以后，又处罚了公子虔，欺骗了魏将公子卬，后来又不听从赵良的劝告，这些事实全都可以表明商君的残忍少恩。我曾经读过商君的《开塞》、《耕战》等文章，文章的思想风格和他的行事为人大致相同。最后在秦国蒙受恶名而被杀，这是有原因的啊!
-The Grand Historian remarks: Lord Shang was a man endowed by heaven with a cruel and unscrupulous nature. If we note how he approached Duke Xiao with discourses on the way of the emperor and the king, we see that he was proffering mere empty theories that did not represent his true intent. Moreover, he gained an interview through the introduction of a eunuch. Later, when he had been taken into service, he inflicted penalties on Gonzi Qian, deceived the Wei general Gongzi Ang, and failed to take warning from the advice of Zhao Liang. These actions likewise reveal that Lord Shang was a man of little mercy. I have read Lord Shang’s book on opening up barriers and on agriculture and warfare, and I see that it matches the actions of the man himself. That he ended in such ill repute in the state of Qin is not without reason!
+鞅复见孝公，益愈，然而未中旨。
+公孙鞅第二次见到孝公后，情况比上次略好了一点，但还是不能让他满意。
+Yang again had an interview with him and spoke with even greater fervour, though he still failed to interest the duke.
+
+罢而孝公复让景监，景监亦让鞅。
+事情过后秦孝公又斥责景监，景监又去责备公孙鞅。
+After the interview, the duke again complained to Jing Jian and Jing Jian in turn berated Yang.
+
+鞅曰：“吾说公以王道而未入也。请复见鞅。”
+公孙鞅说：“这次我是拿了三王治国的办法来开导他的，他还是听不进去，请你再引见我。”
+Yang said, “I discoursed to the duke on the way of a king, but it did not appeal to him. I would like to be granted another interview.”
+
+鞅复见孝公，孝公善之而未用也。罢而去。
+于是公孙鞅第三次见到了秦孝公，这次交谈之后，秦孝公对他的言论已经有所肯定，有所称赞了，只是还没有充分听取。这次过后（公孙鞅）就离开了。
+When Yang was granted another interview, the duke expressed approval, but was still unwilling to employ him. When the interview was over and Yang had withdrawn.
+
+孝公谓景监曰：“汝客善，可与语矣。”
+秦孝公对景监说：“你这位客人不错，我跟他还谈得来。”
+Duke Xiao said to Jing Jian, “That visitor of yours is a good man — someone worth talking to!”
+
+鞅曰：“吾说公以霸道，其意欲用之矣。诚复见我，我知之矣。”
+公孙鞅说：“这回我是拿了五霸治理国家的办法来开导他的，看他的意思是想采用了。如果他能够再接见我，我知道该进一步和他说什么了。”
+Yang explained to Jing Jian, “I discoursed to the duke on the way of a hegemon. It seems as though he would like to try it out. If he will see me once more, I will know what to say this time!”
+
+卫鞅复见孝公。公与语，不自知膝之前于席也。语数日不厌。
+于是公孙鞅第四次见到了秦孝公。这一次秦孝公和公孙鞅谈话，不知不觉地总是向着公孙鞅凑拢，膝盖都到了座席前头了。一连听他说了几天都没有听够。
+When Yang appeared for another interview, the duke talked with him, inching forward until before he knew it he was kneeling on the very edge of his mat. They talked for several days without tiring.
+
+景监曰：“子何以中吾君？吾君之欢甚也。”
+事后景监问公孙鞅说：“你是拿什么打动了我们的国君？我们的国君和你谈话后高兴极了。”
+Jing Jian said, “How did you manage to impress our ruler so? He is overjoyed!”
+
+鞅曰：“吾说君以帝王之道比三代，而君曰：‘久远，吾不能待。且贤君者，各及其身显名天下，安能邑邑待数十百年以成帝王乎？’故吾以强国之术说君，君大说之耳。然亦难以比德于殷、周矣。”
+公孙鞅说：“我先是拿五帝三王治国的办法开导他，希望他能把秦国治理得可以和夏、商、周三代相比，可是你们的国君说：‘用这种办法太慢了，我等不了那么久。作为一个贤君，应该在当代就能扬名于天下，我怎么能慢慢腾腾地到几十年以至上百年后再成帝成王呢？’所以我后来只能用富国强兵的办法来帮他出主意了，结果这些使他非常喜欢。但是这样做，秦国也就不可能再达到殷朝、周朝那样的道德水平了。”
+Gongsun Yang said, “I discoursed to the ruler on the ways of the emperor and the king, such as were in use in the Three Dynasties of old. But he said, ‘That takes too much time. I can’t wait that long. A worthy ruler is one who can make himself famous throughout the world in his own lifetime. Who can sit around fretting for thirty or forty or 100 years in hopes of becoming an emperor or a king?’ Therefore I discoursed to the ruler on the techniques for strengthening the state, and the ruler was pleased. Of course, it will still be hard for him ever to equal the virtue of the Yin or Zhou dynasties.”
+
+孝公既用卫鞅，欲变法，恐天下议己。
+秦孝公任用公孙鞅后，想要在秦国实行变法，但害怕天下人议论自己。
+After Duke Xiao had appointed Gongsun Yang to official position, the latter wanted to change the laws, but Duke Xiao was afraid the world would criticize him.
+
+卫鞅曰：“疑行无名，疑事无功。
+公孙鞅说：“修养操行如果犹豫不定就不能成名，办事情如果犹豫不定就不能成功。
+“The hesitant in action win no fame, the hesitant in execution win no gain,” Gongsun Yang said.
+
+且夫有高人之行者，固见非于世；有独知之虑者，必见敖于民。
+一个人的操行如果出类拔萃，就肯定要遭到一般人的攻击；一个人的见解如果特别独到，就必然要受到一般人的诋毁。
+“If you are going to act the part of a great man, you must expect the censure of the age. When one is unique in the wisdom of his foresight, he is bound to rouse the animosity of the people.
+
+愚者暗于成事，知者见于未萌。
+愚昧的人当别人把事情都办成了，他还在那里迷惑不解；而聪明人则不用等问题发生，早就已经预见到了。
+The stupid are blind even to things already done, but the wise can spy what has yet to put out sprouts.
+
+民不可与虑始，而可与乐成。
+对于老百姓，不论做什么事，在开头的时候不能和他们一起商量，而只能在办成以后和他们一起共享成果。
+One cannot plan with the people the beginning of an affair, one can only rejoice with them in its completion.
+
+论至德者不和于俗，成大功者不谋于众。
+讲究最高道德的人不会与一般世俗的人合群，要干大事业的人不能去征求那些芸芸众生的意见。
+He who discourses on perfect virtue cannot stay in tune with the vulgar; he who would win great merit cannot consult with the mob.
+
+是以圣人苟可以强国，不法其故；苟可以利民，不循其礼。”
+圣人只要能使国家富强，就不必去效法古代的典章；只要能使百姓得利，就不必遵循旧时的礼教。”
+If the sage should wish to strengthen the state, he must not pattern himself on old ways; if he should wish to profit the people, he cannot abide by old rites.”
+
+孝公曰：“善。”
+秦孝公说：“讲得好。”
+“Excellent!” said Duke Xiao.
+
+甘龙曰：“不然。圣人不易民而教，知者不变法而治。
+甘龙说：“不对。圣人在教育人的时候从不改变人们旧有的风俗习惯，聪明人在治理国家的时候从不改变国家原有的法度。
+But Gan Long said, “Not so! The sage does not make the people over, he educates them. The wise man does not change the laws, he makes them work.
+
+因民而教，不劳而成功；缘法而治者，吏习而民安之。”
+按照人们旧有的习俗来进行教育，就能不费劲地获得成功；遵照原有的制度来治理国家，就不仅能让官吏们顺手，而且百姓们也能够相安无事。”
+Go along with the people and educate them and one can achieve results without effort. Leave the laws as they are and see that they work and the officials will know their routine and the people be at ease.”
+
+卫鞅曰：“龙之所言，世俗之言也。常人安于故俗，学者溺于所闻。
+公孙鞅说：“甘龙所说的都是些最世俗的话。庸人们总是安于一套旧的习俗，书呆子们总是迷信书本的条文。
+Gongsun Yang said, “Gan Long’s view is the commonly accepted one. Ordinary people feel easy with established ways, scholars are enamoured of what they already know.
+
+以此两者居官守法可也，非所与论于法之外也。
+按照甘龙所说的那两条奉公守法地维持旧有秩序是可以的，但不可能和他讨论旧法以外的事情。
+These two types of men will do to occupy posts and maintain the laws. But one cannot discuss with them what is beyond the law.
+
+三代不同礼而王，五伯不同法而霸。
+夏、商、周三代都称王，但他们奉行的礼教是不同的；五伯都是霸主，但执行的法度也不完全相同。
+The Three Dynasties were not alike in their rites, yet their rulers were all kings. The Five Hegemons did not observe the same laws, yet all were ba.
+
+智者作法，愚者制焉；贤者更礼，不肖者拘焉。”
+法度是聪明人制订的，而愚蠢的人只知道遵行；礼教是有才干的人改立的，而一些无能的人则只能接受约束。”
+Wise men make laws, stupid men are constrained by them. Worthy men change rites, unworthy men merely cling to them.”
+
+杜挚曰：“利不百，不变法；功不十，不易器。
+杜挚说：“见不到百倍的好处，不能变法；看不准十倍的功效，不能更换旧的器物。
+Du Chi said, “Unless the benefits are a hundredfold one does not change the laws. Unless the advantages are tenfold one does not alter the ritual vessels.
+
+法古无过，循礼无邪。”
+按古代的章程做，就绝不会错；按旧的礼法走，就绝不会邪。”
+Follow the old and you commit no error; abide by ritual and you are without fault.”
+
+卫鞅曰：“治世不一道，便国不法古。
+公孙鞅说：“治理天下的办法是不一样的，我们要的是方便有利，而不是为了仿效古人。
+Gongsun Yang said, “To govern the age one need not adopt a single course, to benefit the state one need not follow the old.
+
+故汤武不循古而王，夏殷不易礼而亡。
+商汤和周武王都没有遵循古法而成就了王业，夏桀和殷纣倒是没有改变旧礼而结果亡国了。
+Tang and Wu did not follow the old, yet they became kings. The Xia and Yin dynasties did not alter the rites and yet they perished.
+
+反古者不可非，而循礼者不足多。”
+可见改变古法的人不能否定，而遵循旧礼的人不值得赞扬。”
+Going against old ways is not necessarily to be condemned, and abiding by rites is not necessarily deserving of praise.”
+
+孝公曰：“善。”
+秦孝公说：“讲得好。”
+“Excellent!” said Duke Xiao,
+
+以卫鞅为左庶长，卒定变法之令。
+于是任命公孙鞅为左庶长，并很快地确定了变法的条令。
+and proceeded to elevate Gongsun Yang to the rank of zuoshuzhang. Then he gave the order to carry out changes in the laws.
+
+令民为什伍,而相牧司连坐。
+新法把居民五家编为一“伍”,十家编为一“什”；让他们互相监督，否则一家出事，其他各家都要跟着受牵连。
+The people were to be grouped in units of five and ten households, exercising mutual surveillance and mutually responsible before the law.
+
+不告奸者腰斩，告奸者与斩敌首同赏,匿奸者与降敌同罚。
+知道谁是坏人而不告发的要被腰斩，而出首告发坏人的与斩获一个敌人首级的奖赏相同，包庇窝藏犯法的人与投降敌人的处罚相同。
+Anyone failing to report an offence was to be cut in two at the waist. Reporting an offence was to be rewarded in the same way as cutting off the head of an enemy. Concealing an offender was to be punished in the same way as surrendering to an enemy.
+
+民有二男以上不分异者，倍其赋。
+一家有两个以上的成年男人而不分开过的，要加倍地交纳赋税。
+If a family of the common people had more than two sons but failed to establish a separate household, its taxes were to be doubled.
+
+有军功者，各以率受上爵;为私斗者，各以轻重被刑大小。
+立有军功的人，可以根据规定加官进爵；为私仇而打架斗殴的，要根据情节轻重给以惩罚。
+Those who had won military merit were to receive ranks in the nobility proportionate to their achievement. Those who engaged in private vendettas were to be penalized according to the gravity of the offence.
+
+缪力本业,耕织致粟帛多者复其身。
+新法鼓励农民好好发展农业，对于那些在耕田织布方面做出了成绩的，可以免除他们的劳役。
+Old and young were to exert all their strength in the basic occupations of farming and weaving. Those producing large amounts of grain and cloth were to be excused from corvée labour.
+
+事末利及怠而贫者，举以为收孥。
+对于从事经商或由于懒惰而变穷的，一律把他们没为奴隶。
+while those who engaged in secondary occupations for profit, or who became poor out of laziness, were to be rounded up and made government slaves.
+
+宗室非有军功论，不得为属籍。
+国君的宗族凡是没有军功可以论叙的，一律把他们从贵族谱牒上开除出去。
+Even members of the ruling family, if they had achieved no military merit, were not to be listed in the rosters of the nobility.
+
+明尊卑爵秩等级,各以差次名田宅,臣妾衣服以家次。
+要严格地按照爵位的尊卑划分等级，让人们按照等级的高低来占有不同的田宅，私家的奴婢穿什么样的衣服都要随着主人的地位而定。
+Degrees of social superiority or inferiority, ranks in the nobility, and other marks of status were to be made clear in each case, and the extent of privately owned fields and houses, male and female servants, and articles of clothing were to be fixed for each family.
+
+有功者显荣，无功者虽富无所芬华。
+有军功的人才能显贵荣华，没有军功的人即使有钱，也没有社会地位。
+Those who had won merit were to enjoy affluence and social position, but those who had won no merit, even if they were rich, were to be permitted no show of wealth.
+
+令既具，未布，恐民之不信己,乃立三丈之木于国都市南门,募民有能徙置北门者予十金。
+新法已经订好，还没有公布，公孙鞅担心百姓们怀疑政府说话是否算数，于是就在国都市场的南门立了一根三丈长的杆子，告诉百姓们谁能把它扛到市场的北门，就赏给他十镒金子。
+When the laws had been drawn up but not yet promulgated, Gongsun Yang was afraid the people would not trust him. Therefore he set up a three-yard pole by the south gate of the capital market and announced that any member of the populace who could move it and set it up by the north gate would be given ten pieces of gold.
+
+民怪之，莫敢徙。
+百姓们开始觉得奇怪，没人敢动。
+The people were suspicious and no one ventured to move the pole.
+
+复曰“能徙者予五十金”。
+于是公孙鞅又对人们说：“谁能把它扛到北门，赏给他五十镒金子。”
+Then Yang announced, “Anyone who can move it will be given fifty gold pieces!”
+
+有一人徙之，辄予五十金,以明不欺。
+这时出来一个人把它扛到了北门，公孙鞅立即赏给了他五十镒金子，以表明政府说话是算数的。
+When one man moved the pole, he was promptly given fifty gold pieces, thus making clear that there was no deception.
+
+卒下令。
+接着就颁布了新法。
+Then the laws were promulgated.
+
+令行于民期年,秦民之国都言初令之不便者以千数。
+在推行新法的第一年里，秦国有上千的人跑到都城来反映新法不好。
+When the laws had been in effect among the populace for the space of a year, the people of Qin who poured into the capital complaining that the new laws were unsuitable numbered in the thousands.
+
+于是太子犯法。
+甚至连秦孝公的太子也犯了法。
+At that time the heir apparent violated the law.
+
+卫鞅曰：“法之不行，自上犯之。”
+公孙鞅说：“法令之所以行不通，关键就在于上头有人破坏。”
+Gongsun Yang said, “The reason the laws are not effective is that the superiors themselves violate them!”
+
+将法太子。太子，君嗣也,不可施刑，刑其傅公子虔，黥其师公孙贾。
+于是他准备依法处置太子。但太子是国家的继承人，不能对他施刑，于是就处罚了太子的太傅公子虔，给太子的太师公孙贾脸上刺了字。
+He was about to punish the heir apparent, but because the heir apparent was the son and heir of the ruler, it was impossible to impose the penalty upon him personally. So his tutor Gongzi Qian was punished instead, and his teacher Gongsun Jia was condemned to be tatooed.
+
+明日，秦人皆趋令。
+结果第二天，秦国人就都按着新法办了。
+The next day the people of Qin all accepted the new laws.
+
+行之十年,秦民大说，道不拾遗，山无盗贼，家给人足。
+到新法实行后的第十年，秦国的百姓们就变得十分喜欢新法了，这时道上掉了东西没人捡，山里头没有盗贼，家家户户都过得很富裕。
+By the time the laws had been in effect for ten years, the people of Qin were delighted. No one picked up objects dropped in the road, the mountains were free of robbers and bandits, and each family had enough of what it needed.
+
+民勇于公战，怯于私斗，乡邑大治。
+人们都勇于为国从军，而不敢为私仇殴斗，乡村城镇到处是一片太平。
+The people were brave in public warfare and fearful of private vendettas. Profound order prevailed in the hamlets and towns.
+
+秦民初言令不便者有来言令便者，卫鞅曰“此皆乱化之民也”,尽迁之于边城。
+过去那些曾经说过新法不好的人，现在又反过来到都城说新法好了。公孙鞅说“这些都是扰乱国家秩序的刁民”，于是把他们一律都迁到了边境上。
+The people of Qin who had earlier complained that the laws were unsuitable now came forward to say how suitable they were. Gongsun Yang said, “People like these are the source of confusion and bad influence!” and he had them all transported to the border areas.
+
+其后民莫敢议令。
+从此百姓们谁也不敢再随便议论新法了。
+After that none of the people ventured to make any comment whatsoever on the laws.
+
+于是以鞅为大良造。
+于是秦孝公任命公孙鞅为大良造。
+Gongsun Yang was promoted to the rank of daliangzao.
+
+将兵围魏安邑，降之。
+（公孙鞅）率领军队包围魏国的安邑，使安邑投降。
+He led troops to surround the Wei city of Anyi and forced it to surrender.
+
+居三年,作为筑冀阙宫庭于咸阳,秦自雍徙都之。
+过了三年，在咸阳建造宫殿和高大的门阙，秦国从雍县迁都到咸阳。
+Three years later he carried out construction of the Memorial Gate and of palaces and gardens in Xianyang, and the state of Qin moved its capital there from Yong.
+
+而令民父子兄弟同室内息者为禁。
+并下令禁止百姓父子兄弟在同一间屋子居住。
+An order was issued prohibiting fathers and sons and older and younger brothers from living in the same house.
+
+而集小乡邑聚为县,置令、丞,凡三十一县。
+把小的乡、邑、村落合并为县，设置县令、县丞，总共三十一个县。
+The smaller cities, towns and hamlets were grouped together to form districts, with a magistrate and his assistant appointed to head each one. There were thirty-one districts in all.
+
+为田开阡陌封疆，而赋税平。
+废除田间的田埂地界，重新划分土地，使赋税公平。
+The ridges that marked the boundaries of the fields under cultivation were opened up. Taxes were made equitable.
+
+平斗桶权衡丈尺。
+统一斗、桶、权、衡、丈、尺等度量衡标准。
+and weights and measures standardized.
+
+行之四年,公子虔复犯约，劓之。
+这些制度实行四年后，公子虔再次违反约定，被处以割鼻之刑。
+Four years after this was done, Gongzi Qian, tutor to the heir apparent, once more violated the law and was punished by having his nose cut off.
+
+居五年，秦人富强，天子致胙于孝公，诸侯毕贺。
+又过了五年，秦国人富裕强盛，周天子把祭祀用的肉赐给秦孝公，诸侯们都来祝贺。
+When five years more had gone by, the inhabitants of Qin were so rich and powerful that the Son of Heaven sent a gift of sacrificial flesh to Duke Xiao and the other feudal lords all tendered their congratulations.
+
+其明年,齐败魏兵于马陵,虏其太子申,杀将军庞涓。
+第二年，齐国在马陵打败魏军，俘虏魏国太子申，杀死将军庞涓。
+The following year Qi defeated the Wei forces at Maling, captured the Wei heir apparent Shen, and killed its general Pang Juan.
+
+其明年,卫鞅说孝公曰：“秦之与魏，譬若人之有腹心疾,非魏并秦，秦即并魏。
+又过一年，卫鞅劝秦孝公说：“秦国和魏国的关系，就像人有心腹疾病，不是魏国吞并秦国，就是秦国吞并魏国。
+The year after, Gongsun Yang said to Duke Xiao, “Wei is to the state of Qin like an ailment of the belly or the heart afflicting a person! Either Wei must annex Qin, or Qin will annex Wei.
+
+何者?魏居领陌之西，都安邑,与秦界河而独擅山东之利。
+为什么呢？魏国位于山岭险要之地的西边，建都安邑，与秦国以黄河为界，独自占据崤山以东的有利地势。
+Why? Because Wei is situated west of the rugged mountainous area, with its capital at Anyi. The Yellow River marks the border between it and Qin, but it alone is able to enjoy the advantages of the area east of the mountains.
+
+利则西侵秦,病则东收地。
+形势有利就向西侵犯秦国，形势不利就向东夺取土地。
+When it is to its advantage, it marches west to invade Qin, and when it is weary of that, it draws on the lands to the east.
+
+今以君之贤圣，国赖以盛。
+如今凭借您的贤明，国家得以强盛。
+“Now you are a sage and worthy ruler, with a prosperous state to support you.
+
+而魏往年大破于齐，诸侯畔之，可因此时伐魏。
+而魏国去年被齐国大败，诸侯都背叛它，可趁这个时机攻打魏国。
+while Wei last year suffered a major defeat at the hands of Qi and the other feudal lords have deserted it. You must seize this opportunity to attack Wei.
+
+魏不支秦，必东徙。
+魏国抵挡不住秦国，必定会向东迁都。
+If Wei is unable to withstand the attack of Qin, it is bound to move east.
+
+东徙，秦据河山之固,东乡以制诸侯,此帝王之业也。”
+魏国向东迁都后，秦国占据黄河、山岭的坚固地势，向东控制诸侯，这是成就帝王大业的机会啊。”
+And if it moves east, then Qin can rely on the protection of the Yellow River and the mountains to face east and impose its will on the other feudal lords. Such an undertaking will make you an emperor or a king!”
+
+孝公以为然，使卫鞅将而伐魏。
+秦孝公认为说得对，派卫鞅率领军队攻打魏国。
+Duke Xiao, approving of this, dispatched Gongsun Yang to lead the forces in an attack on Wei.
+
+魏使公子卬将而击之。
+魏国派公子卬率领军队迎击。
+Wei appointed Gongzi Ang as its general to meet the attack.
+
+军既相距，卫鞅遗魏将公子卬书曰：“吾始与公子欢,今俱为两国将，不忍相攻，可与公子面相见，盟，乐饮而罢兵，以安秦魏。”
+两军对峙后，卫鞅给魏将公子卬送信说：“我当初和公子关系很好，现在都成为两国的将领，不忍心互相攻打，可以和公子当面相见，结盟立誓，欢宴后撤兵，让秦、魏两国安定。”
+When the two armies confronted each other, Gongsun Yang sent a letter to the Wei general Gonzi Ang, saying, “You and I started out as friends, and now we are both generals of our respective states. I cannot bring myself to attack you. It would be best if we meet face to face, swear an oath of alliance, enjoy a drink together, and then dismiss our troops, thus bringing peace to both Qin and Wei.”
+
+魏公子卬以为然。
+魏公子卬认为可行。
+The Wei general Gongzi Ang, considering this reasonable.
+
+会盟已，饮,而卫鞅伏甲士而袭虏魏公子卬，因攻其军，尽破之以归秦。
+会盟结束后饮酒，卫鞅预先埋伏的武士突然袭击，俘虏了魏公子卬，接着攻打魏军，把魏军全部打败后返回秦国。
+met with his opponent, swore an oath, and afterward drank with him. Meanwhile, Gongsun Yang concealed armed troops, who carried out a surprise attack on Gongzi Ang and took him prisoner. He then proceeded to attack the Wei army and inflicted a total defeat before returning to Qin.
+
+魏惠王兵数破于齐秦，国内空，日以削，恐，乃使使割河西之地献于秦以和。
+魏惠王的军队多次被齐、秦打败，国内空虚，国土日渐缩减，心里害怕，就派使者割让黄河以西的土地献给秦国求和。
+The armies of King Hui of Wei had suffered repeated defeats by Qi and Qin, the resources of his state were exhausted, and his territory was dwindling daily. Frightened of the consequences, he dispatched an envoy offering to present the state of Qin with the land west of the Yellow River in exchange for peace.
+
+而魏遂去安邑，徙都大梁。
+魏国于是离开安邑，迁都到大梁。
+Eventually Wei abandoned Anyi and moved its capital east to Daliang.
+
+梁惠王曰：“寡人恨不用公叔座之言也。”
+梁惠王说：“我后悔当初没有听从公叔座的建议。”
+King Hui said, “How sorry I am that I did not follow the advice of Gongshu Cuo!”
+
+卫鞅既破魏还，秦封之於、商十五邑,号为商君。
+卫鞅打败魏国返回后，秦国把於、商一带的十五个城邑封给他，号称商君。
+When Gongsun Yang returned after having defeated the Wei forces, Qin enfeoffed him with fifteen towns in Shang and Yu, awarding him the title of Lord Shang.
+
+商君相秦十年，宗室贵戚多怨望者。
+商君在秦国为相十年，秦国的宗室贵戚们有很多人恨他。
+Lord Shang served as prime minister of Qin for ten years, and many of the members of the ruling family and the families related to it by marriage came to hate him.
+
+赵良见商君。
+这时赵良往见商君。
+When Zhao Liang had an interview with Lord Shang.
+
+商君曰：“鞅之得见也，从孟兰皋，今鞅请得交，可乎？”
+商君说：“过去我就曾通过孟兰皋的介绍，见过你，现在我想和你交个朋友，行吗？”
+the latter said, “Meng Langao kindly arranged for me to meet you. I would like to become your friend. Is that possible?”
+
+赵良曰：“仆弗敢愿也。孔丘有言曰：‘推贤而戴者进，聚不肖而王者退。’仆不肖，故不敢受命。仆闻之曰：‘非其位而居之曰贪位，非其名而有之曰贪名。’仆听君之义，则恐仆贪位贪名也。故不敢闻命。”
+赵良说：“我不愿意。孔子曾经说过：‘一个人如果能够推贤荐士，那么善于治国爱民的人们就会来投奔他了；一个人如果他的周围坏蛋成堆，那么讲求王道的人就会自然离去。’我没有什么出息，不能接受您的请求和您做朋友。我听俗话说：‘呆在不该呆的位子上叫作贪位，享有不该享的名誉叫作贪名。’如果我接受了您的请求和您做了朋友，恐怕就成了‘贪位’、‘贪名’了。所以我不能答应您做您的朋友。”
+Zhao Liang replied, “That is more than I would venture to hope for. Confucius has said, ‘If a man promotes worthy men and employs them, he will advance. But if he gathers unworthy men around him in hopes of becoming a ruler, he will fail.’ I am an unworthy man, and therefore would not venture to accept your offer. “I have heard that to occupy a position one is not qualified for is to be greedy for position, and to bask in fame that is not one’s own is to be greedy for fame. If I were to heed your suggestion, I am afraid I would be greedy for both position and fame. Therefore I dare not consent.”
+
+商君曰：“子不说吾治秦与？”
+商君说：“难道说你不喜欢我治理秦国么？”
+Lord Shang said, “You do not like the way I govern Qin?”
+
+赵良曰：“反听之谓聪，内视之谓明，自胜之谓强。虞舜有言曰：‘自卑也尚矣。’君不若道虞舜之道，无为问仆矣。”
+赵良说：“能够听取不同的意见那叫‘聪’，能够不断地自我反省那叫‘明’，能够克制自己的冲动那叫‘强’。虞舜当年曾说过：‘能够自己谦卑的人才是最值得尊重的。’您不如按照虞舜讲的去做，没有必要再问我了。”
+Zhao Liang replied, “Listening to the self is true hearing, looking within is true vision, overcoming oneself is true strength. The sage ruler Shun said, ‘To lower oneself is to rise.’ You will do best to follow the way of Shun. There’s no need to question me.”
+
+商君曰：“始秦戎翟之教，父子无别，同室而居。今我更制其教，而为其男女之别，大筑冀阙，营如鲁卫矣。子观我治秦也，孰与五羖大夫贤？”
+商君说：“秦国过去的风俗和戎狄一样，父子无别，都在一间屋子里住。如今我移风易俗，让他们讲究男女有别，又建造了高大的宫殿，把秦国治理得和中原地区鲁国、卫国的文明程度差不多了。你看我治理秦国的成就与五羖大夫百里奚谁好？”
+Lord Shang said, “In the past, Qin followed the customs of the Rong and Di barbarians, ignoring the distinction between father and son, living all together in the same house. Now I have decreed that the customs be changed so that the proper distinctions are observed between men and women. I have built great structures like the Memorial Gate, laying them out like those of Lu and Wey. When you observe the way I have governed Qin, who would you say is more worthy, Lord Five Ram Skins or myself?”
+
+赵良曰：“千羊之皮，不如一狐之掖；千人之诺诺，不如一士之谔谔。武王谔谔以昌，殷纣墨墨以亡。君若不非武王乎，则仆请终日正言而无诛，可乎？”
+赵良说：“一千张羊皮顶不上一块狐腋，一千个人的随声附和顶不上一个人的仗义直言。周武王因为有直臣而国家昌盛，商纣王因为无人敢说话而国家灭亡。您不是不反对周武王那种做法吗？那么我请求从此整天在您面前说直话而没有被杀的危险，您能做得到吗？”
+Zhao Liang replied, “A thousand sheepskins are not worth the fur in the armpit of a single fox, and 1,000 persons going ‘yes, yes!’ are not worth one man with a bold ‘no!’ King Wu had his bold ‘no!’-sayers and he flourished; Zhou of Yin had his silent assenters and he perished. If you do not disapprove of King Wu, then have I your permission to go on all day giving you sound advice without fear of punishment?”
+
+商君曰：“语有之矣，貌言华也，至言实也，苦言药也，甘言疾也。夫子果肯终日正言，鞅之药也。鞅将事子，子又何辞焉！”
+商君说：“俗话说，假大空的话像花朵，切合实际的话才是果实，不好听的话是治病的良药，迎合人的甜言蜜语只能是害人的恶疾。你如果能整天在我面前仗义直言，那你就将成为我的良药，那我定将拜你为师，这样你还推辞什么呢？”
+Lord Shang said, “The saying has it, appealing words are flowers, apt words are fruit; bitter words are medicine, sweet words are a sickness. If in fact you will consent to go on all day giving me words of sound advice, it will be medicine for me. I am at your service. What counsel do you have for me?”
+
+赵良曰：“夫五羖大夫，荆之鄙人也。闻秦缪公之贤而愿望见，行而无资，自粥于秦客，被褐食牛。
+赵良说：“五羖大夫百里奚原来是楚国的一个村野之人，他听说秦缪公贤明就想去秦国见他，但由于没有路费，于是就把自己卖给了秦国的一个客人，每天穿着粗布短衣替人家喂牛。
+Zhao Liang replied, “Lord Five Ram Skins was a simple country dweller of the state of Jing. Hearing of the worth of Duke Mu of Qin, he longed for an interview with him. He travelled to Qin but, lacking resources, had to sell himself into service to the state, donning coarse clothing and feeding the oxen.
+
+期年，缪公知之，举之牛口之下，而加之百姓之上，秦国莫敢望焉。
+就这样过了整整一年，秦缪公知道了，于是就把他从一个喂牛人提拔起来，放在了治理百姓的职位上，秦国对此没有一个人敢说闲话。
+After a year, Duke Mu recognized his worth and lifted him up from below the muzzles of the oxen and set him above the hundred families of the state. Throughout Qin, no one dared to eye him with anger.
+
+相秦六七年，而东伐郑，三置晋国之君，一救荆国之祸。
+在百里奚任秦国宰相的六七年内，秦国曾经东出伐郑，三次帮着晋国树立国君，又曾一度挽救了楚国的灾难。
+“He served as prime minister of Qin for six or seven years, attacking Zheng in the east, three times setting up a ruler in the state of Jin, and on one occasion rescuing the state of Jing from misfortune.
+
+发教封内，而巴人致贡；施德诸侯，而八戎来服。由余闻之，款关请见。
+他只是在秦国国内实行教化，但这就使得西南的巴国向他纳贡了；又由于他能对各国的诸侯们施行仁德，因而使得西部地区的许多少数民族都归服了他。由余这位大贤人听说了百里奚贤能，也来到秦国求见他。
+He spread his teachings within the borders of Qin and the people of Ba came bearing tribute; he bestowed his virtue upon the feudal lords and the eight tribes of Rong came in submission. You Yu, hearing of him, knocked at the Pass, requesting an interview.
+
+五羖大夫之相秦也，劳不坐乘，暑不张盖，行于国中，不从车乘，不操干戈，功名藏于府库，德行施于后世。
+百里奚身为秦国的宰相，走路不坐车子，夏天不打伞，他在京城出出进进，从来没有车马跟着，也没有全副武装的警卫人员。可是有关他赫赫功业的记载永远保存在府库中，他的高尚道德永远流传于后世。
+“When Lord Five Ram Skins was prime minister, though he was weary, he never sat down in his carriage, and though it was hot, he never used a canopy. Travelling about the country, he had no entourage of carriages accompanying him, no bearers of shields or halberds. The record of his merit and fame is stored away in the archives, and his virtuous deeds continue to benefit the ages after.
+
+五羖大夫死，秦国男女流涕，童子不歌谣，春者不相杵。此五羖大夫之德也。
+等到百里奚死时，秦国的男男女女全都为之痛哭流涕，以至于连孩子们也不唱儿歌，舂米的人也不喊号子。这就是百里奚的德行。
+When Lord Five Ram Skins died, the men and women of Qin wept; young boys no longer sang their songs, and the pounders of grain ceased to beat time with their pestles. Such was the virtue of Lord Five Ram Skins.
+
+“今君之见秦王也，因嬖人景监以为主，非所以为名也。
+“可是您呢，您见秦孝公，是通过了秦孝公的宠臣景监的推荐，珍惜名誉的人是不这样做的。
+“Now you, sir, when you had your interview with the ruler of Qin, were a guest of the eunuch Jing Jian, which does little to enhance your name.
+
+相秦不以百姓为事，而大筑冀阙，非所以为功也。
+您做了宰相不是为百姓谋利益，而是去大造宫殿，真正想建功立业的人是不这样做的。
+When you became prime minister of Qin, you failed to act on behalf of the hundred families, but instead built elaborate structures such as the Memorial Gate, which is hardly a deed of merit.
+
+刑黥太子之师傅，残伤民以骏刑，是积怨畜祸也。
+您把太子的师、傅用了刑，刺了字，您对百姓们残酷杀戮，严刑峻法，因而给自己积蓄了仇恨，埋下了祸根。
+You inflicted tattooing and other punishments on the tutor and teacher of the heir apparent and brought mutilation and injury to the people with your harsh penalties. This is simply to store up hatred and nourish disaster.
+
+教之化民也深于命，民之效上也捷于令。
+以身作则的引导比单纯的下命令更有效果，下头效法上头的行为，比听从命令还来得快。
+Your actions influence the people even more profoundly than do the commands of the ruler, for the people are quicker to ape their superiors than to heed orders.
+
+今君又左建外易，非所以为教也。
+您现在的一切建设一切作为，都是违背常理的，是不能用这一套去教化百姓的。
+Now you resort to specious measures and initiate outlandish changes — that is no way to educate the people!
+
+君又南面而称‘寡人’，日绳秦之贵公子。
+而且您又据有於、商之地，还南面为君，自称‘寡人’，经常用您所定的法令来管制秦国贵族的子弟。
+“Furthermore, you sit facing south and call yourself lord of a domain, day after day inflicting chastisement on the noblemen of Qin.
+
+《诗》曰：‘相鼠有体，人而无礼；人而无礼，何不遄死。’以《诗》观之，非所以为寿也。
+《诗经》里曾说：‘老鼠都还有个完整的肢体，作人怎么能不讲究礼仪呢？作人既然不讲礼仪，为什么还不快点死呢？’从《诗经》讲的这些话看来，您的这些所作所为是不能让您长寿的。
+But the Book of Odes says: See the rat — it has a body, but this man has no manners! A man with no manners, why doesn’t he hurry up and die! Judging from the ode, the course you are following will hardly lead to long life.
+
+公子虔杜门不出已八年矣，君又杀祝懽而黥公孙贾。
+公子虔从被割鼻之后，已经关上门八年不出来了，您还杀了祝懽，给公孙贾在脸上刺了字。
+One of the noblemen, Gongzi Qian, has shut his gate for eight years now, too ashamed to step outside it. In addition, you have executed Zhu Huan and subjected Gongsun Jia to tattooing.
+
+《诗》曰：‘得人者兴，失人者崩。’此数事者，非所以得人也。
+《诗经》上说：‘得人心才能兴盛，失人心就要灭亡。’您所做的那几件事，都不是得人心的。
+The Book of Odes say: He who wins men over will rise, he who loses them faces downfall. These various actions of yours are not the way to win men over!
+
+君之出也，后车十数，从车载甲，多力而骈胁者为骖乘，持矛而操戟者旁车而趋。此一物不具，君固不出。
+您每逢一出门，后面总是跟着大车十几辆，车上拉着兵器铠甲，选了勇猛的大力士在车上给您当保镖，让许多手持武器的士兵夹护着您的车子奔跑。这些保护措施少了一点，您就不出门。
+“When you go out, you have tens of carriages trailing after, carriages heaped with weapons to accompany you, powerful and burly men attending at your side, and others bearing lances and brandishing pikes and spears to run alongside your carriage. If even one of these components is lacking, you refuse to venture forth.
+
+《书》曰：‘恃德者昌，恃力者亡。’君之危若朝露，尚将欲延年益寿乎？
+《尚书》上说：‘依靠仁德的就能昌盛，单凭武力的只能灭亡。’您现在的危险处境就像早晨的露珠，还能够幻想延年益寿吗？
+But the Book of Documents says: ‘He who relies on virtue prospers, he who relies on arms is lost.’ “Your existence is as precarious as the morning dew. And do you still hope to live out your years and reach old age?
+
+文记则何不归十五都，灌园于鄙，劝秦王显岩穴之士，养老存孤，敬父兄，序有功，尊有德，可以少安。
+您应该赶紧把您受封的十五城还给国家，自己去找个僻静的地方耕田为业，劝说国君广泛地招纳隐居山林的贤士，尊养老者，抚恤孤儿，和本族的父兄们搞好关系，对有功的加以褒奖，对有德的予以尊崇，这么做了您或许还可以略好一点。
+If you do, then why not return the fifteen towns of your fief, retire to the countryside and water your garden? Encourage the Qin ruler to bring to prominence the recluses hidden in their mountain caves, to nourish the aged and protect the orphaned, to show respect to fathers and elder brothers, promote men of merit, and honour those of virtue. Then you may hope for some measure of safety.
+
+君尚将贪商於之富，宠秦国之教，畜百姓之怨，秦王一旦捐宾客而不立朝，秦国之所以收君者，岂其微哉？亡可翘足而待。”
+如果您不这样，您还想继续贪恋商、於一带的富饶，想继续独揽秦国的政权以为荣耀，从而让百姓们进一步地增加对您的仇恨，那么等到有一天宠爱您的秦王突然死了，到那时，秦国出来收拾您的人您想还会少吗？您的灭亡简直是一翘脚就可以看得见了。”
+“And yet you go on coveting the wealth of Shang and Yu, exploiting your favoured position to dictate the ways of Qin, and thereby nourishing the hatred of the hundred families. If one morning the ruler of Qin should take leave of his guests and no longer appear at court, the state of Qin will have more than a few grounds for placing you under arrest. Your demise would be speedy indeed!”
+
+商君弗从。
+但是商君听不进去。
+Lord Shang ignored this advice.
+
+后五月而秦孝公卒,太子立。
+五个月以后，秦孝公死了。太子即位。
+Five months later, Duke Xiao of Qin died and the heir apparent succeeded him as ruler.
+
+公子虔之徒告商君欲反,发吏捕商君。
+这时公子虔等人立刻诬告商君想要造反，派兵捉拿商君。
+The followers of Gongzi Qian accused Lord Shang of plotting revolt. The law officials were dispatched to arrest him.
+
+商君亡至关下,欲舍客舍。
+商君逃到了秦国的边境，想找客店住宿。
+but he fled. When he reached the Pass, he tried to put up at the guest lodge.
+
+客人不知其是商君也,曰：“商君之法，舍人无验者坐之。”
+客店的主人不知道他就是商君，对他说：“商君的法令规定，凡是留宿没有证件的客人，店主人是要犯罪的。”
+but the keeper of the lodge, unaware of who he was, said, “Lord Shang’s laws stipulate that anyone giving lodging to a person who lacks proper credentials will be prosecuted.”
+
+商君喟然叹曰:“嗟乎，为法之敝一至此哉!”
+商君不由得叹了一口气说：“唉!变法的危害竟然害到了自己头上来了!”
+Lord Shang sighed and said, “I made the law — and this is what I get!”
+
+去之魏。魏人怨其欺公子卬而破魏师，弗受。
+于是他离开秦国逃到了魏国，魏国人恨他当初欺骗公子卬打败了魏国军队，不肯收留他。
+He left Qin and went to Wei, but the people of Wei, hating him for having deceived Gongzi Ang and defeated the Wei army, refused to give him asylum.
+
+商君欲之他国。
+商君于是想再到别的国家去。
+He wanted to go to some other state.
+
+魏人曰：“商君，秦之贼。秦强而贼入魏，弗归，不可。”遂内秦。
+魏国人说：“商君是秦国的罪犯，秦国强大，它的罪犯逃到了魏国，魏国不把他送回秦国是不行的。"于是魏国人又把商君送进了秦国境内。
+but the men of Wei said, “Lord Shang is a traitor to Qin. If a traitor to a powerful state like Qin comes to Wei, we have no choice but to send him back.” So they returned him to Qin.
+
+商君既复入秦，走商邑，与其徒属发邑兵北出击郑。
+商君回到秦国后，迅速奔到他的封地商邑，与他的部属一起征集了他领地上的士兵，向北攻打郑邑。
+Once back in Qin, he hurried to his domain in Shang and joined with his followers in calling out the troops of the domain and heading north for a surprise attack on Zheng.
+
+秦发兵攻商君，杀之于郑黾池。
+秦国出动大军攻打商君，在郑邑附近的黾池把他杀死了。
+Qin sent out its own forces to attack him and killed him at Min Lake in Zheng.
+
+秦惠王车裂商君以徇,曰：“莫如商鞅反者!”
+秦惠王进一步把商君车裂示众，说：“谁也不要像商鞅这样反叛国家!”
+King Hui of Qin had Lord Shang’s body torn in two by carriages to serve as a warning, saying, “Let no one imitate the rebel Yang of Shang!”
+
+遂灭商君之家。
+接着又杀光了商君的满门。
+Eventually the whole of Lord Shang’s family was wiped out.
+
+太史公曰：商君，其天资刻薄人也。
+太史公说：商君是一个天性残忍狠毒的人。
+The Grand Historian remarks: Lord Shang was a man endowed by heaven with a cruel and unscrupulous nature.
+
+迹其欲干孝公以帝王术,挟持浮说，非其质矣。
+考察一下他当初之所以要用五帝三王治理国家的办法来劝说秦孝公，也不过就是说空话而已，那些根本不是出于他的本心。
+If we note how he approached Duke Xiao with discourses on the way of the emperor and the king, we see that he was proffering mere empty theories that did not represent his true intent.
+
+且所因由嬖臣，及得用，刑公子虔，欺魏将卬，不师赵良之言，亦足发明商君之少恩矣。
+而且他又是通过秦孝公的一个宠幸作引荐，路子不正；等到受重用以后，又处罚了公子虔，欺骗了魏将公子卬，后来又不听从赵良的劝告，这些事实全都可以表明商君的残忍少恩。
+Moreover, he gained an interview through the introduction of a eunuch. Later, when he had been taken into service, he inflicted penalties on Gonzi Qian, deceived the Wei general Gongzi Ang, and failed to take warning from the advice of Zhao Liang. These actions likewise reveal that Lord Shang was a man of little mercy.
+
+余尝读商君《开塞》、《耕战》书,与其人行事相类。
+我曾经读过商君的《开塞》、《耕战》等文章，文章的思想风格和他的行事为人大致相同。
+I have read Lord Shang’s book on opening up barriers and on agriculture and warfare, and I see that it matches the actions of the man himself.
+
+卒受恶名于秦,有以也夫!
+最后在秦国蒙受恶名而被杀，这是有原因的啊!
+That he ended in such ill repute in the state of Qin is not without reason!

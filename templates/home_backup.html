@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>四史三平行语料库 — 首页</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 style="text-align: center;">四史语料库</h1>
+        <p class="subtitle">文言文-白话文-英文 三平行段落级语料库</p>
+      </header>
+
+      <nav class="books-nav">
+        <h2>选择作品</h2>
+        <ul>
+          {% for b in books %}
+          <li><a href="/book/{{ b.id }}/">{{ b.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+
+      <section class="about">
+        <h3>关于本站</h3>
+        <p>本网站旨在展示"四史"系列文本的三平行翻译（文言文、现代汉语、英文），并以章节与书籍为单位组织语料。</p>
+        <h3>团队</h3>
+        <p>工作团队：大创四史语料库团队</p>
+      </section>
+
+      <footer>
+        <small>欢迎使用四史语料库</small>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,37 +1,173 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>四史三平行语料库 — 首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>四史三平行语料库 - 中华古典文献数字化平台</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
     <link rel="stylesheet" href="/static/style.css">
-  </head>
-  <body>
+</head>
+<body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="/">四史三平行语料库</a>
+            </div>
+            
+            <div class="nav-books">
+                {% for book in books %}
+                <div class="nav-book-dropdown">
+                    <button class="nav-book-btn">{{ book.title }}</button>
+                    <div class="nav-dropdown-content">
+                        {% for category in book.categories %}
+                        <a href="/book/{{ book.id }}/{{ category.id }}/">{{ category.title }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+            <div class="nav-search">
+                <form action="/search" method="GET" class="search-form">
+                    <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+                    <select name="scope" class="search-scope">
+                        <option value="all">全部</option>
+                        <option value="title">篇目</option>
+                        <option value="content">内容</option>
+                    </select>
+                    <button type="submit" class="search-btn">搜索</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
-      <header>
-        <h1 style="text-align: center;">四史语料库</h1>
-        <p class="subtitle">文言文-白话文-英文 三平行段落级语料库</p>
-      </header>
+        <!-- 网站介绍 -->
+        <header class="hero-section">
+            <h1>四史三平行语料库</h1>
+            <p class="hero-subtitle">中华古典文献数字化平台</p>
+            <p class="hero-description">
+                提供史记、汉书、后汉书、三国志的文言文、白话文、英文三平行对照阅读，
+                致力于传承和推广中华优秀传统文化。
+            </p>
+            
+            <!-- 统计信息 -->
+            {% if stats %}
+            <div class="stats-section">
+                <div class="stat-item">
+                    <span class="stat-number">{{ stats.total_books }}</span>
+                    <span class="stat-label">部史书</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">{{ stats.total_categories }}</span>
+                    <span class="stat-label">个分类</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">{{ stats.total_chapters }}</span>
+                    <span class="stat-label">个篇章</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">{{ stats.total_paragraphs }}</span>
+                    <span class="stat-label">段语料</span>
+                </div>
+            </div>
+            {% endif %}
+        </header>
 
-      <nav class="books-nav">
-        <h2>选择作品</h2>
-        <ul>
-          {% for b in books %}
-          <li><a href="/book/{{ b.id }}/">{{ b.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </nav>
+        <!-- 书籍列表 -->
+        <main class="books-section">
+            <h2>书籍导览</h2>
+            <div class="books-grid">
+                {% for book in books %}
+                <div class="book-card">
+                    <div class="book-header">
+                        <h3><a href="/book/{{ book.id }}/">{{ book.title }}</a></h3>
+                        <span class="book-stats">{{ book.categories|length }}类</span>
+                    </div>
+                    
+                    <div class="book-categories">
+                        {% for category in book.categories %}
+                        <a href="/book/{{ book.id }}/{{ category.id }}/" class="category-link">
+                            {{ category.title }}
+                            <span class="category-count">({{ category.chapters|length }})</span>
+                        </a>
+                        {% endfor %}
+                    </div>
+                    
+                    <div class="book-actions">
+                        <a href="/book/{{ book.id }}/" class="btn btn-primary">浏览全书</a>
+                        <a href="/search?book={{ book.id }}" class="btn btn-secondary">搜索此书</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </main>
 
-      <section class="about">
-        <h3>关于本站</h3>
-        <p>本网站旨在展示“四史”系列文本的三平行翻译（文言文、现代汉语、英文），并以章节与书籍为单位组织语料。</p>
-        <h3>团队</h3>
-        <p>工作团队：大创四史语料库团队</p>
-      </section>
+        <!-- 功能特色 -->
+        <section class="features-section">
+            <h2>平台特色</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>三平行对照</h3>
+                    <p>文言文、白话文、英文三种语言对照阅读，语义精确对应</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>智能搜索</h3>
+                    <p>支持篇目搜索和全文检索，快速定位所需内容</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>自由选择</h3>
+                    <p>可自由选择显示的语言版本，个性化阅读体验</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>数据可视</h3>
+                    <p>提供语料统计和可视化分析，便于研究使用</p>
+                </div>
+            </div>
+        </section>
 
-      <footer>
-        <small>欢迎使用四史语料库</small>
-      </footer>
+        <footer class="main-footer">
+            <p>&copy; 四史三平行语料库 - 中华古典文献数字化平台</p>
+            <p>致力于传承和推广中华优秀传统文化</p>
+        </footer>
     </div>
-  </body>
+
+    <script>
+        // 导航菜单功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+            
+            dropdowns.forEach(dropdown => {
+                const btn = dropdown.querySelector('.nav-book-btn');
+                const content = dropdown.querySelector('.nav-dropdown-content');
+                
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // 关闭其他下拉菜单
+                    dropdowns.forEach(other => {
+                        if (other !== dropdown) {
+                            other.querySelector('.nav-dropdown-content').style.display = 'none';
+                        }
+                    });
+                    // 切换当前下拉菜单
+                    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+            
+            // 点击其他地方关闭下拉菜单
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.nav-book-dropdown')) {
+                    dropdowns.forEach(dropdown => {
+                        dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+                    });
+                }
+            });
+        });
+    </script>
+</body>
 </html>

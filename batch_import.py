@@ -21,7 +21,7 @@ RAW_DIR = "data/raw"
 BOOK_CATEGORIES = {
     "shiji": {"name": "史记", "categories": {"benji": "本纪", "shijia": "世家", "liezhuan": "列传", "shu": "书", "biao": "表"}},
     "hanshu": {"name": "汉书", "categories": {"benji": "本纪", "biao": "表", "zhi": "志", "liezhuan": "列传"}},
-    "houhanshu": {"name": "后汉书", "categories": {"leibian": "类传"}},
+    "houhanshu": {"name": "后汉书", "categories": {"liezhuan": "列传","diji": "帝纪","shu": "书"}},
     "sanguozhi": {"name": "三国志", "categories": {"wei": "魏书", "shu": "蜀书", "wu": "吴书"}}
 }
 

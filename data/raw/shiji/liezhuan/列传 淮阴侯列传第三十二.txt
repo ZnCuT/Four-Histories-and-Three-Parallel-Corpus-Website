@@ -1,78 +1,782 @@
-淮阴侯韩信者，淮阴人也。始为布衣时，贫无行，不得推择为吏，又不能治生商贾，常从人寄食饮，人多厌之者。常数从其下乡南昌亭长寄食，数月，亭长妻患之，乃晨炊蓐食。食时信往，不为具食。信亦知其意，怒，竟绝去。信钓于城下，诸母漂，有一母见信饥，饭信，竟漂数十日。信喜，谓漂母曰：“吾必有以重报母。”母怒曰：“大丈夫不能自食，吾哀王孙而进食，岂望报乎!”
-淮阴侯韩信，是淮阴人。当初他还是平民的时候，家里贫穷而又没有操行，没能被推选为地方官吏，也不会经商谋生，经常跟着别人蹭吃蹭喝，人们大都讨厌他。他曾多次到下乡南昌亭亭长家里去蹭饭吃，接连几个月，亭长的妻子对他很厌烦，于是就早早地做好早饭在床上把饭吃了。到吃饭的时候韩信来了，就不再给他准备饭。韩信也明白他们的用意，很生气，从此就和他们断绝关系离开了。韩信在城下钓鱼，有几位老大娘在那里漂洗绵絮，有一个大娘看见韩信饿了，就给他饭吃，直到几十天后漂洗的活儿做完。韩信很高兴，对那位大娘说：“我一定有办法重重报答您。”大娘生气地说：“大丈夫不能自己养活自己，我是可怜你才给你饭吃的，难道是希望你报答吗!”
-Han Xin, Marquis of Huaiyin, was a man from Huaiyin. When he was still a commoner, he was poor and lacked virtue, so he was not recommended for any official position, nor could he make a living through trade. He often sponged off others, and most people disliked him. He frequently went to the house of the constable of Nanchang in the township to mooch meals. After several months, the constable’s wife grew tired of him and got up early to cook breakfast for herself in bed, so that when Han Xin arrived, no food was prepared for him. Han Xin understood their intentions, became angry, and severed ties with them. Han Xin once fished at the city outskirts where some elderly women were bleaching cotton. One woman saw he was hungry and fed him for several tens of days until the work was done. Han Xin was grateful and said to her, "I will surely repay you greatly." The woman angrily replied, "A grown man should feed himself. I only gave you food out of pity, not in expectation of repayment."
+淮阴侯韩信者，淮阴人也。
+淮阴侯韩信，是淮阴人。
+Han Xin, Marquis of Huaiyin, was a man from Huaiyin.
 
-淮阴屠中少年有侮信者，曰：“若虽长大，好带刀剑，中情怯耳。”众辱之曰：“信能死，刺我；不能死，出我胯下。”于是信孰视之，俯出胯下，蒲伏。一市人皆笑信，以为怯。及项梁渡淮，信杖剑从之，居麾下，无所知名。项梁败，又属项羽，羽以为郎中。数以策干项羽，羽不用。汉王之入蜀，信亡楚归汉，未得知名，为连敖。坐法当斩，其辈十三人皆已斩，次至信，信乃仰视，适见滕公，曰：“上不欲就天下乎?何为斩壮士?”滕公奇其言，壮其貌，释而不斩。与语，大说之。言于上，上拜以为治粟都尉，上未之奇也。
-淮阴的屠户中有个年轻人侮辱韩信，说：“你虽然长得高大，喜欢带刀佩剑，心中其实很胆怯。”又当众侮辱韩信说：“你韩信不怕死，就用剑来刺我；不敢去死，就从我裆下爬过去。”于是韩信盯了他很久，伏下身子钻到他的裆下，爬了过去。街上的人都嘲笑韩信，认为他胆小。当项梁渡过淮河时，韩信带着剑跟随项梁，做项梁的部下，没什么名气。项梁战败后，他又归属项羽，项羽任他为郎中。他曾多次向项羽献策，项羽都没有采用。汉王入蜀时，韩信逃离楚军归附汉王，但仍未出名，仅任管理粮仓的小官。后来他犯法当处斩，同罪的十三人都已处斩，轮到韩信时，他抬头仰视，正好看见了滕公，说：“汉王不是想统一天下吗？为什么要杀壮士呢？”滕公听了他的话后感到很惊奇，又觉得他相貌非凡，于是把他释放不杀。滕公与他交谈，大为欣赏，并向汉王推荐他。汉王任命他为治粟都尉，但尚未意识到他的非凡才能。
-A young butcher in Huaiyin mocked Han Xin, saying, "Though you are tall and like to wear a sword, you are really a coward at heart." He publicly taunted him further: "If you dare die, stab me; if not, crawl between my legs." Han Xin looked at him carefully, then bent down and crawled under his legs. The whole market laughed at him, thinking him cowardly. When Xiang Liang crossed the Huai River, Han Xin followed him with his sword, but remained obscure under his command. After Xiang Liang was defeated, he joined Xiang Yu, who appointed him as a bodyguard. He offered strategy to Xiang Yu several times, but his advice was ignored. When Liu Bang entered Shu, Han Xin left Chu to join Han, yet still remained unknown, serving only as an officer in charge of grain stores. Later, he was condemned to death; thirteen others of the same charge were beheaded before him. When it was his turn, he looked up and saw Lord Teng, saying, "Does our prince not want to unify the empire? Why execute a brave man?" Lord Teng was impressed by his words and striking appearance, and spared him. He spoke with Han Xin and greatly admired him, recommending him to Liu Bang. Liu Bang appointed him as Commissary General of Grain, but had not yet recognized his extraordinary ability.
+始为布衣时，贫无行，不得推择为吏，又不能治生商贾，常从人寄食饮，人多厌之者。
+当初他还是平民的时候，家里贫穷而又没有操行，没能被推选为地方官吏，也不会经商谋生，经常跟着别人蹭吃蹭喝，人们大都讨厌他。
+When he was still a commoner, he was poor and lacked virtue, so he was not recommended for any official position, nor could he make a living through trade. He often sponged off others, and most people disliked him.
 
-信数与萧何语，何奇之。至南郑，诸将行道亡者数十人，信度何等已数言上，上不我用，即亡。何闻信亡，不及以闻，自追之。人有言上曰：“丞相何亡。”上大怒，如失左右手。居一二日，何来谒上，上且怒且喜，骂何曰：“若亡，何也?”何曰：“臣不敢亡也，臣追亡者。”上曰：“若所追者谁?”何曰：“韩信也。”上复骂曰：“诸将亡者以十数，公无所追；追信，诈也。”何曰：“诸将易得耳，至如信者，国士无双。王必欲长王汉中，无所事信；必欲争天下，非信无所与计事者。顾王策安所决耳。”王曰：“吾亦欲东耳，安能郁郁久居此乎?”
-韩信曾多次与萧何谈话，萧何觉得他与众不同。在去南郑的途中，将领中有数十人半路逃走了，韩信推测萧何等人已经多次向汉王推荐自己，但汉王并不想起用自己，于是他也逃走了。萧何听说韩信逃走后，来不及向汉王报告，就亲自去追赶韩信。有人向汉王说：“丞相萧何逃跑了。”汉王听后大怒，如同失去左右手一样。过了一两天，萧何来拜见汉王，汉王又气又喜，骂萧何说：“你逃走是为何？”萧何说：“臣不敢逃走，我是去追逃跑的人。”汉王问：“你追的人是谁？”萧何答：“是韩信。”汉王又骂道：“诸将逃走十数人，你都不去追，偏追韩信，是在骗人。”萧何说：“那些将领容易招募。至于韩信这样的才干之人，是国家独一无二的人才。大王如果只想长期称王于汉中，不必用韩信；如果决心争夺天下，除了韩信就没有能与您共计大事的人。现在全看大王如何决定。”汉王说：“我也想向东发展，怎能长期郁郁不前呢？”
-Han Xin had several talks with Xiao He, who was much impressed by him. On the way to Nanzheng, several dozen officers deserted, and Han Xin, reflecting that Xiao He and others had recommended him to Liu Bang several times to no avail, also deserted. As soon as Xiao He knew this, he set off in pursuit without reporting to Liu Bang. Someone told Liu Bang, "Prime Minister Xiao He has deserted." Liu Bang was furious, as if he had lost both arms. A day or two later, Xiao He came to pay his respects. Liu Bang, torn between anger and joy, scolded him, "Why did you desert?" Xiao He replied, "How could I dare to desert, sir? I was pursuing a deserter." Liu Bang asked, "Whom did you pursue?" Xiao He answered, "Han Xin." Liu Bang scolded again, "Dozens of officers have deserted, yet you pursued only him. You must be lying." Xiao He said, "Other officers are easy to replace, but someone like Han Xin is a national treasure. If you only aim to rule Hanzhong, you don't need him; if you intend to contend for the empire, there is no one else to plan with you but Han Xin. It all depends on your decision." Liu Bang said, "I also intend to march east. How can I remain cooped up here indefinitely?"
+常数从其下乡南昌亭长寄食，数月，亭长妻患之，乃晨炊蓐食。
+他曾多次到下乡南昌亭亭长家里去蹭饭吃，接连几个月，亭长的妻子对他很厌烦，于是就早早地做好早饭在床上把饭吃了。
+He frequently went to the house of the constable of Nanchang in the township to mooch meals. After several months, the constable’s wife grew tired of him and got up early to cook breakfast for herself in bed.
 
-留；不能用，信终亡耳。”王曰：“吾为公以为将。”何曰：“虽为将，信必不留。”王曰：“以为大将。”何曰：“幸甚!”于是王欲召信拜之。何曰：“王素慢无礼，今拜大将，如呼小儿耳，此乃信所以去也。王必欲拜之，择良日，斋戒，设坛场，具礼，乃可耳。”王许之。诸将皆喜，人人各自以为得大将。至拜大将，乃韩信也，一军皆惊。信拜礼毕，上坐。王曰：“丞相数言将军，将军何以教寡人计策?”信谢，因问王曰：“今东乡争权天下，岂非项王邪?”汉王曰：“然。”曰：“大王自料勇悍仁强孰与项王?”汉王默然良久，曰：“不如也。”
-萧何说：“如果大王不启用韩信，他终究会再次逃走。”汉王说：“我就依你的意见任命他为将领。”萧何说：“即便任命为将军，韩信也一定不会留下。”汉王说：“那就任命他为大将。”萧何说：“太好了！”于是汉王准备召见韩信任命他为大将军。萧何提醒说：“大王平日轻慢无礼，现在直接任命大将军，就像在呼唤小孩子一样，这正是韩信曾要离去的原因。如果大王真的要任命他，需选个良辰，沐浴斋戒，筑坛设场，备齐礼仪，这才可以。”汉王答应了。众将领皆很高兴，各以为自己会得到大将军的职位。等到任命大将军时，却是韩信，全军皆惊讶。韩信完成拜礼后坐下。汉王说：“丞相多次推荐你，将军将如何教我用计策？”韩信谦辞后，问汉王：“现在向东争霸天下，敌手不就是项王吗？”汉王说：“是的。”韩信问：“大王自估在勇猛、仁义、兵力上比项王如何？”汉王沉默良久，说：“不如他。”
-"If you do not employ him, he will ultimately desert again," Xiao He said. Liu Bang replied, "Then I will make him a general." Xiao He said, "Even as a general, he will not stay." Liu Bang said, "Then make him the chief marshal." Xiao He exclaimed, "Excellent!" Liu Bang was about to summon Han Xin to confer this appointment. Xiao He advised, "Your Majesty has always been offhand and lacking in courtesy. Appointing him directly as chief marshal is like calling a child—that is why Han Xin would leave. If you truly intend to appoint him, select an auspicious day, purify yourself by fasting, set up an altar, and prepare all rituals. Only then can it be done." Liu Bang agreed. The generals were pleased, each imagining he would receive the title. When the title was conferred, it was Han Xin, and the entire army was astonished. After the ceremony, Han Xin sat down. Liu Bang said, "The prime minister has spoken highly of you many times. How will you instruct me in strategy?" Han Xin thanked him and then asked, "Now you contend in the east for the empire, is it not with Xiang Yu?" Liu Bang replied, "Yes." Han Xin asked, "How do you estimate your own courage, strength, and the power of your forces compared to Xiang Yu?" Liu Bang was silent for a long while, then said, "I am not his equal."
+食时信往，不为具食。
+到吃饭的时候韩信来了，就不再给他准备饭。
+so that when Han Xin arrived, no food was prepared for him.
 
-信再拜贺曰：“惟信亦为大王不如也。然臣尝事之， 请言项王之为人也。项王喑噁叱咤，千人皆废，然不能任属贤将，此特匹夫之勇耳。项王见人恭敬慈爱，言语呕呕，人有疾病，涕泣分食饮，至使人有功当封爵者，印刓弊，忍不能予，此所谓妇人之仁也。项王虽霸天下而臣诸侯，不居关中而都彭城。有背义帝之约，而以亲爱王，诸侯不平。诸侯之见项王迁逐义帝置江南，亦皆归逐其主而自王善地。项王所过无不残灭者，天下多怨，百姓不亲附，特劫于威强耳。名虽为霸，实失天下心。故曰其强易弱。今大王诚能反其道，任天下武勇，何所不诛!以天下城邑封功臣，何所不服!以义兵从思东归之士，何所不散!且三秦王为秦将，将秦子弟数岁矣，所杀亡不可胜计，又欺其众降诸侯，至新安，项王诈坑秦降卒二十余万，唯独邯、欣、翳得脱，秦父兄怨此三人，痛入骨髓。今楚强以威王此三人，秦民莫爱也。大王之入武关，秋豪无所害，除秦苟法，与秦民约，法三章耳，秦民无不欲得大王王秦者。于诸侯之约，大王当王关中，关中民咸知之。大王失职入汉中，秦民无不恨者。今大王举而东，三秦可传檄而定也。”
-韩信再三拜谢说：“就是我也认为大王在这些方面不如项王。然而我曾事奉过项王，请让我谈谈他的为人。项王发怒呼喊时，千百人都吓得腿软，但他却不能任用有才能的将领，这不过是匹夫之勇。项王待人恭敬慈爱，言语温和；有人生病，他流着泪把自己的食物分给别人吃。但当有人有功应封爵时，他把印信玩弄得圆滑却舍不得授予别人，这就是所谓‘妇人之仁’。项王虽然称霸天下，诸侯称臣，但不守关中，而以彭城为都。他违背了义帝的约定，把亲信封为王，诸侯因此不平。当诸侯看到项王驱逐义帝到江南，也纷纷效法，驱逐自己的君主，占据好地方自立为王。项王军队经过之处无不被残害，天下怨恨多，百姓不愿归附，只是迫于威势而已。名义虽为霸王，实际上失去了民心，所以说强者易弱。现在大王如果能够反其道而行，任用天下勇敢善战的人，什么敌人不能被诛灭！把天下城邑封给有功之臣，还有谁会不服？以正义之师随从想东归的将领，什么敌人不能击散！况且三秦之王都是秦的将领，多年征战秦地，所杀和逃跑的人不可胜数，还欺骗他们投降诸侯。在新安，项王诈坑秦降卒二十余万，唯独章邯、司马欣、董翳得以脱身，秦地父老对此三人怨恨入骨。如今楚王凭威势让这三人称王，秦地百姓没有人喜爱他们。大王您进入武关时，毫无伤害，废除了苛法，与秦民立约，法令仅三条，秦民无不希望大王在秦地为王。按照诸侯约定，大王应在关中为王，关中百姓也都知道这件事。大王失掉封爵进入汉中，秦民无人不恨。现在大王率兵东进，三秦之地只要发一道檄文就可安定。”
-Han Xin bowed repeatedly and said, "I too believe, sir, that in these aspects you are not equal to Xiang Yu. But having served him, let me describe his character. When Xiang Yu bellows in anger, a thousand men are rooted to the ground, yet he cannot appoint worthy generals; this is mere individual courage. Xiang Yu treats people with courtesy and kindness, speaks gently, and if someone falls ill, he weeps and shares his food with them. But when a man has achieved merit deserving a fief, he toys with the seal until its edges are worn, unwilling to grant it—this is what is called womanly kindness. Although Xiang Yu is overlord of all states, and the princes acknowledge him, he does not reside within the Pass but makes Pengcheng his capital. He broke his oath to the Righteous Emperor and installed his favourites as kings, causing discontent among the other princes. When they saw Xiang Yu drive the Righteous Emperor to the south, they in turn drove away their own rulers to claim the best lands for themselves. Wherever Xiang Yu’s armies go, there is devastation; most of the world detests him, and the common people follow only from fear, not loyalty. Though he bears the title of overlord, he has lost the hearts of the people. Hence, his strength is easily undermined. Now, if Your Majesty follows a different path, employing the bravest and most capable warriors from every state, what enemy cannot be destroyed? If you reward those who have served you with cities, who would refuse obedience? By leading an army of righteous men eager to return east, what enemy could withstand you? Moreover, the kings of the Three Qin were all Qin generals, commanding the sons of Qin for several years. Countless men have been killed or have fled, and they were deceived into surrendering to the lords. At Xin’an, Xiang Yu massacred over two hundred thousand surrendered Qin soldiers, sparing only Zhang Han, Sima Xin, and Dong Yi. The elders of Qin hate these three men to the marrow. Now Chu’s strength relies on these three men, whom the people of Qin do not love. When you entered Wu Pass, you harmed nothing, repealed the harsh Qin laws, and established just three rules binding the people; all of them wished for you to be ruler of Qin. According to the feudal lords’ agreement, Your Majesty should rule within the Passes, and the people there know it. When you were deprived of your position and went to Hanzhong, the people of Qin all regretted it. Now if Your Majesty marches east, the Three Qin can be pacified merely by issuing a proclamation."
+信亦知其意，怒，竟绝去。
+韩信也明白他们的用意，很生气，从此就和他们断绝关系离开了。
+Han Xin understood their intentions, became angry, and severed ties with them.
 
-合齐、赵共击楚。四月，至彭城，汉兵败散而还。信复收兵与汉王会荥阳，复击破楚京、索之间。以故楚兵卒不能西。汉之败却彭城，塞王欣、翟王翳亡汉降楚，齐、赵亦反汉与楚和。六月，魏王豹谒归视亲疾，至国，即绝河关反汉，与楚约和。汉王使郦生说豹，不下。其八月，以信为左丞相，击魏。魏王盛兵蒲坂，塞临晋，信乃益为疑兵，陈船欲度临晋，而伏兵从夏阳以木罂瓴渡军，袭安邑。魏王豹惊，引兵迎信，信遂虏豹，定魏为河东郡。汉王遣张耳与信俱，引兵东，北击赵、代。后九月，破代兵，禽夏说阏与。信之下魏破代，汉辄使人收其精兵，诣荥阳以距楚。
-前年，魏王魏豹、河南王申阳投降汉王，韩王和殷王也归汉。于是联合齐、赵，共同攻击楚军。四月，汉军到达彭城，汉军被击溃而退。韩信将溃散的士兵重新整编，与汉王在荥阳会合，又在京、索之间打败楚军，因此楚兵无法西进。汉军在彭城败退时，塞王司马欣、翟王董翳叛汉投降楚国，齐、赵也背叛汉与楚联合。六月，魏王魏豹请假回国探望病父，到国后立即封锁黄河关口反汉，并与楚国议和。汉王派郦生劝说魏豹，魏豹拒不接受。八月，汉王任命韩信为左丞相，攻打魏国。魏王魏豹集结重兵把守蒲坂，封锁临晋关。韩信设疑兵，假装要从临晋渡河，同时伏兵从夏阳以木制筐渡河偷袭安邑。魏王魏豹大惊，出兵迎击韩信，韩信最终俘获魏豹，将魏地置为河东郡。汉王派张耳与韩信一同出兵向东，北上攻打赵、代。九月，韩信击败代军，俘获夏说、阏与。韩信征服魏、代之后，汉王即调回韩信的精锐部队到荥阳抵御楚军。
-The kings of Han and Yin surrendered to Liu Bang, and Han Xin allied with Qi and Zhao against Chu. In the fourth month, the Han army reached Pengcheng, but was routed and withdrew. Han Xin regrouped the scattered soldiers and joined Liu Bang at Xingyang, then defeated Xiang Yu’s forces between Jing and Suo, preventing the Chu troops from advancing west. During the Han defeat at Pengcheng, the kings of Sai (Sima Xin) and Di (Dong Yi) defected to Chu, and Qi and Zhao also defected to Chu. In the sixth month, Bao, king of Wei, asked leave to return home to visit his ill parent. Upon reaching his state, he sealed off the Yellow River crossing and rebelled against Han, making terms with Chu. Liu Bang sent Li Sheng to persuade him, but he refused. In the eighth month, Han Xin was appointed Left Prime Minister and attacked Wei. Wei Bao concentrated his troops at Puban and blocked Linjin. Han Xin used a ruse: he displayed boats as if to cross at Linjin, but secretly sent troops from Xiayang using wooden rafts to cross the river and launch a surprise attack on Anyi. Wei Bao was alarmed and led his troops to confront Han Xin, who captured him and made Wei into Hedong Commandery. Liu Bang sent Zhang Er and Han Xin eastwards to attack Zhao and Dai. In the intercalary ninth month, Han Xin defeated the army of Dai and captured Xia Yue and Yan Yu. After subduing Wei and Dai, Liu Bang immediately recalled Han Xin’s elite troops to Xingyang to resist the Chu armies.
+信钓于城下，诸母漂，有一母见信饥，饭信，竟漂数十日。
+韩信在城下钓鱼，有几位老大娘在那里漂洗绵絮，有一个大娘看见韩信饿了，就给他饭吃，直到几十天后漂洗的活儿做完。
+Han Xin once fished at the city outskirts where some elderly women were bleaching cotton. One woman saw he was hungry and fed him for several tens of days until the work was done.
 
-信与张耳以兵数万，欲东下井陉击赵。赵王、成安君陈余闻汉且袭之也，聚兵井陉口，号称二十万。广武君李左车说成安君曰：“闻汉将韩信涉西河，虏魏王，禽夏说阏与，今乃辅以张耳，议欲下赵，此乘胜而去国远斗，其锋不可当。臣闻千里馈粮，士有饥色，樵苏后爨，师不宿饱。今井陉之道，车不得方轨，骑不得成列，行数百里，其势粮食必在其后。愿足下假臣奇兵三万人，从间道绝其辎重；足下深沟高垒，坚营勿与战。彼前不得斗，退不得还，吾奇兵绝其后，使野无所掠，不至十日，而两将之头可致于戏下。”
-韩信与张耳率领几万兵力，准备从井陉东下攻击赵国。赵王和成安君陈余听说汉军将要袭击，就在井陉口集结号称二十万大军。广武君李左车劝成安君说：“听说汉将韩信渡西河，俘获魏王，又活捉夏说、阏与，现在又以张耳为帮手，打算攻打赵国。这是乘胜远征，其锐不可当。我听说从千里之外运输粮食，士兵会饥饿，先要砍柴烧火做饭，部队都吃不饱。现在井陉道路狭窄，车不能并行，骑兵不能列队，行军几百里，粮食必在后方滞留。希望您暂时借给我三万奇兵，从小路截断他们的辎重；您在阵地上深挖壕沟、筑高营垒、坚守不出战。他们前不能攻，后不能退，我奇兵截断后路，使敌无法掠取物资，不到十日，两将的首级就可以送到您的帐下。”
-Han Xin and Zhang Er, commanding tens of thousands of troops, planned to march east through the Jingxing Defile to attack Zhao. Upon hearing this, the king of Zhao and Chen Yu, lord of Cheng’an, assembled an army of reportedly two hundred thousand at Jingxing. Lord Li Zuoche of Guangwu advised Chen Yu: “I hear that General Han Xin of Han crossed the western river, captured the king of Wei, and took Xia Yue and Yan Yu alive. Now, with Zhang Er as his assistant, he plans to attack Zhao. This force, moving from afar in victory, is unstoppable. I also know that when supplies must be transported over a thousand li, soldiers grow hungry; after chopping firewood they cook meals, yet still are unsatisfied. The roads at Jingxing are narrow: chariots cannot drive side by side, and cavalry cannot form ranks. Marching several hundred li, supplies will inevitably lag behind. I propose that Your Lordship lend me thirty thousand elite troops via side paths to cut off their baggage. Meanwhile, fortify your position with deep trenches and high ramparts, and do not engage them in battle. When they can neither advance nor retreat, my elite troops will cut off their rear so that they can take nothing from the countryside. In less than ten days, the heads of both generals can be sent to your camp.”
+信喜，谓漂母曰：“吾必有以重报母。”
+韩信很高兴，对那位大娘说：“我一定有办法重重报答您。”
+Han Xin was grateful and said to her, "I will surely repay you greatly."
 
-愿君留意臣之计。否，必为二子所禽矣!”成安君，儒者也，常称义兵不用诈谋奇计，曰：“吾闻兵法十则围之，倍则战。今韩信兵号数万，其实不过数千。能千里而袭我，亦已罢极，今如此避而不击，后有大者，何以加之!则诸侯谓吾怯，而轻来伐我。”不听广武君策，广武君策不用。韩信使人间视，知其不用，还报，则大喜，乃敢引兵遂下。未至井陉口三十里，止舍。夜半传发，选轻骑二千人，人持一赤帜，从间道草山而望赵军，诫曰：“赵见我走，必空壁逐我，若疾入赵壁，拔赵帜立汉赤帜。”令其裨将传飧，曰：“今日破赵会食。”
-“希望君主采纳我的计策，否则我们必将被那两人活捉！”成安君是个迂腐的儒生，经常说正义之兵不应用诈谋奇计，他回答说：“我听兵法讲，如果兵力是敌人的十倍，就应围攻；是敌人的两倍，就应正面交战。现在韩信的军队号称数万，其实不过几千。能从千里之外袭击我们，已经精疲力竭。现在都避而不战，将来如果遇到更强大的敌人，又该如何应付？诸侯们会认为我们胆怯，从而轻易来攻我们。”成安君不采纳广武君的计策。韩信派人暗中侦察，得知广武君的计策未被采用，密探回报，他大喜，遂敢率兵前进。离井陉口三十里时停下休息。半夜下令出发，挑选二千轻骑，每人持红旗，从小路隐蔽在草山上观察赵军，并告诫士兵：“赵军见我们逃跑，必会空营追击，你们应迅速冲入赵军营地，拔掉赵军旗帜，立起汉军红旗。”同时命副将给士兵传食，说：“今日打败赵军后大家一同会餐。”
-“Your Lordship must heed my plan, otherwise we shall be captured by those two men!” Cheng’an Jun, a conservative Confucian scholar, often said that righteous soldiers should not employ stratagems or deceit. He replied, “I have read in military texts that if your force is ten times the enemy, you should surround him; if it is twice, you should engage in battle. Now although Han Xin’s troops are said to number tens of thousands, their effective strength is only a few thousand. Having marched a thousand li to strike us, they must be exhausted. If we avoid battle now, what will we do when a greater force comes? Other states will think us cowardly and attack us easily.” Cheng’an Jun rejected the plan proposed by Guangwu Jun. Han Xin sent scouts and learned that Guangwu Jun’s plan was not adopted. Overjoyed, he dared to advance his troops. Thirty li from the mouth of the defile, he stopped to camp. At midnight, he ordered the army to march, selecting two thousand light cavalry, each carrying a red banner, to hide in the hills and observe Zhao’s army. He instructed them, “When Zhao sees us retreat, they will abandon their fortifications to pursue us. You must charge into their camp, tear down their banners, and raise Han’s red banners.” He also ordered his lieutenants to distribute rations, saying, “Today, after defeating Zhao, we shall feast together.”
+母怒曰：“大丈夫不能自食，吾哀王孙而进食，岂望报乎!”
+大娘生气地说：“大丈夫不能自己养活自己，我是可怜你才给你饭吃的，难道是希望你报答吗!”
+The woman angrily replied, "A grown man should feed himself. I only gave you food out of pity, not in expectation of repayment."
 
-诸将皆莫信，详应曰：“诺。”谓军吏曰：“赵已先据便地为壁，且彼未见吾大将旗鼓，未肯击前行，恐吾至阻险而还。”信乃使万人先行，出，背水陈。赵军望见而大笑。平旦，信建大将之旗鼓，鼓行出井陉口，赵开壁击之，大战良久。于是信、张耳详弃鼓旗，走水上军。水上军开人之，复疾战。越果空壁争汉鼓旗，逐韩信、张耳。韩信、张耳已入水上军，军皆殊死战，不可败。信所出奇兵二千骑，共候赵空壁逐利，则驰入赵壁，皆拔赵旗，立汉赤帜二千。赵军已不胜，不能得信等，欲还归壁，壁皆汉赤帜，而大惊以为汉皆已得赵王将矣。兵遂乱，遁走，赵将虽斩之，不能禁也。于是汉兵夹击，大破虏赵军，斩成安君抵水上，禽赵王歇。信乃令军中毋杀广武君，有能生得者购千金。
-各将领都不相信，只假装答应说：“遵命。”韩信对军官说：“赵军已经占据了有利地势扎营，而且未见我军大将旗鼓，不会出击，怕我们到达险隘会退回。”韩信派出一万人先行，出井陉口，背水布阵。赵军见状大笑。天亮时，韩信树起大将旗帜，击鼓出井陉口，赵军出营迎击，大战良久。韩信、张耳假装弃鼓旗，退回河边军营。河边军队开营接纳，又重新激战。赵军果然空营追夺汉军旗帜，追击韩信、张耳。韩信、张耳已入河边军营，全军拼死作战，不可败。韩信派出的二千奇兵在赵军倾巢而出抢夺战利品时，冲入赵军营地，拔掉旗帜，竖起二千面汉军红旗。赵军无法战胜，也抓不到韩信等，欲回营，却发现营中尽是汉旗，大惊以为汉军已俘赵王及将领，队伍大乱逃跑。赵将虽斩杀一部分，也无法阻止。汉军夹击，大破赵军，斩成安君，俘赵王歇。韩信命令军中不要杀广武君，有能生擒者赏千金。
-The officers pretended to agree, saying, “Very well.” Han Xin told his aides, “The Zhao troops have fortified advantageous positions and have not seen our command flags, so they will not advance, fearing that we might withdraw in the narrow passes.” Han Xin sent ten thousand men to move first and deploy behind the river. The Zhao army laughed upon seeing them. At dawn, Han Xin raised the command flags, sounded the drums, and led the troops out of Jingxing. Zhao troops left their fortifications to attack, and a fierce battle ensued. Han Xin and Zhang Er feigned abandoning their flags and drums, retreating to the river camps. The river troops opened the camp to receive them and reengaged in battle. Zhao troops indeed abandoned their fortifications to seize Han flags and pursue Han Xin and Zhang Er. The two generals had already returned to the river troops, who fought desperately and could not be defeated. Meanwhile, Han Xin’s two thousand elite cavalry, waiting for Zhao to vacate the fortifications, galloped into the Zhao camp, tore down the banners, and raised two thousand Han red flags. The Zhao troops, unable to defeat Han forces or capture Han Xin, attempted to return to their fortifications, only to find them covered with Han flags. Terrified, believing that Han had captured their king and commanders, they fled in disorder. Zhao generals attempted to strike down some, but could not halt the rout. Han troops attacked from both sides, completely defeating Zhao, beheading Cheng’an Jun, and capturing Zhao King Xie. Han Xin ordered that Guangwu Jun not be killed, promising a reward of one thousand gold pieces for anyone who could bring him in alive.
+淮阴屠中少年有侮信者，曰：“若虽长大，好带刀剑，中情怯耳。”
+淮阴的屠户中有个年轻人侮辱韩信，说：“你虽然长得高大，喜欢带刀佩剑，心中其实很胆怯。”
+A young butcher in Huaiyin mocked Han Xin, saying, "Though you are tall and like to wear a sword, you are really a coward at heart."
 
-于是有缚广武君而致麾下者，信乃解其缚，东乡坐，西乡对，师事之。诸将效首虏，休毕贺，因问信曰：“兵法右倍山陵，前左水泽，今者将军令臣等反背水陈，曰破赵会食，臣等不服。然竟以胜，此何术也?”信曰：“此在兵法，顾诸君不察耳。兵法不曰‘陷之死地而后生，置之亡地而后存’?且信非得素拊循士大夫也，此所谓‘驱市人而战之’，其势非置之死地，使人人自为战。今予之生地，皆走，宁尚可得而用之乎!”诸将皆服曰：
-有人将广武君捆绑送到韩信帐下，韩信解开绳索，请他面向东方入座，自己面向西方对坐，以尊师礼待之。诸将向韩信呈上俘虏和首级表示祝贺后，趁机问韩信：“兵法上说右侧靠山，前方有水，而您却让我们背水列阵，并说打败赵军后会餐，我们都不信。可是最终却取得了胜利，这是什么战术？” 韩信说：“这在兵法之中，只是你们没看明白。兵法不是说‘陷之死地而后生，置之亡地而后存’吗？况且我韩信没有平时熟练的士兵和将领，这就像‘赶街上的百姓去作战’，必须置之死地，让每个人都拼命自保。如果给他们生路，他们就会逃跑，还能用来作战吗！” 诸将听后都佩服。
-Someone brought the lord of Guangwu bound to Han Xin’s camp. Han Xin untied him, seated him facing east while he faced west, treating him with the respect due a teacher. After the officers presented the captives and heads of the slain to congratulate Han Xin, they asked, “The Art of War says the right side should have hills and the front a river, yet you had us form ranks with our backs to the river and promised a feast after defeating Zhao. We did not believe this—but we won. What strategy was this?” Han Xin replied, “This is indeed in the Art of War, but you did not pay attention. Does it not say, ‘Place them in a death trap and they will come alive; send them to destruction and they will survive’? Besides, I had no trained soldiers or officers—this is what is called ‘driving street people to fight.’ One must put them in a death trap so that each fights for his life. Had I left them a way to escape, they would have fled, and how could I have used them in battle?” The officers were all greatly impressed.
+众辱之曰：“信能死，刺我；不能死，出我胯下。”
+又当众侮辱韩信说：“你韩信不怕死，就用剑来刺我；不敢去死，就从我裆下爬过去。”
+He publicly taunted him further: "If you dare die, stab me; if not, crawl between my legs."
 
-“善。非臣所及也。”于是信问广武君曰：“仆欲北攻燕，东伐齐，何若而有功?”广武君辞谢曰：“臣闻败军之将不可以言勇，亡国之大夫不可以图存，今臣败亡之虏，何足以权大事乎?”信曰：“仆闻之，百里奚居虞而虞亡，在秦而秦霸，非愚于虞而智于秦也，用与不用，听与不听也。诚令成安君听足下计，若信者亦已为禽矣。以不用足下，故信得侍耳。”因固问曰：“仆委心归计，愿足下勿辞。”广武君曰：“臣闻智者千虑，必有一失；愚者千虑，必有一得。故曰狂夫之言，圣人择焉。顾恐臣计未必足用，愿效愚忠。夫成安君有百战百胜之计，一旦而失之，军败部下，身死低上。今将军涉西河，虏魏王，禽夏说阏与，一举而下井陉，不终朝破赵二十万众，诛成安君，名闻海内，威震天下，农夫莫不辍耕释耒，榆衣甘食，倾耳以待命者。若此，将军之所长也。然而众劳卒罢，其实难用。今将军欲举倦弊之兵，顿之燕坚城之下，欲战恐久力不能拔，情见势屈，旷日粮竭，而弱燕不服，齐必距境以自强也。燕、齐相持而不下，则刘、项之权未有所分也。若此者，将军所短也。臣愚，窃以为亦过矣。故善用兵者不以短击长，而以长击短。”韩信曰：“然则何由?”广武君对曰：“方今为将军计，莫如案甲休兵，镇赵抚其孤，百里之内，牛酒日至，以飨士大夫醉兵。
-韩信，淮阴人，早年家贫无行，未被推选为官吏，也不会经商谋生，常寄食于人，受人厌弃。曾受漂母接济，承诺重报；也曾受屠中少年侮辱，忍辱负重，钻胯而过。后随项梁、项羽，屡献计策未被采纳，转投汉王刘邦，因滕公赏识得以免死，逐步崭露头角。萧何月下追韩信，力荐其为大将，韩信以卓越的军事才能，屡破魏、赵、齐、楚，威震天下，功勋卓著。然而，韩信功高震主，屡遭猜忌，虽被封为齐王、楚王，最终仍被吕后设计诛杀于长乐宫钟室，三族被灭。韩信临死时悔叹未采纳蒯通之计，感慨“狡兔死，良狗烹；高鸟尽，良弓藏；敌国破，谋臣亡”。太史公评价韩信志向非凡，若能谦让不伐功，或可比肩周公、召公，享后世祭祀，然其谋反宗族被灭，亦属咎由自取。
-“Quite right! This is beyond us,” agreed the officers. Han Xin then asked the lord of Guangwu, “I plan to attack Yan in the north and Qi in the east. How can I succeed?” The lord of Guangwu politely declined, “I have heard that a general of a defeated army cannot speak of courage, nor can the minister of a fallen state discuss survival. I am but a defeated captive; how could I weigh in on great affairs?” Han Xin replied, “I have heard that Bali Xi was in Yu when Yu fell, yet he thrived in Qin. This was not because he was foolish in Yu and wise in Qin, but because his advice was either heeded or ignored. Had Cheng’an Jun followed your plan, I would have been captured. It is because he did not, that I am honored to serve here.” Han Xin pressed further, “I shall fully follow your advice. Please, do not refuse.” The lord of Guangwu said, “The wisest man, in a thousand plans, will make at least one mistake; the foolish may stumble upon truth once. Therefore, a sage may select even the words of a madman. I fear my counsel may not be useful, yet I offer my humble loyalty. Cheng’an Jun had strategies that seemed invincible, but one misstep leads to defeat; the army falls, and he dies at the River Chi. Now you, sir, have crossed the Yellow River, captured the king of Wei, defeated Xia Yue at Yuyu, taken Jingxing in one stroke, routed Zhao’s two hundred thousand in a day, executed Cheng’an Jun, and your fame spreads far and wide. Even farmers lay down their tools and await your command. This is your strength. Yet your troops are exhausted; if you lead them against the strongholds of Yan, they may fail after prolonged siege, supplies will run out, and the weak Yan will not surrender while Qi strengthens its defenses. With Yan and Qi locked in stalemate, the contest between Liu Bang and Xiang Yu remains unresolved. This is your weakness. A good general does not attack strength with weakness, but attacks weakness with strength.” Han Xin asked, “Then what should I do?” The lord of Guangwu replied, “In your case, sir, it is best to halt, rest your troops, stabilize Zhao, care for the orphans and widows, and within a hundred li, supply cattle and wine daily to entertain the scholars and soldiers.”
+于是信孰视之，俯出胯下，蒲伏。
+于是韩信盯了他很久，伏下身子钻到他的裆下，爬了过去。
+Han Xin looked at him carefully, then bent down and crawled under his legs.
 
-北首燕路，而后遣辩士奉咫尺之书，暴其所长于燕，燕必不敢不听从。燕已从，使喧言者东告齐，齐必从风而服，虽有智者，亦不知为齐计矣。如是则天下事皆可图也。兵固有先声而后实者，此之谓也。”韩信曰：“善。”从其策，发使使燕，燕从风而靡。乃遣使报汉，因请立张耳为赵王，以镇抚其国。汉王许之，乃立张耳为赵王。楚数使奇兵渡河击赵，赵王耳、韩信往来救赵，因行定赵城邑，发兵诣汉。楚方急围汉王于荥阳，汉王南出，之宛、叶间，得黥布，走入成皋，楚又复急围之。六月，汉王出成皋，东渡河，独与滕公俱，从张耳军修武。至，宿传舍。晨自称汉使，驰入赵壁。
-在百里范围内，每天用牛肉美酒犒劳士兵。然后向北派兵进攻燕国，再派辩士送信给燕国，将将军的长处告知燕国人，燕国必定不敢违抗。燕国降服后，再派使者向东告知齐国，齐国也会闻风而服，即使有智者，也无法为齐国出计策。如此天下大事皆可掌控。这就是兵法所说的“先虚而后实”。韩信说：“好。”他按照广武君的计策行事，派使者出使燕国，燕国闻风而降。随后派人向汉王报告，请求立张耳为赵王，以安抚赵国。汉王同意，于是立张耳为赵王。楚军多次派奇兵渡河攻打赵国，赵王张耳和韩信来回救援赵国，顺便平定路过的赵地城邑，并派兵支援汉王。楚军紧急包围汉王于荥阳，汉王从南面逃到宛、叶之间，得到黥布归顺，进入成皋，楚军又紧急包围。六月，汉王从成皋东渡黄河，仅与滕公同行，投奔驻扎在修武的张耳军。到达后住在驿站，次日早晨自称汉王的使者，骑马奔入赵军营地。
-Treat your officers and men with beef and wine brought in daily from a hundred li around, and make ready to advance north towards Yan. Then dispatch an orator with a letter presenting your strengths, and Yan will not dare to resist. Once Yan submits, send a messenger east to Qi, which will also submit, for even the wisest could not devise a different plan. In this way, you can control all important matters. This is the principle of “making a show before striking” in warfare. Han Xin said, “Good.” Following Guangwu Jun’s advice, he sent envoys to Yan, and Yan submitted readily. Then he sent a report to Liu Bang requesting that Zhang Er be made king of Zhao to pacify the country. Liu Bang agreed, and Zhang Er was installed as king of Zhao. Xiang Yu launched multiple surprise attacks across the Yellow River against Zhao. Zhang Er and Han Xin moved back and forth to aid Zhao, pacifying the cities they passed, and dispatched troops to support Liu Bang. Xiang Yu besieged Liu Bang at Xingyang; Liu Bang escaped south to the district between Wan and Ye, gaining Ying Bu’s support, and entered Chenggao. Chu forces quickly re-surrounded him. In the sixth month, Liu Bang left Chenggao, crossed the Yellow River eastward with only Lord Teng, and joined Zhang Er’s army stationed at Xiuwu. Upon arrival, he lodged at a hostelry, and the next morning announced himself as an envoy of the king of Han, galloping into Zhao’s encampment.
+一市人皆笑信，以为怯。
+街上的人都嘲笑韩信，认为他胆小。
+The whole market laughed at him, thinking him cowardly.
 
-张耳、韩信未起，即其卧内上夺其印符，以麾召诸将，易置之。信、耳起，乃知汉王来，大惊。汉王夺两人军，即令张耳备守赵地，拜韩信为相国，收赵兵未发者击齐。信引兵东，未渡平原，闻汉王使郦食其已说下齐。韩信欲止。范阳辩士蒯通说信曰：“将军受诏击齐，而汉独发间使下齐，宁有诏止将军乎?何以得毋行也!且郦生一士，伏轼掉三寸之舌，下齐七十余城，将军将数万众，岁余乃下赵五十余城，为将数岁，反不如一竖儒之功乎?”于是信然之，从其计，遂渡河。齐已听郦生，即留纵酒，罢备汉守御。信因袭齐历下军，遂至临淄。齐王田广以郦生卖己，乃亨之，而走高密，使使之楚请救。
-张耳、韩信还没起床时，汉王就从卧室里夺取他们的印符，用军旗召集诸将并调整职务。韩信、张耳起床后，才得知汉王已经到来，大为吃惊。汉王接管了两人统率的军队，立即命令张耳留守赵地，任命韩信为相国，并让他指挥赵国尚未出征的兵力去进攻齐国。韩信率兵东进，还未渡过平原黄河时，听说汉王派郦食其去说服齐王降服齐国。韩信打算停止前进。范阳辩士蒯通劝韩信说：“将军奉命攻打齐国，而汉王暗中派人让齐国投降，难道有命令让将军停止吗？凭什么要停止前进呢？况且郦生只是一个辩士，趴在车上摇动三寸长的舌头，就让齐国七十余城降服。将军率数万大军，一年多才下赵五十余城，数年作将，难道比一个小小书生的功劳还少吗？” 韩信认为有理，采纳了建议，遂渡河。齐王已听从郦生，放纵饮宴，撤去防御，韩信乘机袭击驻扎在历下的齐军，进至临淄。齐王田广以为郦生出卖了自己，于是犒赏郦生，并逃往高密，派人向楚求救。
-Before Zhang Er and Han Xin had risen, Liu Bang seized their seals from their chambers, summoned the officers with the banners, and reassigned positions. When Han Xin and Zhang Er awoke, they were astonished to see Liu Bang present. Liu Bang took command of their armies, immediately ordered Zhang Er to defend Zhao, appointed Han Xin as Chancellor, and commanded him to lead the unengaged Zhao troops to attack Qi. Han Xin advanced east, but before crossing the Pingyuan plain, he heard that Liu Bang had secretly sent Li Yiji to persuade Qi to surrender. Han Xin considered halting. Kuai Tong, an orator from Fanyang, advised him, “You were ordered to attack Qi. Even though the king sent a secret envoy to Qi, no order tells you to stop. Why should you halt? Moreover, Li Yiji, a mere scholar, by bowing from his carriage and wagging his three-inch tongue, persuaded over seventy cities of Qi to submit. You, leading tens of thousands, took more than a year to conquer fifty Zhao cities. Have you achieved less than a single scholar?” Han Xin agreed and followed the advice, crossing the river. Qi, having accepted Li Yiji, feasted him and removed its defenses. Han Xin attacked the Qi forces stationed at Lixia and pressed on to Linzi. Qi King Tian Guang, believing Li Yiji betrayed him, rewarded him and fled to Gaomi, sending envoys to Chu for assistance.
+及项梁渡淮，信杖剑从之，居麾下，无所知名。
+当项梁渡过淮河时，韩信带着剑跟随项梁，做项梁的部下，没什么名气。
+When Xiang Liang crossed the Huai River, Han Xin followed him with his sword, but remained obscure under his command.
 
-韩信已定临蓄，遂东追广至高密西。楚亦使龙且将，号称二十万，救齐。齐王广、龙且并军与信战，未合，人或说龙且曰：“汉兵远斗穷战，其锋不可当。齐、楚自居其地战，兵易败散。不如深壁，令齐王使其信臣招所亡城，亡城闻其王在，楚来救，必反汉。汉兵二千里客居，齐城皆反之，其势无所得食，可无战而降也。”龙且曰：“吾平生知韩信为人，易与耳。且夫救齐，不战而降之，吾何功?今战而胜之，齐之半可得，何为止!”遂战，与信夹潍水陈。韩信乃夜令人为万余囊，满盛沙，壅水上流，引军半渡，击龙且。
-韩信平定了临蓄，随后向东追击齐王田广至高密以西。楚王也派龙且为将，号称二十万大军前来救齐。齐王田广和龙且两军会合准备与韩信交战，但还未正式交锋，有人劝龙且说：“汉军远征作战，锐不可当。齐楚在本土作战，士兵易溃散。不如筑深壁固守，让齐王派亲信去招抚失落的城池，城池一旦听闻王尚在，楚军又来援助，自会反汉。汉军远在二千里之外，粮食难以补给，不战而降可也。”龙且说：“我素知韩信为人，容易应付。而救齐不战让汉军降，我何功？若战胜汉军，就可夺取齐半地，何必停止？”于是与韩信在潍水两岸布阵。韩信连夜命人制作万余沙囊堵住潍水上游，引水至半渡，袭击龙且。
-After securing Linzi, Han Xin marched east, pursuing Tian Guang to west of Gaomi. Xiang Yu sent General Long Ju with an army purported to be two hundred thousand to rescue Qi. Before the two forces engaged, someone advised Long Ju: “The Han army, fighting far from home, is unstoppable. Qi and Chu, defending their own territory, risk easy dispersal of their troops. Better to fortify and let the king of Qi send trusted ministers to rally lost towns. When the towns learn the king is still alive and Chu has come to aid, they will revolt against Han. The Han army is two thousand li from home and cannot be fed. They will surrender without a fight.” Long Ju replied, “I know Han Xin well; he is easy to handle. Moreover, if we save Qi without fighting, what glory is there? If I defeat him in battle, half of Qi may be ours—why should I stop?” He arrayed his army across the River Wei against Han Xin. That night Han Xin had men fill over ten thousand sandbags to block the river upstream, then led half his army across and attacked Long Ju.
+项梁败，又属项羽，羽以为郎中。
+项梁战败后，他又归属项羽，项羽任他为郎中。
+After Xiang Liang was defeated, he joined Xiang Yu, who appointed him as a bodyguard.
 
-不胜，还走。龙且果喜曰：“固知信怯也。”遂追信渡水。信使人决壅囊，水大至。龙且军大半不得渡，即急击，杀龙且。龙且水东军散走，齐王广亡去。信遂追北至城阳，皆虏楚卒。汉四年，遂皆降平齐。使人言汉王曰：“齐伪诈多变，反覆之国也，南边楚，不为假王以镇之，其势不定。愿为假王便。”当是时，楚方急围汉王于荥阳，韩信使者至，发书，汉王大怒，骂曰：“吾困于此，旦暮望若来佐我，乃欲自立为王!”张良、陈平蹑汉王足，因附耳语曰：“汉方不利，宁能禁信之王乎?不如因而立，善遇之，使自为守。不然，变生。”汉王亦悟，因复骂曰：
-龙且未能取胜，撤退。龙且果然高兴地说：“我本知韩信胆小。”于是率军渡水追击韩信。韩信派人打开沙袋，洪水涌来，龙且大军大半无法渡河，韩信趁机反击，杀死龙且。东岸楚军四散，齐王田广逃跑。韩信继续追击北至城阳，将楚军全部俘虏。汉四年（公元前），齐地全部平定。韩信派人向汉王汇报：“齐国诡诈多变，反复无常，南邻楚国，不设代理国王镇守，局势不稳。我愿为代理王以安抚齐国。”当时楚军正紧围汉王于荥阳，韩信使者到达，汉王读信大怒，说：“我困于此，日夜盼你来助我，你却想自立为王！”张良、陈平暗踩汉王足，耳语：“汉军不利，怎么能禁止韩信称王？不如乘势立他为王，好好善待，让他自守，否则会生变。”汉王这才明白，但仍骂道：
-Unable to defeat Han Xin, Long Ju retreated. “I knew he was a coward!” Long Ju exclaimed, crossing the river in pursuit. Han Xin sent men to remove the sandbag dam, and the flood struck, preventing most of Long Ju’s army from crossing. Han Xin counterattacked, killing Long Ju. The Chu troops on the east bank scattered, and King Tian Guang of Qi fled. Han Xin pursued north to Chengyang, capturing all remaining Chu soldiers. In the fourth year of Han, Qi was fully pacified. Han Xin sent an envoy to Liu Bang, reporting: “Qi is deceitful and fickle; bordering Chu without an acting king to maintain order, it cannot be stable. I am willing to act as king temporarily.” At that time, Chu forces were besieging Liu Bang at Xingyang. Liu Bang received the message, enraged: “I am trapped here, waiting day and night for your aid, yet you seek to make yourself king!” Zhang Liang and Chen Ping discreetly stepped on Liu Bang’s feet and whispered: “The Han forces are at a disadvantage. How can you forbid Han Xin from becoming king? It is better to appoint him and treat him well, letting him guard his territory; otherwise, trouble will arise.” Liu Bang realized this but still cursed.
+数以策干项羽，羽不用。
+他曾多次向项羽献策，项羽都没有采用。
+He offered strategy to Xiang Yu several times, but his advice was ignored.
 
-#汉王亦悟，因复骂曰：“大丈夫定诸侯，即为真王耳，何以假为!”乃遣张良往，立信为齐王，征其兵击楚。楚已亡龙且，项王恐，使盱眙人武涉往说齐王信曰：“天下共苦秦久矣，相与戮力击秦。秦已破，计功割地，分土而王之，以休士卒。令汉王复兴兵而东，侵人之分，夺人之地，已破三秦，引兵出关，收诸侯之兵以东击楚，其意非尽吞天下者不休，其不知厌足如是甚也。且汉王不可必，身居项王掌握中数矣，项王怜而活之，然得脱，辄倍约，复击项王，其不可亲信如此。今足下虽自以与汉王为厚交，为之尽力用兵，终为之所禽矣。足下所以得须臾至今者，以项王尚存也。当今二王之事，权在足下。足下右投则汉王胜，左投则项王胜。项王今日亡，则次取足下。足下与项王有故，何不反汉与楚连和，参分天下王之?今释此时，而自必于汉以击楚，且为智者固若此乎!”
-汉王明白过来，又骂道：“大丈夫平定诸侯，就应成为真王，何必做代理王！”于是派张良去立韩信为齐王，并征调兵力攻楚。楚军失去龙且后，项王惊恐，派盱眙人武涉前去劝说齐王韩信：“天下人长期受秦之苦，联合攻秦。秦已灭，按功分地、立王，使士兵休息。现在汉王再兴兵东征，侵占他国封地，破三秦，出关收诸侯兵东击楚，他志在吞并天下，不知满足。况且汉王不可完全信任，其性命多次掌握在项王手中，项王可怜而赦之；然一脱险境，就背盟再击项王，他不可亲信。您虽自以与汉王交好，为其用兵，终被其所擒。您之所以至今得存，是因为项王尚在。如今二王之事权在您，右投汉王则汉胜，左投项王则楚胜。项王若灭亡，下一个轮到您。您与项王有旧交，为何不反汉而与楚连和，三分天下自立为王？现在若放弃此时机，偏执援汉攻楚，作为智者能如此吗！”
-Liu Bang realized this and exclaimed, “A true hero who pacifies the lords should become a real king, why act as a nominal one?” He then sent Zhang Liang to make Han Xin king of Qi and command his troops to attack Chu. After Chu lost its general Long Ju, Xiang Yu panicked and sent Wu She from Xuyi to persuade King Han Xin: “The world has long suffered under Qin, and all have united to attack it. After Qin’s fall, land was divided by merit, and kings appointed to give the soldiers rest. Now the king of Han has raised armies again, invading and occupying others’ lands. He has conquered the Three Qins, marched out of the passes, and gathered troops from other states to attack Chu in the east. He will not stop until the whole world is under him. Moreover, the king of Han cannot be fully trusted—his life has often been in Xiang Yu’s hands, who spared him out of pity. Yet once freed, he breaks his word and attacks Xiang Yu. You fight for him, but in the end you will be captured. You have only survived because Xiang Yu is still alive. The fate of the two kings depends on you: if you side with Han, Han will win; if with Xiang Yu, Chu will win. If Xiang Yu falls today, you are next. You and Xiang Yu have old ties; why not betray Han, ally with Chu, and divide the realm into three? If you miss this opportunity and insist on helping Han against Chu, is this the conduct of a wise man?”
+汉王之入蜀，信亡楚归汉，未得知名，为连敖。
+汉王入蜀时，韩信逃离楚军归附汉王，但仍未出名，仅任管理粮仓的小官。
+When Liu Bang entered Shu, Han Xin left Chu to join Han, yet still remained unknown, serving only as an officer in charge of grain stores.
 
-韩信谢曰：“臣事项王，官不过郎中，位不过执戟，言不听，画不用，故倍楚而归汉。汉王授我上将军印，予我数万众，解衣衣我，推食食我，言听计用，故吾得以至于此。夫人深亲信我，我倍之不祥，虽死不易。幸为信谢项王!”
-韩信辞谢说：“我过去事奉项王，只是一个郎中、执戟的小官，进言不被采纳，计策不被采用，所以才背楚归汉。汉王授我上将军印，给我数万军队，衣食亲赐，言听计从，因此我才能达到今天的地位。人家深信我，我若背叛，他不吉，我死也不能改变。请代我向项王道歉。”
-Han Xin declined, saying: “When I served King Xiang, I was merely a minor officer, a halberdier; my advice was never heeded, my plans never used, so I turned from Chu to Han. The king of Han gave me the seal of Grand General, tens of thousands of troops, shared his clothing and food, and followed all my strategies. That is how I have reached my current position. The king trusts me deeply, and betrayal would be inauspicious; even my death could not alter this. Please convey my apologies to Xiang Yu.”
+坐法当斩，其辈十三人皆已斩，次至信，信乃仰视，适见滕公，曰：“上不欲就天下乎?何为斩壮士?”
+后来他犯法当处斩，同罪的十三人都已处斩，轮到韩信时，他抬头仰视，正好看见了滕公，说：“汉王不是想统一天下吗？为什么要杀壮士呢？”
+Later, he was condemned to death; thirteen others of the same charge were beheaded before him. When it was his turn, he looked up and saw Lord Teng, saying, "Does our prince not want to unify the empire? Why execute a brave man?"
 
-武涉已去，齐人蒯通知天下权在韩信，欲为奇策而感动之，以相人说韩信曰：“仆尝受相人之术。”韩信曰：“先生相人何如?”对曰：“贵贱在于骨法，忧喜在于容色，成败在于决断，以此参之，万不失一。”韩信曰：“善。先生相寡人何如?”对曰：“愿少间。”信曰：“左右去矣。”通曰：“相君之面，不过封侯，又危不安。相君之背，贵乃不可言。”韩信曰：“何谓也?”
-武涉离开后，齐国人蒯通明白韩信掌握天下局势，想用妙计打动他，于是以相人之术说：“我曾学过相人。”韩信问：“先生相人如何？”蒯通答：“人的贵贱在骨法，喜忧在容色，成败在决断，以此参考，万不失一。”韩信曰：“好。先生相我如何？”蒯通说：“希望稍后单独说。”韩信命左右离开。蒯通又说：“看您的面相，位不过诸侯，且危险不稳；看您的背部，却贵不可言。”韩信问：“何谓也？”
-After Wu She left, a Qi man named Kuai Tong, seeing that Han Xin held the key to the realm, sought to sway him with a clever scheme. “I have studied physiognomy,” he said. Han Xin asked, “How do you judge a man?” Kuai Tong replied: “High or low rank depends on the bone structure, joy or sorrow on the face, success or failure on decision-making. By these criteria, I am never wrong.” Han Xin said: “Good. How do you see me?” Kuai Tong: “I wish to speak privately.” Han Xin ordered his attendants away. Kuai Tong continued: “Judging from your face, you can be no more than a feudal lord, in danger and insecure; from your back, greatness beyond measure.” Han Xin asked: “What do you mean?”
+滕公奇其言，壮其貌，释而不斩。
+滕公听了他的话后感到很惊奇，又觉得他相貌非凡，于是把他释放不杀。
+Lord Teng was impressed by his words and striking appearance, and spared him.
 
-蒯通曰：“天下初发难也，俊雄豪杰建号一呼，天下之士云合雾集，鱼鳞杂逻，至风起。当此之时，忧在亡秦而已。今楚、汉分争，使天下无罪之人肝胆涂地，父子暴骸骨于中野，不可胜数。楚人起彭城，转斗逐北，至于荥阳，乘利席卷，威震天下。然兵困于京、索之间，迫西山而不能进者，三年于此矣。汉王将数十万之众，距巩、洛，阻山河之险，一日数战，无尺寸之功，折北不救。败荥阳，伤成皋，遂走宛、叶之间，此所谓智勇俱困者也。夫锐气挫于险塞，而粮食竭于内府，百姓罢极怨望，容容无所倚。以臣料之，其势非天下之贤圣，固不能息天下之祸。当今两主之命系于足下，足下为汉则汉胜，与楚则楚胜。臣愿披腹心，输肝胆，效愚计，恐足下不能用也。诚能听臣之计，莫若两利而俱存之，参分天下，鼎足而居，其势莫敢先动。夫以足下之贤圣，有甲兵之众，据强齐，从燕、赵，出空虚之地而制其后，因民之欲，西乡为百姓请命，则天下风走而响应矣，孰敢不听!割大弱强，以立诸侯，诸侯已立，天下服听而归德于齐。案齐之故，有胶、泗之地，怀诸侯以德，深拱揖让，则天下之君王相率而朝于齐矣。盖闻‘天与弗取，反受其咎；时至不行，反受其殃’。愿足下孰虑之!”
-蒯通说：“天下初起兵抗秦，英雄豪杰一呼天下响应，士兵云集如雾，鱼鳞整齐，烈风起时，只忧灭秦而已。如今楚汉相争，无辜百姓惨遭杀戮，父子老小暴尸荒野，数不胜数。楚军从彭城起兵，战至荥阳，乘胜席卷，威震天下。然而部队被困京、索之间，西山阻挡无法进，已有三年。汉王率数十万大军，占巩洛险要，一日数战无寸功，败北不能自救，在荥阳败，成皋受伤，逃至宛叶之间，此乃智勇俱困。士兵锐气被挫，粮尽百姓疲惫怨望，无所依凭。以我看，非贤圣者难平天下之乱。今汉王、项王命运系于您，您帮汉则汉胜，帮楚则楚胜。我愿倾心献策，但恐您不采纳。如能听我计，可两利俱存，三分天下，鼎立而居，无人敢先动。凭您贤德与众军，占强齐，出空虚之地制其后方，顺民意向西行，为百姓请命，天下必响应，谁敢不听？割强立弱，诸侯已立，天下归德于齐。齐地有胶泗之地，以德怀诸侯，深拱揖让，天下诸王自来朝齐。闻‘天与不取，反受其咎；时至不行，反受其殃’，愿足下深思！”
-Kuai Tong said: “When the rebellion against Qin first started, heroes with one call gathered men like clouds and fish scales, rising as wind and fire. Their sole concern then was overthrowing Qin. Now, Han and Chu contend, and countless innocent men, fathers and sons, lie slain in the wilderness. Chu’s army rose from Pengcheng, advancing to Xingyang, sweeping all before them and aweing the world. Yet trapped between Jing and Suo, they cannot advance beyond the western mountains for three years. The king of Han, with hundreds of thousands of troops, occupies Gong and Luoyang, taking advantage of natural barriers, fighting several battles a day without gain, retreating unable to recover. Defeated at Xingyang, wounded at Chenggao, fleeing to the districts of Wan and Ye, both wisdom and courage are trapped. Soldiers’ morale crushed, granaries depleted, the people exhausted and resentful, with no support. Only a wise man can end this turmoil. “Now the fate of the two kings depends on you. Side with Han, Han will win; side with Chu, Chu will win. I wish to lay my heart bare and offer humble counsel, though you may not follow it. If you do, both sides can benefit: divide the realm into three, like a tripod, so none dares act first. With your virtue and army, holding strong Qi, advancing from Yan and Zhao to seize empty lands, restraining the rear, and acting for the people, the world will respond. Weak states can be cut down, new lords set, and the world will yield to Qi’s virtue. The old lands of Qi, the Jiao and Si rivers, used wisely with courtesy, will draw all kings to pay homage. As the saying goes, ‘What Heaven offers but is not taken brings blame; the time comes but inaction brings disaster.’ I hope you deeply consider this!”
+与语，大说之。言于上，上拜以为治粟都尉，上未之奇也。
+滕公与他交谈，大为欣赏，并向汉王推荐他。汉王任命他为治粟都尉，但尚未意识到他的非凡才能。
+He spoke with Han Xin and greatly admired him, recommending him to Liu Bang. Liu Bang appointed him as Commissary General of Grain, but had not yet recognized his extraordinary ability.
+
+信数与萧何语，何奇之。
+韩信曾多次与萧何谈话，萧何觉得他与众不同。
+Han Xin had several talks with Xiao He, who was much impressed by him.
+
+至南郑，诸将行道亡者数十人，信度何等已数言上，上不我用，即亡。
+在去南郑的途中，将领中有数十人半路逃走了，韩信推测萧何等人已经多次向汉王推荐自己，但汉王并不想起用自己，于是他也逃走了。
+On the way to Nanzheng, several dozen officers deserted, and Han Xin, reflecting that Xiao He and others had recommended him to Liu Bang several times to no avail, also deserted.
+
+何闻信亡，不及以闻，自追之。
+萧何听说韩信逃走后，来不及向汉王报告，就亲自去追赶韩信。
+As soon as Xiao He knew this, he set off in pursuit without reporting to Liu Bang.
+
+人有言上曰：“丞相何亡。”上大怒，如失左右手。
+有人向汉王说：“丞相萧何逃跑了。”汉王听后大怒，如同失去左右手一样。
+Someone told Liu Bang, "Prime Minister Xiao He has deserted." Liu Bang was furious, as if he had lost both arms.
+
+居一二日，何来谒上，上且怒且喜，骂何曰：“若亡，何也?”
+过了一两天，萧何来拜见汉王，汉王又气又喜，骂萧何说：“你逃走是为何？”
+A day or two later, Xiao He came to pay his respects. Liu Bang, torn between anger and joy, scolded him, "Why did you desert?"
+
+何曰：“臣不敢亡也，臣追亡者。”
+萧何说：“臣不敢逃走，我是去追逃跑的人。”
+Xiao He replied, "How could I dare to desert, sir? I was pursuing a deserter."
+
+上曰：“若所追者谁?”何曰：“韩信也。”
+汉王问：“你追的人是谁？”萧何答：“是韩信。”
+Liu Bang asked, "Whom did you pursue?" Xiao He answered, "Han Xin."
+
+上复骂曰：“诸将亡者以十数，公无所追；追信，诈也。”
+汉王又骂道：“诸将逃走十数人，你都不去追，偏追韩信，是在骗人。”
+Liu Bang scolded again, "Dozens of officers have deserted, yet you pursued only him. You must be lying."
+
+何曰：“诸将易得耳，至如信者，国士无双。王必欲长王汉中，无所事信；必欲争天下，非信无所与计事者。顾王策安所决耳。”
+萧何说：“那些将领容易招募。至于韩信这样的才干之人，是国家独一无二的人才。大王如果只想长期称王于汉中，不必用韩信；如果决心争夺天下，除了韩信就没有能与您共计大事的人。现在全看大王如何决定。”
+Xiao He said, "Other officers are easy to replace, but someone like Han Xin is a national treasure. If you only aim to rule Hanzhong, you don't need him; if you intend to contend for the empire, there is no one else to plan with you but Han Xin. It all depends on your decision."
+
+王曰：“吾亦欲东耳，安能郁郁久居此乎?”
+汉王说：“我也想向东发展，怎能长期郁郁不前呢？”
+Liu Bang said, "I also intend to march east. How can I remain cooped up here indefinitely?"
+
+何曰：“王计必欲东，能用信，信即留；不能用，信终亡耳。”
+萧何说：“如果大王决心向东发展，能重用韩信，韩信就会留下；如果不启用韩信，他终究会再次逃走。”
+"If you are determined to march east," Xiao He said, "and can employ Han Xin, he will stay; if not, he will ultimately desert again."
+
+王曰：“吾为公以为将。”
+汉王说：“我就依你的意见任命他为将领。”
+Liu Bang replied, "Then I will make him a general."
+
+何曰：“虽为将，信必不留。”
+萧何说：“即便任命为将军，韩信也一定不会留下。”
+Xiao He said, "Even as a general, he will not stay."
+
+王曰：“以为大将。”
+汉王说：“那就任命他为大将。”
+Liu Bang said, "Then make him the chief marshal."
+
+何曰：“幸甚!”
+萧何说：“太好了！”
+Xiao He exclaimed, "Excellent!"
+
+于是王欲召信拜之。何曰：“王素慢无礼，今拜大将，如呼小儿耳，此乃信所以去也。
+于是汉王准备召见韩信任命他为大将军。萧何提醒说：“大王平日轻慢无礼，现在直接任命大将军，就像在呼唤小孩子一样，这正是韩信曾要离去的原因。”
+Liu Bang was about to summon Han Xin to confer this appointment. Xiao He advised, "Your Majesty has always been offhand and lacking in courtesy. Appointing him directly as chief marshal is like calling a child—that is why Han Xin would leave."
+
+王必欲拜之，择良日，斋戒，设坛场，具礼，乃可耳。”
+如果大王真的要任命他，需选个良辰，沐浴斋戒，筑坛设场，备齐礼仪，这才可以。”
+If you truly intend to appoint him, select an auspicious day, purify yourself by fasting, set up an altar, and prepare all rituals. Only then can it be done."
+
+王许之。
+汉王答应了。
+Liu Bang agreed.
+
+诸将皆喜，人人各自以为得大将。
+众将领皆很高兴，各以为自己会得到大将军的职位。
+The generals were pleased, each imagining he would receive the title.
+
+至拜大将，乃韩信也，一军皆惊。
+等到任命大将军时，却是韩信，全军皆惊讶。
+When the title was conferred, it was Han Xin, and the entire army was astonished.
+
+信拜礼毕，上坐。
+韩信完成拜礼后坐下。
+After the ceremony, Han Xin sat down.
+
+王曰：“丞相数言将军，将军何以教寡人计策?”
+汉王说：“丞相多次推荐你，将军将如何教我用计策？”
+Liu Bang said, "The prime minister has spoken highly of you many times. How will you instruct me in strategy?"
+
+信谢，因问王曰：“今东乡争权天下，岂非项王邪?”
+韩信谦辞后，问汉王：“现在向东争霸天下，敌手不就是项王吗？”
+Han Xin thanked him and then asked, "Now you contend in the east for the empire, is it not with Xiang Yu?"
+
+汉王曰：“然。”
+汉王说：“是的。”
+Liu Bang replied, "Yes."
+
+曰：“大王自料勇悍仁强孰与项王?”
+韩信问：“大王自估在勇猛、仁义、兵力上比项王如何？”
+Han Xin asked, "How do you estimate your own courage, strength, and the power of your forces compared to Xiang Yu?"
+
+汉王默然良久，曰：“不如也。”
+汉王沉默良久，说：“不如他。”
+Liu Bang was silent for a long while, then said, "I am not his equal."
+
+信再拜贺曰：“惟信亦为大王不如也。然臣尝事之， 请言项王之为人也。
+韩信再三拜谢说：“就是我也认为大王在这些方面不如项王。然而我曾事奉过项王，请让我谈谈他的为人。
+Han Xin bowed repeatedly and said, "I too believe, sir, that in these aspects you are not equal to Xiang Yu. But having served him, let me describe his character.
+
+项王喑噁叱咤，千人皆废，然不能任属贤将，此特匹夫之勇耳。
+项王发怒呼喊时，千百人都吓得腿软，但他却不能任用有才能的将领，这不过是匹夫之勇。
+When Xiang Yu bellows in anger, a thousand men are rooted to the ground, yet he cannot appoint worthy generals; this is mere individual courage.
+
+项王见人恭敬慈爱，言语呕呕，人有疾病，涕泣分食饮，至使人有功当封爵者，印刓弊，忍不能予，此所谓妇人之仁也。
+项王待人恭敬慈爱，言语温和；有人生病，他流着泪把自己的食物分给别人吃。但当有人有功应封爵时，他把印信玩弄得圆滑却舍不得授予别人，这就是所谓‘妇人之仁’。
+Xiang Yu treats people with courtesy and kindness, speaks gently, and if someone falls ill, he weeps and shares his food with them. But when a man has achieved merit deserving a fief, he toys with the seal until its edges are worn, unwilling to grant it—this is what is called womanly kindness.
+
+项王虽霸天下而臣诸侯，不居关中而都彭城。
+项王虽然称霸天下，诸侯称臣，但不守关中，而以彭城为都。
+Although Xiang Yu is overlord of all states, and the princes acknowledge him, he does not reside within the Pass but makes Pengcheng his capital.
+
+有背义帝之约，而以亲爱王，诸侯不平。
+他违背了义帝的约定，把亲信封为王，诸侯因此不平。
+He broke his oath to the Righteous Emperor and installed his favourites as kings, causing discontent among the other princes.
+
+诸侯之见项王迁逐义帝置江南，亦皆归逐其主而自王善地。
+当诸侯看到项王驱逐义帝到江南，也纷纷效法，驱逐自己的君主，占据好地方自立为王。
+When they saw Xiang Yu drive the Righteous Emperor to the south, they in turn drove away their own rulers to claim the best lands for themselves.
+
+项王所过无不残灭者，天下多怨，百姓不亲附，特劫于威强耳。
+项王军队经过之处无不被残害，天下怨恨多，百姓不愿归附，只是迫于威势而已。
+Wherever Xiang Yu’s armies go, there is devastation; most of the world detests him, and the common people follow only from fear, not loyalty.
+
+名虽为霸，实失天下心。故曰其强易弱。
+名义虽为霸王，实际上失去了民心，所以说强者易弱。
+Though he bears the title of overlord, he has lost the hearts of the people. Hence, his strength is easily undermined.
+
+今大王诚能反其道，任天下武勇，何所不诛!
+现在大王如果能够反其道而行，任用天下勇敢善战的人，什么敌人不能被诛灭！
+Now, if Your Majesty follows a different path, employing the bravest and most capable warriors from every state, what enemy cannot be destroyed?
+
+以天下城邑封功臣，何所不服!
+把天下城邑封给有功之臣，还有谁会不服？
+If you reward those who have served you with cities, who would refuse obedience?
+
+以义兵从思东归之士，何所不散!
+以正义之师随从想东归的将领，什么敌人不能击散！
+By leading an army of righteous men eager to return east, what enemy could withstand you?
+
+且三秦王为秦将，将秦子弟数岁矣，所杀亡不可胜计，又欺其众降诸侯，至新安，项王诈坑秦降卒二十余万，唯独邯、欣、翳得脱，秦父兄怨此三人，痛入骨髓。
+况且三秦之王都是秦的将领，多年征战秦地，所杀和逃跑的人不可胜数，还欺骗他们投降诸侯。在新安，项王诈坑秦降卒二十余万，唯独章邯、司马欣、董翳得以脱身，秦地父老对此三人怨恨入骨。
+Moreover, the kings of the Three Qin were all Qin generals, commanding the sons of Qin for several years. Countless men have been killed or have fled, and they were deceived into surrendering to the lords. At Xin’an, Xiang Yu massacred over two hundred thousand surrendered Qin soldiers, sparing only Zhang Han, Sima Xin, and Dong Yi. The elders of Qin hate these three men to the marrow.
+
+今楚强以威王此三人，秦民莫爱也。
+如今楚王凭威势让这三人称王，秦地百姓没有人喜爱他们。
+Now Chu’s strength relies on these three men, whom the people of Qin do not love.
+
+大王之入武关，秋豪无所害，除秦苟法，与秦民约，法三章耳，秦民无不欲得大王王秦者。
+大王您进入武关时，毫无伤害，废除了苛法，与秦民立约，法令仅三条，秦民无不希望大王在秦地为王。
+When you entered Wu Pass, you harmed nothing, repealed the harsh Qin laws, and established just three rules binding the people; all of them wished for you to be ruler of Qin.
+
+于诸侯之约，大王当王关中，关中民咸知之。
+按照诸侯约定，大王应在关中为王，关中百姓也都知道这件事。
+According to the feudal lords’ agreement, Your Majesty should rule within the Passes, and the people there know it.
+
+大王失职入汉中，秦民无不恨者。
+大王失掉封爵进入汉中，秦民无人不恨。
+When you were deprived of your position and went to Hanzhong, the people of Qin all regretted it.
+
+今大王举而东，三秦可传檄而定也。”
+现在大王率兵东进，三秦之地只要发一道檄文就可安定。”
+Now if Your Majesty marches east, the Three Qin can be pacified merely by issuing a proclamation."
+
+合齐、赵共击楚。四月，至彭城，汉兵败散而还。
+联合齐、赵，共同攻击楚军。四月，汉军到达彭城，汉军被击溃而退。
+Han Xin allied with Qi and Zhao against Chu. In the fourth month, the Han army reached Pengcheng, but was routed and withdrew.
+
+信复收兵与汉王会荥阳，复击破楚京、索之间。以故楚兵卒不能西。
+韩信将溃散的士兵重新整编，与汉王在荥阳会合，又在京、索之间打败楚军，因此楚兵无法西进。
+Han Xin regrouped the scattered soldiers and joined Liu Bang at Xingyang, then defeated Xiang Yu’s forces between Jing and Suo, preventing the Chu troops from advancing west.
+
+汉之败却彭城，塞王欣、翟王翳亡汉降楚，齐、赵亦反汉与楚和。
+汉军在彭城败退时，塞王司马欣、翟王董翳叛汉投降楚国，齐、赵也背叛汉与楚联合。
+During the Han defeat at Pengcheng, the kings of Sai (Sima Xin) and Di (Dong Yi) defected to Chu, and Qi and Zhao also defected to Chu.
+
+六月，魏王豹谒归视亲疾，至国，即绝河关反汉，与楚约和。
+六月，魏王魏豹请假回国探望病父，到国后立即封锁黄河关口反汉，并与楚国议和。
+In the sixth month, Bao, king of Wei, asked leave to return home to visit his ill parent. Upon reaching his state, he sealed off the Yellow River crossing and rebelled against Han, making terms with Chu.
+
+汉王使郦生说豹，不下。
+汉王派郦生劝说魏豹，魏豹拒不接受。
+Liu Bang sent Li Sheng to persuade him, but he refused.
+
+其八月，以信为左丞相，击魏。
+八月，汉王任命韩信为左丞相，攻打魏国。
+In the eighth month, Han Xin was appointed Left Prime Minister and attacked Wei.
+
+魏王盛兵蒲坂，塞临晋，信乃益为疑兵，陈船欲度临晋，而伏兵从夏阳以木罂瓴渡军，袭安邑。
+魏王魏豹集结重兵把守蒲坂，封锁临晋关。韩信设疑兵，假装要从临晋渡河，同时伏兵从夏阳以木制筐渡河偷袭安邑。
+Wei Bao concentrated his troops at Puban and blocked Linjin. Han Xin used a ruse: he displayed boats as if to cross at Linjin, but secretly sent troops from Xiayang using wooden rafts to cross the river and launch a surprise attack on Anyi.
+
+魏王豹惊，引兵迎信，信遂虏豹，定魏为河东郡。
+魏王魏豹大惊，出兵迎击韩信，韩信最终俘获魏豹，将魏地置为河东郡。
+Wei Bao was alarmed and led his troops to confront Han Xin, who captured him and made Wei into Hedong Commandery.
+
+汉王遣张耳与信俱，引兵东，北击赵、代。
+汉王派张耳与韩信一同出兵向东，北上攻打赵、代。
+Liu Bang sent Zhang Er and Han Xin eastwards to attack Zhao and Dai.
+
+后九月，破代兵，禽夏说阏与。
+九月，韩信击败代军，俘获夏说、阏与。
+In the intercalary ninth month, Han Xin defeated the army of Dai and captured Xia Yue and Yan Yu.
+
+信之下魏破代，汉辄使人收其精兵，诣荥阳以距楚。
+韩信征服魏、代之后，汉王即调回韩信的精锐部队到荥阳抵御楚军。
+After subduing Wei and Dai, Liu Bang immediately recalled Han Xin’s elite troops to Xingyang to resist the Chu armies.
+
+信与张耳以兵数万，欲东下井陉击赵。
+韩信与张耳率领几万兵力，准备从井陉东下攻击赵国。
+Han Xin and Zhang Er, commanding tens of thousands of troops, planned to march east through the Jingxing Defile to attack Zhao.
+
+赵王、成安君陈余闻汉且袭之也，聚兵井陉口，号称二十万。
+赵王和成安君陈余听说汉军将要袭击，就在井陉口集结号称二十万大军。
+Upon hearing this, the king of Zhao and Chen Yu, lord of Cheng’an, assembled an army of reportedly two hundred thousand at Jingxing.
+
+广武君李左车说成安君曰：“闻汉将韩信涉西河，虏魏王，禽夏说阏与，今乃辅以张耳，议欲下赵，此乘胜而去国远斗，其锋不可当。
+广武君李左车劝成安君说：“听说汉将韩信渡西河，俘获魏王，又活捉夏说、阏与，现在又以张耳为帮手，打算攻打赵国。这是乘胜远征，其锐不可当。
+Lord Li Zuoche of Guangwu advised Chen Yu: “I hear that General Han Xin of Han crossed the western river, captured the king of Wei, and took Xia Yue and Yan Yu alive. Now, with Zhang Er as his assistant, he plans to attack Zhao. This force, moving from afar in victory, is unstoppable.
+
+臣闻千里馈粮，士有饥色，樵苏后爨，师不宿饱。
+我听说从千里之外运输粮食，士兵会饥饿，先要砍柴烧火做饭，部队都吃不饱。
+I also know that when supplies must be transported over a thousand li, soldiers grow hungry; after chopping firewood they cook meals, yet still are unsatisfied.
+
+今井陉之道，车不得方轨，骑不得成列，行数百里，其势粮食必在其后。
+现在井陉道路狭窄，车不能并行，骑兵不能列队，行军几百里，粮食必在后方滞留。
+The roads at Jingxing are narrow: chariots cannot drive side by side, and cavalry cannot form ranks. Marching several hundred li, supplies will inevitably lag behind.
+
+愿足下假臣奇兵三万人，从间道绝其辎重；足下深沟高垒，坚营勿与战。
+希望您暂时借给我三万奇兵，从小路截断他们的辎重；您在阵地上深挖壕沟、筑高营垒、坚守不出战。
+I propose that Your Lordship lend me thirty thousand elite troops via side paths to cut off their baggage. Meanwhile, fortify your position with deep trenches and high ramparts, and do not engage them in battle.
+
+彼前不得斗，退不得还，吾奇兵绝其后，使野无所掠，不至十日，而两将之头可致于戏下。”
+他们前不能攻，后不能退，我奇兵截断后路，使敌无法掠取物资，不到十日，两将的首级就可以送到您的帐下。”
+When they can neither advance nor retreat, my elite troops will cut off their rear so that they can take nothing from the countryside. In less than ten days, the heads of both generals can be sent to your camp.”
+
+愿君留意臣之计。否，必为二子所禽矣!”
+“希望君主采纳我的计策，否则我们必将被那两人活捉！”
+“Your Lordship must heed my plan, otherwise we shall be captured by those two men!”
+
+成安君，儒者也，常称义兵不用诈谋奇计，曰：“吾闻兵法十则围之，倍则战。今韩信兵号数万，其实不过数千。能千里而袭我，亦已罢极，今如此避而不击，后有大者，何以加之!则诸侯谓吾怯，而轻来伐我。”
+成安君是个迂腐的儒生，经常说正义之兵不应用诈谋奇计，他回答说：“我听兵法讲，如果兵力是敌人的十倍，就应围攻；是敌人的两倍，就应正面交战。现在韩信的军队号称数万，其实不过几千。能从千里之外袭击我们，已经精疲力竭。现在都避而不战，将来如果遇到更强大的敌人，又该如何应付？诸侯们会认为我们胆怯，从而轻易来攻我们。”
+Cheng’an Jun, a conservative Confucian scholar, often said that righteous soldiers should not employ stratagems or deceit. He replied, “I have read in military texts that if your force is ten times the enemy, you should surround him; if it is twice, you should engage in battle. Now although Han Xin’s troops are said to number tens of thousands, their effective strength is only a few thousand. Having marched a thousand li to strike us, they must be exhausted. If we avoid battle now, what will we do when a greater force comes? Other states will think us cowardly and attack us easily.”
+
+不听广武君策，广武君策不用。
+成安君不采纳广武君的计策。
+Cheng’an Jun rejected the plan proposed by Guangwu Jun.
+
+韩信使人间视，知其不用，还报，则大喜，乃敢引兵遂下。
+韩信派人暗中侦察，得知广武君的计策未被采用，密探回报，他大喜，遂敢率兵前进。
+Han Xin sent scouts and learned that Guangwu Jun’s plan was not adopted. Overjoyed, he dared to advance his troops.
+
+未至井陉口三十里，止舍。
+离井陉口三十里时停下休息。
+Thirty li from the mouth of the defile, he stopped to camp.
+
+夜半传发，选轻骑二千人，人持一赤帜，从间道草山而望赵军，诫曰：“赵见我走，必空壁逐我，若疾入赵壁，拔赵帜立汉赤帜。”
+半夜下令出发，挑选二千轻骑，每人持红旗，从小路隐蔽在草山上观察赵军，并告诫士兵：“赵军见我们逃跑，必会空营追击，你们应迅速冲入赵军营地，拔掉赵军旗帜，立起汉军红旗。”
+At midnight, he ordered the army to march, selecting two thousand light cavalry, each carrying a red banner, to hide in the hills and observe Zhao’s army. He instructed them, “When Zhao sees us retreat, they will abandon their fortifications to pursue us. You must charge into their camp, tear down their banners, and raise Han’s red banners.”
+
+令其裨将传飧，曰：“今日破赵会食。”
+同时命副将给士兵传食，说：“今日打败赵军后大家一同会餐。”
+He also ordered his lieutenants to distribute rations, saying, “Today, after defeating Zhao, we shall feast together.”
+
+诸将皆莫信，详应曰：“诺。”
+各将领都不相信，只假装答应说：“遵命。”
+The officers pretended to agree, saying, “Very well.”
+
+谓军吏曰：“赵已先据便地为壁，且彼未见吾大将旗鼓，未肯击前行，恐吾至阻险而还。”
+韩信对军官说：“赵军已经占据了有利地势扎营，而且未见我军大将旗鼓，不会出击，怕我们到达险隘会退回。”
+Han Xin told his aides, “The Zhao troops have fortified advantageous positions and have not seen our command flags, so they will not advance, fearing that we might withdraw in the narrow passes.”
+
+信乃使万人先行，出，背水陈。赵军望见而大笑。
+韩信派出一万人先行，出井陉口，背水布阵。赵军见状大笑。
+Han Xin sent ten thousand men to move first and deploy behind the river. The Zhao army laughed upon seeing them.
+
+平旦，信建大将之旗鼓，鼓行出井陉口，赵开壁击之，大战良久。
+天亮时，韩信树起大将旗帜，击鼓出井陉口，赵军出营迎击，大战良久。
+At dawn, Han Xin raised the command flags, sounded the drums, and led the troops out of Jingxing. Zhao troops left their fortifications to attack, and a fierce battle ensued.
+
+于是信、张耳详弃鼓旗，走水上军。水上军开人之，复疾战。
+韩信、张耳假装弃鼓旗，退回河边军营。河边军队开营接纳，又重新激战。
+Han Xin and Zhang Er feigned abandoning their flags and drums, retreating to the river camps. The river troops opened the camp to receive them and reengaged in battle.
+
+赵果空壁争汉鼓旗，逐韩信、张耳。
+赵军果然空营追夺汉军旗帜，追击韩信、张耳。
+Zhao troops indeed abandoned their fortifications to seize Han flags and pursue Han Xin and Zhang Er.
+
+韩信、张耳已入水上军，军皆殊死战，不可败。
+韩信、张耳已入河边军营，全军拼死作战，不可败。
+Han Xin and Zhang Er had already returned to the river troops, who fought desperately and could not be defeated.
+
+信所出奇兵二千骑，共候赵空壁逐利，则驰入赵壁，皆拔赵旗，立汉赤帜二千。
+韩信派出的二千奇兵在赵军倾巢而出抢夺战利品时，冲入赵军营地，拔掉旗帜，竖起二千面汉军红旗。
+Meanwhile, Han Xin’s two thousand elite cavalry, waiting for Zhao to vacate the fortifications, galloped into the Zhao camp, tore down the banners, and raised two thousand Han red flags.
+
+赵军已不胜，不能得信等，欲还归壁，壁皆汉赤帜，而大惊以为汉皆已得赵王将矣。
+赵军无法战胜，也抓不到韩信等，欲回营，却发现营中尽是汉旗，大惊以为汉军已俘赵王及将领。
+The Zhao troops, unable to defeat Han forces or capture Han Xin, attempted to return to their fortifications, only to find them covered with Han flags. Terrified, believing that Han had captured their king and commanders.
+
+兵遂乱，遁走，赵将虽斩之，不能禁也。
+队伍大乱逃跑。赵将虽斩杀一部分，也无法阻止。
+they fled in disorder. Zhao generals attempted to strike down some, but could not halt the rout.
+
+于是汉兵夹击，大破虏赵军，斩成安君抵水上，禽赵王歇。
+汉军夹击，大破赵军，斩成安君，俘赵王歇。
+Han troops attacked from both sides, completely defeating Zhao, beheading Cheng’an Jun, and capturing Zhao King Xie.
+
+信乃令军中毋杀广武君，有能生得者购千金。
+韩信命令军中不要杀广武君，有能生擒者赏千金。
+Han Xin ordered that Guangwu Jun not be killed, promising a reward of one thousand gold pieces for anyone who could bring him in alive.
+
+于是有缚广武君而致麾下者，信乃解其缚，东乡坐，西乡对，师事之。
+有人将广武君捆绑送到韩信帐下，韩信解开绳索，请他面向东方入座，自己面向西方对坐，以尊师礼待之。
+Someone brought the lord of Guangwu bound to Han Xin’s camp. Han Xin untied him, seated him facing east while he faced west, treating him with the respect due a teacher.
+
+诸将效首虏，休毕贺，因问信曰：“兵法右倍山陵，前左水泽，今者将军令臣等反背水陈，曰破赵会食，臣等不服。然竟以胜，此何术也?”
+诸将向韩信呈上俘虏和首级表示祝贺后，趁机问韩信：“兵法上说右侧靠山，前方有水，而您却让我们背水列阵，并说打败赵军后会餐，我们都不信。可是最终却取得了胜利，这是什么战术？”
+After the officers presented the captives and heads of the slain to congratulate Han Xin, they asked, “The Art of War says the right side should have hills and the front a river, yet you had us form ranks with our backs to the river and promised a feast after defeating Zhao. We did not believe this—but we won. What strategy was this?”
+
+信曰：“此在兵法，顾诸君不察耳。兵法不曰‘陷之死地而后生，置之亡地而后存’?且信非得素拊循士大夫也，此所谓‘驱市人而战之’，其势非置之死地，使人人自为战。今予之生地，皆走，宁尚可得而用之乎!”
+韩信说：“这在兵法之中，只是你们没看明白。兵法不是说‘陷之死地而后生，置之亡地而后存’吗？况且我韩信没有平时熟练的士兵和将领，这就像‘赶街上的百姓去作战’，必须置之死地，让每个人都拼命自保。如果给他们生路，他们就会逃跑，还能用来作战吗！”
+Han Xin replied, “This is indeed in the Art of War, but you did not pay attention. Does it not say, ‘Place them in a death trap and they will come alive; send them to destruction and they will survive’? Besides, I had no trained soldiers or officers—this is what is called ‘driving street people to fight.’ One must put them in a death trap so that each fights for his life. Had I left them a way to escape, they would have fled, and how could I have used them in battle?”
+
+诸将皆服曰：“善。非臣所及也。”
+诸将听后都佩服说：“好。这不是我们能比得上的。”
+The officers were all greatly impressed and agreed, “Quite right! This is beyond us.”
+
+于是信问广武君曰：“仆欲北攻燕，东伐齐，何若而有功?”
+于是韩信问广武君说：“我想向北攻打燕国，向东讨伐齐国，怎样做才能成功？”
+Han Xin then asked the lord of Guangwu, “I plan to attack Yan in the north and Qi in the east. How can I succeed?”
+
+广武君辞谢曰：“臣闻败军之将不可以言勇，亡国之大夫不可以图存，今臣败亡之虏，何足以权大事乎?”
+广武君推辞说：“我听说败军之将没资格谈论勇敢，亡国之臣没资格谋划生存，如今我是败亡的俘虏，怎么能权衡国家大事呢？”
+The lord of Guangwu politely declined, “I have heard that a general of a defeated army cannot speak of courage, nor can the minister of a fallen state discuss survival. I am but a defeated captive; how could I weigh in on great affairs?”
+
+信曰：“仆闻之，百里奚居虞而虞亡，在秦而秦霸，非愚于虞而智于秦也，用与不用，听与不听也。诚令成安君听足下计，若信者亦已为禽矣。以不用足下，故信得侍耳。”
+韩信说：“我听说，百里奚在虞国时虞国灭亡，在秦国时秦国称霸，不是他在虞国愚蠢而在秦国聪明，而是他的计策被采用与否、被听从与否罢了。要是成安君采纳您的计策，像我这样的人也早被活捉了。正因他不采纳您，我才得以侍奉您。”
+Han Xin replied, “I have heard that Bali Xi was in Yu when Yu fell, yet he thrived in Qin. This was not because he was foolish in Yu and wise in Qin, but because his advice was either heeded or ignored. Had Cheng’an Jun followed your plan, I would have been captured. It is because he did not, that I am honored to serve here.”
+
+因固问曰：“仆委心归计，愿足下勿辞。”
+于是坚持询问说：“我诚心诚意听从您的计策，希望您不要推辞。”
+Han Xin pressed further, “I shall fully follow your advice. Please, do not refuse.”
+
+广武君曰：“臣闻智者千虑，必有一失；愚者千虑，必有一得。故曰狂夫之言，圣人择焉。顾恐臣计未必足用，愿效愚忠。
+广武君说：“我听说智者千次谋划，必有一次失误；愚者千次谋划，必有一次得当。所以说‘即使是狂人的话，圣人也会选择采纳’。我只是担心我的计策未必有用，愿献上我愚钝的忠诚。
+The lord of Guangwu said, “The wisest man, in a thousand plans, will make at least one mistake; the foolish may stumble upon truth once. Therefore, a sage may select even the words of a madman. I fear my counsel may not be useful, yet I offer my humble loyalty.
+
+夫成安君有百战百胜之计，一旦而失之，军败部下，身死低上。
+成安君本有百战百胜的计策，却一旦失手，军队在部下（之地）战败，自己死在泜水之上。
+Cheng’an Jun had strategies that seemed invincible, but one misstep leads to defeat; the army falls, and he dies at the River Chi.
+
+今将军涉西河，虏魏王，禽夏说阏与，一举而下井陉，不终朝破赵二十万众，诛成安君，名闻海内，威震天下，农夫莫不辍耕释耒，榆衣甘食，倾耳以待命者。若此，将军之所长也。
+如今将军渡过西河，俘虏魏王，在阏与活捉夏说，一举攻克井陉，不到一个早晨就打败赵国二十万大军，诛杀成安君，名声传遍天下，威势震慑诸侯，农夫们都放下农具，穿好衣服、吃好食物，侧耳等待您的命令。像这样，是将军的优势。
+Now you, sir, have crossed the Yellow River, captured the king of Wei, defeated Xia Yue at Yuyu, taken Jingxing in one stroke, routed Zhao’s two hundred thousand in a day, executed Cheng’an Jun, and your fame spreads far and wide. Even farmers lay down their tools and await your command. This is your strength.
+
+然而众劳卒罢，其实难用。今将军欲举倦弊之兵，顿之燕坚城之下，欲战恐久力不能拔，情见势屈，旷日粮竭，而弱燕不服，齐必距境以自强也。
+但士兵们劳累疲惫，实际上难以再用。如今将军想率领疲惫的军队，停在燕国坚固的城池之下，想作战又怕长期对峙无法攻克，军情暴露、形势被动，时间久了粮草耗尽，而弱小的燕国仍不投降，齐国必然会在边境据守来增强自己的实力。
+Yet your troops are exhausted; if you lead them against the strongholds of Yan, they may fail after prolonged siege, supplies will run out, and the weak Yan will not surrender while Qi strengthens its defenses.
+
+燕、齐相持而不下，则刘、项之权未有所分也。若此者，将军所短也。
+燕、齐两国对峙不下，那么刘邦、项羽之间的胜负就难以分明。像这样，是将军的劣势。
+With Yan and Qi locked in stalemate, the contest between Liu Bang and Xiang Yu remains unresolved. This is your weakness.
+
+臣愚，窃以为亦过矣。故善用兵者不以短击长，而以长击短。”
+我愚钝，私下认为（您直接攻燕伐齐的计划）也不妥。所以善于用兵的人，不用自己的短处攻击别人的长处，而是用自己的长处攻击别人的短处。”
+A good general does not attack strength with weakness, but attacks weakness with strength.”
+
+韩信曰：“然则何由?”
+韩信说：“既然如此，那该怎么做呢？”
+Han Xin asked, “Then what should I do?”
+
+广武君对曰：“方今为将军计，莫如案甲休兵，镇赵抚其孤，百里之内，牛酒日至，以飨士大夫醉兵。
+广武君回答说：“如今为将军谋划，不如按兵不动、让士兵休息，安定赵国、抚恤赵国的孤儿，百里之内的地区，每天送来牛肉美酒，来犒劳将士。
+The lord of Guangwu replied, “In your case, sir, it is best to halt, rest your troops, stabilize Zhao, care for the orphans and widows, and within a hundred li, supply cattle and wine daily to entertain the scholars and soldiers.”
+
+北首燕路，而后遣辩士奉咫尺之书，暴其所长于燕，燕必不敢不听从。
+在百里范围内，每天用牛肉美酒犒劳士兵。然后向北派兵进攻燕国，再派辩士送信给燕国，将将军的长处告知燕国人，燕国必定不敢违抗。
+Treat your officers and men with beef and wine brought in daily from a hundred li around, and make ready to advance north towards Yan. Then dispatch an orator with a letter presenting your strengths, and Yan will not dare to resist.
+
+燕已从，使喧言者东告齐，齐必从风而服，虽有智者，亦不知为齐计矣。
+燕国降服后，再派使者向东告知齐国，齐国也会闻风而服，即使有智者，也无法为齐国出计策。
+Once Yan submits, send a messenger east to Qi, which will also submit, for even the wisest could not devise a different plan.
+
+如是则天下事皆可图也。兵固有先声而后实者，此之谓也。”
+如此天下大事皆可掌控。这就是兵法所说的“先虚而后实”。
+In this way, you can control all important matters. This is the principle of “making a show before striking” in warfare.
+
+韩信曰：“善。”从其策，发使使燕，燕从风而靡。
+韩信说：“好。”他按照广武君的计策行事，派使者出使燕国，燕国闻风而降。
+Han Xin said, “Good.” Following Guangwu Jun’s advice, he sent envoys to Yan, and Yan submitted readily.
+
+乃遣使报汉，因请立张耳为赵王，以镇抚其国。汉王许之，乃立张耳为赵王。
+随后派人向汉王报告，请求立张耳为赵王，以安抚赵国。汉王同意，于是立张耳为赵王。
+Then he sent a report to Liu Bang requesting that Zhang Er be made king of Zhao to pacify the country. Liu Bang agreed, and Zhang Er was installed as king of Zhao.
+
+楚数使奇兵渡河击赵，赵王耳、韩信往来救赵，因行定赵城邑，发兵诣汉。
+楚军多次派奇兵渡河攻打赵国，赵王张耳和韩信来回救援赵国，顺便平定路过的赵地城邑，并派兵支援汉王。
+Xiang Yu launched multiple surprise attacks across the Yellow River against Zhao. Zhang Er and Han Xin moved back and forth to aid Zhao, pacifying the cities they passed, and dispatched troops to support Liu Bang.
+
+楚方急围汉王于荥阳，汉王南出，之宛、叶间，得黥布，走入成皋，楚又复急围之。
+楚军紧急包围汉王于荥阳，汉王从南面逃到宛、叶之间，得到黥布归顺，进入成皋，楚军又紧急包围。
+Xiang Yu besieged Liu Bang at Xingyang; Liu Bang escaped south to the district between Wan and Ye, gaining Ying Bu’s support, and entered Chenggao. Chu forces quickly re-surrounded him.
+
+六月，汉王出成皋，东渡河，独与滕公俱，从张耳军修武。
+六月，汉王从成皋东渡黄河，仅与滕公同行，投奔驻扎在修武的张耳军。
+In the sixth month, Liu Bang left Chenggao, crossed the Yellow River eastward with only Lord Teng, and joined Zhang Er’s army stationed at Xiuwu.
+
+至，宿传舍。晨自称汉使，驰入赵壁。
+到达后住在驿站，次日早晨自称汉王的使者，骑马奔入赵军营地。
+Upon arrival, he lodged at a hostelry, and the next morning announced himself as an envoy of the king of Han, galloping into Zhao’s encampment.
+
+张耳、韩信未起，即其卧内上夺其印符，以麾召诸将，易置之。
+张耳、韩信还没起床时，汉王就从卧室里夺取他们的印符，用军旗召集诸将并调整职务。
+Before Zhang Er and Han Xin had risen, Liu Bang seized their seals from their chambers, summoned the officers with the banners, and reassigned positions.
+
+信、耳起，乃知汉王来，大惊。
+韩信、张耳起床后，才得知汉王已经到来，大为吃惊。
+When Han Xin and Zhang Er awoke, they were astonished to see Liu Bang present.
+
+汉王夺两人军，即令张耳备守赵地，拜韩信为相国，收赵兵未发者击齐。
+汉王接管了两人统率的军队，立即命令张耳留守赵地，任命韩信为相国，并让他指挥赵国尚未出征的兵力去进攻齐国。
+Liu Bang took command of their armies, immediately ordered Zhang Er to defend Zhao, appointed Han Xin as Chancellor, and commanded him to lead the unengaged Zhao troops to attack Qi.
+
+信引兵东，未渡平原，闻汉王使郦食其已说下齐。
+韩信率兵东进，还未渡过平原黄河时，听说汉王派郦食其去说服齐王降服齐国。
+Han Xin advanced east, but before crossing the Pingyuan plain, he heard that Liu Bang had secretly sent Li Yiji to persuade Qi to surrender.
+
+韩信欲止。范阳辩士蒯通说信曰：“将军受诏击齐，而汉独发间使下齐，宁有诏止将军乎?何以得毋行也!
+韩信打算停止前进。范阳辩士蒯通劝韩信说：“将军奉命攻打齐国，而汉王暗中派人让齐国投降，难道有命令让将军停止吗？凭什么要停止前进呢？
+Han Xin considered halting. Kuai Tong, an orator from Fanyang, advised him, “You were ordered to attack Qi. Even though the king sent a secret envoy to Qi, no order tells you to stop. Why should you halt?
+
+且郦生一士，伏轼掉三寸之舌，下齐七十余城，将军将数万众，岁余乃下赵五十余城，为将数岁，反不如一竖儒之功乎?”
+况且郦生只是一个辩士，趴在车上摇动三寸长的舌头，就让齐国七十余城降服。将军率数万大军，一年多才下赵五十余城，数年作将，难道比一个小小书生的功劳还少吗？”
+Moreover, Li Yiji, a mere scholar, by bowing from his carriage and wagging his three-inch tongue, persuaded over seventy cities of Qi to submit. You, leading tens of thousands, took more than a year to conquer fifty Zhao cities. Have you achieved less than a single scholar?”
+
+于是信然之，从其计，遂渡河。
+韩信认为有理，采纳了建议，遂渡河。
+Han Xin agreed and followed the advice, crossing the river.
+
+齐已听郦生，即留纵酒，罢备汉守御。
+齐王已听从郦生，放纵饮宴，撤去防御。
+Qi, having accepted Li Yiji, feasted him and removed its defenses.
+
+信因袭齐历下军，遂至临淄。
+韩信乘机袭击驻扎在历下的齐军，进至临淄。
+Han Xin attacked the Qi forces stationed at Lixia and pressed on to Linzi.
+
+齐王田广以郦生卖己，乃亨之，而走高密，使使之楚请救。
+齐王田广以为郦生出卖了自己，于是犒赏郦生，并逃往高密，派人向楚求救。
+Qi King Tian Guang, believing Li Yiji betrayed him, rewarded him and fled to Gaomi, sending envoys to Chu for assistance.
+
+韩信已定临蓄，遂东追广至高密西。
+韩信平定了临蓄，随后向东追击齐王田广至高密以西。
+After securing Linzi, Han Xin marched east, pursuing Tian Guang to west of Gaomi.
+
+楚亦使龙且将，号称二十万，救齐。
+楚王也派龙且为将，号称二十万大军前来救齐。
+Xiang Yu sent General Long Ju with an army purported to be two hundred thousand to rescue Qi.
+
+齐王广、龙且并军与信战，未合，人或说龙且曰：“汉兵远斗穷战，其锋不可当。齐、楚自居其地战，兵易败散。
+齐王田广和龙且两军会合准备与韩信交战，但还未正式交锋，有人劝龙且说：“汉军远征作战，锐不可当。齐楚在本土作战，士兵易溃散。
+Before the two forces engaged, someone advised Long Ju: “The Han army, fighting far from home, is unstoppable. Qi and Chu, defending their own territory, risk easy dispersal of their troops.
+
+不如深壁，令齐王使其信臣招所亡城，亡城闻其王在，楚来救，必反汉。
+不如筑深壁固守，让齐王派亲信去招抚失落的城池，城池一旦听闻王尚在，楚军又来援助，自会反汉。
+Better to fortify and let the king of Qi send trusted ministers to rally lost towns. When the towns learn the king is still alive and Chu has come to aid, they will revolt against Han.
+
+汉兵二千里客居，齐城皆反之，其势无所得食，可无战而降也。”
+汉军远在二千里之外，粮食难以补给，不战而降可也。”
+The Han army is two thousand li from home and cannot be fed. They will surrender without a fight.”
+
+龙且曰：“吾平生知韩信为人，易与耳。且夫救齐，不战而降之，吾何功?今战而胜之，齐之半可得，何为止!”
+龙且说：“我素知韩信为人，容易应付。而救齐不战让汉军降，我何功？若战胜汉军，就可夺取齐半地，何必停止？”
+Long Ju replied, “I know Han Xin well; he is easy to handle. Moreover, if we save Qi without fighting, what glory is there? If I defeat him in battle, half of Qi may be ours—why should I stop?”
+
+遂战，与信夹潍水陈。
+于是与韩信在潍水两岸布阵。
+He arrayed his army across the River Wei against Han Xin.
+
+韩信乃夜令人为万余囊，满盛沙，壅水上流，引军半渡，击龙且。
+韩信连夜命人制作万余沙囊堵住潍水上游，引水至半渡，袭击龙且。
+That night Han Xin had men fill over ten thousand sandbags to block the river upstream, then led half his army across and attacked Long Ju.
+
+不胜，还走。龙且果喜曰：“固知信怯也。”
+龙且未能取胜，撤退。龙且果然高兴地说：“我本知韩信胆小。”
+Unable to defeat Han Xin, Long Ju retreated. “I knew he was a coward!” Long Ju exclaimed.
+
+遂追信渡水。信使人决壅囊，水大至。
+于是率军渡水追击韩信。韩信派人打开沙袋，洪水涌来。
+crossing the river in pursuit. Han Xin sent men to remove the sandbag dam, and the flood struck.
+
+龙且军大半不得渡，即急击，杀龙且。
+龙且大军大半无法渡河，韩信趁机反击，杀死龙且。
+preventing most of Long Ju’s army from crossing. Han Xin counterattacked, killing Long Ju.
+
+龙且水东军散走，齐王广亡去。
+东岸楚军四散，齐王田广逃跑。
+The Chu troops on the east bank scattered, and King Tian Guang of Qi fled.
+
+信遂追北至城阳，皆虏楚卒。
+韩信继续追击北至城阳，将楚军全部俘虏。
+Han Xin pursued north to Chengyang, capturing all remaining Chu soldiers.
+
+汉四年，遂皆降平齐。
+汉四年（公元前），齐地全部平定。
+In the fourth year of Han, Qi was fully pacified.
+
+使人言汉王曰：“齐伪诈多变，反覆之国也，南边楚，不为假王以镇之，其势不定。愿为假王便。”
+韩信派人向汉王汇报：“齐国诡诈多变，反复无常，南邻楚国，不设代理国王镇守，局势不稳。我愿为代理王以安抚齐国。”
+Han Xin sent an envoy to Liu Bang, reporting: “Qi is deceitful and fickle; bordering Chu without an acting king to maintain order, it cannot be stable. I am willing to act as king temporarily.”
+
+当是时，楚方急围汉王于荥阳，韩信使者至，发书，汉王大怒，骂曰：“吾困于此，旦暮望若来佐我，乃欲自立为王!”
+当时楚军正紧围汉王于荥阳，韩信使者到达，汉王读信大怒，说：“我困于此，日夜盼你来助我，你却想自立为王！”
+At that time, Chu forces were besieging Liu Bang at Xingyang. Liu Bang received the message, enraged: “I am trapped here, waiting day and night for your aid, yet you seek to make yourself king!”
+
+张良、陈平蹑汉王足，因附耳语曰：“汉方不利，宁能禁信之王乎?不如因而立，善遇之，使自为守。不然，变生。”
+张良、陈平暗踩汉王足，耳语：“汉军不利，怎么能禁止韩信称王？不如乘势立他为王，好好善待，让他自守，否则会生变。”
+Zhang Liang and Chen Ping discreetly stepped on Liu Bang’s feet and whispered: “The Han forces are at a disadvantage. How can you forbid Han Xin from becoming king? It is better to appoint him and treat him well, letting him guard his territory; otherwise, trouble will arise.”
+
+汉王亦悟，因复骂曰：
+汉王这才明白，但仍骂道：
+Liu Bang realized this but still cursed.
+
+汉王亦悟，因复骂曰：“大丈夫定诸侯，即为真王耳，何以假为!”
+汉王明白过来，又骂道：“大丈夫平定诸侯，就应成为真王，何必做代理王！”
+Liu Bang realized this and exclaimed, “A true hero who pacifies the lords should become a real king, why act as a nominal one?”
+
+乃遣张良往，立信为齐王，征其兵击楚。
+于是派张良去立韩信为齐王，并征调他的兵力攻打楚军。
+He then sent Zhang Liang to make Han Xin king of Qi and command his troops to attack Chu.
+
+楚已亡龙且，项王恐，使盱眙人武涉往说齐王信曰：
+楚军失去龙且后，项王感到惊恐，派盱眙人武涉前去劝说齐王韩信：
+After Chu lost its general Long Ju, Xiang Yu panicked and sent Wu She from Xuyi to persuade King Han Xin:
+
+“天下共苦秦久矣，相与戮力击秦。
+“天下人长期受秦朝压迫之苦，于是联合起来合力攻打秦国。
+“The world has long suffered under Qin, and all have united to attack it.
+
+秦已破，计功割地，分土而王之，以休士卒。
+秦朝灭亡后，按功劳分割土地，分封诸侯为王，让士兵得以休息。
+“After Qin’s fall, land was divided by merit, and kings appointed to give the soldiers rest.
+
+令汉王复兴兵而东，侵人之分，夺人之地，已破三秦，引兵出关，收诸侯之兵以东击楚，其意非尽吞天下者不休，其不知厌足如是甚也。
+如今汉王却又起兵向东，侵占别人的封地，夺取别人的土地。他已经攻破三秦，又领兵出函谷关，收拢诸侯的军队向东攻打楚国，他的意图是不吞并整个天下就不会罢休，他的贪婪不知满足竟到了这种地步。
+“Now the king of Han has raised armies again, invading and occupying others’ lands. He has conquered the Three Qins, marched out of the passes, and gathered troops from other states to attack Chu in the east. He will not stop until the whole world is under him.
+
+且汉王不可必，身居项王掌握中数矣，项王怜而活之，然得脱，辄倍约，复击项王，其不可亲信如此。
+况且汉王这个人不值得信任，他的性命多次落在项王手中，项王怜悯他而让他活下来，可他一旦脱险，就立刻背弃盟约，再次攻打项王，他就是这样一个不能亲近信任的人。
+“Moreover, the king of Han cannot be fully trusted—his life has often been in Xiang Yu’s hands, who spared him out of pity. Yet once freed, he breaks his word and attacks Xiang Yu.
+
+今足下虽自以与汉王为厚交，为之尽力用兵，终为之所禽矣。
+现在您虽然自认为和汉王交情深厚，为他尽力作战，但最终还是会被他擒获的。
+“You fight for him, but in the end you will be captured.
+
+足下所以得须臾至今者，以项王尚存也。
+您之所以能活到现在，只是因为项王还活着（汉王需要利用您来对抗项王）。
+“You have only survived because Xiang Yu is still alive.
+
+当今二王之事，权在足下。足下右投则汉王胜，左投则项王胜。
+如今楚、汉两位君王的成败，关键全在您身上。您若倾向汉王，汉王就会取胜；您若倾向项王，项王就会取胜。
+“The fate of the two kings depends on you: if you side with Han, Han will win; if with Xiang Yu, Chu will win.
+
+项王今日亡，则次取足下。
+如果项王今天灭亡，接下来就会轮到攻取您了。
+“If Xiang Yu falls today, you are next.
+
+足下与项王有故，何不反汉与楚连和，参分天下王之?
+您和项王有旧交情，为什么不背叛汉王，与楚国联合，三分天下各自称王呢？
+“You and Xiang Yu have old ties; why not betray Han, ally with Chu, and divide the realm into three?
+
+今释此时，而自必于汉以击楚，且为智者固若此乎!”
+现在如果放弃这个时机，执意帮助汉王攻打楚国，难道明智的人会这样做吗！”
+“If you miss this opportunity and insist on helping Han against Chu, is this the conduct of a wise man?”
+
+韩信谢曰：“臣事项王，官不过郎中，位不过执戟，言不听，画不用，故倍楚而归汉。
+韩信辞谢说：“我过去侍奉项王时，官职不过是个郎中，地位不过是个执戟的卫士，我的进言不被采纳，计策不被使用，所以才背叛楚国归顺汉王。
+Han Xin declined, saying: “When I served King Xiang, I was merely a minor officer, a halberdier; my advice was never heeded, my plans never used, so I turned from Chu to Han.
+
+汉王授我上将军印，予我数万众，解衣衣我，推食食我，言听计用，故吾得以至于此。
+汉王授予我上将军的大印，给我几万士兵，他脱下自己的衣服给我穿，把自己的食物让给我吃，对我的进言言听计从，所以我才能达到今天这个地位。
+“The king of Han gave me the seal of Grand General, tens of thousands of troops, shared his clothing and food, and followed all my strategies. That is how I have reached my current position.
+
+夫人深亲信我，我倍之不祥，虽死不易。
+人家如此深切地亲近信任我，我却背叛他，这是不吉利的，即使死我也不会改变（对汉王的忠诚）。
+“The king trusts me deeply, and betrayal would be inauspicious; even my death could not alter this.
+
+幸为信谢项王!”
+请您代我向项王致歉！”
+“Please convey my apologies to Xiang Yu.”
+
+武涉已去，齐人蒯通知天下权在韩信，欲为奇策而感动之，以相人说韩信曰：
+武涉离开后，齐国人蒯通知道天下的局势关键在韩信手中，想献出奇策来打动他，于是用相面之术劝说韩信：
+After Wu She left, a Qi man named Kuai Tong, seeing that Han Xin held the key to the realm, sought to sway him with a clever scheme. “I have studied physiognomy,” he said.
+
+“仆尝受相人之术。”
+“我曾经学过相面的技艺。”
+“I have studied physiognomy,” he said.
+
+韩信曰：“先生相人何如?”
+韩信问：“先生相面的方法是怎样的？”
+Han Xin asked, “How do you judge a man?”
+
+对曰：“贵贱在于骨法，忧喜在于容色，成败在于决断，以此参之，万不失一。”
+蒯通回答：“人的富贵贫贱看骨骼长相，忧愁喜悦看面容气色，成功失败看决断能力，用这几点来参考，万无一失。”
+Kuai Tong replied: “High or low rank depends on the bone structure, joy or sorrow on the face, success or failure on decision-making. By these criteria, I am never wrong.”
+
+韩信曰：“善。先生相寡人何如?”
+韩信说：“好。那先生给我相面，结果如何？”
+Han Xin said: “Good. How do you see me?”
+
+对曰：“愿少间。”
+蒯通回答：“希望能屏退旁人，单独和您说。”
+Kuai Tong: “I wish to speak privately.”
+
+信曰：“左右去矣。”
+韩信说：“身边的人都退下吧。”
+Han Xin ordered his attendants away.
+
+通曰：“相君之面，不过封侯，又危不安。相君之背，贵乃不可言。”
+蒯通说：“看您的面相，最多不过封个侯爵，而且还会处境危险不安；但看您的‘背’（暗指背叛汉王），富贵却会达到无法用言语形容的地步。”
+Kuai Tong continued: “Judging from your face, you can be no more than a feudal lord, in danger and insecure; from your back, greatness beyond measure.”
+
+韩信曰：“何谓也?”
+韩信问：“这是什么意思？”
+Han Xin asked: “What do you mean?”
+
+蒯通曰：“天下初发难也，俊雄豪杰建号一呼，天下之士云合雾集，鱼鳞杂逻，至风起。
+蒯通说：“天下刚开始反抗秦朝时，英雄豪杰们纷纷建立名号，振臂一呼，天下的士人就像云雾那样聚集，像鱼鳞那样密集排列，像狂风那样骤起响应。
+Kuai Tong said: “When the rebellion against Qin first started, heroes with one call gathered men like clouds and fish scales, rising as wind and fire.
+
+当此之时，忧在亡秦而已。
+在那个时候，大家的忧虑只在于消灭秦朝罢了。
+“Their sole concern then was overthrowing Qin.
+
+今楚、汉分争，使天下无罪之人肝胆涂地，父子暴骸骨于中野，不可胜数。
+如今楚、汉两国相争，让天下无辜的百姓惨遭杀戮，父子的尸骨暴露在荒野之中，多得数不清。
+“Now, Han and Chu contend, and countless innocent men, fathers and sons, lie slain in the wilderness.
+
+楚人起彭城，转斗逐北，至于荥阳，乘利席卷，威震天下。
+楚军从彭城起兵，辗转作战，追逐败兵，一直打到荥阳，乘着胜利之势席卷各地，声威震动天下。
+“Chu’s army rose from Pengcheng, advancing to Xingyang, sweeping all before them and aweing the world.
+
+然兵困于京、索之间，迫西山而不能进者，三年于此矣。
+但他们的军队被困在京邑、索亭之间，逼近西山却不能前进，到现在已经三年了。
+“Yet trapped between Jing and Suo, they cannot advance beyond the western mountains for three years.
+
+汉王将数十万之众，距巩、洛，阻山河之险，一日数战，无尺寸之功，折北不救。
+汉王率领几十万大军，在巩县、洛阳一带据守，凭借山河的险要地势，一天打几次仗，却没取得一点儿功劳，反而屡次战败，无法挽救败局。
+“The king of Han, with hundreds of thousands of troops, occupies Gong and Luoyang, taking advantage of natural barriers, fighting several battles a day without gain, retreating unable to recover.
+
+败荥阳，伤成皋，遂走宛、叶之间，此所谓智勇俱困者也。
+在荥阳战败，在成皋受伤，于是逃到宛县、叶县之间，这就是人们所说的智慧和勇气都陷入困境的情况啊。
+“Defeated at Xingyang, wounded at Chenggao, fleeing to the districts of Wan and Ye, both wisdom and courage are trapped.
+
+夫锐气挫于险塞，而粮食竭于内府，百姓罢极怨望，容容无所倚。
+士兵的锐气在险要关塞处受挫，国家的粮食在府库中耗尽，百姓疲惫至极，心怀怨恨，人心惶惶，没有可依靠的对象。
+“Soldiers’ morale crushed, granaries depleted, the people exhausted and resentful, with no support.
+
+以臣料之，其势非天下之贤圣，固不能息天下之祸。
+依我看来，这种形势下，如果不是天下的贤圣之人，根本不能平息天下的祸乱。
+“Only a wise man can end this turmoil.
+
+当今两主之命系于足下，足下为汉则汉胜，与楚则楚胜。
+如今楚、汉两位君主的性命都维系在您身上，您帮助汉王，汉王就能取胜；您协助楚王，楚王就能取胜。
+“Now the fate of the two kings depends on you. Side with Han, Han will win; side with Chu, Chu will win.
+
+臣愿披腹心，输肝胆，效愚计，恐足下不能用也。
+我愿意敞开心扉，献出全部忠诚，献上我的愚笨计策，只是担心您不会采纳。
+“I wish to lay my heart bare and offer humble counsel, though you may not follow it.
+
+诚能听臣之计，莫若两利而俱存之，参分天下，鼎足而居，其势莫敢先动。
+如果您真能听从我的计策，不如让楚、汉双方都得到好处，使他们都能生存下来，您与他们三分天下，像鼎的三足那样各据一方，这种形势下，没有人敢先采取行动。
+“If you do, both sides can benefit: divide the realm into three, like a tripod, so none dares act first.
+
+夫以足下之贤圣，有甲兵之众，据强齐，从燕、赵，出空虚之地而制其后，因民之欲，西乡为百姓请命，则天下风走而响应矣，孰敢不听!
+凭您的贤圣才能，拥有众多的军队，占据强大的齐国，联合燕国、赵国，出兵到楚、汉兵力空虚的地方，牵制他们的后方，顺应百姓的愿望，向西为百姓请命，那么天下人就会像风吹草动一样纷纷响应您，谁敢不听从呢！
+“With your virtue and army, holding strong Qi, advancing from Yan and Zhao to seize empty lands, restraining the rear, and acting for the people, the world will respond.
+
+割大弱强，以立诸侯，诸侯已立，天下服听而归德于齐。
+分割强大的国家，削弱他们的势力，来分封诸侯；诸侯分封之后，天下人就会服从您，听从您的号令，并把功德归于齐国。
+“Weak states can be cut down, new lords set, and the world will yield to Qi’s virtue.
+
+案齐之故，有胶、泗之地，怀诸侯以德，深拱揖让，则天下之君王相率而朝于齐矣。
+占据齐国原有的土地，拥有胶州、泗水流域的地盘，用恩德安抚诸侯，庄重地拱手礼让，那么天下的君王就会相继来齐国朝拜了。
+“The old lands of Qi, the Jiao and Si rivers, used wisely with courtesy, will draw all kings to pay homage.
+
+盖闻‘天与弗取，反受其咎；时至不行，反受其殃’。
+我听说‘上天赐予的机会如果不接受，反而会遭受灾祸；时机到了如果不行动，反而会招来祸殃’。
+“As the saying goes, ‘What Heaven offers but is not taken brings blame; the time comes but inaction brings disaster.’
+
+愿足下孰虑之!”
+希望您仔细考虑这件事！”
+“I hope you deeply consider this!”
 
 韩信曰：“汉王遇我甚厚，载我以其车，衣我以其衣，食我以其食。吾闻之，乘人之车者载人之患，衣人之衣者怀人之忧，食人之食者死人之事，吾岂可以乡利倍义乎?”
 韩信说：“汉王对我十分优厚，用他的车载我，用他的衣服给我穿，用他的饭食供我食用。我听说，乘别人的车要分担他的灾患，穿别人的衣服要分担他的忧虑，吃别人的饭要为他的事业尽死力，我怎么能够为了自身利益而背弃信义呢？”
@@ -98,9 +802,41 @@ Now you possess the power to awe the sovereign and have unmatched achievements t
 韩信道歉说：“先生请不要再说了，我会考虑您的意见。”
 Han Xin thanked him, saying, “Enough, sir. I shall think it over.”
 
-后数日，蒯通复说曰：“夫听者事之候也，计者事之机也，听过计失而能久安者，鲜矣。听不失一二者，不可乱以言；计不失本末者，不可纷以辞。夫随厮养之役者，失万乘之权；守儋石之禄者，阙卿相之位。故知者决之断也，疑者事之害也。审毫厘之小计，遗天下之大数，智诚知之，决弗敢行者，百事之祸也。故曰‘猛虎之犹豫，不若蜂虿之致螫；骐骥之踢躅，不如驽马之安步；孟贲之狐疑，不如庸夫之必至也；虽有舜、禹之智，吟而不言，如喑聋之指麾也’。此言贵能行之。夫功者难成而易败，时者难得而易失也。时乎时，不再来。愿足下详察之。”
-几天以后，蒯通又劝韩信说：“能够听取意见是事情成功的征兆，能反复考虑是事情成功的关键。听错意见或打错主意却能长久安全的人，很少。听取别人意见而只错一次两次的人，不可能被花言巧语迷惑；考虑问题而不失本末的人，也不可能被闲言碎语扰乱。安心做杂役的人，失去的是君王的权力；贪图微薄俸禄的人，得不到公卿宰相的地位。所以聪明的人遇事当机立断，迟疑的人会坏事。对小事很精明却错过天下大事，明智而不敢行事，就是百事之祸。所以说：‘猛虎犹豫不决，不如黄蜂蝎子一心叮咬；骏马徘徊不前，不如劣马稳步前行；孟贲般的勇士狐疑不决，不如平常人必达目标；即使有舜、禹之智，闭口不言，也如聋哑之人用手势指挥。’这些话强调的是可贵的是能够付诸行动。功业难成而易败，时机难得而易失，机会一去不再来。希望您仔细考虑。”
-Some days later, Kuai Tong broached the subject again: “Being able to take advice is a sign of potential success; careful planning is the key. Few prosper if they listen to bad advice or make poor plans. A man who takes advice but errs only once or twice will not be misled by words; a man who plans without losing sight of essentials will not be confused by idle talk. One who contentedly performs menial tasks will never command ten thousand chariots; one who clings to a small salary will never become a high minister. Wisdom means decisive action, while doubt means failure. If you understand small details but neglect the larger scheme, or know what is right but dare not act, you court disaster. That is why they say: ‘Better an angry hornet than a hesitant tiger; better a poor horse that steadily advances than a thoroughbred that hesitates; better an ordinary man determined to act than a brave man who vacillates; even a Shun or Yu who keeps silent is like a deaf-mute issuing gestures.’ The point is that one must act. Achievements are hard to accomplish and easy to fail; opportunities are hard to seize and easy to miss; once gone, they never return. I urge you to consider this carefully.”
+后数日，蒯通复说曰：“夫听者事之候也，计者事之机也，听过计失而能久安者，鲜矣。
+几天以后，蒯通又劝韩信说：“能够听取意见是事情成功的征兆，能反复考虑是事情成功的关键。听错意见或打错主意却能长久安全的人，很少。
+Some days later, Kuai Tong broached the subject again: “Being able to take advice is a sign of potential success; careful planning is the key. Few prosper if they listen to bad advice or make poor plans.
+
+听不失一二者，不可乱以言；计不失本末者，不可纷以辞。
+听取别人意见而只错一次两次的人，不可能被花言巧语迷惑；考虑问题而不失本末的人，也不可能被闲言碎语扰乱。
+A man who takes advice but errs only once or twice will not be misled by words; a man who plans without losing sight of essentials will not be confused by idle talk.
+
+夫随厮养之役者，失万乘之权；守儋石之禄者，阙卿相之位。
+安心做杂役的人，失去的是君王的权力；贪图微薄俸禄的人，得不到公卿宰相的地位。
+One who contentedly performs menial tasks will never command ten thousand chariots; one who clings to a small salary will never become a high minister.
+
+故知者决之断也，疑者事之害也。
+所以聪明的人遇事当机立断，迟疑的人会坏事。
+Wisdom means decisive action, while doubt means failure.
+
+审毫厘之小计，遗天下之大数，智诚知之，决弗敢行者，百事之祸也。
+对小事很精明却错过天下大事，明智而不敢行事，就是百事之祸。
+If you understand small details but neglect the larger scheme, or know what is right but dare not act, you court disaster.
+
+故曰‘猛虎之犹豫，不若蜂虿之致螫；骐骥之踢躅，不如驽马之安步；孟贲之狐疑，不如庸夫之必至也；虽有舜、禹之智，吟而不言，如喑聋之指麾也’。
+所以说：‘猛虎犹豫不决，不如黄蜂蝎子一心叮咬；骏马徘徊不前，不如劣马稳步前行；孟贲般的勇士狐疑不决，不如平常人必达目标；即使有舜、禹之智，闭口不言，也如聋哑之人用手势指挥。’
+That is why they say: ‘Better an angry hornet than a hesitant tiger; better a poor horse that steadily advances than a thoroughbred that hesitates; better an ordinary man determined to act than a brave man who vacillates; even a Shun or Yu who keeps silent is like a deaf-mute issuing gestures.’
+
+此言贵能行之。
+这些话强调的是可贵的是能够付诸行动。
+The point is that one must act.
+
+夫功者难成而易败，时者难得而易失也。
+功业难成而易败，时机难得而易失。
+Achievements are hard to accomplish and easy to fail; opportunities are hard to seize and easy to miss;
+
+时乎时，不再来。愿足下详察之。”
+机会一去不再来。希望您仔细考虑。”
+once gone, they never return. I urge you to consider this carefully.”
 
 韩信犹豫，不忍倍汉，又自以为功多，汉终不夺我齐，遂谢蒯通。蒯通说不听，已详狂为巫。
 韩信犹豫着，不忍心背叛汉王，又自认为功劳巨大，汉王最终不会夺去他的齐国，于是谢绝了蒯通的劝说。蒯通见其不听劝，便假装疯癫扮作巫师。
@@ -110,30 +846,266 @@ Han Xin hesitated, unwilling to betray Liu Bang, and confident that after all he
 汉王在固陵被困时，采纳张良的计策，召见齐王韩信，遂率兵与汉王在垓下会师。项羽已被击败，高祖接管并夺取了齐王的军队。汉五年正月，改封齐王韩信为楚王，定都下邳。
 When Liu Bang was hard-pressed at Guling, he adopted Zhang Liang’s plan to summon King Han Xin of Qi, and they joined forces at Gaixia. Xiang Yu was already defeated, and the emperor seized Han Xin’s army. In the first month of the fifth year of Han, Han Xin was transferred from Qi to be King of Chu, with his capital at Xiapei.
 
-信至国，召所从食漂母，赐千金。及下乡南昌亭长，赐百钱，曰：“公，小人也，为德不卒。”召辱己之少年令出胯下者以为楚中尉，告诸将相曰：“此壮士也。方辱我时，我宁不能杀之邪?杀之无名，故忍而就于此。”
-韩信到达封地，召见曾给他饭食的漂母，赏赐千金。到南昌乡亭长那里，赏赐百钱，并说：“你只是小人，为德不能有始有终。”又召见曾侮辱自己、让自己从胯下爬过的少年，任命他为楚中尉，并告诉将相们：“这是壮士。当年他侮辱我时，我难道不能杀他？杀了他无名无利，所以我忍耐，待他至此。”
-When Han Xin reached his state, he summoned the washerwoman who had fed him and gave her a thousand gold pieces. To the constable of Nanchang he gave one hundred coins, saying, “You are a mean fellow, doing good by halves.” He summoned the young man who had insulted him by making him crawl between his legs, made him the military commander of Chu, and told his ministers, “He is a brave man. When he insulted me, could I not have killed him? But killing him would bring no honor, so I endured and brought him here.”
+信至国，召所从食漂母，赐千金。
+韩信到达封地，召见曾给他饭食的漂母，赏赐千金。
+When Han Xin reached his state, he summoned the washerwoman who had fed him and gave her a thousand gold pieces.
 
-项王亡将钟离昧家在伊庐，素与信善。项王死后，亡归信。汉王怨昧，闻其在楚，诏楚捕昧。信初之国，行县邑，陈兵出入。汉六年，人有上书告楚王信反。高帝以陈平计，天子巡狩会诸侯，南方有云梦，发使告诸侯会陈：“吾将游云梦。”实欲袭信，信弗知。高祖且至楚，信欲发兵反，自度无罪，欲谒上，恐见禽。人或说信曰：“斩昧谒上，上必喜，无患。”信见昧计事，昧曰：“汉所以不击取楚，以昧在公所。若欲捕我以自媚于汉，吾今日死，公亦随手亡矣。”乃骂信曰：“公非长者!”卒自刭。信持其首，谒高祖于陈。
-项王的逃亡将领钟离昧住在伊庐，一向和韩信要好。项王死后，他投奔了韩信。汉王怨恨钟离昧，听说他在楚国，就下令让楚国抓捕钟离昧。韩信刚到楚国时巡视所属县邑，出入都带兵。汉六年（公元前年），有人上书告韩信谋反。高帝采纳陈平的计策，宣称天子将巡狩会诸侯，南方有云梦，派使者通知诸侯到陈地朝会，说：“我将游览云梦。”实际上是想趁机袭击韩信，韩信不知道。当高祖将到楚地时，韩信想起兵造反，但自觉无罪，想去朝见高祖，却又害怕被捕。有人劝韩信说：“杀了钟离昧去朝见，高祖一定高兴，你就没事。”韩信将此事告知钟离昧，钟离昧说：“汉王之所以不攻楚，是因为我在您这里。如果你想抓我去讨好汉王，我今日死了，你也会随之灭亡。”于是骂韩信说：“你不是忠厚的人！”最后自杀。韩信拿着钟离昧的头去朝见高祖于陈地。
-One of Xiang Yu's former generals, Zhongli Mo, lived in Yilu and was an old friend of Han Xin. After Xiang Yu’s death, he took refuge with Han Xin. The Han emperor, who bore a grudge against Zhongli Mo, heard he was in Chu and issued an order for his capture. When Han Xin first arrived in his state, he inspected the counties and always traveled with troops. In the sixth year, someone reported that Han Xin was plotting rebellion. Emperor Gaozu, following Chen Ping’s advice, declared he would make an imperial tour and meet the feudal lords in the south at Yunmeng, sending messengers to summon the lords to Chen, ostensibly to say, “I shall visit Yunmeng,” but in reality intending to strike Han Xin, which he did not know. As the emperor approached Chu, Han Xin considered raising troops to rebel, but since he was innocent, he wanted to meet the emperor, fearing capture. Someone suggested, “If you cut off Zhongli Mo’s head before your audience, the emperor will be pleased, and you will have no trouble.” Han Xin consulted Zhongli Mo, who said, “The only reason he has not attacked you is because I am here. If you arrest me to please the emperor, I may die today, and you will be next.” He then cursed Han Xin for being unfaithful and committed suicide. Han Xin carried his head to meet the emperor at Chen.
+及下乡南昌亭长，赐百钱，曰：“公，小人也，为德不卒。”
+到南昌乡亭长那里，赏赐百钱，并说：“你只是小人，为德不能有始有终。”
+To the constable of Nanchang he gave one hundred coins, saying, “You are a mean fellow, doing good by halves.”
 
-上令武士缚信载后车。信曰：“果若人言：‘狡兔死，良狗亨；高鸟尽，良弓藏；敌国破，谋臣亡。'天下已定，我固当亨!”上曰：“人告公反。”遂械系信。至洛阳，赦信罪，以为淮阴侯。信知汉王畏恶其能，常称病不朝从。信由此日夜怨望，居常鞅鞅，羞与绛、灌等列。信尝过樊将军哙，哙跪拜送迎，言称臣，曰：“大王乃肯临臣!”信出门笑曰：“生乃与哙等为伍!”上常从容与信言诸将能不，各有差。上问曰：“如我能将几何?”信曰：“陛下不过能将十万。”上曰：“于君何如?”曰：“臣多多而益善耳。”
-高祖命令武士将韩信捆绑，置于后车。韩信说：“果然如人所言：‘狡兔死，好猎狗也要被烹；高飞的鸟射尽，好弓也收藏；敌国灭亡，谋臣也随之罢命。’天下已定，我也自然应当遭此命运！”高祖说：“有人告你谋反。”于是给韩信带上刑具。到洛阳后，高祖赦免韩信罪过，封为淮阴侯。韩信知道汉王畏惧其才能，经常称病不朝见、不随行。韩信因此日夜怨恨，居家闷闷不乐，羞于与绛侯、灌婴等并列。韩信曾拜访樊将军哙，哙跪迎，称自己为臣，说：“大王竟亲临寒舍！”韩信出门笑道：“我竟与哙等为伍！”高祖闲暇时与韩信谈论诸将才能，每人评价各有不同。高祖问：“我能率多少兵？”韩信曰：“陛下不过十万。”高祖问：“你呢？”韩信答：“臣多而益善。”
-The emperor ordered guards to bind Han Xin and place him in the rear carriage. Han Xin said, “So it is true what people say: ‘When the cunning hare dies, the good hound is thrown into the cauldron; when the soaring bird is caught, the good bow is put away; when enemy states fall, the wise minister is destroyed.’ Now that the empire is settled, it is only natural I should meet the same fate!” The emperor said, “There are reports you are plotting revolt.” Han Xin was chained. Upon reaching Luoyang, he was pardoned and made Marquis of Huaiyin. Knowing that the emperor feared his talent, Han Xin often feigned illness to avoid court and accompanying duties. He brooded day and night, embarrassed to rank alongside Zhou Bo and Guan Ying. Han Xin once visited General Fan Kuai; Fan Kuai knelt to welcome him, calling himself a subject and saying, “Your Highness honors me with this visit.” Han Xin laughed as he left, saying, “I have come down to the level of men like Fan Kuai.” Once, the emperor casually discussed with Han Xin the capabilities of his generals; Han Xin evaluated each differently. The emperor asked, “How many troops could I command?” Han Xin said, “No more than 100,000.” The emperor asked, “And you?” Han Xin replied, “The more I command, the better it is.”
+召辱己之少年令出胯下者以为楚中尉，告诸将相曰：“此壮士也。方辱我时，我宁不能杀之邪?杀之无名，故忍而就于此。”
+又召见曾侮辱自己、让自己从胯下爬过的少年，任命他为楚中尉，并告诉将相们：“这是壮士。当年他侮辱我时，我难道不能杀他？杀了他无名无利，所以我忍耐，才达到今天的地位。”
+He summoned the young man who had insulted him by making him crawl between his legs, made him the military commander of Chu, and told his ministers, “He is a brave man. When he insulted me, could I not have killed him? But killing him would bring no honor, so I endured and achieved what I have today.”
 
-上笑曰：“多多益善，何为为我禽?”信曰：“陛下不能将兵，而善将将，此乃信之所以为陛下禽也。且陛下所谓天授，非人力也。”陈豨拜为钜鹿守，辞于淮阴侯。淮阴侯挈其手，辟左右与之步于庭，仰天叹曰：“子可与言乎?欲与子有言也。”豨曰：“唯将军令之。”淮阴侯曰：“公所居，天下精兵处也；而公，陛下之信幸臣也。人言公之畔，陛下必不信；再至，陛下乃疑矣；三至，必怒而自将。吾为公从中起，天下可图也。”陈豨素知其能也，信之，曰：“谨奉教!”汉十年，陈豨果反。上自将而往，信病不从。
-韩信说：“我越多越好。”高祖笑道：“既然越多越好，为什么你还会被我抓住呢?”韩信说：“陛下不善于带兵，却善于驾驭将领，这就是我被陛下抓获的缘故。况且陛下的权力是天授的，不是人力所能达到的。”陈豨被任命为巨鹿郡守，向淮阴侯辞行。淮阴侯拉着他的手，避开左右随从在庭院里散步，仰天叹气说：“你可以和我谈谈吗？我有些话想告诉你。”陈豨说：“将军只管吩咐。”淮阴侯说：“你所管辖之地，是天下精兵聚集之处；你又是陛下的亲信宠臣。如果有人说你谋反，陛下一定不会相信；第二次有人去告，你的行为会引起怀疑；第三次有人去告，你陛下一定会愤怒亲自讨伐。如果我从中支持你，天下就有可能被我们掌握。”陈豨素知韩信才能，也信任他，说：“谨遵教诲！”汉十年（公元前年），陈豨果然起兵叛乱。高祖亲自率兵前往，韩信称病未随从。
-Han Xin said, “In my case, the more the better.” The emperor laughed, “Then if the more the better, how is it that you let me capture you?” Han Xin replied, “Your Majesty is not skilled at commanding troops, but excels at commanding generals. That is why I was captured by you. Moreover, your power is granted by Heaven, not by human effort.” Chen Xi was appointed governor of Julu and went to take leave of Han Xin. Han Xin took his hand, dismissed the attendants, and walked with him through the courtyard. Looking up, he sighed and said, “Can you keep a secret? I have something to tell you.” Chen Xi replied, “I am at your command, general!” Han Xin said, “The region you govern contains the best troops in the empire; and you are one of the emperor’s trusted ministers. If someone accuses you of rebellion, the emperor will not believe it; a second report will arouse suspicion; a third report will make him personally march against you. If I support you from within, we could dominate the empire.” Chen Xi, knowing and trusting Han Xin’s ability, said, “I shall follow your instructions!” In the tenth year of Han, Chen Xi indeed revolted. The emperor led an army personally, but Han Xin, claiming illness, did not accompany him.
+项王亡将钟离昧家在伊庐，素与信善。
+项王的逃亡将领钟离昧家在伊庐，一向和韩信交好。
+One of Xiang Yu's former generals, Zhongli Mo, lived in Yilu and was an old friend of Han Xin.
 
-阴使人至豨所，曰：“弟举兵，吾从此助公。”信乃谋与家臣夜诈诏赦诸官徒奴，欲发以袭吕后、太子。部署已定，待豨报。其舍人得罪于信，信囚，欲杀之。舍人弟上变，告信欲反状于吕后。吕后欲召，恐其党不就，乃与萧相国谋，诈令人从上所来，言豨已得死，列侯群臣皆贺。相国绐信曰：“虽疾，强人贺。”信入，吕后使武士缚信，斩之长乐钟室。信方斩，曰：“吾悔不用蒯通之计，乃为儿女子所诈，岂非天哉!”遂夷信三族。高祖已从豨军来，至，见信死，且喜且怜之，问：“信死亦何言?”吕后曰：“信言恨不用蒯通计。”高祖曰：“是齐辩士也。”乃诏齐捕蒯通。
-韩信暗中派人到陈豨处，说：“你只管起兵，我在这里协助你。”韩信与家臣商议，趁夜间假传诏书赦免官府中的罪人和奴隶，打算用他们去袭击吕后和太子。部署完成后，等待陈豨的消息。韩信的一个门客触怒了他，韩信将其关押，打算杀掉他。门客的弟弟上书吕后，告发韩信准备反叛。吕后想召见韩信，又怕他和党羽不来，于是与萧相国谋划，假传有人从皇帝那里来，说陈豨已被杀，列侯群臣都来祝贺。萧相国欺骗韩信说：“虽然你病了，但还是要勉强去庆贺一下。”韩信进入宫中，吕后派武士将他捆绑，在长乐宫钟室处斩首。韩信临死时说：“我后悔没有采纳蒯通的计策，竟被妇人和小子欺骗，这岂不是天意？”于是韩信三族被诛。高祖从平定陈豨的军队归来，看到韩信已死，又喜又怜，问：“韩信死前说了什么？”吕后说：“韩信说他后悔没有用蒯通的计策。”高祖说：“此人果然是齐国的辩士。”于是下令在齐捕捉蒯通。
-Han Xin secretly sent a message to Chen Xi, saying, “Rise in arms, and I will support you from here.” Han Xin and his followers plotted at night, forging an edict to pardon all public slaves, intending to use them to attack Empress Lü and the crown prince. All preparations were complete, waiting for Chen Xi’s response. A steward who had offended Han Xin was imprisoned and intended to be executed, but his brother reported Han Xin’s plot to Empress Lü. She wanted to summon Han Xin, fearing he and his followers might not obey, and consulted Prime Minister Xiao He. They spread false news that Chen Xi had been killed, and all nobles came to offer congratulations. Xiao He deceived Han Xin, saying, “Although you are ill, you should go and congratulate.” When Han Xin entered, Empress Lü had guards bind him and behead him in the bell chamber of Changle Palace. As he was executed, Han Xin exclaimed, “I regret not taking Kuai Tong’s advice; I have been deceived by women and boys—surely this is Heaven’s will!” Thus, Han Xin’s three clans were exterminated. The emperor, returning from the campaign against Chen Xi, saw Han Xin dead, and was both pleased and sorrowful. He asked, “What did Han Xin say before dying?” Empress Lü said, “He said he regretted not following Kuai Tong’s plan.” The emperor remarked, “This man is truly an orator of Qi,” and ordered Kuai Tong to be captured in Qi.
+项王死后，亡归信。
+项王死后，钟离昧逃来投奔韩信。
+After Xiang Yu’s death, he took refuge with Han Xin.
 
-乃昭齐捕蒯蒯通。通至，上曰：“若教淮阴侯反乎?”对曰：“然，臣固教之，竖子不用臣之策，故令自夷于此。如彼竖子用臣之计，陛下安得而夷之乎?”上怒曰：“亨之!”通曰：“嗟乎，冤哉亨也!”上曰：“若教韩信反，何冤?”对曰：“秦之纲绝而维弛，山东大扰，异姓并起，英俊乌集。秦失其鹿，天下共逐之，于是高材疾足者先得焉。遮之狗吠尧，尧非不仁，狗因吠非其主。当是时，臣唯独知韩信，非知陛下也。且天下锐精持锋欲为陛下所为者甚众，顾力不能耳。又可尽亨之邪?”高帝曰：“置之!”乃释通之罪。
-诏令齐国缉拿蒯通。蒯通被抓来，高祖问：“是你教唆淮阴侯反叛的吗？”蒯通回答：“是的，我确实教他反叛，但那小子没有采纳我的计策，所以才自取灭亡。假如他采纳了我的计策，陛下怎能杀他呢？”高祖大怒说：“烹了他！”蒯通说：“哎呀，这真冤啊！”高祖问：“你教韩信反叛，有何冤枉？”蒯通答：“秦王朝法度废弛，山东大乱，异姓诸侯纷纷自立，英雄豪杰像乌鸦一样聚集。秦王朝失去鹿权（天下的统治权），天下人争相追逐，于是才能高、行动快的人先得其所。盗跖的狗对着尧狂叫，并非尧不仁，狗因为他不是自己的主人而叫。那时，我只知道韩信，不知道陛下。天下拿着兵器想为陛下做事的人很多，但力量不够。难道要把他们全都杀光吗？”高帝说：“放了他。”于是赦免了蒯通的罪。
-Kuai Tong was arrested. When he was brought before Emperor Gaozu, the emperor asked, “Did you advise the marquis of Huaiyin to rebel?” “I did,” replied Kuai Tong. “The fool did not follow my advice, and therefore he brought about his own destruction. Had he followed my plan, how could Your Majesty have destroyed him?” The emperor, enraged, said, “Throw him into the cauldron!” Kuai Tong cried, “Ah! How unjust!” “Unjust? When you advised Han Xin to rebel?” “When the Qin dynasty’s laws were broken and its power collapsed, chaos spread across Shandong, and various clans raised armies, gathering heroes and men of talent. Qin had lost the imperial power, and the world pursued it; the most able and swift would claim it first. Zhi the bandit’s dog barked at Emperor Yao, not because Yao was wicked, but because the dog barked at anyone other than its master. At that time I knew only Han Xin, not Your Majesty. Moreover, many men sharpened their weapons, eager to act for Your Majesty, but their strength was insufficient. Do you intend to throw them all into the cauldron?” “Let him go!” said the emperor, pardoning Kuai Tong.
+汉王怨昧，闻其在楚，诏楚捕昧。
+汉王怨恨钟离昧，听说他在楚国，便下诏让楚国抓捕钟离昧。
+The Han emperor, who bore a grudge against Zhongli Mo, heard he was in Chu and issued an order for his capture.
 
-太史公曰：吾如淮阴，淮阴人为余言，韩信虽为布衣时，其志与众异。其母死，贫无以葬，然乃行营高敞地，令其旁可置万家。余视其母冢，良然。假令韩信学道谦让，不伐己功，不矜其能，则庶几哉，于汉家勋可以比周、召、太公之徒，后世血食矣。不务出此，而天下已集，乃谋畔逆，夷灭宗族，不亦宜乎!
-太史公说：我到淮阴时，淮阴人对我说，韩信即使是平民百姓，他的志向就与众不同。他母亲去世时，家境贫困无力安葬，但他仍四处寻找高敞墓地，使母亲墓旁可安置万户人家。我去看他母亲的坟墓，果然如此。若韩信学习道家的谦让，不夸耀自己的功劳，不以才能自矜，那差不多了。这样，他对汉朝的功劳可以与周公、召公、太公相媲美，后世仍会祭祀他。但他没有如此修身，而天下大局已定，他仍谋反叛乱，宗族被灭，这也算是应得的结局。
-The Grand Historian comments: When I visited Huaiyin, the locals told me that even as a commoner, Han Xin’s ambition differed from that of ordinary men. When his mother died, he was too poor to afford a proper burial, yet he searched for a high burial ground, ensuring that ten thousand households could be settled beside her grave. I visited her grave and confirmed it. Had Han Xin followed the Way and been modest, neither boasting of his achievements nor exalting his talents, all would have been well. His contributions to the House of Han could then have been compared to the Duke of Zhou, the Duke of Zhao, or Patriarch Lü Shang, and later generations would have continued to offer sacrifices to him. But instead, he attempted rebellion after the empire was already united, and his family was exterminated. This was a just consequence.
+信初之国，行县邑，陈兵出入。
+韩信刚到楚国时，巡视所属县邑，出入都带兵护卫。
+When Han Xin first arrived in his state, he inspected the counties and always traveled with troops.
+
+汉六年，人有上书告楚王信反。
+汉六年，有人上书告发楚王韩信谋反。
+In the sixth year of Han, someone reported that Han Xin was plotting rebellion.
+
+高帝以陈平计，天子巡狩会诸侯，南方有云梦，发使告诸侯会陈：“吾将游云梦。”
+高帝采用陈平的计策，以天子巡视诸侯领地、会见诸侯为名——南方有云梦泽，便派使者告知诸侯到陈地会合，说：“我要去游览云梦泽。”
+Emperor Gaozu, following Chen Ping’s advice, declared he would make an imperial tour to meet the feudal lords. Since there was the Yunmeng Marsh in the south, he sent messengers to summon the lords to gather in Chen, saying, “I will visit the Yunmeng Marsh.”
+
+实欲袭信，信弗知。
+实则想趁机袭击韩信，韩信却不知情。
+In fact, he intended to launch a surprise attack on Han Xin, but Han Xin did not know this.
+
+高祖且至楚，信欲发兵反，自度无罪，欲谒上，恐见禽。
+高祖即将抵达楚地，韩信想发兵反叛，又自认为没有罪过，想朝见高祖，却担心被逮捕。
+As the emperor was about to reach Chu, Han Xin considered raising troops to rebel, yet he thought he was innocent and wanted to meet the emperor, but feared being arrested.
+
+人或说信曰：“斩昧谒上，上必喜，无患。”
+有人劝韩信说：“杀了钟离昧去朝见高祖，高祖必定高兴，你就没有祸患了。”
+Someone advised Han Xin, “Kill Zhongli Mo and go to meet the emperor—he will surely be pleased, and you will be free from trouble.”
+
+信见昧计事，昧曰：“汉所以不击取楚，以昧在公所。若欲捕我以自媚于汉，吾今日死，公亦随手亡矣。”
+韩信去见钟离昧，和他商量此事。钟离昧说：“汉王之所以不攻打楚国，是因为我在您这里。如果您想抓我去讨好汉王，我今天死了，您也会紧跟着灭亡。”
+Han Xin went to see Zhongli Mo to discuss this. Zhongli Mo said, “The reason the Han emperor does not attack Chu is because I am with you. If you want to capture me to curry favor with the Han emperor, I will die today, and you will die soon after.”
+
+乃骂信曰：“公非长者!”卒自刭。
+于是骂韩信说：“您不是忠厚之人！”最终自杀身亡。
+He then scolded Han Xin, “You are not a man of integrity!” and finally committed suicide.
+
+信持其首，谒高祖于陈。
+韩信拿着钟离昧的首级，在陈地朝见高祖。
+Han Xin took Zhongli Mo’s head and went to meet Emperor Gaozu in Chen.
+
+上令武士缚信载后车。
+高祖命令武士捆绑韩信，把他放在后面的车上。
+The emperor ordered his guards to bind Han Xin and put him in the rear carriage.
+
+信曰：“果若人言：‘狡兔死，良狗亨；高鸟尽，良弓藏；敌国破，谋臣亡。'天下已定，我固当亨!”
+韩信说：“果然像人们说的那样：‘狡猾的兔子死了，优良的猎狗就该被烹杀；高飞的鸟被捕尽了，好用的弓箭就该被收藏；敌对的国家被攻破了，出谋划策的大臣就该被诛杀。’天下已经平定，我本来就该被烹杀！”
+Han Xin said, “It is just as people say: ‘When the cunning hare dies, the good hound is boiled; when the high-flying birds are gone, the good bow is hidden; when the enemy states are destroyed, the advising ministers perish.’ The world has been pacified, so I should indeed be boiled!”
+
+上曰：“人告公反。”
+高祖说：“有人告发你谋反。”
+The emperor said, “Someone has accused you of plotting rebellion.”
+
+遂械系信。
+于是用刑具拘禁了韩信。
+He then had Han Xin imprisoned in shackles.
+
+至洛阳，赦信罪，以为淮阴侯。
+到了洛阳，高祖赦免了韩信的罪过，改封他为淮阴侯。
+When they reached Luoyang, the emperor pardoned Han Xin of his crimes and made him Marquis of Huaiyin.
+
+信知汉王畏恶其能，常称病不朝从。
+韩信知道汉王畏惧且厌恶自己的才能，便常常称病不去朝见，也不跟随汉王出行。
+Han Xin knew that the Han emperor feared and hated his talent, so he often pretended to be ill and did not go to court or accompany the emperor on trips.
+
+信由此日夜怨望，居常鞅鞅，羞与绛、灌等列。
+从此，韩信日夜心怀怨恨，在家中常常闷闷不乐，以和绛侯周勃、灌婴等人地位同等为羞耻。
+From then on, Han Xin harbored resentment day and night, often felt depressed at home, and was ashamed to be ranked alongside Zhou Bo (Marquis of Jiang) and Guan Ying.
+
+信尝过樊将军哙，哙跪拜送迎，言称臣，曰：“大王乃肯临臣!”
+韩信曾去拜访樊哙将军，樊哙跪拜着迎接他，送别时也跪拜，口中称自己为“臣”，说：“大王竟然肯光临我的家！”
+Han Xin once visited General Fan Kuai. Fan Kuai knelt down to welcome him and also knelt when seeing him off, calling himself “your subject” and saying, “Your Highness actually deigns to visit my home!”
+
+信出门笑曰：“生乃与哙等为伍!”
+韩信出门后笑着说：“我这辈子竟然和樊哙这样的人同列！”
+After Han Xin went out, he laughed and said, “I end up being in the same rank as someone like Fan Kuai in this life!”
+
+上常从容与信言诸将能不，各有差。
+高祖常常从容地和韩信谈论各位将领的才能，对他们的评价各有高低。
+Emperor Gaozu often talked with Han Xin casually about the abilities of various generals, and his evaluations of them varied.
+
+上问曰：“如我能将几何?”
+高祖问韩信：“像我这样，能统率多少士兵？”
+The emperor asked Han Xin, “How many soldiers can I command?”
+
+信曰：“陛下不过能将十万。”
+韩信说：“陛下最多能统率十万人。”
+Han Xin said, “Your Majesty can command no more than 100,000 soldiers.”
+
+上曰：“于君何如?”
+高祖又问：“那你能统率多少呢？”
+The emperor then asked, “What about you?”
+
+曰：“臣多多而益善耳。”
+韩信回答：“我统率的士兵越多越好。”
+Han Xin replied, “The more soldiers I command, the better.”
+
+上笑曰：“多多益善，何为为我禽?”
+高祖笑道：“既然越多越好，为什么你还会被我抓住呢?”
+The emperor laughed, “Then if the more the better, how is it that you let me capture you?”
+
+信曰：“陛下不能将兵，而善将将，此乃信之所以为陛下禽也。且陛下所谓天授，非人力也。”
+韩信说：“陛下不善于带兵，却善于驾驭将领，这就是我被陛下抓获的缘故。况且陛下的权力是天授的，不是人力所能达到的。”
+Han Xin replied, “Your Majesty is not skilled at commanding troops, but excels at commanding generals. That is why I was captured by you. Moreover, your power is granted by Heaven, not by human effort.”
+
+陈豨拜为钜鹿守，辞于淮阴侯。
+陈豨被任命为巨鹿郡守，向淮阴侯辞行。
+Chen Xi was appointed governor of Julu and went to take leave of Han Xin.
+
+淮阴侯挈其手，辟左右与之步于庭，仰天叹曰：“子可与言乎?欲与子有言也。”
+淮阴侯拉着他的手，避开左右随从在庭院里散步，仰天叹气说：“你可以和我谈谈吗？我有些话想告诉你。”
+Han Xin took his hand, dismissed the attendants, and walked with him through the courtyard. Looking up, he sighed and said, “Can you keep a secret? I have something to tell you.”
+
+豨曰：“唯将军令之。”
+陈豨说：“将军只管吩咐。”
+Chen Xi replied, “I am at your command, general!”
+
+淮阴侯曰：“公所居，天下精兵处也；而公，陛下之信幸臣也。人言公之畔，陛下必不信；再至，陛下乃疑矣；三至，必怒而自将。吾为公从中起，天下可图也。”
+淮阴侯说：“你所管辖之地，是天下精兵聚集之处；你又是陛下的亲信宠臣。如果有人说你谋反，陛下一定不会相信；第二次有人去告，你的行为会引起怀疑；第三次有人去告，你陛下一定会愤怒亲自讨伐。如果我从中支持你，天下就有可能被我们掌握。”
+Han Xin said, “The region you govern contains the best troops in the empire; and you are one of the emperor’s trusted ministers. If someone accuses you of rebellion, the emperor will not believe it; a second report will arouse suspicion; a third report will make him personally march against you. If I support you from within, we could dominate the empire.”
+
+陈豨素知其能也，信之，曰：“谨奉教!”
+陈豨素知韩信才能，也信任他，说：“谨遵教诲！”
+Chen Xi, knowing and trusting Han Xin’s ability, said, “I shall follow your instructions!”
+
+汉十年，陈豨果反。上自将而往，信病不从。
+汉十年（公元前年），陈豨果然起兵叛乱。高祖亲自率兵前往，韩信称病未随从。
+In the tenth year of Han, Chen Xi indeed revolted. The emperor led an army personally, but Han Xin, claiming illness, did not accompany him.
+
+阴使人至豨所，曰：“弟举兵，吾从此助公。”
+韩信暗中派人到陈豨处，说：“你只管起兵，我在这里协助你。”
+Han Xin secretly sent a message to Chen Xi, saying, “Rise in arms, and I will support you from here.”
+
+信乃谋与家臣夜诈诏赦诸官徒奴，欲发以袭吕后、太子。
+韩信与家臣商议，趁夜间假传诏书赦免官府中的罪人和奴隶，打算用他们去袭击吕后和太子。
+Han Xin and his followers plotted at night, forging an edict to pardon all public slaves, intending to use them to attack Empress Lü and the crown prince.
+
+部署已定，待豨报。
+部署完成后，等待陈豨的消息。
+All preparations were complete, waiting for Chen Xi’s response.
+
+其舍人得罪于信，信囚，欲杀之。
+韩信的一个门客触怒了他，韩信将其关押，打算杀掉他。
+A steward who had offended Han Xin was imprisoned and intended to be executed.
+
+舍人弟上变，告信欲反状于吕后。
+门客的弟弟上书吕后，告发韩信准备反叛。
+but his brother reported Han Xin’s plot to Empress Lü.
+
+吕后欲召，恐其党不就，乃与萧相国谋，诈令人从上所来，言豨已得死，列侯群臣皆贺。
+吕后想召见韩信，又怕他和党羽不来，于是与萧相国谋划，假传有人从皇帝那里来，说陈豨已被杀，列侯群臣都来祝贺。
+She wanted to summon Han Xin, fearing he and his followers might not obey, and consulted Prime Minister Xiao He. They spread false news that Chen Xi had been killed, and all nobles came to offer congratulations.
+
+相国绐信曰：“虽疾，强人贺。”
+萧相国欺骗韩信说：“虽然你病了，但还是要勉强去庆贺一下。”
+Xiao He deceived Han Xin, saying, “Although you are ill, you should go and congratulate.”
+
+信入，吕后使武士缚信，斩之长乐钟室。
+韩信进入宫中，吕后派武士将他捆绑，在长乐宫钟室处斩首。
+When Han Xin entered, Empress Lü had guards bind him and behead him in the bell chamber of Changle Palace.
+
+信方斩，曰：“吾悔不用蒯通之计，乃为儿女子所诈，岂非天哉!”
+韩信临死时说：“我后悔没有采纳蒯通的计策，竟被妇人和小子欺骗，这岂不是天意？”
+As he was executed, Han Xin exclaimed, “I regret not taking Kuai Tong’s advice; I have been deceived by women and boys—surely this is Heaven’s will!”
+
+遂夷信三族。
+于是韩信三族被诛。
+Thus, Han Xin’s three clans were exterminated.
+
+高祖已从豨军来，至，见信死，且喜且怜之，问：“信死亦何言?”
+高祖从平定陈豨的军队归来，看到韩信已死，又喜又怜，问：“韩信死前说了什么？”
+The emperor, returning from the campaign against Chen Xi, saw Han Xin dead, and was both pleased and sorrowful. He asked, “What did Han Xin say before dying?”
+
+吕后曰：“信言恨不用蒯通计。”
+吕后说：“韩信说他后悔没有用蒯通的计策。”
+Empress Lü said, “He said he regretted not following Kuai Tong’s plan.”
+
+高祖曰：“是齐辩士也。”乃诏齐捕蒯通。
+高祖说：“此人果然是齐国的辩士。”于是下令在齐捕捉蒯通。
+The emperor remarked, “This man is truly an orator of Qi,” and ordered Kuai Tong to be captured in Qi.
+
+乃昭齐捕蒯蒯通。
+诏令齐国缉拿蒯通。
+Kuai Tong was arrested.
+
+通至，上曰：“若教淮阴侯反乎?”
+蒯通被抓来，高祖问：“是你教唆淮阴侯反叛的吗？”
+When he was brought before Emperor Gaozu, the emperor asked, “Did you advise the marquis of Huaiyin to rebel?”
+
+对曰：“然，臣固教之，竖子不用臣之策，故令自夷于此。如彼竖子用臣之计，陛下安得而夷之乎?”
+蒯通回答：“是的，我确实教他反叛，但那小子没有采纳我的计策，所以才自取灭亡。假如他采纳了我的计策，陛下怎能杀他呢？”
+“I did,” replied Kuai Tong. “The fool did not follow my advice, and therefore he brought about his own destruction. Had he followed my plan, how could Your Majesty have destroyed him?”
+
+上怒曰：“亨之!”
+高祖大怒说：“烹了他！”
+The emperor, enraged, said, “Throw him into the cauldron!”
+
+通曰：“嗟乎，冤哉亨也!”
+蒯通说：“哎呀，这真冤啊！”
+Kuai Tong cried, “Ah! How unjust!”
+
+上曰：“若教韩信反，何冤?”
+高祖问：“你教韩信反叛，有何冤枉？”
+“Unjust? When you advised Han Xin to rebel?”
+
+对曰：“秦之纲绝而维弛，山东大扰，异姓并起，英俊乌集。秦失其鹿，天下共逐之，于是高材疾足者先得焉。
+蒯通答：“秦王朝法度废弛，山东大乱，异姓诸侯纷纷自立，英雄豪杰像乌鸦一样聚集。秦王朝失去鹿权（天下的统治权），天下人争相追逐，于是才能高、行动快的人先得其所。
+“When the Qin dynasty’s laws were broken and its power collapsed, chaos spread across Shandong, and various clans raised armies, gathering heroes and men of talent. Qin had lost the imperial power, and the world pursued it; the most able and swift would claim it first.
+
+遮之狗吠尧，尧非不仁，狗因吠非其主。当是时，臣唯独知韩信，非知陛下也。
+盗跖的狗对着尧狂叫，并非尧不仁，狗因为他不是自己的主人而叫。那时，我只知道韩信，不知道陛下。
+Zhi the bandit’s dog barked at Emperor Yao, not because Yao was wicked, but because the dog barked at anyone other than its master. At that time I knew only Han Xin, not Your Majesty.
+
+且天下锐精持锋欲为陛下所为者甚众，顾力不能耳。又可尽亨之邪?”
+天下拿着兵器想为陛下做事的人很多，但力量不够。难道要把他们全都杀光吗？”
+Moreover, many men sharpened their weapons, eager to act for Your Majesty, but their strength was insufficient. Do you intend to throw them all into the cauldron?”
+
+高帝曰：“置之!”乃释通之罪。
+高帝说：“放了他。”于是赦免了蒯通的罪。
+“Let him go!” said the emperor, pardoning Kuai Tong.
+
+太史公曰：
+太史公说：
+The Grand Historian comments:
+
+吾如淮阴，淮阴人为余言，韩信虽为布衣时，其志与众异。
+我到淮阴时，淮阴人对我说，韩信即使是平民百姓，他的志向就与众不同。
+When I visited Huaiyin, the locals told me that even as a commoner, Han Xin’s ambition differed from that of ordinary men.
+
+其母死，贫无以葬，然乃行营高敞地，令其旁可置万家。
+他母亲去世时，家境贫困无力安葬，但他仍四处寻找高敞的墓地，让母亲墓旁能安置万户人家。
+When his mother died, he was too poor to afford a proper burial, yet he searched for a high burial ground, ensuring that ten thousand households could be settled beside her grave.
+
+余视其母冢，良然。
+我去看他母亲的坟墓，果然是这样。
+I visited her grave and confirmed it.
+
+假令韩信学道谦让，不伐己功，不矜其能，则庶几哉，于汉家勋可以比周、召、太公之徒，后世血食矣。
+倘若韩信能学习道家的谦让之道，不夸耀自己的功劳，不仗恃自己的才能，那差不多就好了。这样一来，他对汉朝的功勋就能和周公、召公、太公这类人相比，后代也会一直祭祀他。
+Had Han Xin followed the Way and been modest, neither boasting of his achievements nor exalting his talents, all would have been well. His contributions to the House of Han could then have been compared to the Duke of Zhou, the Duke of Zhao, or Patriarch Lü Shang, and later generations would have continued to offer sacrifices to him.
+
+不务出此，而天下已集，乃谋畔逆，夷灭宗族，不亦宜乎!
+但他不致力于这样做，反而在天下已经安定后，谋划叛乱，最终宗族被灭，不也是应该的吗！
+But instead, he attempted rebellion after the empire was already united, and his family was exterminated. This was a just consequence.
