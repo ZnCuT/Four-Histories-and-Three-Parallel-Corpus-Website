@@ -1,0 +1,900 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>后汉书 — 第9章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <header>
+        <h1>后汉书 — 第9章 列传 张衡</h1>
+      </header>
+
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
+
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">张衡字平子，南阳西鄂人也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张衡字平子，南阳郡西鄂县人。</td>
+                <td class="english-cell col-english" data-lang="english">Zhang Heng, style named Pingzi, was a native of Xi’e District in Nanyang Commandery.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">世为著姓。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">世代是豪族。</td>
+                <td class="english-cell col-english" data-lang="english">For generations, his family had been very influential and powerful.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">祖父堪，蜀郡太守。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">祖父张堪，官至蜀郡太守。</td>
+                <td class="english-cell col-english" data-lang="english">His grandfather Zhang Kan served as Governor of Shu Commandery.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">衡少善属文，游于三辅，因入京师，观太学，遂通五经，贯六艺。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张衡年轻时善于写作，到三辅地区游学，于是来到京师，在太学中学习，于是通晓《五经》和六艺。</td>
+                <td class="english-cell col-english" data-lang="english">When Zhang Heng was young, he was good at composition and traveled to the Three Metropolitan Areas to study. At the capital, he studied in the Imperial Academy, where he fully learned the Five Classics and the Six Arts.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">虽才高于世，而无骄尚之情，常从容淡静，不好交接俗人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">虽然才华高出当世人，而没有骄傲自多之色，常从容淡静，不愿意与俗人交往。</td>
+                <td class="english-cell col-english" data-lang="english">Although Zhang Heng was a man of superb literary talent, he never became arrogant. He was always at ease, calm, and unwilling to associate with vulgar people.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">永元中，举孝廉，不行，连辟公府，不就。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">永元年间（公元89—105年），保举他为孝廉，他不去，连续征召去公府任职，他也不去。</td>
+                <td class="english-cell col-english" data-lang="english">During the Yongyuan era (89–105), he was recommended as a Filial and Incorrupt candidate, but he rejected the offer. He was also continuously recruited to serve in government, but he declined all offers.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">时天下承平日久，自王侯以下，莫不逾侈。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时天下太平的时间已经很久了，自王侯以下，没有不过度奢侈的。</td>
+                <td class="english-cell col-english" data-lang="english">It had been a long and peaceful time, so the marquises, dukes, and officials lived an extravagant and lavish life.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">衡乃拟班固《两都》，作《二京赋》，因以讽谏，精思傅会，十年乃成。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张衡于是模仿班固的《两都赋》，写了《二京赋》，以此作为对这种社会风气的讽谏，精心构思附益综合，十年才写成。</td>
+                <td class="english-cell col-english" data-lang="english">Zhang Heng wrote the piece titled *Rhapsody on Two Metropolises* in imitation of Ban Gu’s *Rhapsody on Two Capitals*. Meant as a satire on wasteful social phenomena, he worked painstakingly on it for ten years.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">文多，故不载。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">字数很多，所以这里就不录了。</td>
+                <td class="english-cell col-english" data-lang="english">Because it is very lengthy, it will not be recorded here.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">大将军邓骘奇其才，累召不应。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">大将军邓骘器重他的才华，多次征召他，他都不接受。</td>
+                <td class="english-cell col-english" data-lang="english">The Grand General Deng Zhi thought highly of Zhang Heng’s talents and capabilities, and recruited him several times, but each time Zhang declined the offer.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">衡善机巧，尤致思于天文、阴阳、历算。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张衡善于机械巧思，尤其致力研究天文、阴阳、历算。</td>
+                <td class="english-cell col-english" data-lang="english">Zhang Heng was fond of intriguing concepts. He especially devoted himself to the study of astronomy, yin and yang, and the calendar.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">常耽好《玄经》，谓崔瑗曰：“吾观《太玄》，方知子云妙极道数，乃与《五经》相拟，非徒传记之属，使人难论阴阳之事。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平时特别喜爱《太玄经》，对崔瑗说：“我看了《太玄经》，才知道扬子云对天道术数精通到极点，竟与《五经》差不多，不只是传记之类的东西，使人难以再去论述阴阳之事了。</td>
+                <td class="english-cell col-english" data-lang="english">He liked reading the *Classic of Taixuan*. He once said to Cui Yuan, “Only after I read the *Classic of Taixuan* did I come to recognize Yang Xiong’s meticulous understanding of the universe, technology, and mathematics. His book can be compared to the *Five Classics* and is not just biographical writing. Yang Xiong’s book renders further discourse of yin and yang impossible.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">汉家得天下二百岁之书也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这是汉朝建立二百年后才出现的书。</td>
+                <td class="english-cell col-english" data-lang="english">This book is the most valuable one since the Han Dynasty was founded two hundred years ago.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">复二百岁，殆将终乎？</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">再过二百年，大概又要改朝换代了吧？</td>
+                <td class="english-cell col-english" data-lang="english">The dynasty will probably change again in two hundred years.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">所以作者之数，必显一世，常然之符也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">所以伟大人物出现的定数，一定显赫于一个朝代，这是永恒的规律。</td>
+                <td class="english-cell col-english" data-lang="english">Destiny dictates that a great sage will appear in every dynasty. This is an eternal cycle.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">汉四百岁，《玄》其兴矣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉朝到了四百年，《太玄》大概要兴起了。”</td>
+                <td class="english-cell col-english" data-lang="english">When the Han Dynasty reaches four hundred years of age, Mysterious Learning may increase.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">安帝雅闻衡善术学，公车特征，拜郎中，再迁为太史令。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉安帝久闻张衡精通术数之学，用公车专门征召张衡授予郎中之职，两次升迁担任太史令。</td>
+                <td class="english-cell col-english" data-lang="english">Emperor An of the Han had long heard of Zhang Heng’s mastery of technology and mathematics, so he sent an imperial carriage to summon him and appointed him Gentleman of the Interior, later promoting him twice to Grand Astrologer.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">遂乃研核阴阳，妙尽璇机之正。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是研究精核阴阳之学，精通天文历法。</td>
+                <td class="english-cell col-english" data-lang="english">Thus, he dedicated himself to the study of yin and yang and mastered astronomy and the calendar.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">作浑天仪，著《灵宪》《等罔论》，言甚详明。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">制造了浑天仪，写了《灵宪》《算罔论》，阐述得十分详实明了。</td>
+                <td class="english-cell col-english" data-lang="english">He constructed an armillary sphere and wrote Sublime Mode and On Mathematic Calculation, expounding upon them in great detail.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">顺帝初，再转，复为太史令。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">顺帝初年，调动职务两次，仍然担任太史令。</td>
+                <td class="english-cell col-english" data-lang="english">During the early years of Emperor Shun’s reign, Zhang Heng was transferred twice but continued to serve as Grand Astrologer.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">衡不慕当世，所居之官，辄积年不徙。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张衡不慕现实社会的荣华，所担任的职务往往长期不变动。</td>
+                <td class="english-cell col-english" data-lang="english">Zhang Heng did not yearn for the luxurious life of his contemporaries, and he often remained in the same position for many years.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">自去史职，五载复还。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">自从离开史职，过了五年又重新担任。</td>
+                <td class="english-cell col-english" data-lang="english">After leaving the position of Grand Astrologer, he returned to it again after five years.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">乃设客问，作《应间》以见其志云。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">乃假托有客问难，写了《应间》一文以表达他的志向。</td>
+                <td class="english-cell col-english" data-lang="english">He then wrote Response to Criticism, using a dialogue with an imaginary visitor to express his ambition.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">阳嘉元年，复造候风地动仪。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">阳嘉元年（公元132年），张衡又制造了候风地动仪。</td>
+                <td class="english-cell col-english" data-lang="english">In the first year of the Yangjia era (132), Zhang Heng constructed a seismograph.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">以精铜铸成，员径八尺，合盖隆起，形似酒尊，饰以篆文山龟鸟兽之形。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">用精铜铸造成，直径八尺，上面合盖凸起，形状像酒尊，外面用篆文山龟鸟兽装饰。</td>
+                <td class="english-cell col-english" data-lang="english">It was made of refined copper, eight chi in diameter, with a raised cover like a wine vessel, decorated with seal-script patterns of mountain turtles, birds, and beasts.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">中有都柱，傍行八道，施关发机。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">中间有一根大柱，柱的周围伸出八个通道，装枢纽发动机件。</td>
+                <td class="english-cell col-english" data-lang="english">In the center was a main pillar, with eight passageways extending outward, each fitted with activator mechanisms.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">外有八龙，首衔铜丸，下有蟾蜍，张口承之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">外面有八条龙，龙口各含一枚铜丸，龙头下面各有一个蛤蟆张口承接。</td>
+                <td class="english-cell col-english" data-lang="english">Outside were eight dragons, each holding a copper ball in its mouth, with a toad below each dragon, its mouth open to receive the ball.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其牙机巧制，皆隐在尊中，覆盖周密无际。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">精巧的设置都隐藏在里面，覆盖严密得没有一点缝隙。</td>
+                <td class="english-cell col-english" data-lang="english">The ingenious mechanisms were all hidden inside, covered so tightly that no gap could be seen.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">如有地动，尊则振龙，机发吐丸，而蟾蜍衔之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">如果发生地震，仪器外面的龙就震动，机关发动吐出铜丸，蛤蟆即承接。</td>
+                <td class="english-cell col-english" data-lang="english">If an earthquake occurred, the dragon would shake, the mechanism would trigger, the dragon would release the copper ball, and the toad would catch it.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">振声激扬，伺者因此觉知。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">铜丸震击的声音清脆响亮，守候的人因此得知地震。</td>
+                <td class="english-cell col-english" data-lang="english">The clear striking sound alerted the observers.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">虽一龙发机，而七首不动，寻其方面，乃知震之所在。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">地震发生时只有一条龙的机关发动，其余七龙不动；按龙头所指即可知震源方向。</td>
+                <td class="english-cell col-english" data-lang="english">Only the mechanism of one dragon activated while the other seven remained still; the direction of that dragon indicated the earthquake’s location.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">验之以事，合契若神。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">以此检验地震，结果完全符合，宛如神明。</td>
+                <td class="english-cell col-english" data-lang="english">Verification showed complete accuracy, as if divine.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">自书典所记，未之有也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">自从有书籍以来，从未记载过这样的事。</td>
+                <td class="english-cell col-english" data-lang="english">Such a device had never been recorded since the beginning of written history.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">尝一龙机发，而地不觉动，京师学者，咸怪其无征。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">曾有一次一条龙的机关发动，但人们没有感觉地震，京城学者都怪它无征验。</td>
+                <td class="english-cell col-english" data-lang="english">Once, a dragon mechanism triggered without any felt tremor, and scholars in the capital doubted its accuracy.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后数日，驿至，</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">几天后，驿使到京师，</td>
+                <td class="english-cell col-english" data-lang="english">.Several days later,a courier arrived in the capital to report</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">果地震陇西，于是皆服其妙。自此以后，乃令史官记地动所从方起</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">果然在陇西发生了地震，因此都佩服张衡的妙思。从此以后，朝廷就叫史官根据地动仪记载每次地震发生的方位</td>
+                <td class="english-cell col-english" data-lang="english">that an earthquake had indeed occurred in the Longxi area.Thereafter,everyone professed admiration and respect for Zhang Heng's talent and craftsmanship.Since that time,the imperial court has commanded historians to record the direction and location of earthquakes according to the seismograph.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">时，政事渐损，权移于下。衡因上疏陈事曰：“伏惟陛下宣哲克明，继体承天，中遭倾覆，龙德泥蟠。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时，政事渐损，权力下移，张衡于是上疏陈述政事：“陛下明哲大德，继先王之体承天之命，中途遭遇挫折，龙德陷落泥中。</td>
+                <td class="english-cell col-english" data-lang="english">During that period,the government was in decline and imperial power was transferred to imperial subordinates.Zhang Heng submitted an admonition to the emperor regarding the situation.He stated,"Your Majesty is wise and virtuous.As for our late emperor's legacy,it is you who inherited the Heaven's mandate.You encountered hardship on your way to the throne,and that circumstance left Your Majesty trapped in the mud.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">现在乘云高跻，磐桓天位，诚所谓将隆大位，必先控您之也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">现在乘云高飞登上皇位，确实是所谓的将要给他高位，必须先让他受点穷困。</td>
+                <td class="english-cell col-english" data-lang="english">Now,you've ridden with clouds and flown high to the throne,which reflects the saying,'If Heaven wants to bestow a high position upon someone,it will first cause him to suffer poverty and endure calamity.'</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">亲履艰难者知下情，备经险易者达物伪。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">亲身经历生活艰难的人明白底层社会的情况，饱经危险平易的人了解真伪。</td>
+                <td class="english-cell col-english" data-lang="english">A person who experiences hardship will truly and profoundly understand the living conditions of the lowest class of society.A person who has fully experienced dangers and changes can readily discern truth from falsehood.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">故能一贯万机，靡所疑惑；百揆允当，庶绩咸熙。宜获福祉神祇，受誉黎庶。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">所以能使万机统于一贯，不会有所疑惑，百官都称职，各种政绩都美好，是应该受天地神灵的福气，受人民的爱戴。</td>
+                <td class="english-cell col-english" data-lang="english">As a result,he can manage a myriad of state affairs without feeling perplexed.The officials he appoints are suitable,and state affairs are excellent.Such a leader will certainly be blessed by the divinities of Heaven and Earth,and be admired by his people.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">而阴阳未和，灾眚屡见，神明幽远，冥鉴在兹。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">但阴阳之气不和，自然灾害经常发生，神明幽暗遥远，征兆发露就在这里。</td>
+                <td class="english-cell col-english" data-lang="english">However,because of the unbalanced energies of yin and yang,natural disasters often occur.When divine spirits become dark and distant,bad signs emerge.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">景响而应，因德降休，乘失致咎，天道虽远，吉凶可见，近世郑、蔡、江、樊、周广、王圣皆为效矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">在这些事情上，使仁者受福、淫者受祸，其效验就像影子和声响一样回应，给有德的降下美好，给犯错的降下灾难，天道虽然遥远，吉凶是可以看出来的，近代郑众、蔡伦、江京、樊丰、周广、王圣这些人，都是证明。</td>
+                <td class="english-cell col-english" data-lang="english">symptoms are revealed.If we could bless the benevolent and cause the licentious to experience misfortune,the effect would be like shadows and echoes.When blessings are bestowed upon those who are virtuous,and when those who violate morality are cursed with calamity,the division of fortune and misfortune becomes obvious.This is so even if the Way of Heaven seems distant.Our contemporaries,Zheng Zhong,Cai Lun,Jiang Jing,Fan Feng,Zhou Guang,and Wang Sheng are good examples for us.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">故恭俭畏忌，必蒙祉祚；奢淫谄慢，鲜不夷戮。前事不忘，后事之师也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">所以恭敬节俭谨慎，一定会承受保佑；奢侈放纵谄媚傲慢，很少有不被杀戮的。不忘记历史教训，就是后来做事的借鉴。</td>
+                <td class="english-cell col-english" data-lang="english">Those who are respectful,frugal and careful receive blessings,while those who are wasteful,over-indulged and indolent are killed.This is true with few exceptions.Do not forget the lessons taught by history,which is a mirror for later generations.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夫情胜其性，流遁忘反，岂唯不肖，中才皆然。苟非大贤，不能见得思义，故积恶成衅，罪不可解也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">欲望压倒天性，流遁而不返本，哪里只是不肖的人才这样，中等的人也都是如此。若不是大贤，不能在见利时思义，所以恶事积累成为罪孽，罪就不可解除了。</td>
+                <td class="english-cell col-english" data-lang="english">When desire conquers one's nature and overtakes us,it affects not only the wicked but also the mediocre.If one is not virtuous,he will not think of righteousness when personal benefit beckons.Thus,wrongdoings are piled up and crimes are committed,and guilt cannot be overcome.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">向使能瞻前顾后，援镜自戒，则何陷于凶患乎？</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">假使能够看着前面顾着后面，拿着镜子自我警惕，那么怎么会陷落到凶险患难中呢？</td>
+                <td class="english-cell col-english" data-lang="english">If one could peer ahead and look behind,using history as a mirror to admonish himself,then how could he fall into calamity?</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">贵宠之臣，众所属仰，其有愆尤，上下知之。褒美讥恶，有心皆同，故怨读言溢乎四海，神明降其祸辟也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">尊贵得宠的官僚，是大家瞩目仰望的，他们若有过错，上下都知道。褒奖美好的，批评邪恶的，人心都是一致的，所以怨恨之声遍布四海，神明于是降下灾祸。</td>
+                <td class="english-cell col-english" data-lang="english">Honorable and favored officials receive great attention and respect from people.If they make mistakes,the whole nation knows.Praising good and criticizing evil is universal,so complaints spread across the land,and divine spirits impose calamities.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">顷年雨常不足，思求所失，则《洪范》所谓“僭恒阳若”者也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">近年来雨量常常不足，思考人们所犯的错，就是《洪范》所说“君行僭差，出现常阳多旱”的情况。</td>
+                <td class="english-cell col-english" data-lang="english">In recent years,rainfall has been insufficient.When examining what has gone wrong,it matches what the Great Examples states:“When the ruler behaves excessively or deviates from norms,the world suffers persistent drought.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">惧群臣奢侈，昏逾典式，自下逼上，用速咎征。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">怕百官奢侈，越过制度，下位侵逼上位，于是迅速招致了不祥的天象。</td>
+                <td class="english-cell col-english" data-lang="english">It may also be that officials live extravagantly,overstep proper codes,and the lower pressure the upper,thus hastening ominous signs.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">又前年京师地震土裂，裂者威分，震者人扰也。君以静唱，臣以动和，威自上出，不趣于下，礼之政也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">还有就是前年京师地震土裂，地裂代表皇帝权威被下面的人分割了，地震就代表民心不安。君主用静倡导，臣下用动应和，权威从上出，不能向下走，这是有礼有节的政治。</td>
+                <td class="english-cell col-english" data-lang="english">An earthquake broke out in the capital two years ago, causing the earth to crack. The cracking of the earth symbolizes that Your Majesty's authority has been split by your ministers. The earthquake represents the anxiety of the people. Your Majesty should lead with calmness, while your subjects respond with action. Power must come from above and must not go downward. This is the governance of rites and order.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">窃惧圣思厌倦，制不专己，恩不忍割，与众共威。威不可分，德不可共。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">我担心皇帝对政治感到烦躁，权柄不能专于自己，恩惠不忍割舍，想与众人共同拥有权威。权威是不能分给下面人的，恩德是不能一起拥有的。</td>
+                <td class="english-cell col-english" data-lang="english">I fear that Your Majesty grows weary of state affairs, that you do not keep authority solely in your own hands, and that you cannot bear to withhold favors, thus sharing authority with your ministers. Yet authority cannot be divided, and virtue cannot be shared.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">《洪范》曰：‘臣有作威、作福、玉食，害于而家，凶于而国。’</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">《洪范》说：“臣下作威作福、锦衣玉食，会危害国家与君主之家。”</td>
+                <td class="english-cell col-english" data-lang="english">As stated in the Great Examples: “If officials live in luxury and abuse their power, it harms both the royal family and the entire state.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">天鉴孔明，虽疏不失。灾异示人，前后数矣，而未见所革，以复往悔。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">天的征兆十分明白，即使有所遗漏也不会不灵验。灾异已多次显现，却未见政事有所改变，只是反复悔悟。</td>
+                <td class="english-cell col-english" data-lang="english">Heaven’s warnings are clear and precise. They never fail, even if seeming distant. Calamities have repeatedly revealed Heaven’s admonitions, yet no reforms have been made to correct past mistakes.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">自非圣人，不能无过，愿陛下思惟所以稽古率旧，勿令刑德八柄不由天子。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">除圣人外，没有人不会犯错。愿陛下思索如何考察历史、遵循旧制，不要让统摄百官的刑德八柄脱离天子掌握。</td>
+                <td class="english-cell col-english" data-lang="english">No one is free from error except sages. I hope Your Majesty will reflect on historical lessons and follow ancient regulations. Do not let the Eight Instruments of punishment and virtue slip from imperial control.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">若恩从上下，事依礼制，礼制修则奢僭息，事合宜则无凶咎。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">如果恩泽自上而下施行，事务依礼制而办，礼制修明则奢侈越礼会停止，行为合宜则不会有灾祸。</td>
+                <td class="english-cell col-english" data-lang="english">If favors descend from above and affairs are governed in accordance with rites, then extravagance will cease, and proper conduct will prevent calamities.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">然后神望允塞，灾消不至矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这样神明的期望便能满足，灾难也不会降临。</td>
+                <td class="english-cell col-english" data-lang="english">Thus, the divinities will be appeased, and calamities will no longer come.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">初，光武善谶，及显宗、肃宗，因祖述焉。自中兴之后，儒者争学图纬，兼复附以袄言。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">早先时候，光武帝喜欢谶纬，到显宗、肃宗的时候于是就继承下来了。自从东汉建立之后，儒者纷纷学习图纬，还有用妖言附会上去。</td>
+                <td class="english-cell col-english" data-lang="english">In early times, Emperor Guangwu liked the study of prophecies. Later on, Emperors Xian and Su inherited it. Since the establishment of the Later Han, Confucian scholars pursued the study of prophecies and omens one after another. Some of them even used mythical sayings to twist interpretations.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">衡以图纬虚妄，非圣人之法，乃上疏曰：“臣闻圣人明审律历，以定吉凶，重之以卜筮，杂之以九宫。经天验道，本尽于此，或观星辰逆顺，寒燠所由，或察龟策之占，巫觋之言， 其所因者，非一术也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张衡认为图纬是虚妄的东西，不是圣人制定的正法，于是上疏说：“我听说圣人明白考核律历来确定吉凶，再加上卜筮，杂用九宫。经制天象验证道理，全部在这里。有的观察星辰的逆行、顺行，寒、热的原因，有的考察龟策的占验、巫师的说辞。他们所根据的， 不是一种方法。”</td>
+                <td class="english-cell col-english" data-lang="english">Zhang Heng considered prophecies and omens to be fabricated. He did not believe that they were canonical works produced by the ancient sages. Therefore, he submitted a memorial saying, "I have heard that the ancient sages carefully examined the laws of the calendar in order to determine if omens were auspicious or not. They not only divined by means of tortoise-shell but also by mixed arrangements of colors according to the Eight Diagrams. By such means they understood and verified the theories and laws of celestial phenomena. Some sages observed the causes of regular or irregular movements of constellations, and the logic of hot or cold temperatures. Some investigated the divination patterns revealed by tortoise-shells, divining-straws, or the interpretations of shamans. The methods on which they based their interpretations were not just of one kind."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">立言于前，有征于后，故智者贵焉，谓之谶书。谶书始出，盖知之者寡。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">创立学说在前，后来就有印证，所以有智慧的人看重它，称为谶书。谶书开始出来的时候，了解的人很少。</td>
+                <td class="english-cell col-english" data-lang="english">First, they created a theory, and then they proved it. This was why the wise men valued this work so much, and called the writings of the sages 'books of prophecies.' When these books of prophecies were first made available, only a few people understood them.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">自汉取秦，用兵力战，功成业遂，可谓大事，当此之时，莫或称谶。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">自从汉朝消灭了秦朝，用兵力战，功成业遂，可称得上是大事了，但这个时候，没什么人说谶书。</td>
+                <td class="english-cell col-english" data-lang="english">Since the Han overthrew the Qin, they fought with all their military force and successfully accomplished the task. This can be considered a great event, but at that time, hardly anyone mentioned books of prophecies.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">若夏侯胜、眭孟之徒，以道术立名，其所述著, 无谶一言。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">像夏侯胜、眭孟这些人，是因为天道术数出名的，他们的著述，一句也没有提到谶书。</td>
+                <td class="english-cell col-english" data-lang="english">Scholars like Xiahou Sheng and Sui Meng were famous for magical tricks and alchemy, but they did not even touch upon books of prophecies in their writings.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">刘向父子，领校秘书，阅定九流，亦无谶录。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">刘向父子负责校勘皇家藏书，阅读校定九流的书籍，也没有有关谶书的书目记录。</td>
+                <td class="english-cell col-english" data-lang="english">Liu Xiang and his son were responsible for editing and compiling imperial collections. They must have read and edited many kinds of books from the various schools, but they did not enlist any bibliographies related to books of prophecies.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">乃始闻之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">才开始听到谶书这回事。</td>
+                <td class="english-cell col-english" data-lang="english">Books of prophecies were not heard of until the reigns of Emperors Cheng and Ai.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">《尚书》: 尧使鲑理洪水，九载绩用不成，鲑则死，禹乃嗣兴。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">《尚书》说：尧让鲑治理洪水，治了九年没有成绩，鲑就被处死了，大禹于是继承兴起。</td>
+                <td class="english-cell col-english" data-lang="english">In the Book of Documents, it stated that Yao ordered Gun to control the flood, but after nine years, Gun was not making any progress, so he was sentenced to death. Then, the Great Yu was ordered to succeed Gun, and Yu was successful.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">而《春秋谶》云，共工理水。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">而《春秋谶》说‘共工治理水患'。</td>
+                <td class="english-cell col-english" data-lang="english">However, in the Prophecy of Spring and Autumn, it recorded that 'Gong Gong harnessed the flood'.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">凡谶皆云黄帝伐蚩尤，而《诗谶》独以为蚩尤败，然后尧受命。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">大凡谶书都说黄帝讨伐蚩尤，而《诗谶》却认为‘蚩尤灭亡，然后尧受天命’。</td>
+                <td class="english-cell col-english" data-lang="english">In most cases, every book of prophecies stated that it was the Yellow Emperor who sent forces to suppress Chiyou, but in the Prophecy of Odes it was recorded that 'Chiyou was defeated and Yao received the mandate'.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">《春秋元命包》中有公输班与墨翟，事见战国，非春秋时也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">《春秋元命包》中记载有公输班与墨翟，他的事迹见于战国，不是春秋时期。</td>
+                <td class="english-cell col-english" data-lang="english">In the so-called On the Destiny of the Millennia, there was a recording about Gongshu Ban and Mo Di, in which it described the fact that both men were active in the Warring States period but not in the Spring and Autumn period.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">又言‘别有益州’益州之置，在于汉世。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">又说‘还有益州’。益州的设置，在汉朝时期。</td>
+                <td class="english-cell col-english" data-lang="english">It also stated, 'In addition, there was Yizhou.' The establishment of Yizhou Region occurred during the Han period.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其名三辅诸陵，世数可知。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">书中所称的三辅各陵墓，时代可以推知。</td>
+                <td class="english-cell col-english" data-lang="english">Moreover, the imperial tombs in the Three Metropolis Areas were mentioned in the book. We know the date of the establishment of Yizhou Region by this inference.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">至于图中，讫于成帝。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">在图中，到成帝为止。</td>
+                <td class="english-cell col-english" data-lang="english">The books of prophecies ended with the reign of Emperor Cheng.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">一卷之书，互异数事，圣人之言，势无若是，殆必虚伪之徒，以要世取资。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">只有一卷的书，记载相互不同，圣人的话，按理不会这样， 大概一定是虚伪的人，想用此投合时代以满足自己的私欲。</td>
+                <td class="english-cell col-english" data-lang="english">Even though only one volume, there are various versions for many events in this books. Logically, the sages' wordings or writings would not be like this. Thus, the various versions were probably created by the hypocrites to cater to the taste of their time or satisfy their personal desires.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">往者侍中贾逵摘谶互异三十余事，诸言谶者皆不能说。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">以前侍中贾逵摘录谶书相互不同的三十多条，各家信奉谶书的人都不能解释。</td>
+                <td class="english-cell col-english" data-lang="english">In the past, Palace Attendant Jia Kui selected and edited thirty or so items with discrepancies recorded in the prophetic books. The scholars who believed in the prophecies could not explain this matter.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">至于王莽篡位，汉世大祸，八十篇何为不戒?</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">到了王莽篡位，汉朝遭遇大祸，八十篇谶书为什么没有一句警戒的话?</td>
+                <td class="english-cell col-english" data-lang="english">During the time when Wang Mang usurped the throne and the Han Dynasty encountered the tremendous disaster, there was not a single warning from the eighty-chapter prophetic books. Why?</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">则知图谶成于哀、平之际也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这样看来图谶是产生在哀帝、平帝的时候。</td>
+                <td class="english-cell col-english" data-lang="english">It is obvious that the prophecies and omens were produced during the periods of Emperors Ai and Ping.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">且《河洛》、《六艺》,篇录已定，后人皮傅，无所容篡。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">何况《河洛》、《六艺》的篇章目录已经确定，后人附会其中，无法增删。</td>
+                <td class="english-cell col-english" data-lang="english">The total chapter numbers of the Book of Yellow River and Luo River and the Book of Six Arts have been set, so later scholars had no way to add or remove anything through fabrication.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">有永元中，清河宋景，遂以历纪推言水灾，而伪称洞视玉版。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">永元年间，清河人宋景用历法推演解释水灾，却假称是洞察玉版得出的。</td>
+                <td class="english-cell col-english" data-lang="english">During the Yongyuan era, a Qinghe native named Song Jing used the almanac to explain the occurrence of the flood, but falsely claimed the information came from reading the Jade Strip.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">或者至于弃家业、入山林，后皆无效，而复采前世成事，以为证验。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">有的人甚至放弃家业进入山林，后来都没有效果，又取前代成事作为证验。</td>
+                <td class="english-cell col-english" data-lang="english">Some people even abandoned their careers and entered the mountain forests, but none achieved results, and they then took past historical events as evidence.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">至于永建复统，则不能知。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">到了永建年间的复位之事，他们就完全无法解释。</td>
+                <td class="english-cell col-english" data-lang="english">When it came to the reinstatement during the Yongjian era, they could not understand it at all.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">此皆欺世罔俗，以昧势位，情伪较然，莫之纠禁。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这些都是欺骗世人、迷惑当权者的行为，真伪分明，却无人纠正禁止。</td>
+                <td class="english-cell col-english" data-lang="english">These acts deceived the public and misled those in power; the truth and falsehood were obvious, yet no one stopped them.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">且律历卦候，九宫风角，数有征效，世莫肯学，而竞称不占之书。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">而律历、卦候、九宫、风角等方法常有应验，世人却不愿学习，反而都称之为无效的书。</td>
+                <td class="english-cell col-english" data-lang="english">Methods like the laws of the calendar, omen diagrams, the Nine Palaces, and wind directions often proved effective, but people were unwilling to study them and instead claimed these methods were useless.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">譬犹画工恶图犬马，而好作鬼魅，诚以实事难形，而虚伪不穷也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这好比画师不喜欢画犬马，而喜欢画鬼魅，因为真实事物难以描摹，而虚构事物无穷无尽。</td>
+                <td class="english-cell col-english" data-lang="english">It is like painters who dislike drawing dogs or horses but prefer drawing ghosts and spirits because real objects are difficult to depict while imaginary ones have no limits.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">宜收藏图谶，一禁绝之，则朱紫无所眩，典籍无瑕玷矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">应当把图谶全部收缴禁止，这样真伪就不会混乱，典籍也就没有瑕疵了。</td>
+                <td class="english-cell col-english" data-lang="english">The texts of prophecies and omens should be confiscated and completely banned; then truth and falsehood would not be confused, and canonical books would be free from flaws.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后迁侍中，帝引在帷幄，讽议左右。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来升任侍中，皇帝叫他到房间里，张衡委婉地批评皇帝身边的人。</td>
+                <td class="english-cell col-english" data-lang="english">Later, Zhang Heng was promoted to be Palace Attendant. When the emperor summoned Zhang Heng to his room, Zhang tactfully reprimanded the emperor's closest eunuchs.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">尝问衡天下所疾恶者。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">皇帝曾问张衡人民所深恶痛绝的人。</td>
+                <td class="english-cell col-english" data-lang="english">The emperor also asked Zhang Heng what kind of person the people hated the most.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">宦官惧其毁己，皆共目之，衡乃诡对而出。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">宦官们怕他对自己不利，都一起盯着他，张衡于是顾左右而言他地回答了一番就出来了。</td>
+                <td class="english-cell col-english" data-lang="english">The eunuchs were afraid that Zhang Heng would say something to hurt them, so they all stared at him. Zhang Heng answered the emperor's question in a roundabout way before he exited.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">阉竖恐终为其患，遂共谗之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">宦官们怕他最终成为自己的祸害，于是一起中伤他。</td>
+                <td class="english-cell col-english" data-lang="english">The eunuchs were afraid that Zhang Heng would eventually pose a threat to them, so they joined together to slander him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">衡常思图身之享，以为吉凶倚伏，幽微难明，乃作《思玄赋》以宣寄情志。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张衡常考虑生存之道，认为吉凶相互转化，此事幽微难以明了，于是写了《思玄赋》以抒发自己的情感志趣。</td>
+                <td class="english-cell col-english" data-lang="english">Zhang Heng had always pondered over the course of human existence, and he believed that good and bad luck transformed one another. The course of existence was mysterious and subtle, and its significance was difficult to understand. Therefore, he wrote the *Rhapsody on Contemplating the Cosmos* to express his emotions and ideas.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">永和初，出为河间相。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">永和初年（公元136年），出京担任河间国相。</td>
+                <td class="english-cell col-english" data-lang="english">In the first year of the Yonghe era (136), Zhang Heng accepted an appointment as Counselor-delegate of Hejian.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">时国王骄奢，不遵典宪；又多豪右，共为不轨。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时河间国王骄横奢侈，不遵循制度法律；还有很多地方豪族，一起做不轨的事。</td>
+                <td class="english-cell col-english" data-lang="english">During that period, the King of Hejian was arrogant and lived an extravagant life, and together with other powerful families, engaged in unlawful activities.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">衡下车，洽威严，整法度，阴知奸党名姓，一时收禽。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张衡到任，树立威严，整顿法度，暗中了解奸党的姓名，一起抓起来。</td>
+                <td class="english-cell col-english" data-lang="english">Once Zhang Heng arrived, he established authority, rectified laws, secretly investigated the names of corrupt people, and arrested them all.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上下肃然，称为政理。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">上下肃然，被称为政治清明。</td>
+                <td class="english-cell col-english" data-lang="english">People of both lower and higher ranks respected him profoundly, and his governance was called well-ordered.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">视事三年，上书乞骸骨，征拜尚书。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">任职三年，上书请求辞职，被征召授予尚书之职。</td>
+                <td class="english-cell col-english" data-lang="english">He served for three years, sent a letter of resignation, but was summoned and appointed as Imperial Secretary.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">年六十二，永和四年，卒。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">永和四年（公元139年）六十二岁的时候去世。</td>
+                <td class="english-cell col-english" data-lang="english">In the fourth year of the Yonghe era (139), Zhang Heng died at the age of sixty-two.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">著《周官训诂》，崔瑗以为不能有异于诸儒也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">著有《周官训诂》，崔瑗以为与诸儒所说的没有什么两样。</td>
+                <td class="english-cell col-english" data-lang="english">He finished his book *Explanation of the Officials of the Zhou*, which Cui Yuan considered to be no different from what previous Confucian scholars had said.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">又欲继孔子《易》说《彖》《象》残缺者，竟不能就。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">还打算继续完成孔子对《周易》所解释《彖》《象》的残缺部分，最终没有完成。</td>
+                <td class="english-cell col-english" data-lang="english">He had also planned to complete what Confucius left unfinished regarding the exegesis and illustration in the *Book of Changes*, but he did not finish it in the end.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">所著诗、赋、铭、七言、《灵宪》、《应闲》、《七辩》、《巡诰》、《悬图》，凡三十二篇。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">所著诗、赋、铭、七言、《灵宪》、《应闲》、《七辩》、《巡诰》、《悬图》，一共三十二篇。</td>
+                <td class="english-cell col-english" data-lang="english">He had composed poems, rhapsodies, epigraphs, seven-character verses, Sublime Mode, Response to Leisure, Seven Discourses, Admonition to the Imperial Inspection Tours, and Suspending the Texts of Prophecies, a total of thirty-two pieces.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">永初中，谒者仆射刘珍、校书郎刘验等著作东观，撰集《汉记》。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">永初年间，谒者仆射刘珍、校书郎刘驹验等人在东观著书，编集《汉记》。</td>
+                <td class="english-cell col-english" data-lang="english">During the years of the Yongchu era, Supervisor of Receptionists Liu Zhen, Editor Liu Taotu, and others were writing and compiling *Records of the Han* in the Imperial Eastern Library.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">因定汉家礼仪，上言请衡参论其事，会并卒，而衡常叹息，欲终成之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">因为要商定汉朝的礼仪制度，上书请张衡参加讨论这件事，刚好两人去世，张衡常为此叹息，打算完成它。</td>
+                <td class="english-cell col-english" data-lang="english">They needed to define the rite system of the Han Dynasty upon discussion, so they submitted a letter to the emperor to request Zhang Heng to join them. Not long after, these two died, and Zhang Heng would often heave sighs when he recalled them. He planned to finish the book.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">及为侍中，上疏请得专事东观，收捡遗文，毕力补缀。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">等到担任侍中，上疏请求能专心在东观从事创作，收集散失的文献，尽力补充编集。</td>
+                <td class="english-cell col-english" data-lang="english">It was not until he was appointed Palace Attendant that he submitted a letter to the emperor to make a request. In his letter, he expressed his desire to work in the Imperial Eastern Library with single-hearted devotion. He whole-heartedly wanted to collect, supplement, and edit all the documents which might have been lost or misplaced.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">又条上司马迁、班固所叙与典籍不合者十余事。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">又罗列了司马迁、班固所写的与典籍不符合的十多条呈献朝廷。</td>
+                <td class="english-cell col-english" data-lang="english">He also listed and submitted to the court about a dozen items in the classical records which were presented differently by Sima Qian and Ban Gu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">又以为王莽本传但应载篡事而已。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">还认为王莽的本传只应记载他篡位的事。</td>
+                <td class="english-cell col-english" data-lang="english">Zhang Heng also thought that in Wang Mang's biography only the event of his usurpation should be recorded.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">至于编年月，纪灾祥，宜为《元后本纪》。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">至于按年月编集，纪录灾异祥瑞，应该写《元后本纪》。</td>
+                <td class="english-cell col-english" data-lang="english">He also thought that events should be recorded in chronological order, calamities and auspicious omens should be documented, and *the Annals of Empress Yuan* should be included.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">又更始居位，人无异望，光武初为其将，然后即真。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">还有就是更始帝登皇帝位，当时的人没有异议。光武帝开始时是他手下的将领，然后才做的皇帝。</td>
+                <td class="english-cell col-english" data-lang="english">Moreover, when Emperor Gengshi ascended the throne, there was no one that opposed it. At the beginning, Guangwu was a general under Emperor Gengshi, and later, he ascended the throne.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">宜以更始之号，建于光武之初。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">应该把更始的年号放在光武帝建武年号之前。</td>
+                <td class="english-cell col-english" data-lang="english">Thus, Zhang suggested that the reign title of Emperor Gengshi should be placed prior to the Jianwu reign of Emperor Guangwu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">书数上，竟不听。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">奏书几次上去，皇帝最终没有采纳。</td>
+                <td class="english-cell col-english" data-lang="english">However, the emperor still did not accept Zhang Heng's suggestions after reading his submitted letters one after another.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">及后之著述，多不详典，时人追恨之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">等到后来的著述，大多不翔实典要，当时人对此很遗憾。</td>
+                <td class="english-cell col-english" data-lang="english">Most writings created after Zhang Heng's were inaccurate and contradicted the canonical records. People at that time expressed their regret over the matter.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">论曰：崔瑗之称平子曰：“数术穷天地，制作侔造化”，斯致可得而言欤？</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">论曰：崔瑗称叹张平子说：“数术穷尽天地之奥，制器作书与造化相等。”这样的成就能用言语说吗？</td>
+                <td class="english-cell col-english" data-lang="english">Comments: Cui Yuan once praised Zhang Pingzi: "His knowledge on mathematics and astrology have exhausted the depth of Heaven and Earth, and his mechanical constructions and literary writings are equal to the Creator." How can this kind of achievement be described in words?</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">推其围范两仪，天地无所蕴其灵；运情机物，有生不能参其智。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">推求他研究天地，天地没有办法隐藏机密；用智慧制造机械，人类无法探究他的智慧。</td>
+                <td class="english-cell col-english" data-lang="english">Let's inquire into his study of Heaven and Earth. We will find that there is no way for Heaven and Earth to hide secrets from him. Let's inquire into his craftsmanship and competence in constructing machinery, and we will find it is impossible for humankind to investigate and understand his wisdom.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">故智思引渊微，人之上术。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">因此智慧引发深奥，是人的最高境界。</td>
+                <td class="english-cell col-english" data-lang="english">Such wise understanding of the depth and subtlety of Heaven and Earth is the highest attainment of humankind.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">《记》曰：“德成而上，艺成而下。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">《礼记》说：“道德成就是根本，技艺成就是末节。”</td>
+                <td class="english-cell col-english" data-lang="english">In *Book of Rites*, it is said, "The attainment of virtue is the most important foundation, and the attainment of skill is only a minor thing."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">量斯思也，岂夫艺而已哉？</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">看张衡的智慧，哪里只是技艺的成就而已呢？</td>
+                <td class="english-cell col-english" data-lang="english">As for Zhang Heng's wisdom, how can it only be an attainment of skill?</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">何德之损乎！</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">技艺怎么妨害个人道德修养呢！</td>
+                <td class="english-cell col-english" data-lang="english">How can it be inferior to virtue?</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
+      </main>
+
+      <nav class="chapter-nav">
+        <a href="/book/houhanshu/liezhuan/chapter/8/">← 上一章</a>
+        &nbsp; <a href="/book/houhanshu/liezhuan/">列传章节列表</a> &nbsp;
+        <a href="/book/houhanshu/liezhuan/chapter/10/">下一章 →</a>
+      </nav>
+
+      <nav class="breadcrumb">
+        <a href="/">首页</a> &gt; 
+        <a href="/book/houhanshu/">后汉书</a> &gt; 
+        <a href="/book/houhanshu/liezhuan/">列传</a> &gt;
+        第9章 列传 张衡
+      </nav>
+
+      <footer>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
+      </footer>
+    </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

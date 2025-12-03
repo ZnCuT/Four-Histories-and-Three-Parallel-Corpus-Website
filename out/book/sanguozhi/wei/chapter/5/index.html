@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>三国志 — 第5章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <header>
+        <h1>三国志 — 第5章 三国志-杜夔传</h1>
+      </header>
+
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
+
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">杜夔字公良,河南人也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">杜夔字公良,河南郡人。</td>
+                <td class="english-cell col-english" data-lang="english">Du Kui, also known as Gongliang, was a native of Henan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">以知音为雅乐郎,中平五年,疾去官。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">因他通晓音律而担任雅乐郎,中平五年,因病辞官。</td>
+                <td class="english-cell col-english" data-lang="english">He was appointed head of the Court Elegant Music Department for his profound understanding of music. In the fifth year of the Zhongping Period, he was dismissed from the position because of a disease.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">州、郡、司徒礼辟,以世乱奔荆州。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">州、郡、司徒先后以礼征召聘,他因为当时的动乱而逃往荆州。</td>
+                <td class="english-cell col-english" data-lang="english">He was summoned with rituals to be an official in the province, the prefecture and the prime minister's headquarters successively, but because of the turbulent situations, he fled to Jingzhou.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">荆州牧刘表令与孟曜为汉主合雅乐,乐备,表欲庭观之,夔谏日:"今将军号为天子合乐,而庭作之,无乃不可乎!"</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">荆州牧刘表让他和孟曜为汉帝郊庙朝会编排雅乐合奏,编排完成后,刘表打算当庭欣赏,杜夔规劝说:"而今将军宣称给天子调试合奏雅乐,却要在厅堂内演奏,只怕这样做不可以吧!"</td>
+                <td class="english-cell col-english" data-lang="english">Liu Biao, governor of Jing Province, ordered him to arrange elegant music with Meng Yao for the Han emperor's suburban sacrifice and court ceremonies. After the music was prepared, Liu Biao wanted to watch the performance in the courtyard. Du Kui remonstrated, "Today, General, you claim to prepare music for the Son of Heaven, yet you want to perform it in your courtyard. Isn't that inappropriate?!"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">表纳其言而止。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">刘表听取杜夔的意见,停止了这场演奏。</td>
+                <td class="english-cell col-english" data-lang="english">Liu Biao accepted his advice and canceled the performance.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后表子琮降太祖,太祖以夔为军谋祭酒,参太乐事,因令创制雅乐。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来刘表的儿子刘琮投降太祖曹操,曹操任命杜夔为军谋祭酒,参与太乐署事务,并命令他创作雅乐。</td>
+                <td class="english-cell col-english" data-lang="english">Later, Liu Biao's son Liu Cong surrendered to Grand Ancestor (Cao Cao). Grand Ancestor appointed Du Kui as Army Libationer, let him participate in the affairs of the Court Sacrificial Music Bureau, and ordered him to compose elegant music.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夔善钟律,聪思过人,丝竹八音,靡所不能,惟歌舞非所长。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">杜夔善于音律,聪慧巧思超过常人,各种管弦乐器,无所不能演奏,只有歌舞不是他的专长。</td>
+                <td class="english-cell col-english" data-lang="english">Du Kui was an expert in bell temperament. He was extraordinarily intelligent and could play all eight categories of musical instruments (including string and wind instruments); only singing and dancing were not his strengths.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">时散郎邓静、尹齐善咏雅乐,歌师尹胡能歌宗庙郊祀之曲,舞师冯肃、服养晓知先代诸舞,夔总统研精,远考诸经,近采故事,教习讲肆,备作乐器,绍复先代古乐,皆自夔始也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时散郎邓静、尹齐擅长演唱雅乐,歌师尹胡能演唱宗庙祭祀和郊祀的乐曲,舞师冯肃、服养通晓前代的各种舞蹈。杜夔总管此事,精心研究,远考各类古代经典,近采当代典故,教授讲习,制作乐器,继承恢复前代古乐,这些事都是从杜夔开始的。</td>
+                <td class="english-cell col-english" data-lang="english">At that time, court attendants Deng Jing and Yin Qi were good at chanting elegant music; the singer Yin Hu could sing songs for ancestral temple and suburban sacrifice rituals; the dance masters Feng Su and Fu Yang were familiar with all kinds of dances from previous dynasties. Du Kui took overall charge and conducted in-depth research: he studied ancient classics for references, collected recent stories, taught and lectured, made musical instruments, and inherited and restored ancient music from previous dynasties—all these undertakings began with Du Kui.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">黄初中,为太乐令、协律都尉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">黄初年间,杜夔担任太乐令、协律都尉。</td>
+                <td class="english-cell col-english" data-lang="english">In the Huangchu Period, he was appointed Commander of the Court Sacrificial Music Bureau and Captain of Harmonics.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">初,汉铸铜工柴玉巧有意思,形器之中,多所造作,亦为时贵人见知。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当初,汉代铸铜工匠柴玉心灵手巧且有独到见解,各种形制的乐器,大多是他制作的,也被当时的达官贵人赏识。</td>
+                <td class="english-cell col-english" data-lang="english">In the early days, Chai Yu, a bronze caster of the Han Dynasty, was dexterous and had original ideas. He made many musical instruments of various shapes and was recognized and appreciated by noble officials of his time.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夔令玉铸铜钟,其声均清浊多不如法,数毁改作。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">杜夔命令柴玉铸造铜钟,但铜钟的音调清浊大多不符合古法,杜夔多次让他销毁重铸。</td>
+                <td class="english-cell col-english" data-lang="english">Du Kui ordered Chai Yu to cast bronze bells, but the clarity and turbidity of the bells' tones mostly did not conform to ancient standards, so Du Kui had him destroy and recast them many times.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">玉甚厌之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">柴玉对此非常厌烦。</td>
+                <td class="english-cell col-english" data-lang="english">Chai Yu was extremely annoyed by this.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">谓夔清浊任意,颇拒捍夔。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">柴玉认为杜夔对音调清浊的要求随心所欲,很是抗拒杜夔。</td>
+                <td class="english-cell col-english" data-lang="english">He thought Du Kui's demands on the clarity and turbidity of tones were arbitrary, so he strongly resisted Du Kui.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夔、玉更相白于太祖,太祖取所铸钟,杂错更试,然后知夔为精而玉之妄也,于是罪玉及诸子,皆为养马士。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">杜夔和柴玉各自向曹操禀报情况,曹操取来所铸的铜钟,交错敲击反复测试,之后才明白杜夔精通音律而柴玉的说法虚妄不实,于是降罪柴玉及其儿子们,把他们都贬为养马的人。</td>
+                <td class="english-cell col-english" data-lang="english">Du Kui and Chai Yu reported their respective cases to Grand Ancestor. Grand Ancestor took the cast bells, tested them by striking them alternately, and then realized that Du Kui was proficient in music while Chai Yu's claims were unfounded. Therefore, he punished Chai Yu and his sons, demoting them all to horse keepers.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">文帝爱待玉,又尝令夔与骥等于宾客之中吹笙鼓琴,夔有难色,由是帝意不悦。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">文帝曹丕却宠爱优待柴玉,又曾下令让杜夔和左骥等人在宾客面前吹笙弹琴,杜夔面露难色,因此曹丕心中不满。</td>
+                <td class="english-cell col-english" data-lang="english">However, Emperor Wen (Cao Pi) favored and treated Chai Yu well. He also once ordered Du Kui, Zuo Dian and others to play the sheng (a reed pipe) and qin (a zither) in front of guests. Du Kui showed reluctance, which made the emperor unhappy.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后因他事系夔,使骑等就学,夔自谓所习者雅,仕宦有本,意犹不满,遂黜免以卒。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来曹丕借其他事情关押了杜夔,让左骥等人向杜夔学习音律。杜夔自称自己研习的是雅乐,做官也有自己的根基,心中仍有不满,于是被罢官免职,最终抑郁而死。</td>
+                <td class="english-cell col-english" data-lang="english">Later, on another pretext, Cao Pi had Du Kui imprisoned and ordered Zuo Dian and others to learn music from him. Du Kui claimed that what he studied was elegant music and that he had a solid foundation for his official career, still harboring resentment. As a result, he was dismissed from office and eventually died of melancholy.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">弟子河南邵登、张泰、桑馥,各至太乐丞,下邳陈顽司律中郎将。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">杜夔的弟子河南人邵登、张泰、桑馥,各自官至太乐丞;下邳人陈顽担任司律中郎将。</td>
+                <td class="english-cell col-english" data-lang="english">Du Kui's disciples Shao Deng, Zhang Tai and Sang Fu (all from Henan) each rose to the position of Assistant Commander of the Court Sacrificial Music Bureau; Chen Kang from Xiapi served as Lieutenant General of Music Regulation.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">自左延年等虽妙于音,咸善郑声,其好古存正莫及夔。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">自汉代左延年等人以来,即使有精通音乐的人,也都擅长民间俗乐,至于喜爱古代音乐、保持正统古乐方面,没有谁能比得上杜夔。</td>
+                <td class="english-cell col-english" data-lang="english">Although there have been musicians skilled in music since Zuo Yannian and others of the Han Dynasty, they all excelled in folk music (Zheng music, a type of popular music). When it came to loving ancient music and preserving orthodox ancient tunes, none of them could match Du Kui.</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
+      </main>
+
+      <nav class="chapter-nav">
+        <a href="/book/sanguozhi/wei/chapter/4/">← 上一章</a>
+        &nbsp; <a href="/book/sanguozhi/wei/">魏书章节列表</a> &nbsp;
+        <a href="/book/sanguozhi/wei/chapter/6/">下一章 →</a>
+      </nav>
+
+      <nav class="breadcrumb">
+        <a href="/">首页</a> &gt; 
+        <a href="/book/sanguozhi/">三国志</a> &gt; 
+        <a href="/book/sanguozhi/wei/">魏书</a> &gt;
+        第5章 三国志-杜夔传
+      </nav>
+
+      <footer>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
+      </footer>
+    </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

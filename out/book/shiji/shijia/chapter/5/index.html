@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>史记 — 第5章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <header>
+        <h1>史记 — 第5章 世家 陈涉世家第十八</h1>
+      </header>
+
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
+
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">陈胜者，阳城人也,字涉。吴广者，阳夏人也,字叔。陈涉少时，尝与人佣耕，辍耕之垄上，怅恨久之，曰：“苟富贵，无相忘。”庸者笑而应曰:“若为庸耕，何富贵也?”陈涉太息曰：“嗟乎，燕雀安知鸿鹄之志哉!”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">陈胜是阳城人，字涉。吴广是阳夏人，字叔。陈涉年轻时，曾经给人家当雇工，有一次干活累了，在田埂上休息时，恨恨不平地说：“如果将来我们谁富贵了，可不能忘记今天的伙伴们!”别的雇工都笑话他：“你一个给人家干活的，还有什么富贵可讲呢?”陈涉长叹一声：“唉!小燕雀哪能知道鸿鹄一飞冲天的志向啊!”</td>
+                <td class="english-cell col-english" data-lang="english">Chen Sheng, whose polite name was Chen She, was a native of Yangcheng; Wu Guang, or Wu Shu, was from Yangxia. When Chen She was young, he was working one day in the fields with the other hired men. Suddenly he stopped his ploughing and went and stood on a hillock, wearing a look of profound discontent. After a long while he announced, “If I become rich and famous, I will not forget the rest of you!” The other farm hands laughed and answered, “You are nothing but a hired labourer. How could you ever become rich and famous?” Chen She gave a great sigh. “Oh, well,” he said, “how could you little sparrows be expected to understand the ambitions of a swan?”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">二世元年七月,发闾左適戍渔阳,九百人屯大泽乡。陈胜、吴广皆次当行，为屯长。会天大雨，道不通，度已失期。失期，法皆斩。陈胜、吴广乃谋曰：“今亡亦死，举大计亦死，等死，死国可乎?”陈胜曰：“天下苦秦久矣。吾闻二世少子也,不当立，当立者乃公子扶苏。扶苏以数谏故，上使外将兵。今或闻无罪，二世杀之。百姓多闻其贤，未知其死也。项燕为楚将，数有功，爱士卒，楚人怜之。或以为死，或以为亡。今诚以吾众诈自称公子扶苏、项燕,为天下唱，宜多应者。”吴广以为然。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦二世元年七月，遣送住在里巷左边的壮丁到渔阳去守边，同行者九百人，中途驻扎在大泽乡。陈胜、吴广都按次序应该去服役，还充当小队长。凑巧天降大雨，道路不通，他们计算一下日程，肯定不能按时赶到渔阳了。不能按时到达，按照秦法，都要被杀头。陈胜、吴广私下商量说：“现在我们如果逃跑，被抓回来肯定是死；我们如果造反，即使失败了，无非也就是死。既然二者都是死，为自己打天下而死不好吗?”陈胜说：“老百姓受秦朝暴政的苦，时间不短了。我听说秦二世是秦始皇的小儿子，不该由他当皇帝，应该当皇帝的是长子扶苏。扶苏由于多次劝说秦始皇，秦始皇讨厌他，派他带兵到外头去守边。我听说他已经无辜被秦二世杀害了。老百姓都只知道扶苏贤明，很多人还不知道他已经被杀了。项燕，是楚国的名将，曾多次立过战功，而且关心士卒，楚国人都很爱戴他。现在有人认为他死了，有人认为他没死，只是逃亡躲起来了。现在我们真要是冒充公子扶苏和项燕，带头造反，我看响应我们的人会很多。”吴广觉得有理,乃行卜。</td>
+                <td class="english-cell col-english" data-lang="english">During the first year of the Second Emperor of Qin [209 BC], in the seventh month, an order came for a force of 900 men from the poor side of the town to be sent to garrison Yuyang. Chen She and Wu Guang were among those whose turn it was to go, and they were appointed heads of the levy of men. When the group had gone as far as Daze County, they encountered such heavy rain that the road became impassable. It was apparent that the men would be unable to reach the appointed place on time, an offence punishable by death. Chen She and Wu Guang accordingly began to plot together. “As things stand, we face death whether we stay or run away,” they said, “while if we were to start a revolt we would likewise face death. Since we must die in any case, would it not be better to die fighting for our country?” “The world has long suffered under Qin,” said Chen She. “From what I have heard, the Second Emperor was a younger son and ought never to have succeeded to the throne. The one who should have been made ruler was Prince Fusu. But because Fusu several times remonstrated with the former emperor, he was sent to lead the armies in the field. Someone has told me that, though Fusu was guilty of no crime, he has been murdered by the Second Emperor. The common people have heard much of Fusu’s worth, but they do not know that he is dead. Xiang Yan was a general of Chu who many times distinguished himself in battle. He took good care of his troops and the people of Chu thought fondly of him. Some say that he is dead, but others say that he is only in hiding. Now with the group we have, if we could deceive people into thinking that I am Fusu and you are Xiang Yan, we could lead the world in our own tune, and there are sure to be many who will join in the chorus!” Wu Guang approved of this idea, and they went to consult a diviner.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">卜者知其指意,曰：“足下事皆成，有功。然足下卜之鬼乎!”陈胜、吴广喜，念鬼,曰：“此教我先威众耳。”乃丹书帛曰“陈胜王”,置人所臂鱼腹中。卒买鱼烹食，得鱼腹中书，固以怪之矣。又间令吴广之次所旁丛祠中,夜篝火，狐鸣呼曰“大楚兴，陈胜王”。卒皆夜惊恐。旦日,卒中往往语，皆指目陈胜。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">但两人还有些犹豫，便去找人算卦。算卦的猜出了他们的心思，就说：“你们的事情都能办成，而且一定会有大功效。但是你们为什么不再去找鬼神算一卦呢?”陈胜、吴广听着心里高兴，又暗自琢磨这“找鬼神”是什么意思，后来他们恍然大悟：“这是教我们用装神弄鬼的办法来提高威信，以便组织群众啊!”于是他们在一条白绸带上写了“陈胜王”三个红字，偷偷塞进捕鱼人逮上来的一条鱼的肚子里，这条鱼又恰好被戍卒们买回来了，一剖腹，发现了鱼肚子里的这个红字条，人们觉得很奇怪。陈胜又让吴广夜里偷偷地到营房附近林中的破庙里，点起灯笼，像狐狸似地嗥叫：“大楚兴，陈胜王!”戍卒们都被吓得一夜没有睡好觉。第二天早晨，戍卒们三三两两交头接耳地开始议论，同时还指指点点地斜着眼睛看陈胜。</td>
+                <td class="english-cell col-english" data-lang="english">The diviner guessed what the two were planning, and replied, “Your undertakings will all meet with success. But might you not seek your fortune with the spirits?” Chen She and Wu Guang were delighted with the idea of enlisting supernatural aid in their scheme. “It must mean that we should first do something to overawe the men in our group!” they declared, and proceeded to write with cinnabar on a piece of silk: “Chen She shall be a king.” They stuffed the silk into the belly of a fish someone had caught in a net. When one of the soldiers bought the fish and boiled it for his dinner, he discovered the message in the fish’s belly and was greatly astonished. Also Chen She secretly sent Wu Guang to a grove of trees surrounding a shrine which was close to where the men were making camp. When night fell, Wu Guang lit a torch and, partly concealing it under a basket, began to wail like a fox and cry, “Great Chu shall rise again! Chen She shall be a king!” The soldiers were filled with alarm, and when dawn came they talked here and there among themselves, pointing and staring at Chen She.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吴广素爱人，士卒多为用者。将尉醉,广故数言欲亡，忿恚尉,令辱之，以激怒其众。尉果笞广。尉剑挺,广起，夺而杀尉。陈胜佐之，并杀两尉。召令徒属曰：“公等遇雨，皆已失期，失期当斩。藉弟令毋斩,而戍死者固十六七。且壮士不死即已，死即举大名耳,王侯将相宁有种乎!”徒属皆曰：“敬受命。”乃诈称公子扶苏、项燕,从民欲也。袒右，称大楚。为坛而盟，祭以尉首。陈胜自立为将军，吴广为都尉。攻大泽乡，收而攻蕲。蕲下，乃令符离人葛婴将兵徇蕲以东。攻铨、郯、苦、柘、谯皆下之。行收兵，比至陈，车六七百乘，骑千余，卒数万人。攻陈，陈守令皆不在,独守丞与战谯门中。弗胜，守丞死，乃入据陈。数日，号令召三老、豪杰与皆来会计事。三老、豪杰皆曰：“将军身被坚执锐，伐无道，诛暴秦，复立楚国之社稷，功宜为王。”陈涉乃立为王，号为张楚。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">吴广平常爱关心人，因此戍卒们都愿意听他使唤。这一天，押送戍卒的尉官喝醉了，吴广就当着他的面一再扬言要逃跑，故意地激怒尉官让他打自己，以便挑起戍卒们的义愤。尉官果然上了圈套，他抄起竹板子打吴广。一用力，腰间的佩剑从剑鞘中甩了出来，吴广一跃而起，抓过宝剑，杀死了打他的那个尉官。陈胜在一旁帮忙，把另一个尉官也杀掉了。紧接着他们把戍卒们召集起来，对大家说：“各位，我们在这里遇上大雨，无论如何也不能按时赶到渔阳了。而不能按时到达，按法是要杀头的。即使不杀头，为守边而死的人，十个里头也有六七个。大丈夫如果豁不出命去也就罢了，如果敢于豁出命去那就要干出点大名堂。那些王侯将相，难道都是天生的吗?”戍卒们异口同声地说：“愿意听从您的指挥。”于是他们为了顺从人民的心愿，自己就冒充公子扶苏、项燕。他们一齐褪下右臂上的袖子宣誓，自己号称“大楚”。他们又搭起台子，用那两个尉官的头祭天。陈胜自己做将军，吴广做都尉。先攻下了大泽乡，紧接着又带领大泽乡的人去攻蕲县。蕲县的守军投降了。于是陈胜派符离人葛婴带兵去蕲县以东开辟地盘。而他自己和吴广则率军西进攻锤、郯、苦、柘、谯等地，都攻下来了。他们一路上扩充军队，等到了陈郡城郊时，兵车已经有了六七百乘，骑兵有一千多，步兵已有好几万人了。于是他们开始进攻陈郡，当时陈郡的郡守和陈县的县令都不在，只有留守的郡丞在城门下抵抗了一阵子，随即战死了。于是陈胜顺利地占据了陈郡。过了几天，陈胜下令召集郡中各县的三老、豪杰都来开会。这些三老、豪杰们都说：“将军您身披铠甲，手执利刃，为民众讨伐暴秦，重新建立了楚国的政权，这么大的功劳，应当称王。”这些话正合陈胜的心意，于是他就自立为王，国号“张楚”。</td>
+                <td class="english-cell col-english" data-lang="english">Wu Guang had always been kind to others and many of the soldiers would do anything for him. When the officer in command of the group was drunk, Wu Guang made a point of openly announcing several times that he was going to run away. In this way Wu Guang hoped to arouse the commander’s anger, get him to punish him, and so stir up the men’s ire and resentment. As Wu Guang had expected, the commander began to beat him, when the commander’s sword slipped out of its scabbard. Wu Guang sprang up, seized the sword, and killed the commander, Chen She rushed to his assistance, and they proceeded to kill the other two commanding officers as well. Then they called together all the men of the group and announced: “Because of the rain we encountered, we cannot reach our rendezvous on time. And anyone who misses a rendezvous has his head cut off! Even if you should somehow escape with your heads, six or seven out of every ten of you are bound to die in the course of garrison duty. Now, my brave fellows, if you are unwilling to die, we have nothing more to say. But if you would risk death, then let us risk it for the sake of fame and glory! Kings and nobles, generals and ministers — such men are made, not born!” The men of the garrison all replied, “We’ll do whatever you say!” Then, in order to win the loyalty of the people, Chen She and Wu Guang falsely proclaimed themselves to be Prince Fusu and Xiang Yan. Baring their right shoulders, they raised the cry of “Great Chu!” and built an altar and swore an oath before it, offering as a sacrifice the heads of the commanding officers. Chen She set himself up as commander of the army, with Wu Guang as his colonel, and together they attacked Daze County. After capturing Daze County, they proceeded to attack and capture Qi. They dispatched Ge Ying, a man of Fuli, with a force to seize control of the area east of Qi, while they themselves attacked Zhi, Zan, Ku, Zhe, and Qiao, all of which submitted. Recruiting soldiers as they went along, they were able by the time they reached the city of Chen to build up a force of 600 or 700 chariots, over 1,000 horsemen, and 20,000 or 30,000 infantry. When they attacked Chen, neither the governor of the province nor any of the magistrates of the districts under him were in the city. Only one of the governor’s aides was present, who engaged them in battle at the Qiao Gate but was defeated and killed. They entered the city and quartered there for several days, sending out an order summoning all the village heads and important men of the region to meet with them and plan a course of action. To this the village heads and distinguished men replied, “The general has buckled on armor and taken up his weapons to attack the unrighteous and punish the violence of Qin, that he may restore once more the sacred altars of the state of Chu. Because of the glory he has won, he deserves to be made a king.” Chen She accordingly was made king and given the title “Magnifier of Chu,”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">当此时，诸郡县苦秦吏者，皆刑其长吏，杀之以应陈涉。乃以吴叔为假王,监诸将以西击荥阳。令陈人武臣、张耳、陈馀徇赵地,令汝阴人邓宗徇九江郡。当此时，楚兵数千人为聚者，不可胜数。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">在这个时候，天下各郡县痛恨秦朝官吏的百姓们，都纷纷起来杀掉他们的长官，响应陈涉。于是陈涉就派吴广代行王事，以自己的名义节制将领们西攻荣阳。派陈郡人武臣、张耳、陈馀等人到赵国一带扩充地盘，派汝阴人邓宗南下开辟九江郡。这时候楚地几千人成伙的起义军多得不可胜数。</td>
+                <td class="english-cell col-english" data-lang="english">whereupon men in many of the other provinces and districts who had suffered under the Qin officials overpowered and murdered their governors and magistrates and allied themselves with Chen She. Chen She made Wu Guang an acting king with supervision over the other leaders of their band, and sent him west to attack Xingyang. Chen She ordered Zhang Er, Chen Yu, and Wu Chen, a man of Chen, to seize the region of Zhao, while he sent Deng Zong, a native of Ruyin, to seize the province of Jiujiang. By this time a countless number of bands consisting of several thousand men each had been formed throughout Chu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">葛婴至东城，立襄彊为楚王。婴后闻陈王已立，因杀襄强，还报。至陈，陈王诛杀葛婴。陈王令魏人周市北徇魏地。吴广围荥阳。李由为三川守,守荥阳，吴叔弗能下。陈王征国之豪杰与计，以上蔡人房君蔡赐为上柱国。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">葛婴到达东城后，自作主张拥立襄彊做了楚王。后来他听说陈胜自己称王了，于是又杀了襄彊回去向陈王报告。葛婴到陈后，被陈王所杀。陈王又派魏人周市回魏地开辟地盘。而吴广已经督率大军包围荥阳。这时守荥阳的三川郡的郡守是李斯的儿子李由。两军相持，吴广久攻未能攻下。这时陈王召集陈国的豪杰人士们一道商量对策，并任用上蔡人房县的县令蔡赐做上柱国，辅助自己处理军政事务。</td>
+                <td class="english-cell col-english" data-lang="english">When Ge Ying, who had been sent by Chen She to seize the land east of Chi, reached Dongcheng, he set up Xiang Qiang as king of Chu. Later, hearing that Chen She had already become king himself, he murdered Xiang Qiang and returned to report what he had done to Chen She. Chen She executed him and dispatched Zhou Shi, a native of Wei, to march north and seize the region of Wei. Meanwhile Wu Guang surrounded the city of Xingyang, but Li You, the governor of Sanchuan, held the city, and Wu Guang was unable to conquer it. Chen She summoned the distinguished men of the state of Chu to meet with him and plan the next move. He appointed Cai Ci, the lord of Fang, a man of Shangcai, as his chief minister.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">周文，陈之贤人也，尝为项燕军视日,事春申君,自言习兵，陈王与之将军印，西击秦。行收兵至关,车千乘，卒数十万，至戏，军焉。秦令少府章邯免郦山徒、奴产子,悉发以击楚大军，尽败之。周文败，走出关，止次曹阳二三月。章邯追败之，复走次渑池十余日。章邯击，大破之。周文自刭，军遂不战。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">周文是陈郡的贤者，曾经在楚国名将项燕军中做观察星象的官，并在春申君门下做过事。他向陈王说他会用兵。于是陈王就任命他为将军，派他向西进攻秦国的老巢。周文一路上招收兵马，等到达函谷关时，已有兵车千余乘，步卒几十万人，一直到达咸阳东郊的戏亭，扎下营来。这时秦王朝派少府令章邯赦免了在骊山秦始皇墓地劳动的苦役犯以及秦地家奴所生的儿子，把他们通通编入军队，迎击周文。周文大败，东走出关至曹阳，收兵整顿，不到两三个月，章邯的追兵又到了，结果周文又被打败。周文继续东退至渑池，不过十天，章邯又到了，这一次，周文的部队被打得一败涂地。周文自杀，剩下的人遂不战而溃。</td>
+                <td class="english-cell col-english" data-lang="english">Zhou Wen, a man of some distinction in Chen, had formerly been diviner of auspicious days in the army of Xiang Yan and had also served under the lord of Chunshen. When he declared himself adept in military affairs, Chen She presented him with the seals of a general and sent him west to attack Qin. Gathering troops as he went along, he entered the Pass with a force of 1,000 chariots and 20,000 or 30,000 infantry and camped at Xi. Qin ordered its privy treasurer, Zhang Han, to free all conscript labourers at Mt. Li, and the children of household slaves, and lead them forth in an attack upon the army of Chu. They succeeded in routing it, whereupon Zhou Wen fled back through the Pass in defeat, halting and camping at Caoyang for several months. Zhang Han pursued him and defeated him again, and Zhou Wen once more fled, camping at Mianchi for ten days or more. Here Zhang Han inflicted a final defeat. Zhou Wen cut his throat, and his army ceased all further resistance.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">武臣到邯郸，自立为赵王,陈馀为大将军，张耳、召骚为左右丞相。陈王怒，捕系武臣等家室，欲诛之。柱国曰:“秦未亡而诛赵王将相家属，此生一秦也，不如因而立之。”陈王乃遣使者贺赵，而徙系武臣等家属宫中,而封耳子张敖为成都君,趣赵兵亟入关。赵王将相相与谋曰：“王王赵，非楚意也。楚已诛秦，必加兵于赵。计莫如毋西兵，使使北徇燕地以自广也。赵南据大河，北有燕、代,楚虽胜秦，不敢制赵。若楚不胜秦，必重赵。赵乘秦之敝，可以得志于天下。”赵王以为然，因不西兵，而遣故上谷卒史韩广将兵北徇燕地。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">武臣到达邯郸后，不经请示自立为赵王，让陈馀做大将军，让张耳、召骚为左右丞相。陈王听说很生气，立即逮捕了武臣等人的家小，想统统杀光。这时上柱国劝说道：“秦国现在还没有灭亡，您再杀了武臣等人的家小，这不等于又生出一个和您作对的秦国吗?依我看，不如顺水推舟，正式封他为王。”陈王觉得有理，便派人去赵向赵王祝贺，而把赵王武臣等人的家小扣留在陈王宫里，封张耳的儿子张敖为成都君，催促赵国赶紧率军西进函谷关。赵王的将军们一起讨论说：“您在赵地称王，不是陈王的本意。陈王灭秦之后，肯定要掉头来打我们。从我们赵国的利益考虑，不如不率军西下，而是派人往北开辟燕国的地方来扩大我们自己的地盘。这样一来，我们南面有黄河作屏障，北面有燕、代的广大地区。将来陈王即使战胜了秦王朝，也治不了我们。如果陈王不能战胜秦王朝，那他就更得借重我们。到那时，趁着秦国的疲惫，我们就可以号令天下了!”赵王觉得有理，于是就不再向西出兵，而是派原来在上谷郡当卒史的韩广带兵向北开辟原来的燕国地盘。</td>
+                <td class="english-cell col-english" data-lang="english">When Wu Chen reached Handan in Zhao, he set himself up as king of Zhao, making Chen Yu his commanding general and Zhang Er and Shao Sao his prime ministers of the left and right. Chen She was enraged at this and seized and bound the members of their families, preparing to execute them. But the chief minister, Cai Ci, interceded, saying, “Qin, our great enemy, has not yet been destroyed. Now if you execute the families of the king of Zhao and his ministers, you will only create a second Qin to plague us. It would be better to comply with what Wu Chen and the others have done and confirm their positions.” Chen She accordingly dispatched an envoy to congratulate Wu Chen on his new position as king of Zhao, but the families of Wu Chen and the others he had transferred to his own palace and kept under guard. Zhang Er’s son, Zhang Ao, he enfeoffed as lord of Chengdu. Chen She urged the troops of Zhao to proceed with all haste to the area within the Pass, but Zhao’s generals and ministers plotted with their king, saying, “It was not Chen She’s intention that you should become king of Zhao. When he has finished conquering Qin, he will assuredly turn his forces against us. The best plan, therefore, would be for us not to dispatch troops west, but instead to send a force north to seize the region of Yan and broaden the territory under your command. With the Yellow River to protect Zhao in the south, and Yan and Dai to the north in our possession, Chen She in Chu will not dare try to impose his will upon us, even if he is victorious over Qin. And if Chen She should fail to conquer Qin, he will be forced to rely more heavily than ever upon us. At that point we can take advantage of the damage already inflicted upon Qin by Chen She and have our way with the whole empire!” The king of Zhao approved their suggestion and sent no troops west, but instead dispatched Han Guang, a former troop commander of the province of Shanggu, to lead an army north and seize the region of Yan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">燕故贵人豪杰谓韩广曰：“楚已立王，赵又已立王。燕虽小，亦万乘之国也，愿将军立为燕王。”韩广曰：“广母在赵，不可。”燕人曰：“赵方西忧秦，南忧楚，其力不能禁我。且以楚之强，不敢害赵王将相之家，赵独安敢害将军之家!”韩广以为然，乃自立为燕王。居数月，赵奉燕王母及家属归之燕。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">燕国的旧责族和豪杰们对韩广说：“楚国最早立了王，赵国不久前又立了王。我们燕国再小，也曾经是一个具有万辆兵车的国家，希望韩将军做我们的燕王。”韩广说：“不行，我的母亲还在赵国。”燕国的人们说：“赵国眼下所怕的是他西面的秦朝和南面的楚国，他根本没有力量阻止我们自立。况且楚国那么强大，尚不敢杀害赵王将相的家小，它一个赵国就敢杀害将军的家属吗?”韩广认为有道理，于是就自立为燕王。过了几个月，赵王派人把燕王的母亲以及其他家小都护送到燕国。</td>
+                <td class="english-cell col-english" data-lang="english">The former nobles and leaders of Yan addressed Han Guang, saying, “Chu has already set up a king, and so has Zhao. Although Yan is rather small, it still deserves to be called, as the old phrase has it, ‘a kingdom of ten thousand chariots.’ We would like therefore to make you king of Yan.” Han Guang, however, objected. “My mother is still in Zhao,” he said. “I am afraid it would not do!” But the men of Yan replied, “Zhao at the present time has all it can do to worry about Qin in the west and Chu to the south. It has no strength left to interfere with what we do. Chen She, in spite of all his power, did not dare to harm the families of the king and ministers of Zhao. How should Zhao dare to do any harm to your family?” Han Guang, considering that what they said was true, declared himself king of Yan. After a few months Zhao with all due respect sent his mother and the rest of his family to him in Yan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">当此之时，诸将之徇地者，不可胜数。周市北徇地至狄,狄人田儋杀狄令，自立为齐王，以齐反击周市。市军散，还至魏地，欲立魏后故宁陵君咎为魏王。时咎在陈王所，不得之魏。魏地已定，欲相与立周市为魏王，周市不肯。使者五反，陈王乃立宁陵君咎为魏王，遣之国。周市卒为相。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时候，各地拉队伍占地盘的将领，不计其数。周市率军北进，到达狄县后，狄人田儋杀了狄县令，自立为齐王，率领齐军反击周市。周市被打败，退回到了魏地。周市想拥立魏国的后代从前的宁陵君魏咎做魏王。可是魏咎这时正在陈王那里，陈王不放他来。魏国平定后，大家又想拥立周市为王，周市不肯。使者往返五次，陈王才勉强同意了放宁陵君魏咎到魏地去做魏王，让周市为魏王的丞相。</td>
+                <td class="english-cell col-english" data-lang="english">By this time there were any number of leaders of the revolt attempting to win control of different regions of the empire. Zhou Shi raided the north as far as Di in Qi. Tian Dan, a native of Di, murdered the magistrate of the district of Di and declared himself king of Qi. He then proceeded to lead the forces of Qi in an attack on Zhou Shi. Zhou Shi’s army scattered before him, turned back, and retreated to the region of Wei. Zhou Shi wanted to set up Wei Jiu, the former lord of Ningling, who was a descendant of the royal family of Wei, as king of Wei, but Jiu was at the time with Chen She and so was not able to come to Wei. After Zhou Shi’s men had conquered the region of Wei, they wanted to join the people of Wei in setting up Zhou Shi himself as king, but Zhou Shi refused to consent. Five times envoys were sent back and forth between Wei and Chen She in an attempt to reach a solution, until finally Chen She agreed to make Jiu the king of Wei, and sent him to his new kingdom. Zhou Shi in the end became his prime minister.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">将军田臧等相与谋曰:“周章军已破矣,秦兵旦暮至，我围荥阳城弗能下，秦军至，必大败。不如少遗兵，足以守荥阳,悉精兵迎秦军。今假王骄，不知兵权,不可与计，非诛之，事恐败。”因相与矫王令以诛吴叔,献其首于陈王。陈王使使赐田臧楚令尹印，使为上将。田臧乃使诸将李归等守荥阳城，自以精兵西迎秦军于敖仓。与战，田臧死，军破。章邯进兵击李归等荥阳下，破之，李归等死。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">西路军中的田臧等人私下商量说：“周文的军队已经被打败了，秦朝的军队很快就会到达这里。我们围攻荥阳很久而没能攻下，如果再等秦军到来，那我们肯定要失败。所以现在不如留下少部分兵力，能围住荥阳就行了，而把全部精锐部队集中起来，去迎击秦军。假王吴广，骄傲跋扈，根本不懂得用兵，不能同他商量，如果不杀他，我们的计划恐怕就要失败。”于是他们假传陈王的命令把吴广杀了，还把吴广的人头送到了陈王那里。陈王无法只得派人给田臧送去了楚国令尹的印章，封他为上将。田臧就留下将军李归等人围攻荥阳城，自己领着精锐部队西击秦军于敖仓。结果田臧战死，军队被击溃。接着秦将章邯进击围困荥阳的李归，李归的军队又被打败了，李归等人战死。</td>
+                <td class="english-cell col-english" data-lang="english">Tian Zang, one of Chen She’s generals, plotted with his fellow officers, saying, “Since Zhou Wen’s army has been defeated, Qin’s soldiers may be on us at any moment. Now we have encircled the city of Xingyang, but we have been unable to take it. When the armies of Qin reach us we are sure to suffer a great defeat. It would be better to leave a small number of troops behind, sufficient to keep watch on Xingyang, and lead our best men west to meet the Qin armies. Our leader, Wu Guang, who has been made an acting king, is too arrogant and knows nothing of military tactics. He is not worth consulting with on matters of strategy. If we do not do away with him our whole undertaking will be in danger of collapse!” Accordingly they joined in forging orders from Chen She and proceeded to execute Wu Guang and send his head to Chen She. Chen She in turn sent an envoy to reward Tian Zang with the official seals of prime minister of Chu, making him commanding general.Tian Zang then ordered Li Gui and some of his other generals to guard the city of Xingyang, while he himself led his best troops west to meet the army of Qin at the Ao Granary and join in battle. Tian Zang was killed and his army defeated. The Qin commander Zhang Han advanced with his troops and attacked Li Gui and the others before the walls of Xingyang, defeating and killing them.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">阳城人邓说将兵居郏,章邯别将击破之，邓说军散走陈。铨人伍徐将兵居许,章邯击破之，伍徐军皆散走陈。陈王诛邓说。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">陈王的将军阳城人邓说领兵驻扎在郏县，章邯派他的部将率兵将他击败，邓说的军队败散，逃回了陈郡。锤县人伍徐领兵驻扎在许昌，章邯率军攻许昌，伍徐的军队被击溃，也逃回了陈郡。陈王一怒杀了邓说。</td>
+                <td class="english-cell col-english" data-lang="english">A man of Yangcheng named Deng Yue was at this time in charge of a force of men in Tan. Zhang Han dispatched an expeditionary force to attack and crush him, whereupon Deng Yue’s army scattered and fled to Chen. Wu Xu, a man of Zhi, held command of a force at Xu, but when attacked by Zhang Han his army, too, scattered and fled to Chen. Chen She executed Deng Yue.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">陈王初立时，陵人秦嘉、锤人董绁、符离人朱鸡石、取虑人郑布、徐人丁疾等皆特起,将兵围东海守庆于郯。陈王闻，乃使武平君畔为将军，监郯下军。秦嘉不受命，嘉自立为大司马,恶属武平君。告军吏曰：“武平君年少，不知兵事，勿听!”因矫以王命杀武平君畔。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">陈涉刚刚称王时，陵县人秦嘉、铿县人董绁、符离人朱鸡石、取虑人郑布、徐县人丁疾等，皆各自率众而起，他们一同带兵把一个名叫庆的东海太守包围在郯县。陈王听说后，就派武平君畔为将军，去统领节制郯县周围的各路军队。秦嘉不接受陈王的这个命令，遂自封为大司马，他不愿意属武平君统领。他对军吏们说：“武平君年轻，根本不懂军事，不要听他的!”接着又假传陈王的命令把武平君畔杀了。</td>
+                <td class="english-cell col-english" data-lang="english">At the time when Chen She first set himself up as a king a group of men, including Qin Jia of Ling, Dong Xie of Zhi, Zhu Jishi of Fuli, Zheng Bu of Qulü, and Ding Ji of Xu, started an uprising of their own, leading a band of troops to surround Qing, the governor of Donghai, at Tan. When Chen She received word of this he dispatched Pan, the lord of Wuping, to act as their commander and take charge of their forces, which were camped outside the walls of Tan. Qin Jia, however, declined to accept these orders, but instead declared himself a grand marshal and refused to put himself under the lord of Wuping’s command. “The lord of Wuping is too young and knows nothing of military affairs,” he advised his officers. “Do not listen to what he says!” Accordingly they forged an order from Chen She and executed the lord of Wuping.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">章邯已破伍徐，击陈，柱国房君死。章邯又进兵击陈西张贺军。陈王出监战，军破，张贺死。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">章邯击败驻守许昌的伍徐后，进兵攻击陈郡，陈涉的上柱国房君战死。接着章邯又进击驻扎在陈郡西郊的张贺军。情势紧急，陈王亲临前线督战，结果张贺军也被章邯打败，张贺战死。</td>
+                <td class="english-cell col-english" data-lang="english">After Zhang Han had defeated Wu Xu he marched to attack the city of Chen, killing Cai Ci, the chief minister. He then advanced and attacked the army of Zhang Jia west of Chen. Chen She came out to observe the battle, but the army was defeated and Zhang Jia killed.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">腊月，陈王之汝阴，还至下城父,其御庄贾杀以降秦。陈胜葬砀,谥曰隐王。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">腊月，陈王退走汝阴，再往北折，到了下城父。他的车夫庄贾叛变，杀死陈涉投降了秦朝。陈胜死后，埋在砀县，被后人谥为“隐王”。</td>
+                <td class="english-cell col-english" data-lang="english">In the twelfth month, at the time of the winter sacrifice, Chen She journeyed to Ruyin and from there withdrew to Xiachengfu, where he was murdered by his carriage driver, Zhuang Jia, who declared Chen loyal to the Qin government. Chen She was buried at Dang with the posthumous title of “The Melancholy King.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">陈王故涓人将军吕臣为仓头军,起新阳，攻陈下之,杀庄贾，复以陈为楚。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时曾给陈王当过侍从后来当了将军的吕臣又领着一支头裹青巾的队伍，在新阳揭竿而起，他们一举攻下了陈郡，杀死了叛徒庄贾，又以陈郡为根据地继续号称楚国。</td>
+                <td class="english-cell col-english" data-lang="english">General Lü Chen, former master of purification under Chen She, formed a band of men known as the Blue Heads and started an uprising in Xinyang. They attacked and conquered the city of Chen, killed Zhuang Jia, and declared Chen loyal to Chu once more.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">初，陈王至陈，令锤人宋留将兵定南阳，入武关。留已徇南阳,闻陈王死，南阳复为秦。宋留不能入武关，乃东至新蔡,遇秦军，宋留以军降秦。秦传留至咸阳，车裂留以徇。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">开始，当陈王的军队刚到陈郡时，曾派锤县人宋留率兵去攻南阳，想让他从南阳西入武关。当宋留平定南阳后，陈王被杀的消息传来了，南阳的官吏又归附了秦朝。这时宋留已经不可能再入武关，只好向东退到了新蔡，结果在新蔡与秦军的大部队相遇。宋留率众投降了秦军。秦将把宋留解送到了咸阳，宋留被车裂示众。</td>
+                <td class="english-cell col-english" data-lang="english">When Chen She first marched on Chen he dispatched Song Liu, a man of Zhi, with orders to lead a force of troops west to conquer the region of Nanyang and enter the Wu Pass. Song Liu had already gained control of Nanyang, but when news of Chen She’s death spread abroad, Nanyang declared itself loyal again to Qin. Song Liu was therefore unable to enter the Wu Pass, but instead marched back east as far as Xincai, where he encountered the Qin army and surrendered to it. The Qin government had him brought back to the capital by relay carriage, where he was tied to two carts and torn apart to serve as a warning to the populace.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦嘉等闻陈王军破出走，乃立景驹为楚王,引兵之方与，欲击秦军定陶下。使公孙庆使齐王,欲与并力俱进。齐王曰：“闻陈王战败，不知其死生，楚安得不请而立王!”公孙庆曰：“齐不请楚而立王，楚何故请齐而立王!且楚首事，当令于天下。”田儋诛杀公孙庆。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时东部地区的秦嘉听说陈王被打败，逃出了陈郡，于是拥立景驹为楚王，他率军来到方与，准备在定陶与秦军决战。他派公孙庆东见齐王，想联合他并力攻秦。齐王说：“听说陈王战败逃走，生死不明，你们怎么能够不来请示我就立景驹为王呢?”公孙庆说：“当初你们称王也没有先向楚国请示，今天楚国为什么要来向你请示呢?而且楚国是带头造反的，本来就应该领导天下!"田儋一怒把公孙庆杀掉了。</td>
+                <td class="english-cell col-english" data-lang="english">When Qin Jia and his band heard that Chen She’s army had been defeated and was in flight they set up Jing Ju as king of Chu and led their troops to Fangyu, planning to attack the Qin army outside the walls of Dingtao. In the meantime they dispatched Gongsun Qing as their envoy to Tian Dan, the king of Qi, requesting that Qi join with them in the attack. “Though word has come that Chen She has been defeated, no one knows whether he is still alive or not,” said the king of Qi. “What do you mean by setting up a new king of Chu without consulting me?” “You did not consult Chu when you set yourself up as king of Qi,” responded Gongsun Qing. “Why should Chu consult Qi when it sets up its own king? Chu is the leader of the uprising. It is only proper that she should give orders to the rest of the empire!” The king of Qi executed Gongsun Qing.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦左右校复攻陈,下之。吕将军走，收兵复聚。鄱盗当阳君黥布之兵相收,复击秦左右校，破之青波,复以陈为楚。会项梁立怀王孙心为楚王。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦军派左右校尉再次进攻陈郡，陈郡被攻下。吕将军逃出陈郡后，又把队伍集合起来，与鄱阳大盗当阳君黥布的队伍合在一起，重新北上大败秦朝的左右校尉于青波，再次收复了陈郡。这时项梁已经拥立楚怀王的一个名字叫心的孙子做了楚王。</td>
+                <td class="english-cell col-english" data-lang="english">Qin’s colonels of the left and right again attacked Chen and recaptured it. Lü Chen’s army fled, but soon recruited more men and reformed. Qing Bu, the lord of Dangyang, a bandit leader of Po, recruited a force of men and joined Lü Chen in another attack on the colonels of Qin, defeating them at Qingbo. With this, the city of Chen once more became an ally of Chu. It was at this time that Xiang Liang set up Xin, the grandson of the former King Huai, as the new king of Chu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">陈胜王凡六月。已为王，王陈。其故人尝与庸耕者闻之，之陈，扣宫门曰：“吾欲见涉。”宫门令欲缚之。自辩数，乃置，不肯为通。陈王出，遮道而呼涉。陈王闻之，乃召见，载与俱归。入宫，见殿屋帷帐，客曰：“夥颐!涉之为王沉沉者!”楚人谓多为夥,故天下传之，夥涉为王，由陈涉始。客出入愈益发舒,言陈王故情。或说陈王曰：“客愚无知，颛妄言，轻威。”陈王斩之。诸陈王故人皆自引去,由是无亲陈王者。陈王以朱房为中正,胡武为司过,主司群臣。诸将徇地，至，令之不是者，系而罪之，以苛察为忠。其所不善者，弗下吏，辄自治之。陈王信用之。诸将以其故不亲附。此其所以败也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">陈胜称王前后总共六个月。当他刚刚为王建都陈郡的时候，他的一位旧日一道给人干农活的老伙伴，闻讯前来看他。这个人到了陈郡，扣着宫门说：“我要见陈涉!”守门的值勤官要把他绑起来。这个人费了许多口舌说明自己是陈涉的老朋友，值勤官才饶了他，但不给他向里通报。这时正好陈王出来了，于是这个人就过去拦着车子大声呼叫陈涉。陈王听见叫声，停车叫他过来，让他上车，一同回到宫里。这个人进了宫，一看宫里的殿堂陈设，就惊讶地大嚷道：“夥頤!陈涉你这个王当的可真阔啊!”楚国方言惊讶地称“多”叫“夥”。后来人们之所以把那些草头王们称之为“夥涉为王”,就是从陈涉这里来的。这个人在宫里宫外说话越来越随便，有时还讲一些陈王旧日的不体面的事，于是有人劝陈王说：“您的那位客人，愚昧无知，专门胡说八道，降低您的威信。”陈王于是下令把他杀掉了。陈王的其他老熟人们一见如此也都悄悄地离去了，从此没有人再来亲近陈王。陈王用朱房做中正官，用胡武为司过官，专管探听臣僚们的过失。将领们出去开辟地盘回来，谁要是不听从朱房、胡武的命令，朱房、胡武就把谁关起来治罪。他们以对别人的吹毛求疵来向陈王表示忠心。凡是他们不喜欢的人，他们根本不通过司法官吏，而是自己随意治他们的罪。陈王偏偏就信用这种人。由于这种缘故，各位将领们也与陈王越来越疏远。这就是陈王之所以失败的原因。</td>
+                <td class="english-cell col-english" data-lang="english">All in all, Chen She was a king for six months. When he had become king and was ruling the region of Chen, one of his old friends who had once worked as a hired hand with him in the fields heard of his success and went and knocked upon the palace gate of Chen, saying, “I want to see She!” The gatekeeper was about to order him arrested, but he managed to convince the keeper that he was an old friend of Chen She. The gatekeeper let him go, but refused to allow him to enter the palace. When the king emerged from the palace, the man stood by the roadside and shouted “She!” Hearing his voice, Chen She ordered that he be brought forward and, inviting him to ride in his carriage, returned with him to the palace. When the man entered the palace and saw all its great halls with their curtains and trappings he said, “Oh, a heap of stuff you have, She, now you’re a king! Such a big place!” (The people of Chu say “a heap” when they mean a lot.) Eventually the story spread all over the empire, so that from this incident with Chen She originated the saying “Even ‘heap-of-She’ got to be king.” After this the old friend came often to visit Chen She, making himself more and more at home in the palace and telling people about Chen She’s life in the old days. Someone warned Chen She about this, saying, “This guest of yours is ignorant and ill-bred, and his idle chatter serves only to degrade your dignity!” Chen She had his old friend’s head cut off. Thereafter all of Chen She’s former acquaintances withdrew of their own accord, and no one attempted to be on intimate terms with him. Chen She appointed Zhu Fang as rectifier and Hu Wu as director of faults, putting them in charge of his other ministers and officials. When any of the various generals returned from expeditions to seize territory, if it appeared that they had not carried out their orders exactly, these two officials believed it their duty to bind them like criminals and subject them to the severest examination. If any fault was found in their behaviour, their case was not submitted to the lesser officials for trial, but was settled summarily by Zhu Fang and Hu Wu themselves. Chen She entrusted everything to these two men with the fullest confidence, and for this reason his generals felt no personal attachment to him. This is why he failed.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">陈胜虽已死，其所置遣侯王将相竟亡秦，由涉首事也。高祖时为陈涉置守冢三十家砀，至今血食。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">陈王虽然已经死了，但是由他分封、派遣出去的侯王将相，最后终于灭掉了秦朝，而陈涉是第一个带头造反的。汉高祖即位后，专门派了三十户人家，为陈涉守墓，一直到今天，人们祭祀不断。</td>
+                <td class="english-cell col-english" data-lang="english">Although Chen himself died very early, the various rulers and commanders whom he set up and dispatched on expeditions eventually succeeded in overthrowing the Qin. Thus it was he who actually began the uprising. In the time of Emperor Gaozu of the Han, thirty families were established to take care of Chen She’s grave at Dang, so that down to the present day he has continued to enjoy the blood and flesh of sacrifices.</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
+      </main>
+
+      <nav class="chapter-nav">
+        <a href="/book/shiji/shijia/chapter/4/">← 上一章</a>
+        &nbsp; <a href="/book/shiji/shijia/">世家章节列表</a> &nbsp;
+        
+      </nav>
+
+      <nav class="breadcrumb">
+        <a href="/">首页</a> &gt; 
+        <a href="/book/shiji/">史记</a> &gt; 
+        <a href="/book/shiji/shijia/">世家</a> &gt;
+        第5章 世家 陈涉世家第十八
+      </nav>
+
+      <footer>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
+      </footer>
+    </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

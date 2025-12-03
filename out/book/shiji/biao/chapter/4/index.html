@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>史记 — 第4章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <header>
+        <h1>史记 — 第4章 表 汉兴以来诸侯王年表第五</h1>
+      </header>
+
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
+
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太史公曰：殷以前尚矣。周封五等：公、侯、伯、子、男。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">太史公说：殷商之前的历史已然十分久远，封爵的详情已无从考证。周朝的封爵分为五个等级：公、侯、伯、子、男。</td>
+                <td class="english-cell col-english" data-lang="english">The Grand Historian remarks: The Shang dynasty and the ages before it are too far away to say much about, but we know that the Chou dynasty granted five degrees of noble title: duke, marquis, earl, viscount, and baron.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">然封伯禽、康叔于鲁、卫，地各四百里，亲亲之义，褒有德也；太公于齐，兼五侯地，尊勤劳也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">伯禽、康叔分别被封在鲁、卫两地，受封的地域各为四百里，这既是为了体现亲近亲属的情谊，也是对有德之人的嘉奖。太公吕望被封于齐地，封地涵盖五个侯爵的范围，这是对他为国家操劳的尊崇。</td>
+                <td class="english-cell col-english" data-lang="english">When the Chou dynasty enfeoffed Po-ch'in (Bo-qin) in Lu and K'ang-shu (Kangshu) in Wei it granted them each a territory of four hundred square li. The size of their fiefs was unusually large because, as they were relatives of the royal family, it was proper to treat them with special deference and to reward them for their virtue. When the Chou enfeoffed the Grand Duke Li Shang (Tai Gong Lü Wang) in Ch'i it granted him the combined territories of five marquisates in order to honor him for his diligent labors.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">武王、成、康所封数百，而同姓五十五，地上不过百里，下三十里，以辅卫王室。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">武王、成王、康王时期所封的诸侯有数百个，其中与周室同姓的就有五十五个，他们的封地最大的不超过百里，最小的只有三十里，依靠他们辅佐护卫王室。</td>
+                <td class="english-cell col-english" data-lang="english">Outside of these, Kings Wu, Ch'eng, and K'ang of the Chou enfeoffed several hundred men, among them fifty-five members of their own clan, to act as guardians of the royal house. Of the fiefs they granted, the largest did not exceed a hundred li and the smallest was thirty li.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">管、蔡、康叔、曹、郑，或过或损。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来管叔、蔡叔、康叔以及曹、郑的始封之君，（他们的封地）有的超过了爵位应得的数额，有的则被削减了。</td>
+                <td class="english-cell col-english" data-lang="english">The feudal states of Kuan (Guan), Ts'ai (Cai), K'ang-shu (Kangshu), Ts'ao (Cao), and Cheng (Zheng) were in some cases larger than this and in some cases smaller.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">厉、幽之后，王室缺，侯伯强国兴焉，天子微，弗能正。非德不纯，形势弱也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">厉王、幽王之后，周室衰败，争强称霸的诸侯国兴起，周天子力量薄弱，无法纠正这种局面。这并非（周王）道德不专一，而是形势衰弱造成的。</td>
+                <td class="english-cell col-english" data-lang="english">After the time of Kings Li and Yu the royal house lost its hold and the great states of the feudal lords rose to power. The Son of Heaven was too weak to be able to restore them to order. It was not that his virtue lacked purity, but that the circumstances rendered him helpless.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">汉兴，序二等。高祖末年，非刘氏而王者，若无功上所不置而侯者，天下共诛之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉朝建立之后，封爵分为王、侯两级。高祖末期曾立下誓言，不是刘氏却称王，或是没有功劳、未被天子分封却称侯的，天下人都可以共同讨伐他们。</td>
+                <td class="english-cell col-english" data-lang="english">When the Han dynasty arose it awarded only the two noble ranks of king and marquis. In the latter years of his reign Emperor Kao-tsu made an agreement with his followers that if anyone not of the Liu family should become a king, and anyone who had not distinguished himself in battle or attained high position should become a marquis, the empire should unite in punishing him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">高祖子弟同姓为王者九国，唯独长沙异姓，而功臣侯者百有余人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">高祖的同姓子弟中被封为王的有九人，唯独长沙王是异姓王，而有功之臣被封为侯的有一百多人。</td>
+                <td class="english-cell col-english" data-lang="english">Nine of Kao-tsu's sons and brothers of the Liu family were made kings of states. The only king who was not of the Liu family was Wu Jiu (Wu Chen), the king of Ch'ang-sha (Changsha). Kao-tsu also enfeoffed over a hundred of his distinguished followers as marquises.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">自雁门、太原以东至辽阳，为燕、代国；常山以南，大行左转，度河、济，阿、甄以东薄海，为齐、赵国；</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">从雁门、太原往东到辽阳，是燕国和代国；常山以南，太行以东，越过黄河、济水，以及阿、甄以东直至海边，是齐国和赵国；</td>
+                <td class="english-cell col-english" data-lang="english">From Yen-men (Yanmen) and T'ai-yüan (Taiyuan) east to Liao-yang (Liaoyang) comprised the states of Yen (Yan) and Tai (Dai). From the Ch'ang mountains (Changshan) south, and east from the T'ai-hsing mountains (Taihang) across the Yellow and Chi (Ji) rivers and through A and Chen (Zhen) east to the sea, comprised the states of Ch'i (Qi) and Chao (Zhao).</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">自陈以西，南至九疑，东带江、淮、谷、泗，薄会稽，为梁、楚、淮南、长沙国。皆外接于胡、越。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">从陈地往西，南到九疑山，东含江、淮、谷、泗，直到会稽，是梁国、楚国、淮南国、长沙国，这些王国的外围都与胡、越交界。</td>
+                <td class="english-cell col-english" data-lang="english">The region from Ch'en (Chen) to the west, south to the Nine Peaks (Jiuyi Mountains), and east along the Yangtze, Huai, Ku (Gu), and Su (Si) rivers as far as K'uai-chi (Kuaiji), was divided into the kingdoms of Liang, Chu, Huai-nan (Huainan) and Ch'ang-sha (Changsha). All of these states on their outer borders adjoined the lands of the northern and southern barbarians (Hu and Yue).</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">而内地北距山以东尽诸侯地，大者或五六郡，连城数十，置百官宫观，僭于天子。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">而内地北到太行山以东，都是诸侯王的封地，大的诸侯王国有五六个郡、数十座城池，他们设置的百官、建造的宫观，已经超出规定，几乎与天子相当。</td>
+                <td class="english-cell col-english" data-lang="english">While in the inner part of China the entire area east from the great mountain ranges of the north was in the hands of the various feudal lords. The largest territories consisted of as many as five or six provinces, comprising twenty or thirty cities, and their rulers set up various government offices and built palaces and towers in flagrant imitation of the Son of Heaven.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">汉独有三河、东郡、颍川、南阳，自江陵以西至蜀，北自云中至陇西，与内史凡十五郡，而公主列侯颇食邑其中。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时汉朝廷只占有河东、河西、河南、东郡、颍川、南阳，以及从江陵往西到蜀地，北从云中到陇西，加上内史共十五个郡，且公主列侯的食邑大多分布在这些地区。</td>
+                <td class="english-cell col-english" data-lang="english">The Han court retained possession only of the provinces of Tung (Dongjun), Ho-t'ung (Hedong), Ho-nei (Henan), Ho-nan (Henan), Ying-ch'uan (Yingchuan), and Nan-yang (Nanyang), and the region from Chiang-ling (Jiangling) west to Shu, north from Yün-chung (Yunzhong) to Lung-hsi (Longxi), and the capital area (Neishi), fifteen provinces in all, and even within this area various princesses and marquises received revenue from many of the cities.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">何者？天下初定，骨肉同姓少，故广强庶孽，以镇抚四海，用承卫天子也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">为何会形成这种局面呢？因为天下刚安定之时，同姓的骨肉亲属不多，所以需要广泛增强汉室子弟的力量，以此镇抚四海，保卫天子。</td>
+                <td class="english-cell col-english" data-lang="english">The reason for this was that, when the empire was first brought under control, the emperor had few close relatives of his own clan and so he set up a number of his sons by concubines in powerful positions in order that they might bring peace and order to the realm and provide aid and protection for the Son of Heaven.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">汉定百年之间，亲属益疏，诸侯或骄奢，忕邪臣计谋为淫乱，大者叛逆，小者不轨于法，以危其命，殒身亡国。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉朝平定天下后的百年间，诸侯王与天子的关系日渐疏远，有些诸侯王变得骄纵奢侈，惯于听从奸邪之臣的谋划而行淫乱之事，严重的谋反叛逆，轻微的不遵守国家法度，以致危及自身性命，最终丧身亡国。</td>
+                <td class="english-cell col-english" data-lang="english">During the hundred years after the founding of the Han these various branches of the imperial family became increasingly estranged from the central court. Some among the feudal lords grew arrogant and extravagant, and were misled by the schemes of vicious ministers into evil and insubordination. The most powerful among them rebelled, while the lesser ones committed violations of the law, endangering their lives and bringing ruin upon themselves and their states.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">天子观于上古，然后加惠，使诸侯得推恩分子弟国邑，故齐分为七，赵分为六，梁分为五，淮南分三，及天子支庶子为王，王子支庶为侯，百有余焉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">天子借鉴上古的治国方略，进而施予恩惠，让诸侯王能将恩惠施予子弟，并把国邑分封给他们。因此齐分为七国，赵分为六国，梁分为五国，淮南分为三国，连同天子的支庶子被封为王、诸侯王的支庶子被封为侯的，一共有一百多个。</td>
+                <td class="english-cell col-english" data-lang="english">Later the Son of Heaven, imitating the ways of antiquity, graciously allowed the various feudal lords to share their blessings and to divide up their territories among their various sons and brothers. Hence the state of Ch'i (Qi) came to be divided into seven parts, Chao (Zhao) into six, Liang into five, and Huai-nan (Huainan) into three. The sons of the emperors by their concubines were made kings, and the sons of the kings by their concubines were made marquises, numbering over a hundred.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吴楚时，前后诸侯或以适削地，是以燕、代无北边郡，吴、淮南、长沙无南边郡，齐、赵、梁、楚支郡名山陂海咸纳于汉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">吴楚反叛时，有些诸侯王先后因犯罪被削减封地，所以燕、代失去了北部的郡，吴、淮南、长沙失去了南部的郡，齐、赵、梁、楚的支郡以及名山、陂海也都被朝廷收回直接管辖。</td>
+                <td class="english-cell col-english" data-lang="english">At the time of the revolt of the seven kingdoms led by Wu and Ch'u the territories of many of the feudal lords were reduced because of faults they had committed before or after the revolt. Hence the states of Yen (Yan) and Tai (Dai) lost their northern provinces, and those of Wu, Huai-nan (Huainan) and Ch'ang-sha (Changsha) their southern provinces, which bordered on the lands of the barbarians, while the outlying provinces and the important mountains, lakes, and seacoasts of Ch'i (Qi), Chao (Zhao), Liang, and Ch'u (Chu) were similarly all taken over by the Han court.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">诸侯稍微，大国不过十余城，小侯不过数十里，上足以奉贡职，下足以供养祭祀，以蕃辅京师。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">诸侯的势力渐渐被削弱，大的王国不过十余座城池，小的侯国不过数十里，对上足以完成贡赋职责，对下足以供养祭祀，以此来藩卫京城。</td>
+                <td class="english-cell col-english" data-lang="english">Thus the domains of the feudal lords were bit by bit diminished in size until the largest states did not exceed ten cities or more, and the smallest of the marquisates were no more than twenty or thirty square li, sufficient only to render tribute and services to the central court, to provide for the sacrifices to the ancestors of the feudal lords, and to act as defenders of the capital.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">而汉郡八九十，形错诸侯间，犬牙相临，秉其厄塞地利，强本干，弱枝叶之势，尊卑明而万事各得其所矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">而汉王朝直辖的郡有八九十个，交错分布在诸侯王国之间，像犬牙一样相互交错衔接，朝廷控制着要塞和有利地势，从而形成了本干强大、枝叶弱小的态势，使尊卑界限分明，所有事情都各得其所。</td>
+                <td class="english-cell col-english" data-lang="english">The Han court administered eighty or ninety provinces, disposed here and there among the domains of the feudal lords and interlocking with them like the teeth of a dog, and kept a hold on strategic defense points and particularly profitable lands. By means of this policy, known as "strengthening the root and weakening the branches," the distinction between exalted and humble was made clear to everyone and all affairs were disposed in the proper way.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">臣迁谨记高祖以来至太初诸侯，谱其下益损之时，令后世得览。形势虽强，要之以仁义为本。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">身为臣子，我司马迁恭谨地记载了高祖以来至太初年间各诸侯国的情况，用列表形式记录它们从始封年份到各国兴衰增减的时间，让后世得以阅览，从中汲取教训。如今朝廷形势虽然强盛，但仍要以仁义为根本来治理国家。</td>
+                <td class="english-cell col-english" data-lang="english">Your servant Ch'ien has respectfully prepared this record of the feudal lords from the time of Kao-tsu down to the era tai-ch'u (Taichu), listing under the title of each lord the changes which took place in his fief through the succeeding generations, in order that later ages may see what the situation was. No matter how strong one's position may be, the important thing is that he should make benevolence and righteousness the basis of his conduct.</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
+      </main>
+
+      <nav class="chapter-nav">
+        <a href="/book/shiji/biao/chapter/3/">← 上一章</a>
+        &nbsp; <a href="/book/shiji/biao/">表章节列表</a> &nbsp;
+        <a href="/book/shiji/biao/chapter/5/">下一章 →</a>
+      </nav>
+
+      <nav class="breadcrumb">
+        <a href="/">首页</a> &gt; 
+        <a href="/book/shiji/">史记</a> &gt; 
+        <a href="/book/shiji/biao/">表</a> &gt;
+        第4章 表 汉兴以来诸侯王年表第五
+      </nav>
+
+      <footer>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
+      </footer>
+    </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

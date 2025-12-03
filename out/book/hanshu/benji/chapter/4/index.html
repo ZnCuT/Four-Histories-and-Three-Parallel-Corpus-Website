@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>汉书 — 第4章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <header>
+        <h1>汉书 — 第4章 纪-惠帝纪</h1>
+      </header>
+
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
+
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">孝惠皇帝，高祖太子也，母曰吕皇后。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉惠帝，是汉高祖的太子，母亲是吕后。</td>
+                <td class="english-cell col-english" data-lang="english">Emperor Hsiao-hui was the Heir-apparent of [Emperor] Kao-tsu. His mother was called the Empress [née] Lü.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">帝年五岁，高祖初为汉王。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">在他五岁时，汉高祖开始做汉王。</td>
+                <td class="english-cell col-english" data-lang="english">When Emperor [Hsiao-hui] was in his fifth year, Kao-tsu first became King of Hans.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">二年，立为太子。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">高祖二年（公元前205年），他被立为太子。</td>
+                <td class="english-cell col-english" data-lang="english">In [Kao-tsu's] second year [the future Emperor Hsiao-hui] was established as Heir-apparent.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">十二年四月，高祖崩。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">高祖十二年（公元前195年）四月，高祖驾崩。</td>
+                <td class="english-cell col-english" data-lang="english">In the twelfth year, the fourth month, Kao-tsu died.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">五月丙寅，太子即皇帝位，尊皇后曰皇太后。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">五月十七日，太子即皇帝位，尊母吕后为皇太后。</td>
+                <td class="english-cell col-english" data-lang="english">In the fifth month, on [the day] ping-yin, the Heir-apparent took the imperial throne. He honored the Empress, entitling her, the Empress Dowager.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赐民爵一级。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赏赐臣民爵位一级。</td>
+                <td class="english-cell col-english" data-lang="english">He granted to the common people one step in noble rank.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">中郎、郎中满六岁爵三级，四岁二级。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">中郎、郎中官任职满六年的提爵位三级，满四年的二级。</td>
+                <td class="english-cell col-english" data-lang="english">The Gentlemen-of-the-Household and the Gentlemen-of-the-Palace [who had served] six full years [were granted] three steps in noble rank; [those who had served] four years [were granted] two steps.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">外郎满六岁二级。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">外郎官任职满六年的二级。</td>
+                <td class="english-cell col-english" data-lang="english">The Gentlemen-outside-the-Household [who had served] six full years [were granted] two steps.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">中郎不满一岁一级。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">中郎任职不满一年的升一级。</td>
+                <td class="english-cell col-english" data-lang="english">Gentlemen-of-the-Household who had not [served] a full year [were granted] one step.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">外郎不满二岁赐钱万。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">外郎任职不满二年的赏钱一万。</td>
+                <td class="english-cell col-english" data-lang="english">Gentlemen-outside-the-Household who had not [served] two full years were granted ten thousand cash.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">宦官尚食比郎中，谒者、执楯、执戟、武士、驺比外郎。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">宦官的俸禄与郎中相同。谒者、执楯、执戟、武士、驺骑等皇帝侍从人员的俸禄与外郎相同。</td>
+                <td class="english-cell col-english" data-lang="english">Eunuchs and Masters of the Food [were treated] the same as Gentlemen-of-the-Palace. Palace Internuncios, Guards, Spear-bearers, Men of War, and Grooms [were treated] the same as Gentlemen-outside-the-Household.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太子御骖乘赐爵五大夫，舍人满五岁二级。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">太子御骖乘赏赐爵位为五大夫，舍人任职满五年的加爵位二级。</td>
+                <td class="english-cell col-english" data-lang="english">The Heir-apparent's [Chariot-]driver and his Chariot-companion were granted the aristocratic rank of Fifth [Rank] Grandee; the members of his suite [who had served] five full years were given two steps.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赐给丧事者，二千石钱二万，六百石以上万，五百石、二百石以下至佐史五千。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赏赐给为高祖办丧事者，俸禄二千石的赏钱二万，六百石以上的赏钱一万，五百石以下至佐吏赏钱五千。</td>
+                <td class="english-cell col-english" data-lang="english">There were granted to those who had provided for the [imperial] burial ceremonies and [had positions ranking as] two thousand piculs, twenty thousand cash; [to those who had positions ranking as] six hundred piculs and over, ten thousand [cash]; to [those who had positions ranking as] five hundred piculs, two hundred piculs, and under, [down] to the Accessory Officials, five thousand [cash].</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">视作斥上者，将军四十金，二千石二十金，六百石以上六金，五百石以下至佐史二金。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">为高祖建造陵墓的，将军赏钱四十金，二千石赏钱二十金，六百石以上的赏钱六金，五百石以下至佐吏赏钱二金。</td>
+                <td class="english-cell col-english" data-lang="english">Of those who had superintended digging [the late Emperor's] grave, the generals [were granted the equivalent of] forty [catties] of gold, [those who had the rank of] two thousand piculs [were granted the equivalent of] twenty [catties of] gold, [those who had the rank of] six hundred piculs and above [were granted the equivalent of] six [catties of] gold, those [who had the rank of] five hundred piculs and less, down to the Accessory Officials [were granted the equivalent of] two [catties of] gold.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">减田租，复十五税一。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">减少田租，恢复十五税一的制度。</td>
+                <td class="english-cell col-english" data-lang="english">[The Emperor] reduced the tax on arable ground and revived it [at the rate of] one part in fifteen.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">爵五大夫、吏六百石以上及宦皇帝而知名者有罪当盗械者，皆颂系；</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">凡爵级在五大夫、六百石以上以及曾经侍奉过皇帝且皇帝知晓其名的人，犯了罪应当披枷戴锁的，可以放宽为软禁而不投入监狱；</td>
+                <td class="english-cell col-english" data-lang="english">Those who had the aristocratic rank of Fifth [Rank] Grandee, and officials [ranking as] six hundred piculs and above, together with those who had served the [young] emperor so that he knew their names, if they had committed crimes, and should justly be shackled like robbers, they were all to be put in honorable detention.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上造以上及内外公孙、耳孙有罪当刑及当为城旦舂者，皆耐为鬼薪、白粲；</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">对官职在上造以上及皇家内外公孙或血缘已疏的耳孙等，犯罪当刑的，或应判四年徒刑的，减至三年。</td>
+                <td class="english-cell col-english" data-lang="english">Those of [the aristocratic rank of] Superior Accomplished and above, together with the great-grandsons of marquises or kings belonging to the imperial house by male or female descent who had committed crimes and should justly [suffer] mutilating punishment, together with those who should justly be made to [build] the fortifications or [patrol from] the break of day or pound [rice], were all to have their whiskers shaved and be made to [cut] firewood for the spirits or [prepare] pure rice.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">民年七十以上若不满十岁有罪当刑者，皆完之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">百姓年过七十与不满十岁的有罪当刑的，都免予肉刑。</td>
+                <td class="english-cell col-english" data-lang="english">Common people who are in their seventieth year or over or not fully ten years old, who had committed crimes and should justly [suffer] mutilating punishment, were not to be mutilated.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">又曰：“吏所以治民也，能尽其治则民赖之，故重其禄，所以为民也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">皇帝还在令中指出：“官吏的职责就是为百姓办事，能努力把事办好就会得到百姓的信赖，之所以提高他们的爵禄，就是要求他们把百姓的事情办得更好。</td>
+                <td class="english-cell col-english" data-lang="english">[The edict] also said, "Officials [exist] for the sake of governing the people. If [the officials] are able to fulfil their [duties in] government, then the people [can] rely upon them. Hence [We] make their salaries large, the reason for doing which is [for the sake of] the people.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">今吏六百石以上父母妻子与同居，及故吏尝佩将军、都尉印将兵，及佩二千石官印者，家唯给军赋，他无有所与。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">凡是官吏的俸禄在六百石以上，与其父母妻子在一起居住的，以及已不在职的曾佩将军印、都尉印领过兵的或曾佩二千石官印的，都只需缴纳军赋，其他徭役皆免除。”</td>
+                <td class="english-cell col-english" data-lang="english">Now the fathers and mothers, the wives and children, and the other members of the families of officials who have [the rank] of six hundred piculs or above, together with the former officials who have in the past worn the seal of a General or of a Chief Commandant and have led troops, or have worn the seal of an official [with the rank of] two thousand piculs—their families shall pay only the military tax and shall not be required to pay any other [taxes]."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">令郡诸侯王立高庙。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">下令各郡的侯王建立高祖宗庙。</td>
+                <td class="english-cell col-english" data-lang="english">[The Emperor] ordered the commanderies and the vassal kings to establish temples to Kao-tsu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">元年冬十二月，赵隐王如意薨。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">惠帝元年(公元前194年)冬十二月，赵隐王刘如意去世。</td>
+                <td class="english-cell col-english" data-lang="english">In the first year, in the winter, the twelfth month, King Yin of Chao, [Liu] Ju-yi, died.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">民有罪，得买爵三十级以免死罪。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">规定臣民犯罪，可以出买爵三十级的钱以赎死罪。</td>
+                <td class="english-cell col-english" data-lang="english">[The Emperor ordered that] when the common people commit crime, they are to be allowed to purchase thirty steps in noble rank in order to avoid capital punishment.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赐民爵，户一级。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赏赐百姓爵，每户一级。</td>
+                <td class="english-cell col-english" data-lang="english">He granted to the common people noble ranks, in each household one step [in rank].</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">春正月，城长安。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">春正月，下令修筑长安城。</td>
+                <td class="english-cell col-english" data-lang="english">In the spring, the first month, the city wall of Ch'ang-an was [partly] built.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">二年冬十月，齐悼惠王来朝，献城阳郡以益鲁元公主邑，尊公主为太后。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">惠帝二年（公元前193年）冬季十月，齐悼惠王前来朝见，献纳城阳郡以增加鲁元公主的汤沐邑，尊鲁元公主为太后。</td>
+                <td class="english-cell col-english" data-lang="english">In the second year, in the winter, the tenth month, King Tao-hui of Ch'i, [Liu Fei], came to court [to pay his respects]. He presented the Ch'eng-yang Commandery to be added to the estate of the Princess Yüan of Lu, and honored the Princess, appointing her as his Queen Dowager.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">春正月癸酉，有两龙见兰陵家人井中，乙亥夕而不见。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">春正月初四日，有两条龙出现在兰陵一百姓家的井中，至六日晚不知去向。</td>
+                <td class="english-cell col-english" data-lang="english">In the spring, the first month, on [the day] kuei-yu, there were two dragons seen at Lan-ling in the well of a common citizen. On the evening of [the day] yi-hai, they disappeared.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">陇西地震。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">陇西发生地震。</td>
+                <td class="english-cell col-english" data-lang="english">In the Lung-hsi [Commandery] there was an earthquake.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夏旱。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当年夏季，发生旱灾。</td>
+                <td class="english-cell col-english" data-lang="english">In the summer there was a drought.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">郃阳侯仲薨。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">阳侯刘仲去世。</td>
+                <td class="english-cell col-english" data-lang="english">The Marquis of Ho-yang, [Liu] Chung, died.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秋七月辛未，相国何薨。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秋，七月五日，丞相萧何去世。</td>
+                <td class="english-cell col-english" data-lang="english">In the autumn, the seventh month, on [the day] hsin-wei, the Chancellor of State, [Hsiao] Ho, died.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">三年春，发长安六百里内男女十四万六千人城长安，三十日罢。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">惠帝三年春季，征发长安六百里之内的男女民工十四万六千人修筑长安城，工期三十天。</td>
+                <td class="english-cell col-english" data-lang="english">In the third year, in the spring, there were sent from [the region] within six hundred li of Ch'ang-an, 146,000 [persons], male and female, to build the city wall of Ch'ang-an. In thirty days they were dismissed.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">以宗室女为公主，嫁匈奴单于。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">将刘氏宗室之女作为公主，嫁给匈奴单于王为夫人以结友好。</td>
+                <td class="english-cell col-english" data-lang="english">A girl of the imperial house was made a Princess and given in marriage to the Shan-yü of the Huns.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夏五月，立闽越君摇为东海王。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">夏五月，封闽越君摇为东海王。</td>
+                <td class="english-cell col-english" data-lang="english">In the summer, the fifth month, [the Emperor] made the Baronet of Min-yüeh, [Tsou] Yao, the King of Tung-hai.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">六月，发诸侯王、列侯徒隶二万人城长安。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">六月，征发各侯王、列侯的家人、奴隶二万人到长安筑城。</td>
+                <td class="english-cell col-english" data-lang="english">In the sixth month, from the [states of] the vassal kings and marquises, 20,000 criminals and retainers were sent to build the city wall of Ch'ang-an.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秋七月，都厩灾。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秋七月，皇室的马厩发生火灾。</td>
+                <td class="english-cell col-english" data-lang="english">In the autumn, the seventh month, there was a visitation [of fire] in the [imperial] stables at the capital.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">南越王赵佗称臣奉贡。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">南越王赵佗称臣进贡。</td>
+                <td class="english-cell col-english" data-lang="english">The King of Nan-yüeh, Chao T'o, pronounced himself a subject [of the Emperor] and presented tribute.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">四年冬十月壬寅，立皇后张氏。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">惠帝四年（公元前191年）冬十月，立张敖之女为皇后。</td>
+                <td class="english-cell col-english" data-lang="english">In the fourth year, in the winter, the tenth month, on [the day] jen-yin, [the Emperor] established the Empress nee Chang [as Empress].</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">春正月，举民孝弟、力田者复其身。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">春正月，在各地选拔孝悌力田的贤者，免除其徭役负担。</td>
+                <td class="english-cell col-english" data-lang="english">In the spring, the first month, common people who were filially pious, fraternally respectful and [diligent] cultivators of the fields were recommended and their persons exempted [from taxes and forced service].</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">三月甲子，皇帝冠，赦天下。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">三月十七日，皇帝举行冠礼，大赦天下。</td>
+                <td class="english-cell col-english" data-lang="english">In the third month, on [the day] chia-tzu, the Emperor was capped and [an amnesty was granted] to the world.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">省法令妨吏民者；除挟书律。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">省去妨害吏民的法令，废除挟书有罪的秦律。</td>
+                <td class="english-cell col-english" data-lang="english">In reducing the laws and orders which annoyed the officials and people, there was abrogated the criminal law against possessing books.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">长乐宫鸿台灾。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">长乐宫鸿台发生火灾。</td>
+                <td class="english-cell col-english" data-lang="english">There was a visitation [of fire] in the Wild Goose Terrace in the Ch'ang-lo Palace.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">宜阳雨血。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">宜阳地区出现血雨。</td>
+                <td class="english-cell col-english" data-lang="english">In Yi-yang it rained blood.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秋七月乙亥，未央宫凌室灾；</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秋七月二十日，未央宫凌室发生火灾；</td>
+                <td class="english-cell col-english" data-lang="english">In the autumn, the seventh month, on [the day] yi-hai, there was a visitation [of fire] in the Ice Chamber of the Wei-yang Palace.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">丙子，织室灾。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">二十一日，织室发生火灾。</td>
+                <td class="english-cell col-english" data-lang="english">On [the day] ping-tzu, there was a visitation [of fire] in the Weaving Chamber.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">五年冬十月，雷；桃李华，枣实。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">惠帝五年（公元前190年）冬十月，雷声隆隆，桃李开花，枣树结实。</td>
+                <td class="english-cell col-english" data-lang="english">In the fifth year, in the winter, the tenth month, it thundered. The peach and plum [trees] flowered and the jujubes [produced] fruit.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">春正月，复发长安六百里内男女十四万五千人城长安，三十日罢。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">春正月，再次征发长安六百里以内男女民工十四万五千人到长安筑城，工期三十天。</td>
+                <td class="english-cell col-english" data-lang="english">In the spring, the first month, there were again sent from [the region] within six hundred li of Ch'ang-an 145,000 men and women to build the city wall of Ch'ang-an. In thirty days they were dismissed.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夏，大旱。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当年夏季，发生大旱。</td>
+                <td class="english-cell col-english" data-lang="english">In the summer there was a great drought.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秋八月己丑，相国参薨。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秋八月，丞相曹参去世。</td>
+                <td class="english-cell col-english" data-lang="english">In the autumn, the eighth month, on [the day] chi-ch'ou, the Chancellor of State, [Ts'ao] Ts'an, died.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">九月，长安城成。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">九月，长安城全部竣工。</td>
+                <td class="english-cell col-english" data-lang="english">In the ninth month, the city wall of Ch'ang-an was completed.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赐民爵，户一级。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赏赐百姓爵位，每户一级。</td>
+                <td class="english-cell col-english" data-lang="english">[The Emperor] granted aristocratic ranks to the people, to each household one step.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">六年冬十月辛丑，齐王肥薨。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">惠帝六年（公元前189年）冬十月，齐王肥去世。</td>
+                <td class="english-cell col-english" data-lang="english">In the sixth year, in the winter, the tenth month, on [the day] hsin-ch'ou, the King of Ch'i, [Liu] Fei, died.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">令民得卖爵。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">皇帝下令百姓可以买卖爵位。</td>
+                <td class="english-cell col-english" data-lang="english">It was ordered that the people were to be allowed to sell noble ranks.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">女子年十五以上至三十不嫁，五算。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">女子年龄在十五岁以上至三十岁不出嫁的，罚款六百钱。</td>
+                <td class="english-cell col-english" data-lang="english">Girls who were in their fifteenth year and over, up to their thirtieth [year] and who were not married were [ordered to pay as a tax] five [times the] poll-tax.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夏六月，舞阳侯哙薨。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">夏六月，舞阳侯樊哙去世。</td>
+                <td class="english-cell col-english" data-lang="english">In the summer, the sixth month, the Marquis of Wu-yang, [Fan] K'uai, died.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">起长安西市，修敖仓。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">兴建长安西市，修建敖仓。</td>
+                <td class="english-cell col-english" data-lang="english">The Western Market of Ch'ang-an was built and the Ao Granary was repaired.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">七年冬十月，发车骑、材官诣荥阳，太尉灌婴将。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">惠帝七年（公元前188年）冬十月，派车骑、材官到荥阳，由太尉灌婴指挥。</td>
+                <td class="english-cell col-english" data-lang="english">In the seventh year, in the winter, the tenth month, chariots, cavalry, and skilled soldiers were sent to go to Jung-yang, led by the Grand Commandant, Kuan Ying.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">春正月辛丑朔，日有蚀之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">春季正月初一日，出现日食。</td>
+                <td class="english-cell col-english" data-lang="english">In the spring, the first month, on [the day] hsin-ch'ou, the first day of the month, there was an eclipse of the sun.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夏五月丁卯，日有蚀之，既。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">夏季五月二十九日，出现日全食。</td>
+                <td class="english-cell col-english" data-lang="english">In the summer, the fifth month, on [the day] ting-mao, there was an eclipse of the sun and it was total.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秋八月戊寅，帝崩于未央宫。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秋季八月十二日，惠帝驾崩于未央宫。</td>
+                <td class="english-cell col-english" data-lang="english">In the autumn, the eighth month, on [the day] mou-yin, the Emperor died in the Wei-yang Palace.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">九月辛丑，葬安陵。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">九月五日，葬于安陵。</td>
+                <td class="english-cell col-english" data-lang="english">In the ninth month, on [the day] hsin-ch'ou, he was buried at the An Tomb.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赞曰：孝惠内修亲亲，外礼宰相，优宠齐悼、赵隐，恩敬笃矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">班固评论：汉惠帝内亲宗室，外礼宰相，对齐悼王、赵隐王都予以优宠，可谓恩敬笃厚。</td>
+                <td class="english-cell col-english" data-lang="english">In eulogy we say: [Emperor] Hsiao-hui, in his family, cultivated the love of his relatives; in the state, he honored his Ruling Chancellors. He loved [King] Tao-[hui] of Ch'i, [Liu Fei], and [King] Yin of Chao, [Liu Ju-yi], most dearly. His kindness and his sense of respect were both deep indeed.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">闻叔孙通之谏则惧然，纳曹相国之对而心说，可谓宽仁之主。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">听到叔孙通的谏言就自感敬畏，接纳曹相国的建议就心中喜悦，可谓是宽厚仁慈的君主。</td>
+                <td class="english-cell col-english" data-lang="english">When he heard the admonition of Shu-sun T'ung, he was greatly dismayed. When he accepted the response of the Chancellor of State Ts'ao [Ts'an], he was glad at heart. He may be called a [most] generous and kindly ruler.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">遭吕太后亏损至德，悲夫！</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">遭遇吕太后损害了他完美的品德，真是可悲啊！</td>
+                <td class="english-cell col-english" data-lang="english">He happened [upon a time when the state was ruled by] the Empress Dowager [née] Lü, who damaged and injured his perfect virtue. It was sad indeed.</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
+      </main>
+
+      <nav class="chapter-nav">
+        <a href="/book/hanshu/benji/chapter/3/">← 上一章</a>
+        &nbsp; <a href="/book/hanshu/benji/">本纪章节列表</a> &nbsp;
+        <a href="/book/hanshu/benji/chapter/5/">下一章 →</a>
+      </nav>
+
+      <nav class="breadcrumb">
+        <a href="/">首页</a> &gt; 
+        <a href="/book/hanshu/">汉书</a> &gt; 
+        <a href="/book/hanshu/benji/">本纪</a> &gt;
+        第4章 纪-惠帝纪
+      </nav>
+
+      <footer>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
+      </footer>
+    </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -19,16 +19,19 @@ def parse_three_parallel_file(file_path):
     """
     解析三平行格式的单个文件
     格式: 文言文\n白话文\n英文\n\n文言文\n白话文\n英文...
-    返回: {'wenyan': str, 'zh': str, 'en': str}
+    返回: {'wenyan': str, 'zh': str, 'en': str, 'paragraphs': [{'wenyan': str, 'zh': str, 'en': str}, ...]}
     """
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read().strip()
     except FileNotFoundError:
-        return {'wenyan': '', 'zh': '', 'en': ''}
+        return {'wenyan': '', 'zh': '', 'en': '', 'paragraphs': []}
+    except Exception as e:
+        print(f"Error reading file {file_path}: {e}")
+        return {'wenyan': '', 'zh': '', 'en': '', 'paragraphs': []}
     
     if not content:
-        return {'wenyan': '', 'zh': '', 'en': ''}
+        return {'wenyan': '', 'zh': '', 'en': '', 'paragraphs': []}
     
     # 按双换行分割段落组
     paragraph_groups = content.split('\n\n')
@@ -36,30 +39,49 @@ def parse_three_parallel_file(file_path):
     wenyan_parts = []
     zh_parts = []
     en_parts = []
+    paragraphs = []  # 保持语义对应的段落组
     
     for group in paragraph_groups:
         lines = [line.strip() for line in group.split('\n') if line.strip()]
         
         if len(lines) >= 3:
             # 标准三平行格式
-            wenyan_parts.append(lines[0])
-            zh_parts.append(lines[1]) 
-            en_parts.append(lines[2])
+            wenyan = lines[0]
+            zh = lines[1]
+            en = lines[2]
+            
+            wenyan_parts.append(wenyan)
+            zh_parts.append(zh)
+            en_parts.append(en)
+            paragraphs.append({'wenyan': wenyan, 'zh': zh, 'en': en})
+            
         elif len(lines) == 2:
             # 可能缺少英文
-            wenyan_parts.append(lines[0])
-            zh_parts.append(lines[1])
-            en_parts.append("")
+            wenyan = lines[0]
+            zh = lines[1]
+            en = ""
+            
+            wenyan_parts.append(wenyan)
+            zh_parts.append(zh)
+            en_parts.append(en)
+            paragraphs.append({'wenyan': wenyan, 'zh': zh, 'en': en})
+            
         elif len(lines) == 1:
             # 只有一行，可能是标题或单独内容
-            wenyan_parts.append(lines[0])
-            zh_parts.append("")
-            en_parts.append("")
+            wenyan = lines[0]
+            zh = ""
+            en = ""
+            
+            wenyan_parts.append(wenyan)
+            zh_parts.append(zh)
+            en_parts.append(en)
+            paragraphs.append({'wenyan': wenyan, 'zh': zh, 'en': en})
     
     return {
         'wenyan': '\n\n'.join(wenyan_parts),
         'zh': '\n\n'.join(zh_parts),
-        'en': '\n\n'.join(en_parts)
+        'en': '\n\n'.join(en_parts),
+        'paragraphs': paragraphs  # 确保这个键始终存在
     }
 
 def load_books_from_raw():

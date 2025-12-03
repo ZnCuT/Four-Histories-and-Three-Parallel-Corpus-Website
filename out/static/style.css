@@ -1,0 +1,1493 @@
+/* 核心修改：古籍风格变量定义（替换现代蓝白系为宣纸/墨褐系） */
+:root{
+  --bg: #f5f0e6; /* 宣纸浅米黄（页面背景） */
+  --card: #f9f5ed; /* 略浅的宣纸色（卡片/内容区） */
+  --muted: #8a7d68; /* 浅茶褐（次要文字/注释） */
+  --accent: #804a22; /* 深茶褐/墨褐（强调色/印章色） */
+  --border: #d9c8b4; /* 浅褐边框（仿线装书缝线） */
+  --text-main: #2d2418; /* 墨色（主要文字） */
+  --shadow: 0 2px 8px rgba(138, 125, 104, 0.15); /* 仿古籍轻微阴影 */
+  --primary: #804a22;
+  --secondary: #8a7d68;
+}
+
+*{box-sizing:border-box}
+
+/* 导航栏样式 */
+.main-nav {
+  background: var(--accent);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(138, 125, 104, 0.3);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 页面主体调整 - 为固定导航栏留出空间 */
+body {
+  font-family: "宋体", "SimSun", "Times New Roman", serif;
+  background: var(--bg); 
+  color: var(--text-main); 
+  margin: 0;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  padding-top: 70px; /* 为固定导航栏留出空间 */
+}
+
+/* 容器样式调整 */
+.container {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 30px 40px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  border-radius: 2px;
+}
+
+.nav-brand a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "楷体", serif;
+}
+
+.nav-books {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-book-dropdown {
+  position: relative;
+}
+
+.nav-book-btn {
+  background: none;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-family: "楷体", serif;
+  font-size: 1rem;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.nav-book-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  box-shadow: var(--shadow);
+  min-width: 200px;
+  z-index: 1001; /* 确保下拉菜单在导航栏之上 */
+}
+
+.nav-dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  color: var(--accent);
+  text-decoration: none;
+  font-family: "楷体", serif;
+  border-bottom: 1px dashed var(--border);
+}
+
+.nav-dropdown-content a:hover {
+  background: var(--bg);
+  color: var(--text-main);
+}
+
+.nav-dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+.nav-search .search-form {
+  display: flex;
+  gap: 8px;
+}
+
+.search-input, .search-scope {
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  font-family: "宋体", serif;
+  background: white;
+}
+
+.search-book {
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  font-family: "宋体", serif;
+  background: white;
+}
+
+.search-btn {
+  padding: 6px 12px;
+  background: white;
+  color: var(--accent);
+  border: 1px solid white;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: "楷体", serif;
+  transition: all 0.2s;
+}
+
+.search-btn:hover {
+  background: var(--bg);
+  border-color: var(--border);
+}
+
+/* 主要内容区域 */
+.hero-section {
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  color: var(--accent);
+  margin: 0 0 15px 0;
+  font-family: "楷体", serif;
+  letter-spacing: 2px;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: var(--muted);
+  margin: 0 0 20px 0;
+  font-style: italic;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  font-family: "楷体", serif;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  background: var(--card);
+  min-width: 120px;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-family: "宋体", serif;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: var(--muted);
+  font-family: "楷体", serif;
+}
+
+/* 书籍网格 */
+.books-section {
+  margin: 40px 0;
+}
+
+.books-section h2 {
+  text-align: center;
+  color: var(--accent);
+  font-size: 2rem;
+  margin: 0 0 30px 0;
+  font-family: "楷体", serif;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 10px;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.book-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+}
+
+.book-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(138, 125, 104, 0.25);
+  border-color: var(--accent);
+}
+
+.book-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 10px;
+}
+
+.book-header h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-family: "楷体", serif;
+}
+
+.book-header h3 a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.book-header h3 a:hover {
+  color: var(--text-main);
+}
+
+.book-stats {
+  color: var(--muted);
+  font-size: 0.9rem;
+  background: var(--bg);
+  padding: 4px 8px;
+  border-radius: 2px;
+}
+
+.book-categories {
+  margin: 15px 0;
+}
+
+.category-link {
+  display: inline-block;
+  margin: 5px 8px 5px 0;
+  padding: 6px 10px;
+  background: var(--bg);
+  color: var(--accent);
+  text-decoration: none;
+  border-radius: 2px;
+  border: 1px solid var(--border);
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  font-family: "楷体", serif;
+}
+
+.category-link:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.category-count {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.book-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 2px;
+  font-family: "楷体", serif;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  text-align: center;
+  flex: 1;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+  border: 1px solid var(--accent);
+}
+
+.btn-primary:hover {
+  background: #6d3d18;
+  border-color: #6d3d18;
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.btn-secondary:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* 功能特色 */
+.features-section {
+  margin: 60px 0 40px 0;
+  padding: 40px 0;
+  background: var(--bg);
+  border-radius: 2px;
+}
+
+.features-section h2 {
+  text-align: center;
+  color: var(--accent);
+  font-size: 2rem;
+  margin: 0 0 30px 0;
+  font-family: "楷体", serif;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 25px 20px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  color: var(--accent);
+  margin: 0 0 10px 0;
+  font-family: "楷体", serif;
+  font-size: 1.2rem;
+}
+
+.feature-card p {
+  color: var(--text-main);
+  line-height: 1.6;
+  margin: 0;
+  font-family: "楷体", serif;
+}
+
+/* 页脚 */
+.main-footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 30px 0;
+  border-top: 2px solid var(--border);
+  color: var(--muted);
+  font-family: "楷体", serif;
+}
+
+.main-footer p {
+  margin: 5px 0;
+}
+
+/* 旧样式已更新到上方，此处删除重复定义 */
+
+/* 标题：墨褐主色，弱化现代字间距，增加古风感 */
+header h1{
+  margin:0 0 12px 0;
+  font-size:2.2rem;
+  letter-spacing: 1px; /* 略增字间距，仿古籍标题 */
+  color:var(--accent);
+  border-bottom: 1px solid var(--border); /* 标题下加浅褐分隔线 */
+  padding-bottom: 10px;
+}
+
+.subtitle{
+  color:var(--muted);
+  margin-top:8px;
+  font-style: italic; /* 仿古籍注记风格 */
+}
+
+/* 搜索栏：仿古籍木刻按钮，弱化圆角 */
+.search{
+  display:flex;
+  gap:8px;
+  margin:18px 0;
+}
+.search input{
+  flex:1;
+  padding:8px 12px;
+  border:1px solid var(--border);
+  border-radius: 2px; /* 弱化圆角 */
+  background:var(--bg); /* 宣纸背景 */
+  color:var(--text-main);
+  font-family: "楷体", serif;
+}
+.search select{
+  padding:8px 12px;
+  border:1px solid var(--border);
+  border-radius: 2px;
+  background:var(--bg);
+  color:var(--text-main);
+  font-family: "楷体", serif;
+}
+.search button{
+  padding:8px 18px;
+  background:var(--accent); /* 墨褐按钮（仿印章） */
+  color:#fff;
+  border:none;
+  border-radius: 2px;
+  font-family: "楷体", serif;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.search button:hover{
+  background: #6d3d18; /* 深一级墨褐，仿印章按压感 */
+}
+
+/* 条目列表：仿古籍列线，替换现代蓝线为浅褐 */
+.entries{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  gap:10px;
+}
+.entries li{
+  background:var(--card);
+  padding:14px 18px;
+  border-radius: 2px;
+  border-left:4px solid var(--border); /* 浅褐竖线，仿古籍栏线 */
+  transition: background 0.2s;
+}
+.entries li:hover{
+  background: #fcf9f3; /* 略浅的宣纸色，hover效果 */
+}
+.entry-link{
+  text-decoration:none;
+  color:var(--accent); /* 墨褐链接，仿古籍朱批 */
+  font-weight:700;
+  font-family: "楷体", serif;
+}
+.meta{
+  color:var(--muted);
+  font-size:0.9rem;
+  margin-top:6px;
+  font-style: italic;
+}
+
+/* 平行文本表格：仿古籍栏线，替换现代蓝为墨褐 */
+.parallel-table {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.parallel-content {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "楷体", "宋体", serif;
+  line-height: 1.9; /* 更宽松的行高，仿古籍 */
+}
+
+.parallel-content thead th {
+  background-color: var(--accent); /* 墨褐表头，仿古籍标题栏 */
+  color: #fff;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-radius: 2px 2px 0 0; /* 仅表头顶部轻微圆角 */
+  font-family: "楷体", serif;
+}
+
+.parallel-row {
+  border-bottom: 1px solid var(--border); /* 浅褐分隔线，仿古籍行线 */
+  transition: background-color 0.2s ease;
+}
+
+.parallel-row:hover {
+  background-color: rgba(249, 245, 237, 0.8); /* 浅宣纸色hover，弱化现代蓝 */
+}
+
+.parallel-row:last-child {
+  border-bottom: none;
+}
+
+.parallel-content td {
+  padding: 16px 20px;
+  vertical-align: top;
+  border-right: 1px solid var(--border); /* 浅褐列线，仿古籍栏线 */
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  letter-spacing: 0.3px; /* 轻微字间距 */
+}
+
+.parallel-content td:last-child {
+  border-right: none;
+}
+
+/* 各列样式：文言列强化古风，调整配色 */
+.wenyan-cell {
+  width: 33%;
+  font-family: "楷体", "宋体", serif; /* 文言用楷体，更贴古籍 */
+  color: var(--text-main); /* 墨色正文 */
+  font-size: 1.05rem; /* 文言略放大，仿古籍正文 */
+}
+
+.chinese-cell {
+  width: 33%;
+  color: var(--text-main);
+}
+
+.english-cell {
+  width: 34%;
+  font-family: "Georgia", "Times New Roman", serif;
+  color: var(--muted); /* 英文用浅茶褐，仿古籍注疏 */
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/* 回退布局：保持古风配色 */
+.parallel-fallback {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: start;
+}
+
+.parallel-fallback section {
+  background: transparent;
+  padding: 12px;
+  border-radius: 2px;
+  border: 1px solid var(--border); /* 加浅褐边框，仿古籍分栏 */
+}
+
+.parallel-fallback section h3 {
+  font-family: "楷体", serif;
+  color: var(--accent); /* 墨褐标题 */
+  border-bottom: 2px solid var(--border); /* 浅褐分隔线 */
+  padding-bottom: 6px;
+  margin-top: 0;
+}
+
+.txt{
+  white-space:pre-wrap;
+  line-height:1.9; /* 古籍行高 */
+  letter-spacing: 0.3px;
+}
+
+/* 响应式设计：保留布局，调整古风配色 */
+@media (max-width: 968px) {
+  .parallel-content thead th,
+  .parallel-content td {
+    padding: 12px 8px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .parallel-table {
+    margin-top: 10px;
+  }
+  
+  .parallel-content thead th,
+  .parallel-content td {
+    padding: 10px 6px;
+    font-size: 0.85rem;
+  }
+  
+  .parallel-fallback {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .parallel {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .paragraph {
+    margin-bottom: 1em;
+  }
+}
+
+/* 导航和列表：古风化调整 */
+.books-nav ul,.chapter-list ul{
+  list-style:none;
+  padding:0;
+  margin:8px 0;
+}
+.books-nav li,.chapter-list li{
+  padding:6px 0;
+  border-bottom: 1px dashed var(--border); /* 虚线分隔，仿古籍注记 */
+}
+.books-nav li:last-child,.chapter-list li:last-child{
+  border-bottom: none;
+}
+.books-nav a,.chapter-list a{
+  color:var(--accent); /* 墨褐链接 */
+  text-decoration:none;
+  font-weight:600;
+  font-family: "楷体", serif;
+}
+.books-nav a:hover,.chapter-list a:hover{
+  color: #6d3d18;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* 分类列表：仿古籍函套风格 */
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.category-item {
+  background: var(--card);
+  border: 1px solid var(--border); /* 浅褐边框，仿古籍函套 */
+  border-radius: 2px; /* 弱化圆角 */
+  padding: 16px;
+  transition: all 0.2s ease;
+}
+
+.category-item:hover {
+  box-shadow: var(--shadow); /* 轻微阴影，仿古籍册页 */
+  border-color: var(--accent);
+}
+
+.category-item a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.category-item h4 {
+  margin: 0 0 8px 0;
+  color: var(--accent);
+  font-size: 1.2rem;
+  font-family: "楷体", serif;
+}
+
+.chapter-count {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* 章节列表：仿古籍页码风格 */
+.chapter-list {
+  margin: 20px 0;
+}
+
+.chapter-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  margin-bottom: 8px;
+  transition: all 0.2s ease;
+}
+
+.chapter-item:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
+}
+
+.chapter-item a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: inherit;
+  font-family: "楷体", serif;
+}
+
+.chapter-number {
+  color: var(--accent);
+  font-weight: 600;
+  margin-right: 8px;
+  font-family: "宋体", serif; /* 章节号用宋体，更贴古籍 */
+}
+
+.chapter-title {
+  color: var(--text-main);
+}
+
+/* 导航样式：仿古籍书签风格 */
+/* 分类导航样式优化 */
+.category-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 15px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  gap: 20px;
+}
+
+.category-nav a {
+  color: var(--accent);
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  background: var(--card);
+  font-family: "楷体", serif;
+  transition: all 0.2s;
+  flex: 1;
+  text-align: center;
+  max-width: 200px;
+}
+
+.category-nav a:hover {
+  background-color: var(--accent);
+  color: white;
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .category-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .category-nav a {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+/* 面包屑：仿古籍注记 */
+.breadcrumb {
+  margin: 16px 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-family: "楷体", serif;
+}
+
+.breadcrumb a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* 页脚：仿古籍尾注 */
+footer{
+  color:var(--muted);
+  margin-top:24px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+*{box-sizing:border-box}
+
+/* 容器：仿线装书册，去掉现代渐变/重阴影，改用浅褐边框+宣纸背景 */
+.container{
+  max-width:1100px;
+  margin:36px auto;
+  padding:30px 40px; /* 增加内边距，仿古籍页边距 */
+  background:var(--card);
+  border: 1px solid var(--border); /* 仿线装书边框 */
+  box-shadow:var(--shadow);
+  border-radius: 2px; /* 弱化圆角，接近古籍方正感 */
+}
+
+/* 页面主体：宣纸背景+古风字体+宽松行高 */
+body{
+  font-family: "楷体", "宋体", "思源宋体", serif; /* 优先楷体/宋体，仿古籍书法感 */
+  background:var(--bg); 
+  color:var(--text-main); 
+  margin:0;
+  line-height: 1.8; /* 古籍宽松行高 */
+  letter-spacing: 0.5px; /* 轻微字间距，仿古籍排版 */
+}
+
+/* 标题：墨褐主色，弱化现代字间距，增加古风感 */
+header h1{
+  margin:0 0 12px 0;
+  font-size:2.2rem;
+  letter-spacing: 1px; /* 略增字间距，仿古籍标题 */
+  color:var(--accent);
+  border-bottom: 1px solid var(--border); /* 标题下加浅褐分隔线 */
+  padding-bottom: 10px;
+}
+
+.subtitle{
+  color:var(--muted);
+  margin-top:8px;
+  font-style: italic; /* 仿古籍注记风格 */
+}
+
+/* 搜索栏：仿古籍木刻按钮，弱化圆角 */
+.search{
+  display:flex;
+  gap:8px;
+  margin:18px 0;
+}
+.search input{
+  flex:1;
+  padding:8px 12px;
+  border:1px solid var(--border);
+  border-radius: 2px; /* 弱化圆角 */
+  background:var(--bg); /* 宣纸背景 */
+  color:var(--text-main);
+  font-family: "楷体", serif;
+}
+.search select{
+  padding:8px 12px;
+  border:1px solid var(--border);
+  border-radius: 2px;
+  background:var(--bg);
+  color:var(--text-main);
+  font-family: "楷体", serif;
+}
+.search button{
+  padding:8px 18px;
+  background:var(--accent); /* 墨褐按钮（仿印章） */
+  color:#fff;
+  border:none;
+  border-radius: 2px;
+  font-family: "楷体", serif;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.search button:hover{
+  background: #6d3d18; /* 深一级墨褐，仿印章按压感 */
+}
+
+/* 条目列表：仿古籍列线，替换现代蓝线为浅褐 */
+.entries{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  gap:10px;
+}
+.entries li{
+  background:var(--card);
+  padding:14px 18px;
+  border-radius: 2px;
+  border-left:4px solid var(--border); /* 浅褐竖线，仿古籍栏线 */
+  transition: background 0.2s;
+}
+.entries li:hover{
+  background: #fcf9f3; /* 略浅的宣纸色，hover效果 */
+}
+.entry-link{
+  text-decoration:none;
+  color:var(--accent); /* 墨褐链接，仿古籍朱批 */
+  font-weight:700;
+  font-family: "楷体", serif;
+}
+.meta{
+  color:var(--muted);
+  font-size:0.9rem;
+  margin-top:6px;
+  font-style: italic;
+}
+
+/* 平行文本表格：仿古籍栏线，替换现代蓝为墨褐 */
+.parallel-table {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.parallel-content {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "楷体", "宋体", serif;
+  line-height: 1.9; /* 更宽松的行高，仿古籍 */
+}
+
+.parallel-content thead th {
+  background-color: var(--accent); /* 墨褐表头，仿古籍标题栏 */
+  color: #fff;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-radius: 2px 2px 0 0; /* 仅表头顶部轻微圆角 */
+  font-family: "楷体", serif;
+}
+
+.parallel-row {
+  border-bottom: 1px solid var(--border); /* 浅褐分隔线，仿古籍行线 */
+  transition: background-color 0.2s ease;
+}
+
+.parallel-row:hover {
+  background-color: rgba(249, 245, 237, 0.8); /* 浅宣纸色hover，弱化现代蓝 */
+}
+
+.parallel-row:last-child {
+  border-bottom: none;
+}
+
+.parallel-content td {
+  padding: 16px 20px;
+  vertical-align: top;
+  border-right: 1px solid var(--border); /* 浅褐列线，仿古籍栏线 */
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  letter-spacing: 0.3px; /* 轻微字间距 */
+}
+
+.parallel-content td:last-child {
+  border-right: none;
+}
+
+/* 各列样式：文言列强化古风，调整配色 */
+.wenyan-cell {
+  width: 33%;
+  font-family: "楷体", "宋体", serif; /* 文言用楷体，更贴古籍 */
+  color: var(--text-main); /* 墨色正文 */
+  font-size: 1.05rem; /* 文言略放大，仿古籍正文 */
+}
+
+.chinese-cell {
+  width: 33%;
+  color: var(--text-main);
+}
+
+.english-cell {
+  width: 34%;
+  font-family: "Georgia", "Times New Roman", serif;
+  color: var(--muted); /* 英文用浅茶褐，仿古籍注疏 */
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/* 回退布局：保持古风配色 */
+.parallel-fallback {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: start;
+}
+
+.parallel-fallback section {
+  background: transparent;
+  padding: 12px;
+  border-radius: 2px;
+  border: 1px solid var(--border); /* 加浅褐边框，仿古籍分栏 */
+}
+
+.parallel-fallback section h3 {
+  font-family: "楷体", serif;
+  color: var(--accent); /* 墨褐标题 */
+  border-bottom: 2px solid var(--border); /* 浅褐分隔线 */
+  padding-bottom: 6px;
+  margin-top: 0;
+}
+
+.txt{
+  white-space:pre-wrap;
+  line-height:1.9; /* 古籍行高 */
+  letter-spacing: 0.3px;
+}
+
+/* 响应式设计：保留布局，调整古风配色 */
+@media (max-width: 968px) {
+  .parallel-content thead th,
+  .parallel-content td {
+    padding: 12px 8px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .parallel-table {
+    margin-top: 10px;
+  }
+  
+  .parallel-content thead th,
+  .parallel-content td {
+    padding: 10px 6px;
+    font-size: 0.85rem;
+  }
+  
+  .parallel-fallback {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .parallel {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .paragraph {
+    margin-bottom: 1em;
+  }
+}
+
+/* 导航和列表：古风化调整 */
+.books-nav ul,.chapter-list ul{
+  list-style:none;
+  padding:0;
+  margin:8px 0;
+}
+.books-nav li,.chapter-list li{
+  padding:6px 0;
+  border-bottom: 1px dashed var(--border); /* 虚线分隔，仿古籍注记 */
+}
+.books-nav li:last-child,.chapter-list li:last-child{
+  border-bottom: none;
+}
+.books-nav a,.chapter-list a{
+  color:var(--accent); /* 墨褐链接 */
+  text-decoration:none;
+  font-weight:600;
+  font-family: "楷体", serif;
+}
+.books-nav a:hover,.chapter-list a:hover{
+  color: #6d3d18;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* 分类列表：仿古籍函套风格 */
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.category-item {
+  background: var(--card);
+  border: 1px solid var(--border); /* 浅褐边框，仿古籍函套 */
+  border-radius: 2px; /* 弱化圆角 */
+  padding: 16px;
+  transition: all 0.2s ease;
+}
+
+.category-item:hover {
+  box-shadow: var(--shadow); /* 轻微阴影，仿古籍册页 */
+  border-color: var(--accent);
+}
+
+.category-item a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.category-item h4 {
+  margin: 0 0 8px 0;
+  color: var(--accent);
+  font-size: 1.2rem;
+  font-family: "楷体", serif;
+}
+
+.chapter-count {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* 章节列表：仿古籍页码风格 */
+.chapter-list {
+  margin: 20px 0;
+}
+
+.chapter-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  margin-bottom: 8px;
+  transition: all 0.2s ease;
+}
+
+.chapter-item:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
+}
+
+.chapter-item a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: inherit;
+  font-family: "楷体", serif;
+}
+
+.chapter-number {
+  color: var(--accent);
+  font-weight: 600;
+  margin-right: 8px;
+  font-family: "宋体", serif; /* 章节号用宋体，更贴古籍 */
+}
+
+.chapter-title {
+  color: var(--text-main);
+}
+
+/* 导航样式：仿古籍书签风格 */
+.category-nav, .chapter-nav {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.category-nav a, .chapter-nav a {
+  color: var(--accent);
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  margin: 0 4px;
+  display: inline-block;
+  font-family: "楷体", serif;
+  transition: all 0.2s;
+}
+
+.category-nav a:hover, .chapter-nav a:hover {
+  background-color: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+/* 面包屑：仿古籍注记 */
+.breadcrumb {
+  margin: 16px 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-family: "楷体", serif;
+}
+
+.breadcrumb a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* 页脚：仿古籍尾注 */
+footer{
+  color:var(--muted);
+  margin-top:24px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.language-selector {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: var(--shadow);
+}
+
+.selector-title {
+  font-family: "楷体", serif;
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.selector-options {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: "楷体", serif;
+  font-size: 1rem;
+  color: var(--text-main);
+  user-select: none;
+  transition: color 0.2s;
+}
+
+.lang-option:hover {
+  color: var(--accent);
+}
+
+.lang-option input[type="checkbox"] {
+  display: none;
+}
+
+.checkmark {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--border);
+  border-radius: 2px;
+  margin-right: 8px;
+  position: relative;
+  transition: all 0.2s;
+  background: white;
+}
+
+.lang-option input[type="checkbox"]:checked + .checkmark {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.lang-option input[type="checkbox"]:checked + .checkmark:after {
+  content: "✓";
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.selector-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.selector-btn {
+  padding: 8px 15px;
+  background: var(--card);
+  color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: "楷体", serif;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.selector-btn:hover {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.selector-btn:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+  .language-selector .selector-options {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .language-selector .selector-actions {
+    justify-content: center;
+  }
+  
+  .language-selector .selector-btn {
+    flex: 1;
+    min-width: 80px;
+  }
+}
+
+/* 书籍页面样式 */
+.book-header {
+  text-align: center;
+  margin: 40px 0;
+  padding: 30px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+}
+
+.book-header h1 {
+  color: var(--accent);
+  font-family: "楷体", serif;
+  font-size: 2.5rem;
+  margin: 0 0 15px 0;
+  letter-spacing: 1px;
+}
+
+.book-description {
+  color: var(--muted);
+  font-size: 1.1rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.book-categories {
+  margin: 40px 0;
+}
+
+.book-categories h2 {
+  color: var(--accent);
+  font-family: "楷体", serif;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 0 0 30px 0;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.category-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 0;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.category-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  border-color: var(--accent);
+}
+
+.category-card a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 20px;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 10px;
+}
+
+.category-header h3 {
+  margin: 0;
+  font-family: "楷体", serif;
+  font-size: 1.3rem;
+  color: var(--accent);
+}
+
+.chapter-count {
+  background: var(--accent);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 0.8rem;
+}
+
+.category-preview {
+  margin: 15px 0;
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.category-preview p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.category-stats {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.read-time {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+/* 固定导航栏响应式样式 */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+  }
+  
+  .nav-books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .nav-search .search-form {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .search-input, .search-scope {
+    width: 100%;
+  }
+  
+  body {
+    padding-top: 120px; /* 移动设备上导航栏更高，需要更多顶部空间 */
+  }
+  
+  .container {
+    margin: 10px auto;
+    padding: 20px;
+  }
+}

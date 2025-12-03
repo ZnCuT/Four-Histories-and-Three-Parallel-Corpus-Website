@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>三国志 — 第2章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <header>
+        <h1>三国志 — 第2章 三国志-仓慈传</h1>
+      </header>
+
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
+
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">仓慈字孝仁,淮南人也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">仓慈字孝仁,淮南人氏。</td>
+                <td class="english-cell col-english" data-lang="english">Cang Ci, also known as Xiaoren, was a native of Huainan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">始为郡吏。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">起初作郡吏。</td>
+                <td class="english-cell col-english" data-lang="english">and once a prefectural official.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">建安中,太祖开募屯田于淮南,以慈为绥集都尉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">建安年间,曹操在淮南招募士卒屯田,任命仓慈为绥集都尉。</td>
+                <td class="english-cell col-english" data-lang="english">In the Jian'an Period, Grand Ancestor recruited men for agricultural production in Huainan, and Cang Ci was appointed garrison commander of Suji.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">黄初末,为长安令,清约有方,吏民畏而爱之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">黄初末年,调任长安县令,为官清正简约又讲究策略,官吏百姓对他既畏惧又很爱戴。</td>
+                <td class="english-cell col-english" data-lang="english">At the end of the Huangchu Period, he was appointed to magistrate of Chang'an. He was simple and incorruptible, and paid attention to ways of coping with different matters. The officials and people liked him and held him in awe.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太和中,迁敦煌太守。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">太和年间,升任敦煌太守。</td>
+                <td class="english-cell col-english" data-lang="english">In the Taihe Period, he was promoted to prefect of Dunhuang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">郡在西陲,以丧乱隔绝,旷无太守二十岁,大姓雄张,遂以为俗。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">该郡地处西部边陲,因为兵乱和内地隔绝,有二十余年空缺太守了,当地豪强骄横跋扈,于是相沿成俗。</td>
+                <td class="english-cell col-english" data-lang="english">Being in the west border area, the prefecture was isolated from the central plains because of the wars and turbulence, and there had been no prefect there for twenty years. The local tyrants bullied common people, which became a common occurrence in the area.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">前太守尹奉等,循故而已,无所匡革。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">前任太守尹奉等人,依照过去的章程敷衍而已,没有什么改革匡正的措施。</td>
+                <td class="english-cell col-english" data-lang="english">The predecessor Yin Feng and others only followed the conventions, doing nothing revolutionary.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">慈到,抑挫权右,抚恤贫赢,甚得其理。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">仓慈到任以后,抑制豪族,抚恤贫弱百姓,各项措施非常适宜。</td>
+                <td class="english-cell col-english" data-lang="english">Upon taking office, Cang Ci suppressed the local powerful tyrants, and helped the poor and the weak. Every measure was considerate.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">旧大族田地有余,而小民无立锥之土;慈皆随口割赋,稍稍使毕其本直。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">原先大族田土多有富余,可是小民们简直贫无插锥之地;仓慈就按照人口将大族的土地分给贫苦百姓,让他们慢慢交清大族土地原来的地价。</td>
+                <td class="english-cell col-english" data-lang="english">The big, old clans had abundant land, while the poor people did not have even the smallest piece of land to stand on. Cang Ci divided the land of the wealthy tyrants, giving them to the poor and the weak. Through this method, the people in poverty were able to gradually pay the original price of the land.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">先是属城狱讼众猥,县不能决,多集治下;慈躬往省阅,料简轻重,自非殊死,但鞭杖遣之,一岁决刑曾不满十人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">起初属下各县的案件又多又杂,县里不能决断,就都集中到郡府;仓慈亲自审阅案卷,衡量罪行的轻重,除了重罪必杀的囚犯,其他的都处以鞭杖之刑后全部释放,一年中判决死刑的还不到十个人。</td>
+                <td class="english-cell col-english" data-lang="english">In the beginning, there were numerous and assorted cases in each county of the prefecture. The county administrations could not make judgments, and the cases were all sent to the prefectural government. Cang Ci personally read and made judgments of the cases, and meted out the penalties. Except for fewer than ten cases, the criminals were sentenced to death in a year. In all other cases, after the criminals were flogged, they were released.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">又常日西域杂胡欲来贡献,而诸豪族多逆断绝;既与贸迁,欺诈侮易,多不得分明。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">又往常西域的各族胡人要来献纳礼品,郡中的豪族总是先行截断;即使与他们互相贸易,也是欺骗侮辱对方,狡诈轻视,多不分辨是非。</td>
+                <td class="english-cell col-english" data-lang="english">In the past, when foreigners of different countries from the west came to pay tributes, the local tyrants usually intercepted some of the presents. Even if they traded mutually, their foreign counterparts were usually bullied and insulted. Those local tyrants were cunning, contemptuous and indiscriminating.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">胡常怨望,慈皆劳之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">胡人常心怀怨恨,仓慈都给予了慰劳。</td>
+                <td class="english-cell col-english" data-lang="english">The foreigners from the west were often resentful, but Cang Ci provided services for them all.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">欲诣洛者,为封过所,欲从郡还者,官为平取,辄以府见物与共交市,使吏民护送道路,由是民夷翕然称其德惠。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">有要到洛阳去的,替他们办好沿路的关引文书,有要从郡城回国的,官府同他们公平交易,常用库存现货进入交易市场,让官吏百姓护送他们上路,因此汉人胡人都交口称赞仓慈的德行恩惠。</td>
+                <td class="english-cell col-english" data-lang="english">Those who went to Luoyang would receive the certificates for the passes all the way. Those who returned from the prefectural seat were able to have fair transactions with the government, and the goods in the government barns were often provided to the markets. Officials and common people were asked to escort them on their way back, and the Han and the Hun people all praised Cang Ci for his virtue and benevolence.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">数年卒官,吏民悲感如丧亲戚,图画其形,思其遗像。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">几年以后仓慈在任上去世,官吏百姓都像死了亲人一样的悲痛,为他画像,寄托哀思。</td>
+                <td class="english-cell col-english" data-lang="english">Several years later, Cang Ci died in his position. Officials and common people felt extreme sorrow, as if their own relative had died. They painted his portrait to commemorate him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">及西域诸胡闻慈死,悉共会聚于戊己校尉及长史治下发哀,或有以刀画面,以明血诚,又为立祠,遥共祠之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">到西域各族胡人得知仓慈死讯,全都聚集到戊己校尉和县令的官署前面表达哀思,有些人甚至用刀划破自己的脸,以表示血诚,又为他建立祠堂,共致遥祭。</td>
+                <td class="english-cell col-english" data-lang="english">When the foreigners in the west learned of the death of Cang Ci, they all gathered to the houses of the garrison commander of agricultural production and the vice-prefect to express their grief. Some people even cut their own faces to express their sincerity with blood. They established a temple to commemorate him together from afar.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">自太祖迄于咸熙,魏郡太守陈国吴瓘、清河太守乐安任燠、京兆太守济北颜斐、弘农太守太原令狐邵、济南相鲁国孔义,或哀矜折狱,或推诚惠爱,或治身清白,或摘奸发伏,咸为良二千石。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">从太祖到元帝咸熙年间,魏郡太守陈国人吴璀、清河太守乐安人任燠、京兆太守济北人颜斐、弘农太守太原人令狐邵、济南相鲁国人孔义,他们中或是慈悲断案,或是诚实仁爱,或是廉洁清白,或是为民伸冤,都是优秀的太守。</td>
+                <td class="english-cell col-english" data-lang="english">From Grand Ancestor's time to the Xianxi Period of Emperor Yuan, there were a series of excellent officials with the emoluments of two thousand dan of grain, such as Wu Huan of Chen State (prefect of Wei Prefecture), Ren Ao of Le'an (prefect of Qinghe), Yan Fei of Jibei (prefect of the capital), Linghu Shao of Taiyuan (prefect of Hongnong), Kong Yi of Lu State (premier of Jinan), who were either lenient in judging cases, honest and benevolent, clean and incorruptible, or ready to expose evils and right wrongs in cases for the people.</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
+      </main>
+
+      <nav class="chapter-nav">
+        <a href="/book/sanguozhi/wei/chapter/1/">← 上一章</a>
+        &nbsp; <a href="/book/sanguozhi/wei/">魏书章节列表</a> &nbsp;
+        <a href="/book/sanguozhi/wei/chapter/3/">下一章 →</a>
+      </nav>
+
+      <nav class="breadcrumb">
+        <a href="/">首页</a> &gt; 
+        <a href="/book/sanguozhi/">三国志</a> &gt; 
+        <a href="/book/sanguozhi/wei/">魏书</a> &gt;
+        第2章 三国志-仓慈传
+      </nav>
+
+      <footer>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
+      </footer>
+    </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

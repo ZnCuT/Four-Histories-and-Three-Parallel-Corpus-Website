@@ -1,0 +1,996 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>汉书 — 第7章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <header>
+        <h1>汉书 — 第7章 纪-昭帝纪</h1>
+      </header>
+
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
+
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">孝昭皇帝，武帝少子也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉昭帝，是汉武帝的小儿子。</td>
+                <td class="english-cell col-english" data-lang="english">Emperor Hsiao-chao was the youngest son of Emperor Wu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">母曰赵婕妤，本以有奇异得幸，及生帝，亦奇异。语在《外戚传》。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">母亲是赵婕妤，原本因为有奇异的征兆而得到宠幸，到生下昭帝时，也有奇异的情况。相关记载在《外戚传》中。</td>
+                <td class="english-cell col-english" data-lang="english">His mother was entitled the Favorite Beauty [née] Chao. She had originally secured [Emperor Wu's] favor because about her there had been extraordinary and strange [portents]; when she bore the [future] Emperor, there was also an extraordinary and strange [circumstance]. A discussion is in the "Memoir of the [Imperial] Relatives by Marriage.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">武帝末，戾太子败，燕王旦、广陵王胥行骄嫚，后元二年二月上疾病，遂立昭帝为太子，年八岁。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉武帝晚年，戾太子败亡，燕王刘旦、广陵王刘胥行为骄横傲慢，后元二年二月汉武帝病重，于是立昭帝为太子，当时八岁。</td>
+                <td class="english-cell col-english" data-lang="english">At the end of Emperor Wu's [reign], his Heir-apparent, [Liu Chü, had revolted and] had been defeated; and [Liu] Tan, King of Yen, and [Liu] Hsü, King of Kuang-ling, [other sons of Emperor Wu], had been arrogant and disrespectful in their conduct. [Consequently] when, in [the period] Hou-yüan, the second year, the second month, the Emperor was sick, he thereupon set up [the future] Emperor Chao, who was in his eighth year, as his Heir-apparent.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">以侍中奉车都尉霍光为大司马大将军，受遗诏辅少主。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">任命侍中奉车都尉霍光为大司马大将军，接受遗诏辅佐年幼的君主。</td>
+                <td class="english-cell col-english" data-lang="english">He made the Palace Attendant and Chief Commandant Custodian of Imperial Equipages, Ho Kuang, the Commander-in-chief and General-in-chief, and had [the latter] receive a testamentary edict [directing him] to act as assistant to the young ruler.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">明日，武帝崩。戊辰，太子即皇帝位，谒高庙。帝姊鄂邑公主益汤沐邑，为长公主，共养省中。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">第二天，汉武帝去世。戊辰日，太子登上皇帝位，拜谒高祖庙。昭帝的姐姐鄂邑公主增加汤沐邑，封为长公主，在宫中供养。</td>
+                <td class="english-cell col-english" data-lang="english">On the next day, Emperor Wu died and, on [the day] mou-ch'en, the Heir-apparent took the imperial throne and was presented in the [ancestral] Temple of [Emperor] Kao. The [new] Emperor's eldest [half]-sister, the Princess of O-yi, [who was given the income of] additional private estates and became the Elder Princess, served and cared for [the young Emperor] in the Inner Apartments [of the imperial palace].</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">大将军光秉政，领尚书事，车骑将军金日磾、左将军上官桀副焉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">大将军霍光执掌朝政，兼管尚书事务，车骑将军金日磾、左将军上官桀辅佐他。</td>
+                <td class="english-cell col-english" data-lang="english">The General-in-chief, [Ho] Kuang, controlled the government and was Intendant of Affairs of the Masters of Writing. The General of Chariots and Cavalry, Chin Mi-ti, and the General of the Left, Shang-kuan Chieh, assisted him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夏六月，赦天下。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">夏季六月，大赦天下。</td>
+                <td class="english-cell col-english" data-lang="english">In the summer, the sixth month, an amnesty [was granted to] the Empire.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秋七月，有星孛于东方。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秋季七月，有彗星出现在东方。</td>
+                <td class="english-cell col-english" data-lang="english">In the autumn, the seventh month, a comet appeared in the eastern quarter.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">济北王宽有罪，自杀。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">济北王刘宽有罪，自杀。</td>
+                <td class="english-cell col-english" data-lang="english">and the King of Chi-po, [Liu] K'uan, who had committed crimes, killed himself.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赐长公主及宗室昆弟各有差。追遵赵婕妤为皇太后，起云陵。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赏赐长公主及宗室兄弟各有差别。追尊赵婕妤为皇太后，修建云陵。</td>
+                <td class="english-cell col-english" data-lang="english">[Imperial] grants were made to the Elder Princess, [the Princess of O-yi], and to members of the imperial house of the same generation [as the Emperor], to each proportionately. The Favorite Beauty [née] Chao was posthumously honored and made the Empress Dowager, and the Yün Tomb was built [for her].</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">冬，匈奴入朔方，杀略吏民。发军屯西河，左将军桀行北边。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">冬季，匈奴侵入朔方，杀害掠夺官吏百姓。调发军队驻守西河，左将军上官桀巡视北部边境。</td>
+                <td class="english-cell col-english" data-lang="english">In the winter, the Huns entered So-fang [Commandery], killing and kidnapping officials and common people, and an army was mobilized to encamp in Hsi-ho [Commandery]. The General of the Left, [Shang-kuan] Chieh, inspected the northern borders.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">始元元年春二月，黄鹄下建章宫太液池中。公卿上寿。赐诸侯王、列侯、宗室金钱各有差。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">始元元年春季二月，黄鹄降落在建章宫太液池中。公卿大臣上前祝寿。赏赐诸侯王、列侯、宗室金钱各有差别。</td>
+                <td class="english-cell col-english" data-lang="english">In [the period] Shih-yüan, the first year, in the spring, the first month, a yellow swan came down upon the T'ai-yi Pond of Chien-chang Palace.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">已亥，上耕于钩盾弄田。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">己亥日，昭帝在钩盾弄田耕作。</td>
+                <td class="english-cell col-english" data-lang="english">On [the day] chi-hai, the Emperor plowed [the sacred field] in the Amusement Fields of the Intendant of [Imperial Palace] Parks.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">益封燕王、广陵王及鄂邑长公主各万三千户。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">增加燕王、广陵王及鄂邑长公主的封地各一万三千户。</td>
+                <td class="english-cell col-english" data-lang="english">He increased the fiefs of the King of Yen, [Liu Tan], and of the King of Kuang-ling, [Liu Hsü], together with [that of] the Elder Princess of O-yi, each by thirteen thousand households.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夏，为太后起园庙云陵。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">夏季，为皇太后修建园庙云陵。</td>
+                <td class="english-cell col-english" data-lang="english">In the summer, a funerary park and temple were built for the [deceased] Empress Dowager [née Chao] at Yün-ling.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">益州廉头、姑缯、牂柯谈指、同并二十四邑皆反。遣水衡都尉吕破胡募吏民及发犍为、蜀郡奔命击益州，大破之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">益州的廉头、姑缯、牂柯的谈指、同并等二十四邑都反叛。派遣水衡都尉吕破胡招募官吏百姓以及征发犍为、蜀郡的奔命兵攻打益州，大败叛军。</td>
+                <td class="english-cell col-english" data-lang="english">Twenty-four towns revolted, [including] Lien-t'ou and Ku-tseng of Yi-chou [Commandery] and T'anchih and T'ung-pan of Tsang-k'o [Commandery. The Emperor] sent the Chief Commandant of Waters and Parks, Lü P'o-hu, to levy officials and people [for the army], and to mobilize the emergency troops of Chien-wei and Shu Commanderies. He attacked [the rebels in] Yi Province and routed them severely.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">有司请河内属冀州，河东属并州。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">有关官员请求将河内郡归属冀州，河东郡归属并州。</td>
+                <td class="english-cell col-english" data-lang="english">A high official begged that Ho-nei [Commandery] should belong to Chi Province and Ho-tung [Commandery] to Ping Province.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秋七月，赦天下，赐民百户牛、酒。大雨，渭桥绝。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秋季七月，大赦天下，赏赐百姓每百户一头牛、酒。下大雨，渭桥断绝。</td>
+                <td class="english-cell col-english" data-lang="english">In the autumn, the seventh month, an amnesty [was granted] to the empire and [every] hundred households of the common people were granted an ox and wine. There was a great rain and the Wei [River] Bridge broke.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">八月，齐孝王孙刘泽谋反，欲杀青州刺史隽不疑，发觉，皆伏诛。迁不疑为京兆尹，赐钱百万。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">八月，齐孝王的孙子刘泽谋反，想要杀害青州刺史隽不疑，被发觉，都伏法处死。升迁隽不疑为京兆尹，赏赐钱一百万。</td>
+                <td class="english-cell col-english" data-lang="english">In the eighth month, after it had become known that Liu Tsê, the grandson of King Hsiao of Ch'i, [Liu Chiang-lü], had plotted to rebel, intending to kill Ch'üan Pu-yi, the Inspector of Ch'ing Province, [Liu Tsê] and all [the conspirators] suffered execution. [Ch'üan] Pu-yi was promoted to be Governor of the Capital and was granted a million cash.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">九月丙子，车骑将军日磾薨。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">九月丙子日，车骑将军金日磾去世。</td>
+                <td class="english-cell col-english" data-lang="english">In the ninth month, on [the day] ping-tzu, the General of Chariots and Cavalry, Chin Mi-ti, died.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">闰月，遣故廷尉王平等五人持节行郡国，举贤良，问民所疾苦、冤、失职者。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">闰月，派遣前廷尉王平等五人持符节巡视郡国，举荐贤良，询问百姓所遭受的疾苦、冤屈、失职的情况。</td>
+                <td class="english-cell col-english" data-lang="english">In the intercalary month, the former Commandant of Justice, Wang P'ing, and others, five persons [in all], were sent with credentials to inspect the commanderies and kingdoms, to recommend capable and good [persons], to ask the common people about what they suffered from and were distressed by and about those who had lost their occupations because of wrongs done to them.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">冬，无冰。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">冬季，没有结冰。</td>
+                <td class="english-cell col-english" data-lang="english">In the winter, there was no ice.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">二年春正月，大将军光、左将军桀皆以前捕斩反虏重合侯马通功封，光为博陆侯，桀为安阳侯。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">始元二年春季正月，大将军霍光、左将军上官桀都因先前捕获斩杀反虏重合侯马通的功劳受封，霍光为博陆侯，上官桀为安阳侯。</td>
+                <td class="english-cell col-english" data-lang="english">In the second year, in the spring, the first month, because the General-in-chief, [Ho] Kuang, and the General of the Left, [Shang-kuan] Chieh, had both previously distinguished themselves in capturing and decapitating the rebel caitiffs, [the Palace Attendant Supervisor, Ma Ho-lo, and] the Marquis of Chung-ho, Ma T'ung; [Ho] Kuang was enfeoffed as Marquis of Po-lu and [Shang-kuan] Chieh [was enfeoffed] as Marquis of An-yang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">以宗室毋在位者，举茂才刘辟强、刘长乐皆为光禄大夫，辟强守长乐卫尉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">因为宗室中没有在位的人，举荐茂才刘辟强、刘长乐都担任光禄大夫，刘辟强代理长乐卫尉。</td>
+                <td class="english-cell col-english" data-lang="english">Because no members of the imperial house held [official] positions, Liu Pi-ch'iang and Liu Chang-lo were recommended as Accomplished Talents, and were both made Imperial Palace Grandees. [Liu] Pi-ch'iang [was appointed] Acting Commandant of the Palace Guard at Ch'ang-lo [Palace].</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">三月，遣使者振贷贫民毋种、食者。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">三月，派遣使者赈济借贷给没有种子、粮食的贫民。</td>
+                <td class="english-cell col-english" data-lang="english">In the third month, messengers were sent to assist and lend to those poor people who had no seed or food.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秋八月，诏曰：“往年灾害多，今年蚕、麦伤，所振贷种、食勿收责，毋令民出今年田租。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秋季八月，下诏说：“往年灾害多，今年蚕、麦受损，所赈济借贷的种子、粮食不要收取债务，不要让百姓缴纳今年的田租。”</td>
+                <td class="english-cell col-english" data-lang="english">In the autumn, the eighth month, an imperial edict said, "In the past [few] years there have been many visitations and calamities; this year the silk and wheat have been injured. Do not collect their debts from those who have been assisted or loaned seed and food. Let it not be ordered that the people shall pay this year's land tax on cultivated fields."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">冬，发习战射士诣朔方，调故吏将屯田张掖郡。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">冬季，调发熟习作战射箭的士兵前往朔方，调遣前官吏将领在张掖郡屯田。</td>
+                <td class="english-cell col-english" data-lang="english">In the winter, trained fighting-men and archers were mobilized and sent to So-fang [Commandery]. Retired officers were selected to command the agricultural garrisons in Chang-yi Commandery.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">三年春二月，有星孛于西北。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">始元三年春季二月，有彗星出现在西北方。</td>
+                <td class="english-cell col-english" data-lang="english">In the third year, in the spring, the second month, a comet appeared in the northwest.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秋，募民徙云陵，赐钱、田、宅。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秋季，招募百姓迁移到云陵，赏赐钱、田、住宅。</td>
+                <td class="english-cell col-english" data-lang="english">In the autumn, common people were solicited to move to Yün-ling, and [those who did so] were to be granted money, fields, and residences.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">冬十月，凤皇集东海，遣使者祠其处。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">冬季十月，凤凰聚集在东海，派遣使者到那里祭祀。</td>
+                <td class="english-cell col-english" data-lang="english">In the winter, the tenth month, phoenixes perched in Tung-hai [Commandery] and messengers were sent to sacrifice at that place.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">十一月壬辰朔，日有蚀之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">十一月壬辰日是初一，发生日食。</td>
+                <td class="english-cell col-english" data-lang="english">In the eleventh month, on [the day] jen-ch'en, the first day of the month, there was an eclipse of the sun.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">四年春三月甲寅，立皇后上官氏。赦天下。辞讼在后二年前，皆勿听治。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">始元四年春季三月甲寅日，立上官氏为皇后。大赦天下。在武帝后元二年以前的诉讼案件，都不再审理。</td>
+                <td class="english-cell col-english" data-lang="english">In the fourth year, in the spring, the third month, on [the day] chia-yin, the Empress née Shang-kuan was established [as Empress], an amnesty [was granted] to the empire, and accusations and legal cases [which dated from] before the second year of [the period] Hou-[yüan were ordered] all to be dismissed.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夏六月，皇后见高庙。赐长公主、丞相、将军、列侯、中二千石以下及郎吏、宗室钱、帛各有差。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">夏季六月，皇后拜谒高祖庙。赏赐长公主、丞相、将军、列侯、中二千石以下及郎吏、宗室钱、帛各有差别。</td>
+                <td class="english-cell col-english" data-lang="english">In the summer, the sixth month, the Empress [née Shang-kuan] was presented in the Temple of [Emperor] Kao and grants of money and silk were made to the Elder Princess, [the Princess of O-yi], the Lieutenant Chancellor, [T'ien Ch'ien-ch'iu], the generals, the marquises, [officials ranking at] fully two thousand piculs and under, together with Gentlemen, officials, and [members of] the imperial house, to each proportionately.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">徙三辅富人云陵，赐钱，户十万。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">迁移三辅地区的富人到云陵，赏赐钱，每户十万。</td>
+                <td class="english-cell col-english" data-lang="english">Rich people from the three capital commanderies were moved to Yün-ling and each household was granted a hundred thousand cash.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秋七月，诏曰：“比岁不登，民匮于食，流庸未尽还，往时令民共出马，其止勿出。诸给中都官者，且减之。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秋季七月，下诏说：“连年收成不好，百姓粮食匮乏，流亡的雇工没有全部返回，过去命令百姓共同出马，现在停止，不要出马。各种供给中都官的物资，暂且减少。”</td>
+                <td class="english-cell col-english" data-lang="english">In the autumn, the seventh month, an imperial edict said, "For successive years there have not been good harvests and the common people have been lacking in food, [so that] those who have moved away [from their homes] to take employment have not yet all returned [home]. In the past, it was ordered that the common people should by groups contribute horses [to the government]. Let [this practise] be stopped, [so that] they shall not [be required to] contribute [horses, and let] those who have been contributing them for the offices at the imperial capital have [the number required from them] temporarily reduced."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">冬，遣大鸿胪田广明击益州。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">冬季，派遣大鸿胪田广明攻打益州。</td>
+                <td class="english-cell col-english" data-lang="english">In the winter, the Grand Herald, T'ien Kuang-ming, was sent to attack [the rebels in] Yi Province.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">廷尉李种坐故纵死罪弃市。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">廷尉李种因故意放纵死罪犯人被处死示众。</td>
+                <td class="english-cell col-english" data-lang="english">The Commandant of Justice, Li Chung, was sentenced for having purposely set free [persons who had committed] capital crimes, and was publicly executed.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">五年春正月，追尊皇太后父为顺成侯。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">始元五年春季正月，追尊皇太后的父亲为顺成侯。</td>
+                <td class="english-cell col-english" data-lang="english">In the fifth year, in the spring, the first month, [Father Chao], the father of the Empress Dowager [née Chao], was posthumously honored and made Marquis of Shun-ch'eng.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夏阳男子张延年诣北阙，自称卫太子，诬罔，要斩。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">夏阳男子张延年到北阙，自称是卫太子，犯了欺君罔上之罪，被腰斩。</td>
+                <td class="english-cell col-english" data-lang="english">A man of Hsia-yang, Chang Yen-nien, came to the northern Portal [of the Palace] and called himself the Heir-apparent [whose mother was née] Wei, [Liu Chü. He was attempting to] deceive and mislead [the emperor, consequently he was executed by being] cut in two at the waist.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夏，罢天下亭母马及马弩关。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">夏季，废除天下亭养母马的制度以及马弩关的禁令。</td>
+                <td class="english-cell col-english" data-lang="english">In the summer, the communes (t'ing) [for the raising of] mares were abolished [all over] the empire, together with the barriers [for preventing the exportation of] horses and cross-bows.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">六月，封皇后父骠骑将军上官安为桑乐侯。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">六月，封皇后的父亲骠骑将军上官安为桑乐侯。</td>
+                <td class="english-cell col-english" data-lang="english">In the sixth month, [the Emperor] enfeoffed the father of the Empress [née Shang-kuan], the General of Agile Cavalry, Shang-kuan An, as Marquis of Sang-lo.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">诏曰：“朕以眇身获保宗庙，战战栗栗，夙兴夜寐，修古帝王之事，诵《保傅传》、《孝经》、《论语》、《尚书》，未云有明。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">诏书说：“朕以微薄之身得以保有宗庙，战战兢兢，早起晚睡，研习古代帝王的治国之道，诵读《保傅传》《孝经》《论语》《尚书》，但还未能透彻理解。</td>
+                <td class="english-cell col-english" data-lang="english">An imperial edict said, "We, with our insignificant person, have obtained [the opportunity] to protect the [imperial] ancestral temples. Tremblingly and circumspectly we have risen early and gone to bed late [in order to] cultivate [Ourself] in the practises of the ancient lords and kings. [Although We] have been made acquainted with the Classic of Filial Piety, the Analects, and the Book of History, through the teaching of [Our Grand] Guardian and [Grand] Tutor, [yet We can] not say that [We] have any perfect understanding [of them].</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其令三辅、太常举贤良各二人，郡国文学高第各一人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">现在命令三辅、太常各举荐贤良二人，各郡国举荐成绩优异的文学之士各一人。</td>
+                <td class="english-cell col-english" data-lang="english">Let it be ordered that the Three Adjuncts and the Grand Master of Ceremonies should each recommend two Capable and Good [persons] and that the commanderies and kingdoms should each [recommend] one Literary Scholar of high standing [for appointment in the imperial government]."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赐中二千石以下至吏、民爵，各有差。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赐予中二千石以下至官吏、百姓爵位，各有等级差别。”</td>
+                <td class="english-cell col-english" data-lang="english">Noble ranks were granted to [officials ranking at] fully two thousand piculs on down to the [low] officials and the common people, to each proportionately.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">罢儋耳、真番郡。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">撤销儋耳郡、真番郡。</td>
+                <td class="english-cell col-english" data-lang="english">The commanderies of Tan-erh and Chen-p'an were disestablished.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秋，大鸿胪广明、军正王平击益州，斩首捕虏三万余人，获畜产五万余头。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秋季，大鸿胪田广明、军正王平攻打益州反叛者，斩杀和俘虏三万多人，缴获牲畜五万多头。</td>
+                <td class="english-cell col-english" data-lang="english">In the autumn, the Grand Herald, [T'ien] Kuang-ming, and his Chief of the Army, Wang P'ing, attacked [the rebels in] Yi Province, cutting off heads and taking captives [to the number of] more than thirty thousand persons, and capturing more than fifty thousand head of domestic animals.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">六年春正月，上耕于上林。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">六年春季正月，皇帝在上林苑亲耕。</td>
+                <td class="english-cell col-english" data-lang="english">In the sixth year, in the spring, the first month, the Emperor plowed [a Sacred Field] in Shang-lin [Park].</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">二月，诏有司问郡国所举贤良、文学民所疾苦。议罢盐、铁、榷酤。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">二月，下诏命令有关官员询问各郡国所举荐的贤良、文学之士关于百姓的疾苦。商议废除盐、铁专卖和酒类专卖制度。</td>
+                <td class="english-cell col-english" data-lang="english">In the second month, an imperial edict [ordered that] the [high] officials should ask the Capable and Good [persons] and the Literary Scholars who had been recommended by the commanderies and kingdoms about what the common people suffered from or were distressed by. There was a discussion concerning the abolition of the salt and iron [monopoly] and the [government] monopoly dealing [in fermented drinks].</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">栘中监苏武前使匈奴，留单于庭十九岁乃还，奉使全节，以武为典属国，赐钱百万。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">栘中监苏武先前出使匈奴，被扣留在单于王庭十九年才返回，出使时保持了节操，任命苏武为典属国，赏赐钱一百万。</td>
+                <td class="english-cell col-english" data-lang="english">The Superintendent of [the Stable] Among the Plum Trees, Su Wu, who had previously been sent [as an envoy] to the Huns and had been held at the court of the Shan-yü to the nineteenth year [of his captivity], was moreover [now allowed to] return. He had upheld [the dignity of] an envoy and had preserved his credentials, [hence Su] Wu was made Director of Dependent States and was granted one million cash.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夏，旱，大雩，不得举火。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">夏季，干旱，举行大规模求雨祭祀，禁止举火。</td>
+                <td class="english-cell col-english" data-lang="english">In the summer, there was a [great] drought and great sacrifices for rain [were held, during which] the lighting of fires was not allowed.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秋七月，罢榷酤官，令民得以律占租，卖酒升四钱。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秋季七月，撤销酒类专卖的官员，下令百姓可以依照法律申报纳税，每升酒售价四钱。</td>
+                <td class="english-cell col-english" data-lang="english">In the autumn, the seventh month, the offices of the [government] monopoly dealing in [fermented drinks] were abolished, and it was ordered that the common people should be allowed to testify to [their assessment for] the tax [on the right to sell liquor] in accordance with [the provisions concerning assessments in the legal] code, and should [be allowed to] sell wine at four cash per sheng.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">以边塞阔远，取天水、陇西、张掖郡各二县，置金城郡。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">由于边塞地域辽阔偏远，从天水、陇西、张掖三郡各划出两个县，设置金城郡。</td>
+                <td class="english-cell col-english" data-lang="english">Because the barrier at the borders was distant and far-removed, two prefectures were taken from each of T'ien-shui, Lung-hsi, and Chang-yi Commanderies, and [out of them] there was established Chin-ch'eng Commandery.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">诏曰：“钩町侯毋波率其君长、人民击反者，斩首捕虏有功。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">下诏说：“钩町侯毋波率领其首领、部众攻打反叛者，斩杀俘获敌人有功。</td>
+                <td class="english-cell col-english" data-lang="english">An imperial edict said, "The Marquis of Kou-t'ing, Wu Po, has distinguished himself by leading his chiefs and people in attacking the rebel [southwestern barbarians] and by cutting off heads and taking captives.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其立毋波为钩町王。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">现立毋波为钩町王。</td>
+                <td class="english-cell col-english" data-lang="english">Let Wu Po be established as the King of Kou-t'ing.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">大鸿胪广明将率有功，赐爵关内侯，食邑。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">大鸿胪田广明身为将领有功，赐予关内侯爵位，给予食邑。”</td>
+                <td class="english-cell col-english" data-lang="english">The Grand Herald, [T'ien] Kuang-ming, has distinguished himself as a general and leader; [let] him be granted the rank of Kuan-nei Marquis with the income of an estate."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">元凤元年春，长公主共养劳苦，复以蓝田益长公主汤沐邑。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">元凤元年春季，长公主供养皇帝辛苦劳累，又把蓝田县加封给长公主作为汤沐邑。</td>
+                <td class="english-cell col-english" data-lang="english">In [the period] Yüan-feng, the first year, in the spring, [because] the Elder Princess, [the Princess of O-yi], had served and cared for [the young Emperor] and had toiled and suffered, the private estate of the Elder Princess was again increased [by the addition of Lan-t'ien [Prefecture].</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">泗水戴王前甍，以毋嗣，国除。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">泗水戴王此前去世，因为没有后代，封国被废除。</td>
+                <td class="english-cell col-english" data-lang="english">King Tai of Szu-shui, [Liu Ho], had previously died; because he was not [said to have] had any heirs, his kingdom had been disestablished.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后宫有遗腹子煖，相、内史不奏言，上闻而怜之，立煖为泗水王。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他的后宫有遗腹子刘煖，该国的相、内史没有上奏报告，皇帝听说后怜悯他，立刘煖为泗水王。</td>
+                <td class="english-cell col-english" data-lang="english">[But a lady of his] harem had given birth to his posthumous child, [Liu] Huan, [about whom the deceased king's] Chancellor and Prefect of the Capital had not memorialized nor said [anything]. The Emperor heard [of the child] and had compassion upon him, [so he] set up [Liu] Huan as the King of Szu-shui;</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">相、内史皆下狱。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">相、内史都被关进监狱。</td>
+                <td class="english-cell col-english" data-lang="english">the Chancellor and the Prefect of the Capital were both sent to prison.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">三月，赐郡国所选有行义者涿郡韩福等五人帛，人五十匹，遣归。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">三月，赏赐各郡国所选送的有品行道义的涿郡人韩福等五人布帛，每人五十匹，送他们回家。</td>
+                <td class="english-cell col-english" data-lang="english">In the third month, grants of fifty bolts of silk were made to each of those who had been selected by the commanderies and kingdoms as having [shown good] conduct and laudable [deeds, viz.:] to Han Fu from Cho Commandery and others, five persons [in all. They were then] sent home.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">诏曰：“朕闵劳以官职之事，其务修孝、弟以孝乡里。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">下诏说：“我怜悯他们被官职事务所劳累，希望他们致力于修养孝、悌之道来教化乡里。</td>
+                <td class="english-cell col-english" data-lang="english">An imperial edict said, "We are saddened [at the thought] that they should be made to toil at the affairs of official position. Let them apply themselves to the cultivation of filial devotion and brotherly respectfulness in order to instruct their districts and hamlets.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">令郡、县常以正月赐羊、酒。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">命令各郡、县常年在正月赏赐羊、酒给他们。</td>
+                <td class="english-cell col-english" data-lang="english">[Let it be] ordered that the commanderies and prefectures shall regularly grant them, in the first month, a sheep and wine,</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">有不幸者赐衣被一袭，祠以中牢。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">有去世的，赏赐一套衣被，用中牢之礼祭祀。”</td>
+                <td class="english-cell col-english" data-lang="english">and, when the [final] untoward event happens [to them, let them be] granted a complete suit of [burial] clothes and [let] a ram and a boar be sacrificed to them."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">武都氐人反，遣执金吾马适建、龙额侯韩增、大鸿胪广明将三辅、太常徒，皆免刑击之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">武都郡的氐人反叛，派遣执金吾马适建、龙额侯韩增、大鸿胪田广明率领三辅、太常的刑徒，都赦免他们的刑罚，派他们去攻打反叛者。</td>
+                <td class="english-cell col-english" data-lang="english">The Ti [barbarians] in Wu-tu [Commandery] rebelled; [the Emperor] sent to attack [the rebels] the Chief of Palace Police in the Capital, Ma-shih Chien, the Marquis of Lung-lo, Han Tseng, and the Grand Herald, [T'ien] Kuang-ming, leading convicts [from the districts under the control of] the Three Adjuncts and the Grand Master of Ceremonies, all of which [convicts] were freed from punishment.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夏六月，赦天下。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">夏季六月，大赦天下。</td>
+                <td class="english-cell col-english" data-lang="english">In the summer, the sixth month, an amnesty [was granted] to the empire.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秋七月乙亥晦，日有蚀之，既。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秋季七月乙亥日是月末，发生日食，是日全食。</td>
+                <td class="english-cell col-english" data-lang="english">In the autumn, the seventh month, on [the day] chi-hai, the last day of the month, there was an eclipse of the sun and it was total.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">八月，改始元为元凤。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">八月，把始元年号改为元凤年号。</td>
+                <td class="english-cell col-english" data-lang="english">In the eighth month, [the Emperor] changed [the year-period] Shih-yüan to be Yüan-feng.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">九月，鄂邑长公主、燕王旦与左将军上官桀、桀子票骑将军安、御史大夫桑弘羊皆谋反，伏诛。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">九月，鄂邑长公主、燕王刘旦和左将军上官桀、上官桀的儿子骠骑将军上官安、御史大夫桑弘羊都谋反，被处死。</td>
+                <td class="english-cell col-english" data-lang="english">In the ninth month, the Elder Princess of O-yi and the King of Yen, [Liu] Tan, who had plotted rebellion with the General of the Left, Shang-kuan Chieh, [with] the son of [Shang-kuan] Chieh, the General of Agile Cavalry, [Shang-kuan] An, and with the Grandee Secretary, Sang Hung-yang, all suffered execution.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">初，桀、安父子与大将军光争权，欲害之，诈使人为燕王旦上书言光罪。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">起初，上官桀、上官安父子和大将军霍光争夺权力，想要加害他，假意让人以燕王刘旦的名义上书告发霍光的罪过。</td>
+                <td class="english-cell col-english" data-lang="english">Previously, [Shang-kuan] Chieh and [Shang-kuan] An, father and son, had contested for power with the General-in-chief, [Ho] Kuang. They wished to kill him, so had falsely caused someone to write a petition from the King of Yen, [Liu] Tan, to the Emperor, telling of [Ho] Kuang's crimes.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">时上年十四，觉其诈。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时皇帝十四岁，察觉其中有诈。</td>
+                <td class="english-cell col-english" data-lang="english">At that time the Emperor was in his fourteenth year, [but] he had perceived its falsity.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后有谮光者，上辄怒曰：“大将军国家忠臣，先帝所属，敢有谮毁者，坐之。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来有人诋毁霍光，皇帝就发怒说：“大将军是国家的忠臣，是先帝托付的人，敢有诋毁他的，要治罪。”</td>
+                <td class="english-cell col-english" data-lang="english">Later, when someone had slandered [Ho] Kuang, the Emperor had immediately become angry and said, "The General-in-chief, [Ho Kuang], is [the most] faithful minister of the government and was the one to whom the late Emperor [Wu] entrusted [the empire]; whoever dares to slander or speak evil of him shall be sentenced [to punishment]."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">光由是得尽忠。语在燕王、霍光《传》。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">霍光因此能够竭尽忠诚。这件事记载在《燕王传》《霍光传》中。</td>
+                <td class="english-cell col-english" data-lang="english">From that [time on, Ho] Kuang had been able [to carry out] completely [whatever his sense of] loyalty [prompted]. A discussion is in the "Memoirs of the King of Yen, [Liu Tan]," and "of Ho Kuang."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">冬十月，诏曰：“左将军安阳侯桀、票骑将军桑乐侯安、御史大夫弘羊皆数以邪枉干辅政，大将军不听，而怀怨望，与燕王通谋，置驿往来相约结。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">冬季十月，下诏说：“左将军安阳侯上官桀、骠骑将军桑乐侯上官安、御史大夫桑弘羊都多次用奸邪不正的手段干预辅政事务，大将军不听从他们，他们就心怀怨恨，和燕王勾结谋划，设置驿站相互往来约定勾结。</td>
+                <td class="english-cell col-english" data-lang="english">In the winter, the tenth month, an imperial edict said, "The General of the Left, the Marquis of An-yang, [Shang-kuan] Chieh, the General of Agile Cavalry, the Marquis of Sang-lo, [Shang-kuan] An, and the Grandee Secretary, [Sang] Hung-yang, have all sought several times to assist in the government with evil and crooked [intentions]; when the General-in-chief, [Ho] Kuang, did not listen [to them], they cherished grudges and discontentment against him. They communicated and plotted with the King of Yen, [Liu] Tan, established post relays going and coming, and made a mutual covenant and agreement with the King of Yen, [Liu] Tan,"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">燕王遣寿西长、孙纵之等赂遗长公主、丁外人、谒者杜延年、大将军长史公孙遗等，交通私书，共谋令长公主置酒，伏兵杀大将军光，征立燕王为天子，大逆不道。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">燕王派遣寿西长、孙纵之等人贿赂赠送财物给长公主、丁外人、谒者杜延年、大将军长史公孙遗等，暗中传递私人书信，共同谋划让长公主设置酒宴，埋伏士兵杀死大将军霍光，征召拥立燕王为天子，大逆不道。</td>
+                <td class="english-cell col-english" data-lang="english">who sent Shou-hsi Ch'ang, Sun Tsung-chih, and others to bribe and offer presents to the Elder Princess, to Ting Wai-jen, to the Internuncio Tu Yen-nien, to the Chief Clerk of the General-in-chief, Kung-sun Yi, and to others. They interchanged secret letters and plotted together to have the Elder Princess [of O-yi] hold a feast [at which] soldiers should be ambushed, [with the purpose of] murdering the General-in-chief, [Ho] Kuang, and summoning and setting up the King of Yen, [Liu] Tan, as the Son of Heaven. It was treason and an inhuman crime.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">故稻田使者燕仓先发觉，以告大司农敞，敞告谏大夫延年，延年以闻。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">前稻田使者燕仓首先发觉，把这事告诉大司农杨敞，杨敞告诉谏大夫杜延年，杜延年把这事报告给皇帝。</td>
+                <td class="english-cell col-english" data-lang="english">"The former Commissioner for the Rice Fields, Yen Ts'ang, first detected [the plot] and thereupon informed the Grand Minister of Agriculture, [Yang] Ch'ang. [Yang] Ch'ang told the Grandee Remonstrant, [Tu] Yen-nien. [Tu] Yen-nien reported it,"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">丞相征事任宫手捕斩桀，丞相少史王寿诱将安入府门，皆已伏诛，吏民得以安。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">丞相征事任宫亲手捕捉斩杀上官桀，丞相少史王寿引诱带领上官安进入丞相府门，他们都已经被处死，官吏百姓得以安宁。</td>
+                <td class="english-cell col-english" data-lang="english">"and the Lieutenant Chancellor's Consultant, Jen Kung, [with his own] hand captured and beheaded [Shang-kuan] Chieh. The Lieutenant Chancellor's Junior Clerk, Wang [Shan]-shou, induced and led [Shang-kuan] An to enter the gate of [the Lieutenant Chancellor's] yamen. All [of the conspirators] have already suffered execution and the officials and common people have thereby secured peace."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">封延年、仓、宫、寿皆为列侯。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">封杜延年、燕仓、任宫、王寿都为列侯。”</td>
+                <td class="english-cell col-english" data-lang="english">"[Let Tu] Yen-nien, [Yen] Ts'ang, [Jen] Kung, and [Wang Shan]-shou all be enfeoffed as marquises."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">又曰：“燕王迷惑失道，前与齐王子刘泽等为逆，抑而不扬，望王反道自新，今乃与长公主及左将军桀等谋危宗庙。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">又说：“燕王糊涂背离正道，以前和齐王的儿子刘泽等人叛乱，（朝廷）压制而不张扬，希望燕王能回心转意改过自新，现在竟然和长公主以及左将军上官桀等人谋划危害宗庙。</td>
+                <td class="english-cell col-english" data-lang="english">It also said, "The King of Yen, [Liu] Tan, was deluded and lost the [right] Way. He had formerly committed treason with Liu Tsê, the [grand]-son of the King of Ch'i, [Liu Chiang-lü], and others, [which matter] was repressed and not made public, hoping that the King would mend his ways and reform himself. But now he, with the Elder Princess, and the General of the Left, [Shang-kuan] Chieh, and others, plotted to endanger the [imperial] ancestral temples.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">王及公主皆自伏辜。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">燕王和长公主都自己伏罪。</td>
+                <td class="english-cell col-english" data-lang="english">The King and the Princess have both [caused] themselves to suffer for their crimes."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其赦王太子建、公主子文信及宗室子与燕王、上官桀等谋反父母同产当坐者，皆免为庶人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赦免燕王太子刘建、长公主的儿子文信以及宗室子弟中与燕王、上官桀等人谋反者的父母兄弟应连坐的人，都免为平民。</td>
+                <td class="english-cell col-english" data-lang="english">"Let the King's Heir-apparent, [Liu] Chien, the son of the Princess, [Wang] Wen-hsin, together with the young people of the imperial house who plotted rebellion with the King of Yen, [Liu] Tan, Shang-kuan Chieh, and the others, and their fathers, mothers, brothers, and sisters, who ought to be sentenced [with them], be all dismissed [from their noble ranks and official positions in lieu of execution] and become commoners.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其吏为桀等所诖误，未发觉在吏者，除其罪。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">那些被上官桀等人连累，没有被官吏发现的，免除他们的罪过。”</td>
+                <td class="english-cell col-english" data-lang="english">Let the crimes of those officials who have been deluded and misled by [Shang-kuan] Chieh and the others, which have not yet become known [so as to come] into [the hands of] the officials, be expunged."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">二年夏四月，上自建章宫徙未央宫，大置酒。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">二年夏季四月，皇帝从建章宫迁移到未央宫，大设酒宴。</td>
+                <td class="english-cell col-english" data-lang="english">In the second year, in the summer, the fourth month, the Emperor removed from Chien-chang Palace to Wei-yang Palace. He held a great feast.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赐郎从官帛，及宗室子钱，人二十万。吏民献牛、酒者赐帛，人一匹。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赏赐郎官和侍从官员布帛，以及宗室子弟钱财，每人二十万。官吏百姓中献上牛、酒的人赏赐布帛，每人一匹。</td>
+                <td class="english-cell col-english" data-lang="english">He granted silk to his Gentlemen and his personal attendants and two hundred thousand cash to each son [among members] of the imperial house. To each official or common person who offered an ox and wine he granted one bolt of silk.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">六月，赦天下。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">六月，大赦天下。</td>
+                <td class="english-cell col-english" data-lang="english">In the sixth month, an amnesty [was granted] to the empire.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">诏曰：“朕闵百姓未赡，前年减漕三百万石。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">下诏说：“我怜悯百姓不富足，前年减少漕运三百万石。</td>
+                <td class="english-cell col-english" data-lang="english">and an imperial edict said, "We pity [Our] subjects [because] they have not enough [food]. In previous years [We] have lessened the water transport [of grain] by three million piculs</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">颇省乘舆马及苑马，以补边郡三辅传马。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">适当节省皇帝乘坐的车马和苑囿的马匹，用来补充边郡和三辅的驿马。</td>
+                <td class="english-cell col-english" data-lang="english">and have reduced considerably the horses [required] for [Our] carriages and conveyances, together with the horses of [the imperial] pastures, in order to supply transport horses for the border commanderies and for the three capital commanderies.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其令郡国毋敛今年马口钱，三辅、太常郡得以叔、粟当赋。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">命令各郡国不要征收今年的马口钱，三辅、太常郡可以用豆类、粟米充当赋税。”</td>
+                <td class="english-cell col-english" data-lang="english">Let it be ordered that the commanderies and kingdoms shall not collect this year's poll-[tax] in cash on horses and that [the people in] the commanderies [under the charge of] the Three Adjuncts and the Grand Master of Ceremonies shall be allowed to use beans or cereals in [payment] of the military taxes [instead of cash]."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">三年春正月，泰山有大石自起立，上林有柳树枯僵自起生。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">三年春季正月，泰山有大石自己竖起来，上林苑有枯萎僵死的柳树自己复活生长。</td>
+                <td class="english-cell col-english" data-lang="english">In the third year, in the spring, the first month, in T'ai-shan [Commandery], there was a large stone that rose and stood upright of itself and in Shang-lin [Park] a willow tree that had been withered and had fallen down rose up of itself and came to life.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">罢中牟苑赋贫民。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">撤销中牟苑，把它的土地分给贫民。</td>
+                <td class="english-cell col-english" data-lang="english">Chung-mou Park was abolished and [its land] was distributed among the poor people.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">诏曰：“乃者民被水灾，颇匮于食，朕虚仓廪，使使者振困乏。其止四年毋漕。三年以前所振贷，非丞相、御史所请，边郡受牛者勿收责。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">下诏说：“前段时间百姓遭受水灾，粮食很缺乏，我拿出仓库里的粮食，派使者赈济困乏的人。停止四年的漕运。三年以前所赈贷的粮食，不是丞相、御史所请求的，边郡接受牛的人不用偿还。”</td>
+                <td class="english-cell col-english" data-lang="english">An imperial edict said, "乃者民被水灾，颇匮于食，朕虚仓廪，使使者振困乏。其止四年毋漕。三年以前所振贷，非丞相、御史所请，边郡受牛者勿收责。"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夏四月，少府徐仁、廷尉王平、左冯翊贾胜胡皆坐纵反者，仁自杀，平、胜胡皆要斩。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">夏季四月，少府徐仁、廷尉王平、左冯翊贾胜胡都因放纵反叛者而获罪，徐仁自杀，王平、贾胜胡都被腰斩。</td>
+                <td class="english-cell col-english" data-lang="english">In the summer, the fourth month, the Privy Treasurer, Hsü Jen, the Commandant of Justice, Wang P'ing, and the Eastern Supporter, Chia Sheng-hu, were all sentenced for having [purposely] freed a rebel. [Hsü] Jen committed suicide; [Wang] P'ing and [Chia] Sheng-hu were both cut in two at the waist.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">冬，辽东乌桓反，以中郎将范明友为度辽将军，将北边七郡，郡二千骑击之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">冬季，辽东乌桓反叛，任命中郎将范明友为度辽将军，率领北部边疆七郡的军队，每郡二千骑兵攻打他们。</td>
+                <td class="english-cell col-english" data-lang="english">In the winter, the Wu-huan of Liao-tung [Commandery] rebelled. The General of the Gentlemen-of-the-Household, Fan Ming-yu, was made the General Who Crosses the Liao [River], and, leading two thousand cavalry from each of the seven commanderies at the northern border, he attacked [the Wu-huan].</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">四年春正月丁亥，帝加元服，见于高庙。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">四年春季正月丁亥日，皇帝举行加冠礼，拜谒高祖庙。</td>
+                <td class="english-cell col-english" data-lang="english">In the fourth year, in the spring, the first month, on [the day] ting-hai, the Emperor put on the bonnet of virility and was presented in the Temple of [Emperor] Kao.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赐诸侯王、丞相、大将军、列侯、宗室下至吏、民金、帛、牛、酒各有差。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赏赐诸侯王、丞相、大将军、列侯、宗室直至官吏、百姓金钱、布帛、牛、酒各有差别。</td>
+                <td class="english-cell col-english" data-lang="english">He granted to the vassal kings, to the Lieutenant Chancellor, [T'ien Ch'ien-ch'iu], to the General-in-chief, [Ho] Kuang, to the marquises, to the [members of] the imperial house, on down to the officials and common people, money, silk, oxen, and wine, to each proportionately.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赐中二千石以下及天下民爵。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赏赐中二千石以下官员及天下百姓爵位。</td>
+                <td class="english-cell col-english" data-lang="english">He granted to [officials ranking at] fully two thousand piculs and lower, together with the common people of the empire, noble ranks.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">毋收四年、五年口赋。三年以前逋更赋未入者，皆勿收。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">不征收四年、五年的人口税。三年以前拖欠的更赋没有缴纳的，都不再征收。</td>
+                <td class="english-cell col-english" data-lang="english">[He ordered that] the poll-money for the fourth and fifth years [of Yüan-feng] should not be collected and that [from] all those who had avoided [payment in lieu of] military service or whose military taxes for the third year [of Yüan-feng] or earlier had not yet been paid, [these payments] should not be collected.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">令天下酺五日。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">命令天下百姓聚饮五天。</td>
+                <td class="english-cell col-english" data-lang="english">He ordered that the whole empire should [be allowed to] drink during five days.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">甲戌，丞相千秋薨。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">甲戌日，丞相田千秋去世。</td>
+                <td class="english-cell col-english" data-lang="english">On [the day] chia-hsü, the Lieutenant Chancellor, [T'ien] Ch'ien-ch'iu, died.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夏四月，诏曰：“度辽将军明友前以羌骑校尉将羌王、侯、君、长以下击益州反虏，后复率击武都反氐，今破乌桓，斩虏获生，有功。其封明友为平陵侯。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">夏季四月，下诏说：“度辽将军范明友以前以羌骑校尉的身份率领羌王、侯、君、长以下攻打益州反叛的敌人，后来又率军攻打武都反叛的氐人，现在打败乌桓，斩杀俘虏敌人，有功劳。封范明友为平陵侯。</td>
+                <td class="english-cell col-english" data-lang="english">In the summer, the fourth month, an imperial edict said, "The General Who Crosses the Liao [River, Fan] Ming-yu, as the Chief Commandant of Ch'iang Cavalry, led the Ch'iang King, marquises, baronets, chiefs, and their subordinates to attack the rebellious caitiffs of Yi Province; later he again led them to attack the rebellious Ti [barbarians] of Wu-tu [Commandery]; he has now routed the Wu-huan, cutting off the heads of the caitiffs and taking prisoners alive, [thus] distinguishing himself. Let [Fan] Ming-yu be enfeoffed as Marquis of P'ing-ling.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平乐监傅介子持节使，诛斩楼兰王安，归首县北阙，封义阳侯。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平乐监傅介子持节出使，诛杀楼兰王安，把他的首级带回悬挂在北阙，封傅介子为义阳侯。”</td>
+                <td class="english-cell col-english" data-lang="english">The Superintendent of the P'ing-lo [Stables], Fu Chieh-tzu, as an envoy with credentials, has executed and beheaded the King of Lou-lan, An-kuei, whose head has been hung at the North Portal [of the imperial Palace. Let] him be enfeoffed as the Marquis of Yi-yang."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">五月丁丑，孝文庙正殿火，上及群臣皆素服。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">五月丁丑日，孝文庙正殿失火，皇帝和群臣都穿素服。</td>
+                <td class="english-cell col-english" data-lang="english">In the fifth month, on [the day] ting-ch'ou, the main hall in the Temple of [Emperor] Hsiao-wen burnt. The Emperor, together with his courtiers, all wore plain [mourning] robes.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">发中二千石将五校作治，六月成。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">派遣中二千石官员率领五校士卒修建，六月完工。</td>
+                <td class="english-cell col-english" data-lang="english">He mobilized the officials [ranking at] fully two thousand piculs, leading the five managers, to [re]build and repair it; on the sixth day, it was completed.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太常及庙令、丞、郎吏皆劾大不敬，会赦，太常轑阳侯德免为庶人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">太常及庙令、丞、郎吏都被弹劾犯了大不敬之罪，适逢大赦，太常轑阳侯德被免为平民。</td>
+                <td class="english-cell col-english" data-lang="english">The Grand Master of Ceremonies, together with the Prefect, the Assistant, the Gentlemen, and the officials of the Temple, were all impeached as having been extremely disrespectful. It happened that there was an amnesty, [so] the Grand Master of Ceremonies, the Marquis of Liao-yang, [Chiang] Tê, was [merely] dismissed and became a commoner.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">六月，赦天下。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">六月，大赦天下。</td>
+                <td class="english-cell col-english" data-lang="english">In the sixth month, an amnesty [was granted] to the empire.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">五年春正月，广陵王来朝，益国万一千户，赐钱二千万，黄金二百斤，剑二，安车一，乘马二驷。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">五年春季正月，广陵王来朝见，增加封国一万一千户，赏赐钱二千万，黄金二百斤，剑二把，安车一辆，四匹马的马车二辆。</td>
+                <td class="english-cell col-english" data-lang="english">In the fifth year, in the spring, the first month, the King of Kuang-ling, [Liu] Hsü, came to pay court; his kingdom was increased by eleven thousand families and he was granted twenty million cash, two hundred catties of actual gold, two swords, one comfortable carriage with seats, and two quadriga of horses.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夏，大旱。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">夏季，大旱。</td>
+                <td class="english-cell col-english" data-lang="english">In the summer, there was a [great] drought.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">六月，发三辅及郡国恶少年吏有告劾亡者，屯辽东。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">六月，征发三辅及郡国里有被告发弹劾而逃亡的恶少年，屯驻辽东。</td>
+                <td class="english-cell col-english" data-lang="english">In the sixth month, the evil young people about whom the officials had been informed and who had been accused, but had absconded, were sent out from the three capital commanderies together with the [other] commanderies and kingdoms to the encampments in Liao-tung [Commandery].</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秋，罢象郡，分属郁林、牂柯。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秋季，撤销象郡，把它的土地分属郁林、牂柯郡。</td>
+                <td class="english-cell col-english" data-lang="english">In the autumn, Hsiang Commandery was abolished and [its territory] was divided and incorporated in Yü-lin and Tsang-k'o [Commanderies].</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">冬十一月，大雷。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">冬季十一月，有大雷。</td>
+                <td class="english-cell col-english" data-lang="english">In the winter, the eleventh month, there were great [bursts of] thunder;</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">十二月庚戌，丞相薨。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">十二月庚戌日，丞相王欣去世。</td>
+                <td class="english-cell col-english" data-lang="english">in the twelfth month, on [the day] keng-hsü, the Lieutenant Chancellor, [Wang] Hsin, died.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">六年春正月，募郡国徒筑辽东、玄菟城。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">六年春季正月，招募郡国的刑徒修筑辽东、玄菟城。</td>
+                <td class="english-cell col-english" data-lang="english">In the sixth year, in the spring, the first month, convicts of the commanderies and kingdoms were solicited to build city walls in Liao-tung and Hsüan-t'u [Commanderies].</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夏，赦天下。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">夏季，大赦天下。</td>
+                <td class="english-cell col-english" data-lang="english">In the summer, an amnesty [was granted] to the empire.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">诏曰：“夫谷贱伤农，今三辅、太常谷减贱，其令以叔、粟当赋。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">下诏说：“粮食价格低会伤害农民，现在三辅、太常地区的粮食价格降低，命令用豆类、粟米充当赋税。</td>
+                <td class="english-cell col-english" data-lang="english">An imperial edict said, "Verily, when grain is cheap, it injures agriculture. Now the grain [in the districts of] the Three Adjuncts and the Grand Master of Ceremonies is getting lower and cheaper [in price]. Let it be ordered that beans and cereals may be used to take the place of this year's military taxes.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">右将军张安世宿卫忠谨，封富平侯。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">右将军张安世在宫中值宿警卫忠诚谨慎，封他为富平侯。”</td>
+                <td class="english-cell col-english" data-lang="english">The General of the Right, Chang An-shih, has constantly been on guard and has been loyal and diligent; [let him] be enfeoffed as the Marquis of Fu-p'ing."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">乌桓复犯塞，遣度辽将军范明友击之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">乌桓再次侵犯边塞，派遣度辽将军范明友攻打他们。</td>
+                <td class="english-cell col-english" data-lang="english">The Wu-huan again violated the frontier; the General Who Crosses the Liao [River], Fan Ming-yu, was sent to attack them.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">元平元年春二月，诏曰：“天下以农、桑为本。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">元平元年春季二月，下诏说：“天下以农业、桑业为根本。</td>
+                <td class="english-cell col-english" data-lang="english">In [the period] Yuan-p'ing, the first year, in the spring, the second month, an imperial edict said, "The empire considers agriculture and sericulture to be the fundamental [activities].</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">近日省用，罢不急官，减外徭，耕、桑者益众，而百姓未能家给，朕甚愍焉。其减口赋钱。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">近来节省开支，撤销不急需的官员，减少百姓的徭役，从事耕种、养蚕的人越来越多，但百姓仍不能家家自给，我很怜悯他们。减少人口税的钱。”</td>
+                <td class="english-cell col-english" data-lang="english">Recently [We] have lessened [Our] expenses, have abolished those offices that are not urgently necessary, and have reduced the corvée labor [at places] away from [peoples' homes]. Those who plow and cultivate silkworms have become increasingly many, yet our subjects have not yet been able to have sufficient [food and clothing even] for their homes. We are very solicitous for them. Let the poll-money be reduced."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">有司奏请减什三，上许之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">有关官员上奏请求减少十分之三，皇帝同意了。</td>
+                <td class="english-cell col-english" data-lang="english">The high officials memorialized, begging that it be reduced three-tenths and the Emperor permitted it.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">甲申晨，有流星大如月，众星皆随西行。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">甲申日早晨，有流星大如月亮，众星都跟随它向西运行。</td>
+                <td class="english-cell col-english" data-lang="english">On [the day] chia-shen, at dawn, there was a meteor as large as the moon with a crowd of stars following it and traveling westwards,</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夏四月癸未，帝崩于未央宫。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">夏季四月癸未日，皇帝在未央宫去世。</td>
+                <td class="english-cell col-english" data-lang="english">and in the summer, the fourth month, on [the day] kuei-wei, the Emperor died in Wei-yang Palace.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">六月壬申，葬平陵。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">六月壬申日，安葬在平陵。</td>
+                <td class="english-cell col-english" data-lang="english">In the sixth month, on [the day] jen-shen, he was buried in the P'ing Tomb.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赞曰：昔周成以孺子继统，而有管、蔡四国流言之变。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赞曰：从前周成王以幼童继承王位，却有管叔、蔡叔等四国的流言引发的变乱。</td>
+                <td class="english-cell col-english" data-lang="english">In eulogy we say: Anciently [King] Ch'eng of the Chou [dynasty] succeeded to the dynastic line as a child and there occurred the vicissitudes [brought about by] the circulating rumors [spread by the King's Uncles of] Kuan and of Ts'ai in [the rebellion of] the four states;</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">孝昭幼年即位，亦有燕、盍、上官逆乱之谋。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">孝昭帝幼年即位，也有燕王、盖长公主、上官桀等人叛逆作乱的阴谋。</td>
+                <td class="english-cell col-english" data-lang="english">[Emperor] Hsiao-chao took the throne while [still] a youth and there likewise occurred the conspiracy and treasonable rebellion of [the King of] Yen, the [Elder Princess of O-yi, whose husband was the Marquis of] Kai, and Shang-kuan [Chieh and his son, Shang-kuan An].</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">成王不疑周公，孝昭委任霍光，各因其时以成名，大矣哉！</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">周成王不怀疑周公，孝昭帝委任霍光，各自顺应当时的形势而成就美名，太伟大了！</td>
+                <td class="english-cell col-english" data-lang="english">King Ch'eng did not doubt the Duke of Chou; [Emperor] Hsiao-chao had confidence in and put [the government] in charge of Ho Kuang. Each took advantage of the circumstances of their time and thereby made for themselves a fame that is great indeed.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">承孝武奢侈余敝师旅之后，海内虚耗，户口减半，光知时务之要，轻徭薄赋，与民休息。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">继承汉武帝奢侈留下的弊端和连年征战之后，国家空虚消耗，户口减少一半，霍光知道当时事务的关键，减轻徭役和赋税，让百姓休养生息。</td>
+                <td class="english-cell col-english" data-lang="english">[Emperor Hsiao-chao] inherited the evils of extravagance and indulgence remaining from [the rule of Emperor] Hsiao-wu and his military expeditions. [The country] within the [four] seas was depopulated and exhausted, the population was reduced by half. [Ho] Kuang understood the important necessities of the period, so lightened the required public service and reduced the taxes, [thus] giving the people rest and repose.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">至始元、元凤之间，匈奴和亲，百姓充实。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">到始元、元凤年间，匈奴和亲，百姓富足。</td>
+                <td class="english-cell col-english" data-lang="english">During [the periods] Shih-yüan and Yüan-feng, the Huns made peace and friendship and the people became opulent.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">举贤良、文学，问民所疾苦，议盐、铁而罢榷酤，尊号曰“昭”，不亦宜乎！</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">举荐贤良、文学之士，询问百姓的疾苦，商议盐、铁专卖之事并废除酒类专卖，尊号为“昭”，不也是很适宜的吗！</td>
+                <td class="english-cell col-english" data-lang="english">The Capable and Good and the Literary Scholars were recommended [to the imperial court, the government sent to] inquire about what the people suffered from or were distressed by, the [abolition of the government] salt and iron [monopolies] was discussed, and the [government] monopoly dealing in [fermented drinks] was abolished. [The Emperor] was honored with the title Chao (brilliant). Was this not indeed appropriate?</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
+      </main>
+
+      <nav class="chapter-nav">
+        <a href="/book/hanshu/benji/chapter/6/">← 上一章</a>
+        &nbsp; <a href="/book/hanshu/benji/">本纪章节列表</a> &nbsp;
+        <a href="/book/hanshu/benji/chapter/8/">下一章 →</a>
+      </nav>
+
+      <nav class="breadcrumb">
+        <a href="/">首页</a> &gt; 
+        <a href="/book/hanshu/">汉书</a> &gt; 
+        <a href="/book/hanshu/benji/">本纪</a> &gt;
+        第7章 纪-昭帝纪
+      </nav>
+
+      <footer>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
+      </footer>
+    </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

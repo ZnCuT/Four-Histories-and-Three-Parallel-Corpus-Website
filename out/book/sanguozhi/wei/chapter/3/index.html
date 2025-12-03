@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>三国志 — 第3章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <header>
+        <h1>三国志 — 第3章 三国志-任峻传</h1>
+      </header>
+
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
+
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">任峻字伯达,河南中牟人也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">任峻字伯达,河南郡中牟县人。</td>
+                <td class="english-cell col-english" data-lang="english">Ren Jun, also known as Boda, was a native of Zhongmou in Henan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">汉末扰乱,关东皆震。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉朝末年,四方骚乱不宁,关东地区都受到震动。</td>
+                <td class="english-cell col-english" data-lang="english">When the turbulence broke out at the end of the Eastern Han Dynasty, the people in the Guandong region were all in panic.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">中牟令杨原愁恐,欲弃官走。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">中牟县令杨原忧愁恐惧,打算弃官逃走。</td>
+                <td class="english-cell col-english" data-lang="english">Yang Yuan, magistrate of Zhongmou was terrified, and wanted to give up his office to escape.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">峻说原日:"董卓首乱,天下莫不侧目,然而未有先发者,非无其心也,势未敢耳。"</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">任峻劝杨原说:"董卓首倡暴乱,天下没有谁不对他侧目而视的,然而至今不见有人发兵讨伐,倒并不是人们没有诛乱之心,而是迫于形势严峻不敢轻举妄动罢了。"</td>
+                <td class="english-cell col-english" data-lang="english">Ren Jun persuaded him,"Dong Zhuo started the trouble. No one approves of him in the empire. However, up to now no one has taken the initiative to fight against him. It is not that they have no intention to do so, but they do not dare to."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">明府若能唱之,必有和者。"</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">您如果能率先倡义勤王,一定会有人起来响应。"</td>
+                <td class="english-cell col-english" data-lang="english">If you take the lead and advocate it, I am sure there will be responses."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">原日:"为之奈何?"</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">杨原问:"应该怎么办呢?"</td>
+                <td class="english-cell col-english" data-lang="english">Yang Yuan asked,"What should I do?"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">峻日:"今关东有十余县,能胜兵者不减万人,若权行河南尹事,总而用之,无不济矣。"</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">任峻说:"现在关东有十多个县,能打仗的不少于一万人,若肯权宜行使河南尹的权力,把他们集中起来加以任用,就没有办不成的事了。"</td>
+                <td class="english-cell col-english" data-lang="english">Ren Jun said,"Now there are over ten counties in the Guandong region, and the number of soldiers able to fight should be over a hundred thousand. If you can temporarily take the position of governor of the suburban districts of the capital, and then gather them for use, nothing will be difficult for you."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">原从其计,以峻为主簿。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">杨原听从了任峻的筹划,任命他为主簿。</td>
+                <td class="english-cell col-english" data-lang="english">Yang Yuan followed his advice, and appointed Ren Jun his head secretary.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">峻乃为原表行尹事,使诸县坚守,遂发兵。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">任峻便替杨原上表朝廷请求暂时代理河南尹,传檄各县坚守自己的领地,于是发兵征讨董卓。</td>
+                <td class="english-cell col-english" data-lang="english">Afterwards, Ren Jun sent a memorial to the court to apply for the position of the governor for Yang Yuan. Yang Yuan then ordered the counties to firmly defend themselves against attacks, and dispatched the troops to fight against Dong Zhuo.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">会太祖起关东,人中牟界,众不知所从,峻独与同郡张奋议,举郡以归太祖。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">恰好曹操从关东起兵,进入中牟县界,当地人不知道该归附谁,只有任峻与同郡的张奋计议,率全郡归顺曹操。</td>
+                <td class="english-cell col-english" data-lang="english">Right at this moment, Grand Ancestor initiated his troop from Guandong and entered Zhongmou. The people there did not know who they should follow. Ren Jun alone discussed the situation with Zhang Fen, a man of the same prefecture, and led the people of the whole prefecture to follow Grand Ancestor.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">峻又别收宗族及宾客家兵数百人,愿从太祖。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">任峻另外又召集自己宗族、宾客以及家丁一共几百人,希望跟随曹操。</td>
+                <td class="english-cell col-english" data-lang="english">Ren Jun again gathered several hundred soldiers of his clan, guests and family defenders, who were willing to follow Grand Ancestor.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太祖大悦,表峻为骑都尉,妻以从妹,甚见亲信。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">曹操非常高兴,上表任命任峻为骑都尉,并将自己的堂妹嫁给她,对他十分亲近信任。</td>
+                <td class="english-cell col-english" data-lang="english">Grand Ancestor was delighted, and memorialized this by applying for the position of cavalry captain for Ren Jun. Grand Ancestor also gave his cousin in marriage to Ren Jun and treated him intimately.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太祖每征伐,峻常居守以给军。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">曹操每次出征,任峻总是留在后方主管部队的给养。</td>
+                <td class="english-cell col-english" data-lang="english">Every time, Grand Ancestor went on an expedition, Ren Jun defended the headquarters and provided grain and fodder for the army.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">是时岁饥旱,军食不足,羽林监颍川枣祗建置屯田,太祖以峻为典农中郎将,募百姓屯田于许下,得谷百万斛,郡国列置田官,数年中所在积粟,仓廪皆满。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时正赶上饥荒干旱的年景,军粮不足,朝廷羽林监颍川人枣祗建议开设屯田,曹操便命任峻为典农中郎将,招募百姓在许昌周围屯田,收获粮食达到百万斛,各郡都设置屯田官,几年间凡有屯田的地方都积贮了粮食,仓库都堆满了。</td>
+                <td class="english-cell col-english" data-lang="english">That year suffered a famine, so there was not enough grain for the army. Zao Zhi of Yingchuan, an imperial guard supervisor, suggested agricultural production with garrison troops. Grand Ancestor appointed Ren Jun to agricultural commander, a position which required him to recruit farmers to engage in agricultural production in the surrounding districts of Xu. He harvested a million hu of grain in that year. The prefectural states all established the official position for agricultural production with garrison troops. In several years, the accumulation of grain filled up all the barns.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">官渡之战,太祖使峻典军器粮运。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">官渡之战,曹操命任峻主管军用器械和粮食的运输。</td>
+                <td class="english-cell col-english" data-lang="english">In the Battle of Guandu, Grand Ancestor put Ren Jun in charge of transportation of weapons and grain.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">贼数寇抄绝粮道,乃使千乘为一部,十道方行,为复阵以营卫之,贼不敢近。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">敌人几次截断粮道,任峻便以一千辆车为一部,列成十路方队,使阵势重叠拱卫粮车,敌人不敢靠近。</td>
+                <td class="english-cell col-english" data-lang="english">The enemy blocked the roads several times, and Ren Jun organized a thousand carts into a unit which moved in ten columns and was guarded on the outside by more columns of soldiers. The enemy dared not approach this transportation team.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">军国之饶,起于枣祗而成于峻。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">军队和国库能够粮食充足,最初是依靠枣祗的屯田而最终的成功却是全凭任峻的努力。</td>
+                <td class="english-cell col-english" data-lang="english">The wealth of the army and the empire was acquired originally by Zao Zhi, but later it received an enormous contribution by Ren Jun.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太祖以峻功高,乃表封为都亭侯,邑三百户,迁长水校尉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">曹操认为任峻功劳很大,于是上表封他为都亭侯,食邑三百户,升长水校尉。</td>
+                <td class="english-cell col-english" data-lang="english">Grand Ancestor thought Ren Jun had made great contributions and memorialized him by recommending him for Marquis of Duting. With three hundred households as his emoluments, he was promoted to the colonel of Changshui.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">峻宽厚有度而见事理,每有所陈,太祖多善之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">任峻待人宽厚有器量,通晓事理,每次有所建议,曹操大多很满意。</td>
+                <td class="english-cell col-english" data-lang="english">Ren Jun was generous, tolerant and rational. Each time he reported, Grand Ancestor more often agreed to and was satisfied with what he related.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">于饥荒之际,收恤朋友孤遗,中外贫宗,周急继乏,信义见称。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">饥荒时节,他收养抚恤朋友的遗孤,对贫困的中表亲戚和本族同宗,也总是大力救助急难,周济贫乏,信义为人所称道。</td>
+                <td class="english-cell col-english" data-lang="english">In the famine times, he gathered the orphans of his friends, and helped his poverty-ridden relatives and clan people. His faithfulness and righteousness won praise widely.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">建安九年薨,太祖流涕者久之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">建安九年任峻去世,曹操为他的死曾长时间流泪。</td>
+                <td class="english-cell col-english" data-lang="english">In the ninth year of the Jian'an Period, Ren Jun passed away, and Grand Ancestor shed many tears for his death.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">子先嗣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">任峻之子任先承袭爵位。</td>
+                <td class="english-cell col-english" data-lang="english">His son Ren Xian succeeded to his title.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">先薨,无子,国除。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">任先没有儿子,他死之后,封国被撤销。</td>
+                <td class="english-cell col-english" data-lang="english">When Xian died, he had no son, thus his state was canceled.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">文帝追录功臣,谥峻日成侯。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来文帝追录功臣,追谥任峻为成侯。</td>
+                <td class="english-cell col-english" data-lang="english">When Emperor Wen recorded the meritorious subordinates posthumously, he bestowed on him the posthumous title of Marquis of Success.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">复以峻中子览为关内侯。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">又赐封任峻的次子任览为关内侯。</td>
+                <td class="english-cell col-english" data-lang="english">Again he conferred on his second son Ren Lan Marquis of Guannei.</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
+      </main>
+
+      <nav class="chapter-nav">
+        <a href="/book/sanguozhi/wei/chapter/2/">← 上一章</a>
+        &nbsp; <a href="/book/sanguozhi/wei/">魏书章节列表</a> &nbsp;
+        <a href="/book/sanguozhi/wei/chapter/4/">下一章 →</a>
+      </nav>
+
+      <nav class="breadcrumb">
+        <a href="/">首页</a> &gt; 
+        <a href="/book/sanguozhi/">三国志</a> &gt; 
+        <a href="/book/sanguozhi/wei/">魏书</a> &gt;
+        第3章 三国志-任峻传
+      </nav>
+
+      <footer>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
+      </footer>
+    </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

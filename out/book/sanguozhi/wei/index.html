@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>魏书 — 三国志</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <header>
+        <h1>三国志 — 魏书</h1>
+      </header>
+
+      <main>
+        <div class="chapter-list">
+          
+          <div class="chapter-item">
+            <a href="/book/sanguozhi/wei/chapter/1/">
+              <span class="chapter-number">第1章</span>
+              <span class="chapter-title">三国志-乌丸鲜卑传</span>
+            </a>
+          </div>
+          
+          <div class="chapter-item">
+            <a href="/book/sanguozhi/wei/chapter/2/">
+              <span class="chapter-number">第2章</span>
+              <span class="chapter-title">三国志-仓慈传</span>
+            </a>
+          </div>
+          
+          <div class="chapter-item">
+            <a href="/book/sanguozhi/wei/chapter/3/">
+              <span class="chapter-number">第3章</span>
+              <span class="chapter-title">三国志-任峻传</span>
+            </a>
+          </div>
+          
+          <div class="chapter-item">
+            <a href="/book/sanguozhi/wei/chapter/4/">
+              <span class="chapter-number">第4章</span>
+              <span class="chapter-title">三国志-华佗传</span>
+            </a>
+          </div>
+          
+          <div class="chapter-item">
+            <a href="/book/sanguozhi/wei/chapter/5/">
+              <span class="chapter-number">第5章</span>
+              <span class="chapter-title">三国志-杜夔传</span>
+            </a>
+          </div>
+          
+          <div class="chapter-item">
+            <a href="/book/sanguozhi/wei/chapter/6/">
+              <span class="chapter-number">第6章</span>
+              <span class="chapter-title">三国志-武帝纪</span>
+            </a>
+          </div>
+          
+          <div class="chapter-item">
+            <a href="/book/sanguozhi/wei/chapter/7/">
+              <span class="chapter-number">第7章</span>
+              <span class="chapter-title">三国志-王粲传</span>
+            </a>
+          </div>
+          
+          <div class="chapter-item">
+            <a href="/book/sanguozhi/wei/chapter/8/">
+              <span class="chapter-number">第8章</span>
+              <span class="chapter-title">三国志-郑浑传</span>
+            </a>
+          </div>
+          
+          <div class="chapter-item">
+            <a href="/book/sanguozhi/wei/chapter/9/">
+              <span class="chapter-number">第9章</span>
+              <span class="chapter-title">三国志-钟会传</span>
+            </a>
+          </div>
+          
+          <div class="chapter-item">
+            <a href="/book/sanguozhi/wei/chapter/10/">
+              <span class="chapter-number">第10章</span>
+              <span class="chapter-title">三国志-陈思王植传</span>
+            </a>
+          </div>
+          
+        </div>
+      </main>
+
+      <nav class="category-nav">
+        <a href="/book/sanguozhi/">← 返回三国志分类列表</a>
+        <a href="/">← 返回首页</a>
+      </nav>
+
+      <footer>
+        <small>共10章</small>
+      </footer>
+    </div>
+
+    <script>
+      // 导航菜单功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
