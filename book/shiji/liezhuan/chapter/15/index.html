@@ -4,141 +4,760 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>史记 — 第15章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
     <link rel="stylesheet" href="/static/style.css">
   </head>
   <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
       <header>
         <h1>史记 — 第15章 列传 汲郑列传六十</h1>
       </header>
 
-      <main class="parallel">
-        <section>
-          <h3>文言文</h3>
-          <div class="txt">汲黯字长孺，濮阳人也”。其先有宠于古之卫君。至黯十世,世为卿大夫。黯以父任,孝景时为太子洗马,以庄见惮。孝景帝崩,太子即位,黯为谒者。东越相攻,上使黯往视之。不至，至吴而还,报曰：“越人相攻，固其俗然，不足以辱天子之使。”河内失火，延烧千余家，上使黯往视之。还报曰：“家人失火，屋比延烧，不足忧也。臣过河南，河南贫人伤水旱万余家，或父子相食，臣谨以便宜，持节发河南仓粟以振贫民。臣请归节，伏矫制之罪。”上贤而释之，迁为荥阳令。黯耻为令，病归田里。上闻，乃召拜为中大夫。以数切谏，不得久留内，迁为东海太守。黯学黄老之言,治官理民，好清静，择丞史而任之”。其治，责大指而已,不苛小。黯多病，卧闺阁内不出。岁余，东海大治。称之。上闻，召以为主爵都尉,列于九卿。治务在无为而已，弘大体,不拘文法。
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
 
-黯为人性倨,少礼，面折,不能容人之过。合己者善待之，不合己者不能忍见,士亦以此不附焉。然好游侠,任气节,内行修絜,好直谏，数犯主之颜色，常慕傅柏、袁盎之为人也。善灌夫、郑当时及宗正刘弃。亦以数直谏，不得久居位。
-
-当是时，太后弟武安侯蚡为丞相,中二千石来拜谒,蚡不为礼。然黯见蚡未尝拜，常揖之。天子方招文学儒者,上曰“吾欲”云云,黯对曰：“陛下内多欲而外施仁义，奈何欲效唐虞之治乎!”上默然，怒，变色而罢朝。公卿皆为黯惧。上退，谓左右曰：“甚矣，汲黯之戆也!”群臣或数黯，黯曰：“天子置公卿辅弼之臣，宁令从谀承意,陷主于不义乎?且已在其位，纵爱身，奈辱朝廷何!”
-
-黯多病，病且满三月，上常赐告者数,终不愈。最后病，庄助为请告。上曰：“汲黯何如人哉?”助曰：“使黯任职居官,无以逾人。然至其辅少主，守成深坚,招之不来，麾之不去,虽自谓贲、育亦不能夺之矣。”上曰：“然。古有社稷之臣,至如黯，近之矣。”
-
-大将军青侍中,上踞厕而视之。丞相弘燕见,上或时不冠。至如黯见，上不冠不见也。上尝坐武帐中,黯前奏事，上不冠，望见黯，避帐中，使人可其奏。其见敬礼如此。
-
-张汤方以更定律令为廷尉,黯数质责汤于上前，曰：“公为正卿，上不能褒先帝之功业,下不能抑天下之邪心，安国富民，使囹圄空虚，二者无一焉。非苦就行，放析就功,何乃取高皇帝约束纷更之为?公以此无种矣。”黯时与汤论议，汤辩常在文深小苛,黯伉厉守高不能屈,忿发骂曰：“天下谓刀笔吏不可以为公卿,果然。必汤也，令天下重足而立，侧目而视矣!”
-
-是时，汉方征匈奴,招怀四夷。黯务少事，乘上间，常言与胡和亲,无起兵。上方向儒术，尊公孙弘。及事益多,吏民巧弄。上分别文法,汤等数奏决谳以幸。而黯常毁儒，面触弘等徒怀诈饰智以阿人主取容,而刀笔吏专深文巧诋，陷人于罪，使不得反其真，以胜为功。上愈益贵弘、汤，弘、汤深心疾黯，唯天子亦不说也,欲诛之以事。弘为丞相，乃言上曰：“右内史界部中多贵人宗室,难治，非素重臣不能任，请徙黯为右内史。”为右内史数岁，官事不废。
-
-大将军青既益尊，姊为皇后,然黯与亢礼。人或说黯曰：“自天子欲群臣下大将军,大将军尊重益贵，君不可以不拜。”黯曰：“夫以大将军有揖客，反不重邪?”大将军闻，愈贤黯，数请问国家朝廷所疑，遇黯过于平生。
-
-淮南王谋反,惮黯，曰：“好直谏，守节死义，难惑以非。至如说丞相弘,如发蒙振落耳。”
-
-天子既数征匈奴有功,黯之言益不用。
-
-始黯列为九卿,而公孙弘、张汤为小吏。及弘、汤稍益贵，与黯同位，黯又非毁弘、汤等。已而弘至丞相，封为侯;汤至御史大夫;故黯时丞史皆与黯同列,或尊用过之。黯褊心，不能无少望,见上，前言曰：“陛下用群臣如积薪耳，后来者居上。”上默然。有间，黯罢，上曰：“人果不可以无学，观黯之言也日益甚。”
-
-居无何，匈奴浑邪王率众来降,汉发车二万乘。县官无钱,从民贳马。民或匿马，马不具。上怒，欲斩长安令。黯曰：“长安令无罪，独斩黯，民乃肯出马。且匈奴畔其主而降汉,汉徐以县次传之,何至令天下骚动，罢弊中国而以事夷狄之人乎!”上默然。及浑邪至，贾人与市者，坐当死者五百余人四。黯请间，见高门,曰：“夫匈奴攻当路塞,绝和亲，中国兴兵诛之，死伤者不可胜计，而费以巨万百数。臣愚以为陛下得胡人，皆以为奴婢以赐从军死事者家；所卤获，因予之，以谢天下之苦，塞百姓之心。今纵不能，浑邪率数万之众来降，虚府库赏赐，发良民侍养，譬若奉骄子。愚民安知市买长安中物而文吏绳以为阑出财物于边关乎?陛下纵不能得匈奴之资以谢天下，又以微文杀无知者五百余人，是所谓‘庇其叶而伤其枝’者也，臣窃为陛下不取也。”上默然，不许，曰：“吾久不闻汲黯之言，今又复妄发矣。”后数月，黯坐小法，会赦免官。于是黯隐于田园。
-
-居数年，会更五铢钱,民多盗铸钱，楚地尤甚。上以为淮阳,楚地之郊,乃召拜黯为淮阳太守。黯伏谢不受印，诏数强予，然后奉诏。诏召见黯，黯为上泣曰：“臣自以为填沟壑，不复见陛下，不意陛下复收用之。臣常有狗马病，力不能任郡事，臣愿为中郎,出入禁闼，补过拾遗,臣之愿也。"上曰：“君薄淮阳邪?吾今召君矣。顾淮阳吏民不相得，吾徒得君之重,卧而治之。”黯既辞行，过大行李息,曰：“黯弃居郡,不得与朝廷议也。然御史大夫张汤，智足以拒谏，诈足以饰非,务巧佞之语、辩数之辞,非肯正为天下言，专阿主意。主意所不欲，因而毁之；主意所欲，因而誉之。好兴事，舞文法，内怀诈以御主心,外挟贼吏以为威重。公列九卿，不早言之，公与之俱受其缪矣。”息畏汤，终不敢言。黯居郡如故治，淮阳政清。后张汤果败,上闻黯与息言，抵息罪。令黯以诸侯相秩居淮阳。七岁而卒。
-
-卒后，上以黯故，官其弟汲仁至九卿，子汲偃至诸侯相。黯姑姊子司马安亦少与黯为太子洗马。安文深巧善宦,官四至九卿，以河南太守卒。昆弟以安故，同时至二千石者十人。濮阳段宏始事盖侯信,信任宏，宏亦再至九卿。然卫人仕者皆严惮汲黯，出其下。
-
-郑当时者，字庄，陈人也。其先郑君尝为项籍将;籍死,已而属汉。高祖令诸故项籍臣名籍,郑君独不奉诏。诏尽拜名籍者为大夫，而逐郑君。郑君死孝文时。
-
-郑庄以任侠自喜，脱张羽于厄,声闻梁、楚之间。孝景时,为太子舍人。每五日洗沐，常置驿马长安诸郊，存诸故人，请谢宾客,夜以继日，至其明旦，常恐不遍。庄好黄老之言，其慕长者如恐不见。年少官薄，然其游知交皆其大父行,天下有名之士也。武帝立,庄稍迁为鲁中尉、济南太守、江都相,至九卿为右内史。以武安侯、魏其时议,贬秩为詹事,迁为大农令。
-
-庄为大吏,诫门下：“客至，无贵贱无留门者。”执宾主之礼，以其贵下人。庄廉，又不治其产业,仰奉赐以给诸公。然其馈遗人，不过算器食。每朝，候上之间，说未尝不言天下之长者。其推毂士及官属丞史，诚有味其言之也，常引以为贤于己。未尝名吏，与官属言,若恐伤之。闻人之善言，进之上，唯恐后。山东士诸公以此翕然称郑庄。
-
-郑庄使视决河,自请治行五日。上曰：“吾闻‘郑庄行，千里不赍粮’,请治行者何也?”然郑庄在朝，常趋和承意，不敢甚引当否。及晚节,汉征匈奴，招四夷，天下费多，财用益匮。庄任人宾客为大农僦人，多逋负。司马安为淮阳太守，发其事,庄以此陷罪，赎为庶人。顷之，守长史。上以为老，以庄为汝南太守。数岁，以官卒。
-
-郑庄、汲黯始列为九卿,廉，内行修絜。此两人中废,家贫，宾客益落。及居郡，卒后家无余赀财。庄兄弟子孙以庄故，至二千石六七人焉。
-
-太史公曰：夫以汲、郑之贤，有势则宾客十倍，无势则否，况众人乎!下邦翟公有言,始翟公为廷尉,宾客阗门;及废，门外可设雀罗。翟公复为廷尉，宾客欲往，翟公乃大署其门曰：“一死一生，乃知交情；一贫一富，乃知交态；	贵一贱，交情乃见。”汲、郑亦云,悲夫!</div>
-        </section>
-        <section>
-          <h3>现代汉语</h3>
-          <div class="txt">汲黯，字长孺，濮阳县人。他的祖先在战国时曾是魏国附庸卫君的宠臣。从那时到汲黯共十世，世世都官至公卿大夫。在景帝时代，汲黯因为父亲在朝中为官而得保任，做了太子洗马。由于他素来庄重严肃，所以大家对他都很敬畏。孝景帝死后，太子即位，这就是汉武帝，汲黯这时做了为皇帝掌管收发传达的谒者。不久，东南沿海的闽越和东瓯打了起来，武帝派汲黯前往视察。结果汲黯只走到吴国就半道上返回来了，他向武帝报告说：“两个东越小国互相攻击，是他们的常事，用不着烦劳天子的使者前去过问。”后来，河内郡发生了火灾，火势蔓延一连烧了一千多户人家，武帝又派汲黯前去视察。汲黯回来报告说：“老百姓家里失火，挨着烧了一些邻居的房子，用不着朝廷忧虑。但是我在路过洛阳一带的时候，看到那里因为闹水旱使得一万多户贫民受灾，有的甚至饿得一家老小互相吃。面对这种情况，我就凭着您给我的节信，自作主张地下令让河南郡打开了官仓，赈济了那些受灾的贫民。现在我把节信还给您，请求您惩罚我的假传圣旨之罪。”武帝觉得他做得不错，便没有责怪他，并任命他去做荥阳县令。而汲黯觉得当个县令不光彩，于是便借口有病，回家为民了。武帝听说后，就又把他叫回来，让他当了掌管议论的中大夫。但由于汲黯总是爱提意见，惹得武帝心烦，没法在宫廷里呆下去了，因而被外派做了东海郡的太守。汲黯是学习黄老学说的，他做官为政的原则是清静无为，他挑选了几个能干的郡丞、掾史放手让他们去干。他办事只注意大的方面不离谱，不苛求细微末节。他体弱多病，经常躺在屋里不出门。结果过了一年多，把东海郡治理得很好，深受当地人们的称赞。武帝听说后，又把他调回了朝廷，任命他当了主爵都尉，享受九卿待遇。汲黯在朝廷里仍是清静无为，办事只抓大的方面，不拘泥繁文缛节。
-
-汲黯性情高傲，不重礼节，常常当面驳回别人的意见而不留面子，不能容忍别人的过失。合他口味的人他就友好相待，不合他口味的人他连面都不愿见，也正因此使得有些人不爱靠拢他。但是汲黯为人很仗义，有气节，时时不忘自身的修养，喜欢直言，敢提意见，曾多次冒犯过汉武帝。他敬慕以直言敢谏著称的傅柏、袁盎等人，跟灌夫、郑当时以及宗正刘弃是好朋友。他们都是因为好提意见，而闹得好官做不长。
-
-当时，太后的弟弟武安侯田蚡做丞相，那些中二千石一级的高官来拜见他时，田蚡都是不回礼的。只有汲黯来见田蚡时从来不给他下拜，只是作个揖就算了。当时汉武帝正在招纳儒生，大兴礼乐，他刚说“我想……”,汲黯就接过去说：“您总是表面上实行仁义，内里贪婪得很，这怎么能学好唐尧、虞舜的治理国家呢!”顶得汉武帝无言以对，气得脸都变了颜色，宣布罢朝。这时所有的人们都替汲黯捏着一把汗。武帝退朝后，对周围的人说：“汲黯这个牛脾气也太过分了!”有的人私下责备汲黯，汲黯说：“皇上设置三公九卿这些左膀右臂，难道就是为了让我们阿谀奉承、专门看着皇帝的脸色行事，让皇上犯错误吗?我们已经被放在了这个位置上，如果只顾自己保官保命，由于自己未尽职责而给朝廷带来耻辱，那又怎么办呢?”
-
-汲黯经常生病，每当他请病假快满三个月，按照规定将被免官的时候，武帝总是再给他延长一些假期，让他好好休养，但他的病始终没有痊愈。在他最后一次病重时，庄助来替他请假，武帝问庄助：“你看汲黯是个什么样的人?”庄助说：“如果让汲黯做一个一般的官，他不见得有什么地方超过别人。然而如果让他辅佐一个年幼的君主，他一定能够坚守己责，谁也休想让他移动半步。我觉得在这种时刻，他的勇敢是古代的孟贲、夏育也比不了的。”武帝说：“是的。古代有所谓能与国家共存亡的‘社稷之臣',我看汲黯就差不多。”
-
-大将军卫青在宫中侍应，汉武帝有时在厕所里召见他。丞相公孙弘在平常的时候去见汉武帝，汉武帝有时连帽子都不戴。然而要是汲黯前来求见；武帝是不戴好帽子绝不出来的。有一次，武帝在武帐中坐着，远远地看到汲黯有事进来了，当时武帝没戴帽子，于是就急忙躲在了帐后，打发别人出去告诉汲黯，说皇上同意他的意见。汲黯受武帝尊敬的程度竟达到了这种地步。
-
-当时张汤做廷尉，正在重新制定国家的法律，汲黯就多次当着武帝的面责备他，说他：“你作为一位正卿，上不能光大先帝的功业，下不能改造小人的邪心，作为一个圣世的标志，一是国富民安，二是犯罪人少，这两条你一条也没有做到。有些事情你明知不对，可是你还非干不可，你把法律条文弄得非常繁琐，只顾眼前的急功近利，高皇帝当初订好的法令，你怎么能老是乱改呢?你日后恐怕为了这个要祸灭九族。”汲黯经常和张汤争论，张汤熟悉典章制度，说话引经据典，比较细密，而汲黯则主要是凭着耿直正派在大问题上坚持原则，所以根本说不过张汤，于是就气得骂起来：“谁都说千万不能让刀笔吏当大官，看来是一点不错。如果一切事情都按着张汤的主意去办，那就必然要使全国吓得谁也不敢动，谁也不敢正眼看人了!”
-
-当时，汉朝正在对匈奴大肆用兵，同时也在对其他方面的各个少数民族小国开展软硬兼施的各种攻势。而汲黯是主张清静无为的，他希望事情越少越好，他总是借着一切机会劝武帝与匈奴和亲，建议不要动武。而汉武帝当时正喜欢儒术，正在重用公孙弘这个“儒生”。于是便弄得事情越来越多，而下面的吏民们也想尽各种办法来钻国家政策的空子。为整治这种混乱局面，汉武帝就靠着增订法律，严厉镇压，而张汤等人则又趁着帮助皇帝判断疑案向皇帝讨好。与此相反，汲黯则是反儒的，他经常当面斥责公孙弘等人奸诈虚伪，专门以狡猾的手段对皇帝阿谀逢迎，同时斥责张汤等一班刀笔吏专会无限上纲，罗织罪名，使人陷入法网，从而使得整个社会都失去了本性，都在想整倒别人作为自己的功劳。可是汉武帝却越来越重用公孙弘和张汤。由于汲黯总是和他们作对，因此不仅公孙弘和张汤恨他，就连武帝也对他越来越不喜欢，总想找个机会杀了他。这时公孙弘正当丞相，他对汉武帝说：“首都右内史的辖区里由于住着许多达官贵人和皇亲国戚，所以不好管理，非派一位资格老的大臣去不行，是不是可以派汲黯去做右内史。”不料汲黯在那里干了几年，事情还干得不错。
-
-当时大将军卫青的地位是很高的，而且他的姐姐还是皇后，然而汲黯见了卫青却仍是和他平等地见礼。这时，有人就劝汲黯说：“连皇上都希望群臣百官们尊崇大将军，大将军的地位已经是越来越高了，您见了他不能光是作个揖不给他下拜。”汲黯说：“大将军门前有个见了面只和他作揖的客人，就降低他的身分了吗?”卫青听说这话后，越发觉得汲黯为人不错，从此凡国家遇到什么重大疑难问题，总是去向汲黯请教，对待汲黯的态度比以往任何时候都要好。
-
-后来当淮南王刘安阴谋造反时，他不怕别人，就怕汲黯。刘安说：“汲黯敢于提意见，能够坚持节义，宁死不屈，谁也骗不了他。至于收买丞相公孙弘，那就像揭开一层盖布和摇落几片树叶一样容易。”
-
-后来汉武帝在几次征讨匈奴中又连续地获得了一些胜利，因此汲黯的话也就越来越听不进去了。
-
-在当年汲黯为主爵都尉享受“九卿”待遇的时候，公孙弘和张汤都还在当小吏。后来公孙弘和张汤的地位渐渐提高，和汲黯到了同一个等级，汲黯常常批评、斥责他们。又过了些时候，公孙弘当了丞相，而且封了侯；张汤也做了御史大夫；当年汲黯为主爵都尉时那些丞相手下的小吏们今天都和汲黯到了同一个等级，有的比汲黯还高。汲黯心眼窄，因而很自然地产生了一些不满情绪，他在见到汉武帝的时候就走过去说：“陛下您用人的办法就像是堆柴火，越后来的越是在上头。”武帝听了没有作声。过了一会儿，汲黯走了，武帝说：“人的确是不能没有点修养，你们听听汲黯这些话，简直是越来越没个教养了。”
-
-过了不久，匈奴的浑邪王率领着他的部下投降了汉朝，汉朝为了去迎接，要准备两万乘车子。国家没有这么多马，也没有钱买，于是就向长安附近的老百姓借。有些人不愿把自己的马借给国家，就把它藏了起来，因此马总是凑不齐。汉武帝大怒，想杀长安县令。汲黯说：“长安县令没有罪，您只要杀了我这个右内史，老百姓就把马牵出来了。我就不明白，一群匈奴人背叛了他们的主子来投降了我们，我们就让沿途各县给他们提供驿车粮草，让他们慢慢前来不就行了吗?为什么要闹得全国都鸡犬不宁，为什么要这样地耗费我们自己去侍候那些生番化外的人呢!”武帝听了，无话可讲。等到浑邪王到达长安后，长安有些商人因为和匈奴人做买卖，有五百多人被判了死刑。汲黠求见汉武帝，汉武帝抽空在未央宫的高门殿接见了汲黯。汲黯说：“匈奴人进攻我们迎面的关塞，撕毁了和亲协议，我们被迫发兵征讨，为此而死伤的人不计其数，耗费的资财多达几百个亿。原来我想您如果俘虏了匈奴人，一定会把他们当作奴隶赏给那些死在前线的将士之家；缴获来的财物，也会分给他们，因为我想只有这样才能补偿一点百姓们所付出的血的代价，才能安慰一点大家的心。退一步说，即使您做不到这一点，但也总不该拿出府库里所有的钱去赏赐那些被浑邪王带来的几万降兵，让我们的良民百姓去侍奉他们，把他们当成宝贝儿子吧!今天有些无知的百姓们只是在长安城里和匈奴人作了些买卖，他们怎么会想到酷吏们会拿向国外走私的罪名来惩办他们呢?您现在是不仅不能把匈奴人的钱财拿来分给我们的人，还要借着苛碎的法律条文来杀害我们的这五百多个无知的人，这就正是人们常说的那种砍掉了枝干而去保护那些叶子了，我认为您这种做法是绝对不可取的。”武帝听了，当时没有作声，但他的心里根本就不同意，过后他对别人说：“我好久没有听到汲黯说话了，今天又听他胡说了一通。”几个月后，汲黯犯了一点小法，不过正好赶上大赦，于是就以免官完事。从此汲黯就回家乡去隐居田园了。
-
-又过了几年，正赶上汉武帝改换货币，使用五铢钱，当时民间有些人偷着铸造这种钱，在楚地一带问题尤其严重。汉武帝认为淮阳是梁楚之间的交通要冲，非常重要，就派人去找汲黯，任命他做淮阳太守。汲黯趴在地上推辞，不愿接受印信，但汉武帝屡次下诏非让他去不可，汲黯不得已只好接受了。汉武帝召见汲黯，汲黯流着泪对武帝说：“我原以为到死也见不到您了，没想到您又起用了我。但是我多年来一直有病，实在干不了郡太守的差事，我愿意给您做一个中郎，出入在您的周围，随时做点拾遗补缺的事，这是我的心愿。”汉武帝说：“您是嫌淮阳太守的职位低吗?我很快就会把你调回朝廷来的。关键是现在淮阳的官员和那里的百姓们有些矛盾，我只是借用一下你的威名，你去了即使躺在床上不动，那里的局面也会变好的。”汲黯辞别了汉武帝，来到了大行李息这里，汲黯对李息说：“我被打发到了淮阳郡，不能参与朝廷里的事了。请你注意，御史大夫张汤这个人，他有的是智慧，足以驳回任何正当的批评；他有的是诡诈手段，足以为他自己文过饰非。这个人有的是伶牙俐齿，能说会道，但从来不说一句为国为民的话，而只是专门向皇上讨好。凡是皇上不同意的事，他也就跟着竭力诋毁；凡是皇上愿意办的事，他就竭力称赞。他总爱生事，舞文弄法，他内心狡猾专会迎合皇上，外面又有一群恶吏助长着他的威风。您享受着九卿待遇，如果不及早向皇上讲明这些问题，那你将来和他一块都得死。”但李息害怕张汤，始终没敢说话。汲黯到淮阳后还是用过去办事的那套老方法，结果淮阳郡变得很好。后来张汤果然垮台了，当武帝听说汲黯曾对李息说过那番话，就判了李息的罪。并让汲黯以诸侯国相的级别继续做淮阳太守，直到七年后去世。
-
-汲黯去世后，武帝为了褒扬他，任用汲黯的弟弟汲仁做了九卿，汲黯的儿子汲偃后来也做到了诸侯国相。汲黯的姑表兄弟司马安年轻时也和汲黯一起做过太子洗马，但司马安为人酷苛，善于向上爬，曾四次作到九卿，后来死在了河南太守任上。司马安的弟兄们由于司马安的推荐，作官作到二千石的有十个人。汲黯的同乡濮阳人段宏最初曾侍候过盖侯王信，由于王信的保任，段宏也两次作到了九卿。但总的说来，由卫国地区出来作官的人们还是更敬畏汲黯，谁都比不上他。
-
-郑当时，字庄，陈县人。他的先人郑君曾是项羽手下的将领。项羽死后，郑君归顺了汉朝。当时刘邦曾下令让项羽的那些老部下在说话说到项羽时都必须直呼其名。对于这个命令，唯独郑君一个人不肯接受。于是刘邦就把那些直呼项羽名字的人都封为大夫，而把郑君赶走了。郑君死于孝文帝在位的时候。
-
-郑庄喜好仗义行侠，曾帮助梁孝王的将领张羽解脱灾难，在梁国和楚国一带很有声望。孝景帝在位时，曾任郑庄为太子舍人。郑庄每到五天头上该当放假休息的日子，总是在长安郊外预先准备好一些驿马，到时候他就骑着到处去看望旧友，拜访宾客，黑夜白天不停脚地一直忙到第二天早上该去上班的时候，他总是担心对朋友们看望不到。他喜好黄帝、老子的学说，又敬慕长辈，唯恐错过机会见不到。尽管他年轻职位低，但他所结交访问的都是他祖父那么大年龄的天下的名士。武帝即位后，郑庄逐渐升迁，先后做过鲁国的中尉、济南郡的太守和江都国的相，后来又做到了右内史，成为九卿一级。在武安侯田蚡与魏其侯窦婴当朝争辩时，由于郑庄不敢大胆发表意见，被贬为詹事，后来又做了大农令。
-
-郑庄身居高位，经常告诚他的守门人：“凡有客人来访，不论贵贱都要马上通报，不能让人家老在门口等着。”因此不论多么低微的客人到门，他都恭恭敬敬地以礼相待，很能礼贤下士。他为人清廉，又不给自己置办产业增加收入，反靠着领来的那点俸禄和所得到的赏赐供养宾客。由于家里不富裕，他所赠给人的礼物，也就是用竹器装的一盒子食品。但是每到上朝，他总是趁武帝空闲的时候，向他推荐一些知名的厚道贤人。当他推荐士大夫和各种下属官吏的时候，他说的那些话可真是有滋有味哪，他说他们比自己还要能干。他对自己属下的官吏，也从来没有呼喊过他们的名字，和他们说话时唯恐伤害了自己的下属。每逢听到了一些好的建议，他就马上报告给皇上，唯恐耽误了事情。也正是由于这个原因，在崤山以东的广大地区里，人们都众口一致地说他好。
-
-有一次，郑庄被派去视察黄河决口，他向武帝请了五天假准备行李。这时武帝就开玩笑说：“我常听人们讲，说是‘郑庄出门，走一千里也用不着带干粮’,那你现在还请什么假收拾什么行李呢?”但是郑庄在朝中，也常常是顺从附和皇帝的意见，不敢明确地表明自己的态度。到了晚年，汉朝屡屡出兵征讨匈奴，以及招纳四方的少数民族小国，耗费巨大，以至于闹得整个国家的财政越来越困难。这时郑庄所保任的宾客给大司农雇人搞运输，亏欠了许多工钱不给。淮阳太守司马安举报了这件事，结果郑庄被下了狱，他自己出钱赎成了平民。过了不久，武帝又让他在丞相属下做了一段时间的代理长史。后来武帝感到让郑庄做这个差事年纪太大了，于是就又派他去做了汝南郡的太守。几年后，郑庄死在了汝南任上。
-
-郑庄和汲黯都曾官至享受九卿待遇，都为政清廉，注重自身的品行修养。后来他们都中途被废，家境贫寒，因而宾客们也就都走了。后来他们又都出任过外郡郡守，死后家中没有留下任何多余的财产。但是郑庄的弟兄和他的子孙们，由于郑庄的推荐，却有六七个人做官做到了二千石。
-
-太史公说：像汲黯、郑当时这样的品德才干，竟然也是在得势时宾客盈门，失势时宾客四散，那其他一般的人还用得着说吗!下邦县的翟公曾对我说过，当初他做廷尉的时候，宾客挤破了门；等到被罢官后，大门外几乎可以架起网来捕鸟。后来他又被起用为廷尉，有些宾客就又想回来，于是他就在自已的门上写道：“一死一生，乃知交情；一贫一富，乃知交态；一贵一贱，交情乃见。”看来汲黯和郑庄当时也是如此，这个世道可真可悲啊!</div>
-        </section>
-        <section>
-          <h3>English</h3>
-          <div class="txt">JiAn, whose courtesy name was Changru, was a man of Puyang. One of his ancestors had been favoured by a former prince of Wei (1024B.C.-209B.C.),since when seven generations of the family down to JiAn had served as ministers. On his father's recommendation,Ji An became one of the crown prince's outriders in the reign of Emperor Jing, and his impressive bearing commanded respect.Upon Emperor Jing's death and the crown prince's accession to the throne, Ji An was appointed imperial herald. When the tribes of Dongyue started fighting among themselves, the emperor sent Ji An to make an investigation. He went no furthcr than Wu, returning to report, "The men of Yue make a practice of fighting each other. The Son of Heaven need not stoop to send an envoy.” When a fire in Henei burned down more than a thousand houses, the emperor sent him again to investigate. On his return JiAn reported, “The houses were so close together that the fire breaking out in one spread to the rest. There is no reason to worry. But on my way through Henan I found more than ten thousand poor families reduced to such desperation by floods and drought that sons and fathers were eating one another. I took the liberty of using my credentials to order grain to be distributed from the public granaries there to relieve them. Allow me to return my credentials and ask to be punished for overstepping my authority.” But Emperor Wu approved and pardoned him, transferring him to the magistracy of Xingyang. JiAn scorned the post, however, and went home on the pretext of illness. When the emperor came to know this, he summoned him and appointed him a court adviser.But his constant remonstrances made it impossible to keep him at court and he was transferred to the governorship of Donghai. Ji An studied the teachings of the Yellow Emperor and Lao Zi, and his administration was easy-going. He entrusted affairs to specially selected assistants, concerning himself with the main issues only and not troubling with trifles. He was of ten ill and confined to his room, yet after a year or more Donghai was so well governed that the people praised him. As soon as the emperor knew this, he summoned him to court to be the officer in charge of the principalities,o ne of the nine chief ministers. Again he pursued a laissez-faire policy, dealing only with great matters and disregarding the letter of the law.
-
-Ji An was by nature arrogant and offhanded. He denounced men to their faces and could not tolerate any shortcomings. Those whom he found congenial he treated well; the uncongenial he could not even bear to see. Thus he had few friends among the literati. He stood up for the right, however, had great moral courage, and was scrupulously honest. He liked to speak his mind and often offended the emperor by his remonstrances. He admired men like Fu Bo and Yuan Ang, and was on friendly terms with Guan Fu, Zheng Dangshi and Liu Qi, the officer of the imperial clan. Owing to his outspoken criticisms,he could never remain in one position for long.
-
-That was the time when the empress dowager's younger brother Tian Fen, marquis of Wuan, was prime minister. Officials of the two thousand piculs rank who bowed to him would receive no return of courtesy, but Ji An never bowed to him, merely raising clasped hands in salute. The emperor had summoned various scholars and Confucians to court and was telling them of certain wishes he had. Ji An said to him, "Your Majesty's heart is full of desires, yet you make a show of benevolence and justice. How can you hope to imitate Yao and Shun?" The emperor was silent. Scowling angrily he left the court, while all the ministers trembled for Ji An. Once out of the court the emperor told his attendants,' An is too confoundedly blunt!” But when some officials cautioned Ji An he said, "The Son of Heaven appoints ministers to assist his rule. Are we to flatter him and agree to his wishes till we encourage him to take a dangerous course? In our position we must not try to save our own necks at the cost of disgracing the court.”
-
-Ji An was often ill for more than the three months allowed. The emperor several times extended his leave, but he never wholly recovered. Once Zhuang Zhu came to request sick leave for him. "What do you think of JiAn?" asked Emperor Wu. "In discharging ordinary official duties he is not outstanding," said Zhuang Zhu. "But if called on to help a young ruler or defend a city, he could not be won over or frightened away. Even brave men like Meng Pen and Xia Yu¹could not shake him.” "True," said the emperor. "In the old days they spoke of ministers who would die for the state. JiAn seems a man of that sort."
-
-When the grand marshal Wei Qing came to court, the emperor would not rise to greet him. When the prime minister Gongsun Hong saw him in private, the emperor did not always cover his head. But for JiAn he invariably put a hat on.Once Emperor Wu was seated on his curtained throne surrounded by guards when Ji An came to present a memorial. Since the emperor’s head was bare, at JiAn's approach he hid himself behind the curtain, telling someone else to accept the memorial. This illustrates Emperor Wu's respect for him.
-
-Zhang Tang had just been made chief justice for his work in revising the legal code, yet JiAn often denounced him in the presence of the emperor saying, “You are a high minister, but what have you done to carry forward the former emperor's achievements, curb men's evil desires, pacify the state, enrich the people, or empty the prisons of criminals? You have done none of these things, yet you make a point of finding fault with others. You would stoop to anything to win some credit. How dare you tamper with the rules laid down by Emperor Gaozu? For this you and your family should be wiped out!" Whenever Ji An argued with Zhang Tang, the chief justice split hairs about the law, whereas Ji An kept stubbornly to principles and refused to compromise. He would fume, "How right people are to say that pen-pushers should never be made high officials! If Zhang Tang had his way, no one would dare take a step forward or look men straight in the eye.”
-
-At that time the Han(206B.C.-8A.D.)court had sent out expeditions against the Huns and was trying to win over all the frontier tribes. Ji An, who believed in not making trouble, seized every chance to urge the emperor.to make peace with the Huns and stop raising armies. But the emperor then leaned towards Confucianism and thought highly of Gongsun Hong, and as the administration became more complex the people grew cunning at evading the law. Emperor Wu was well versed in the legal code and Zhang Tang and others courted his favour by proposing measures which met with his approval. But Ji An spoke up against the Confucians, attacking Gongsun Hong and others to their faces for trying to ingratiate themselves by flattery and cunning. He declared that these pettifoggers twisted the law to ruin men, obscuring the truth to win credit for themselves at the expense of the people. The emperor, however, valued Gongsun Hong and Zhang Tang more and more. These two, for their part, loathed and detested JiAn. Even the emperor was displeased with him and would have been glad of some excuse to kill him. Gongsun Hong the prime minister told the emperor, "The area under the jurisdiction of the senior city prefect of the capital contains so many nobles and members of the imperial clan that it is difficult to administer. Only a most prominent official is up to the task. I suggest that JiAn be appointed senior city prefect.” So for several years JiAn served in this capacity and affairs were well administered.
-
-The grand marshal Wei Qing was becoming more and more exalted now that his elder sister was the empress, yet Ji An continued to treat him as an equal. Someone said to JiAn,"The emperor wants all other ministers to defer to the grand marshal, that is why he is heaping all these honours on him. You really should bow to him, sir.” But Ji An replied, "If the grand marshal lets a visitor simply raise clasped hands in greeting, will that not make men respect him even more?" When the grand marshal heard this, JiAn rose in his estimation. He frequently consulted him on state and court affairs and treated him with special consideration.
-
-When the prince of Huainan was plotting rebellion he was afraid of Ji An. “A man who speaks out frankly and would die for his principles is hard to corrupt,” he said. “As for winning over Gongsun Hong,that is as easy as lifting off a cover or shaking down withered leaves.”
-
-By now several successful campaigns against the Huns made Emperor Wu pay even less attention to Ji An's advice.
-
-Ji An had been one of the nine chief ministers when Gongsun Hong and Zhang Tang held only minor posts. Now they had risen in importance to rank equal with him, yet Ji An continued to point out their mistakes. Gongsun Hong was the prime minister,enfeoffed as a marquis, while Zhang Tang was the grand secretary. These men who had been clerks when Ji An was prime minister now ranked as high as he did, or even higher. JiAn was too narrow-minded to tolerate this, and going to see the emperor he said, "Your Majesty appoints ministers in the way men stack firewood: the latest to arrive are piled on top." The emperor said nothing till Ji An had with drawn, when he exclaimed, “A man really needs to study! Look at Ji An. He is talking more outrageously every day.”
-
-Soon after this the Hunnish chief of Hunye surrendered with his men, and the government decided to send twenty thousand chariots to bring them to Chang'an. Since the administration was short of funds, horses had to be requisitioned from the people, but so many hid their horses that the necessary number was not forthcoming. The emperor was angry and wanted to execute the magistrate of Chang'an. "The magistrate is not to blame. Just cut off my head," said Ji An, "then the people may produce their horses. In any case, those Huns rebelled against their khan to surrender to us. Why not have them sent here by stages from county to county instead of turning the whole empire upside down and exhausting the Middle Kingdom for the sake of barbarians?” The emperor was silent. After the arrival of the chief of Hunye,more than five hundred merchants in the capital were condemned to death for trading with the Huns. Then Ji An asked for a private interview with the emperor in Gaomen Hall. "The Huns attacked our frontier posts and broke off friendly relations," he said. “So we raised armies to subdue them. Countless men have been killed or wounded and millions of cash spent. In my humble opinion, all captured Huns should be given as slaves to the families of those who fell in the wars, along with all the booty, to atone to the people for their pains and comfort their hearts. Instead of this, however, when the chief of Hunye surrenders with his horde we empty our treasury to offer them gifts and make loyal subjects serve them as if they were favourite children. How are the people in their ignorance to know that trading with the Huns in Chang'an counts as shipping contraband goods outside the frontier? You are not making use of the Huns to placate the empire but using some trifling legal clause to kill five hundred and more simple people. This is known as ‘protecting the leaves but harming the bough'. I think, sir, you have made the wrong decision.” The emperor listened in silence, then rejected Ji An's advice.“It is some time since I heard from Ji An," he said. "Now he is raving again." Some months later Ji An was charged with some trifling offence and his sentence was commuted to loss of office. He therefore retired to the country.
-
-Several years after this, when the new wuzhu coins were issued; a great deal of counterfeit money was minted, especially in Chu. Considering Huaiyang as a focal point in Chu, the emperor summoned Ji An to court and appointed him governor of Huaiyang,Ji An kowtowed and declined the seal, but Emperor Wu insisted until he had to accept. When summoned to an audience Ji An shed tears and said, "I expected to die and be thrown into a ditch without setting eyes on Your Majesty again,yet now you have recalled me. But this miserable illness of mine has left me too weak to administer a prefecture. All I ask is to serve as a palace guard always at Your Majesty's side, able to remind you of shortcomings that may have escaped your attention." "Do you despise the post at Huaiyang?" asked the emperor. "I shall recall you very soon, but at present the officers and people of Huaiyang are at odds. I thought, with your prestige, you could set things in order quite comfortably from your couch.” After Ji An withdrew he met the imperial herald Li Xi and told him, "I am being packed off to the provinces and shall not be able to join in discussions at court. The grand secretary Zhang Tang is clever enough to refute criticisms and cunning enough to gloss over his faults. He uses artful flattery and specious arguments not to profit the empire but simply to please his master. Whatever the emperor disapproves of, he condemns; whatever the emperor wants, he praises. He loves to stir up trouble and manipulate the law. He is ingratiating himself with the emperor and relying on harsh officials to increase his power. You are one of the nine chief ministers. Unless you speak out against him in good time, you will end up by sharing his punishment.” But Li Xi was too afraid of Zhang Tang to speak against him. Ji An went to his post and governed as before, so that Huaiyang was well administered. Later Zhang Tang did get into trouble and the emperor, hearing of JiAn's advice to Li xi, had Li xi punished too. Ji An remained in Huaiyang with the rank of a chief minister to a prince until his death seven years later.
-
-After Ji An's death, in recognition of his services, Emperor Wu made his younger brother Ji Ren high minister and his son Ji Yan chief minister of a principality. Ji An's cousin Sima An, who had served in his youth as one of the crown prince's outriders with JiAn, was intelligent and knew how to get on as an official. Four times he was made a high minister, and he died governor of Henan. At one time ten members of his family were officers of the two thousand piculs rank, thanks to Sima An's influence. Another native of Puyang, Duan Hong, worked under Wang Xin the marquis of Gai and became a high minister twice on his recommendation. But all the men of Wei who served as officials had a great respect for Ji An and looked up to him.
-
-Zheng Dangshi, whose courtesy name was Zhuang, was a man of Chen. An ancestor of his was a general under Xiang Yu and after Xiang Yu's death came over to Han,but when Emperor Gaozu ordered Xiang Yu's former officers to register, this man alone refused to do so. Emperor Gaozu made all the others high officials but dismissed Zheng, who died during the reign of Emperor Wen.
-
-Zheng Dangshi liked to perform deeds of gallantry, and after he rescued Zhang Yu when in distress his fame spread through Liang and Chu. During the reign of Emperor Jing he was steward to the crown prince. On his leave, which came on every fifth day,he had post horses ready in the suburbs of the capital to call on old friends and protégés, or invited them home and entertained them all through the night until dawn.His only worry was that he might miss someone out. He liked the teachings of the Yellow Emperor and Lao Zi, admired his seniors and never lost a chance of meeting one. Although he was young and held such a humble post, the friends he sought out were men of his grandfather's generation whose names were known throughout the land. After Emperor Wu came to the throne, Zheng Dangshi was appointed army commander of the principality of Lu, then governor of Jinan, chief minister of Jiangdu and finally senior prefect of the capital, one of the nine chief ministers. At the time of the dispute between the marquises of Weiqi And Wuan, he was reduced in status and made the crown prince's steward, then he was transferred to become minister of revenue.
-
-During Zheng Dangshi's term as city prefect he told his servants, "When visitors come, whether high or low, never keep them waiting at the gate. "He treated all guests with deference in spite of his eminence. Incorruptible and indifferent to his own estate,he depended on his official salary to entertain his friends, and his gifts to others were never more than food served in bamboo vessels. At court he took every opportunity of recommending worthy men to the emperor. He spoke with genuine enthusiasm of ordinary scholars and his subordinates, as if they were all better men than he. He never called officials by their familiar names and took great care in conversation not to hurt the feelings of his subordinates. When he heard of some good proposal, he made haste to report it to the emperor. As a result, all the gentlemen of the east spoke well of him.
-
-When he was sent to investigate a flood of the Yellow River, he asked for five days to get ready for the journey. The emperor said, “I heard that you could travel a thousand li without taking any grain. What do you have to prepare for this journey?" At court Zheng Dangshi generally spoke mildly and fell in with the emperor's wishes, rarely venturing to express decided opinions. By the time he was old, the costly campaigns against the Huns and other barbarian tribes were draining the resources of the empire. Certain transport officers in the ministry of revenue, who had been recommended by Zheng Dangshi or were his protégés, defaulted. Sima An, the governor of Huaiyang, reported this and Zheng Dangshi was implicated. On payment of a fine he was pardoned but struck off the list of officials. Later he was made a senior secretary in the prime minister's office, but in view of his age the emperor appointed him as governor of Runan instead. He died in that office several years later.
-
-Zheng Dangshi and Ji An both ranked among the nine chief ministers, were incorruptible and scrupulouslyhonest. Later both were degraded, their families became poor and their protégés gradually deserted them. Both died in the provinces leaving no property for their heirs. However, six or seven of Zheng Dangshi's brothers and descendants became officers of the two thousand piculs rank because of him.
-
-The Grand Historian comments: If worthy men like Ji An and Zheng Dangshi had friends by the score when they were in power and none when they fell from power, how must it be with ordinary men! Lord Zhai of Xiagui said that when he was chief justice guests thronged his gate, when he was dismissed you could have trapped birds at his door, but when he became chief justice again, his old protegés hoped to come back. Then he wrote in large characters on his gate: When a lifelong friend is dead, Friendship has fled; When a rich man becomes poor, Friendship is no more; When a noble is brought low, Friendship must go. Ji An and Zheng Dangshi might have said the same,alas!</div>
-        </section>
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">汲黯字长孺，濮阳人也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯，字长孺，是濮阳县人。</td>
+                <td class="english-cell col-english" data-lang="english">Ji An, whose courtesy name was Changru, was a man of Puyang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其先有宠于古之卫君。至黯十世，世为卿大夫。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他的祖先曾受古代卫君的宠爱，传到汲黯已是第十代，世代担任卿大夫。</td>
+                <td class="english-cell col-english" data-lang="english">One of his ancestors had been favoured by a former prince of Wei (1024B.C.-209B.C.), since when seven generations of the family down to Ji An had served as ministers.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">黯以父任，孝景时为太子洗马，以庄见惮。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯因父亲的荫庇被任用，汉景帝时担任太子洗马，因态度庄重被人敬畏。</td>
+                <td class="english-cell col-english" data-lang="english">On his father's recommendation, Ji An became one of the crown prince's outriders in the reign of Emperor Jing, and his impressive bearing commanded respect.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">孝景帝崩，太子即位，黯为谒者。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉景帝去世，太子即位（即汉武帝），汲黯任谒者（掌管传达诏令的官员）。</td>
+                <td class="english-cell col-english" data-lang="english">Upon Emperor Jing's death and the crown prince's accession to the throne, Ji An was appointed imperial herald.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">东越相攻，上使黯往视之。不至，至吴而还，报曰：“越人相攻，固其俗然，不足以辱天子之使。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">东越（闽越、东瓯）互相攻伐，汉武帝派汲黯前去视察。他没到东越，只到吴国就返回，报告说：“越人互相攻伐，本是他们的习俗，不值得劳烦天子的使者前往。”</td>
+                <td class="english-cell col-english" data-lang="english">When the tribes of Dongyue started fighting among themselves, the emperor sent Ji An to make an investigation. He went no further than Wu, returning to report, "The men of Yue make a practice of fighting each other. The Son of Heaven need not stoop to send an envoy.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">河内失火，延烧千余家，上使黯往视之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">河内郡发生火灾，蔓延烧毁一千多户人家，汉武帝派汲黯前去视察。</td>
+                <td class="english-cell col-english" data-lang="english">When a fire in Henei burned down more than a thousand houses, the emperor sent him again to investigate.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">还报曰：“家人失火，屋比延烧，不足忧也。臣过河南，河南贫人伤水旱万余家，或父子相食，臣谨以便宜，持节发河南仓粟以振贫民。臣请归节，伏矫制之罪。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯返回报告说：“百姓家失火，因房屋相邻而蔓延燃烧，不值得忧虑。我路过河南郡时，见河南郡受水旱灾害的贫民有一万多家，有的甚至父子相食。我擅自做主，凭符节下令打开河南郡的粮仓，赈济贫民。现在我请求归还符节，甘愿接受假传圣旨的罪名。”</td>
+                <td class="english-cell col-english" data-lang="english">On his return Ji An reported, “The houses were so close together that the fire breaking out in one spread to the rest. There is no reason to worry. But on my way through Henan I found more than ten thousand poor families reduced to such desperation by floods and drought that sons and fathers were eating one another. I took the liberty of using my credentials to order grain to be distributed from the public granaries there to relieve them. Allow me to return my credentials and ask to be punished for overstepping my authority.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上贤而释之，迁为荥阳令。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉武帝认为他贤明，赦免了他，调任他为荥阳县令。</td>
+                <td class="english-cell col-english" data-lang="english">But Emperor Wu approved and pardoned him, transferring him to the magistracy of Xingyang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">黯耻为令，病归田里。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯以做县令为耻，借口生病回到家乡。</td>
+                <td class="english-cell col-english" data-lang="english">Ji An scorned the post, however, and went home on the pretext of illness.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上闻，乃召拜为中大夫。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉武帝听说后，便征召他，任命为中大夫（掌议论的官员）。</td>
+                <td class="english-cell col-english" data-lang="english">When the emperor came to know this, he summoned him and appointed him a court adviser.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">以数切谏，不得久留内，迁为东海太守。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">因多次直言劝谏，不能长期留在朝廷，调任为东海郡太守。</td>
+                <td class="english-cell col-english" data-lang="english">But his constant remonstrances made it impossible to keep him at court and he was transferred to the governorship of Donghai.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">黯学黄老之言，治官理民，好清静，择丞史而任之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯研习黄老学说（道家思想），治理官府、管理百姓时，喜好清静无为，挑选郡丞、掾史（辅助官员）后便放手任用他们。</td>
+                <td class="english-cell col-english" data-lang="english">Ji An studied the teachings of the Yellow Emperor and Lao Zi, and his administration was easy-going. He entrusted affairs to specially selected assistants.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其治，责大指而已，不苛小。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他治理政事，只关注大的方向，不苛求细枝末节。</td>
+                <td class="english-cell col-english" data-lang="english">concerning himself with the main issues only and not troubling with trifles.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">黯多病，卧闺阁内不出。岁余，东海大治。称之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯体弱多病，常躺在内室不外出。过了一年多，东海郡治理得很好，百姓都称赞他。</td>
+                <td class="english-cell col-english" data-lang="english">He was often ill and confined to his room, yet after a year or more Donghai was so well governed that the people praised him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上闻，召以为主爵都尉，列于九卿。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉武帝听说后，征召他任主爵都尉（掌列侯封爵事务），位列九卿。</td>
+                <td class="english-cell col-english" data-lang="english">As soon as the emperor knew this, he summoned him to court to be the officer in charge of the principalities, one of the nine chief ministers.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">治务在无为而已，弘大体，不拘文法。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他治理政事仍以无为为原则，注重把握大局，不拘泥于法令条文。</td>
+                <td class="english-cell col-english" data-lang="english">Again he pursued a laissez-faire policy, dealing only with great matters and disregarding the letter of the law.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">黯为人性倨，少礼，面折，不能容人之过。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯性情高傲，不讲礼节，常常当面驳斥别人，不能容忍他人的过错。</td>
+                <td class="english-cell col-english" data-lang="english">Ji An was by nature arrogant and offhanded. He denounced men to their faces and could not tolerate any shortcomings.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">合己者善待之，不合己者不能忍见，士亦以此不附焉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">与自己相合的人就友好对待，与自己不合的人连见都不愿见，士人也因此不愿归附他。</td>
+                <td class="english-cell col-english" data-lang="english">Those whom he found congenial he treated well; the uncongenial he could not even bear to see. Thus he had few friends among the literati.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">然好游侠，任气节，内行修絜，好直谏，数犯主之颜色，常慕傅柏、袁盎之为人也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">但他喜好行侠仗义，注重气节，自身品行高洁，喜欢直言劝谏，多次冒犯君主的威严，常仰慕傅柏（战国魏臣，以直谏闻名）、袁盎（汉臣，敢直言）的为人。</td>
+                <td class="english-cell col-english" data-lang="english">He stood up for the right, however, had great moral courage, and was scrupulously honest. He liked to speak his mind and often offended the emperor by his remonstrances. He admired men like Fu Bo and Yuan Ang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">善灌夫、郑当时及宗正刘弃。亦以数直谏，不得久居位。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他与灌夫、郑当时以及宗正（掌皇室事务）刘弃交好，这些人也因多次直言劝谏，不能长期担任官职。</td>
+                <td class="english-cell col-english" data-lang="english">and was on friendly terms with Guan Fu, Zheng Dangshi and Liu Qi, the officer of the imperial clan. Owing to his outspoken criticisms, he could never remain in one position for long.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">当是时，太后弟武安侯蚡为丞相，中二千石来拜谒，蚡不为礼。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时，太后的弟弟武安侯田蚡任丞相，中二千石（高级官员）前来拜见，田蚡从不回礼。</td>
+                <td class="english-cell col-english" data-lang="english">That was the time when the empress dowager's younger brother Tian Fen, marquis of Wuan, was prime minister. Officials of the two thousand piculs rank who bowed to him would receive no return of courtesy.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">然黯见蚡未尝拜，常揖之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">但汲黯拜见田蚡时从不下拜，常常只作揖。</td>
+                <td class="english-cell col-english" data-lang="english">but Ji An never bowed to him, merely raising clasped hands in salute.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">天子方招文学儒者，上曰“吾欲”云云，黯对曰：“陛下内多欲而外施仁义，奈何欲效唐虞之治乎!”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉武帝正招揽文学儒士，他刚说“我想（推行仁政）”之类的话，汲黯就回答：“陛下内心欲望繁多，却表面施行仁义，怎么能期望效仿唐尧、虞舜的治国之道呢！”</td>
+                <td class="english-cell col-english" data-lang="english">The emperor had summoned various scholars and Confucians to court and was telling them of certain wishes he had. Ji An said to him, "Your Majesty's heart is full of desires, yet you make a show of benevolence and justice. How can you hope to imitate Yao and Shun?"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上默然，怒，变色而罢朝。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉武帝沉默不语，面露怒气，脸色一变，宣布退朝。</td>
+                <td class="english-cell col-english" data-lang="english">The emperor was silent. Scowling angrily he left the court.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">公卿皆为黯惧。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">大臣们都为汲黯感到害怕。</td>
+                <td class="english-cell col-english" data-lang="english">while all the ministers trembled for Ji An.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上退，谓左右曰：“甚矣，汲黯之戆也!”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉武帝退朝后，对身边的人说：“汲黯也太愚直了！”</td>
+                <td class="english-cell col-english" data-lang="english">Once out of the court the emperor told his attendants, "An is too confoundedly blunt!”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">群臣或数黯，黯曰：“天子置公卿辅弼之臣，宁令从谀承意，陷主于不义乎?且已在其位，纵爱身，奈辱朝廷何!”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">大臣中有人责备汲黯，汲黯说：“天子设置公卿等辅佐大臣，难道是让他们阿谀奉承、迎合君主心意，使君主陷入不义之地吗？况且我已身居此位，纵使爱惜自身性命，又怎能容忍让朝廷蒙受耻辱！”</td>
+                <td class="english-cell col-english" data-lang="english">But when some officials cautioned Ji An he said, "The Son of Heaven appoints ministers to assist his rule. Are we to flatter him and agree to his wishes till we encourage him to take a dangerous course? In our position we must not try to save our own necks at the cost of disgracing the court.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">黯多病，病且满三月，上常赐告者数，终不愈。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯经常生病，病情将近三个月（按制满三月免官），汉武帝多次赐假让他休养，却始终没有痊愈。</td>
+                <td class="english-cell col-english" data-lang="english">Ji An was often ill for more than the three months allowed. The emperor several times extended his leave, but he never wholly recovered.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">最后病，庄助为请告。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">最后一次病重时，庄助（大臣）替他请假。</td>
+                <td class="english-cell col-english" data-lang="english">Once Zhuang Zhu came to request sick leave for him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上曰：“汲黯何如人哉?”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉武帝问：“汲黯是怎样的人呢？”</td>
+                <td class="english-cell col-english" data-lang="english">"What do you think of Ji An?" asked Emperor Wu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">助曰：“使黯任职居官，无以逾人。然至其辅少主，守成深坚，招之不来，麾之不去，虽自谓贲、育亦不能夺之矣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">庄助回答：“让汲黯担任一般官职，他没有超过别人的地方。但要说辅佐年幼的君主，坚守已成的事业，坚定不可动摇，召他不来，赶他不走，即使是自称勇猛的孟贲、夏育（古代勇士），也不能使他改变气节。”</td>
+                <td class="english-cell col-english" data-lang="english">"In discharging ordinary official duties he is not outstanding," said Zhuang Zhu. "But if called on to help a young ruler or defend a city, he could not be won over or frightened away. Even brave men like Meng Pen and Xia Yu could not shake him.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上曰：“然。古有社稷之臣，至如黯，近之矣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉武帝说：“是啊。古代有能与国家共存亡的‘社稷之臣’，汲黯就接近这样的人了。”</td>
+                <td class="english-cell col-english" data-lang="english">"True," said the emperor. "In the old days they spoke of ministers who would die for the state. Ji An seems a man of that sort."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">大将军青侍中，上踞厕而视之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">大将军卫青在宫中侍奉时，汉武帝有时坐在床边（一说厕所）召见他。</td>
+                <td class="english-cell col-english" data-lang="english">When the grand marshal Wei Qing came to court, the emperor would not rise to greet him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">丞相弘燕见，上或时不冠。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">丞相公孙弘在非正式场合拜见时，汉武帝有时不戴帽子。</td>
+                <td class="english-cell col-english" data-lang="english">When the prime minister Gongsun Hong saw him in private, the emperor did not always cover his head.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">至如黯见，上不冠不见也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">但轮到汲黯拜见时，汉武帝不戴帽子就不会接见。</td>
+                <td class="english-cell col-english" data-lang="english">But for Ji An he invariably put a hat on.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上尝坐武帐中，黯前奏事，上不冠，望见黯，避帐中，使人可其奏。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉武帝曾坐在武帐（皇帝议事的军帐）中，汲黯上前奏事，汉武帝没戴帽子，望见汲黯，就躲进帐中，派人传出话来批准他的奏请。</td>
+                <td class="english-cell col-english" data-lang="english">Once Emperor Wu was seated on his curtained throne surrounded by guards when Ji An came to present a memorial. Since the emperor’s head was bare, at Ji An's approach he hid himself behind the curtain, telling someone else to accept the memorial.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其见敬礼如此。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯受到汉武帝的敬重礼遇竟到了这种地步。</td>
+                <td class="english-cell col-english" data-lang="english">This illustrates Emperor Wu's respect for him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">张汤方以更定律令为廷尉，黯数质责汤于上前，曰：“公为正卿，上不能褒先帝之功业，下不能抑天下之邪心，安国富民，使囹圄空虚，二者无一焉。非苦就行，放析就功，何乃取高皇帝约束纷更之为？公以此无种矣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时张汤做廷尉，正在重新制定国家的法律，汲黯就多次当着武帝的面责备他，说他：“你作为一位正卿，上不能光大先帝的功业，下不能改造小人的邪心，作为一个圣世的标志，一是国富民安，二是犯罪人少，这两条你一条也没有做到。有些事情你明知不对，可是你还非干不可，你把法律条文弄得非常繁琐，只顾眼前的急功近利，高皇帝当初订好的法令，你怎么能老是乱改呢？你日后恐怕为了这个要祸灭九族。”</td>
+                <td class="english-cell col-english" data-lang="english">Zhang Tang had just been made chief justice for his work in revising the legal code, yet Ji An often denounced him in the presence of the emperor saying, “You are a high minister, but what have you done to carry forward the former emperor's achievements, curb men's evil desires, pacify the state, enrich the people, or empty the prisons of criminals? You have done none of these things, yet you make a point of finding fault with others. You would stoop to anything to win some credit. How dare you tamper with the rules laid down by Emperor Gaozu? For this you and your family should be wiped out!"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">黯时与汤论议，汤辩常在文深小苛，黯伉厉守高不能屈，忿发骂曰：“天下谓刀笔吏不可以为公卿，果然。必汤也，令天下重足而立，侧目而视矣！”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯经常和张汤争论，张汤熟悉典章制度，说话引经据典，比较细密，而汲黯则主要是凭着耿直正派在大问题上坚持原则，所以根本说不过张汤，于是就气得骂起来：“谁都说千万不能让刀笔吏当大官，看来是一点不错。如果一切事情都按着张汤的主意去办，那就必然要使全国吓得谁也不敢动，谁也不敢正眼看人了！”</td>
+                <td class="english-cell col-english" data-lang="english">Whenever Ji An argued with Zhang Tang, the chief justice split hairs about the law, whereas Ji An kept stubbornly to principles and refused to compromise. He would fume, "How right people are to say that pen-pushers should never be made high officials! If Zhang Tang had his way, no one would dare take a step forward or look men straight in the eye.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">是时，汉方征匈奴，招怀四夷。黯务少事，乘上间，常言与胡和亲，无起兵。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时，汉朝正在对匈奴大肆用兵，同时也在对其他方面的各个少数民族小国开展软硬兼施的各种攻势。而汲黯是主张清静无为的，他希望事情越少越好，他总是借着一切机会劝武帝与匈奴和亲，建议不要动武。</td>
+                <td class="english-cell col-english" data-lang="english">At that time the Han court had sent out expeditions against the Huns and was trying to win over all the frontier tribes. Ji An, who believed in not making trouble, seized every chance to urge the emperor to make peace with the Huns and stop raising armies.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上方向儒术，尊公孙弘。及事益多，吏民巧弄。上分别文法，汤等数奏决谳以幸。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">而汉武帝当时正喜欢儒术，正在重用公孙弘这个“儒生”。于是便弄得事情越来越多，而下面的吏民们也想尽各种办法来钻国家政策的空子。为整治这种混乱局面，汉武帝就靠着增订法律，严厉镇压，而张汤等人则又趁着帮助皇帝判断疑案向皇帝讨好。</td>
+                <td class="english-cell col-english" data-lang="english">But the emperor then leaned towards Confucianism and thought highly of Gongsun Hong, and as the administration became more complex the people grew cunning at evading the law. Emperor Wu was well versed in the legal code and Zhang Tang and others courted his favour by proposing measures which met with his approval.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">而黯常毁儒，面触弘等徒怀诈饰智以阿人主取容，而刀笔吏专深文巧诋，陷人于罪，使不得反其真，以胜为功。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">与此相反，汲黯则是反儒的，他经常当面斥责公孙弘等人奸诈虚伪，专门以狡猾的手段对皇帝阿谀逢迎，同时斥责张汤等一班刀笔吏专会无限上纲，罗织罪名，使人陷入法网，从而使得整个社会都失去了本性，都在想整倒别人作为自己的功劳。</td>
+                <td class="english-cell col-english" data-lang="english">But Ji An spoke up against the Confucians, attacking Gongsun Hong and others to their faces for trying to ingratiate themselves by flattery and cunning. He declared that these pettifoggers twisted the law to ruin men, obscuring the truth to win credit for themselves at the expense of the people.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上愈益贵弘、汤，弘、汤深心疾黯，唯天子亦不说也，欲诛之以事。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">可是汉武帝却越来越重用公孙弘和张汤。由于汲黯总是和他们作对，因此不仅公孙弘和张汤恨他，就连武帝也对他越来越不喜欢，总想找个机会杀了他。</td>
+                <td class="english-cell col-english" data-lang="english">The emperor, however, valued Gongsun Hong and Zhang Tang more and more. These two, for their part, loathed and detested Ji An. Even the emperor was displeased with him and would have been glad of some excuse to kill him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">弘为丞相，乃言上曰：“右内史界部中多贵人宗室，难治，非素重臣不能任，请徙黯为右内史。”为右内史数岁，官事不废。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时公孙弘正当丞相，他对汉武帝说：“首都右内史的辖区里由于住着许多达官贵人和皇亲国戚，所以不好管理，非派一位资格老的大臣去不行，是不是可以派汲黯去做右内史。”不料汲黯在那里干了几年，事情还干得不错。</td>
+                <td class="english-cell col-english" data-lang="english">Gongsun Hong the prime minister told the emperor, "The area under the jurisdiction of the senior city prefect of the capital contains so many nobles and members of the imperial clan that it is difficult to administer. Only a most prominent official is up to the task. I suggest that Ji An be appointed senior city prefect.” So for several years Ji An served in this capacity and affairs were well administered.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">大将军青既益尊，姊为皇后，然黯与亢礼。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时大将军卫青的地位是很高的，而且他的姐姐还是皇后，然而汲黯见了卫青却仍是和他平等地见礼。</td>
+                <td class="english-cell col-english" data-lang="english">The grand marshal Wei Qing was becoming more and more exalted now that his elder sister was the empress, yet Ji An continued to treat him as an equal.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">人或说黯曰：“自天子欲群臣下大将军，大将军尊重益贵，君不可以不拜。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时，有人就劝汲黯说：“连皇上都希望群臣百官们尊崇大将军，大将军的地位已经是越来越高了，您见了他不能光是作个揖不给他下拜。”</td>
+                <td class="english-cell col-english" data-lang="english">Someone said to Ji An, "The emperor wants all other ministers to defer to the grand marshal, that is why he is heaping all these honours on him. You really should bow to him, sir.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">黯曰：“夫以大将军有揖客，反不重邪？”大将军闻，愈贤黯，数请问国家朝廷所疑，遇黯过于平生。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯说：“大将军门前有个见了面只和他作揖的客人，就降低他的身分了吗？”卫青听说这话后，越发觉得汲黯为人不错，从此凡国家遇到什么重大疑难问题，总是去向汲黯请教，对待汲黯的态度比以往任何时候都要好。</td>
+                <td class="english-cell col-english" data-lang="english">But Ji An replied, "If the grand marshal lets a visitor simply raise clasped hands in greeting, will that not make men respect him even more?" When the grand marshal heard this, Ji An rose in his estimation. He frequently consulted him on state and court affairs and treated him with special consideration.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">淮南王谋反，惮黯，曰：“好直谏，守节死义，难惑以非。至如说丞相弘，如发蒙振落耳。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来当淮南王刘安阴谋造反时，他不怕别人，就怕汲黯。刘安说：“汲黯敢于提意见，能够坚持节义，宁死不屈，谁也骗不了他。至于收买丞相公孙弘，那就像揭开一层盖布和摇落几片树叶一样容易。”</td>
+                <td class="english-cell col-english" data-lang="english">When the prince of Huainan was plotting rebellion he was afraid of Ji An. “A man who speaks out frankly and would die for his principles is hard to corrupt,” he said. “As for winning over Gongsun Hong, that is as easy as lifting off a cover or shaking down withered leaves.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">天子既数征匈奴有功，黯之言益不用。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来汉武帝在几次征讨匈奴中又连续地获得了一些胜利，因此汲黯的话也就越来越听不进去了。</td>
+                <td class="english-cell col-english" data-lang="english">By now several successful campaigns against the Huns made Emperor Wu pay even less attention to Ji An's advice.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">始黯列为九卿，而公孙弘、张汤为小吏。及弘、汤稍益贵，与黯同位，黯又非毁弘、汤等。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">在当年汲黯为主爵都尉享受“九卿”待遇的时候，公孙弘和张汤都还在当小吏。后来公孙弘和张汤的地位渐渐提高，和汲黯到了同一个等级，汲黯常常批评、斥责他们。</td>
+                <td class="english-cell col-english" data-lang="english">Ji An had been one of the nine chief ministers when Gongsun Hong and Zhang Tang held only minor posts. Now they had risen in importance to rank equal with him, yet Ji An continued to point out their mistakes.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">已而弘至丞相，封为侯；汤至御史大夫；故黯时丞史皆与黯同列，或尊用过之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">又过了些时候，公孙弘当了丞相，而且封了侯；张汤也做了御史大夫；当年汲黯为主爵都尉时那些丞相手下的小吏们今天都和汲黯到了同一个等级，有的比汲黯还高。</td>
+                <td class="english-cell col-english" data-lang="english">Gongsun Hong was the prime minister, enfeoffed as a marquis, while Zhang Tang was the grand secretary. These men who had been clerks when Ji An was prime minister now ranked as high as he did, or even higher.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">黯褊心，不能无少望，见上，前言曰：“陛下用群臣如积薪耳，后来者居上。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯心眼窄，因而很自然地产生了一些不满情绪，他在见到汉武帝的时候就走过去说：“陛下您用人的办法就像是堆柴火，越后来的越是在上头。”</td>
+                <td class="english-cell col-english" data-lang="english">Ji An was too narrow-minded to tolerate this, and going to see the emperor he said, "Your Majesty appoints ministers in the way men stack firewood: the latest to arrive are piled on top."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上默然。有间，黯罢，上曰：“人果不可以无学，观黯之言也日益甚。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">武帝听了没有作声。过了一会儿，汲黯走了，武帝说：“人的确是不能没有点修养，你们听听汲黯这些话，简直是越来越没个教养了。”</td>
+                <td class="english-cell col-english" data-lang="english">The emperor said nothing till Ji An had withdrawn, when he exclaimed, “A man really needs to study! Look at Ji An. He is talking more outrageously every day.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">居无何，匈奴浑邪王率众来降,汉发车二万乘。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">过了不久，匈奴的浑邪王率领着他的部下投降了汉朝，汉朝为了去迎接，要准备两万乘车子。</td>
+                <td class="english-cell col-english" data-lang="english">Soon after this the Hunnish chief of Hunye surrendered with his men, and the government decided to send twenty thousand chariots to bring them to Chang'an.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">县官无钱,从民贳马。民或匿马，马不具。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">国家没有这么多马，也没有钱买，于是就向长安附近的老百姓借。有些人不愿把自己的马借给国家，就把它藏了起来，因此马总是凑不齐。</td>
+                <td class="english-cell col-english" data-lang="english">Since the administration was short of funds, horses had to be requisitioned from the people, but so many hid their horses that the necessary number was not forthcoming.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上怒，欲斩长安令。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉武帝大怒，想杀长安县令。</td>
+                <td class="english-cell col-english" data-lang="english">The emperor was angry and wanted to execute the magistrate of Chang'an.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">黯曰：“长安令无罪，独斩黯，民乃肯出马。且匈奴畔其主而降汉,汉徐以县次传之,何至令天下骚动，罢弊中国而以事夷狄之人乎!”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯说：“长安县令没有罪，您只要杀了我这个右内史，老百姓就把马牵出来了。我就不明白，一群匈奴人背叛了他们的主子来投降了我们，我们就让沿途各县给他们提供驿车粮草，让他们慢慢前来不就行了吗?为什么要闹得全国都鸡犬不宁，为什么要这样地耗费我们自己去侍候那些生番化外的人呢!”</td>
+                <td class="english-cell col-english" data-lang="english">"The magistrate is not to blame. Just cut off my head," said Ji An, "then the people may produce their horses. In any case, those Huns rebelled against their khan to surrender to us. Why not have them sent here by stages from county to county instead of turning the whole empire upside down and exhausting the Middle Kingdom for the sake of barbarians?”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上默然。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">武帝听了，无话可讲。</td>
+                <td class="english-cell col-english" data-lang="english">The emperor was silent.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">及浑邪至，贾人与市者，坐当死者五百余人四。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">等到浑邪王到达长安后，长安有些商人因为和匈奴人做买卖，有五百多人被判了死刑。</td>
+                <td class="english-cell col-english" data-lang="english">After the arrival of the chief of Hunye, more than five hundred merchants in the capital were condemned to death for trading with the Huns.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">黯请间，见高门,曰：“夫匈奴攻当路塞,绝和亲，中国兴兵诛之，死伤者不可胜计，而费以巨万百数。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯求见汉武帝，汉武帝抽空在未央宫的高门殿接见了汲黯。汲黯说：“匈奴人进攻我们迎面的关塞，撕毁了和亲协议，我们被迫发兵征讨，为此而死伤的人不计其数，耗费的资财多达几百个亿。</td>
+                <td class="english-cell col-english" data-lang="english">Then Ji An asked for a private interview with the emperor in Gaomen Hall. "The Huns attacked our frontier posts and broke off friendly relations," he said. “So we raised armies to subdue them. Countless men have been killed or wounded and millions of cash spent.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">臣愚以为陛下得胡人，皆以为奴婢以赐从军死事者家；所卤获，因予之，以谢天下之苦，塞百姓之心。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">原来我想您如果俘虏了匈奴人，一定会把他们当作奴隶赏给那些死在前线的将士之家；缴获来的财物，也会分给他们，因为我想只有这样才能补偿一点百姓们所付出的血的代价，才能安慰一点大家的心。</td>
+                <td class="english-cell col-english" data-lang="english">In my humble opinion, all captured Huns should be given as slaves to the families of those who fell in the wars, along with all the booty, to atone to the people for their pains and comfort their hearts.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">今纵不能，浑邪率数万之众来降，虚府库赏赐，发良民侍养，譬若奉骄子。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">退一步说，即使您做不到这一点，但也总不该拿出府库里所有的钱去赏赐那些被浑邪王带来的几万降兵，让我们的良民百姓去侍奉他们，把他们当成宝贝儿子吧!</td>
+                <td class="english-cell col-english" data-lang="english">Instead of this, however, when the chief of Hunye surrenders with his horde we empty our treasury to offer them gifts and make loyal subjects serve them as if they were favourite children.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">愚民安知市买长安中物而文吏绳以为阑出财物于边关乎?</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">今天有些无知的百姓们只是在长安城里和匈奴人作了些买卖，他们怎么会想到酷吏们会拿向国外走私的罪名来惩办他们呢?</td>
+                <td class="english-cell col-english" data-lang="english">How are the people in their ignorance to know that trading with the Huns in Chang'an counts as shipping contraband goods outside the frontier?</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">陛下纵不能得匈奴之资以谢天下，又以微文杀无知者五百余人，是所谓‘庇其叶而伤其枝’者也，臣窃为陛下不取也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">您现在是不仅不能把匈奴人的钱财拿来分给我们的人，还要借着苛碎的法律条文来杀害我们的这五百多个无知的人，这就正是人们常说的那种砍掉了枝干而去保护那些叶子了，我认为您这种做法是绝对不可取的。”</td>
+                <td class="english-cell col-english" data-lang="english">You are not making use of the Huns to placate the empire but using some trifling legal clause to kill five hundred and more simple people. This is known as ‘protecting the leaves but harming the bough'. I think, sir, you have made the wrong decision.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上默然，不许，曰：“吾久不闻汲黯之言，今又复妄发矣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">武帝听了，当时没有作声，但他的心里根本就不同意，过后他对别人说：“我好久没有听到汲黯说话了，今天又听他胡说了一通。”</td>
+                <td class="english-cell col-english" data-lang="english">The emperor listened in silence, then rejected Ji An's advice. “It is some time since I heard from Ji An," he said. "Now he is raving again."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后数月，黯坐小法，会赦免官。于是黯隐于田园。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">几个月后，汲黯犯了一点小法，不过正好赶上大赦，于是就以免官完事。从此汲黯就回家乡去隐居田园了。</td>
+                <td class="english-cell col-english" data-lang="english">Some months later Ji An was charged with some trifling offence and his sentence was commuted to loss of office. He therefore retired to the country.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">居数年，会更五铢钱,民多盗铸钱，楚地尤甚。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">又过了几年，正赶上汉武帝改换货币，使用五铢钱，当时民间有些人偷着铸造这种钱，在楚地一带问题尤其严重。</td>
+                <td class="english-cell col-english" data-lang="english">Several years after this, when the new wuzhu coins were issued; a great deal of counterfeit money was minted, especially in Chu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上以为淮阳,楚地之郊,乃召拜黯为淮阳太守。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉武帝认为淮阳是梁楚之间的交通要冲，非常重要，就派人去找汲黯，任命他做淮阳太守。</td>
+                <td class="english-cell col-english" data-lang="english">Considering Huaiyang as a focal point in Chu, the emperor summoned Ji An to court and appointed him governor of Huaiyang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">黯伏谢不受印，诏数强予，然后奉诏。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯趴在地上推辞，不愿接受印信，但汉武帝屡次下诏非让他去不可，汲黯不得已只好接受了。</td>
+                <td class="english-cell col-english" data-lang="english">Ji An kowtowed and declined the seal, but Emperor Wu insisted until he had to accept.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">诏召见黯，黯为上泣曰：“臣自以为填沟壑，不复见陛下，不意陛下复收用之。臣常有狗马病，力不能任郡事，臣愿为中郎,出入禁闼，补过拾遗,臣之愿也。"</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉武帝召见汲黯，汲黯流着泪对武帝说：“我原以为到死也见不到您了，没想到您又起用了我。但是我多年来一直有病，实在干不了郡太守的差事，我愿意给您做一个中郎，出入在您的周围，随时做点拾遗补缺的事，这是我的心愿。”</td>
+                <td class="english-cell col-english" data-lang="english">When summoned to an audience Ji An shed tears and said, "I expected to die and be thrown into a ditch without setting eyes on Your Majesty again, yet now you have recalled me. But this miserable illness of mine has left me too weak to administer a prefecture. All I ask is to serve as a palace guard always at Your Majesty's side, able to remind you of shortcomings that may have escaped your attention."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上曰：“君薄淮阳邪?吾今召君矣。顾淮阳吏民不相得，吾徒得君之重,卧而治之。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉武帝说：“您是嫌淮阳太守的职位低吗?我很快就会把你调回朝廷来的。关键是现在淮阳的官员和那里的百姓们有些矛盾，我只是借用一下你的威名，你去了即使躺在床上不动，那里的局面也会变好的。”</td>
+                <td class="english-cell col-english" data-lang="english">"Do you despise the post at Huaiyang?" asked the emperor. "I shall recall you very soon, but at present the officers and people of Huaiyang are at odds. I thought, with your prestige, you could set things in order quite comfortably from your couch.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">黯既辞行，过大行李息,曰：“黯弃居郡,不得与朝廷议也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯辞别了汉武帝，来到了大行李息这里，汲黯对李息说：“我被打发到了淮阳郡，不能参与朝廷里的事了。</td>
+                <td class="english-cell col-english" data-lang="english">After Ji An withdrew he met the imperial herald Li Xi and told him, "I am being packed off to the provinces and shall not be able to join in discussions at court.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">然御史大夫张汤，智足以拒谏，诈足以饰非,务巧佞之语、辩数之辞,非肯正为天下言，专阿主意。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">请你注意，御史大夫张汤这个人，他有的是智慧，足以驳回任何正当的批评；他有的是诡诈手段，足以为他自己文过饰非。这个人有的是伶牙俐齿，能说会道，但从来不说一句为国为民的话，而只是专门向皇上讨好。</td>
+                <td class="english-cell col-english" data-lang="english">The grand secretary Zhang Tang is clever enough to refute criticisms and cunning enough to gloss over his faults. He uses artful flattery and specious arguments not to profit the empire but simply to please his master.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">主意所不欲，因而毁之；主意所欲，因而誉之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">凡是皇上不同意的事，他也就跟着竭力诋毁；凡是皇上愿意办的事，他就竭力称赞。</td>
+                <td class="english-cell col-english" data-lang="english">Whatever the emperor disapproves of, he condemns; whatever the emperor wants, he praises.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">好兴事，舞文法，内怀诈以御主心,外挟贼吏以为威重。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他总爱生事，舞文弄法，他内心狡猾专会迎合皇上，外面又有一群恶吏助长着他的威风。</td>
+                <td class="english-cell col-english" data-lang="english">He loves to stir up trouble and manipulate the law. He is ingratiating himself with the emperor and relying on harsh officials to increase his power.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">公列九卿，不早言之，公与之俱受其缪矣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">您享受着九卿待遇，如果不及早向皇上讲明这些问题，那你将来和他一块都得死。”</td>
+                <td class="english-cell col-english" data-lang="english">You are one of the nine chief ministers. Unless you speak out against him in good time, you will end up by sharing his punishment.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">息畏汤，终不敢言。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">但李息害怕张汤，始终没敢说话。</td>
+                <td class="english-cell col-english" data-lang="english">But Li Xi was too afraid of Zhang Tang to speak against him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">黯居郡如故治，淮阳政清。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯到淮阳后还是用过去办事的那套老方法，结果淮阳郡变得很好。</td>
+                <td class="english-cell col-english" data-lang="english">Ji An went to his post and governed as before, so that Huaiyang was well administered.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后张汤果败,上闻黯与息言，抵息罪。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来张汤果然垮台了，当武帝听说汲黯曾对李息说过那番话，就判了李息的罪。</td>
+                <td class="english-cell col-english" data-lang="english">Later Zhang Tang did get into trouble and the emperor, hearing of Ji An's advice to Li Xi, had Li Xi punished too.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">令黯以诸侯相秩居淮阳。七岁而卒。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">并让汲黯以诸侯国相的级别继续做淮阳太守，直到七年后去世。</td>
+                <td class="english-cell col-english" data-lang="english">Ji An remained in Huaiyang with the rank of a chief minister to a prince until his death seven years later.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">卒后，上以黯故，官其弟汲仁至九卿，子汲偃至诸侯相。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯去世后，武帝为了褒扬他，任用汲黯的弟弟汲仁做了九卿，汲黯的儿子汲偃后来也做到了诸侯国相。</td>
+                <td class="english-cell col-english" data-lang="english">After Ji An's death, in recognition of his services, Emperor Wu made his younger brother Ji Ren high minister and his son Ji Yan chief minister of a principality.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">黯姑姊子司马安亦少与黯为太子洗马。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯的姑表兄弟司马安年轻时也和汲黯一起做过太子洗马，</td>
+                <td class="english-cell col-english" data-lang="english">Ji An's cousin Sima An, who had served in his youth as one of the crown prince's outriders with Ji An,</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">安文深巧善宦,官四至九卿，以河南太守卒。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">但司马安为人酷苛，善于向上爬，曾四次作到九卿，后来死在了河南太守任上。</td>
+                <td class="english-cell col-english" data-lang="english">was intelligent and knew how to get on as an official. Four times he was made a high minister, and he died governor of Henan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">昆弟以安故，同时至二千石者十人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">司马安的弟兄们由于司马安的推荐，作官作到二千石的有十个人。</td>
+                <td class="english-cell col-english" data-lang="english">At one time ten members of his family were officers of the two thousand piculs rank, thanks to Sima An's influence.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">濮阳段宏始事盖侯信,信任宏，宏亦再至九卿。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汲黯的同乡濮阳人段宏最初曾侍候过盖侯王信，由于王信的保任，段宏也两次作到了九卿。</td>
+                <td class="english-cell col-english" data-lang="english">Another native of Puyang, Duan Hong, worked under Wang Xin the marquis of Gai and became a high minister twice on his recommendation.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">然卫人仕者皆严惮汲黯，出其下。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">但总的说来，由卫国地区出来作官的人们还是更敬畏汲黯，谁都比不上他。</td>
+                <td class="english-cell col-english" data-lang="english">But all the men of Wei who served as officials had a great respect for Ji An and looked up to him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">郑当时者，字庄，陈人也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郑当时，字庄，陈县人。</td>
+                <td class="english-cell col-english" data-lang="english">Zheng Dangshi, whose courtesy name was Zhuang, was a man of Chen.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其先郑君尝为项籍将;籍死,已而属汉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他的先人郑君曾是项羽手下的将领。项羽死后，郑君归顺了汉朝。</td>
+                <td class="english-cell col-english" data-lang="english">An ancestor of his was a general under Xiang Yu and after Xiang Yu's death came over to Han,</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">高祖令诸故项籍臣名籍,郑君独不奉诏。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时刘邦曾下令让项羽的那些老部下在说话说到项羽时都必须直呼其名。对于这个命令，唯独郑君一个人不肯接受。</td>
+                <td class="english-cell col-english" data-lang="english">but when Emperor Gaozu ordered Xiang Yu's former officers to register, this man alone refused to do so.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">诏尽拜名籍者为大夫，而逐郑君。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是刘邦就把那些直呼项羽名字的人都封为大夫，而把郑君赶走了。</td>
+                <td class="english-cell col-english" data-lang="english">Emperor Gaozu made all the others high officials but dismissed Zheng,</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">郑君死孝文时。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郑君死于孝文帝在位的时候。</td>
+                <td class="english-cell col-english" data-lang="english">who died during the reign of Emperor Wen.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">郑庄以任侠自喜，脱张羽于厄,声闻梁、楚之间。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郑庄喜好仗义行侠，曾帮助梁孝王的将领张羽解脱灾难，在梁国和楚国一带很有声望。</td>
+                <td class="english-cell col-english" data-lang="english">Zheng Dangshi liked to perform deeds of gallantry, and after he rescued Zhang Yu when in distress his fame spread through Liang and Chu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">孝景时,为太子舍人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">孝景帝在位时，曾任郑庄为太子舍人。</td>
+                <td class="english-cell col-english" data-lang="english">During the reign of Emperor Jing he was steward to the crown prince.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">每五日洗沐，常置驿马长安诸郊，存诸故人，请谢宾客,夜以继日，至其明旦，常恐不遍。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郑庄每到五天头上该当放假休息的日子，总是在长安郊外预先准备好一些驿马，到时候他就骑着到处去看望旧友，拜访宾客，黑夜白天不停脚地一直忙到第二天早上该去上班的时候，他总是担心对朋友们看望不到。</td>
+                <td class="english-cell col-english" data-lang="english">On his leave, which came on every fifth day, he had post horses ready in the suburbs of the capital to call on old friends and protégés, or invited them home and entertained them all through the night until dawn. His only worry was that he might miss someone out.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">庄好黄老之言，其慕长者如恐不见。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他喜好黄帝、老子的学说，又敬慕长辈，唯恐错过机会见不到。</td>
+                <td class="english-cell col-english" data-lang="english">He liked the teachings of the Yellow Emperor and Lao Zi, admired his seniors and never lost a chance of meeting one.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">年少官薄，然其游知交皆其大父行,天下有名之士也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">尽管他年轻职位低，但他所结交访问的都是他祖父那么大年龄的天下的名士。</td>
+                <td class="english-cell col-english" data-lang="english">Although he was young and held such a humble post, the friends he sought out were men of his grandfather's generation whose names were known throughout the land.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">武帝立,庄稍迁为鲁中尉、济南太守、江都相,至九卿为右内史。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">武帝即位后，郑庄逐渐升迁，先后做过鲁国的中尉、济南郡的太守和江都国的相，后来又做到了右内史，成为九卿一级。</td>
+                <td class="english-cell col-english" data-lang="english">After Emperor Wu came to the throne, Zheng Dangshi was appointed army commander of the principality of Lu, then governor of Jinan, chief minister of Jiangdu and finally senior prefect of the capital, one of the nine chief ministers.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">以武安侯、魏其时议,贬秩为詹事,迁为大农令。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">在武安侯田蚡与魏其侯窦婴当朝争辩时，由于郑庄不敢大胆发表意见，被贬为詹事，后来又做了大农令。</td>
+                <td class="english-cell col-english" data-lang="english">At the time of the dispute between the marquises of Weiqi And Wuan, he was reduced in status and made the crown prince's steward, then he was transferred to become minister of revenue.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">庄为大吏,诫门下：“客至，无贵贱无留门者。”执宾主之礼，以其贵下人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郑庄身居高位，经常告诫他的守门人：“凡有客人来访，不论贵贱都要马上通报，不能让人家老在门口等着。”因此不论多么低微的客人到门，他都恭恭敬敬地以礼相待，很能礼贤下士。</td>
+                <td class="english-cell col-english" data-lang="english">During Zheng Dangshi's term as city prefect he told his servants, "When visitors come, whether high or low, never keep them waiting at the gate. "He treated all guests with deference in spite of his eminence.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">庄廉，又不治其产业,仰奉赐以给诸公。然其馈遗人，不过算器食。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他为人清廉，又不给自己置办产业增加收入，反靠着领来的那点俸禄和所得到的赏赐供养宾客。由于家里不富裕，他所赠给人的礼物，也就是用竹器装的一盒子食品。</td>
+                <td class="english-cell col-english" data-lang="english">Incorruptible and indifferent to his own estate, he depended on his official salary to entertain his friends, and his gifts to others were never more than food served in bamboo vessels.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">每朝，候上之间，说未尝不言天下之长者。其推毂士及官属丞史，诚有味其言之也，常引以为贤于己。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">但是每到上朝，他总是趁武帝空闲的时候，向他推荐一些知名的厚道贤人。当他推荐士大夫和各种下属官吏的时候，他说的那些话可真是有滋有味哪，他说他们比自己还要能干。</td>
+                <td class="english-cell col-english" data-lang="english">At court he took every opportunity of recommending worthy men to the emperor. He spoke with genuine enthusiasm of ordinary scholars and his subordinates, as if they were all better men than he.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">未尝名吏，与官属言,若恐伤之。闻人之善言，进之上，唯恐后。山东士诸公以此翕然称郑庄。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他对自己属下的官吏，也从来没有呼喊过他们的名字，和他们说话时唯恐伤害了自己的下属。每逢听到了一些好的建议，他就马上报告给皇上，唯恐耽误了事情。也正是由于这个原因，在崤山以东的广大地区里，人们都众口一致地说他好。</td>
+                <td class="english-cell col-english" data-lang="english">He never called officials by their familiar names and took great care in conversation not to hurt the feelings of his subordinates. When he heard of some good proposal, he made haste to report it to the emperor. As a result, all the gentlemen of the east spoke well of him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">郑庄使视决河,自请治行五日。上曰：“吾闻‘郑庄行，千里不赍粮’,请治行者何也?”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">有一次，郑庄被派去视察黄河决口，他向武帝请了五天假准备行李。这时武帝就开玩笑说：“我常听人们讲，说是‘郑庄出门，走一千里也用不着带干粮’，那你现在还请什么假收拾什么行李呢？”</td>
+                <td class="english-cell col-english" data-lang="english">When he was sent to investigate a flood of the Yellow River, he asked for five days to get ready for the journey. The emperor said, “I heard that you could travel a thousand li without taking any grain. What do you have to prepare for this journey?"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">然郑庄在朝，常趋和承意，不敢甚引当否。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">但是郑庄在朝中，也常常是顺从附和皇帝的意见，不敢明确地表明自己的态度。</td>
+                <td class="english-cell col-english" data-lang="english">At court Zheng Dangshi generally spoke mildly and fell in with the emperor's wishes, rarely venturing to express decided opinions.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">及晚节,汉征匈奴，招四夷，天下费多，财用益匮。庄任人宾客为大农僦人，多逋负。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">到了晚年，汉朝屡屡出兵征讨匈奴，以及招纳四方的少数民族小国，耗费巨大，以至于闹得整个国家的财政越来越困难。这时郑庄所保任的宾客给大司农雇人搞运输，亏欠了许多工钱不给。</td>
+                <td class="english-cell col-english" data-lang="english">By the time he was old, the costly campaigns against the Huns and other barbarian tribes were draining the resources of the empire. Certain transport officers in the ministry of revenue, who had been recommended by Zheng Dangshi or were his protégés, defaulted.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">司马安为淮阳太守，发其事,庄以此陷罪，赎为庶人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">淮阳太守司马安举报了这件事，结果郑庄被下了狱，他自己出钱赎成了平民。</td>
+                <td class="english-cell col-english" data-lang="english">Sima An, the governor of Huaiyang, reported this and Zheng Dangshi was implicated. On payment of a fine he was pardoned but struck off the list of officials.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">顷之，守长史。上以为老，以庄为汝南太守。数岁，以官卒。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">过了不久，武帝又让他在丞相属下做了一段时间的代理长史。后来武帝感到让郑庄做这个差事年纪太大了，于是就又派他去做了汝南郡的太守。几年后，郑庄死在了汝南任上。</td>
+                <td class="english-cell col-english" data-lang="english">Later he was made a senior secretary in the prime minister's office, but in view of his age the emperor appointed him as governor of Runan instead. He died in that office several years later.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">郑庄、汲黯始列为九卿,廉，内行修絜。此两人中废,家贫，宾客益落。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郑庄和汲黯都曾官至享受九卿待遇，都为政清廉，注重自身的品行修养。后来他们都中途被废，家境贫寒，因而宾客们也就都走了。</td>
+                <td class="english-cell col-english" data-lang="english">Zheng Dangshi and Ji An both ranked among the nine chief ministers, were incorruptible and scrupulously honest. Later both were degraded, their families became poor and their protégés gradually deserted them.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">及居郡，卒后家无余赀财。庄兄弟子孙以庄故，至二千石六七人焉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来他们又都出任过外郡郡守，死后家中没有留下任何多余的财产。但是郑庄的弟兄和他的子孙们，由于郑庄的推荐，却有六七个人做官做到了二千石。</td>
+                <td class="english-cell col-english" data-lang="english">Both died in the provinces leaving no property for their heirs. However, six or seven of Zheng Dangshi's brothers and descendants became officers of the two thousand piculs rank because of him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太史公曰：夫以汲、郑之贤，有势则宾客十倍，无势则否，况众人乎!</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">太史公说：像汲黯、郑当时这样的品德才干，竟然也是在得势时宾客盈门，失势时宾客四散，那其他一般的人还用得着说吗！</td>
+                <td class="english-cell col-english" data-lang="english">The Grand Historian comments: If worthy men like Ji An and Zheng Dangshi had friends by the score when they were in power and none when they fell from power, how must it be with ordinary men!</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">下邦翟公有言,始翟公为廷尉,宾客阗门;及废，门外可设雀罗。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">下邦县的翟公曾说过，当初他做廷尉的时候，宾客挤破了门；等到被罢官后，大门外几乎可以架起网来捕鸟。</td>
+                <td class="english-cell col-english" data-lang="english">Lord Zhai of Xiagui said that when he was chief justice guests thronged his gate, when he was dismissed you could have trapped birds at his door.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">翟公复为廷尉，宾客欲往，翟公乃大署其门曰：“一死一生，乃知交情；一贫一富，乃知交态；一贵一贱，交情乃见。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来他又被起用为廷尉，有些宾客就又想回来，于是他就在自己的门上写道：“一死一生，乃知交情；一贫一富，乃知交态；一贵一贱，交情乃见。”</td>
+                <td class="english-cell col-english" data-lang="english">but when he became chief justice again, his old protegés hoped to come back. Then he wrote in large characters on his gate: When a lifelong friend is dead, Friendship has fled; When a rich man becomes poor, Friendship is no more; When a noble is brought low, Friendship must go.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">汲、郑亦云,悲夫!</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">看来汲黯和郑庄当时也是如此，这个世道可真可悲啊！</td>
+                <td class="english-cell col-english" data-lang="english">Ji An and Zheng Dangshi might have said the same, alas!</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
       </main>
 
       <nav class="chapter-nav">
@@ -155,8 +774,139 @@ The Grand Historian comments: If worthy men like Ji An and Zheng Dangshi had fri
       </nav>
 
       <footer>
-        <small>并排三列显示</small>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
       </footer>
     </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>

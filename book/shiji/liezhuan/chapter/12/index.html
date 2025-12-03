@@ -4,129 +4,190 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>史记 — 第12章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
     <link rel="stylesheet" href="/static/style.css">
   </head>
   <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
       <header>
         <h1>史记 — 第12章 列传 李将军列传四十九</h1>
       </header>
 
-      <main class="parallel">
-        <section>
-          <h3>文言文</h3>
-          <div class="txt">李将军广者，陇西成纪人也。其先曰李信,秦时为将，逐得燕太子丹者也。故槐里,徙成纪。广家世世受射。孝文帝十四年,匈奴大入萧关,而广以良家子从军击胡,用善骑射，杀首虏多，为汉中郎。广从弟李蔡亦为郎，皆为武骑常侍，秩八百石。尝从行，有所冲陷折关及格猛兽,而文帝曰：“惜乎，子不遇时!如令子当高帝时，万户侯岂足道哉!”
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
 
-及孝景初立，广为陇西都尉，徙为骑郎将。吴楚军时，广为骁骑都尉,从太尉亚夫击吴楚军,取旗，显功名昌邑下。以梁王授广将军印,还，赏不行。徙为上谷太守,匈奴日以合战。典属国公孙昆邪为上泣曰:“李广才气，天下无双，自负其能，数与虏敌战，恐亡之。”于是乃徙为上郡太守。后广转为边郡太守，徙上郡。尝为陇西、北地、雁门、代郡、云中太守，皆以力 战为名。
-
-匈奴大入上郡，天子使中贵人从广勒习兵击匈奴。中贵人将骑数十纵，见匈奴三人，与战。三人还射，伤中贵人，杀其骑且尽。中贵人走广。广曰：“是必射雕者也。”广乃遂从百骑往驰三人。三人亡马步行，行数十里。广令其骑张左右翼，而广身自射彼三人者，杀其二人，生得一人，果匈奴射雕者也。已缚之上马，望匈奴有数千骑，见广，以为诱骑，皆惊，上山陈。广之百骑皆大恐，欲驰还走。广曰：“吾去大军数十里，今如此以百骑走，匈奴追射我立尽。今我留，匈奴必以我为大军之诱,必不敢击我。”广令诸骑曰：“前!”前未到匈奴陈二里所，止，令曰：“皆下马解鞍!”其骑曰：“虏多且近，即有急，奈何?”广曰：“彼虏以我为走，今皆解鞍以示不走，用坚其意。”于是胡骑遂不敢击。有白马将出护其兵,李广上马与十余骑奔射杀胡白马将，而复还至其骑中，解鞍，令士皆纵马卧。是时会暮，胡兵终怪之，不敢击。夜半时，胡兵亦以为汉有伏军于旁欲夜取之，胡皆引兵而去。平旦，李广乃归其大军。大军不知广所之，故弗从。
-
-居久之，孝景崩，武帝立,左右以为广名将也，于是广以上郡太守为未央卫尉,而程不识亦为长乐卫尉。程不识故与李广俱以边太守将军屯。及出击胡，而广行无部伍行陈,就善水草屯，舍止，人人自便，不击刀斗以自卫,莫府省约文书籍事,然亦远斥候,未尝遇害。程不识正部曲行伍营陈，击刀斗，士吏治军簿至明，军不得休息，然亦未尝遇害。不识曰：“李广军极简易，然虏卒犯之,无以禁也；而其士卒亦佚乐，咸乐为之死。我军虽烦扰，然虏亦不得犯我。”是时汉边郡李广、程不识皆为名将，然匈奴畏李广之略，士卒亦多乐从李广而苦程不识。程不识孝景时以数直谏为太中大夫。为人廉，谨于文法。
-
-后汉以马邑城诱单于,使大军伏马邑旁谷，而广为骁骑将军,领属护军将军。是时单于觉之,去，汉军皆无功。其后四岁，广以卫尉为将军，出雁门击匈奴。匈奴兵多，破败广军，生得广。单于素闻广贤，令曰：“得李广必生致之。”胡骑得广，广时伤病，置广两马间，络而盛卧广。行十余里，广详死，睨其旁有一胡儿骑善马，广暂腾而上胡儿马，因推堕儿，取其弓，鞭马南驰数十里，复得其余军，因引而入塞。匈奴捕者骑数百追之，广行取胡儿弓，射杀追骑，以故得脱。于是至汉，汉下广吏。吏当广所失亡多,为虏所生得，当斩，赎为庶人。
-
-顷之，家居数岁。广家与故颍阴侯孙屏野居蓝田南山中射猎。尝夜从一骑出，从人田间饮。还至霸陵亭，霸陵尉醉,呵止广。广骑曰：“故李将军。”尉曰：“今将军尚不得夜行，何乃故也!”止广宿亭下。居无何，匈奴入杀辽西太守，败韩将军。后韩将军徙右北平，死，于是天子乃召拜广为右北平太守。广即请霸陵尉与俱，至军而斩之。
-
-广居右北平，匈奴闻之，号曰“汉之飞将军”,避之数岁，不敢入右北平。广出猎，见草中石，以为虎而射之，中石没镞,视之石也。因复更射之，终不能复入石矣。广所居郡闻有虎，尝自射之。及居右北平射虎，虎腾伤广，广亦竟射杀之。
-
-广廉，得赏赐辄分其麾下，饮食与士共之。终广之身，为二千石四十余年,家无余财，终不言家产事。广为人长，援臂,其善射亦天性也，虽其子孙他人学者，莫能及广。广讷口少言，与人居则画地为军陈，射阔狭以饮。专以射为戏，竟死。广之将兵，乏绝之处，见水，士卒不尽饮，广不近水；士卒不尽食，广不尝食。宽缓不苛，士以此爱乐为用。其射，见敌急,非在数十步之内，度不中不发，发即应弦而倒。用此，其将兵数困辱,其射猛兽亦为所伤云。
-
-居顷之，石建卒，于是上召广代建为郎中令。元朔六年，广复为后将军,从大将军军出定襄,击匈奴。诸将多中首虏率,以功为侯者，而广军无功。后二岁,广以郎中令将四千骑出右北平，博望侯张骞将万骑与广俱,异道。行可数百里，匈奴左贤王将四万骑围广,广军士皆恐，广乃使其子敢往驰之。敢独与数十骑驰，直贯胡骑，出其左右而还,告广曰：“胡虏易与耳。”军士乃安。广为圜陈外向,胡急击之，矢下如雨。汉兵死者过半，汉矢且尽。广乃令士持满毋发，而广身自以大黄射其裨将,杀数人，胡虏益解。会日暮，吏士皆无人色，而广意气自如，益治军。军中自是服其勇也。明日，复力战，而博望侯军亦至，匈奴军乃解去。汉军罢，弗能追。是时广军几没，罢归。汉法，博望侯留迟后期，当死，赎为庶人。广军功自如,无赏。
-
-初，广之从弟李蔡与广俱事孝文帝。景帝时，蔡积功劳至二千石。孝武帝时，至代相。以元朔五年为轻车将军,从大将军击右贤王，有功中率，封为乐安侯。元狩二年中，代公孙弘为丞相。蔡为人在下中，名声出广下甚远，然广不得爵邑,官不过九卿,而蔡为列侯，位至三公。诸广之军吏及士卒或取封侯。广尝与望气王朔燕语,曰：“自汉击匈奴而广未尝不在其中，而诸部校尉以下四，才能不及中人，然以击胡军功取侯者数十人，而广不为后人，然无尺寸之功以得封邑者，何也?岂吾相不当侯邪?且固命也?”朔曰：“将军自念，岂尝有所恨乎?”广曰：“吾尝为陇西守，羌尝反,吾诱而降，降者八百余人，吾诈而同日杀之。至今大恨独此耳。”朔曰：“祸莫大于杀已降,此乃将军所以不得侯者也。”
-
-后二岁,大将军、骠骑将军大出击匈奴,广数自请行。天子以为老，弗许；良久乃许之，以为前将军。是岁，元狩四
-
-广既从大将军青击匈奴，既出塞，青捕虏知单于所居，乃自以精兵走之，而令广并于右将军军，出东道。东道少回远，而大军行水草少，其势不屯行。广自请曰：“臣部为前将军，今大将军乃徙令臣出东道，且臣结发而与匈奴战,今乃一得当单于，臣愿居前，先死单于。”大将军青亦阴受上诫，以为李广老，数奇,毋令当单于，恐不得所欲。而是时公孙敖新失侯,为中将军从大将军,大将军亦欲使敖与俱当单于,故徙前将军广。广时知之，固自辞于大将军。大将军不听，令长史封书与广之莫府,曰：“急诣部，如书。”广不谢大将军而起行，意甚愠怒而就部，引兵与右将军食其合军出东道。军亡导，或失道,后大将军。大将军与单于接战，单于遁走,弗能得而还。南绝幕,遇前将军、右将军。广已见大将军，还入军。大将军使长史持精醪遗广,因问广、食其失道状，青欲上书报天子军曲折。广未对，大将军长史急责广之幕府对簿。广曰：“诸校尉无罪，乃我自失道。吾今自上簿。”
-
-至莫府,广谓其麾下曰：“广结发与匈奴大小七十余战，今幸从大将军出接单于兵，而大将军又徙广部行回远，而又迷失道，岂非天哉!且广年六十余矣，终不能复对刀笔之吏。”遂引刀自刭。广军士大夫一军皆哭。百姓闻之，知与不知，无老壮皆为垂涕。而右将军独下吏，当死，赎为庶人。
-
-广子三人，曰当户、椒、敢，为郎。天子与韩嫣戏,嫣少不逊，当户击嫣，嫣走。于是天子以为勇。当户早死，拜椒为代郡太守,皆先广死。当户有遗腹子名陵。广死军时，敢从骠骑将军。广死明年,李蔡以丞相坐侵孝景园蠕地,当下吏治，蔡亦自杀,不对狱,国除。李敢以校尉从骠骑将军击胡左贤王,力战，夺左贤王鼓旗，斩首多，赐爵关内侯,食邑二百户，代广为郎中令。顷之，怨大将军青之恨其父,乃击伤大将军，大将军匿讳之。居无何，敢从上雍，至甘泉宫猎。骠骑将军去病与青有亲，射杀敢。去病时方贵幸，上讳云鹿触杀之。居岁余，去病死。而敢有女为太子中人,爱幸，敢男禹有宠于太子,然好利，李氏陵迟衰微矣。
-
-李陵既壮，选为建章监,监诸骑。善射，爱士卒。天子以为李氏世将，而使将八百骑。尝深入匈奴二千余里，过居延视地形,无所见虏而还。拜为骑都尉,将丹阳楚人五千人，教射酒泉、张掖以屯卫胡。
-
-数岁，天汉二年秋,贰师将军李广利将三万骑击匈奴右贤王于祁连天山,而使陵将其射士步兵五千人出居延北可千余里，欲以分匈奴兵，毋令专走贰师也。陵既至期还，而单于以兵八万围击陵军。陵军五千人，兵矢既尽，士死者过半，而所杀伤匈奴亦万余人。且引且战,连斗八日，还未到居延百余里，匈奴遮狭绝道,陵食乏而救兵不到，虏急击招降陵。陵曰：“无面目报陛下。”遂降匈奴。其兵尽没，余亡散得归汉者四百余人。
-
-单于既得陵，素闻其家声，及战又壮，乃以其女妻陵而贵之。汉闻，族陵母妻子。自是之后，李氏名败，而陇西之士居门下者皆用为耻焉。
-
-太史公曰：传曰“其身正，不令而行；其身不正，虽令不从”。其李将军之谓也?余睹李将军悛悛如鄙人,口不能道辞。及死之日，天下知与不知，皆为尽哀。彼其忠实心诚信于士大夫也?谚曰“桃李不言，下自成蹊”。此言虽小，可以谕大也。</div>
-        </section>
-        <section>
-          <h3>现代汉语</h3>
-          <div class="txt">李广将军是陇西郡成纪县人，他的祖先李信是秦国的名将，曾经在灭掉燕国后活捉了燕太子丹。李广家的原籍是槐里县，后来迁到了成纪。射箭是李广家世代相传的绝技。孝文帝十四年，匈奴大规模入侵萧关，这时李广以“良家子”的身份参军，抗击匈奴，由于他善于骑马射箭，杀的敌人多，因此被任为中郎。当时李广的堂弟李蔡也在皇帝身边为郎，兄弟二人都跟着汉文帝当武骑常侍，官阶是八百石。有一次，李广跟随文帝外出，在冲锋陷阵和与猛兽格斗中表现出了无比的勇敢。文帝称赞李广说：“真可惜啊!你生得不是时候!如果你生在高皇帝打江山的年代，凭你这身功夫，万户侯又何足挂齿呢!”
-
-等到景帝即位后，李广先任陇西都尉，接着被召进京城做了皇帝的侍从武官——骑郎将。后来吴楚七国叛乱时，李广以骁骑将军的身份跟着太尉周亚夫前往讨伐叛军。在战斗中，李广夺得了敌军的战旗，在昌邑大显威名。只因为梁孝王赠给了李广一颗将军印，回京后被景帝所迁怒，因而在别人受赏时，李广就没能再受到封赏。后来李广被调任上谷太守，匈奴军队每天和他打仗。于是典属国公孙昆邪流着眼泪向景帝请求说：“李广的本领，在当今天下无双，也正因此他自恃武艺高强，天天和敌军交战，我真怕万一有个闪失，损失了这员名将。”于是景帝就把李广调到了上郡当太守。后来，李广历任边地各郡太守，然后调任上郡太守。他曾经做过陇西、 北地、雁门、代郡和云中太守，都因为努力作战而出名。
-
-李广做上郡太守的时候，正赶上匈奴人大举进攻上郡，这时皇帝派了一名受宠信的宦官到上郡来跟着李广学习军事。有一次这个宦官带领着几十名骑兵在田野上纵马奔驰，突然遇到了三个匈奴人，便打了起来。结果这个宦官被匈奴人射伤，他带的几十名骑兵几乎全被匈奴人射死了。宦官逃回了李广这里，李广说：“这一定是射雕的。”他立即带了百数名骑兵去追赶这三个人。这三个人把自己的马丢了，只好步行，这时已经走出几十里了。李广命令部下做出了从左右两侧包抄的态势，自己拿了弓箭射他们，结果射死了两个，活捉了一个，一审问，果然是匈奴的射雕人。他们刚把俘虏绑在马上，准备回营，突然望见从远处来了几千名匈奴骑兵。这些骑兵也发现了李广，他们以为这是汉军派出来特意引着他们去上当的，心里很吃惊，于是慌忙冲上山头布好阵式。李广的这百数人怕极了，都想赶紧往回跑。李广说：“这里离着我们的大部队有几十里，我们这百数人如果往回跑，匈奴人迫上来一阵乱箭就都把我们射死了。如果我们留下来不走，匈奴人必然以为我们是大部队派出来故意引诱他们去上当的，他们一定不敢打我们。”于是李广命令这百数人：“前进!”一直走到离匈奴人只有二里地的地方才停下来，接着又下令说：“全体下马，把鞍子解下来!”有人说：“敌人这么多，离我们又这么近，我们再都下马解鞍，如果敌人进攻我们，我们怎么办?”李广说：“敌人肯定以为我们是会跑的，现在我们偏要给他来个下马解鞍表明不跑，以此来强化他们那种错误判断。”这样一来，匈奴人果然没敢进攻李广。后来敌人那边有个骑白马的将领出来整理阵容，这时李广突然上马带着十来个人飞奔过去将他射死了，然后又退了回来解下马鞍子，并命令士兵们把马放开，躺在地上休息。这时天色渐晚，匈奴人始终觉得这伙人可疑，没敢轻易出击。到了半夜，匈奴人更怀疑附近可能埋伏着大批汉军，打算乘夜晚偷袭他们，于是他们赶紧撤走了。第二天清晨，李广才回到大本营。李广的大部队因为不知道李广昨晚去了何处，所以只有在原地待命。
-
-过了好多年，汉景帝死了，汉武帝即位，左右大臣都说李广是一位名将，于是李广从上郡太守被调入朝廷当了未央宫的卫尉，当时程不识正做长乐宫的卫尉。程不识和李广一样，过去都曾以边郡太守的身份率领军队驻守边防。每当出兵讨伐匈奴时，李广的军队比较随便，甚至连严格的组织队列都没有，驻扎的时候也只是挑个有水草的地方，住下之后人人自便，夜里也不打更巡逻，军部里各种办事的规章案牍一切从简，但由于他能远放哨探，掌握敌情，所以也从未遭受过敌人的偷袭。而程不识则相反，他的军队不论行军扎营一切规章制度都很严格，夜里要打更巡逻，军部里的文吏们处理各种簿籍档案常常通宵达旦，全军都忙忙碌碌，得不到休息，因此他的军队也未曾遭受过什么突然的侵害。程不识说：“李广的治军办法，极其简单省事，如果遇上敌人偷袭，恐怕就难以招架了。但他的士兵们生活得很快乐，因此到了作战的时候，大家都愿意为他拼命。我的治军虽然罗嗦麻烦，但敌人不可能对我发动突然袭击。”那时候，李广和程不识都是汉朝边郡上的名将，但是匈奴人特别怕李广的胆略，而士兵们也都乐于跟着李广而不愿意跟着程不识。程不识曾因为敢于直言切谏在景帝时期做过太中大夫，为人廉洁，谨守规章法度。
-
-后来汉朝派人用假装出卖马邑城的办法企图引诱匈奴单于上钩，而把大批汉军埋伏在马邑周围的山沟里，李广以骁骑将军的身份参加了这次行动，属护军将军韩安国统领。不料汉军的这次阴谋被匈奴单于所发觉，在还没有到达马邑的时候就把军队撤回去了，因此汉军白忙了一回。又过了四年，李广以未央宫卫尉的身份为将军，率兵出雁门关讨伐匈奴。不料遇到了匈奴的大军，结果汉军被击败，李广也被人俘虏了。匈奴单于早就知道李广是一员名将，因此他早就下过命令：“如果遇到李广一定要抓活的。”匈奴捉到李广后，李广当时正害着病，同时又受了伤，于是匈奴人就在两匹马之间拴了一个网床，让李广躺在上边。李广躺着一直装死不动，等到走出了十几里的时候，他斜着眼偷偷瞧见他身边有个匈奴人骑着一匹好马，于是他就突然一跃而起，跳到了这个匈奴人的马上，夺过了他的弓箭，把他推到了马下，然后快马加鞭一口气向南跑了几十里，找到了自己的残部，领着他们返回了关内。当时有几百个匈奴骑兵在后面追赶李广，李广就用他夺来的那张弓回身射死了追上来的匈奴人，终于得以脱身。李广回来后，朝廷把李广交给军法处审判，军法处判定李广损失士卒众多，且又自身被俘，应当斩首。但允许李广出钱赎罪，因而得以免死，成了普通百姓。
-
-李广当老百姓的这几年里，他常常和颍阴侯灌婴的孙子灌强隐居在长安以南的蓝田县山中打猎。有一天夜里李广带着一个随从去和他的一个朋友在田间饮酒。回来经过霸陵亭的时候，正好遇到了喝醉酒的霸陵县尉，他呵责李广为什么犯夜，并要拘留他。这时李广的从人连忙解释说：“这位是前任的李将军。”县尉蛮横地说：“就是现任的将军也不许夜行，更何况你是个卸了任的将军!”于是硬把李广扣留在亭下过了一宿。过了不久，匈奴人进犯辽西，杀了辽西郡的太守，打败了韩安国的守军。又过后不久，朝廷调任右北平太守的韩安国呕血死了，于是武帝起用李广，任命他做了右北平太守。李广接到任命后就向朝廷请求调那个霸陵县尉到他部下听用，一到军中，李广就把他杀了。
-
-李广在任右北平太守的时候，匈奴人都知道他的名字。他们敬畏地称李广为汉朝的“飞将军”,一连几年躲避他，不敢进犯右北平。有一次李广外出射猎，误将草丛中的一块巨石看成了老虎，他拔箭就射，整个箭头都射到石头里去了，近前一看，才知道是石头。李广自己也觉得奇怪，待要开弓再射，却再也射不进去了。李广在各郡任太守时，只要听说哪里有老虎，总是亲自去射。后来在右北平射虎时，被老虎跳起来咬伤了，但最后李广还是射死了这只老虎。
-
-李广为人廉洁，每次得到了朝廷的赏赐总是全都分给他的部下，有好的东西也都是和士兵们一起吃喝。他一辈子当了四十多年的二千石，到头来家中没攒下一点钱财，而他自己也从来不提家产的事。李广个子很高，胳膊也长，他那套射箭的绝技也有些确实是出于天性，别的人即使是他的子孙学射箭，都没有一个能赶上他的。他言语迟钝，平常很少说话，和别人在一起时总喜欢画地为阵，比赛谁射箭射得准，输了的罚酒。一直到死都是这个习惯。他一生带兵东奔西走，每遇到缺水乏粮的时候，只要士兵还没有喝上水他就决不喝水；只要士兵们还没有吃到东西他就决不吃。他待人宽厚和气，因此大家都乐于为他效力。他射箭也有个习惯，每逢遇到敌人，非等到相距只有几十步，能够百发百中的时候他才射，一旦开弓，敌人肯定是应弦而倒。但也正因为这个，他也不止一次地被敌人搞得很狼狈，射猛兽的时候也时而被猛兽所伤。
-
-又过了一些时候，郎中令石建死了，于是武帝把李广召回接替石建做了郎中令。元朔六年，李广又以后将军的身份，跟随大将军卫青出定襄讨伐匈奴。在这次出征中许多将领都因为杀敌够数而被封了侯，唯独李广却落了个劳而无功。又过了两年，李广又以郎中令的身份率领四千骑兵从右北平出发讨伐匈奴，这时博望侯张骞也率领着一万多人同时出征，各人自走一条路。李广的部队进入了匈奴几百里后，突然被匈奴左贤王率领的四万骑兵包围了。这时，李广的部下都十分恐慌，而李广却镇定自如，他派他的儿子李敢先去冲击一下敌人。李敢带领着几十名骑兵跃马扬鞭，冲入了敌阵，他们在敌阵中从腹到背，从左到右，穿了个大十字，而后回来了。他们向李广报告说：“这些匈奴人容易对付!”看到了这种情景，军心才稳定下来。于是李广把自己的四千人排成一个圆阵，以对付四面围上来的敌人。匈奴人对李广的军队发起猛攻，一时间箭如雨下，四千人被射死一多半，而箭也快要射光了。于是李广命令士兵们搭上箭，拉开弓，但不要射出，他自己则用一种“大黄”弩，一连射死了匈奴的几个偏将，其余的人吓得纷纷后退。这时天已经黑了下来，李广的部下个个面无人色，唯独李广仍是那么意气风发，镇定自如，他把队伍又整顿了一下，准备继续战斗。通过这一次，人们对于李广的勇敢胆略，可真算是服了。第二天，他们又接着顽强地作战，刚好这时博望侯张骞的军队到了。匈奴人一见汉军的援兵到达，立即向北撤去。汉军则因为疲惫已极，已经无力追击了。这一次李广的部队几乎全军覆没。回来之后，依照朝廷的法律，博望侯张骞由于未能按时到达，判处死刑，张骞出钱赎罪，被革职为民。李广的军功和失败的罪责相抵，因此也没有受到任何赏赐。
-
-早在孝文帝做皇帝的时候，李广就和他的堂弟李蔡一同在文帝驾前服务。到景帝在位时，李蔡已经慢慢升迁到了二千石。到武帝即位后，李蔡先是做了代国的丞相。元朔五年又以轻车将军的身份跟随大将军卫青出击匈奴右贤王，由于功劳够格，被封为乐安侯。到元狩二年，竟接替公孙弘做了丞相。李蔡的人品，只能算个下中等，名声比李广差远了。然而李广一辈子也没有得到封爵领地，官位最高没有超过九卿，而李蔡却被封了侯，官阶也到了三公。李广部下的不少军官甚至士兵后来也封了侯。有一次，李广和一个望气的术士王朔闲谈，他对王朔说：“自从汉朝讨伐匈奴开始，我几乎没有一次战斗没有参加。我手下的一些人有的才能还够不上个中等，然而现在已经有几十个人封侯了。而我哪一条也不比他们差，可是直到今天竟没有得到尺寸之地的封赏。是我的骨相不该封侯呢?还是命里注定的呢?”王朔说：“您好好回想一下，您曾经做过什么让自己后悔的事吗?”李广说：“我在做陇西太守的时候，曾遇上羌人谋反。我引诱他们投降，有八百多人已经投降了，但最后我欺骗了他们，在当天就把他们都杀了。我至今最后悔的就是这件事。”王朔说：“杀害已经投降的人，是一种最大的阴祸，这就是您不得封侯的原因。”
-
-又过了两年，大将军卫青、骠骑将军霍去病率领大军大规模出击匈奴，李广请求参战。武帝认为他老了，开始时不答应。后来因为李广总是请求，武帝才答应了，派他做了前将军。这一年，是汉武帝元狩四年。
-
-李广跟着卫青到达塞北后，他们从捕获的俘虏口中得知了匈奴单于住在什么地方，于是卫青就想自己率着精锐部队，直扑匈奴单于。他命令李广带着他的部下合并到右将军赵食其的东路上去了。东路本来就有些绕远，而卫青的主力部队所走的中路水草少，路上势必昼夜兼程，不能停留。于是李广请求说：“我是前将军，您现在却让我并入东路。我从二十来岁起就和匈奴打仗，今天好不容易才能碰上匈奴单于。我愿意打头阵，今天即使战死我也心甘情愿。”可是早在出发之前，汉武帝就嘱咐卫青了，他说李广一来年岁大，二来这个人运气不好，不要让他和单于对阵，否则恐怕就实现不了我们的愿望了。这时也正好卫青的好友公孙敖刚刚丢掉了侯爵，他这次也跟着卫青以中将军的身份出征了，卫青也正想让公孙敖和他一道直扑单于，也好给公孙敖创造个重新封侯的机会，所以他打定主意调走李广。这一切，李广心里都清楚，但他还是一再向卫青请求。卫青不听，后来他干脆派他的长史直接把命令送到了李广的军部，并催促李广说：“请你马上按照命令到右将军军部报到!”李广非常气愤，他也没向卫青告辞，就满腔怒气地回到了自己的军部，率领部队合到赵食其的右路军上去了。结果右路军没有向导，半道上迷了路，没能按时到达前线。卫青的中路军与单于开战后，单于发觉形势不利，就撤军逃跑了。卫青此行遂一无所获。当卫青率领大军回师向南越过沙漠之后，才遇到了李广和赵食其。李广和卫青见了一下面，什么话也没说就回到了自己的军部。卫青派他的长史把干饭和浓酒送给李广，并向李广和赵食其询问军队迷路的情况，说是自己要向皇帝上报这次出兵不利的原委。李广置之不理。卫青的长史急切地责问李广的部下，逼着他们交代事实。李广忍无可忍，拦住长史说：“我的部下们都没有过错，军队迷路是我的责任，我自己给上头写报告。”
-
-李广对自己的部下说：“我从年轻时到现在与匈奴打了大小七十余仗，这次好不容易跟着大将军出来碰上匈奴单于，谁想到大将军又偏偏把我调到了一条绕远的路上，而我们自己又偏偏迷了路，这不是天意吗!我已经是六十多岁的人了，无论如何我也不能再去与那些刀笔吏们对质争辩。”于是他拔出战刀自刎而死。李广部下的官兵们都为自己的将军痛哭，百姓们听到这个消息后，不论认识的还是不认识的，不论男女老幼，也都为这位名将落了泪。右将军赵食其接受了审判，被定为死刑，自己出钱赎做了百姓。
-
-李广有三个儿子，名叫李当户、李椒和李敢，都做过汉武帝的侍卫官。有一次，武帝与他的宠臣韩嫣嬉戏，韩嫣有些失礼的举动，李当户立即冲上去打韩嫣，把韩嫣打跑了。武帝很欣赏他的勇敢。李当户死得早，李椒后来做过代郡的太守，这两个儿子都死在李广之前。李当户有个遗腹子，名叫李陵。李广在军中自杀的时候，他的三儿子李敢当时正在骠骑将军霍去病军中。第二年，李广的堂弟、正在做丞相的李蔡，被加了个“侵占”孝景皇帝陵园范围内的土地的罪名，要交给法官惩处。李蔡不愿到公堂上去对质，也自杀了，于是他乐安侯的领地和封号也被取消。李广的三儿子李敢，曾以校尉的身份跟着骠骑将军霍去病出征匈奴左贤王，由于他作战英勇，夺得了左贤王的战旗战鼓，斩获的敌人多，因而被封为关内侯，赐与了食邑二百户，并任命他接替父亲李广当了郎中令。不久，由于李敢怨恨卫青逼得他的父亲含恨而死，所以他寻找机会把卫青打伤了。卫青因为心里有鬼，所以也就没有声张。不久，李敢跟着汉武帝先是到雍县后来又到甘泉宫去射猎，这时卫青的外甥骠骑将军霍去病就借着机会把李敢射死了。当时霍去病正受着汉武帝的宠幸，所以汉武帝就帮助他隐瞒事实，编造谎言说李敢是被鹿顶死的。又过了一年多，霍去病也死了。李敢有个女儿在戾太子宫中，很受戾太子的宠幸。李敢的儿子李禹也很受戾太子的宠幸，但李禹是个好利的人。从此以后，李氏家族便越来越衰落了。
-
-李陵长大以后，被选拔为建章宫监，监管驻扎在建章宫的骑兵。李陵擅长射箭，热爱士兵。皇上因李陵的先辈世代为将，于是让李陵率领八百骑兵，深入匈奴地区两千余里，到居延泽以北探测地形，没有碰上敌人平安而回。李陵被任为骑都尉，领着丹阳籍的五千南方人在酒泉、张掖一带练习射箭，驻守备胡。
-
-过了几年，到天汉二年秋，贰师将军李广利率军三万人出击匈奴，与匈奴右贤王会战于祁连山，皇上让李陵率领着他所教射的五千步兵由居延泽北出千余里，目的是想以此分散匈奴的兵力，不让他们把所有军队都集中用去对付李广利。李陵开始没有遇到敌人，到日期已满正在向南返回时，被匈奴单于的八万大军所包围。李陵只有五千人，箭已经用完，士兵损失过半，杀死杀伤匈奴人大约过万。李陵且战且退，一连八天，在距离居延塞不到一百里的地方，被匈奴人截断了退路。李陵军既无粮食，又无救兵，匈奴则趁势猛攻，逼着李陵投降。李陵说：“没有面目再回去见陛下了。”于是投降了匈奴人。李陵的军队几乎全军覆灭，回到汉朝的只有四百人。
-
-匈奴单于得到李陵后，由于一来早就知道李氏家族的名声，二来也是喜欢李陵作战的勇敢，于是便把自己的女儿许配给了李陵，对李陵很尊宠。汉朝听说李陵投降匈奴，便把李陵的母亲妻子全杀了。从此以后，李氏家族的名声遂变得很臭，甚至连在宫廷为官的陇西人都为和李氏同郡而感到羞耻。
-
-太史公说：《论语》上曾说：“自己的行为端正，即使不下命令，别人也会跟着执行；自己的行为不端正，即使下命令别人也不听。”这话说的不正是李将军吗?我看李将军的模样，谦恭诚实得像乡下人，简直就是不会说话。可是到他死的时候，普天下不论认识他的还是不认识他的人，都为他哀悼。这难道不是他那一颗忠诚的心感动了大家吗?俗话说：“桃树李树虽然不会说话，但它的本质吸引人，树下都让人踩出了一条路。”这话虽然讲的是一件小事，但却可以说明一个大道理。</div>
-        </section>
-        <section>
-          <h3>English</h3>
-          <div class="txt">General Li Guang, a man of Chengji in Longxi, was descended from Li Xin, the general of Qin who pursued and captured Dan, the crown prince of Yan. His family originated in Huaili but later moved to Chengjiang the men of each generation were trained in archery. In the fourteenth year of Emperor Wen,a strong force of Huns rode through the Xiao Pass. Then Li Guang, as the son of a good family, joined the army to resist the enemy. A brilliant mounted archer, he killed and captured many Huns and was made a palace guard. He and his cousin Li Cai, another palace guard, served as mounted guards with a stipend of eight hundred piculs of grain. LiGuang often accompanied the emperor on his trips, and his skill in attack and defence or in grappling with wild beasts made Emperor Wen remark, “What a pity you weren't born at a different time! Had you lived during Emperor Gaozu's reign, you would easily have won a fief with ten thousand households.”
-
-When Emperor Jing ascended the throne, LiGuang was appointed as commander of Longxi and soon promoted to the rank of a general of the mounted guard. During the campaign against Wu and Chu he served as commander of the Valiant Cavalry under Grand Marshal Zhou Yafu and distinguished himself by capturing the rebels' flag at Changyi. But because he accepted an appointment as a general from the prince of Liang without imperial sanction, he was not rewarded on the return of the army. Instead he was made the governor of Shanggu, a district constantly harried by the Huns. The director of dependent states, Gongsun Kunxie, pleaded with the emperor, "There is no braver or more brilliant officer in the empire than Li Guang, but trusting to his own ability he never loses a chance of engaging the Huns. I am afraid we may lose him." Li Guang was therefore transferred to the governorship of Shangjun. He was later transferred to govern various frontier provinces and then made the governor of Shangjun again. He also held posts atLongxi, Beidi, Yanmen, Daijun and Yunzhong. And wherever he went he won fame for his hard fighting.
-
-When the Huns invaded Shangjun in force, EmperorJing ordered one of his favourite eunuchs to join Li Guang in order to gain experience in fighting the Huns. One day this eunuch at the head of several dozen horsemen met with three Hunnish riders and engaged them in a fight. The Huns turned in their saddles and drew their bows, wounding the eunuch and killing most of his men. The eunuch fled back to Li Guang. “These must be their best sharp-shooters known as the ‘eagle- hunters said Li Guang, and rode out with a hundred horsemen in pursuit. The three Huns had lost their horses and covered several dozen lion foot. Li Guang ordered his men to fan out to the left and the right while he shot at the enemy and, after killing two of them and taking the third alive, he found that these were indeed “eagle-hunters”. Li Guang had barely bound the captive on his horse when several thousand Hunnish horsemen came in sight, but the smallness of the Chinese force made them suspect a trap and they took to the hills in defensive formation. The hundred horsemen with Li Guang were so alarmed that they wanted to gallop straight back. "We are dozens of li from our main force," said Li Guang. "If the hundred of us make a dash for it, the Huns will give chase and shoot us down in no time; whereas if we stay here and will not dare to attack.” He gave the order, “Advance!” When they were about two li from the enemy, he halted and ordered, "Dismount and undo your saddles." "This horde of Huns is almost on top of us," protested his men. “What shall we do if they attack?” "They expect us to withdraw," replied Li Guang."But when they see us unsaddle our horses to stop here, they will be surer than ever that this is a trick." The Huns dared not attack, but one of their chieftains galloped out on a white horse to reconnoitre. Li Guang remounted and charged with a dozen riders to shoot down the Hun. This done, he returned to his troops, unsaddled his mount and ordered his men to turn loose their horses and lie down to sleep. It was now dusk and the Huns were too bewildered to attack. Suspecting that an ambushing Han (206BC.-8A.D.)force might fall on them in the dark, they withdrew by night. At dawn Li Guang rejoined the main army, which had not come to his rescue because it had no idea where he had gone.
-
-When Emperor Jing died and Emperor Wu succeeded to the throne,Li Guang's fame as a general won him promotion from his post at Shangjun to the command of the guard of Weiyang Palace. At this time Cheng Bushi was commander of the guard of Changle Palace. He, like Li Guang, had served as a governor of frontier provinces, defending the border and leading expeditions against the Huns. Li Guang paid little attention to military formation on the march, but would make camp wherever he found water and grass and let his men do as they pleased. He appointed no one to sound the watch and kept dispatch-writing and clerical work down to a minimum at his headquarters. But his scouts always reconnoitred deep into enemy territory, and he had never come to any harm. Cheng Bushi, on the other hand, laid great stress on military formation and discipline. Sentries sounded the watch in his camp,and his officers had to sit up all night writing records and reports. But he had never come to grief either. "Li Guang's army routine is certainly simple," said Cheng Bushi once. “But if the enemy launches a sudden attack, he will be at their mercy. Still, his troops have such an easy time of it that they would gladly die for him. Our army routine may be irksome, but the enemy will never catch us napping.” Although both these men were famous generals of the frontier provinces, the Huns feared Li Guang's tactics and soldiers preferred to serve under him rather than under Cheng, who had a reputation for harshness. During Emperor Jing's time, Cheng Bushi had been made a grand counsellor because of the frank advice he gave on several occasions. He was scrupulously honest and a stickler for regulations and discipline.
-
-Some time later an attempt was made to entice the Huns into the town of Mayi, and a large Han force was concealed in a neighbouring valley. Li Guang was appointed as General of the Valiant Cavalry un- der the command of Han Anguo, General of the Protecting Army. But the Hunnish khan discovered the trap and withdrew so that the Han troops had no chance to distinguish themselves. Four years later Li Guang, then still a captain of the palace guard, was made a general and sent to attack the Huns beyond Yanmen. His army was outnumbered and routed but he was captured, for the khan, who had heard of his ability, had given orders that he must be taken alive. When the Hunnish cavalry caught him he was wounded, so they laid him on a litter between two horses. They had covered more than ten li when Li Guang, who had shammed dead, saw through half- closed eyelids that a young Hun mounted on a fine horse was beside him. He leapt suddenly on to this horse, throwing down its young rider and snatching away his bow. Then he galloped south for several dozen li until he found what was left of his troops and led them back inside the frontier. Several hundred Hunnish horsemen had galloped after him, but shooting with the Hun's bow as he rode he killed many of his pursuers and made good his escape. Upon his return to the capital, he was tried. As he had lost many men and let himself be captured alive by the Huns, he was sentenced to death; but he was permitted to ransom himself and become a commoner.
-
-He lived in retirement for a few years near the grandson of the former marquis of Yingyin in Lantian among the southern hills,where he devoted most of his time to hunting. One day he went out with an attendant and accepted an invitation to drink in a farm house, not returning to Baling watch station till it was dark. The constable guarding the station was drunk and yelled at him to halt. “This is the former General Li," said Li Guang's man. "Even an accredited general cannot wander about after dark," retorted the constable. “Much less a former general!” He detained Li Guang there. Later the Huns crossed the border again, killed the governor of Liaoxi and defeated General Han Anguo, who withdrew to Youbeiping. Then the emperor made Li Guang the governor of Youbeiping. Li Guang asked to have the constable of Baling Station sent with him, and as soon as the man arrived he cut off his head.
-
-The Huns called Li Guang the "Winged General" of Han, and as long as he was governor they dared not invade Youbeiping. Once when out hunting, LiGuang shot a boulder in the grass which he mistook for a tiger, and the entire tip of his arrow was embedded in the rock. But when he realized what it was and shot again, he could not pierce the boulder. Whenever he heard of a tiger in the province where he was living, he would hunt it. In Youbeiping a tiger leapt at him and mauled him, but he finally succeeded in killing the beast.
-
-Li Guang was open-handed. He divided all his rewards among his officers and ate the same food as his men. For over forty years his stipend was two thousand piculs a year, but he saved no money and never talked about property.He was tall and long-armed like an ape. His skill in archery can only be attributed to natural aptitude, for none of his descendants or others who learned bowmanship from him could equal him. He was a poor talker who had little to say. To pass the time with others he would draw military formations on the ground and compete in shooting at them: the losers had to drink. Indeed, up to the end of his life shooting was his sole recreation. When Li Guang's troops were short of water and food, he would not drink until all his men had drunk, nor eat until they had eaten. And since he was lenient and generous to his troops, they served him loyally. In battle, he would not shoot until his adversary was within a few dozen paces and he could be sure of hitting him. Then as soon as his bowstring twanged the enemy fell. Because of this, he and his men were often worsted, just as he was often wounded by beasts in the chase.
-
-When Shi Jian the captain of the palace guard died, the emperor appointed Li Guang in his place. In the sixth year of Yuanshuo he served again as rear general under Grand Marshal Wei Qing, advancing from Dingxiang to attack the Huns. Most of the other generals killed and captured enough foes to be made marquises for their services,but Li Guang's army met with no success. Three years later Li Guang, still captain of the palace guard, advanced at the head of four thousand horsemen from Youbeiping, while Zhang Qian, the marquis of Bowang, led ten thousand cavalry by a different route. Li Guang had advanced several hundred li when he was surrounded by the Eastern Prince of the Huns with forty thou- sand horsemen. Seeing that his men were afraid, Li Guang ordered his son Li Gan to break through the enemy's ranks. Li Gan and a few dozen men galloped through the left and right flanks of the enemy lines, then returned to report, “These Huns are easy to handle!” At this the other soldiers took heart again. Li Guang drew up his troops in a circle, the men facing outwards. The Huns attacked in force, arrows rained down; soon more than half of the Han soldiers had fallen, and their supply of arrows was nearly exhausted. Then Li Guang ordered his men to fit arrows to their bows but not to shoot. Meanwhile he aimed with his large yellow crossbow at the Hunnish leaders and killed several of them. After this the Huns attacked less fiercely. Night was falling and his officers and men were deathly pale but Li Guang remained calm and confident as he regrouped his forces. Ever after, he was a byword for courage in the army. The next day they again fought desperately until ZhangQian brought up reinforcements and the Huns retreated. The Han troops were too weary to give chase. Since Li Guang's men had nearly been wiped out, he gave up the fight and returned. According to the law, Zhang Qian should have been sentenced to death for arriving late; but he was permitted to ransom himself and become a commoner. LiGuang's achievement was cancelled out by his losses; hence he went unrewarded.
-
-Li Guang's cousin Li Cai, who had also served as a palace guard in Emperor Wen's time, accumulated enough merit during the reign of Emperor Jing to rise to a post worth two thousand piculs a year, and under Emperor Wu he became the chief minister of Dai. In the fifth year of Yuanshuo, he served under Grand Marshal WeiQing as General of the Light Chariots in an expedition against the Western Prince of the Huns. His services in this campaign entitled him to be ennobled as the marquis of Lean. In the second year of Yuanshou, he succeeded Gongsun Hong as prime minister. Li Cai had slightly less than average ability and was far less famous than his cousin, yet Li Guang was never awarded a fief nor promoted above the rank of a high minister,while Li Cai became a marquis and one of the three highest officials in the land. Even some of Li Guang's own officers and men became marquises. Once Li Guang remarked in a casual conversation with the astrologer Wang Shuo," I have been in every campaign waged against the Huns,yet while several dozen officers of no more than average ability have been made marquises for their services I have neither been cited for merit nor granted a fief, althoughIam not inferior to them. Why is this? Have Igot the wrong face for a marquis? Or is this a matter of fate?” "Can you remember doing anything you later regretted?" asked Wang Shuo. “When I was governing Longxi and the Qiang tribes revolted, I tricked them into giving themselves up. But when more than eight hundred surrendered, I broke my promise to spare them and massacred them that same day. This is the one thing I really have on my conscience." "Nothing can be worse than killing those who have surrendered," replied Wang Shuo.“That must be why you have never been made a marquis.”
-
-Two years later Grand Marshal Wei Qing and Huo Qubing, General of the Swift Cavalry, led a great expedition against the Huns. Li Guang begged several times to be sent with them, but the emperor considered him too old and only consented after a long time, appointing him as general of the vanguard. This took place in the fourth year of Yuanshou.
-
-Li Guang was under Grand Marshal Wei Qing's command. After crossing the frontier they learned the whereabouts of the khan from some Hunnish captives, and Wei Qing decided to lead his best troops there directly, ordering Li Guang to join forces with Zhao Yiji, the general of the right, and advance by the eastern route. This route was slightly longer and, since little water or grass was to be had there,the army could not pass that way in force. My post is in the vanguard," protested Li Guang,"yet you are ordering me to take the eastern route. Though I have been fighting the Huns since I was a lad, this is the first time I have had a chance to encounter the khan himself. I beg to be allowed to ride in the vanguard and be the first to attack him.” But Wei Qing had received secret orders from the emperor not to let Li Guang engage the khan, because he was old, and his luck had always been bad, and therefore he might easily fail again. Moreover Gongsun Ao, who had just lost his marquisate, was serving as the general of the centre and Wei Qing wanted him to have this chance to fight the khan. That was why he had removed Li Guang from his post. Knowing this, Li Guang begged Wei Qing to reconsider the matter, but the grand marshal dispatched his chief officer to him with a sealed note ordering him to report to Zhao Yiji without delay. Li Guang stormed off without even taking leave of the grand marshal. He led his troops to join the general of the right and they set out by the eastern route.But having no guide, they lost the way and failed to meet the main force at the time appointed. When Wei Qing joined battle with the Huns, the khan fled, and they had to return without having captured him.Riding southward across the desert, Wei Qing met the troops of Li Guang and Zhao Yiji; and Li Guang, seeing the grand marshal, rejoined the main force. Presently Wei Qing sent an officer with a gift of dried rice and wine to Li Guang. The man asked how he and Zhao Yiji had come to lose their way, as Wei Qing must send a detaild report of their misadventure to the emperor. BeforeLiGuang had time to explain, however, Wei Qing sent his chief officer to summon him to headquarters at once to stand trial. "My lieutenants were not to blame," declared Li Guang."I am the one responsible for losing the way. I shall answer for this myself before the tribunal.”
-
-When he reached headquarters he turned to his officers." Since I was old enough to wear my hair bound up, I have fought more than seventy battles, great and small, against the Huns," he said. "This time I was fortunate enough to set out under Grand Marshal Wei Qing to fight the khan; but the grand marshal transferred me to another post and sent me by a longer route.And then I lost my way. This must be fate.I am over sixty now, too old to face up to the questions of these clerks.” With that he drew his sword and cut his throat. All the officers and men of his army wept. And everyone in the land, old and young alike, those who had known him and those who had not, shed tears when they heard of his death. Zhao Yiji, the general of the right, was court-martialed and sentenced to death but permitted to ransom himself and become a commoner.
-
-Li Guang had three sons, Li Danghu, Li Jiao and Li Gan, all of whom served as palace guards. One day when Emperor Wu was joking with his favourite, young Han Yan, the lad took such liberties that Li Danghu struck him and made him take to his heels. The emperor was impressed by his courage, but Li Danghu died early. Li Jiao became the governor of Daijun, but he also died before his father. A son named Li Ling was born to Li Danghu after his death. Li Gan was serving under Huo Qubing, General of Swift Cavalry, when Li Guang killed himself at the front. Li Guang had three sons, Li Danghu, Li Jiao and Li Gan, all of whom served as palace guards. One day when Emperor Wu was joking with his favourite, young Han Yan, the lad took such liberties that Li Danghu struck him and made him take to his heels. The emperor was impressed by his courage, but Li Danghu died early. Li Jiao became the governor of Daijun, but he also died before his father. A son named Li Ling was born to Li Danghu after his death. Li Gan was serving under Huo Qubing,General of Swift Cavalry, when Li Guang killed himself at the front. emperor to Yong and, while they were hunting in the grounds of Ganquan Palace, Wei Qing's nephew Huo Qubing shot and killed Li Gan. But since General Huo was a favourite with the emperor, the matter was kept quiet and it was given out that Li Gan had been gored to death by a stag. A year or so later General Huo Qubing died. Li Gan had a daughter who was the crown prince's favourite lady in waiting. His son Li Yu also enjoyed the prince's patronage, but he was a greedy,grasping man. Thus by degrees the house of Li declined.
-
-When Li Ling grew up he was appointed superintendent of Jianzhang Palace, in charge of the cavalry. An excellent archer, he was good to his men. Since his forbears for several generations had been military officers, Emperor Wu put Li Ling at the head of eight hundred horsemen. Once he led his troops over two thousand li into Hunnish territory, passed Lake Juyan and observed the lie of the land, but came back without having encountered any Huns. On his return he was appointed a cavalry commander at the head of five thousand men of Danyang in Chu; and for several years he trained them in archery and settled them in Jiuquan and Zhangye to defend the border against the Huns.
-
-In the autumn of the second year of Tianban,?Li Guangli con- queror of Osrouchana led thirty thousand cavalry against the Western Prince of the Huns in the Qilian and Tianshan Mountains.Li Ling was ordered to advance over a thousand li north ofJuyan with five thousand archers and infantrymen to divert the Huns and prevent them from concentrating their forces against General Li Guangli. Li Ling reached his objective, but as he was returning his troops were surrounded by eighty thousand Huns.He had only five thousand men, and soon their arrows were exhausted and more than half of them had fallen; yet they killed and wounded over ten thousand of the enemy, fighting a running battle for eight days as they withdrew. About a hundred li from Juyan, their road was cut by the Huns in a narrow glen. All their food was gone, there was no help at hand, and the enemy pressed their attack, calling upon them to surrender. "I could never face the emperor to report this!" cried Li Ling. And he surrendered to the Huns. His army was destroyed, only four hundred or so surviving to return.
-
-The Hunnish khan,who had always admired LiLing's family and had been impressed by the fight he put up,married his daughter to him and made him a noble.But when the emperor knew of this,Li Ling's mother,wife and son were executed.After this the whole family was disgraced,and the gentlemen of Longxi who had been LiLing's protégés bowed their heads in shame.
-
-The Grand Historian comments: We read in the classics, "If a man is straight, others will follow him without being told. If he is not, no amount of orders will make them follow him." This applies to General Li Guang. I found him as unassuming as a simple farmer, hardly able to get a word out. Yet the day that he died his sincerity and honesty had so impressed men that,whether they knew him or not, all mourned deeply for him. The proverb says, "The peach and plum trees cannot speak, yet a path is trodden out to them. "This simple saying conveys a wealth of meaning.</div>
-        </section>
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">李将军广者，陇西成纪人也。其先曰李信,秦时为将，逐得燕太子丹者也。故槐里,徙成纪。广家世世受射。孝文帝十四年,匈奴大入萧关,而广以良家子从军击胡,用善骑射，杀首虏多，为汉中郎。广从弟李蔡亦为郎，皆为武骑常侍，秩八百石。尝从行，有所冲陷折关及格猛兽,而文帝曰：“惜乎，子不遇时!如令子当高帝时，万户侯岂足道哉!”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">李广将军是陇西郡成纪县人，他的祖先李信是秦国的名将，曾经在灭掉燕国后活捉了燕太子丹。李广家的原籍是槐里县，后来迁到了成纪。射箭是李广家世代相传的绝技。孝文帝十四年，匈奴大规模入侵萧关，这时李广以“良家子”的身份参军，抗击匈奴，由于他善于骑马射箭，杀的敌人多，因此被任为中郎。当时李广的堂弟李蔡也在皇帝身边为郎，兄弟二人都跟着汉文帝当武骑常侍，官阶是八百石。有一次，李广跟随文帝外出，在冲锋陷阵和与猛兽格斗中表现出了无比的勇敢。文帝称赞李广说：“真可惜啊!你生得不是时候!如果你生在高皇帝打江山的年代，凭你这身功夫，万户侯又何足挂齿呢!”</td>
+                <td class="english-cell col-english" data-lang="english">General Li Guang, a man of Chengji in Longxi, was descended from Li Xin, the general of Qin who pursued and captured Dan, the crown prince of Yan. His family originated in Huaili but later moved to Chengjiang the men of each generation were trained in archery. In the fourteenth year of Emperor Wen,a strong force of Huns rode through the Xiao Pass. Then Li Guang, as the son of a good family, joined the army to resist the enemy. A brilliant mounted archer, he killed and captured many Huns and was made a palace guard. He and his cousin Li Cai, another palace guard, served as mounted guards with a stipend of eight hundred piculs of grain. LiGuang often accompanied the emperor on his trips, and his skill in attack and defence or in grappling with wild beasts made Emperor Wen remark, “What a pity you weren't born at a different time! Had you lived during Emperor Gaozu's reign, you would easily have won a fief with ten thousand households.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">及孝景初立，广为陇西都尉，徙为骑郎将。吴楚军时，广为骁骑都尉,从太尉亚夫击吴楚军,取旗，显功名昌邑下。以梁王授广将军印,还，赏不行。徙为上谷太守,匈奴日以合战。典属国公孙昆邪为上泣曰:“李广才气，天下无双，自负其能，数与虏敌战，恐亡之。”于是乃徙为上郡太守。后广转为边郡太守，徙上郡。尝为陇西、北地、雁门、代郡、云中太守，皆以力 战为名。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">等到景帝即位后，李广先任陇西都尉，接着被召进京城做了皇帝的侍从武官——骑郎将。后来吴楚七国叛乱时，李广以骁骑将军的身份跟着太尉周亚夫前往讨伐叛军。在战斗中，李广夺得了敌军的战旗，在昌邑大显威名。只因为梁孝王赠给了李广一颗将军印，回京后被景帝所迁怒，因而在别人受赏时，李广就没能再受到封赏。后来李广被调任上谷太守，匈奴军队每天和他打仗。于是典属国公孙昆邪流着眼泪向景帝请求说：“李广的本领，在当今天下无双，也正因此他自恃武艺高强，天天和敌军交战，我真怕万一有个闪失，损失了这员名将。”于是景帝就把李广调到了上郡当太守。后来，李广历任边地各郡太守，然后调任上郡太守。他曾经做过陇西、 北地、雁门、代郡和云中太守，都因为努力作战而出名。</td>
+                <td class="english-cell col-english" data-lang="english">When Emperor Jing ascended the throne, LiGuang was appointed as commander of Longxi and soon promoted to the rank of a general of the mounted guard. During the campaign against Wu and Chu he served as commander of the Valiant Cavalry under Grand Marshal Zhou Yafu and distinguished himself by capturing the rebels' flag at Changyi. But because he accepted an appointment as a general from the prince of Liang without imperial sanction, he was not rewarded on the return of the army. Instead he was made the governor of Shanggu, a district constantly harried by the Huns. The director of dependent states, Gongsun Kunxie, pleaded with the emperor, "There is no braver or more brilliant officer in the empire than Li Guang, but trusting to his own ability he never loses a chance of engaging the Huns. I am afraid we may lose him." Li Guang was therefore transferred to the governorship of Shangjun. He was later transferred to govern various frontier provinces and then made the governor of Shangjun again. He also held posts atLongxi, Beidi, Yanmen, Daijun and Yunzhong. And wherever he went he won fame for his hard fighting.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">匈奴大入上郡，天子使中贵人从广勒习兵击匈奴。中贵人将骑数十纵，见匈奴三人，与战。三人还射，伤中贵人，杀其骑且尽。中贵人走广。广曰：“是必射雕者也。”广乃遂从百骑往驰三人。三人亡马步行，行数十里。广令其骑张左右翼，而广身自射彼三人者，杀其二人，生得一人，果匈奴射雕者也。已缚之上马，望匈奴有数千骑，见广，以为诱骑，皆惊，上山陈。广之百骑皆大恐，欲驰还走。广曰：“吾去大军数十里，今如此以百骑走，匈奴追射我立尽。今我留，匈奴必以我为大军之诱,必不敢击我。”广令诸骑曰：“前!”前未到匈奴陈二里所，止，令曰：“皆下马解鞍!”其骑曰：“虏多且近，即有急，奈何?”广曰：“彼虏以我为走，今皆解鞍以示不走，用坚其意。”于是胡骑遂不敢击。有白马将出护其兵,李广上马与十余骑奔射杀胡白马将，而复还至其骑中，解鞍，令士皆纵马卧。是时会暮，胡兵终怪之，不敢击。夜半时，胡兵亦以为汉有伏军于旁欲夜取之，胡皆引兵而去。平旦，李广乃归其大军。大军不知广所之，故弗从。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">李广做上郡太守的时候，正赶上匈奴人大举进攻上郡，这时皇帝派了一名受宠信的宦官到上郡来跟着李广学习军事。有一次这个宦官带领着几十名骑兵在田野上纵马奔驰，突然遇到了三个匈奴人，便打了起来。结果这个宦官被匈奴人射伤，他带的几十名骑兵几乎全被匈奴人射死了。宦官逃回了李广这里，李广说：“这一定是射雕的。”他立即带了百数名骑兵去追赶这三个人。这三个人把自己的马丢了，只好步行，这时已经走出几十里了。李广命令部下做出了从左右两侧包抄的态势，自己拿了弓箭射他们，结果射死了两个，活捉了一个，一审问，果然是匈奴的射雕人。他们刚把俘虏绑在马上，准备回营，突然望见从远处来了几千名匈奴骑兵。这些骑兵也发现了李广，他们以为这是汉军派出来特意引着他们去上当的，心里很吃惊，于是慌忙冲上山头布好阵式。李广的这百数人怕极了，都想赶紧往回跑。李广说：“这里离着我们的大部队有几十里，我们这百数人如果往回跑，匈奴人迫上来一阵乱箭就都把我们射死了。如果我们留下来不走，匈奴人必然以为我们是大部队派出来故意引诱他们去上当的，他们一定不敢打我们。”于是李广命令这百数人：“前进!”一直走到离匈奴人只有二里地的地方才停下来，接着又下令说：“全体下马，把鞍子解下来!”有人说：“敌人这么多，离我们又这么近，我们再都下马解鞍，如果敌人进攻我们，我们怎么办?”李广说：“敌人肯定以为我们是会跑的，现在我们偏要给他来个下马解鞍表明不跑，以此来强化他们那种错误判断。”这样一来，匈奴人果然没敢进攻李广。后来敌人那边有个骑白马的将领出来整理阵容，这时李广突然上马带着十来个人飞奔过去将他射死了，然后又退了回来解下马鞍子，并命令士兵们把马放开，躺在地上休息。这时天色渐晚，匈奴人始终觉得这伙人可疑，没敢轻易出击。到了半夜，匈奴人更怀疑附近可能埋伏着大批汉军，打算乘夜晚偷袭他们，于是他们赶紧撤走了。第二天清晨，李广才回到大本营。李广的大部队因为不知道李广昨晚去了何处，所以只有在原地待命。</td>
+                <td class="english-cell col-english" data-lang="english">When the Huns invaded Shangjun in force, EmperorJing ordered one of his favourite eunuchs to join Li Guang in order to gain experience in fighting the Huns. One day this eunuch at the head of several dozen horsemen met with three Hunnish riders and engaged them in a fight. The Huns turned in their saddles and drew their bows, wounding the eunuch and killing most of his men. The eunuch fled back to Li Guang. “These must be their best sharp-shooters known as the ‘eagle- hunters said Li Guang, and rode out with a hundred horsemen in pursuit. The three Huns had lost their horses and covered several dozen lion foot. Li Guang ordered his men to fan out to the left and the right while he shot at the enemy and, after killing two of them and taking the third alive, he found that these were indeed “eagle-hunters”. Li Guang had barely bound the captive on his horse when several thousand Hunnish horsemen came in sight, but the smallness of the Chinese force made them suspect a trap and they took to the hills in defensive formation. The hundred horsemen with Li Guang were so alarmed that they wanted to gallop straight back. "We are dozens of li from our main force," said Li Guang. "If the hundred of us make a dash for it, the Huns will give chase and shoot us down in no time; whereas if we stay here and will not dare to attack.” He gave the order, “Advance!” When they were about two li from the enemy, he halted and ordered, "Dismount and undo your saddles." "This horde of Huns is almost on top of us," protested his men. “What shall we do if they attack?” "They expect us to withdraw," replied Li Guang."But when they see us unsaddle our horses to stop here, they will be surer than ever that this is a trick." The Huns dared not attack, but one of their chieftains galloped out on a white horse to reconnoitre. Li Guang remounted and charged with a dozen riders to shoot down the Hun. This done, he returned to his troops, unsaddled his mount and ordered his men to turn loose their horses and lie down to sleep. It was now dusk and the Huns were too bewildered to attack. Suspecting that an ambushing Han (206BC.-8A.D.)force might fall on them in the dark, they withdrew by night. At dawn Li Guang rejoined the main army, which had not come to his rescue because it had no idea where he had gone.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">居久之，孝景崩，武帝立,左右以为广名将也，于是广以上郡太守为未央卫尉,而程不识亦为长乐卫尉。程不识故与李广俱以边太守将军屯。及出击胡，而广行无部伍行陈,就善水草屯，舍止，人人自便，不击刀斗以自卫,莫府省约文书籍事,然亦远斥候,未尝遇害。程不识正部曲行伍营陈，击刀斗，士吏治军簿至明，军不得休息，然亦未尝遇害。不识曰：“李广军极简易，然虏卒犯之,无以禁也；而其士卒亦佚乐，咸乐为之死。我军虽烦扰，然虏亦不得犯我。”是时汉边郡李广、程不识皆为名将，然匈奴畏李广之略，士卒亦多乐从李广而苦程不识。程不识孝景时以数直谏为太中大夫。为人廉，谨于文法。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">过了好多年，汉景帝死了，汉武帝即位，左右大臣都说李广是一位名将，于是李广从上郡太守被调入朝廷当了未央宫的卫尉，当时程不识正做长乐宫的卫尉。程不识和李广一样，过去都曾以边郡太守的身份率领军队驻守边防。每当出兵讨伐匈奴时，李广的军队比较随便，甚至连严格的组织队列都没有，驻扎的时候也只是挑个有水草的地方，住下之后人人自便，夜里也不打更巡逻，军部里各种办事的规章案牍一切从简，但由于他能远放哨探，掌握敌情，所以也从未遭受过敌人的偷袭。而程不识则相反，他的军队不论行军扎营一切规章制度都很严格，夜里要打更巡逻，军部里的文吏们处理各种簿籍档案常常通宵达旦，全军都忙忙碌碌，得不到休息，因此他的军队也未曾遭受过什么突然的侵害。程不识说：“李广的治军办法，极其简单省事，如果遇上敌人偷袭，恐怕就难以招架了。但他的士兵们生活得很快乐，因此到了作战的时候，大家都愿意为他拼命。我的治军虽然罗嗦麻烦，但敌人不可能对我发动突然袭击。”那时候，李广和程不识都是汉朝边郡上的名将，但是匈奴人特别怕李广的胆略，而士兵们也都乐于跟着李广而不愿意跟着程不识。程不识曾因为敢于直言切谏在景帝时期做过太中大夫，为人廉洁，谨守规章法度。</td>
+                <td class="english-cell col-english" data-lang="english">When Emperor Jing died and Emperor Wu succeeded to the throne,Li Guang's fame as a general won him promotion from his post at Shangjun to the command of the guard of Weiyang Palace. At this time Cheng Bushi was commander of the guard of Changle Palace. He, like Li Guang, had served as a governor of frontier provinces, defending the border and leading expeditions against the Huns. Li Guang paid little attention to military formation on the march, but would make camp wherever he found water and grass and let his men do as they pleased. He appointed no one to sound the watch and kept dispatch-writing and clerical work down to a minimum at his headquarters. But his scouts always reconnoitred deep into enemy territory, and he had never come to any harm. Cheng Bushi, on the other hand, laid great stress on military formation and discipline. Sentries sounded the watch in his camp,and his officers had to sit up all night writing records and reports. But he had never come to grief either. "Li Guang's army routine is certainly simple," said Cheng Bushi once. “But if the enemy launches a sudden attack, he will be at their mercy. Still, his troops have such an easy time of it that they would gladly die for him. Our army routine may be irksome, but the enemy will never catch us napping.” Although both these men were famous generals of the frontier provinces, the Huns feared Li Guang's tactics and soldiers preferred to serve under him rather than under Cheng, who had a reputation for harshness. During Emperor Jing's time, Cheng Bushi had been made a grand counsellor because of the frank advice he gave on several occasions. He was scrupulously honest and a stickler for regulations and discipline.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后汉以马邑城诱单于,使大军伏马邑旁谷，而广为骁骑将军,领属护军将军。是时单于觉之,去，汉军皆无功。其后四岁，广以卫尉为将军，出雁门击匈奴。匈奴兵多，破败广军，生得广。单于素闻广贤，令曰：“得李广必生致之。”胡骑得广，广时伤病，置广两马间，络而盛卧广。行十余里，广详死，睨其旁有一胡儿骑善马，广暂腾而上胡儿马，因推堕儿，取其弓，鞭马南驰数十里，复得其余军，因引而入塞。匈奴捕者骑数百追之，广行取胡儿弓，射杀追骑，以故得脱。于是至汉，汉下广吏。吏当广所失亡多,为虏所生得，当斩，赎为庶人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来汉朝派人用假装出卖马邑城的办法企图引诱匈奴单于上钩，而把大批汉军埋伏在马邑周围的山沟里，李广以骁骑将军的身份参加了这次行动，属护军将军韩安国统领。不料汉军的这次阴谋被匈奴单于所发觉，在还没有到达马邑的时候就把军队撤回去了，因此汉军白忙了一回。又过了四年，李广以未央宫卫尉的身份为将军，率兵出雁门关讨伐匈奴。不料遇到了匈奴的大军，结果汉军被击败，李广也被人俘虏了。匈奴单于早就知道李广是一员名将，因此他早就下过命令：“如果遇到李广一定要抓活的。”匈奴捉到李广后，李广当时正害着病，同时又受了伤，于是匈奴人就在两匹马之间拴了一个网床，让李广躺在上边。李广躺着一直装死不动，等到走出了十几里的时候，他斜着眼偷偷瞧见他身边有个匈奴人骑着一匹好马，于是他就突然一跃而起，跳到了这个匈奴人的马上，夺过了他的弓箭，把他推到了马下，然后快马加鞭一口气向南跑了几十里，找到了自己的残部，领着他们返回了关内。当时有几百个匈奴骑兵在后面追赶李广，李广就用他夺来的那张弓回身射死了追上来的匈奴人，终于得以脱身。李广回来后，朝廷把李广交给军法处审判，军法处判定李广损失士卒众多，且又自身被俘，应当斩首。但允许李广出钱赎罪，因而得以免死，成了普通百姓。</td>
+                <td class="english-cell col-english" data-lang="english">Some time later an attempt was made to entice the Huns into the town of Mayi, and a large Han force was concealed in a neighbouring valley. Li Guang was appointed as General of the Valiant Cavalry un- der the command of Han Anguo, General of the Protecting Army. But the Hunnish khan discovered the trap and withdrew so that the Han troops had no chance to distinguish themselves. Four years later Li Guang, then still a captain of the palace guard, was made a general and sent to attack the Huns beyond Yanmen. His army was outnumbered and routed but he was captured, for the khan, who had heard of his ability, had given orders that he must be taken alive. When the Hunnish cavalry caught him he was wounded, so they laid him on a litter between two horses. They had covered more than ten li when Li Guang, who had shammed dead, saw through half- closed eyelids that a young Hun mounted on a fine horse was beside him. He leapt suddenly on to this horse, throwing down its young rider and snatching away his bow. Then he galloped south for several dozen li until he found what was left of his troops and led them back inside the frontier. Several hundred Hunnish horsemen had galloped after him, but shooting with the Hun's bow as he rode he killed many of his pursuers and made good his escape. Upon his return to the capital, he was tried. As he had lost many men and let himself be captured alive by the Huns, he was sentenced to death; but he was permitted to ransom himself and become a commoner.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">顷之，家居数岁。广家与故颍阴侯孙屏野居蓝田南山中射猎。尝夜从一骑出，从人田间饮。还至霸陵亭，霸陵尉醉,呵止广。广骑曰：“故李将军。”尉曰：“今将军尚不得夜行，何乃故也!”止广宿亭下。居无何，匈奴入杀辽西太守，败韩将军。后韩将军徙右北平，死，于是天子乃召拜广为右北平太守。广即请霸陵尉与俱，至军而斩之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">李广当老百姓的这几年里，他常常和颍阴侯灌婴的孙子灌强隐居在长安以南的蓝田县山中打猎。有一天夜里李广带着一个随从去和他的一个朋友在田间饮酒。回来经过霸陵亭的时候，正好遇到了喝醉酒的霸陵县尉，他呵责李广为什么犯夜，并要拘留他。这时李广的从人连忙解释说：“这位是前任的李将军。”县尉蛮横地说：“就是现任的将军也不许夜行，更何况你是个卸了任的将军!”于是硬把李广扣留在亭下过了一宿。过了不久，匈奴人进犯辽西，杀了辽西郡的太守，打败了韩安国的守军。又过后不久，朝廷调任右北平太守的韩安国呕血死了，于是武帝起用李广，任命他做了右北平太守。李广接到任命后就向朝廷请求调那个霸陵县尉到他部下听用，一到军中，李广就把他杀了。</td>
+                <td class="english-cell col-english" data-lang="english">He lived in retirement for a few years near the grandson of the former marquis of Yingyin in Lantian among the southern hills,where he devoted most of his time to hunting. One day he went out with an attendant and accepted an invitation to drink in a farm house, not returning to Baling watch station till it was dark. The constable guarding the station was drunk and yelled at him to halt. “This is the former General Li," said Li Guang's man. "Even an accredited general cannot wander about after dark," retorted the constable. “Much less a former general!” He detained Li Guang there. Later the Huns crossed the border again, killed the governor of Liaoxi and defeated General Han Anguo, who withdrew to Youbeiping. Then the emperor made Li Guang the governor of Youbeiping. Li Guang asked to have the constable of Baling Station sent with him, and as soon as the man arrived he cut off his head.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">广居右北平，匈奴闻之，号曰“汉之飞将军”,避之数岁，不敢入右北平。广出猎，见草中石，以为虎而射之，中石没镞,视之石也。因复更射之，终不能复入石矣。广所居郡闻有虎，尝自射之。及居右北平射虎，虎腾伤广，广亦竟射杀之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">李广在任右北平太守的时候，匈奴人都知道他的名字。他们敬畏地称李广为汉朝的“飞将军”,一连几年躲避他，不敢进犯右北平。有一次李广外出射猎，误将草丛中的一块巨石看成了老虎，他拔箭就射，整个箭头都射到石头里去了，近前一看，才知道是石头。李广自己也觉得奇怪，待要开弓再射，却再也射不进去了。李广在各郡任太守时，只要听说哪里有老虎，总是亲自去射。后来在右北平射虎时，被老虎跳起来咬伤了，但最后李广还是射死了这只老虎。</td>
+                <td class="english-cell col-english" data-lang="english">The Huns called Li Guang the "Winged General" of Han, and as long as he was governor they dared not invade Youbeiping. Once when out hunting, LiGuang shot a boulder in the grass which he mistook for a tiger, and the entire tip of his arrow was embedded in the rock. But when he realized what it was and shot again, he could not pierce the boulder. Whenever he heard of a tiger in the province where he was living, he would hunt it. In Youbeiping a tiger leapt at him and mauled him, but he finally succeeded in killing the beast.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">广廉，得赏赐辄分其麾下，饮食与士共之。终广之身，为二千石四十余年,家无余财，终不言家产事。广为人长，援臂,其善射亦天性也，虽其子孙他人学者，莫能及广。广讷口少言，与人居则画地为军陈，射阔狭以饮。专以射为戏，竟死。广之将兵，乏绝之处，见水，士卒不尽饮，广不近水；士卒不尽食，广不尝食。宽缓不苛，士以此爱乐为用。其射，见敌急,非在数十步之内，度不中不发，发即应弦而倒。用此，其将兵数困辱,其射猛兽亦为所伤云。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">李广为人廉洁，每次得到了朝廷的赏赐总是全都分给他的部下，有好的东西也都是和士兵们一起吃喝。他一辈子当了四十多年的二千石，到头来家中没攒下一点钱财，而他自己也从来不提家产的事。李广个子很高，胳膊也长，他那套射箭的绝技也有些确实是出于天性，别的人即使是他的子孙学射箭，都没有一个能赶上他的。他言语迟钝，平常很少说话，和别人在一起时总喜欢画地为阵，比赛谁射箭射得准，输了的罚酒。一直到死都是这个习惯。他一生带兵东奔西走，每遇到缺水乏粮的时候，只要士兵还没有喝上水他就决不喝水；只要士兵们还没有吃到东西他就决不吃。他待人宽厚和气，因此大家都乐于为他效力。他射箭也有个习惯，每逢遇到敌人，非等到相距只有几十步，能够百发百中的时候他才射，一旦开弓，敌人肯定是应弦而倒。但也正因为这个，他也不止一次地被敌人搞得很狼狈，射猛兽的时候也时而被猛兽所伤。</td>
+                <td class="english-cell col-english" data-lang="english">Li Guang was open-handed. He divided all his rewards among his officers and ate the same food as his men. For over forty years his stipend was two thousand piculs a year, but he saved no money and never talked about property.He was tall and long-armed like an ape. His skill in archery can only be attributed to natural aptitude, for none of his descendants or others who learned bowmanship from him could equal him. He was a poor talker who had little to say. To pass the time with others he would draw military formations on the ground and compete in shooting at them: the losers had to drink. Indeed, up to the end of his life shooting was his sole recreation. When Li Guang's troops were short of water and food, he would not drink until all his men had drunk, nor eat until they had eaten. And since he was lenient and generous to his troops, they served him loyally. In battle, he would not shoot until his adversary was within a few dozen paces and he could be sure of hitting him. Then as soon as his bowstring twanged the enemy fell. Because of this, he and his men were often worsted, just as he was often wounded by beasts in the chase.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">居顷之，石建卒，于是上召广代建为郎中令。元朔六年，广复为后将军,从大将军军出定襄,击匈奴。诸将多中首虏率,以功为侯者，而广军无功。后二岁,广以郎中令将四千骑出右北平，博望侯张骞将万骑与广俱,异道。行可数百里，匈奴左贤王将四万骑围广,广军士皆恐，广乃使其子敢往驰之。敢独与数十骑驰，直贯胡骑，出其左右而还,告广曰：“胡虏易与耳。”军士乃安。广为圜陈外向,胡急击之，矢下如雨。汉兵死者过半，汉矢且尽。广乃令士持满毋发，而广身自以大黄射其裨将,杀数人，胡虏益解。会日暮，吏士皆无人色，而广意气自如，益治军。军中自是服其勇也。明日，复力战，而博望侯军亦至，匈奴军乃解去。汉军罢，弗能追。是时广军几没，罢归。汉法，博望侯留迟后期，当死，赎为庶人。广军功自如,无赏。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">又过了一些时候，郎中令石建死了，于是武帝把李广召回接替石建做了郎中令。元朔六年，李广又以后将军的身份，跟随大将军卫青出定襄讨伐匈奴。在这次出征中许多将领都因为杀敌够数而被封了侯，唯独李广却落了个劳而无功。又过了两年，李广又以郎中令的身份率领四千骑兵从右北平出发讨伐匈奴，这时博望侯张骞也率领着一万多人同时出征，各人自走一条路。李广的部队进入了匈奴几百里后，突然被匈奴左贤王率领的四万骑兵包围了。这时，李广的部下都十分恐慌，而李广却镇定自如，他派他的儿子李敢先去冲击一下敌人。李敢带领着几十名骑兵跃马扬鞭，冲入了敌阵，他们在敌阵中从腹到背，从左到右，穿了个大十字，而后回来了。他们向李广报告说：“这些匈奴人容易对付!”看到了这种情景，军心才稳定下来。于是李广把自己的四千人排成一个圆阵，以对付四面围上来的敌人。匈奴人对李广的军队发起猛攻，一时间箭如雨下，四千人被射死一多半，而箭也快要射光了。于是李广命令士兵们搭上箭，拉开弓，但不要射出，他自己则用一种“大黄”弩，一连射死了匈奴的几个偏将，其余的人吓得纷纷后退。这时天已经黑了下来，李广的部下个个面无人色，唯独李广仍是那么意气风发，镇定自如，他把队伍又整顿了一下，准备继续战斗。通过这一次，人们对于李广的勇敢胆略，可真算是服了。第二天，他们又接着顽强地作战，刚好这时博望侯张骞的军队到了。匈奴人一见汉军的援兵到达，立即向北撤去。汉军则因为疲惫已极，已经无力追击了。这一次李广的部队几乎全军覆没。回来之后，依照朝廷的法律，博望侯张骞由于未能按时到达，判处死刑，张骞出钱赎罪，被革职为民。李广的军功和失败的罪责相抵，因此也没有受到任何赏赐。</td>
+                <td class="english-cell col-english" data-lang="english">When Shi Jian the captain of the palace guard died, the emperor appointed Li Guang in his place. In the sixth year of Yuanshuo he served again as rear general under Grand Marshal Wei Qing, advancing from Dingxiang to attack the Huns. Most of the other generals killed and captured enough foes to be made marquises for their services,but Li Guang's army met with no success. Three years later Li Guang, still captain of the palace guard, advanced at the head of four thousand horsemen from Youbeiping, while Zhang Qian, the marquis of Bowang, led ten thousand cavalry by a different route. Li Guang had advanced several hundred li when he was surrounded by the Eastern Prince of the Huns with forty thou- sand horsemen. Seeing that his men were afraid, Li Guang ordered his son Li Gan to break through the enemy's ranks. Li Gan and a few dozen men galloped through the left and right flanks of the enemy lines, then returned to report, “These Huns are easy to handle!” At this the other soldiers took heart again. Li Guang drew up his troops in a circle, the men facing outwards. The Huns attacked in force, arrows rained down; soon more than half of the Han soldiers had fallen, and their supply of arrows was nearly exhausted. Then Li Guang ordered his men to fit arrows to their bows but not to shoot. Meanwhile he aimed with his large yellow crossbow at the Hunnish leaders and killed several of them. After this the Huns attacked less fiercely. Night was falling and his officers and men were deathly pale but Li Guang remained calm and confident as he regrouped his forces. Ever after, he was a byword for courage in the army. The next day they again fought desperately until ZhangQian brought up reinforcements and the Huns retreated. The Han troops were too weary to give chase. Since Li Guang's men had nearly been wiped out, he gave up the fight and returned. According to the law, Zhang Qian should have been sentenced to death for arriving late; but he was permitted to ransom himself and become a commoner. LiGuang's achievement was cancelled out by his losses; hence he went unrewarded.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">初，广之从弟李蔡与广俱事孝文帝。景帝时，蔡积功劳至二千石。孝武帝时，至代相。以元朔五年为轻车将军,从大将军击右贤王，有功中率，封为乐安侯。元狩二年中，代公孙弘为丞相。蔡为人在下中，名声出广下甚远，然广不得爵邑,官不过九卿,而蔡为列侯，位至三公。诸广之军吏及士卒或取封侯。广尝与望气王朔燕语,曰：“自汉击匈奴而广未尝不在其中，而诸部校尉以下四，才能不及中人，然以击胡军功取侯者数十人，而广不为后人，然无尺寸之功以得封邑者，何也?岂吾相不当侯邪?且固命也?”朔曰：“将军自念，岂尝有所恨乎?”广曰：“吾尝为陇西守，羌尝反,吾诱而降，降者八百余人，吾诈而同日杀之。至今大恨独此耳。”朔曰：“祸莫大于杀已降,此乃将军所以不得侯者也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">早在孝文帝做皇帝的时候，李广就和他的堂弟李蔡一同在文帝驾前服务。到景帝在位时，李蔡已经慢慢升迁到了二千石。到武帝即位后，李蔡先是做了代国的丞相。元朔五年又以轻车将军的身份跟随大将军卫青出击匈奴右贤王，由于功劳够格，被封为乐安侯。到元狩二年，竟接替公孙弘做了丞相。李蔡的人品，只能算个下中等，名声比李广差远了。然而李广一辈子也没有得到封爵领地，官位最高没有超过九卿，而李蔡却被封了侯，官阶也到了三公。李广部下的不少军官甚至士兵后来也封了侯。有一次，李广和一个望气的术士王朔闲谈，他对王朔说：“自从汉朝讨伐匈奴开始，我几乎没有一次战斗没有参加。我手下的一些人有的才能还够不上个中等，然而现在已经有几十个人封侯了。而我哪一条也不比他们差，可是直到今天竟没有得到尺寸之地的封赏。是我的骨相不该封侯呢?还是命里注定的呢?”王朔说：“您好好回想一下，您曾经做过什么让自己后悔的事吗?”李广说：“我在做陇西太守的时候，曾遇上羌人谋反。我引诱他们投降，有八百多人已经投降了，但最后我欺骗了他们，在当天就把他们都杀了。我至今最后悔的就是这件事。”王朔说：“杀害已经投降的人，是一种最大的阴祸，这就是您不得封侯的原因。”</td>
+                <td class="english-cell col-english" data-lang="english">Li Guang's cousin Li Cai, who had also served as a palace guard in Emperor Wen's time, accumulated enough merit during the reign of Emperor Jing to rise to a post worth two thousand piculs a year, and under Emperor Wu he became the chief minister of Dai. In the fifth year of Yuanshuo, he served under Grand Marshal WeiQing as General of the Light Chariots in an expedition against the Western Prince of the Huns. His services in this campaign entitled him to be ennobled as the marquis of Lean. In the second year of Yuanshou, he succeeded Gongsun Hong as prime minister. Li Cai had slightly less than average ability and was far less famous than his cousin, yet Li Guang was never awarded a fief nor promoted above the rank of a high minister,while Li Cai became a marquis and one of the three highest officials in the land. Even some of Li Guang's own officers and men became marquises. Once Li Guang remarked in a casual conversation with the astrologer Wang Shuo," I have been in every campaign waged against the Huns,yet while several dozen officers of no more than average ability have been made marquises for their services I have neither been cited for merit nor granted a fief, althoughIam not inferior to them. Why is this? Have Igot the wrong face for a marquis? Or is this a matter of fate?” "Can you remember doing anything you later regretted?" asked Wang Shuo. “When I was governing Longxi and the Qiang tribes revolted, I tricked them into giving themselves up. But when more than eight hundred surrendered, I broke my promise to spare them and massacred them that same day. This is the one thing I really have on my conscience." "Nothing can be worse than killing those who have surrendered," replied Wang Shuo.“That must be why you have never been made a marquis.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后二岁,大将军、骠骑将军大出击匈奴,广数自请行。天子以为老，弗许；良久乃许之，以为前将军。是岁，元狩四</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">又过了两年，大将军卫青、骠骑将军霍去病率领大军大规模出击匈奴，李广请求参战。武帝认为他老了，开始时不答应。后来因为李广总是请求，武帝才答应了，派他做了前将军。这一年，是汉武帝元狩四年。</td>
+                <td class="english-cell col-english" data-lang="english">Two years later Grand Marshal Wei Qing and Huo Qubing, General of the Swift Cavalry, led a great expedition against the Huns. Li Guang begged several times to be sent with them, but the emperor considered him too old and only consented after a long time, appointing him as general of the vanguard. This took place in the fourth year of Yuanshou.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">广既从大将军青击匈奴，既出塞，青捕虏知单于所居，乃自以精兵走之，而令广并于右将军军，出东道。东道少回远，而大军行水草少，其势不屯行。广自请曰：“臣部为前将军，今大将军乃徙令臣出东道，且臣结发而与匈奴战,今乃一得当单于，臣愿居前，先死单于。”大将军青亦阴受上诫，以为李广老，数奇,毋令当单于，恐不得所欲。而是时公孙敖新失侯,为中将军从大将军,大将军亦欲使敖与俱当单于,故徙前将军广。广时知之，固自辞于大将军。大将军不听，令长史封书与广之莫府,曰：“急诣部，如书。”广不谢大将军而起行，意甚愠怒而就部，引兵与右将军食其合军出东道。军亡导，或失道,后大将军。大将军与单于接战，单于遁走,弗能得而还。南绝幕,遇前将军、右将军。广已见大将军，还入军。大将军使长史持精醪遗广,因问广、食其失道状，青欲上书报天子军曲折。广未对，大将军长史急责广之幕府对簿。广曰：“诸校尉无罪，乃我自失道。吾今自上簿。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">李广跟着卫青到达塞北后，他们从捕获的俘虏口中得知了匈奴单于住在什么地方，于是卫青就想自己率着精锐部队，直扑匈奴单于。他命令李广带着他的部下合并到右将军赵食其的东路上去了。东路本来就有些绕远，而卫青的主力部队所走的中路水草少，路上势必昼夜兼程，不能停留。于是李广请求说：“我是前将军，您现在却让我并入东路。我从二十来岁起就和匈奴打仗，今天好不容易才能碰上匈奴单于。我愿意打头阵，今天即使战死我也心甘情愿。”可是早在出发之前，汉武帝就嘱咐卫青了，他说李广一来年岁大，二来这个人运气不好，不要让他和单于对阵，否则恐怕就实现不了我们的愿望了。这时也正好卫青的好友公孙敖刚刚丢掉了侯爵，他这次也跟着卫青以中将军的身份出征了，卫青也正想让公孙敖和他一道直扑单于，也好给公孙敖创造个重新封侯的机会，所以他打定主意调走李广。这一切，李广心里都清楚，但他还是一再向卫青请求。卫青不听，后来他干脆派他的长史直接把命令送到了李广的军部，并催促李广说：“请你马上按照命令到右将军军部报到!”李广非常气愤，他也没向卫青告辞，就满腔怒气地回到了自己的军部，率领部队合到赵食其的右路军上去了。结果右路军没有向导，半道上迷了路，没能按时到达前线。卫青的中路军与单于开战后，单于发觉形势不利，就撤军逃跑了。卫青此行遂一无所获。当卫青率领大军回师向南越过沙漠之后，才遇到了李广和赵食其。李广和卫青见了一下面，什么话也没说就回到了自己的军部。卫青派他的长史把干饭和浓酒送给李广，并向李广和赵食其询问军队迷路的情况，说是自己要向皇帝上报这次出兵不利的原委。李广置之不理。卫青的长史急切地责问李广的部下，逼着他们交代事实。李广忍无可忍，拦住长史说：“我的部下们都没有过错，军队迷路是我的责任，我自己给上头写报告。”</td>
+                <td class="english-cell col-english" data-lang="english">Li Guang was under Grand Marshal Wei Qing's command. After crossing the frontier they learned the whereabouts of the khan from some Hunnish captives, and Wei Qing decided to lead his best troops there directly, ordering Li Guang to join forces with Zhao Yiji, the general of the right, and advance by the eastern route. This route was slightly longer and, since little water or grass was to be had there,the army could not pass that way in force. My post is in the vanguard," protested Li Guang,"yet you are ordering me to take the eastern route. Though I have been fighting the Huns since I was a lad, this is the first time I have had a chance to encounter the khan himself. I beg to be allowed to ride in the vanguard and be the first to attack him.” But Wei Qing had received secret orders from the emperor not to let Li Guang engage the khan, because he was old, and his luck had always been bad, and therefore he might easily fail again. Moreover Gongsun Ao, who had just lost his marquisate, was serving as the general of the centre and Wei Qing wanted him to have this chance to fight the khan. That was why he had removed Li Guang from his post. Knowing this, Li Guang begged Wei Qing to reconsider the matter, but the grand marshal dispatched his chief officer to him with a sealed note ordering him to report to Zhao Yiji without delay. Li Guang stormed off without even taking leave of the grand marshal. He led his troops to join the general of the right and they set out by the eastern route.But having no guide, they lost the way and failed to meet the main force at the time appointed. When Wei Qing joined battle with the Huns, the khan fled, and they had to return without having captured him.Riding southward across the desert, Wei Qing met the troops of Li Guang and Zhao Yiji; and Li Guang, seeing the grand marshal, rejoined the main force. Presently Wei Qing sent an officer with a gift of dried rice and wine to Li Guang. The man asked how he and Zhao Yiji had come to lose their way, as Wei Qing must send a detaild report of their misadventure to the emperor. BeforeLiGuang had time to explain, however, Wei Qing sent his chief officer to summon him to headquarters at once to stand trial. "My lieutenants were not to blame," declared Li Guang."I am the one responsible for losing the way. I shall answer for this myself before the tribunal.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">至莫府,广谓其麾下曰：“广结发与匈奴大小七十余战，今幸从大将军出接单于兵，而大将军又徙广部行回远，而又迷失道，岂非天哉!且广年六十余矣，终不能复对刀笔之吏。”遂引刀自刭。广军士大夫一军皆哭。百姓闻之，知与不知，无老壮皆为垂涕。而右将军独下吏，当死，赎为庶人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">李广对自己的部下说：“我从年轻时到现在与匈奴打了大小七十余仗，这次好不容易跟着大将军出来碰上匈奴单于，谁想到大将军又偏偏把我调到了一条绕远的路上，而我们自己又偏偏迷了路，这不是天意吗!我已经是六十多岁的人了，无论如何我也不能再去与那些刀笔吏们对质争辩。”于是他拔出战刀自刎而死。李广部下的官兵们都为自己的将军痛哭，百姓们听到这个消息后，不论认识的还是不认识的，不论男女老幼，也都为这位名将落了泪。右将军赵食其接受了审判，被定为死刑，自己出钱赎做了百姓。</td>
+                <td class="english-cell col-english" data-lang="english">When he reached headquarters he turned to his officers." Since I was old enough to wear my hair bound up, I have fought more than seventy battles, great and small, against the Huns," he said. "This time I was fortunate enough to set out under Grand Marshal Wei Qing to fight the khan; but the grand marshal transferred me to another post and sent me by a longer route.And then I lost my way. This must be fate.I am over sixty now, too old to face up to the questions of these clerks.” With that he drew his sword and cut his throat. All the officers and men of his army wept. And everyone in the land, old and young alike, those who had known him and those who had not, shed tears when they heard of his death. Zhao Yiji, the general of the right, was court-martialed and sentenced to death but permitted to ransom himself and become a commoner.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">广子三人，曰当户、椒、敢，为郎。天子与韩嫣戏,嫣少不逊，当户击嫣，嫣走。于是天子以为勇。当户早死，拜椒为代郡太守,皆先广死。当户有遗腹子名陵。广死军时，敢从骠骑将军。广死明年,李蔡以丞相坐侵孝景园蠕地,当下吏治，蔡亦自杀,不对狱,国除。李敢以校尉从骠骑将军击胡左贤王,力战，夺左贤王鼓旗，斩首多，赐爵关内侯,食邑二百户，代广为郎中令。顷之，怨大将军青之恨其父,乃击伤大将军，大将军匿讳之。居无何，敢从上雍，至甘泉宫猎。骠骑将军去病与青有亲，射杀敢。去病时方贵幸，上讳云鹿触杀之。居岁余，去病死。而敢有女为太子中人,爱幸，敢男禹有宠于太子,然好利，李氏陵迟衰微矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">李广有三个儿子，名叫李当户、李椒和李敢，都做过汉武帝的侍卫官。有一次，武帝与他的宠臣韩嫣嬉戏，韩嫣有些失礼的举动，李当户立即冲上去打韩嫣，把韩嫣打跑了。武帝很欣赏他的勇敢。李当户死得早，李椒后来做过代郡的太守，这两个儿子都死在李广之前。李当户有个遗腹子，名叫李陵。李广在军中自杀的时候，他的三儿子李敢当时正在骠骑将军霍去病军中。第二年，李广的堂弟、正在做丞相的李蔡，被加了个“侵占”孝景皇帝陵园范围内的土地的罪名，要交给法官惩处。李蔡不愿到公堂上去对质，也自杀了，于是他乐安侯的领地和封号也被取消。李广的三儿子李敢，曾以校尉的身份跟着骠骑将军霍去病出征匈奴左贤王，由于他作战英勇，夺得了左贤王的战旗战鼓，斩获的敌人多，因而被封为关内侯，赐与了食邑二百户，并任命他接替父亲李广当了郎中令。不久，由于李敢怨恨卫青逼得他的父亲含恨而死，所以他寻找机会把卫青打伤了。卫青因为心里有鬼，所以也就没有声张。不久，李敢跟着汉武帝先是到雍县后来又到甘泉宫去射猎，这时卫青的外甥骠骑将军霍去病就借着机会把李敢射死了。当时霍去病正受着汉武帝的宠幸，所以汉武帝就帮助他隐瞒事实，编造谎言说李敢是被鹿顶死的。又过了一年多，霍去病也死了。李敢有个女儿在戾太子宫中，很受戾太子的宠幸。李敢的儿子李禹也很受戾太子的宠幸，但李禹是个好利的人。从此以后，李氏家族便越来越衰落了。</td>
+                <td class="english-cell col-english" data-lang="english">Li Guang had three sons, Li Danghu, Li Jiao and Li Gan, all of whom served as palace guards. One day when Emperor Wu was joking with his favourite, young Han Yan, the lad took such liberties that Li Danghu struck him and made him take to his heels. The emperor was impressed by his courage, but Li Danghu died early. Li Jiao became the governor of Daijun, but he also died before his father. A son named Li Ling was born to Li Danghu after his death. Li Gan was serving under Huo Qubing, General of Swift Cavalry, when Li Guang killed himself at the front. Li Guang had three sons, Li Danghu, Li Jiao and Li Gan, all of whom served as palace guards. One day when Emperor Wu was joking with his favourite, young Han Yan, the lad took such liberties that Li Danghu struck him and made him take to his heels. The emperor was impressed by his courage, but Li Danghu died early. Li Jiao became the governor of Daijun, but he also died before his father. A son named Li Ling was born to Li Danghu after his death. Li Gan was serving under Huo Qubing,General of Swift Cavalry, when Li Guang killed himself at the front. emperor to Yong and, while they were hunting in the grounds of Ganquan Palace, Wei Qing's nephew Huo Qubing shot and killed Li Gan. But since General Huo was a favourite with the emperor, the matter was kept quiet and it was given out that Li Gan had been gored to death by a stag. A year or so later General Huo Qubing died. Li Gan had a daughter who was the crown prince's favourite lady in waiting. His son Li Yu also enjoyed the prince's patronage, but he was a greedy,grasping man. Thus by degrees the house of Li declined.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">李陵既壮，选为建章监,监诸骑。善射，爱士卒。天子以为李氏世将，而使将八百骑。尝深入匈奴二千余里，过居延视地形,无所见虏而还。拜为骑都尉,将丹阳楚人五千人，教射酒泉、张掖以屯卫胡。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">李陵长大以后，被选拔为建章宫监，监管驻扎在建章宫的骑兵。李陵擅长射箭，热爱士兵。皇上因李陵的先辈世代为将，于是让李陵率领八百骑兵，深入匈奴地区两千余里，到居延泽以北探测地形，没有碰上敌人平安而回。李陵被任为骑都尉，领着丹阳籍的五千南方人在酒泉、张掖一带练习射箭，驻守备胡。</td>
+                <td class="english-cell col-english" data-lang="english">When Li Ling grew up he was appointed superintendent of Jianzhang Palace, in charge of the cavalry. An excellent archer, he was good to his men. Since his forbears for several generations had been military officers, Emperor Wu put Li Ling at the head of eight hundred horsemen. Once he led his troops over two thousand li into Hunnish territory, passed Lake Juyan and observed the lie of the land, but came back without having encountered any Huns. On his return he was appointed a cavalry commander at the head of five thousand men of Danyang in Chu; and for several years he trained them in archery and settled them in Jiuquan and Zhangye to defend the border against the Huns.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">数岁，天汉二年秋,贰师将军李广利将三万骑击匈奴右贤王于祁连天山,而使陵将其射士步兵五千人出居延北可千余里，欲以分匈奴兵，毋令专走贰师也。陵既至期还，而单于以兵八万围击陵军。陵军五千人，兵矢既尽，士死者过半，而所杀伤匈奴亦万余人。且引且战,连斗八日，还未到居延百余里，匈奴遮狭绝道,陵食乏而救兵不到，虏急击招降陵。陵曰：“无面目报陛下。”遂降匈奴。其兵尽没，余亡散得归汉者四百余人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">过了几年，到天汉二年秋，贰师将军李广利率军三万人出击匈奴，与匈奴右贤王会战于祁连山，皇上让李陵率领着他所教射的五千步兵由居延泽北出千余里，目的是想以此分散匈奴的兵力，不让他们把所有军队都集中用去对付李广利。李陵开始没有遇到敌人，到日期已满正在向南返回时，被匈奴单于的八万大军所包围。李陵只有五千人，箭已经用完，士兵损失过半，杀死杀伤匈奴人大约过万。李陵且战且退，一连八天，在距离居延塞不到一百里的地方，被匈奴人截断了退路。李陵军既无粮食，又无救兵，匈奴则趁势猛攻，逼着李陵投降。李陵说：“没有面目再回去见陛下了。”于是投降了匈奴人。李陵的军队几乎全军覆灭，回到汉朝的只有四百人。</td>
+                <td class="english-cell col-english" data-lang="english">In the autumn of the second year of Tianban,?Li Guangli con- queror of Osrouchana led thirty thousand cavalry against the Western Prince of the Huns in the Qilian and Tianshan Mountains.Li Ling was ordered to advance over a thousand li north ofJuyan with five thousand archers and infantrymen to divert the Huns and prevent them from concentrating their forces against General Li Guangli. Li Ling reached his objective, but as he was returning his troops were surrounded by eighty thousand Huns.He had only five thousand men, and soon their arrows were exhausted and more than half of them had fallen; yet they killed and wounded over ten thousand of the enemy, fighting a running battle for eight days as they withdrew. About a hundred li from Juyan, their road was cut by the Huns in a narrow glen. All their food was gone, there was no help at hand, and the enemy pressed their attack, calling upon them to surrender. "I could never face the emperor to report this!" cried Li Ling. And he surrendered to the Huns. His army was destroyed, only four hundred or so surviving to return.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">单于既得陵，素闻其家声，及战又壮，乃以其女妻陵而贵之。汉闻，族陵母妻子。自是之后，李氏名败，而陇西之士居门下者皆用为耻焉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">匈奴单于得到李陵后，由于一来早就知道李氏家族的名声，二来也是喜欢李陵作战的勇敢，于是便把自己的女儿许配给了李陵，对李陵很尊宠。汉朝听说李陵投降匈奴，便把李陵的母亲妻子全杀了。从此以后，李氏家族的名声遂变得很臭，甚至连在宫廷为官的陇西人都为和李氏同郡而感到羞耻。</td>
+                <td class="english-cell col-english" data-lang="english">The Hunnish khan,who had always admired LiLing's family and had been impressed by the fight he put up,married his daughter to him and made him a noble.But when the emperor knew of this,Li Ling's mother,wife and son were executed.After this the whole family was disgraced,and the gentlemen of Longxi who had been LiLing's protégés bowed their heads in shame.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太史公曰：传曰“其身正，不令而行；其身不正，虽令不从”。其李将军之谓也?余睹李将军悛悛如鄙人,口不能道辞。及死之日，天下知与不知，皆为尽哀。彼其忠实心诚信于士大夫也?谚曰“桃李不言，下自成蹊”。此言虽小，可以谕大也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">太史公说：《论语》上曾说：“自己的行为端正，即使不下命令，别人也会跟着执行；自己的行为不端正，即使下命令别人也不听。”这话说的不正是李将军吗?我看李将军的模样，谦恭诚实得像乡下人，简直就是不会说话。可是到他死的时候，普天下不论认识他的还是不认识他的人，都为他哀悼。这难道不是他那一颗忠诚的心感动了大家吗?俗话说：“桃树李树虽然不会说话，但它的本质吸引人，树下都让人踩出了一条路。”这话虽然讲的是一件小事，但却可以说明一个大道理。</td>
+                <td class="english-cell col-english" data-lang="english">The Grand Historian comments: We read in the classics, "If a man is straight, others will follow him without being told. If he is not, no amount of orders will make them follow him." This applies to General Li Guang. I found him as unassuming as a simple farmer, hardly able to get a word out. Yet the day that he died his sincerity and honesty had so impressed men that,whether they knew him or not, all mourned deeply for him. The proverb says, "The peach and plum trees cannot speak, yet a path is trodden out to them. "This simple saying conveys a wealth of meaning.</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
       </main>
 
       <nav class="chapter-nav">
@@ -143,8 +204,139 @@ The Grand Historian comments: We read in the classics, "If a man is straight, ot
       </nav>
 
       <footer>
-        <small>并排三列显示</small>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
       </footer>
     </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>

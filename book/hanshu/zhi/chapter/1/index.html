@@ -4,33 +4,94 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>汉书 — 第1章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
     <link rel="stylesheet" href="/static/style.css">
   </head>
   <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
       <header>
         <h1>汉书 — 第1章 刑法志</h1>
       </header>
 
-      <main class="parallel">
-        <section>
-          <h3>文言文</h3>
-          <div class="txt">汉兴，高祖初入关，约法三章，除秦苛政，与民更始。
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
 
-其后四夷既平，高祖乃令萧何次律令，韩信申军法。</div>
-        </section>
-        <section>
-          <h3>现代汉语</h3>
-          <div class="txt">汉朝兴起时，高祖初入关中，约定法律三章，除去秦朝的苛刻政治，与民众重新开始。
-
-在那之后四方夷族都已平定，高祖就命令萧何整理法律条令，韩信整理军法。</div>
-        </section>
-        <section>
-          <h3>English</h3>
-          <div class="txt">When the Han arose, when Gaozu first entered the passes, he made a covenant of three laws, removed Qin's harsh policies, and started anew with the people.
-
-After the four barbarian tribes were pacified, Gaozu ordered Xiao He to organize the laws and regulations, and Han Xin to organize military law.</div>
-        </section>
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">汉兴，高祖初入关，约法三章，除秦苛政，与民更始。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉朝兴起时，高祖初入关中，约定法律三章，除去秦朝的苛刻政治，与民众重新开始。</td>
+                <td class="english-cell col-english" data-lang="english">When the Han arose, when Gaozu first entered the passes, he made a covenant of three laws, removed Qin's harsh policies, and started anew with the people.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其后四夷既平，高祖乃令萧何次律令，韩信申军法。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">在那之后四方夷族都已平定，高祖就命令萧何整理法律条令，韩信整理军法。</td>
+                <td class="english-cell col-english" data-lang="english">After the four barbarian tribes were pacified, Gaozu ordered Xiao He to organize the laws and regulations, and Han Xin to organize military law.</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
       </main>
 
       <nav class="chapter-nav">
@@ -47,8 +108,139 @@ After the four barbarian tribes were pacified, Gaozu ordered Xiao He to organize
       </nav>
 
       <footer>
-        <small>并排三列显示</small>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
       </footer>
     </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>

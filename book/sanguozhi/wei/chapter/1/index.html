@@ -4,51 +4,813 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>三国志 — 第1章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
     <link rel="stylesheet" href="/static/style.css">
   </head>
   <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
       <header>
-        <h1>三国志 — 第1章 文帝纪</h1>
+        <h1>三国志 — 第1章 三国志-乌丸鲜卑传</h1>
       </header>
 
-      <main class="parallel">
-        <section>
-          <h3>文言文</h3>
-          <div class="txt">文帝曹丕，字子桓，武帝长子也。建安十六年，为五官中郎将、副丞相。
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
 
-二十二年，立为太子。二十五年春正月，武帝崩，太子即王位，是为文帝。</div>
-        </section>
-        <section>
-          <h3>现代汉语</h3>
-          <div class="txt">文帝曹丕，字子桓，是武帝的长子。建安十六年，担任五官中郎将、副丞相。
-
-二十二年，被立为太子。二十五年春正月，武帝去世，太子即王位，这就是文帝。</div>
-        </section>
-        <section>
-          <h3>English</h3>
-          <div class="txt">Emperor Wen, Cao Pi, style name Zihuan, was the eldest son of Emperor Wu. In the sixteenth year of Jian'an, he served as General of the Five Offices and Deputy Chancellor.
-
-In the twenty-second year, he was established as Crown Prince. In the spring and first month of the twenty-fifth year, Emperor Wu died, and the Crown Prince ascended to the throne, becoming Emperor Wen.</div>
-        </section>
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">《书》载“蛮夷猾夏”，《诗》称“严狁孔炽”，久矣其为中国患也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">《尚书·尧典》载“蛮夷扰乱华夏”，《诗经》说“严狁十分嚣张”，他们对中原的侵害为时已久。</td>
+                <td class="english-cell col-english" data-lang="english">In The Book of History it was stated,"The Man and Yi tribes harassed the Huaxia States." The Book of Poetry claimed,"The Xianyuns were extremely aggressive."For a long time, they were belligerent and provocative in the Central Plains.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦、汉以来，匈奴久为边害。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦、汉以来，匈奴长时间为害边境。</td>
+                <td class="english-cell col-english" data-lang="english">Since the Qin and Han Dynasties, the Xiongnu armies had long been harassing the border areas.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">孝武虽外事四夷，东平两越、朝鲜，西讨贰师、大宛，开邛筰、夜郎之道，然皆在荒服之外，不能为中国轻重。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉武帝虽曾致力于收服四方蛮夷，东面平定两越、朝鲜，西边讨伐贰师、大宛，打通邛筰及夜郎的道路，但这些民族都无不远离王畿，不能对中原构成多大的实质性影响。</td>
+                <td class="english-cell col-english" data-lang="english">Emperor Xiaowu engaged in wars with the minority tribes in all four directions, suppressed the two Yues and Korea in the East, sent punitive expeditions in the West to Ershi and Dawan, and opened up the roads to Qiongyuo and Yelang. Because they were all in the remote border areas, they could not exert any great influence on the Middle Empire.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">而匈奴最逼于诸夏，胡骑南侵则三边受敌，是以屡遣卫、霍之将，深入北伐，穷追单于，夺其饶衍之地。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">而匈奴地界距离中原最近，一旦它的骑兵南侵就直接威胁华夏地区的三边边境，因此从汉朝以来屡次派遣类似于卫青、霍去病这等名将北伐，率师深入敌境，对单于穷追猛打，夺取匈奴人那些富饶平旷的土地。</td>
+                <td class="english-cell col-english" data-lang="english">When their cavalry invaded southward, the empire was encircled on three sides, and generals such as Wei Qing and Huo Qubing were thrust deep into the North to pursue the Chanyus (chieftains) and occupy their fertile land.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后遂保塞称藩，世以衰弱。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">其后匈奴退守塞外并向中原朝廷臣服称藩，其势力日益衰落。</td>
+                <td class="english-cell col-english" data-lang="english">Thereafter the Xiongnu people withdrew to defend the fortresses and subjected themselves to the Central Plains as vassal states, and they became gradually weakened.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">建安中，呼厨泉南单于入朝，遂留内侍，使右贤王抚其国，而匈奴折节，过于汉旧。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">建安年间，呼厨泉南单于入朝觐见，就此留在中原担当侍奉天子的大臣，而让右贤王治理其领地，这时匈奴臣服中原的程度，还要超过西汉鼎盛之时。</td>
+                <td class="english-cell col-english" data-lang="english">In the Jian'an Period, Huchuquan, a southern Chanyu, paid a visit to the court and was detained as a court official. Prince Youxian was dispatched as a regent to his state, and the Xiongnu authorities were humbled even more than their predecessors in the past Han Dynasty.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">然乌丸、鲜卑稍更强盛，亦因汉末之乱，中国多事，不遑外讨，故得擅漠南之地，寇暴城邑，杀略人民，北边仍受其困。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">但是乌丸、鲜卑又渐渐强盛起来，也是因为汉末大乱，中原政局动荡战火纷飞，没有闲暇征讨外敌，因此乌丸、鲜卑人得以擅自将势力范围延伸到大漠以南，攻陷城池，杀戮抢掠内地百姓，中原北部边境屡遭困扰。</td>
+                <td class="english-cell col-english" data-lang="english">Nevertheless, the Wuwan and Xianbei tribes became a little more powerful. Because of the turbulence at the end of the Han Dynasty, there were more battles and rebellions within the territory. The court could not even consider a punitive expedition against any invaders. Therefore, the Wuwan and Xianbei tribes occupied the land in the south of the deserts without permission. They seized and occupied cities and towns, looted and massacred people, and the northern areas of the empire fell prey to their harassment.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">会袁绍兼河北，乃抚有三郡乌丸，宠其名王而收其精骑。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">等到袁绍兼并黄河以北地区，于是着手安抚三郡乌丸，尊宠其有名望的首领同时改编统领其精锐骑兵。</td>
+                <td class="english-cell col-english" data-lang="english">At this time, Yuan Shao annexed the areas north of the Yellow River, pacified and controlled the Wuwan tribes in the three prefectures, gave favors to the known chieftains, and incorporated their cavalry into one.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其后袁尚、熙又逃于蹋顿。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">其后袁尚、袁熙又北投蹋顿。</td>
+                <td class="english-cell col-english" data-lang="english">Afterwards Yuan Shang and Yuan Xi fled to join forces with Tadun.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">蹋顿又骁武，边长老皆比之冒顿，恃其阻远，敢受亡命，以雄百蛮。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">蹋顿剽悍勇猛，边境年长的人都把他比做昔日威名赫赫的匈奴首领冒顿，而且蹋顿仗着自己远离中原京师，敢于接纳袁尚、袁熙之类的逃亡者，在边塞各族之中称霸争雄。</td>
+                <td class="english-cell col-english" data-lang="english">Tadun was courageous and belligerent, and the respected people in the border areas compared him to Modu, a renowned Xiongnu Chieftain in the old days. Relying on the remote and tortuous border areas, he dared to accept escaped criminals into his forces in order to strengthen the hundred minority tribes.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太祖潜师北伐，出其不意，一战而定之，夷狄慑服，威振朔土。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">太祖曹操秘密北伐，出其不意，一战就平定了蹋顿，各少数民族无不惊惧臣服，中原朝廷的声威震憾漠北。</td>
+                <td class="english-cell col-english" data-lang="english">Grand Ancestor stealthily dispatched the troops to the North, attacked the enemy by surprise, thus settling the problem in one battle. The Yi and Di minority tribes became subservient, and the imperial army inspired awe throughout the North.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">遂引乌丸之众服从征讨，而边民得用安息。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">那之后曹操又让乌丸兵马按照朝廷意志征伐漠北不安分的部落，边地居民得以安居乐业。</td>
+                <td class="english-cell col-english" data-lang="english">After that, the military forces of the Wuwan tribes were organized to participate in punitive government expeditions, and the people in the border areas were able to live a peaceful life.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后鲜卑大人轲比能复制御群狄，尽收匈奴故地，自云中、五原以东抵辽水，皆为鲜卑庭。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来鲜卑首领轲比能又做北边各少数民族的盟主，并且全面占领了匈奴故地，从云中、五原以东直至辽河，都在鲜卑人的控制之下。</td>
+                <td class="english-cell col-english" data-lang="english">Ke Bineng of the Xianbei tribes again conquered all the minority tribes and took control of all the territories that once belonged to the Xiongnu people. The Xianbeis occupied all the areas from east of Yunzhong, and Wuyuan to the Liao River.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">数犯塞寇边，幽、并苦之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他们多次侵扰边境，幽州、并州两地深受其害。</td>
+                <td class="english-cell col-english" data-lang="english">Their military forces invaded the border fortresses many times. They caused great suffering to the people in You and Bing provinces.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">田豫有马城之围，毕轨有陉北之败。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">文帝曹丕初年，名将田豫曾有马城之围，而毕轨也有过陉北之败。</td>
+                <td class="english-cell col-english" data-lang="english">General Tian Yu was surrounded in Macheng, and General Bi Gui was defeated in Jingbei.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">青龙中，帝乃听王雄遣剑客刺之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">青龙年间，明帝曹叡采纳王雄的建议而派剑客刺杀了轲比能。</td>
+                <td class="english-cell col-english" data-lang="english">During the Qinglong Period, the emperor accepted Wang Xiong's suggestion and had Ke Bineng assassinated.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">然后种落离散，互相侵伐，强者远遁，弱者请服。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">此后鲜卑部落离散，自相攻打，实力稍强的远逃塞外，势力弱小的部落都请求归附朝廷。</td>
+                <td class="english-cell col-english" data-lang="english">Afterwards his tribes scattered and fought against each other. The stronger people fled to the remote places, and the weaker ones pleaded for surrender.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">由是边陲差安，漠南少事，虽时颇钞盗，不能复相扇动矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是边境基本安静下来，大漠以南很少发生战事，虽然还时不时地会有小规模的入境抢劫，但毕竟不能形成相互鼓动的气候了。</td>
+                <td class="english-cell col-english" data-lang="english">Peace was again restored in the border areas, and a few battles took place in the areas south of the deserts. Although the Xianbei people robbed and stole from time to time, they could not start up big troubles anymore.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">乌丸、鲜卑即古所谓东胡也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">乌丸、鲜卑就是古代所说的东胡。</td>
+                <td class="english-cell col-english" data-lang="english">The Wuwan and Xianbei tribes were what the ancient people called the East Hu tribes.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其习俗、前事，撰汉记者已录而载之矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他们的习俗、历史，撰写汉代历史的作者都已经收录记述过了。</td>
+                <td class="english-cell col-english" data-lang="english">Their customs and history were recorded by the historians during the Han Dynasty.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">故但举汉末魏初以来，以备四夷之变云。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">所以这里的叙述仅限于汉末魏初以来，以便完备国境四面少数民族的变革档案。</td>
+                <td class="english-cell col-english" data-lang="english">Therefore, the following only enumerates events that took place from the end of the Han Dynasty to the beginning of the Wei Dynasty in reference of the possible troubles created in the border areas.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">汉末，辽西乌丸大人丘力居，众五千余落，上谷乌丸大人难楼，众九千余落，各称王，而辽东属国乌丸大人苏仆延，众千余落，自称峭王，右北平乌丸大人乌延，众八百余落，自称汗鲁王，皆有计策勇健。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">东汉末年，辽西乌丸首领丘力居，统领五千余落部众，上谷乌丸首领难楼，统辖九千余部，二人各自称王，而辽东属国乌丸首领苏仆延，拥有部众一千余落，自称峭王，右北平乌丸首领乌延，统领八百余落，自称汗鲁王，他们都善用谋略勇敢强健。</td>
+                <td class="english-cell col-english" data-lang="english">At the end of the Han Dynasty, Qiuliju, chieftain of over five thousand Wuwan tribes in Liaoxi, and Nanlou, and chieftain of over nine thousand Wuwan tribes in Shanggu, each of them claimed himself king; Supuyan, chieftain of over a thousand Wuwan tribes as a vassal state in Liaodong claimed himself King Qiao; Wuyan, chieftain of the Wuwans in the Right Beiping with over eight hundred tribes, called himself King Hanlu. They were all wise and audacious.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">中山太守张纯叛入丘力居众中，自号弥天安定王，为三郡乌丸元帅，寇略青、徐、幽、冀四州，杀略吏民。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">中山太守张纯叛国逃到丘力居部落中，自号弥天安定王，充当三郡乌丸元帅，侵扰青、徐、幽、冀等四州之地，攻杀抢掠官吏百姓。</td>
+                <td class="english-cell col-english" data-lang="english">Zhang Chun, prefect of Zhongshan, betrayed the court and joined the tribes of Qiuliju. Calling himself the Permeating-Heavenly Peace King, he became the marshal of the Wuwan people in the three prefectures. They invaded and looted the four provinces of Qing, Xu, You and Ji, and killed officials and common people.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">灵帝末，以刘虞为幽州牧，募胡斩纯首，北州乃定。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉灵帝末年，朝廷委任刘虞为幽州牧，招募胡人将张纯斩首，北方各州才得以安定。</td>
+                <td class="english-cell col-english" data-lang="english">At the end of the reign of Emperor Ling, Liu Yu was appointed governor of You Province. He recruited men of the Hu tribes to behead Zhang Chun, and the northern provinces settled in peace.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后丘力居死，子楼班年小，从子蹋顿有武略，代立，总摄三王部，众皆从其教令。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来丘力居死，他的儿子楼班年龄还小，而其侄蹋顿有军事谋略，于是代领王位，总领乌丸三王各部，部众都听从他的号令。</td>
+                <td class="english-cell col-english" data-lang="english">Later when Qiuliju died, his son Louban was still young, but his nephew Tadun was resourceful in military strategy. He succeeded to the power by acting as general commander of the headquarters of the three chieftains, and all followed his orders and instructions.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">袁绍与公孙瓒连战不决，蹋顿遣使诣绍求和亲，助绍击瓒，破之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">袁绍和公孙瓒交手不断却难分胜负，蹋顿派使者到袁绍那里请求和亲，帮助袁绍攻打公孙瓒，结果大胜。</td>
+                <td class="english-cell col-english" data-lang="english">Yuan Shao and Gongsun Zan battled against each other in succession, but neither side was able to win with a definite victory. Tadun sent an envoy to Yuan Shao to offer an political marriage, and assisted Yuan Shao to strike Gongsun Zan and defeat him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">绍矫制赐蹋顿、峭王、汗鲁王印绶，皆以为单于。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">袁绍假托君命赐给蹋顿、峭王、汗鲁王印绶，任命他们都为单于。</td>
+                <td class="english-cell col-english" data-lang="english">Yuan Shao faked an imperial decree, made seals and honor belts to bestow onto Tadun, King Qiao, King Hanlu, and appointed all three Chanyu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后楼班大，峭王率其部众奉楼班为单于，蹋顿为王，然蹋顿多画计策。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来楼班成年，峭王率领部下推举楼班为单于，蹋顿为王，但出谋划策仍以蹋顿为主。</td>
+                <td class="english-cell col-english" data-lang="english">When Louban grew up, King Qiao led his tribes to support Louban as Chanyu, and Tadun as chieftain. However, Tadun was more resourceful with his ideas.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">广阳阎柔，少没乌丸、鲜卑中，为其种所归信。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">广阳人阎柔，自小流落到乌丸、鲜卑部落中，得到当地人的信任。</td>
+                <td class="english-cell col-english" data-lang="english">"Yan Rou of Guangyang grew up from a child in the Wuwan and Xianbei tribes and won their trust."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">柔乃因鲜卑众，杀乌丸校尉邢举代之，绍因宠慰以安北边。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">阎柔便利用鲜卑的实力，攻杀乌丸校尉邢举由他自己取而代之，袁绍则顺水推舟安抚阎柔以安定北部边疆。</td>
+                <td class="english-cell col-english" data-lang="english">Relying on the overwhelming number of the Xianbeis, Yan Rou killed Xing Ju of the Wuwan colonel and replaced him. Because of this incident, Yuan Shao expressed his desire to maintain peace in the North.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后袁尚败奔蹋顿，凭其势，复图冀州。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来袁尚失败，逃奔蹋顿，凭借蹋顿势力，谋夺冀州。</td>
+                <td class="english-cell col-english" data-lang="english">Later, Yuan Shang was defeated and fled to Tadun for protection. He hoped to recover Ji Province by relying on his strength.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">会太祖平河北，柔帅鲜卑、乌丸归附，遂因以柔为校尉，犹持汉节，治广宁如旧。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时太祖曹操正扫平黄河以北，阎柔率鲜卑、乌丸前来归附，曹操就便任命阎柔为校尉，让他仍持汉朝符信，照旧以广宁为治所。</td>
+                <td class="english-cell col-english" data-lang="english">At the time when Grand Ancestor was conquering the northern areas of the Yellow River, Yan Rou headed the Xianbei and Wuwan tribes to join him, and was appointed colonel just the same as the envoy of the Han court to govern Guangning as before.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">建安十二年，太祖自征蹋顿于柳城，潜军诡道，未至百余里，虏乃觉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">建安十二年，太祖曹操亲赴柳城征伐蹋顿，走捷径秘密出兵，距敌巢穴才百余里远近时，敌兵这才察觉。</td>
+                <td class="english-cell col-english" data-lang="english">In the twelfth year of the Jian'an Period, Grand Ancestor himself headed the expedition against Tadun in Liucheng. The army marched stealthily, taking lots of shortcuts, but it was within a hundred li before the enemy discovered them.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">尚与蹋顿将众逆战于凡城，兵马甚盛。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">袁尚和蹋顿率领部众在凡城迎击，兵马黑压压的看起来煞是强盛壮观。</td>
+                <td class="english-cell col-english" data-lang="english">Yuan Shang and Tadun met the challenge in Fancheng with a mighty army of cavalry and infantry.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太祖登高望虏陈，抑军未进；观其小动，乃击，破其众，临陈斩蹋顿首，死者被野。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">曹操登上高处遥望敌阵，按兵不动；等到敌兵阵形稍稍出现躁动迹象之时，这才挥兵进攻，杀得敌军一败涂地，当阵斩杀蹋顿，被杀的敌兵简直尸横遍野。</td>
+                <td class="english-cell col-english" data-lang="english">Grand Ancestor ascended to a high place in order to observe the enemy disposition while he held his own army in its place. As soon as the enemy began to charge, he ordered the strike and routed their formation. Tadun was beheaded on the spot, and dead bodies covered the fields.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">速附丸、楼班、乌延等走辽东，辽东悉斩，传送其首。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">速附丸、楼班、乌延等逃奔辽东，辽东把他们都杀了，将首级送呈朝廷。</td>
+                <td class="english-cell col-english" data-lang="english">Sufuwan, Louban, Wuyan and others fled to Liaodong. The efforts were fruitless because they were all beheaded in Liaodong and their heads were sent back to their cities.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其余遗迸皆降。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">其余战败而奔散的残兵都投降了。</td>
+                <td class="english-cell col-english" data-lang="english">All the rest gathered together and surrendered.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">及幽州、并州柔所统乌丸万余落，悉徙其族居中国，帅从其侯王大人种众与征伐。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">曹操将这些人马连同幽州、并州等地由阎柔统帅的乌丸一万余部众，全都迁徙到中原定居，让各部的侯王大人及其部众都参与征战。</td>
+                <td class="english-cell col-english" data-lang="english">Together the Wuwan people in You and Bing Provinces, under the government of Yan Rou, numbered over ten thousand tribes, and were shifted to the Middle Empire for settlement. All the marquises, kings, chieftains and ordinary people were ordered to participate in the following punitive expeditions,</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">由是三郡乌丸为天下名骑。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">从此三郡乌丸的骑兵闻名天下。</td>
+                <td class="english-cell col-english" data-lang="english">and thus the Wuwan cavalry of the three prefectures became well-known throughout China.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">鲜卑步度根既立，众稍衰弱，中兄扶罗韩亦别拥众数万为大人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">鲜卑步度根成为部族首领之后，人众减少实力有所衰弱，其兄扶罗韩也另外拥有数万部众自为首领。</td>
+                <td class="english-cell col-english" data-lang="english">After Budugen of the Xianbei tribes became the chieftain, his tribes were weaker, while his second eldest brother, Fuluohan, was also the chieftain with a possession of several ten thousand soldiers.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">建安中，太祖定幽州，步度根与轲比能等因乌丸校尉阎柔上贡献。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">建安年间，太祖曹操平定幽州，步度根和轲比能等鲜卑首领通过乌丸校尉阎柔开始向朝廷纳贡。</td>
+                <td class="english-cell col-english" data-lang="english">In the Jian'an Period, Grand Ancestor conquered You Province. Budugen and Ke Bineng offered their tributes to the court via the agent of Yan Rou, the Wuwan colonel.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后代郡乌丸能臣氐等叛，求属扶罗韩，扶罗韩将万余骑迎之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来代郡乌丸能臣氐等人反叛，请求归附扶罗韩，扶罗韩率领万余骑兵前往迎接。</td>
+                <td class="english-cell col-english" data-lang="english">When Nengchendi of the Wuwan tribes in Dai Prefecture and others rebelled, they pleaded with Fuluohan for assistance. Fuluohan led over ten thousand cavalrymen to welcome them,</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">到桑干，氐等议，以为扶罗韩部威禁宽缓，恐不见济，更遣人呼轲比能，比能即将万余骑到。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">到桑干之时，能臣氐等人商议，认为扶罗韩所领部众法令宽松，只怕在他那里难有什么前途，当下便另外派人送信让轲比能前来，轲比能当即率上万骑兵赶到。</td>
+                <td class="english-cell col-english" data-lang="english">at Sangqian. Nengchendi and his subordinates discussed and worried that Fuluohan ruled his troops with such a loose discipline and he would not be able to defend themselves. Fuluohan dispatched his men to summon Ke Bineng. Ke Bineng immediately came over with ten thousand cavalrymen to answer the call.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">当共盟誓，比能便于会上杀扶罗韩，扶罗韩子泄归泥及部众悉属比能。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">之后有结盟立誓的仪式，轲比能就在盟会上杀了扶罗韩，扶罗韩的儿子泄归泥及所有部众都归轲比能统辖。</td>
+                <td class="english-cell col-english" data-lang="english">When they swore to form an alliance, Ke Bineng killed Fuluohan at the meeting. Fuluohan's son Xieguini and his subordinates were all forced into Ke Bineng's forces.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">比能自以杀归泥父，特又善遇之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">轲比能自认为亲手杀了泄归泥的父亲，所以对泄归泥特别善待。</td>
+                <td class="english-cell col-english" data-lang="english">Ke Bineng thought it was he who killed Xieguini's father so he treated Xieguini with special kindness.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">步度根由是怨比能。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">步度根为此怨恨轲比能。</td>
+                <td class="english-cell col-english" data-lang="english">Budugen hated Ke Bineng because of this.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">文帝践阼，田豫为乌丸校尉，持节并护鲜卑，屯昌平。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">文帝曹丕受禅登极，命田豫担任乌丸校尉，持朝廷符节并护鲜卑，屯兵昌平。</td>
+                <td class="english-cell col-english" data-lang="english">When Emperor Wen ascended the throne, Tian Yu was appointed colonel of the Wuwan people and envoy for protecting the Xianbei tribes with the imperial tallies. He garrisoned his troops in Changping.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">步度根遣使献马，帝拜为王。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">步度根派使者向朝廷献马，文帝封拜步度根为王。</td>
+                <td class="english-cell col-english" data-lang="english">Budugen sent his representative to offer horses as tributes, and the emperor named him king.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后数与轲比能更相攻击，步度根部众稍寡弱，将其众万余落保太原、雁门郡。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">其后因与轲比能之间的多次相互对攻，步度根所部日显人少势弱，只得率领部下万余人入塞来到太原、雁门郡以求自保。</td>
+                <td class="english-cell col-english" data-lang="english">There were several times that Budugen and Ke Bineng attacked each other. Budugen's tribes, in comparison, had fewer soldiers and was weaker in strength. He led over ten thousand tribes to defend Taiyuan and Yanmen Prefectures.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">步度根乃使人招呼泄归泥曰：“汝父为比能所杀，不念报仇，反属怨家。今虽厚待汝，是欲杀汝计也。不如还我，我与汝是骨肉至亲，岂与仇等？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">步度根又派人对泄归泥说：“你父亲被轲比能所杀，你不想法替父报仇，反而归依仇人。现在虽然厚待你，那是为日后杀你做的铺垫而已。不如来我这儿，我和你是骨肉至亲，怎能和仇人一样呢？”</td>
+                <td class="english-cell col-english" data-lang="english">He also sent his men to talk to Xieguini and said, 'Your father was killed by Ke Bineng, but you do not think of revenge. On the contrary, you attach yourself to your enemy. Today, although he treats you with kindness, this is an intrigue to kill you. It is better for us to reunite as we are blood brothers. How could I regard you as my enemy?'</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">由是归泥将其部落逃归步度根，比能追之弗及。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">为此泄归泥率其部落逃归步度根，轲比能派兵追赶最终没有追上。</td>
+                <td class="english-cell col-english" data-lang="english">So Xieguini led his subordinates to run to the side of Budugen, and Ke Bineng chased after them, but was unable to catch up with them.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">至黄初五年，步度根诣阙贡献，厚加赏赐，是后一心守边，不为寇害，而轲比能众遂强盛。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">到了黄初五年，步度根亲赴朝廷纳贡，得到朝廷的重赏，此后他便一心守在边疆，不干那些侵扰抢掠的坏事，而轲比能的势力于是强大起来。</td>
+                <td class="english-cell col-english" data-lang="english">In the fifth year of the Huangchu Period, Budugen paid a visit to the court and offered tributes. The emperor bestowed generous gifts on him, and so he wholeheartedly defended the borders. He did not inflict harm anymore, and all the while Ke Bineng's forces grew increasingly stronger.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">明帝即位，务欲绥和戎狄，以息征伐，羁縻两部而已。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">明帝曹叡即位，一心只想安和四周少数民族，以便平息征伐，对于轲比能、步度根两个鲜卑部落只是采取怀柔安抚的手段而已。</td>
+                <td class="english-cell col-english" data-lang="english">When Emperor Ming ascended the throne, he tried by every means to make peace with the minority tribes in order to avoid expeditions and battles. He only had minimal control of the two sides.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">至青龙元年，比能诱步度根深结和亲，于是步度根将泄归泥及部众悉保比能，寇钞并州，杀略吏民。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">到青龙元年，轲比能诱使步度根彼此深心接纳并互为亲家，于是步度根率领泄归泥及全部族众都依附轲比能，劫掠并州，攻杀掳掠官吏民众。</td>
+                <td class="english-cell col-english" data-lang="english">In the first year of the Qinglong Period, Ke Bineng lured Budugen to develop their friendship and form a relation by marriage, and Budugen sent Xieguini and his troops to defend Ke Bineng. They invaded and looted Bing Province, and killed officials and common people.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">帝遣骁骑将军秦朗征之，归泥叛比能，将其部众降，拜归义王，赐幢麾、曲盖、鼓吹，居并州如故。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">明帝派骁骑将军秦朗前往征讨，泄归泥率众背叛轲比能，向秦朗投降，朝廷封拜泄归泥为归义王，并赐给他幢麾、曲盖、鼓吹，让他率部众照旧住在并州。</td>
+                <td class="english-cell col-english" data-lang="english">The emperor dispatched Cavalry General Qin Lang to conquer them. Xieguini betrayed Ke Bineng, and surrendered with his troops. He was bestowed as the returned and righteous king with pennants, a cranked umbrella, a set of percussions and wind instruments. He lived in Bing Province, and</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">步度根为比能所杀。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">步度根则被轲比能所杀。</td>
+                <td class="english-cell col-english" data-lang="english">Budugen was killed by Ke Bineng.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">轲比能本小种鲜卑，以勇健，断法平端，不贪财物，众推以为大人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">轲比能本来只是鲜卑族内一个弱小部落的人，因为勇敢强健，又能平正执法，不贪财物，所以众人推举他作为首领。</td>
+                <td class="english-cell col-english" data-lang="english">Ke Bineng came from only a small Xianbei tribe, and was selected as the chieftain for his courage, fair judgment and incorruptibility.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">部落近塞，自袁绍据河北，中国人多亡叛归之，教作兵器铠楯，颇学文字。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">其部落靠近边塞，自从袁绍占据河北，中原人多有逃亡反叛归附他的，教他们制作兵器铠甲盾牌，教他们制作兵器铠甲盾牌，还让他们学习不少文字。</td>
+                <td class="english-cell col-english" data-lang="english">His tribes were generally close to the border. Since Yuan Shao occupied Hebei, many people from the Central Plains fled and rebelled to join him, teaching them to make weapons, armors and shields,teaching them to make weapons, armors and shields, and they learned quite a lot about the written language.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">故其勒御部众，拟则中国，出入弋猎，建立旌麾，以鼓节为进退。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">所以他统御部众的方式，模仿中原王朝，外出射猎时，设立旌旗，用鼓点节奏来控制队伍进退。</td>
+                <td class="english-cell col-english" data-lang="english">Thus, his way of governing the tribes imitated that of the Central Plains. When going out for hunting, he set up banners and used drumbeats to command the advance and retreat of his troops.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">建安中，因阎柔上贡献。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">建安年间，他通过阎柔向朝廷进献贡品。</td>
+                <td class="english-cell col-english" data-lang="english">During the Jian'an Period, he presented tributes to the imperial court through Yan Rou.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太祖西征关中，田银反河间，比能将三千余骑随柔击破银。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">太祖曹操西征关中时，田银在河间反叛，轲比能率领三千多骑兵跟随阎柔打败了田银。</td>
+                <td class="english-cell col-english" data-lang="english">When Grand Ancestor launched a western expedition to Guanzhong, Tian Yin rebelled in Hejian, and Ke Bineng led over three thousand cavalrymen to defeat Tian Yin alongside Yan Rou.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后代郡乌丸反，比能复助为寇害，太祖以鄢陵侯彰为骁骑将军，北征，大破之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来代郡乌丸反叛，轲比能又帮助他们侵犯边境，太祖任命鄢陵侯曹彰为骁骑将军，北上征讨，把他们打得大败。</td>
+                <td class="english-cell col-english" data-lang="english">Later, the Wuwan in Dai Prefecture rebelled, and Ke Bineng again assisted them in harassing the border. Grand Ancestor appointed Cao Zhang, Marquis of Yanling, as the Valorous Cavalry General to launch a northern expedition and defeated them thoroughly.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">比能走出塞，后复通贡献。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">轲比能逃到塞外，之后又再次向朝廷进献贡品，恢复往来。</td>
+                <td class="english-cell col-english" data-lang="english">Ke Bineng fled beyond the border, but later resumed presenting tributes to reestablish relations with the court.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">延康初，比能遣使献马，文帝亦立比能为附义王。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">延康初年，轲比能派使者献上马匹，文帝也封立轲比能为附义王。</td>
+                <td class="english-cell col-english" data-lang="english">In the early years of Yankang, Ke Bineng sent envoys to present horses, and Emperor Wen also appointed Ke Bineng as the King of Fuyi.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">黄初二年，比能出诸魏人在鲜卑者五百余家，还居代郡。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">黄初二年，轲比能遣出住在鲜卑的五百余家魏国人，让他们回到代郡居住。</td>
+                <td class="english-cell col-english" data-lang="english">In the second year of the Huangchu Period, Ke Bineng sent back over five hundred families of the Wei Empire in the Xianbei tribes to live in Dai Prefecture.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">明年，比能帅部落大人小子代郡乌丸修武卢等三千余骑，驱牛马七万余口交市，遣魏人千余家居上谷。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">第二年，轲比能率本部落以及代郡乌丸修武卢等共三千多骑兵，驱赶牛马七万余口与中原通商，并遣发千余家魏国人前往上谷居住。</td>
+                <td class="english-cell col-english" data-lang="english">The following year, Ke Bineng headed his tribesmen and children, along with Xiuwulu of the Wuwans in Dai Prefecture, altogether over three thousand other cavalrymen, drove over seventy thousand cattle and horses to trade with the central plains. Over a thousand families, who had lived in the Wei Empire were sent back to settle down in Shanggu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后与东部鲜卑大人素利及步度根三部争斗，更相攻击。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来轲比能与东部鲜卑首领素利及步度根三部互相争斗，彼此攻击。</td>
+                <td class="english-cell col-english" data-lang="english">Later, he fought with Suli, chieftain of the Eastern Xianbei tribes, and Budugen. The three sides struck against each other.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">田豫和合，使不得相侵。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">乌丸校尉田豫出面协调，让他们不得相互侵扰。</td>
+                <td class="english-cell col-english" data-lang="english">Tian Yu mediated and discussed matters with them, and they were able to make a compromise.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">五年，比能复击素利，豫帅轻骑径进捣其后。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">黄初五年，轲比能再次侵犯素利，田豫率轻骑直攻轲比能的后方。</td>
+                <td class="english-cell col-english" data-lang="english">In the fifth year, Ke Bineng attacked Suli again, and Tian Yu led the light cavalry to attack his rear.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">比能使别小帅琐奴拒豫，豫进讨，破走之，由是怀贰。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">轲比能另派小帅琐奴抵御田豫，田豫出击，击退琐奴，轲比能因此怀有贰心。</td>
+                <td class="english-cell col-english" data-lang="english">Ke Bineng ordered a young general Suonu to resist Tian Yu. Tian Yu went on the conquest and routed his troops. Since then, Ke Bineng harbored resentment.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">乃与辅国将军鲜于辅书曰：“夷狄不识文字，故校尉阎柔保我于天子。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">之后他给辅国将军鲜于辅写信说：“我们夷狄不识文字，原乌丸校尉阎柔像天子保奏我。</td>
+                <td class="english-cell col-english" data-lang="english">He wrote to General Xianyu Fu of Imperial Assistance, and said, "As a minority man of the Yi and Di tribes, I am illiterate, and the ex-colonel Yan Rou acted as my guarantor before the Son of Heaven.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">我与素利为仇，往年攻击之，而田校尉助素利。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">我与素利结仇，往年派兵攻讨。但是田校尉却出兵帮助素利。</td>
+                <td class="english-cell col-english" data-lang="english">I and Suli are hostile towards each other. Once in the past, I attacked him. Colonel Tian assisted Suli, and in the battlefield I sent Suonu to intercept him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">我临陈使琐奴往，闻使君来，即便引军退。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">我临阵之时派琐奴前往，听说田使君来，就马上撤回了军队。</td>
+                <td class="english-cell col-english" data-lang="english">Upon discovery of your honor's arrival, I withdrew my troops right away.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">步度根数数抄盗，又杀我弟，而诬我以抄盗。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">步度根屡次劫掠我部，又杀了我弟弟，反而诬蔑我为强盗。</td>
+                <td class="english-cell col-english" data-lang="english">Budugen robbed and looted my tribes several times, and also killed my brother. He slandered me by means of looting and robbing.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">我夷狄虽不知礼义，兄弟子孙受天子印绶，牛马尚知美水草，况我有人心邪！</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">我们夷狄虽不懂得什么礼义，但我们兄弟子孙拜受了天子赐予的印绶，牛马尚且明白赞美水草，何况我有人心啊！</td>
+                <td class="english-cell col-english" data-lang="english">I, as a man of the minority tribes, do not know the rites and courtesies. But my brothers and my offspring have been given the seals and belts of honor by the Son of Heaven. Cattle and horses are even able to sing the eulogy of good water and grass, not to mention that I have a human heart.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">将军当保明我于天子。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">将军应替我向天子辩明实情。</td>
+                <td class="english-cell col-english" data-lang="english">Your general should protect me before the Son of Heaven.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">辅得书以闻，帝复使豫招纳安慰。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">鲜于辅得到书信后上奏朝廷，文帝又派田豫招纳抚慰。</td>
+                <td class="english-cell col-english" data-lang="english">Xianyu Fu reported to the emperor upon receiving the letter, and the emperor ordered Tian Yu again to solicit and give a title to Ke Bineng.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">比能众遂强盛，控弦十余万骑。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">轲比能的势力因此更加强盛，战士多达十余万人。</td>
+                <td class="english-cell col-english" data-lang="english">After that Ke Bineng's army grew mighty and increased to over a hundred thousand cavalry.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">每钞略得财物，均平分付，一决目前，终无所私，故得众死力，余部大人皆敬惮之，然犹未能及檀石槐也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">每次抢得财物，他都平均分配，当着众人面处理完毕，从不私贪，所以部下愿意为他卖命，其余各部首领都很敬畏他，但是他的影响力还是没有赶上檀石槐。</td>
+                <td class="english-cell col-english" data-lang="english">Each time the loot was evenly divided, and all decisions were made openly before the eyes of his subordinates and without any influence of selfish desires. Therefore, he won the wholehearted support of his people, and the chieftains of other tribes all respected him in awe. Even so, he still could not be compared with Tanshihuai.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太和二年，豫遣译夏舍诣比能女婿郁筑鞬部，舍为鞬所杀。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">魏明帝太和二年，田豫派通译夏舍前往轲比能女婿郁筑鞬部落，夏舍竟被郁筑鞬所杀。</td>
+                <td class="english-cell col-english" data-lang="english">In the second year of the Taihe Period, Tian Yu sent Xia She, an interpreter, as an envoy to the tribe of Yuzhujian, a son-in-law of Ke Bineng. Xia She was killed by Yuzhujian.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其秋，豫将西部鲜卑蒲头、泄归泥出塞讨郁筑鞬，大破之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这年秋天，田豫统帅西部鲜卑蒲头、泄归泥出塞讨伐郁筑鞬，大败对手。</td>
+                <td class="english-cell col-english" data-lang="english">In the autumn of that year, Tian Yu led Putou, Xieguini, and the chieftains of the West Xianbei tribes, rushing out of the passes to conquer Yuzhujian. They defeated him utterly.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">还至马城，比能自将三万骑围豫七日。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">回师马城，轲比能亲率三万骑兵围困了田豫七天。</td>
+                <td class="english-cell col-english" data-lang="english">When they returned to Macheng, Ke Bineng himself headed thirty thousand cavalrymen to encircle Tian Yu for seven days.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上谷太守阎志，柔之弟也，素为鲜卑所信。志往解喻，即解围去。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">上谷太守阎志，是阎柔的弟弟，历来为鲜卑人所信任。阎志前往劝解晓谕，轲比能才解围而去。</td>
+                <td class="english-cell col-english" data-lang="english">Yan Zhi was the prefect of Shanggu, younger brother of Yan Rou, and a long trusted friend of the Xianbei tribes. He went to persuade them, and the siege was raised.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后幽州刺史王雄并领校尉，抚以恩信。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来幽州刺史王雄兼任校尉，以恩义诚信安抚轲比能。</td>
+                <td class="english-cell col-english" data-lang="english">Later, Wang Xiong, governor of You Province and garrison commander, expressed some favor and trust to Ke Bineng.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">比能数款塞，诣州奉贡。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">轲比能多次入塞，到幽州进贡。</td>
+                <td class="english-cell col-english" data-lang="english">Ke Bineng also provided goods and money several times for the frontier fortresses, and he also went to the prefectural seat to offer tributes.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">至青龙元年，比能诱纳步度根，使叛并州，与结和亲，自勒万骑迎其累重于陉北。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">到青龙元年，轲比能诱使步度根归附，让他反叛并州，亲率万余人马在陉北迎接步度根的家室资产。</td>
+                <td class="english-cell col-english" data-lang="english">In the first year of the Qinglong Period, Ke Bineng incorporated Budugen's troops through tricks, and offered him an arranged marriage in order to betray Bing Province. Ke Bineng also led over ten thousand cavalrymen to welcome his supplies and gear teams in Jingbei.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">并州刺史毕轨遣将军苏尚、董弼等击之，比能遣子将骑与尚等会战于楼烦，临陈害尚、弼。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">并州刺史毕轨派苏尚、董弼等部发起攻击，轲比能则派儿子率骑兵在楼烦与苏尚大战，当阵杀死了苏尚、董弼。</td>
+                <td class="english-cell col-english" data-lang="english">Bi Gui, the supervisor of Bing Province, dispatched Generals Su Shang and Dong Bi, and others to strike them.Ke Bineng sent his son with his cavalry to fight against Su Shang et al. in Loufan. Su Shang and Dong Bi met their death in battle.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">至三年中，雄遣勇士韩龙刺杀比能，更立其弟。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">到青龙三年，王雄派勇士韩龙刺杀轲比能，另立轲比能的弟弟为王。</td>
+                <td class="english-cell col-english" data-lang="english">In the middle of the third year, Wang Xiong sent the warrior Han Long to assassinate Ke Bineng, and set the younger brother of Ke Bineng to his previous position.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">素利、弥加、厥机皆为大人，在辽西、右北平、渔阳塞外，</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">素利、弥加、厥机都是部落首领，在辽西、右北平和渔阳塞外。</td>
+                <td class="english-cell col-english" data-lang="english">Suli, Mijia and Jueji were all chieftains in Liaoxi, right of Beiping and the outer regions of Yuyang Passes.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">道远初不为边患，然其种众多于比能。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">因远离中原，最初并没有对边境构成侵扰，然而他们人众还多于轲比能。</td>
+                <td class="english-cell col-english" data-lang="english">They were far away from the borders and they did not harass the border areas at first. However, they were overwhelming in number in comparison to the troop of Ke Bineng.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">建安中，因阎柔上贡献，通市，太祖皆表宠以为王。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">建安年间，他们通过阎柔向朝廷进贡，并互通贸易，曹操都上表替他们邀宠，让朝廷都封他们为王。</td>
+                <td class="english-cell col-english" data-lang="english">In the Jian'an Period, they owed their tributes to the court because of the introduction of Yan Rou and trade, and Grand Ancestor sent a memorial to the emperor in order to favor them all with the title of the king.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">厥机死，又立其子沙末汗为亲汉王。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">厥机死，又立他的儿子沙末汗为亲汉王。</td>
+                <td class="english-cell col-english" data-lang="english">After the death of Jueji, his son Shamohan was again established as the pro-Han king.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">延康初，又各遣使献马。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">延康初年，诸王又各派使者献马。</td>
+                <td class="english-cell col-english" data-lang="english">At the beginning of the Yankang Period, they each dispatched envoys to offer horses as tributes.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">文帝立素利、弥加为归义王。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">文帝曹丕立素利、弥加为归义王。</td>
+                <td class="english-cell col-english" data-lang="english">Emperor Wen bestowed on Suli and Mijia the title of the returned righteous king.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">素利与比能更相攻击。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">素利与轲比能彼此交替攻击。</td>
+                <td class="english-cell col-english" data-lang="english">Suli and Ke Bineng still attacked each other.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太和二年，素利死。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">明帝曹叡太和二年，素利死。</td>
+                <td class="english-cell col-english" data-lang="english">In the second year of the Taihe Period, Suli died.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">子小，以弟成律归为王，代摄其众。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他的儿子年幼，立他的弟弟成律归为王，代为统领部落。</td>
+                <td class="english-cell col-english" data-lang="english">His son was still young, thus his younger brother Chengliigui was established in his place to rule his tribes as the king.</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
       </main>
 
       <nav class="chapter-nav">
         
         &nbsp; <a href="/book/sanguozhi/wei/">魏书章节列表</a> &nbsp;
-        
+        <a href="/book/sanguozhi/wei/chapter/2/">下一章 →</a>
       </nav>
 
       <nav class="breadcrumb">
         <a href="/">首页</a> &gt; 
         <a href="/book/sanguozhi/">三国志</a> &gt; 
         <a href="/book/sanguozhi/wei/">魏书</a> &gt;
-        第1章 文帝纪
+        第1章 三国志-乌丸鲜卑传
       </nav>
 
       <footer>
-        <small>并排三列显示</small>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
       </footer>
     </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>

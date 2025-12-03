@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>后汉书 — 第11章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <header>
+        <h1>后汉书 — 第11章 列传 张鲁传</h1>
+      </header>
+
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
+
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">鲁字公旗。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张鲁字公旗。</td>
+                <td class="english-cell col-english" data-lang="english">Zhang Lu's style name was Gongqi.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">初，祖父陵顺帝时客于蜀，学道鹤鸣山中，造作符书，以惑百姓。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">早先时候，他的祖父张陵在汉顺帝时寓居在蜀地，在鹤鸣山中学道，自己造出符书，用来迷惑百姓。</td>
+                <td class="english-cell col-english" data-lang="english">Earlier during the reign of Emperor Shun of Han, his grandfather Zhang Ling stayed in Shu, and studied Daoist religion in Heming Mountain. Zhang Ling forged Daoist magic texts to mislead the populace.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">受其道者辄出米五斗，故谓之“米贼”。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">加入他的教派的人就交纳五斗米，所以被称为“米贼”。</td>
+                <td class="english-cell col-english" data-lang="english">Anyone was required to pay five deciliters of rice before admission into his school, so he was called “the Rice Thief.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">陵传子衡，衡传于鲁，鲁遂自号师君。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张陵传给儿子张衡，张衡传给张鲁，张鲁于是自称“师君”。</td>
+                <td class="english-cell col-english" data-lang="english">Zhang Ling passed the knowledge to his son Zhang Heng, and then Zhang Heng to his son Zhang Lu. Zhang Lu thus called himself “the Master.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其来学者，初名为鬼卒，后号祭酒。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">那些来跟他学道的，初来的称为“鬼卒”，时间长的称为“祭酒”。</td>
+                <td class="english-cell col-english" data-lang="english">Those beginners who came to learn the magic from him were called “Ghost Soldiers”, and those who had been there longer were called “Libationers.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">祭酒各领部众，众多者名曰理头。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">祭酒各自领有部众，部众多的称为“理头”。</td>
+                <td class="english-cell col-english" data-lang="english">Each Libationer had his own followers, and those who had most followers were called “Head of Logics.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">皆校以诚信，不听欺妄，有病但令首过而已。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">都以诚信作为考核标准，不接受欺妄的人，生了病时只让他们自首过错而已。</td>
+                <td class="english-cell col-english" data-lang="english">All students were judged by their loyalty and trustworthiness. A deceitful person was not accepted. If a follower was sick, he could only confess his own guilt, that’s all.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">诸祭酒各起义舍于路，同之亭传，县置米肉以给行旅；</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">各祭酒分别在路边建设义舍，和政府的亭传一样，放着米和肉以供给往来的人。</td>
+                <td class="english-cell col-english" data-lang="english">Each libationer set up a stall on the street, like the government’s neighborhood system, where volunteers prepared rice and meat for those passers-by in need.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">食者量腹取足，过多则鬼能病之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">吃的人按照自己的食量吃饱，多吃了鬼就会让他得病。</td>
+                <td class="english-cell col-english" data-lang="english">Whoever wanted the food ate to capacity. If you ate too much, though, the ghost would make you sick.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">犯法者，先加三原，然后行刑。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">犯法的人先给他三次赦免的机会，然后行刑。</td>
+                <td class="english-cell col-english" data-lang="english">If someone committed the crime of eating excessive amounts of food, he would be forgiven three times. From the fourth time on, he would be punished.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">不置长吏，以祭酒为理，民夷信向。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">不设置像政府那样的官吏，以祭酒为法官，汉朝百姓和少数民族群众都信奉皈依。</td>
+                <td class="english-cell col-english" data-lang="english">The group had no officials like those of the government. They used the libationer as judge. The public and many ethnic minorities believed in and converted to them.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">朝廷不能讨，遂就拜鲁镇夷中郎将，领汉宁太守，通其贡献韩遂、马超之乱，关西民奔鲁者数万家。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">朝廷没有能力征讨，于是索性授予张鲁镇夷中郎将的职位，兼任汉宁太守。让他往来道路向朝廷进贡。韩遂、马超作乱的时候，关西人民投奔张鲁的有几万家。当时有个人在地下挖到玉印，张鲁的各个部下想尊奉张鲁为汉宁王。</td>
+                <td class="english-cell col-english" data-lang="english">As the court was unable to suppress the group, the emperor appointed Zhang Lu Leader of Court Gentlemen with Defense Commandant of Yi, and also appointed him Governor of Hanning. The court allowed him to travel freely to pay tribute. During the period when Han Sui and Ma Chao rebelled, several tens of thousands of people in the Guangxi area sought refuge with Zhang Lu. At that time, someone from Zhang Lu’s army found a jade seal underground. His subordinates wanted to elect Zhang Lu King of Hanning.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">鲁功曹阎圃谏曰："汉川之民，户出十万，四面险固，财富土沃。上匡天子，则为桓、文，次方窦融，不失富贵。今承制署置，执足斩断；遽称王号，必为祸先。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张鲁的功曹阎圃劝说他：“汉川地区的百姓，人家超出十万，四面都是险固的地形，财物富裕土地肥沃。上帮助皇帝，就可以成为齐桓公、晋文公那样的人，退一步说可以像窦融一样，也不失富贵。现在秉承国家意旨设置官属任用自己人，其势力足以独霸一方。突然私自称王，一定会成为灾祸的开端。”</td>
+                <td class="english-cell col-english" data-lang="english">Yan Pu, the official in Zhang Lu’s Labor Section, suggested, “The population of Han and Chuan is about one hundred thousand. The terrain there is steep and solid. The people live prosperous lives, and the land is rich and fertile. If you assist His Majesty, you could reach a status similar to Duke Huan of Qi or Duke Wen of Jin. If you step back, you would be like Dou Rong, who lived a wealthy and prosperous life. Currently, the country favors your effort to establish government offices employing your own people. Your power and strength could make you a local despot. If you suddenly declare yourself king, it will certainly be the beginning of disaster.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">鲁从之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张鲁听从了他。</td>
+                <td class="english-cell col-english" data-lang="english">Zhang Lu accepted his suggestion.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">鲁自在汉川，垂三十年，闻曹操征之，至阳平，欲举汉中降</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张鲁自从据有汉川将近三十年听说曹操来征讨他他跑到阳平关想要举汉中投降</td>
+                <td class="english-cell col-english" data-lang="english">For thirty years Zhang Lu occupied the areas of Han and Chuan When he heard that Cao Cao was coming to suppress him he fled to Yangping Pass intending to surrender Hanzhong</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其弟卫不听，率众数万拒关固守</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他弟弟张卫不听从率领部众几万人在阳平关固守</td>
+                <td class="english-cell col-english" data-lang="english">His younger brother Zhang Wei disobeyed leading tens of thousands of soldiers to guard Yangping Pass</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">操破卫，斩之</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">曹操攻破张卫并将他杀死</td>
+                <td class="english-cell col-english" data-lang="english">Cao Cao defeated Zhang Wei and killed him</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">鲁闻阳平已陷，将稽颡归降</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张鲁听说阳平关已陷落想叩头归降</td>
+                <td class="english-cell col-english" data-lang="english">When Zhang Lu heard that Yangping Pass had fallen he wished to surrender by kowtowing</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">阎圃说曰：“今以急往，其功为轻；不如且依巴中，然后委质，功必多也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">阎圃进计说现在因为形势紧急而投降功劳会很小不如暂时依附巴中然后再臣服这样功劳会更大</td>
+                <td class="english-cell col-english" data-lang="english">Yan Pu advised that if he surrendered now in haste the merit would be small and suggested first taking refuge in Bazhong and then submitting which would increase his merit</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">于是乃奔南山</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张鲁听了建议便奔向南山</td>
+                <td class="english-cell col-english" data-lang="english">Thus Zhang Lu fled toward Nanshan Mountain</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">左右欲悉焚宝货仓库</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他的部下想把所有宝物仓库烧掉</td>
+                <td class="english-cell col-english" data-lang="english">His subordinates wished to burn all the treasure stores</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">鲁曰：“本欲归命国家，其意未遂；今日之走，以避锋锐，非有恶意”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张鲁说我本来想归顺国家愿望未能实现今天逃走是为了避开战事并非怀有恶意</td>
+                <td class="english-cell col-english" data-lang="english">Zhang Lu said that he had intended to submit to the state but failed and that his escape today was only to avoid conflict without malicious intent</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">遂封藏而去</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是他将宝物封存完好后离开</td>
+                <td class="english-cell col-english" data-lang="english">Thus he sealed and stored the treasures properly before departing</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">操入南郑甚嘉之</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">曹操进入南郑后非常赞赏他</td>
+                <td class="english-cell col-english" data-lang="english">When Cao Cao entered Nanzheng he greatly praised this conduct</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">又以鲁本有善意，遣人慰安之</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">又因为张鲁对他本有善意曹操派人慰问安抚他</td>
+                <td class="english-cell col-english" data-lang="english">Believing Zhang Lu bore goodwill toward him Cao Cao sent envoys to comfort and reassure him</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">鲁即与家属出逆</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张鲁随即带着家属出迎</td>
+                <td class="english-cell col-english" data-lang="english">Zhang Lu then came out with his family to welcome the envoy</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">拜镇南将军，封阆中侯，邑万户</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他被授予镇南将军封为阆中侯食邑万户</td>
+                <td class="english-cell col-english" data-lang="english">He was appointed General of Defending the South and made Marquis of Langzhong with a fief of ten thousand households</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">将还中国，待以客礼</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">曹操将他带回京城待他以贵客之礼</td>
+                <td class="english-cell col-english" data-lang="english">Cao Cao brought him back to the capital and treated him with the courtesy of an honored guest</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">封鲁五子及阎圃等皆为列侯</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张鲁的五个儿子和阎圃等人都被封为列侯</td>
+                <td class="english-cell col-english" data-lang="english">Zhang Lu’s five sons and Yan Pu were all granted the rank of marquis</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">鲁卒，谧曰原侯，子富嗣</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张鲁死后谥号为原侯由他的儿子张富继承爵位</td>
+                <td class="english-cell col-english" data-lang="english">After Zhang Lu died he was posthumously titled Marquis of Yuan and his son Zhang Fu inherited the title</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
+      </main>
+
+      <nav class="chapter-nav">
+        <a href="/book/houhanshu/liezhuan/chapter/10/">← 上一章</a>
+        &nbsp; <a href="/book/houhanshu/liezhuan/">列传章节列表</a> &nbsp;
+        <a href="/book/houhanshu/liezhuan/chapter/12/">下一章 →</a>
+      </nav>
+
+      <nav class="breadcrumb">
+        <a href="/">首页</a> &gt; 
+        <a href="/book/houhanshu/">后汉书</a> &gt; 
+        <a href="/book/houhanshu/liezhuan/">列传</a> &gt;
+        第11章 列传 张鲁传
+      </nav>
+
+      <footer>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
+      </footer>
+    </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -4,75 +4,634 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>史记 — 第22章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
     <link rel="stylesheet" href="/static/style.css">
   </head>
   <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
       <header>
         <h1>史记 — 第22章 列传 穰侯列传第十二</h1>
       </header>
 
-      <main class="parallel">
-        <section>
-          <h3>文言文</h3>
-          <div class="txt">穰侯魏冉者,秦昭王母宣太后弟也。其先楚人，姓芈氏。秦武王卒,无子，立其弟为昭王。昭王母故号为芈八子,及昭王即位，芈八子号为宣太后。宣太后非武王母。武王母号曰惠文后,先武王死。宣太后二弟：其异父长弟曰穰侯，姓魏氏，名冉；同父弟曰芈戎,为华阳君。而昭王同母弟曰高陵君、泾阳君。而魏冉最贤，自惠王、武王时任职用事。武王卒，诸弟争立,唯魏冉力为能立昭王。昭王即位，以冉为将军，卫咸阳。诛季君之乱,而逐武王后出之魏，昭王诸兄弟不善者皆灭之,威振秦国。昭王少，宣太后自治,任魏冉为政。
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
 
-昭王七年,樗里子死,而使泾阳君质于齐。赵人楼缓来相秦,赵不利，乃使仇液之秦,请以魏冉为秦相。仇液将行，其客宋公谓液曰:“秦不听公，楼缓必怨公。公不若谓楼缓曰‘请为公毋急秦’。秦王见赵请相魏冉之不急，且不听公。公言而事不成，以德楼子;事成，魏冉故德公矣。”于是仇液从之。而秦果免楼缓而魏冉相秦。
-
-欲诛吕礼,礼出奔齐。昭王十四年,魏冉举白起,使代向寿将而攻韩、魏,败之伊阙,斩首二十四万，虏魏将公孙喜。明年,又取楚之宛、叶。魏冉谢病免相，以客卿寿烛为相。其明年,烛免，复相冉，乃封魏冉于穰，复益封陶,号曰穰侯。
-
-穰侯封四岁,为秦将攻魏。魏献河东方四百里。拔魏之河内，取城大小六十余。昭王十九年,秦称西帝，齐称东帝。月余，吕礼来，而齐、秦各复归帝为王。魏冉复相秦，六岁而免。免二岁，复相秦。四岁,而使白起拔楚之郢，秦置南郡。乃封白起为武安君。白起者，穰侯之所任举也,相善。于是穰侯之富，富于王室。
-
-昭王三十二年,穰侯为相国,将兵攻魏，走芒卯,入北宅,遂围大梁。梁大夫须贾说穰侯曰:“臣闻魏之长吏谓魏王曰：‘昔梁惠王伐赵,战胜三梁,拔邯郸;赵氏不割，而邯郸复归。齐人攻卫，拔故国，杀子良;卫人不割，而故地复反。卫、赵之所以国全兵劲而地不并于诸侯者,以其能忍难而重出地也。宋、中山数伐割地,而国随以亡。臣以为卫、赵可法,而宋、中山可为戒也。秦，贪戾之国也,而毋亲。蚕食魏氏，又尽晋国，战胜暴子，割八县,地未毕入四，兵复出矣。夫秦何厌之有哉!今又走芒卯，入北宅，此非敢攻梁也,且劫王以求多割地。王必勿听也。今王背楚、赵而讲秦，楚、赵怒而去王，与王争事秦，秦必受之。秦挟楚、赵之兵以复攻梁，则国求无亡不可得也。愿王之必无讲也。王若欲讲，少割而有质图；不然，必见欺。’此臣之所闻于魏也,愿君之以是虑事也。《周书》曰‘惟命不于常’,此言幸之不可数也"。夫战胜暴子，割八县，此非兵力之精也，又非计之工也，天幸为多矣。今又走芒卯，入北宅，以攻大梁，是以天幸自为常也,智者不然。臣闻魏氏悉其百县胜甲以上戍大梁，臣以为不下三十万。以三十万之众守梁七仞之城，臣以为汤、武复生,不易攻也。夫轻背楚、赵之兵,陵七仞之城,战三十万之众，而志必举之，臣以为自天地始分以至于今，未尝有者也。攻而不拔，秦兵必罢,陶邑必亡,则前功必弃矣。今魏氏方疑,可以少割收也。愿君逮楚、赵之兵未至于梁，亟以少割收魏。魏方疑而得以少割为和，必欲之，则君得所欲矣。楚、赵怒于魏之先己也,必争事秦，从以此散,而君后择焉。且君之得地岂必以兵哉!割晋国，秦兵不攻，而魏必效绛、安邑。又为陶开两道,几尽故宋,卫必效单父。秦兵可全，而君制之，何索而不得，何为而不成!愿君熟虑之而无行危。”穰侯曰：“善。”乃罢梁围。
-
-明年,魏背秦，与齐从亲。秦使穰侯伐魏，斩首四万，走魏将暴鸢,得魏三县。穰侯益封。
-
-明年,穰侯与白起、客卿胡阳复攻赵、魏,破芒卯于华阳下,斩首十万，取魏之卷、蔡阳、长社、赵氏观津。且与赵观津,益赵以兵，伐齐。齐襄王惧,使苏代为齐阴遗穰侯书曰:“臣闻往来者言曰‘秦将益赵甲四万以伐齐’,臣窃必之敝邑之王曰‘秦王明而熟于计，穰侯智而习于事，必不益赵甲四万以伐齐。是何也?夫三晋之相与也四，秦之深仇也。百相背也，百相欺也,不为不信，不为无行。今破齐以肥赵。赵，秦之深仇，不利于秦。此一也。秦之谋者，必曰‘破齐，弊晋、楚,而后制晋、楚之胜’。夫齐，罢国也,以天下攻齐，如以千钧之弩决溃痈也,必死，安能弊晋、楚?此二也。秦少出兵，则晋、楚不信也；多出兵，则晋、楚为制于秦。齐恐，不走秦，必走晋、楚。此三也。秦割齐以啖晋、楚,晋、楚案之以兵,秦反受敌。此四也。是晋、楚以秦谋齐，以齐谋秦也,何晋、楚之智而秦、齐之愚?此五也。故得安邑以善事之，亦必无患矣。秦有安邑，韩氏必无上党矣”。取天下之肠胃,与出兵而惧其不反也，孰利?臣故曰秦王明而熟于计，穰侯智而习于事，必不益赵甲四万以伐齐矣。”于是穰侯不行,引兵而归。
-
-昭王三十六年,相国穰侯言客卿灶,欲伐齐取刚、寿,以广其陶邑。于是魏人范雎自谓张禄先生,讥穰侯之伐齐，乃越三晋以攻齐也,以此时奸说秦昭王。昭王于是用范雎。范雎言宣太后专制，穰侯擅权于诸侯,泾阳君、高陵君之属太侈，富于王室。于是秦昭王悟，乃免相国,令泾阳之属皆出关，就封邑。穰侯出关，辎车千乘有余。穰侯卒于陶，而因葬焉。秦复收陶为郡。
-
-太史公曰：穰侯，昭王亲舅也。而秦所以东益地，弱诸侯，尝称帝于天下，天下皆西乡稽首者,穰侯之功也。及其贵极富溢，一夫开说,身折势夺而以忧死，况于羁旅之臣乎?</div>
-        </section>
-        <section>
-          <h3>现代汉语</h3>
-          <div class="txt">穰侯魏冉，是秦昭王母亲宣太后的弟弟。他的祖先是楚国人，姓芈。秦武王死时，因为没有儿子，所以立了他的弟弟为秦昭王。昭王母亲原先的封号是芈八子，等到昭王一即位，芈八子就被尊为宣太后了。宣太后并不是武王的亲生母亲，武王的亲生母亲是惠文后，她死在武王之前。宣太后有两个弟弟，大的与宣太后同母异父，这就是穰侯魏冉，小的与宣太后同父同母，这就是华阳君芈戎。昭王也有两个同胞的弟弟，一个是高陵君，一个是泾阳君。在这些最亲近的贵族中，魏冉最为贤能，他早从惠王、武王时就担任要职受到重用。等到武王死后，武王的弟弟们争夺王位。这时是靠着魏冉的力量才立了昭王。昭王即位后，任命魏冉为将军，率兵保卫咸阳。这时又是靠着魏冉才平息了季君公子壮之乱，接着又把武王的王后驱逐到了魏国，又把昭王的那些弟兄们凡是行为不端的通通消灭，从此穰侯威震全国。当时昭王年纪还小，由宣太后说了算，于是宣太后就把国家大事全部交给魏冉去处理。
-
-秦昭王七年，樗里子死了，秦国派泾阳君到齐国做人质。这时赵国的楼缓正在秦国做丞相，赵国人感到对他们不利，于是就派仇液到秦国活动，请求秦国让魏冉做丞相。仇液临行前，他的门客宋公对他说：“您这一去，假如秦国不听您的话，那么您将白白地得罪楼缓。您不如先去告诉楼缓，就说‘我准备劝秦王不要急于用魏冉为相’。这样，假如秦王看到赵国不急于想让魏冉为相，因而不听您的话，您办的事情不成功，那么楼缓肯定会感激您的；假如事情办成了，秦国让魏冉做了丞相，那么魏冉终归还是感激您的。”仇液就按着门客的主意办了，秦王果然免掉了楼缓，而让魏冉做了丞相。
-
-后来，秦国想杀吕礼，吕礼逃到了齐国。秦昭王十四年，魏冉推荐白起代替向寿为将率军进攻韩国和魏国，在伊阙大破韩、魏联军，斩获敌人首级二十四万，俘虏了魏将公孙喜。第二年，又攻占了楚国的宛县和叶县。这一年，魏冉因病辞去了丞相，客卿寿烛接替了他的职位。第二年，寿烛免职，魏冉重新被起用，这时秦昭王把穰县封给了魏冉作领地，不久又把定陶也给了魏冉，称魏冉为穰侯。
-
-穰侯受封后的第四年，作为秦将率兵攻魏，打得魏国献出了黄河以东纵横四百里的地盘。接着又攻取了魏国的河内地区，共取得大小城池六十多座。秦昭王十九年，自称为西帝，当时，齐潘王同时称为东帝。过了一个来月，吕礼从齐国来秦，齐国和秦国又同时取消了帝号，而重新称王。魏冉这次为秦相是做了六年而后被免掉的。免相后二年，又第三次被起用为相。为相后的第四年，他派白起率兵攻下了楚国的郢都，在那里设立了南郡。于是白起被封为武安君。由于白起是被穰侯推荐起来的，所以他们关系很好。这时穰侯家里的财富之多，可以超过王室。
-
-秦昭王三十二年，穰侯以相国的身份率兵攻魏，打败了芒卯，夺取了北宅，接着大军包围了魏都大梁。这时梁国的大夫须贾对穰侯说：“我听到魏国的大臣们对魏王说：‘过去梁惠王攻打赵国，已经占领了南梁和邯郸，而赵国坚持不肯割地，邯郸最后还是被收回去了。齐国进攻卫国，占领了国都楚丘，杀掉了大臣子良，但是卫国也坚持不肯割地，楚丘终于还是归还了卫国。卫国和赵国所以能保全国家、保持兵力而不被诸侯所吞并，原因就在于它们能够忍受苦难而不轻易割让土地。而宋国和中山国就因为一受到攻击就给人家割地，于是国家也就紧跟着完蛋了。我认为卫国和赵国的做法是应该学习的，而宋国和中山国的做法则应该引以为戒。秦国是一个既贪婪又凶狠的国家，不能和它亲近。它逐渐地蚕食魏国，已经把河东地区全部占去了，接着又打败了韩国的将领暴鸢，逼着韩国割给他八个县。这八个县的割让手续还没有办完，秦国的侵略军已经又出来了。秦国哪里有一个满足的时候呢!现在它打败了芒卯，夺取了北宅，从目前的情况看，它还不是想占领魏都大梁，他们是想威胁您，让您多给他们割让土地，您千万不要听从他们。如今您如果背叛了与楚国、赵国的联盟而与秦国讲和，那么楚国、赵国必然恨您离开您，也争着去和秦国讲和，秦国也一定会接受他们。到那时秦国领着楚国、赵国的军队一起来打大梁，那时魏国要想不灭亡就不可能了。所以我希望您一定不要与秦国媾和。如果一定要媾和的话，也一定要少割土地，而且还要让秦国给魏国派出人质，否则就会受秦国的欺骗。’这是我从魏国得来的消息，希望您考虑问题时注意这一点。《周书》说：‘天命不是一成不变。”它的意思是说侥幸的事是不能老干的。您战胜了暴鸢，割取了韩国八个县，这并不是因为您兵力强大，也不是因为您计谋多么好，而是侥幸占主要成分。如今您又打败了芒卯，占领了北宅，包围了大梁，这就表明您认为侥幸的事可以老干了，我看聪明人是不该这么想的。我听说现在魏王已经把全国凡能拿起武器的人都调集了来守卫大梁，我估计不会少于三十万人。用三十万人来守卫七仞高的城墙，我想就是让商汤、周武王再生，他们也打不进去。而且您居然还敢把楚国、赵国这两个魏国的盟友放在身后不管，贸然领兵来攻打这座七仞的高城，来与这三十万人作战，而且还想要攻克它，我认为这种事是从开天辟地以来所没有过的。如果攻了半天攻不胜，秦兵就要疲劳丧气，到那时您的封地定陶就会丢掉，您以前的所有努力也就都将化为乌有了。现在魏王还正处在犹豫之中，可以用少让他割让点土地的办法来收服他。我希望您趁着楚、赵两国的援兵还没有到达大梁的机会，赶紧用少让魏国割点地的甜头来收服它。而目前正在犹豫之中的魏王见到少割地对自己有利，一定也会乐于答应，这样您的愿望就达到了。楚国、赵国一见魏国先与秦国媾和了，必然要生气，必然也会争着向秦国讨好，这样一来，它们之间的合纵联盟就瓦解了，那以后您还不是想怎么干就怎么干了吗?而且话又说回来，要想得到地盘，难道非得使用武力吗?您可以逼着魏国进一步割让河东地区的地盘，这样不仅秦兵不用打仗就可以得到绛和安邑两个县，而且还可以为您从秦国去定陶多开辟出一条通路。不仅昔日宋国的地盘全部归了您，而且卫国还将向您交出单父。秦兵没受一点损失，到那时您指挥着他们，还有什么东西得不到，还有什么事情干不成呢?希望您仔细考虑一下而不要去干那种冒风险的事。”穰侯一听，说：“好!”于是解除了对大梁的包围。
-
-第二年，魏国又背叛了秦国，与齐国结了盟。秦王派穰侯率兵伐魏，斩杀魏兵四万人，魏将暴鸢被打败逃走了，穰侯夺得了魏国三个县，因此又得了一些封赏。
-
-又过了一年，穰侯和白起以及客卿胡阳一起率兵进攻赵、魏两国，在华阳大破魏将芒卯，斩敌十多万，占领了魏国的卷县、蔡阳、长社和赵国的观津。这时秦国准备把观津还给赵国，以换得赵国派兵跟着自己一道伐齐。齐襄王听说后很害怕，于是派苏代暗中给穰侯写了一封信，信中说：“我听到从秦国来的人说，秦国将给赵国添上四万人让它攻打齐国，我却在底下对齐王打保证说：秦王英明而又善于算计，穰侯有智谋而又办事干练，他们一定不会给赵国添四万人来伐齐的。这是为什么呢?因为三晋的联合，是秦国所最讨厌的，它们无数次地背叛秦国，欺骗秦国，可是它们自己还不以为是不讲信义，不以为是行为可耻。现在如果打败了齐国那就壮大了赵国，而赵国是秦国的敌人，对秦国显然是不利的。这是第一点。秦国的谋士们一定在说，攻打齐国是为了消耗晋国和楚国，然后趁着疲惫以制服它们。其实这是不可能的。齐国现在已经筋疲力尽了，您现在再让许多国家联合起来打它，这就好像用千钧的强弩去射一个长满了脓疮的病人，他将必死无疑，怎么能达到消耗晋、楚两国的目的呢?这是第二点。再说，秦国如果出兵太少，那么晋国、楚国不会相信你们；如果秦国出兵多了，则晋、楚将明显地被秦国所控制，到那时齐王害怕你们的联盟，要么就来投靠你们，要么就去投靠晋、楚，反正您达不到削弱晋、楚的目的。这是第三点。结果落一个秦国割了齐国的土地来送给晋国和楚国，到那时晋国、楚国再和您兵戎相见，你们可就有苦头吃了。这是第四点。可见这么干的结果是晋国、楚国一道用秦国来算计齐国，同时又用齐国来算计秦国，为什么晋国、楚国就这么聪明而秦国、齐国就这么傻呢?这是第五点。我认为你们得到了安邑后要设法把它治理好，不要再打齐国的主意，那你们就不会有什么问题了。秦国有了安邑，韩国的上党就保不住了。这样你们就占住了天下的中心地带，这和他们所说的冒险伐齐的无法估计后果相比，哪一种更有利呢?所以我说英明而又善于算计的秦王和有智谋而办事干练的穰侯，是一定不会给赵国添上四万人让他们来打齐国的。”于是穰侯就下令把军队撤回去了。
-
-秦昭王三十六年，穰侯与客卿灶商议，想攻打齐国的刚、寿两县，以扩大他自己在定陶的封地。这时魏国的范雎化装改称“张禄先生”来到秦国，他指出穰侯这种越过韩、赵、魏三国的伐齐，对秦国是没有任何好处的。他在秦昭王面前大肆批判这种做法，于是秦昭王开始重用范雎。接着，范雎又批评宣太后的专制、穰侯的专权，以及泾阳君、高陵君等人的富比王室，秦昭王醒悟了过来，于是免去了穰侯的丞相职位，命令泾阳君等人都离开关内，到自己的封地去。穰侯东出函谷关的时候，拉财产的车子有一千多辆。最后穰侯就死在了定陶，葬在了那里。穰侯死后，秦国就收回了定陶，在那里设立了一个郡。
-
-太史公说：穰侯是秦昭王的亲舅努。秦国之所以能够向东扩展领土，削弱东方的诸侯，以至于使秦昭王曾经一度称为西帝，让各个国家都屈服于秦国，这都是穰侯的功劳。可是当他富贵到了极点，一个匹夫的鼓嘴摇舌，就弄得他权势被剥夺，人也忧惧而死。至亲有功，尚且如此，更何况那些孤立无依的一般人呢?</div>
-        </section>
-        <section>
-          <h3>English</h3>
-          <div class="txt">Wei Ran, the marquis of Rang, was a younger brother of Queen Dowager Xuan, the mother of King Zhaoxiang of Qin. The queen’s forbears were men of Chu and belonged to the Mi family. When King Wu of Qin died (307 BC), he left no son and so his younger brother was set up as ruler and became King Zhaoxiang. King Zhaoxiang’s mother was at that time known as Lady Mi Bazi, but when her son became King Zhaoxiang she was given the title Queen Dowager Xuan. Queen Dowager Xuan was not the mother of King Wu; his mother bore the title Queen Huiwen and died before King Wu himself did. Queen Dowager Xuan had two younger brothers. The older of these, who had a different father from the Queen Dowager, was the marquis of Rang, whose surname was Wei and whose given name was Ran. The younger brother, who had the same father as the Queen Dowager, was named Mi Rong and was enfeoffed as Lord Huayang. King Zhaoxiang also had two younger brothers by the same mother as himself, Lord Gaoling and Lord Jingyang. Among all these, Wei Ran was the most worthy. Wei Ran was employed in various offices from the time of King Hui and King Wu. And when King Wu died and his younger brothers were vying for succession, it was the power of Wei Ran alone that enabled King Zhaoxiang to ascend the throne. After King Zhaoxiang became ruler, he appointed Wei Ran a general and ordered him to guard Xianyang and punish those involved in the uprising of Lord Ji. He expelled the consort of King Wu from the capital and sent her back to her native state of Wei, and also wiped out all the evilly inclined older and younger brothers of King Zhaoxiang, until the whole state of Qin trembled before his authority. King Zhaoxiang was still a boy and the government was in the hands of his mother, Queen Dowager Xuan, who entrusted the administration of affairs to Wei Ran.
-
-In King Zhaoxiang’s seventh year (300 BC) Shuli Zi died and Lord Jingyang was sent to be a hostage in Qi. Lou Huan, a native of the state of Zhao, came to Qin to assume the office of prime minister. But when this proved unbeneficial to Zhao, it sent Qiu Yi to go to Qin and request that Wei Ran be appointed prime minister of Qin. When Qiu Yi was about to depart on this errand, his retainer Song Gong said to him: “Even if Qin does not heed your request, Lou Huan is certain to be resentful of your interference. You had best say to Lou Huan that out of consideration for him, you do not intend to press your request that Qin appoint Wei Ran as prime minister. If the king of Qin sees that Zhao is not pressing its request to have Wei Ran made prime minister, he will probably not heed your request, and then when the affair comes to nothing, Lou Huan will feel grateful to you. And if your request should be heeded, then it will be Wei Ran’s turn to feel grateful!” Qiu Yi followed this advice, and Qin in the end did in fact dismiss Lou Huan and appoint Wei Ran to the post of prime minister.
-
-Wei Ran was about to punish Lü Li when the latter escaped from Qin and fled to Qi.In King Zhaoxiang’s fourteenth year (293 BC) Wei Ran promoted Bai Qi and ordered him to replace Xiang Shou as general. He attacked the forces of Hann and Wei and defeated them at Yique, cutting off 240,000 enemy heads and capturing the Wei general Gongsun Xi. The following year he also seized the Chu cities of Wan and She. Wei Ran asked permission to resign the post of prime minister because of illness and appointed Shou Zhu, a “guest minister” of Qin, as prime minister in his place. The following year Shou Zhu resigned and Wei Ran resumed the position of prime minister. At this time Wei Ran was enfeoffed in Rang, a fief that was later enlarged to include Tao. He was given the title of marquis of Rang.
-
-Four years after he was enfeoffed as marquis of Rang, he led the Qin forces in an attack on Wei. Wei presented an area of 400 square li east of the Yellow River to Qin. Qin invaded the Henei region of Wei, capturing over sixty cities of various sizes. In the nineteenth year of King Zhaoxiang (288 BC) the Qin ruler took the title of Western Emperor and the Qi ruler took that of Eastern Emperor. A month or so later, Lü Li came to Qin and the Qi and Qin rulers went back to calling themselves kings. Wei Ran became prime minister of Qin once more. After six years he resigned, but two years later again became prime minister. Four years later (279 BC), he ordered Bai Qi to attack Chu. Bai Qi captured the Chu capital city of Ying. Qin set up Nan Province. Bai Qi was enfeoffed as Lord Wuan. Bai Qi had been promoted to office by the marquis of Rang and the two were close friends. At this time the wealth of the marquis of Rang exceeded that of the Qin ruling house.
-
-King Zhaoxiang, thirty-second year (275 BC): the marquis of Rang, acting as prime minister, led the troops in an attack on Wei, putting the Wei general Mang Mao to flight, advancing into Beizhai, and eventually surrounding the Wei capital city of Daliang. The Liang (Wei) counsellor Xu Jia spoke to the marquis of Rang regarding this, saying, “I have heard the leading officials of Wei say to the king of Wei: ‘In the past when King Hui of Liang (Wei) attacked Zhao, he won victory at Sanliang and captured the Zhao capital of Handan. But the ruler of Zhao refused to relinquish title to the land, and so eventually it was returned to Zhao. Similarly, when the men of Qi attacked Wey, captured its former capital, and killed Zi Liang, the men of Wey refused to make any territorial concessions, and so they were in time able to get their former lands back. The reason the states of Wey and Zhao could remain intact and keep up their military strength without having their lands annexed by the other feudal rulers was that they were willing to bear up under hardship and were loath to hand over territory. The states of Song and Zhongshan, on the other hand, ceded territory as often as they were attacked, and as a consequence they perished. “‘In our opinion, therefore, Wey and Zhao should be a model to us, and Song and Zhongshan should be a warning. Qin is a greedy and rapacious state, friendly to no one. In silkworm fashion it eats away at the Wei family, having already devoured what was left of the state of Jin. When it defeated Bao Zi in battle, it demanded that eight districts be ceded to it, and before it had finished annexing those, it sent out its troops once again. When will Qin ever be surfeited? “‘Now it has routed Mang Mao and advanced into Beizhai. But this does not mean it is going to venture an attack on Wei. It simply intends to intimidate Your Majesty so that it can demand more territorial concessions. Your Majesty must by no means heed its demands! ‘“If Your Majesty turns against Chu and Zhao and makes peace with Qin, then Chu and Zhao in their anger will desert Your Majesty and instead vie with you in playing up to Qin. Qin of course will accept their offer of support. Then when Qin has the forces of Chu and Zhao to support it from either side, it will renew its attacks on Liang (Wei), and there will be no hope of the kingdom’s escaping destruction. Therefore we beg Your Majesty not to make peace with Qin under any circumstances. And if you should consider doing so, then keep concessions of territory to a minimum and insist upon Qin sending a hostage to our state. Otherwise you are certain to be cheated. “This is the advice that I heard the Wei officials give to the king of Wei. I hope you will give careful thought to it. The Book of Zhou says: ‘The mandate is never constant’.138 Which means you cannot count on good fortune time and again. Defeating Bao Zi in battle and winning the concession of eight districts was not the result of superlative military strength, nor was it the fruit of careful planning. It was in large part a stroke of luck from Heaven. And to go on to rout Mang Mao, advance into Beizhai, and launch an attack on Daliang is to assume that this sort of luck from Heaven is a constant occurrence. No wise man, however, would make such an assumption. “I have heard that the ruler of Wei has called up those who are capable of bearing arms from every one of his hundred districts and set them to guarding Daliang. I would guess he cannot have less than 300,000 men. With a force of 300,000 defending the hundred-yard high walls of Daliang, even King Tang or King Wu come to life again would find it hard to attack, I believe. To make light of the forces of Chu and Zhao menacing you from behind, to scale these hundred-yard walls, fight against a force of 300,000, and expect to gain victory is something that in my opinion has never been heard of since heaven and earth first parted ways! And if you attack the city but fail to capture it, then the Qin forces will be worn out, your fief of Tao will be lost, and all your former achievements will count for nothing! “At the moment the ruler of Wei is in doubt as to how to proceed. Now is the time to settle for a small concession of territory. Before the troops of Chu and Zhao arrive here at Daliang, I urge you to accept a small concession of land in exchange for a settlement with Wei. The ruler of Wei is doubtful as to how to proceed, and if he finds he can gain a profitable settlement through a small concession of land, he will be anxious to do so. Then you will have got what you wanted. Chu and Zhao meanwhile will be angry at Wei for having settled things without waiting for them, and in their haste to curry favour with Qin will disperse their troops. After that, you can decide what policy to follow. “If you are interested in gaining territory, why must it be through the use of arms? When the area of the old state of Jin was being carved up, the Qin forces did not even have to attack and Wei handed over the cities of Jiang and Anyi. And if you open two new roads to Tao, you will have control of almost all the old area of Song, and in that case Wey will surely hand over Danfu. The Qin forces will have suffered no loss, and you will be in control. What could you ask for that would not be given you, what could you undertake that would not succeed? I hope you will consider the matter carefully and not proceed on the path to danger!” “Very good,” said the marquis of Rang, and he abandoned the siege of Daliang.
-
-The following year (274 BC) Wei turned its back on Qin and joined in an alliance with Qi. Qin ordered the marquis of Rang to attack Wei. He cut off 40,000 enemy heads, routed the Wei general Bao Yuan, and seized three of Wei’s districts. The marquis of Rang’s fief was increased.
-
-The next year (273 BC) the marquis of Rang joined with Bai Qi and Hu Yang, a Qin official from another state, in once more attacking Zhao, Hann, and Wei. They defeated Mang Mao at Huayang, cut off 100,000 enemy heads, and seized the Wei cities of Juan, Caiyang, and Changshe, and Zhao’s city Guanjin. They returned Guanjin to Zhao and joined their forces with those of Zhao in preparation for an attack on Qi. King Xiang of Qi, alarmed, engaged Su Dai to send a letter to the marquis of Rang in secret pleading on Qi’s behalf. It read: “I have heard passersby say that Qin is about to lend Zhao an additional 40,000 armed men to conduct an attack on Qi. I have privately informed the ruler of our humble state of this, saying, ‘The king of Qin is intelligent and astute in planning and the marquis of Rang is wise and experienced in affairs. They would certainly not lend Zhao 40,000 armed men for an attack on Qi!’ Why did I say this? The alliance formed by the Three Jin constitutes a deadly enemy to Qin. A hundred times it has betrayed Qin, a hundred times it has cheated Qin, yet it does not look on itself as faithless or believe that it has acted wrongly. Now to inflict defeat on Qi would be to fatten Zhao, and as Zhao and Qin are bitter enemies, that would not be to the profit of Qin. This is the first reason. “Qin’s strategists are no doubt assuming that in defeating Qi, they will be wearing out Qin’s allies, the Three Jin and Chu, and that later they will be able to gain victory over the latter. But Qi is a state whose power is exhausted. For the world to unite in attacking Qi is like using a thousand-pound crossbow to puncture a suppurating boil. Of course Qi is doomed, but how will that wear out Jin and Chu? This is the second reason. “If Qin contributes only a few troops to the undertaking, then Jin and Chu will not trust it. And if it contributes a large number of troops, then Jin and Chu will be overshadowed by Qin. In that case Qi in its alarm will not look to Qin for mercy but will invariably turn to Jin and Chu. This is the third reason. “If Qin carves up Qi and feeds the pieces to Jin and Chu, and Jin and Chu have to station troops to secure the areas, then Qin will appear to be an enemy rather than an ally. This is the fourth reason. And in the end it will seem as though Jin and Chu have been using Qin to undo Qi, and using Qi to undo Qin, and people will think, how wise of Jin and Chu, and how stupid of Qin and Qi! This is the fifth reason. “Therefore if Qin should acquire Anyi and treat it well, then it would surely have nothing to worry about. And if Qin acquires Anyi, then Hann will surely lose possession of Shangdang. Which would be more profitable, to seize on the very vitals of the empire, or to send out troops and fear they may never return again? That is why I said to my ruler, ‘The king of Qin is intelligent and astute in planning, and the marquis of Rang is wise and experienced in affairs. They would certainly never lend Zhao 40,000 armed men for an attack on Qi,!’” The marquis of Rang accordingly abandoned the plan and returned with his troops to Qin.
-
-King Zhaoxiang, thirty-sixth year (271 BC): the prime minister of Qin, the marquis of Rang, consulted with Zao, a “guest minister” of Qin, hoping to attack Qi and seize Gangshou so that he could enlarge his fief at the city of Tao. At this time Fan Ju, a native of Wei who went by the alias of Master Zhang Lu, criticized the marquis of Rang’s plan to attack Qi, since it involved passing through the Three Jin in order to carry out the attack. He managed to gain a hearing with King Zhaoxiang of Qin, who appointed him to office. Fan Ju warned that Queen Dowager Xuan was conducting affairs in a dictatorial manner, that the marquis of Rang had complete control of relations with the other feudal lords, and that lords Jingyang and Gaoling and their followers were enjoying excessive luxury, their wealth surpassing that of the royal house. King Zhaoxiang, awaking to the situation, finally dismissed the marquis of Rang from the post of prime minister and ordered Lord Jingyang and all the others to quit the capital area and proceed to their respective fiefs in the area beyond the Hangu Pass. When the marquis of Rang went out of the pass, he was accompanied by over 1,000 wagons loaded with his belongings. He died in his fief in Tao and was buried there. Qin then took over the region of Tao once more and made it into a province.
-
-The Grand Historian remarks: The marquis of Rang was an uncle and blood relative of King Zhaoxiang. The fact that Qin was able to expand its lands in the east, weaken the other feudal rulers, and for a time call itself emperor of the world, so that all the world turned west and bowed their heads before it, was thanks to the marquis of Rang. But when his wealth and eminence became excessive, one man spoke out against him and he was stripped of power, forced to humble himself, and died in despondency, almost worse than if he had been an alien from another state!</div>
-        </section>
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">穰侯魏冉者，秦昭王母宣太后弟也。其先楚人，姓芈氏。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">穰侯魏冉，是秦昭王母亲宣太后的弟弟。他的祖先是楚国人，姓芈。</td>
+                <td class="english-cell col-english" data-lang="english">Wei Ran, the marquis of Rang, was a younger brother of Queen Dowager Xuan, the mother of King Zhaoxiang of Qin. The queen’s forbears were men of Chu and belonged to the Mi family.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦武王卒，无子，立其弟为昭王。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦武王死时，因为没有儿子，所以立了他的弟弟为秦昭王。</td>
+                <td class="english-cell col-english" data-lang="english">When King Wu of Qin died (307 BC), he left no son and so his younger brother was set up as ruler and became King Zhaoxiang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">昭王母故号为芈八子，及昭王即位，芈八子号为宣太后。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">昭王母亲原先的封号是芈八子，等到昭王一即位，芈八子就被尊为宣太后了。</td>
+                <td class="english-cell col-english" data-lang="english">King Zhaoxiang’s mother was at that time known as Lady Mi Bazi, but when her son became King Zhaoxiang she was given the title Queen Dowager Xuan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">宣太后非武王母。武王母号曰惠文后，先武王死。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">宣太后并不是武王的亲生母亲，武王的亲生母亲是惠文后，她死在武王之前。</td>
+                <td class="english-cell col-english" data-lang="english">Queen Dowager Xuan was not the mother of King Wu; his mother bore the title Queen Huiwen and died before King Wu himself did.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">宣太后二弟：其异父长弟曰穰侯，姓魏氏，名冉；同父弟曰芈戎，为华阳君。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">宣太后有两个弟弟，大的与宣太后同母异父，这就是穰侯魏冉，小的与宣太后同父同母，这就是华阳君芈戎。</td>
+                <td class="english-cell col-english" data-lang="english">Queen Dowager Xuan had two younger brothers. The older of these, who had a different father from the Queen Dowager, was the marquis of Rang, whose surname was Wei and whose given name was Ran. The younger brother, who had the same father as the Queen Dowager, was named Mi Rong and was enfeoffed as Lord Huayang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">而昭王同母弟曰高陵君、泾阳君。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">昭王也有两个同胞的弟弟，一个是高陵君，一个是泾阳君。</td>
+                <td class="english-cell col-english" data-lang="english">King Zhaoxiang also had two younger brothers by the same mother as himself, Lord Gaoling and Lord Jingyang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">而魏冉最贤，自惠王、武王时任职用事。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">在这些最亲近的贵族中，魏冉最为贤能，他早从惠王、武王时就担任要职受到重用。</td>
+                <td class="english-cell col-english" data-lang="english">Among all these, Wei Ran was the most worthy. Wei Ran was employed in various offices from the time of King Hui and King Wu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">武王卒，诸弟争立，唯魏冉力为能立昭王。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">等到武王死后，武王的弟弟们争夺王位。这时是靠着魏冉的力量才立了昭王。</td>
+                <td class="english-cell col-english" data-lang="english">And when King Wu died and his younger brothers were vying for succession, it was the power of Wei Ran alone that enabled King Zhaoxiang to ascend the throne.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">昭王即位，以冉为将军，卫咸阳。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">昭王即位后，任命魏冉为将军，率兵保卫咸阳。</td>
+                <td class="english-cell col-english" data-lang="english">After King Zhaoxiang became ruler, he appointed Wei Ran a general and ordered him to guard Xianyang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">诛季君之乱，而逐武王后出之魏，昭王诸兄弟不善者皆灭之，威振秦国。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时又是靠着魏冉才平息了季君公子壮之乱，接着又把武王的王后驱逐到了魏国，又把昭王的那些弟兄们凡是行为不端的通通消灭，从此穰侯威震全国。</td>
+                <td class="english-cell col-english" data-lang="english">and punish those involved in the uprising of Lord Ji. He expelled the consort of King Wu from the capital and sent her back to her native state of Wei, and also wiped out all the evilly inclined older and younger brothers of King Zhaoxiang, until the whole state of Qin trembled before his authority.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">昭王少，宣太后自治，任魏冉为政。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时昭王年纪还小，由宣太后说了算，于是宣太后就把国家大事全部交给魏冉去处理。</td>
+                <td class="english-cell col-english" data-lang="english">King Zhaoxiang was still a boy and the government was in the hands of his mother, Queen Dowager Xuan, who entrusted the administration of affairs to Wei Ran.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">昭王七年，樗里子死，而使泾阳君质于齐。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦昭王七年，樗里子死了，秦国派泾阳君到齐国做人质。</td>
+                <td class="english-cell col-english" data-lang="english">In King Zhaoxiang’s seventh year (300 BC) Shuli Zi died and Lord Jingyang was sent to be a hostage in Qi.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赵人楼缓来相秦，赵不利，乃使仇液之秦，请以魏冉为秦相。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时赵国的楼缓正在秦国做丞相，赵国人感到对他们不利，于是就派仇液到秦国活动，请求秦国让魏冉做丞相。</td>
+                <td class="english-cell col-english" data-lang="english">Lou Huan, a native of the state of Zhao, came to Qin to assume the office of prime minister. But when this proved unbeneficial to Zhao, it sent Qiu Yi to go to Qin and request that Wei Ran be appointed prime minister of Qin.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">仇液将行，其客宋公谓液曰：“秦不听公，楼缓必怨公。公不若谓楼缓曰‘请为公毋急秦’。秦王见赵请相魏冉之不急，且不听公。公言而事不成，以德楼子；事成，魏冉故德公矣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">仇液临行前，他的门客宋公对他说：“您这一去，假如秦国不听您的话，那么您将白白地得罪楼缓。您不如先去告诉楼缓，就说‘我准备劝秦王不要急于用魏冉为相’。这样，假如秦王看到赵国不急于想让魏冉为相，因而不听您的话，您办的事情不成功，那么楼缓肯定会感激您的；假如事情办成了，秦国让魏冉做了丞相，那么魏冉终归还是感激您的。”</td>
+                <td class="english-cell col-english" data-lang="english">When Qiu Yi was about to depart on this errand, his retainer Song Gong said to him: “Even if Qin does not heed your request, Lou Huan is certain to be resentful of your interference. You had best say to Lou Huan that out of consideration for him, you do not intend to press your request that Qin appoint Wei Ran as prime minister. If the king of Qin sees that Zhao is not pressing its request to have Wei Ran made prime minister, he will probably not heed your request, and then when the affair comes to nothing, Lou Huan will feel grateful to you. And if your request should be heeded, then it will be Wei Ran’s turn to feel grateful!”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">于是仇液从之。而秦果免楼缓而魏冉相秦。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">仇液就按着门客的主意办了，秦王果然免掉了楼缓，而让魏冉做了丞相。</td>
+                <td class="english-cell col-english" data-lang="english">Qiu Yi followed this advice, and Qin in the end did in fact dismiss Lou Huan and appoint Wei Ran to the post of prime minister.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">欲诛吕礼，礼出奔齐。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来，秦国想杀吕礼，吕礼逃到了齐国。</td>
+                <td class="english-cell col-english" data-lang="english">Wei Ran was about to punish Lü Li when the latter escaped from Qin and fled to Qi.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">昭王十四年，魏冉举白起，使代向寿将而攻韩、魏，败之伊阙，斩首二十四万，虏魏将公孙喜。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦昭王十四年，魏冉推荐白起代替向寿为将率军进攻韩国和魏国，在伊阙大破韩、魏联军，斩获敌人首级二十四万，俘虏了魏将公孙喜。</td>
+                <td class="english-cell col-english" data-lang="english">In King Zhaoxiang’s fourteenth year (293 BC) Wei Ran promoted Bai Qi and ordered him to replace Xiang Shou as general. He attacked the forces of Hann and Wei and defeated them at Yique, cutting off 240,000 enemy heads and capturing the Wei general Gongsun Xi.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">明年，又取楚之宛、叶。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">第二年，又攻占了楚国的宛县和叶县。</td>
+                <td class="english-cell col-english" data-lang="english">The following year he also seized the Chu cities of Wan and She.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">魏冉谢病免相，以客卿寿烛为相。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这一年，魏冉因病辞去了丞相，客卿寿烛接替了他的职位。</td>
+                <td class="english-cell col-english" data-lang="english">Wei Ran asked permission to resign the post of prime minister because of illness and appointed Shou Zhu, a “guest minister” of Qin, as prime minister in his place.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其明年，烛免，复相冉，乃封魏冉于穰，复益封陶，号曰穰侯。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">第二年，寿烛免职，魏冉重新被起用，这时秦昭王把穰县封给了魏冉作领地，不久又把定陶也给了魏冉，称魏冉为穰侯。</td>
+                <td class="english-cell col-english" data-lang="english">The following year Shou Zhu resigned and Wei Ran resumed the position of prime minister. At this time Wei Ran was enfeoffed in Rang, a fief that was later enlarged to include Tao. He was given the title of marquis of Rang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">穰侯封四岁，为秦将攻魏。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">穰侯受封后的第四年，作为秦将率兵攻魏。</td>
+                <td class="english-cell col-english" data-lang="english">Four years after he was enfeoffed as marquis of Rang, he led the Qin forces in an attack on Wei.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">魏献河东方四百里。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">打得魏国献出了黄河以东纵横四百里的地盘。</td>
+                <td class="english-cell col-english" data-lang="english">Wei presented an area of 400 square li east of the Yellow River to Qin.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">拔魏之河内，取城大小六十余。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">接着又攻取了魏国的河内地区，共取得大小城池六十多座。</td>
+                <td class="english-cell col-english" data-lang="english">Qin invaded the Henei region of Wei, capturing over sixty cities of various sizes.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">昭王十九年，秦称西帝，齐称东帝。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦昭王十九年，自称为西帝，当时，齐潘王同时称为东帝。</td>
+                <td class="english-cell col-english" data-lang="english">In the nineteenth year of King Zhaoxiang (288 BC) the Qin ruler took the title of Western Emperor and the Qi ruler took that of Eastern Emperor.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">月余，吕礼来，而齐、秦各复归帝为王。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">过了一个来月，吕礼从齐国来秦，齐国和秦国又同时取消了帝号，而重新称王。</td>
+                <td class="english-cell col-english" data-lang="english">A month or so later, Lü Li came to Qin and the Qi and Qin rulers went back to calling themselves kings.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">魏冉复相秦，六岁而免。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">魏冉这次为秦相是做了六年而后被免掉的。</td>
+                <td class="english-cell col-english" data-lang="english">Wei Ran became prime minister of Qin once more. After six years he resigned.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">免二岁，复相秦。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">免相后二年，又第三次被起用为相。</td>
+                <td class="english-cell col-english" data-lang="english">but two years later again became prime minister.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">四岁，而使白起拔楚之郢，秦置南郡。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">为相后的第四年，他派白起率兵攻下了楚国的郢都，在那里设立了南郡。</td>
+                <td class="english-cell col-english" data-lang="english">Four years later (279 BC), he ordered Bai Qi to attack Chu. Bai Qi captured the Chu capital city of Ying. Qin set up Nan Province.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">乃封白起为武安君。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是白起被封为武安君。</td>
+                <td class="english-cell col-english" data-lang="english">Bai Qi was enfeoffed as Lord Wuan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">白起者，穰侯之所任举也，相善。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">由于白起是被穰侯推荐起来的，所以他们关系很好。</td>
+                <td class="english-cell col-english" data-lang="english">Bai Qi had been promoted to office by the marquis of Rang and the two were close friends.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">于是穰侯之富，富于王室。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时穰侯家里的财富之多，可以超过王室。</td>
+                <td class="english-cell col-english" data-lang="english">At this time the wealth of the marquis of Rang exceeded that of the Qin ruling house.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">昭王三十二年，穰侯为相国，将兵攻魏，走芒卯，入北宅，遂围大梁。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦昭王三十二年，穰侯以相国的身份率兵攻魏，打败了芒卯，夺取了北宅，接着大军包围了魏都大梁。</td>
+                <td class="english-cell col-english" data-lang="english">King Zhaoxiang, thirty-second year (275 BC): the marquis of Rang, acting as prime minister, led the troops in an attack on Wei, putting the Wei general Mang Mao to flight, advancing into Beizhai, and eventually surrounding the Wei capital city of Daliang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">梁大夫须贾说穰侯曰：“臣闻魏之长吏谓魏王曰：‘昔梁惠王伐赵，战胜三梁，拔邯郸；赵氏不割，而邯郸复归。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时梁国的大夫须贾对穰侯说：“我听到魏国的大臣们对魏王说：‘过去梁惠王攻打赵国，已经占领了南梁和邯郸，而赵国坚持不肯割地，邯郸最后还是被收回去了。</td>
+                <td class="english-cell col-english" data-lang="english">The Liang (Wei) counsellor Xu Jia spoke to the marquis of Rang regarding this, saying, “I have heard the leading officials of Wei say to the king of Wei: ‘In the past when King Hui of Liang (Wei) attacked Zhao, he won victory at Sanliang and captured the Zhao capital of Handan. But the ruler of Zhao refused to relinquish title to the land, and so eventually it was returned to Zhao.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">齐人攻卫，拔故国，杀子良；卫人不割，而故地复反。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">齐国进攻卫国，占领了国都楚丘，杀掉了大臣子良，但是卫国也坚持不肯割地，楚丘终于还是归还了卫国。</td>
+                <td class="english-cell col-english" data-lang="english">Similarly, when the men of Qi attacked Wey, captured its former capital, and killed Zi Liang, the men of Wey refused to make any territorial concessions, and so they were in time able to get their former lands back.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">卫、赵之所以国全兵劲而地不并于诸侯者，以其能忍难而重出地也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">卫国和赵国所以能保全国家、保持兵力而不被诸侯所吞并，原因就在于它们能够忍受苦难而不轻易割让土地。</td>
+                <td class="english-cell col-english" data-lang="english">The reason the states of Wey and Zhao could remain intact and keep up their military strength without having their lands annexed by the other feudal rulers was that they were willing to bear up under hardship and were loath to hand over territory.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">宋、中山数伐割地，而国随以亡。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">而宋国和中山国就因为一受到攻击就给人家割地，于是国家也就紧跟着完蛋了。</td>
+                <td class="english-cell col-english" data-lang="english">The states of Song and Zhongshan, on the other hand, ceded territory as often as they were attacked, and as a consequence they perished.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">臣以为卫、赵可法，而宋、中山可为戒也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">我认为卫国和赵国的做法是应该学习的，而宋国和中山国的做法则应该引以为戒。</td>
+                <td class="english-cell col-english" data-lang="english">“In our opinion, therefore, Wey and Zhao should be a model to us, and Song and Zhongshan should be a warning.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦，贪戾之国也，而毋亲。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦国是一个既贪婪又凶狠的国家，不能和它亲近。</td>
+                <td class="english-cell col-english" data-lang="english">Qin is a greedy and rapacious state, friendly to no one.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">蚕食魏氏，又尽晋国，战胜暴子，割八县，地未毕入四，兵复出矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">它逐渐地蚕食魏国，已经把河东地区全部占去了，接着又打败了韩国的将领暴鸢，逼着韩国割给他八个县。这八个县的割让手续还没有办完，秦国的侵略军已经又出来了。</td>
+                <td class="english-cell col-english" data-lang="english">In silkworm fashion it eats away at the Wei family, having already devoured what was left of the state of Jin. When it defeated Bao Zi in battle, it demanded that eight districts be ceded to it, and before it had finished annexing those, it sent out its troops once again.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夫秦何厌之有哉！</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦国哪里有一个满足的时候呢！</td>
+                <td class="english-cell col-english" data-lang="english">When will Qin ever be surfeited?</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">今又走芒卯，入北宅，此非敢攻梁也，且劫王以求多割地。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">现在它打败了芒卯，夺取了北宅，从目前的情况看，它还不是想占领魏都大梁，他们是想威胁您，让您多给他们割让土地。</td>
+                <td class="english-cell col-english" data-lang="english">“Now it has routed Mang Mao and advanced into Beizhai. But this does not mean it is going to venture an attack on Wei. It simply intends to intimidate Your Majesty so that it can demand more territorial concessions.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">王必勿听也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">您千万不要听从他们。</td>
+                <td class="english-cell col-english" data-lang="english">Your Majesty must by no means heed its demands!</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">今王背楚、赵而讲秦，楚、赵怒而去王，与王争事秦，秦必受之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">如今您如果背叛了与楚国、赵国的联盟而与秦国讲和，那么楚国、赵国必然恨您离开您，也争着去和秦国讲和，秦国也一定会接受他们。</td>
+                <td class="english-cell col-english" data-lang="english">‘“If Your Majesty turns against Chu and Zhao and makes peace with Qin, then Chu and Zhao in their anger will desert Your Majesty and instead vie with you in playing up to Qin. Qin of course will accept their offer of support.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦挟楚、赵之兵以复攻梁，则国求无亡不可得也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">到那时秦国领着楚国、赵国的军队一起来打大梁，那时魏国要想不灭亡就不可能了。</td>
+                <td class="english-cell col-english" data-lang="english">Then when Qin has the forces of Chu and Zhao to support it from either side, it will renew its attacks on Liang (Wei), and there will be no hope of the kingdom’s escaping destruction.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">愿王之必无讲也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">所以我希望您一定不要与秦国媾和。</td>
+                <td class="english-cell col-english" data-lang="english">Therefore we beg Your Majesty not to make peace with Qin under any circumstances.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">王若欲讲，少割而有质图；不然，必见欺。’</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">如果一定要媾和的话，也一定要少割土地，而且还要让秦国给魏国派出人质，否则就会受秦国的欺骗。’</td>
+                <td class="english-cell col-english" data-lang="english">And if you should consider doing so, then keep concessions of territory to a minimum and insist upon Qin sending a hostage to our state. Otherwise you are certain to be cheated. “</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">此臣之所闻于魏也，愿君之以是虑事也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这是我从魏国得来的消息，希望您考虑问题时注意这一点。</td>
+                <td class="english-cell col-english" data-lang="english">This is the advice that I heard the Wei officials give to the king of Wei. I hope you will give careful thought to it.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">《周书》曰‘惟命不于常’，此言幸之不可数也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">《周书》说：‘天命不是一成不变。’它的意思是说侥幸的事是不能老干的。</td>
+                <td class="english-cell col-english" data-lang="english">The Book of Zhou says: ‘The mandate is never constant’. Which means you cannot count on good fortune time and again.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夫战胜暴子，割八县，此非兵力之精也，又非计之工也，天幸为多矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">您战胜了暴鸢，割取了韩国八个县，这并不是因为您兵力强大，也不是因为您计谋多么好，而是侥幸占主要成分。</td>
+                <td class="english-cell col-english" data-lang="english">Defeating Bao Zi in battle and winning the concession of eight districts was not the result of superlative military strength, nor was it the fruit of careful planning. It was in large part a stroke of luck from Heaven.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">今又走芒卯，入北宅，以攻大梁，是以天幸自为常也，智者不然。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">如今您又打败了芒卯，占领了北宅，包围了大梁，这就表明您认为侥幸的事可以老干了，我看聪明人是不该这么想的。</td>
+                <td class="english-cell col-english" data-lang="english">And to go on to rout Mang Mao, advance into Beizhai, and launch an attack on Daliang is to assume that this sort of luck from Heaven is a constant occurrence. No wise man, however, would make such an assumption.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">臣闻魏氏悉其百县胜甲以上戍大梁，臣以为不下三十万。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">我听说现在魏王已经把全国凡能拿起武器的人都调集了来守卫大梁，我估计不会少于三十万人。</td>
+                <td class="english-cell col-english" data-lang="english">“I have heard that the ruler of Wei has called up those who are capable of bearing arms from every one of his hundred districts and set them to guarding Daliang. I would guess he cannot have less than 300,000 men.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">以三十万之众守梁七仞之城，臣以为汤、武复生，不易攻也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">用三十万人来守卫七仞高的城墙，我想就是让商汤、周武王再生，他们也打不进去。</td>
+                <td class="english-cell col-english" data-lang="english">With a force of 300,000 defending the hundred-yard high walls of Daliang, even King Tang or King Wu come to life again would find it hard to attack, I believe.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夫轻背楚、赵之兵，陵七仞之城，战三十万之众，而志必举之，臣以为自天地始分以至于今，未尝有者也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">而且您居然还敢把楚国、赵国这两个魏国的盟友放在身后不管，贸然领兵来攻打这座七仞的高城，来与这三十万人作战，而且还想要攻克它，我认为这种事是从开天辟地以来所没有过的。</td>
+                <td class="english-cell col-english" data-lang="english">To make light of the forces of Chu and Zhao menacing you from behind, to scale these hundred-yard walls, fight against a force of 300,000, and expect to gain victory is something that in my opinion has never been heard of since heaven and earth first parted ways!</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">攻而不拔，秦兵必罢，陶邑必亡，则前功必弃矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">如果攻了半天攻不胜，秦兵就要疲劳丧气，到那时您的封地定陶就会丢掉，您以前的所有努力也就都将化为乌有了。</td>
+                <td class="english-cell col-english" data-lang="english">And if you attack the city but fail to capture it, then the Qin forces will be worn out, your fief of Tao will be lost, and all your former achievements will count for nothing!</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">今魏氏方疑，可以少割收也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">现在魏王还正处在犹豫之中，可以用少让他割让点土地的办法来收服他。</td>
+                <td class="english-cell col-english" data-lang="english">“At the moment the ruler of Wei is in doubt as to how to proceed. Now is the time to settle for a small concession of territory.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">愿君逮楚、赵之兵未至于梁，亟以少割收魏。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">我希望您趁着楚、赵两国的援兵还没有到达大梁的机会，赶紧用少让魏国割点地的甜头来收服它。</td>
+                <td class="english-cell col-english" data-lang="english">Before the troops of Chu and Zhao arrive here at Daliang, I urge you to accept a small concession of land in exchange for a settlement with Wei.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">魏方疑而得以少割为和，必欲之，则君得所欲矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">而目前正在犹豫之中的魏王见到少割地对自己有利，一定也会乐于答应，这样您的愿望就达到了。</td>
+                <td class="english-cell col-english" data-lang="english">The ruler of Wei is doubtful as to how to proceed, and if he finds he can gain a profitable settlement through a small concession of land, he will be anxious to do so. Then you will have got what you wanted.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">楚、赵怒于魏之先己也，必争事秦，从以此散，而君后择焉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">楚国、赵国一见魏国先与秦国媾和了，必然要生气，必然也会争着向秦国讨好，这样一来，它们之间的合纵联盟就瓦解了，那以后您还不是想怎么干就怎么干了吗？</td>
+                <td class="english-cell col-english" data-lang="english">Chu and Zhao meanwhile will be angry at Wei for having settled things without waiting for them, and in their haste to curry favour with Qin will disperse their troops. After that, you can decide what policy to follow.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">且君之得地岂必以兵哉！</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">而且话又说回来，要想得到地盘，难道非得使用武力吗？</td>
+                <td class="english-cell col-english" data-lang="english">“If you are interested in gaining territory, why must it be through the use of arms?</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">割晋国，秦兵不攻，而魏必效绛、安邑。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">您可以逼着魏国进一步割让河东地区的地盘，这样不仅秦兵不用打仗就可以得到绛和安邑两个县。</td>
+                <td class="english-cell col-english" data-lang="english">When the area of the old state of Jin was being carved up, the Qin forces did not even have to attack and Wei handed over the cities of Jiang and Anyi.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">又为陶开两道，几尽故宋，卫必效单父。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">而且还可以为您从秦国去定陶多开辟出一条通路。不仅昔日宋国的地盘全部归了您，而且卫国还将向您交出单父。</td>
+                <td class="english-cell col-english" data-lang="english">And if you open two new roads to Tao, you will have control of almost all the old area of Song, and in that case Wey will surely hand over Danfu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦兵可全，而君制之，何索而不得，何为而不成！</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦兵没受一点损失，到那时您指挥着他们，还有什么东西得不到，还有什么事情干不成呢？</td>
+                <td class="english-cell col-english" data-lang="english">The Qin forces will have suffered no loss, and you will be in control. What could you ask for that would not be given you, what could you undertake that would not succeed?</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">愿君熟虑之而无行危。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">希望您仔细考虑一下而不要去干那种冒风险的事。”</td>
+                <td class="english-cell col-english" data-lang="english">I hope you will consider the matter carefully and not proceed on the path to danger!”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">穰侯曰：“善。”乃罢梁围。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">穰侯一听，说：“好！”于是解除了对大梁的包围。</td>
+                <td class="english-cell col-english" data-lang="english">“Very good,” said the marquis of Rang, and he abandoned the siege of Daliang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">明年,魏背秦，与齐从亲。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">第二年，魏国又背叛了秦国，与齐国结了盟。</td>
+                <td class="english-cell col-english" data-lang="english">The following year (274 BC) Wei turned its back on Qin and joined in an alliance with Qi.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦使穰侯伐魏，斩首四万，走魏将暴鸢,得魏三县。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦王派穰侯率兵伐魏，斩杀魏兵四万人，魏将暴鸢被打败逃走了，穰侯夺得了魏国三个县。</td>
+                <td class="english-cell col-english" data-lang="english">Qin ordered the marquis of Rang to attack Wei. He cut off 40,000 enemy heads, routed the Wei general Bao Yuan, and seized three of Wei’s districts.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">穰侯益封。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">因此穰侯又得了一些封赏。</td>
+                <td class="english-cell col-english" data-lang="english">The marquis of Rang’s fief was increased.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">明年,穰侯与白起、客卿胡阳复攻赵、魏,破芒卯于华阳下,斩首十万，取魏之卷、蔡阳、长社、赵氏观津。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">又过了一年，穰侯和白起以及客卿胡阳一起率兵进攻赵、魏两国，在华阳大破魏将芒卯，斩敌十多万，占领了魏国的卷县、蔡阳、长社和赵国的观津。</td>
+                <td class="english-cell col-english" data-lang="english">The next year (273 BC) the marquis of Rang joined with Bai Qi and Hu Yang, a Qin official from another state, in once more attacking Zhao, Hann, and Wei. They defeated Mang Mao at Huayang, cut off 100,000 enemy heads, and seized the Wei cities of Juan, Caiyang, and Changshe, and Zhao’s city Guanjin.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">且与赵观津,益赵以兵，伐齐。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时秦国准备把观津还给赵国，以换得赵国派兵跟着自己一道伐齐。</td>
+                <td class="english-cell col-english" data-lang="english">They returned Guanjin to Zhao and joined their forces with those of Zhao in preparation for an attack on Qi.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">齐襄王惧,使苏代为齐阴遗穰侯书曰:</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">齐襄王听说后很害怕，于是派苏代暗中给穰侯写了一封信，信中说：</td>
+                <td class="english-cell col-english" data-lang="english">King Xiang of Qi, alarmed, engaged Su Dai to send a letter to the marquis of Rang in secret pleading on Qi’s behalf. It read:</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">“臣闻往来者言曰‘秦将益赵甲四万以伐齐’,臣窃必之敝邑之王曰‘秦王明而熟于计，穰侯智而习于事，必不益赵甲四万以伐齐。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">“我听到从秦国来的人说，秦国将给赵国添上四万人让它攻打齐国，我却在底下对齐王打保证说：秦王英明而又善于算计，穰侯有智谋而又办事干练，他们一定不会给赵国添四万人来伐齐的。</td>
+                <td class="english-cell col-english" data-lang="english">“I have heard passersby say that Qin is about to lend Zhao an additional 40,000 armed men to conduct an attack on Qi. I have privately informed the ruler of our humble state of this, saying, ‘The king of Qin is intelligent and astute in planning and the marquis of Rang is wise and experienced in affairs. They would certainly not lend Zhao 40,000 armed men for an attack on Qi!’</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">是何也?夫三晋之相与也四，秦之深仇也。百相背也，百相欺也,不为不信，不为无行。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这是为什么呢?因为三晋的联合，是秦国所最讨厌的，它们无数次地背叛秦国，欺骗秦国，可是它们自己还不以为是不讲信义，不以为是行为可耻。</td>
+                <td class="english-cell col-english" data-lang="english">Why did I say this? The alliance formed by the Three Jin constitutes a deadly enemy to Qin. A hundred times it has betrayed Qin, a hundred times it has cheated Qin, yet it does not look on itself as faithless or believe that it has acted wrongly.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">今破齐以肥赵。赵，秦之深仇，不利于秦。此一也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">现在如果打败了齐国那就壮大了赵国，而赵国是秦国的敌人，对秦国显然是不利的。这是第一点。</td>
+                <td class="english-cell col-english" data-lang="english">Now to inflict defeat on Qi would be to fatten Zhao, and as Zhao and Qin are bitter enemies, that would not be to the profit of Qin. This is the first reason.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦之谋者，必曰‘破齐，弊晋、楚,而后制晋、楚之胜’。夫齐，罢国也,以天下攻齐，如以千钧之弩决溃痈也,必死，安能弊晋、楚?此二也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦国的谋士们一定在说，攻打齐国是为了消耗晋国和楚国，然后趁着疲惫以制服它们。其实这是不可能的。齐国现在已经筋疲力尽了，您现在再让许多国家联合起来打它，这就好像用千钧的强弩去射一个长满了脓疮的病人，他将必死无疑，怎么能达到消耗晋、楚两国的目的呢?这是第二点。</td>
+                <td class="english-cell col-english" data-lang="english">“Qin’s strategists are no doubt assuming that in defeating Qi, they will be wearing out Qin’s allies, the Three Jin and Chu, and that later they will be able to gain victory over the latter. But Qi is a state whose power is exhausted. For the world to unite in attacking Qi is like using a thousand-pound crossbow to puncture a suppurating boil. Of course Qi is doomed, but how will that wear out Jin and Chu? This is the second reason.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦少出兵，则晋、楚不信也；多出兵，则晋、楚为制于秦。齐恐，不走秦，必走晋、楚。此三也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">再说，秦国如果出兵太少，那么晋国、楚国不会相信你们；如果秦国出兵多了，则晋、楚将明显地被秦国所控制，到那时齐王害怕你们的联盟，要么就来投靠你们，要么就去投靠晋、楚，反正您达不到削弱晋、楚的目的。这是第三点。</td>
+                <td class="english-cell col-english" data-lang="english">“If Qin contributes only a few troops to the undertaking, then Jin and Chu will not trust it. And if it contributes a large number of troops, then Jin and Chu will be overshadowed by Qin. In that case Qi in its alarm will not look to Qin for mercy but will invariably turn to Jin and Chu. This is the third reason.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦割齐以啖晋、楚,晋、楚案之以兵,秦反受敌。此四也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">结果落一个秦国割了齐国的土地来送给晋国和楚国，到那时晋国、楚国再和您兵戎相见，你们可就有苦头吃了。这是第四点。</td>
+                <td class="english-cell col-english" data-lang="english">“If Qin carves up Qi and feeds the pieces to Jin and Chu, and Jin and Chu have to station troops to secure the areas, then Qin will appear to be an enemy rather than an ally. This is the fourth reason.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">是晋、楚以秦谋齐，以齐谋秦也,何晋、楚之智而秦、齐之愚?此五也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">可见这么干的结果是晋国、楚国一道用秦国来算计齐国，同时又用齐国来算计秦国，为什么晋国、楚国就这么聪明而秦国、齐国就这么傻呢?这是第五点。</td>
+                <td class="english-cell col-english" data-lang="english">And in the end it will seem as though Jin and Chu have been using Qin to undo Qi, and using Qi to undo Qin, and people will think, how wise of Jin and Chu, and how stupid of Qin and Qi! This is the fifth reason.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">故得安邑以善事之，亦必无患矣。秦有安邑，韩氏必无上党矣”。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">我认为你们得到了安邑后要设法把它治理好，不要再打齐国的主意，那你们就不会有什么问题了。秦国有了安邑，韩国的上党就保不住了。</td>
+                <td class="english-cell col-english" data-lang="english">“Therefore if Qin should acquire Anyi and treat it well, then it would surely have nothing to worry about. And if Qin acquires Anyi, then Hann will surely lose possession of Shangdang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">取天下之肠胃,与出兵而惧其不反也，孰利?</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这样你们就占住了天下的中心地带，这和他们所说的冒险伐齐的无法估计后果相比，哪一种更有利呢?</td>
+                <td class="english-cell col-english" data-lang="english">Which would be more profitable, to seize on the very vitals of the empire, or to send out troops and fear they may never return again?</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">臣故曰秦王明而熟于计，穰侯智而习于事，必不益赵甲四万以伐齐矣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">所以我说英明而又善于算计的秦王和有智谋而办事干练的穰侯，是一定不会给赵国添上四万人让他们来打齐国的。”</td>
+                <td class="english-cell col-english" data-lang="english">That is why I said to my ruler, ‘The king of Qin is intelligent and astute in planning, and the marquis of Rang is wise and experienced in affairs. They would certainly never lend Zhao 40,000 armed men for an attack on Qi,!’”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">于是穰侯不行,引兵而归。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是穰侯就下令把军队撤回去了。</td>
+                <td class="english-cell col-english" data-lang="english">The marquis of Rang accordingly abandoned the plan and returned with his troops to Qin.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">昭王三十六年,相国穰侯言客卿灶,欲伐齐取刚、寿,以广其陶邑。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦昭王三十六年，相国穰侯和客卿灶商议，想攻打齐国夺取刚、寿两地，来扩大他在陶邑的封地。</td>
+                <td class="english-cell col-english" data-lang="english">King Zhaoxiang, thirty-sixth year (271 BC): the prime minister of Qin, the marquis of Rang, consulted with Zao, a “guest minister” of Qin, hoping to attack Qi and seize Gangshou so that he could enlarge his fief at the city of Tao.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">于是魏人范雎自谓张禄先生,讥穰侯之伐齐，乃越三晋以攻齐也,以此时奸说秦昭王。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时魏国人范雎自称张禄先生，指责穰侯攻打齐国是要越过韩、赵、魏三国去进攻，趁这个时机向秦昭王进言游说。</td>
+                <td class="english-cell col-english" data-lang="english">At this time Fan Ju, a native of Wei who went by the alias of Master Zhang Lu, criticized the marquis of Rang’s plan to attack Qi, since it involved passing through the Three Jin in order to carry out the attack. He managed to gain a hearing with King Zhaoxiang of Qin.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">昭王于是用范雎。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦昭王于是任用范雎。</td>
+                <td class="english-cell col-english" data-lang="english">who appointed him to office.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">范雎言宣太后专制，穰侯擅权于诸侯,泾阳君、高陵君之属太侈，富于王室。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">范雎说宣太后独断专行，穰侯在诸侯间专权，泾阳君、高陵君这类人过于奢侈，财富超过王室。</td>
+                <td class="english-cell col-english" data-lang="english">Fan Ju warned that Queen Dowager Xuan was conducting affairs in a dictatorial manner, that the marquis of Rang had complete control of relations with the other feudal lords, and that lords Jingyang and Gaoling and their followers were enjoying excessive luxury, their wealth surpassing that of the royal house.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">于是秦昭王悟，乃免相国,令泾阳之属皆出关，就封邑。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是秦昭王醒悟，就罢免了穰侯的相国之职，命令泾阳君等人都离开函谷关，前往自己的封地。</td>
+                <td class="english-cell col-english" data-lang="english">King Zhaoxiang, awaking to the situation, finally dismissed the marquis of Rang from the post of prime minister and ordered Lord Jingyang and all the others to quit the capital area and proceed to their respective fiefs in the area beyond the Hangu Pass.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">穰侯出关，辎车千乘有余。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">穰侯出函谷关时，载运物资的车子有一千多辆。</td>
+                <td class="english-cell col-english" data-lang="english">When the marquis of Rang went out of the pass, he was accompanied by over 1,000 wagons loaded with his belongings.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">穰侯卒于陶，而因葬焉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">穰侯死在陶邑，于是就葬在那里。</td>
+                <td class="english-cell col-english" data-lang="english">He died in his fief in Tao and was buried there.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦复收陶为郡。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦国又收回陶邑，把它设为郡。</td>
+                <td class="english-cell col-english" data-lang="english">Qin then took over the region of Tao once more and made it into a province.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太史公曰：穰侯，昭王亲舅也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">太史公说：穰侯是秦昭王的亲舅舅。</td>
+                <td class="english-cell col-english" data-lang="english">The Grand Historian remarks: The marquis of Rang was an uncle and blood relative of King Zhaoxiang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">而秦所以东益地，弱诸侯，尝称帝于天下，天下皆西乡稽首者,穰侯之功也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦国之所以能向东扩张领土，削弱诸侯，曾经在天下称帝，天下诸侯都向西朝拜，这是穰侯的功劳。</td>
+                <td class="english-cell col-english" data-lang="english">The fact that Qin was able to expand its lands in the east, weaken the other feudal rulers, and for a time call itself emperor of the world, so that all the world turned west and bowed their heads before it, was thanks to the marquis of Rang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">及其贵极富溢，一夫开说,身折势夺而以忧死，况于羁旅之臣乎?</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">等到他富贵到极点，一个人进言劝说，就使他自身受挫、权势被夺，最终忧愤而死，更何况是那些寄居异国的臣子呢？</td>
+                <td class="english-cell col-english" data-lang="english">But when his wealth and eminence became excessive, one man spoke out against him and he was stripped of power, forced to humble himself, and died in despondency, almost worse than if he had been an alien from another state!</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
       </main>
 
       <nav class="chapter-nav">
@@ -89,8 +648,139 @@ The Grand Historian remarks: The marquis of Rang was an uncle and blood relative
       </nav>
 
       <footer>
-        <small>并排三列显示</small>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
       </footer>
     </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>

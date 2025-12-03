@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>三国志 — 第3章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <header>
+        <h1>三国志 — 第3章 李恢传</h1>
+      </header>
+
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
+
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">李恢字德昂，建宁俞元人也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">李恢字德昂，建宁郡俞元县人。</td>
+                <td class="english-cell col-english" data-lang="english">Li Hui, also known as De'ang, was a native of Yuyuan in Jianning.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">仕郡督邮，姑夫爨习为建伶令，有违法之事，恢正习免官。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">曾任郡中的督邮，他的姑夫爨习任建伶县令，有犯法的事情，李恢依法裁定爨习应当免去官职。</td>
+                <td class="english-cell col-english" data-lang="english">He was once a prefectural security inspector. When his aunt’s husband, Cuan Xi, magistrate of Jianling, committed a crime, Li Hui reported his crime and decided upon his dismissal from the office in accordance to the law.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太守董和以习方土大姓，寝而不许。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">太守董和认为爨习是当地的大姓，所以压下李恢的提案而没有让爨习免官。</td>
+                <td class="english-cell col-english" data-lang="english">The prefect Dong He withheld the case without permission because Cuan Xi was from a noble family in the area.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后贡恢于州，涉道未至，闻先主自葭萌还攻刘璋。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来推举李恢去州里任职，还在途中未到，听说刘备从葭萌关南下攻打刘璋。</td>
+                <td class="english-cell col-english" data-lang="english">Later Li Hui was recommended to be an official in the prefectural administration. On the way to take office, he heard that Founding Master went down south from the Jiameng Pass to counterattack Liu Zhang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">恢知璋之必败、先主必成，乃托名郡使，北诣先主，遇于绵竹。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">李恢料到刘璋必败而刘备定能成功，于是托名为建宁郡的使者，北上去见刘备，在绵竹相遇。</td>
+                <td class="english-cell col-english" data-lang="english">He knew Liu Zhang was doomed to fail, and Founding Master was sure to succeed, so in the name of a prefectural envoy, he went north to see Founding Master and met him in Mianzhu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">先主嘉之，从至雒城，遣恢至汉中交好马超，超遂从命。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">刘备很赞赏他的举措，让李恢跟随到了雒城，然后派他到汉中去结交马超，于是马超归附了刘备。</td>
+                <td class="english-cell col-english" data-lang="english">Founding Master praised him for his action, and had him join the journey to Luocheng. Then he sent him to Hanzhong to make friends with Ma Chao, and consequently Ma Chao attached himself to Founding Master.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">成都既定，先主领益州牧，以恢为功曹书佐、主簿。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">成都平定后，刘备兼任益州牧，任命李恢为功曹书佐、主簿。</td>
+                <td class="english-cell col-english" data-lang="english">After Chengdu was pacified, Founding Master became the governor of Yi Province, and he appointed Li Hui secretary of the executive vice prefect, and later head secretary.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后为亡虏所诬，引恢谋反，有司执送，先主明其不然，更迁恢为别驾从事。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来被逃亡的罪人诬告，牵扯李恢到谋反案中，有关部门拘捕了李恢并送交刘备发落，刘备指出李恢不会如此，还额外升迁李恢为别驾从事。</td>
+                <td class="english-cell col-english" data-lang="english">He was once accused of a plotted rebellion by an escaped prisoner, and the relevant department arrested Li Hui and sent him to be judged by Founding Master. Founding Master declared that Li Hui would not do such a thing, and even promoted Li Hui to his head secretary.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">章武元年，庲降都督邓方卒，先主问恢：“谁可代者？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">章武元年，庲降都督邓方去世，刘备问李恢说：“谁可以替代邓方？”</td>
+                <td class="english-cell col-english" data-lang="english">In the first year of the Zhangwu Period, Deng Fang, garrison commander of Laixiang, died. Founding Master asked Li Hui, “Who can succeed him?”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">恢对曰：“人之才能，各有长短，故孔子曰‘其使人也器之’。且夫明主在上，则臣下尽情，是以西零之役，赵充国曰‘莫若老臣’。臣窃不自量，惟陛下察之。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">李恢回答说：“人的才能，各有长短，所以孔子说‘用人要根据对方的才器而定’。而且大凡圣明的君主在上，那么作臣子的必然竭尽心力，所以西零战役那时，赵充国就自荐说‘没人比得过老臣’。我不自量力，愿陛下明察。”</td>
+                <td class="english-cell col-english" data-lang="english">Li Hui answered, “Men’s capabilities are different, so Confucius said, ‘How a man is used is to depend on his own capability.’ And when the monarch is sagacious, his subjects are sure to exert all their might and abilities. Therefore, in the battle of Xiling, Zhao Chongguo recommended himself by stating, ‘No one can defeat me, an old warrior.’ I will not feign modesty, and I only wish for you to make an examination and decide.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">先主笑曰：“孤之本意，亦已在卿矣。” 遂以恢为庲降都督，使持节领交州刺史，住平夷县。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">刘备笑着说：“我的本意，也就是你啊。” 于是任命李恢为庲降都督，使持节兼任交州刺史，治所设在平夷县。Founding Master smiled, “My choice is already made on you.” Thereafter, Li Hui was appointed garrison commander of Laixiang as well as the acting governor of Jiao Province with the royal tallies, and was placed to live in Pingyi County as his official seat.</td>
+                <td class="english-cell col-english" data-lang="english">　</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">先主薨，高定恣睢于越嶲，雍闿跋扈于建宁，朱褒反叛于牂牁。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">刘备去世后，高定在越巂恣意妄为，雍闿在建宁飞扬跋扈，朱褒则在牂牁郡公然反叛。</td>
+                <td class="english-cell col-english" data-lang="english">After the demise of Founding Master, Gao Ding in Yuexi behaved wantonly. Yong Kai in Jianning was arrogant and domineering, and Zhu Bao rebelled in Xiangke.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">丞相亮南征，先由越嶲，而恢案道向建宁。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">丞相诸葛亮南征，先从越巂进军，李恢则按照行军路线向建宁进军。</td>
+                <td class="english-cell col-english" data-lang="english">Prime Minister Zhuge Liang went on the south punitive expedition first into Yuexi, and Li Hui went along the roads into Jianning.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">诸县大相纠合，围恢军于昆明。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">敌人好几个县纠合起来，把李恢包围在昆明。</td>
+                <td class="english-cell col-english" data-lang="english">The people of several counties had a big rally and surrounded Li Hui in Kunming.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">时恢众少敌倍，又未得亮声息，绐谓南人曰：“官军粮尽，欲规退还，吾中间久斥乡里，乃今得旋，不能复北，欲还与汝等同计谋，故以诚相告。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时李恢的人马少出敌人一倍多，又加上没有得到诸葛亮的消息。他派人哄骗南人说：“官军粮草已尽，正在计划撤退，我等离开家乡很久了，今天才得以返回，也不愿再返回北方，想着要跟你们共谋大事，特此以诚相告。”</td>
+                <td class="english-cell col-english" data-lang="english">At that time, Li Hui’s troops were less than half of the enemies in number and had lost contact with Zhuge Liang. He cheated the southern people by saying, “The official army has run out of food supplies and is planning to return. However, I have left my hometown for too long, and today we can return, but we are not willing to go back to the north. Instead I’d like to plan a rebellion with you, which I tell you in sincerity.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">南人信之，故围守怠缓。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">南人信了他的话，所以对李恢的围困和警戒有所松懈。</td>
+                <td class="english-cell col-english" data-lang="english">The southerners believed what he said, and relaxed their siege.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">于是恢出击，大破之，追奔逐北，南至槃江，东接牂牁，与亮声势相连。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是李恢派兵出击，大败敌人，追击败军，向南到了槃江，向东到了牂牁，与诸葛亮的部队相互呼应。</td>
+                <td class="english-cell col-english" data-lang="english">Then Li Hui conducted a counterattack, routed the enemy, and pursued after them to the Pan River in the south. To the east, he established the connection with Zhuge Liang, and coordinated with him, building their strength and momentum.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">南土平定，恢军功居多，封汉兴亭侯，加安汉将军。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">南土平定之后，李恢的军功最为显著，爵封汉兴亭侯，加官安汉将军。</td>
+                <td class="english-cell col-english" data-lang="english">Li Hui made important contributions in the suppression of the southern rebellions. He was granted the title of Marquis of Xingting and promoted to Han-pacifying general.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后军还，南夷复叛，杀害守将。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来军队返回，南夷不久又反叛，杀害驻守将领。</td>
+                <td class="english-cell col-english" data-lang="english">After the armies returned, the southern tribes rebelled again and killed the garrison commander.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">恢身往扑讨，锄尽恶类，徙其豪帅于成都，赋出叟、濮耕牛战马金银犀革，充继军资，于时费用不乏。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">李恢亲自前去征讨，尽灭坏人，并把当地的首领迁到成都。从叟、濮等族中征收耕牛、战马、金、银、犀、革，供应军需，当时这些费用没有缺乏过。</td>
+                <td class="english-cell col-english" data-lang="english">Li Hui himself went to take revenge and, after eliminating the rebels, relocated their powerful leaders to Chengdu. He taxed the Sou and Pu tribes for farm cattle, battle steeds, gold, silver, rhinoceros horns and leather for the military use. For a period of time, there was no lack of income for the army.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">建兴七年，以交州属吴，解恢刺史。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">建兴七年，因为交州归属了吴国，解除了李恢交州刺史职衔。</td>
+                <td class="english-cell col-english" data-lang="english">In the seventh year of the Jianxing Period, as Jiao Province already belonged to the Wu Kingdom, Li Hui was dismissed from his position as governor.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">更领建宁太守，以还居本郡。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">改为兼任建宁太守，让李恢回到建宁郡居住。</td>
+                <td class="english-cell col-english" data-lang="english">and reappointed prefect of Jianning to live in his own prefecture.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">徙居汉中，九年卒。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后又迁居汉中郡，建兴九年去世。</td>
+                <td class="english-cell col-english" data-lang="english">Later he moved to Hanzhong, and died in the ninth year of the Jianxing Period.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">子遗嗣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">其子李遗继承封爵。</td>
+                <td class="english-cell col-english" data-lang="english">His son Li Yi succeeded to his title.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">恢弟子球，羽林右部督，随诸葛瞻拒邓艾，临阵授命，死于绵竹。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">李恢弟弟的儿子李球，任羽林右部督，随诸葛瞻迎击邓艾，临阵授命，死在绵竹。</td>
+                <td class="english-cell col-english" data-lang="english">Li Qiu, son of Li Hui’s younger brother and the superintendent of the right detachment of the imperial guard, followed Zhuge Zhan to resist Deng Ai bravely. He was given the order at a critical moment in the battle and died in Mianzhu.</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
+      </main>
+
+      <nav class="chapter-nav">
+        <a href="/book/sanguozhi/shu/chapter/2/">← 上一章</a>
+        &nbsp; <a href="/book/sanguozhi/shu/">蜀书章节列表</a> &nbsp;
+        <a href="/book/sanguozhi/shu/chapter/4/">下一章 →</a>
+      </nav>
+
+      <nav class="breadcrumb">
+        <a href="/">首页</a> &gt; 
+        <a href="/book/sanguozhi/">三国志</a> &gt; 
+        <a href="/book/sanguozhi/shu/">蜀书</a> &gt;
+        第3章 李恢传
+      </nav>
+
+      <footer>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
+      </footer>
+    </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

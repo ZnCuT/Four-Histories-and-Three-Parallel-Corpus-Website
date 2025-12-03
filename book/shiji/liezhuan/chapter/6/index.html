@@ -4,87 +4,550 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>史记 — 第6章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
     <link rel="stylesheet" href="/static/style.css">
   </head>
   <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
       <header>
         <h1>史记 — 第6章 列传 孟子荀卿列传第十四</h1>
       </header>
 
-      <main class="parallel">
-        <section>
-          <h3>文言文</h3>
-          <div class="txt">太史公曰：余读孟子书，至梁惠王问 “何以利吾国”，未尝不废书而叹也。曰：嗟乎，利诚乱之始也！夫子罕言利者，常防其原也。故曰 “放于利而行，多怨”。自天子至于庶人，好利之弊何以异哉！
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
 
-孟轲，驺人也。受业子思之门人。道既通，游事齐宣王，宣王不能用。适梁，梁惠王不果所言，则见以为迂远而阔于事情。当是之时，秦用商君，富国强兵；楚、魏用吴起，战胜弱敌；齐威王、宣王用孙子、田忌之徒，而诸侯东面朝齐。天下方务于合从连衡，以攻伐为贤，而孟轲乃述唐、虞、三代之德，是以所如者不合。退而与万章之徒序《诗》、《书》，述仲尼之意，作《孟子》七篇。
-
-其后有驺子之属。齐有三驺子。其前驺忌，以鼓琴干威王，因及国政，封为成侯而受相印，先孟子。其次驺衍，后孟子。驺衍睹有国者益淫侈，不能尚德，若《大雅》整之于身，施及黎庶矣。乃深观阴阳消息而作怪迂之变，《终始》、《大圣》之篇十余万言。其语闳大不经，必先验小物，推而大之，至于无垠。先序今以上至黄帝，学者所共术，大并世盛衰，因载其机祥度制，推而远之，至天地未生，窈冥不可考而原也。
-
-先列中国名山大川，通谷禽兽，水土所殖，物类所珍，因而推之，及海外人之所不能睹。称引天地剖判以来，五德转移，治各有宜，而符应若兹。以为儒者所谓中国者，于天下乃八十一分居其一分耳。中国名曰赤县神州。赤县神州内自有九州，禹之序九州是也，不得为州数。中国外如赤县神州者九，乃所谓九州也。于是，有裨海环之，人民禽兽莫能相通者，如一区中者，乃为一州。如此者九，乃有大瀛海环其外，天地之际焉。其术皆此类也，然要其归，必止乎仁义节俭，君臣上下六亲之施。始也，滥耳。王公大人初见其术，惧然顾化，其后不能行之。
-
-是以驺子重于齐。适梁，惠王郊迎，执宾主之礼。适赵，平原君侧行撇席。如燕，昭王拥彗先驱，请列弟子之座而受业，筑碣石宫，身亲往师之。作《主运》。其游诸侯见尊礼如此，岂与仲尼菜色陈、蔡、孟轲困于齐、梁同乎哉！故武王以仁义伐纣而王，伯夷饿不食周粟；卫灵公问阵，而孔子不答；梁惠王谋欲攻赵，孟轲称大王去邠。此岂有意阿世俗苟合而已哉！持方柄欲内圜凿，其能人乎？或曰，伊尹负鼎而勉汤以王，百里奚饭牛车下而缪公用霸，作先合，然后引之大道。驺衍其言虽不轨，傥亦有牛鼎之意乎？
-
-自驺衍与齐之稷下先生，如淳于髡、慎到、环渊、接子、田骈、驺奭之徒，各著书言治乱之事，以干世主，岂可胜道哉！
-
-淳于髡，齐人也。博闻强记，学无所主。其谏说，慕晏婴之为人也，然而承意观色为务。客有见髡于梁惠王，惠王屏左右，独坐而再见之，终无言也。惠王怪之，以让客曰：“子之称淳于先生，管、晏不及，及见寡人，寡人未有得也。岂寡人不足为言邪？何故哉？” 客以谓髡。髡曰：“固也。吾前见王，王志在驱逐；后复见王，王志在音声：吾是以默然。” 客具以报王，王大骇，曰：“嗟乎，淳于先生诚圣人也！前淳于先生之来，人有献善马者，寡人未及视，会先生至。后先生之来，人有献讴者，未及试，亦会先生来。寡人虽屏人，然私心在彼，有之。” 后淳于髡见，壹语连三日三夜无倦。惠王欲以卿相位待之，髡因谢去。于是送以安车驾驷，束帛加璧，黄金百镒。终身不仕。
-
-慎到，赵人。田骈、接子，齐人。环渊，楚人。皆学黄老道德之术，因发明序其指意。故慎到著十二论，环渊著上下篇，而田骈、接子皆有所论焉。
-
-驺奭者，齐诸驺子，亦颇采驺衍之术以纪文。于是齐王嘉之，自如淳于髡以下，皆命曰列大夫，为开第康庄之衢，高门大屋，尊宠之。览天下诸侯宾客，言齐能致天下贤士也。
-
-荀卿，赵人。年五十始来游学于齐。驺衍之术迂大而闳辩；奭也文具难施；淳于髡久与处，时有得善言。故齐人颂曰：“谈天衍，雕龙奭，炙毂过髡。” 田骈之属皆已死。齐襄王时，而荀卿最为老师。齐尚修列大夫之缺，而荀卿三为祭酒焉。齐人或谗荀卿，荀卿乃适楚，而春申君以为兰陵令。春申君死而荀卿废，因家兰陵。李斯尝为弟子，已而相秦。荀卿嫉浊世之政，亡国乱君相属，不遂大道而营于巫祝，信祥，鄙儒小拘，如庄周等又猾稽乱俗贤，于是推儒、墨、道德之行事兴坏，序列著数万言而卒。因葬兰陵。
-
-而赵亦有公孙龙为坚白同异之辩，剧子之言；魏有李悝，尽地力之教；楚有尸子、长卢；齐有阿之吁子焉。自如孟子至于吁子，世多有其书，故不论其传云。盖墨翟，宋之大夫，善守御，为节用。或曰并孔子时，或曰在其后。</div>
-        </section>
-        <section>
-          <h3>现代汉语</h3>
-          <div class="txt">白话文：太史公说：我读《孟子》中的文章，每当读到梁惠王问 “怎样才能有利于我的国家” 的时候，没有一次不是中途放下书感叹地说：唉，利这个东西可真是一切乱子的根源！孔子之所以很少谈利，大概就是想从根本上堵塞这种产生乱子的根源吧。《论语》上说：“假如一切事情都要考虑是否对自己有利，那就肯定会招得许多人怨恨他。” 可是事实上，上从天子下到一般的黎民百姓，好利的弊病又有什么不同呢？
-
-孟轲是鲁国邹县人，曾经跟着子思的弟子求过学。当他学通了儒家之道后，先是去游说齐宣王，齐宣王没有采纳他的主张。于是他又到了梁国，梁惠王也不爱听他那一套理论，认为他的思想大而无当，于事无补。那个时候，秦国任用商鞅实行变法，搞得国富兵强；楚国和魏国也先后任用过吴起，打败了敌人，削弱了对手；齐威王和齐宣王任用了孙膑、田忌等人，也打得各国诸侯都来服从齐国。当时整个天下都正热衷于大搞合纵或连横，谁会打仗谁就是最有本领的人，而孟轲却在那里大谈唐尧、虞舜以及夏、商、周三代的德政，因此他走到哪儿也没人要。最后无法只好回到家里和他的学生万章等人一道研究《诗经》和《尚书》，他们为了阐发孔子的思想，写出了《孟子》一书共七篇。
-
-白话文：后来出现了驺子他们。齐国一共有三个驺子。最早的叫驺忌，他曾经以弹琴为口实求见过齐威王，从弹琴的道理向齐宣王讲了治理国家的诀窍，结果被封为成侯，做了宰相，他的时代在孟子之前。其次的一个叫驺衍，时代在孟子之后。他看到当时的统治者都越来越荒淫奢侈，不再崇尚德治，不再像《大雅思齐》所说的那样先自己做好榜样，而后推广到家庭，再扩大到整个黎民百姓了，所以他就从注意观察阴阳的消长变化入手，而提出了一种非常怪诞的学说，他撰写了《终始》、《大圣》等文章共有十多万字。他的理论都是宏大而不着边际的，他常常在一些小的事物上做实验，然后把它推而广之，一直推到无限大。他的文章一般都从眼前说起，向上追溯到黄帝时期，利用各个时期的学者们所共同讲述过的东西，随着各个朝代的兴衰，加进去一些有关吉凶祸福的判断，按照这种方法，他可以一直推衍到开天辟地以前，给人们讲说了许多渺茫的根本无法考察的东西。
-
-他记载了中国境内的名山、大川、飞禽、走兽，凡是水中地上所长的各种奇珍异物，无所不有，并又就此推而广之地讲到了谁也没有看见过的海外世界。他说从开天辟地以来，各朝各代都是按着金木水火土五种德性的推移变化而发展下来的，不同的时代只有按着与它相应的那种德性来治理国家才能治好，而天上和人间又有一种预示征兆、互相感应的关系。他认为儒家所说的中国，只不过是天下八十一分之一的地方。中国名叫赤县神州。赤县神州里面又有九州，这就是大禹所划分的九州，但这不能算是真正的 “州” 的数目。中国之外，像赤县神州这样的区域还有九个，这才是所谓的九州。每个这样的州外面，都有 “裨海” 环绕着，彼此之间，人与禽兽都无法相通，就像一个独立的区域，这才算是一个州。像这样的州一共有九个，它们的外面又有 “大瀛海” 环绕着，那就是天与地的交界之处了。驺衍的学说大都是这一类内容，但是他学说的最终目的，还是要归结到仁义节俭，以及君臣、上下、六亲之间伦理关系的实施上。只不过他开头讲得太浮夸罢了。王公大臣们刚开始接触他的学说时，都感到惊奇而受到感化，可是后来却没法真正实行。
-
-白话文：驺衍曾受到过齐国的重视。后来他去梁国时，梁惠王还曾亲自到郊外去欢迎，把他当作贵宾接待。后来他又去过赵国，平原君给他侧着身子引路，还曾用袖子给他掸坐席。当他到了燕国的时候，燕昭王为他抱着扫帚在前引路，还请求做他的学生跟他学习，并特意建造了一座碣石宫，亲自到那里去跟他受业。也就是在那里，驺衍写出了他的《主运》篇。驺衍周游各国时受到这样的尊宠，这和孔子当初被围困在陈、蔡之间饿得面如菜色，以及孟子在齐国、梁国所受的冷遇，又怎能同日而语呢？所以周武王尽管是靠着仁义打败了殷纣称王的，但也还是有伯夷宁肯饿死也不愿吃周朝的粮食；卫灵公就是向孔子询问了一下如何布阵的问题，孔子居然竟避而不答；梁惠王与孟子商量准备攻打赵国，而孟子却故意给梁惠王讲了一个当年太王为躲避夷狄而自动离邠南迁的故事。这些人哪里有一点阿谀逢迎、希求苟合的样子呢？这就像是拿着一个方榫往圆槽里插，那怎么会插得进去呢？也有人说：伊尹曾背着饭锅去求见汤，结果辅佐汤统一了天下；百里奚也曾以在车下喂牛的办法接近了秦穆公，后来帮着秦穆公成就了霸业，都是先设法接近，而后再慢慢地引导国君走上正道。驺衍学说的这种不合常轨，也许就是伊尹负鼎、百里饭牛的那种意思吧？
-
-自从驺衍和齐国稷下的淳于髡、慎到、环渊、接子、田骈、驺奭等人著书立说，探讨治乱兴亡，以此求得国君的赏识以来，这样的人就越来越多，没法说了。
-
-淳于髡是齐国人，见识多记性好，做学问不专注于一家。爱给国君提意见，仰慕并且努力学习晏婴的做事和为人，所不同的是，他特别注意察言观色，寻找适当的时机。有人把他引见给了梁惠王，梁惠王支开了身边的人，单独地两次接见了他。结果他都一言未发。梁惠王很奇怪，就责备当初引见的那个人说：“你曾向我称赞淳于髡，说连管仲、晏婴都比不上他，可是淳于髡见过了我，我却一无所获。难道是我不配和他说话吗？他为什么见了我一言不发呢？” 这个人回去把梁惠王的话转告给了淳于髡。淳于髡说：“我的确没说话。那是因为我第一次见到你们大王时，他正想着骑马奔跑；第二次我见到他时，他正想着美妙的旋律，所以我只好不说话了。” 这个人回去又把淳于髡的话报告了梁惠王。梁惠王一听大吃一惊，说：“啊呀！淳于先生可真是个圣人啊！头一次他来见我之前，有人送给我一匹好马，我还没有来得及去看，正好这时淳于髡来了；第二次淳于髡来之前，又正好有人献我一名歌女，我还没有来得及去试听，也刚好这时淳于髡来了；那时我虽打发开了身边的人，但我心里的确还是在想着别的事，这是实情。” 后来淳于髡又见到了梁惠王，这次和梁惠王一口气谈了三天三夜，两人都不觉得疲倦。梁惠王想让淳于髡在齐国充任公卿宰相，淳于髡不愿接受，要求回家。于是梁惠王便给他安排了一辆很舒适的四匹马拉的车子，送给了他十匹缯帛外加璧玉的礼品，还有黄金两千多斤。淳于髡一辈子没有做过官。
-
-慎到是赵国人，田骈、接子是齐国人，环渊则是楚国人，他们都是学习黄帝老子的道德之学。为了阐述发挥黄帝老子的学说，慎到著有《慎子》十二论，环渊著有《环子》上下篇，其他如田骈、接子等也都有著述。
-
-驺奭也是齐国驺姓的一个名人，他在很多方面是采用了驺衍的理论来进行著述的。因此很受到齐王的赏识。从淳于髡以下这些人，都受齐王赏赐，享受着大夫的级别、待遇。齐王还专门为他们开辟了一条宽阔豪华的大街，高门大屋夹街林立，让这些人不论从精神上、物质上都得到了无比的尊宠。齐王之所以这样做的目的，就是为了给其他国家看，借以说明齐国是最能招纳天下贤人的。
-
-白话文：荀卿是赵国人，五十岁时才到齐国来游学。驺衍的学说迁阔远大且雄辩；驺奭的文章完备但难以施行；和淳于髡相处久了，时常能听到有益的言论。所以齐国人称颂道：“谈天说地数驺衍，雕琢文辞看驺奭，言谈风趣属淳于髡。” 田骈等人都已去世。齐襄王时，荀卿成了最年长的学者。齐国还在补列大夫的空缺，荀卿曾三次担任祭酒。齐国有人诋毁荀卿，荀卿就去到楚国，春申君让他做了兰陵令。春申君死后，荀卿被罢官，于是就在兰陵安了家。李斯曾是他的弟子，后来做了秦国的丞相。荀卿痛恨乱世的政治，亡国昏君接连不断，他们不遵循治国正道却热衷于巫术祈祷，迷信吉凶征兆，浅陋的儒生拘泥小节，像庄周等人又用诙谐的言辞扰乱世俗，于是荀卿推究儒家、墨家、道家学说的成败得失，编写著述了几万字后去世，就葬在了兰陵。
-
-当时赵国有个公孙龙，创立了 “坚石”、“白马” 的学说，还有剧孟、剧辛等也有一些著述。魏国有个李悝，专门研究了充分利用土地发展生产的问题；这时楚国有尸子、长卢；齐国的东阿还有个吁子。从孟子到吁子，这些人的著作社会上容易见到，所以不再论列，只叙述他们的传记。至于墨翟，他是齐国的大夫，在军事上长于守卫，在思想上主张俭朴节用。有人说他与孔子同时，也有人说他比孔子晚。</div>
-        </section>
-        <section>
-          <h3>English</h3>
-          <div class="txt">The Grand Historian comments: When I read Mencius and come to the words, "King Hui of Liang asked Mencius, How shall I profit my state?" I lay the book aside and sigh. Alas! I say, how true it is that profit is the root of all evil. The master seldom spoke of profit, always trying to check it at the source. Thus Mencius said, "Going all out for profit often leads to dissatisfaction." The evil consequences of seeking profit are the same for a common citizen or an emperor.
-
-Meng Ke, a native of Zou, was taught by a disciple of Zi Si. After he had mastered the Way he offered his services to King Xuan of Qi, but King Xuan could not use him. He went to Liang, but King Hui of Liang did not carry out his teachings, regarding Mencius as an impractical pedant. This was the time when Qin was employing Lord Shang to enrich the state and strengthen the army, Chu and Wei (403B.C.-225B.C.) were employing Wu Qi to defeat their weaker enemies, King Wei and King Xuan of Qi were employing men like Sun Bin and Tian Ji, while all the other states turned east to pay homage to Qi. The whole realm was divided into alliances with or against Qin and fighting was held in high regard. Mencius, who spoke of the virtues of Yao and Shun and the Three Dynasties, could not get on with these rulers. So he retired with Wan Zhang and some other disciples to expound the Book of Songs and Book of Documents and transmit the teachings of Confucius. His own writings filled seven books.
-
-After him were the philosophers Zouzi's. The state of Qi had three scholars surnamed Zou. The first, Zou Ji, so impressed King Wei by his performance on the lyre that he was set in charge of affairs of state, enfeoffed as Marquis Cheng and given the seal of prime minister. He lived before Mencius. The second, Zou Yan, came after Mencius. Zou Yan saw that the rulers were becoming increasingly dissolute and extravagant, unable to first rectify themselves and then spread their virtue among the common people, as was taught in the ancient odes. Thereupon he delved deep into the interplay of the yin and yang and wrote more than a hundred thousand words about their strange, transmutations, summarizing the ideas of the great sages. Using wild and magniloquent language, he went on from a study of some minor object to extend his deductions to infinity. Going back from modern times to the Yellow Emperor and the common origin of all teachings, he covered the rise and fall of different ages, the good and bad omens, and the various institutions, tracing these to the remote past before Earth and Heaven were created, and to the mysterious and unknown origin of things.
-
-He began by tabulating the famous mountains, mighty rivers and valleys of China, its birds and beasts, products of water and land and precious objects, going on from these to things hidden from men's eyes beyond the Four Seas. He claimed that since the separation of Heaven and Earth all things must change according to the specific laws of the Five Elements and show definite manifestations. He maintained that what Confucians called the "Central States" were only one of eighty-one regions of the world. The Middle Kingdom, known as the Red Divine Land, comprised the nine "continents" of which Great Yu spoke, but these were not real continents. Outside the Middle Kingdom there were nine regions as large as the Red Divine Land, and these were the true Nine Continents. These were each surrounded by "small seas" separating the people and beasts on one from those on others and formed one region which made up one continent. There were nine such continents, surrounded by a "great ocean" at the boundary of Earth and Heaven. Zou Yan's theories were all of this sort. Yet these were the premises for his conclusions about humanity, justice, frugality and the relationships between ruler and ruled, high and low, and kinsmen. Princes and nobles were impressed and influenced by their first acquaintance with his teachings, but they could never put them into practice.
-
-Zou Yan was highly regarded in Qi. When he went to Liang, King Hui welcomed him outside the city and treated him as an honoured guest. In Zhao, Lord Pingyuan walked beside him and dusted the mat for him. In Yan, King Zhao swept the path before him, asked to be allowed to sit with his students to study under him, and built Jieshi Palace so that he himself might learn from him there. So Zou Yan wrote The Sovereign's Way. Every state he visited received him with honour. How different from the case of Confucius, who underwent hunger in Chen and Cai, or of Mencius who was hard put to it in Qi and Liang! When, for the sake of humanity and justice, Wu attacked the king of Yin and became king himself, Bo Yi refused to eat the grain of Zou. When Duke Ling of Wei (1024B.C.-209B.C) asked about battle formations, Confucius refused to answer. When King Hui of Liang planned to attack Zhao, Mencius told him how King Wen had left the district of Bin. These men certainly never tried to follow the fashion or compromise with it. How can you fit a square peg into a round hole? Some point out, however, that Yi Yin served Tang as a cook before making him a king, and Baili Xi grazed his oxen in front of Duke Mu's chariot before serving him and making him a conqueror; for they had to meet the ruler first before leading him to the right path. Although Zou Yan's teachings were unorthodox, he may have had the same idea as these men.
-
-After Zou Yan came the scholars of the Ji Xia Academy in Qi, men like Chunyu Kun, Shen Dao, Huan Yuan, Jie Zi, Tian Pian and Zou shi, who wrote about government to advise the princes of their time. They are too many to enumerate here.
-
-Chunyu Kun, a native of Qi, had wide knowledge and a retentive memory and belonged to no particular school of thought. In offering advice he took Yan Ying as his model, but paid careful attention to the ruler's reactions. Once someone introduced him to King Hui of Liang, who twice dismissed everyone else to receive him in private, but not a word did Chunyu Kun say. The astonished king told the man who had introduced him, "You recommended Master Chunyu as superior even to Guan Zhong and Yan Ying, but I have learned nothing from him. Am I unworthy of his advice? Or what is the reason?" When this was repeated to Chunyu Kun, he said, "True. The first time I saw the king his thoughts were on charioteering. The second time his thoughts were on music. So I kept quiet." As soon as the king was informed of this, he exclaimed in astonishment, "Ah, Master Chunyu must certainly be a sage! When he first came, I had just been given a fine horse and had no time to examine it. The second time, I had just been given some musicians but had no time to hear them. Although I dismissed everyone else, it is true that my thoughts were elsewhere." Chunyu Kun subsequently saw the king again and they talked for three days and three nights without wearying. King Hui wished to make him a high minister, but he declined and withdrew. Then the king presented him with a fine carriage drawn by four horses, as well as rolls of silk, some jade and two thousand yi of gold. He accepted no official post all his life.
-
-Shen Dao came from Zhao, Tian Pian and Jie Zi from Qi, and Huan Yuan from Chu. These men studied the doctrines of the Yellow Emperor and Lao Zi and propounded their own ideas according to these. Shen Dao was the author of twelve essays, Huan Yuan left two books of writing, and Tian Pian and Jie Zi both wrote essays too.
-
-英文：Zou shi, another of the Zou scholars of Qi, recorded the teachings of Zou Yan in his writings. The king of Qi favoured these scholars. From Chunyu Kun down he gave them all the rank of ministers and honoured them by building large mansions, broad avenues and imposing gates for them. This was to show the protégés of other rulers that the king of Qi was a good patron.
-
-Xun Qing was a native of Zhao who went to Qi when he was fifty to spread his teachings. Zou Yan's arguments were diffuse and highflown, Zou shi had literary talent but his theories were difficult to put into practice, and if you spent long enough with Chunyu Kun you could occasionally catch words of wisdom. Hence the men of Qi commented, "Zou Yan talks about heaven, Zou shi is a fine stylist, and Chunyu Kun is a fluent speaker." Tian Pian and the scholars associated with him were dead by the time of King Xiang of Qi, so that Xun Qing was the doyen of the philosophers. Qi was filling vacancies in the ranks of its ministers, and Xun Qing was three times appointed chief libationer. When some men of Qi slandered him he went to Chu, where Lord Chunshen made him magistrate of Lanling, a position he lost at the death of Lord Chunshen. Li Si, later prime minister of Qin, was one of Xun Qin's pupils. Xun Qing hated the corrupt governments of his day, the decadent states and evil princes who did not follow the Way but gave their attention to magic and prayers and believed in omens and luck. The Confucian scholars of his generation were petty and narrow-minded, while thinkers such as Zhuang Zhou were wild and destructive of public morality. So Xun Qing expounded the advantages and disadvantages of practising the Confucian, Mohist and Taoist teachings. By the time of his death he had written tens of thousands of words. He was buried in Lanling.
-
-Gongsun Long was another man of Zhao. He argued about similarities and differences and about solidity and whiteness. Zhao also produced the philosophy of Ju Zi. In Wei (403B.C.-225B.C.) there was Li Kui, who taught the proper use of natural resources. In Chu there were Shi Zi, Chang Lu and Yu Zi of A. Since the writings of these men from Mencius to Yu Zi are well known, I shall not discuss them here. Mo Di was a minister of Song who was skilled in military defence and advocated economy. Some say he was a contemporary of Confucius, and others that he lived later.</div>
-        </section>
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太史公曰：余读孟子书，至梁惠王问 “何以利吾国”，未尝不废书而叹也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：太史公说：我读《孟子》中的文章，每当读到梁惠王问 “怎样才能有利于我的国家” 的时候，没有一次不是中途放下书感叹。</td>
+                <td class="english-cell col-english" data-lang="english">The Grand Historian comments: When I read Mencius and come to the words, "King Hui of Liang asked Mencius, How shall I profit my state?" I lay the book aside and sigh.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">曰：嗟乎，利诚乱之始也！</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：说：唉，利这个东西可真是一切乱子的根源！</td>
+                <td class="english-cell col-english" data-lang="english">Alas! I say, how true it is that profit is the root of all evil.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夫子罕言利者，常防其原也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：孔子之所以很少谈利，大概就是想从根本上堵塞这种产生乱子的根源吧。</td>
+                <td class="english-cell col-english" data-lang="english">The master seldom spoke of profit, always trying to check it at the source.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">故曰 “放于利而行，多怨”。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：《论语》上说：“假如一切事情都要考虑是否对自己有利，那就肯定会招得许多人怨恨他。”</td>
+                <td class="english-cell col-english" data-lang="english">Thus Mencius said, "Going all out for profit often leads to dissatisfaction."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">自天子至于庶人，好利之弊何以异哉！</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：可是事实上，上从天子下到一般的黎民百姓，好利的弊病又有什么不同呢？</td>
+                <td class="english-cell col-english" data-lang="english">The evil consequences of seeking profit are the same for a common citizen or an emperor.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">孟轲，驺人也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：孟轲是鲁国邹县人。</td>
+                <td class="english-cell col-english" data-lang="english">Meng Ke, a native of Zou.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">受业子思之门人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：曾经跟着子思的弟子求过学。</td>
+                <td class="english-cell col-english" data-lang="english">was taught by a disciple of Zi Si.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">道既通，游事齐宣王，宣王不能用。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：当他学通了儒家之道后，先是去游说齐宣王，齐宣王没有采纳他的主张。</td>
+                <td class="english-cell col-english" data-lang="english">After he had mastered the Way he offered his services to King Xuan of Qi, but King Xuan could not use him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">适梁，梁惠王不果所言，则见以为迂远而阔于事情。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：于是他又到了梁国，梁惠王也不爱听他那一套理论，认为他的思想大而无当，于事无补。</td>
+                <td class="english-cell col-english" data-lang="english">He went to Liang, but King Hui of Liang did not carry out his teachings, regarding Mencius as an impractical pedant.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">当是之时，秦用商君，富国强兵；</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：那个时候，秦国任用商鞅实行变法，搞得国富兵强；</td>
+                <td class="english-cell col-english" data-lang="english">This was the time when Qin was employing Lord Shang to enrich the state and strengthen the army.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">楚、魏用吴起，战胜弱敌；</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：楚国和魏国也先后任用过吴起，打败了敌人，削弱了对手；</td>
+                <td class="english-cell col-english" data-lang="english">Chu and Wei (403B.C.-225B.C.) were employing Wu Qi to defeat their weaker enemies.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">齐威王、宣王用孙子、田忌之徒，而诸侯东面朝齐。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：齐威王和齐宣王任用了孙膑、田忌等人，也打得各国诸侯都来服从齐国。</td>
+                <td class="english-cell col-english" data-lang="english">King Wei and King Xuan of Qi were employing men like Sun Bin and Tian Ji, while all the other states turned east to pay homage to Qi.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">天下方务于合从连衡，以攻伐为贤，而孟轲乃述唐、虞、三代之德，是以所如者不合。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：当时整个天下都正热衷于大搞合纵或连横，谁会打仗谁就是最有本领的人，而孟轲却在那里大谈唐尧、虞舜以及夏、商、周三代的德政，因此他走到哪儿也没人要。</td>
+                <td class="english-cell col-english" data-lang="english">The whole realm was divided into alliances with or against Qin and fighting was held in high regard. Mencius, who spoke of the virtues of Yao and Shun and the Three Dynasties, could not get on with these rulers.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">退而与万章之徒序《诗》、《书》，述仲尼之意，作《孟子》七篇。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：最后无法只好回到家里和他的学生万章等人一道研究《诗经》和《尚书》，他们为了阐发孔子的思想，写出了《孟子》一书共七篇。</td>
+                <td class="english-cell col-english" data-lang="english">So he retired with Wan Zhang and some other disciples to expound the Book of Songs and Book of Documents and transmit the teachings of Confucius. His own writings filled seven books.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其后有驺子之属。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：后来出现了驺子他们。</td>
+                <td class="english-cell col-english" data-lang="english">After him were the philosophers Zouzi's.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">齐有三驺子。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：齐国一共有三个驺子。</td>
+                <td class="english-cell col-english" data-lang="english">The state of Qi had three scholars surnamed Zou.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其前驺忌，以鼓琴干威王，因及国政，封为成侯而受相印，先孟子。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：最早的叫驺忌，他曾经以弹琴为口实求见过齐威王，从弹琴的道理向齐宣王讲了治理国家的诀窍，结果被封为成侯，做了宰相，他的时代在孟子之前。</td>
+                <td class="english-cell col-english" data-lang="english">The first, Zou Ji, so impressed King Wei by his performance on the lyre that he was set in charge of affairs of state, enfeoffed as Marquis Cheng and given the seal of prime minister. He lived before Mencius.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其次驺衍，后孟子。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：其次的一个叫驺衍，时代在孟子之后。</td>
+                <td class="english-cell col-english" data-lang="english">The second, Zou Yan, came after Mencius.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">驺衍睹有国者益淫侈，不能尚德，若《大雅》整之于身，施及黎庶矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：他看到当时的统治者都越来越荒淫奢侈，不再崇尚德治，不再像《大雅思齐》所说的那样先自己做好榜样，而后推广到家庭，再扩大到整个黎民百姓了。</td>
+                <td class="english-cell col-english" data-lang="english">Zou Yan saw that the rulers were becoming increasingly dissolute and extravagant, unable to first rectify themselves and then spread their virtue among the common people, as was taught in the ancient odes.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">乃深观阴阳消息而作怪迂之变，《终始》、《大圣》之篇十余万言。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：所以他就从注意观察阴阳的消长变化入手，而提出了一种非常怪诞的学说，他撰写了《终始》、《大圣》等文章共有十多万字。</td>
+                <td class="english-cell col-english" data-lang="english">Thereupon he delved deep into the interplay of the yin and yang and wrote more than a hundred thousand words about their strange, transmutations, summarizing the ideas of the great sages.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其语闳大不经，必先验小物，推而大之，至于无垠。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：他的理论都是宏大而不着边际的，他常常在一些小的事物上做实验，然后把它推而广之，一直推到无限大。</td>
+                <td class="english-cell col-english" data-lang="english">Using wild and magniloquent language, he went on from a study of some minor object to extend his deductions to infinity.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">先序今以上至黄帝，学者所共术，大并世盛衰，因载其机祥度制，推而远之，至天地未生，窈冥不可考而原也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">白话文：他的文章一般都从眼前说起，向上追溯到黄帝时期，利用各个时期的学者们所共同讲述过的东西，随着各个朝代的兴衰，加进去一些有关吉凶祸福的判断，按照这种方法，他可以一直推衍到开天辟地以前，给人们讲说了许多渺茫的根本无法考察的东西。</td>
+                <td class="english-cell col-english" data-lang="english">Going back from modern times to the Yellow Emperor and the common origin of all teachings, he covered the rise and fall of different ages, the good and bad omens, and the various institutions, tracing these to the remote past before Earth and Heaven were created, and to the mysterious and unknown origin of things.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">先列中国名山大川，通谷禽兽，水土所殖，物类所珍，因而推之，及海外人之所不能睹。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他记载了中国境内的名山、大川、飞禽、走兽，凡是水中地上所长的各种奇珍异物，无所不有，并又就此推而广之地讲到了谁也没有看见过的海外世界。</td>
+                <td class="english-cell col-english" data-lang="english">He began by tabulating the famous mountains, mighty rivers and valleys of China, its birds and beasts, products of water and land and precious objects, going on from these to things hidden from men's eyes beyond the Four Seas.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">称引天地剖判以来，五德转移，治各有宜，而符应若兹。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他说从开天辟地以来，各朝各代都是按着金木水火土五种德性的推移变化而发展下来的，不同的时代只有按着与它相应的那种德性来治理国家才能治好，而天上和人间又有一种预示征兆、互相感应的关系。</td>
+                <td class="english-cell col-english" data-lang="english">He claimed that since the separation of Heaven and Earth all things must change according to the specific laws of the Five Elements and show definite manifestations.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">以为儒者所谓中国者，于天下乃八十一分居其一分耳。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他认为儒家所说的中国，只不过是天下八十一分之一的地方。</td>
+                <td class="english-cell col-english" data-lang="english">He maintained that what Confucians called the "Central States" were only one of eighty-one regions of the world.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">中国名曰赤县神州。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">中国名叫赤县神州。</td>
+                <td class="english-cell col-english" data-lang="english">The Middle Kingdom, known as the Red Divine Land.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赤县神州内自有九州，禹之序九州是也，不得为州数。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赤县神州里面又有九州，这就是大禹所划分的九州，但这不能算是真正的“州”的数目。</td>
+                <td class="english-cell col-english" data-lang="english">comprised the nine "continents" of which Great Yu spoke, but these were not real continents.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">中国外如赤县神州者九，乃所谓九州也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">中国之外，像赤县神州这样的区域还有九个，这才是所谓的九州。</td>
+                <td class="english-cell col-english" data-lang="english">Outside the Middle Kingdom there were nine regions as large as the Red Divine Land, and these were the true Nine Continents.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">于是，有裨海环之，人民禽兽莫能相通者，如一区中者，乃为一州。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">每个这样的州外面，都有“裨海”环绕着，彼此之间，人与禽兽都无法相通，就像一个独立的区域，这才算是一个州。</td>
+                <td class="english-cell col-english" data-lang="english">These were each surrounded by "small seas" separating the people and beasts on one from those on others and formed one region which made up one continent.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">如此者九，乃有大瀛海环其外，天地之际焉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">像这样的州一共有九个，它们的外面又有“大瀛海”环绕着，那就是天与地的交界之处了。</td>
+                <td class="english-cell col-english" data-lang="english">There were nine such continents, surrounded by a "great ocean" at the boundary of Earth and Heaven.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其术皆此类也，然要其归，必止乎仁义节俭，君臣上下六亲之施。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">驺衍的学说大都是这一类内容，但是他学说的最终目的，还是要归结到仁义节俭，以及君臣、上下、六亲之间伦理关系的实施上。</td>
+                <td class="english-cell col-english" data-lang="english">Zou Yan's theories were all of this sort. Yet these were the premises for his conclusions about humanity, justice, frugality and the relationships between ruler and ruled, high and low, and kinsmen.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">始也，滥耳。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">只不过他开头讲得太浮夸罢了。</td>
+                <td class="english-cell col-english" data-lang="english">　</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">王公大人初见其术，惧然顾化，其后不能行之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">王公大臣们刚开始接触他的学说时，都感到惊奇而受到感化，可是后来却没法真正实行。</td>
+                <td class="english-cell col-english" data-lang="english">Princes and nobles were impressed and influenced by their first acquaintance with his teachings, but they could never put them into practice.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">是以驺子重于齐。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">驺衍曾受到过齐国的重视。</td>
+                <td class="english-cell col-english" data-lang="english">Zou Yan was highly regarded in Qi.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">适梁，惠王郊迎，执宾主之礼。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来他去梁国时，梁惠王还曾亲自到郊外去欢迎，把他当作贵宾接待。</td>
+                <td class="english-cell col-english" data-lang="english">When he went to Liang, King Hui welcomed him outside the city and treated him as an honoured guest.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">适赵，平原君侧行撇席。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来他又去过赵国，平原君给他侧着身子引路，还曾用袖子给他掸坐席。</td>
+                <td class="english-cell col-english" data-lang="english">In Zhao, Lord Pingyuan walked beside him and dusted the mat for him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">如燕，昭王拥彗先驱，请列弟子之座而受业，筑碣石宫，身亲往师之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当他到了燕国的时候，燕昭王为他抱着扫帚在前引路，还请求做他的学生跟他学习，并特意建造了一座碣石宫，亲自到那里去跟他受业。</td>
+                <td class="english-cell col-english" data-lang="english">In Yan, King Zhao swept the path before him, asked to be allowed to sit with his students to study under him, and built Jieshi Palace so that he himself might learn from him there.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">作《主运》。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">也就是在那里，驺衍写出了他的《主运》篇。</td>
+                <td class="english-cell col-english" data-lang="english">So Zou Yan wrote The Sovereign's Way.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其游诸侯见尊礼如此，岂与仲尼菜色陈、蔡、孟轲困于齐、梁同乎哉！</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">驺衍周游各国时受到这样的尊宠，这和孔子当初被围困在陈、蔡之间饿得面如菜色，以及孟子在齐国、梁国所受的冷遇，又怎能同日而语呢？</td>
+                <td class="english-cell col-english" data-lang="english">Every state he visited received him with honour. How different from the case of Confucius, who underwent hunger in Chen and Cai, or of Mencius who was hard put to it in Qi and Liang!</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">故武王以仁义伐纣而王，伯夷饿不食周粟；</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">所以周武王尽管是靠着仁义打败了殷纣称王的，但也还是有伯夷宁肯饿死也不愿吃周朝的粮食；</td>
+                <td class="english-cell col-english" data-lang="english">When, for the sake of humanity and justice, Wu attacked the king of Yin and became king himself, Bo Yi refused to eat the grain of Zou.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">卫灵公问阵，而孔子不答；</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">卫灵公就是向孔子询问了一下如何布阵的问题，孔子居然竟避而不答；</td>
+                <td class="english-cell col-english" data-lang="english">When Duke Ling of Wei asked about battle formations, Confucius refused to answer.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">梁惠王谋欲攻赵，孟轲称大王去邠。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">梁惠王与孟子商量准备攻打赵国，而孟子却故意给梁惠王讲了一个当年太王为躲避夷狄而自动离邠南迁的故事。</td>
+                <td class="english-cell col-english" data-lang="english">When King Hui of Liang planned to attack Zhao, Mencius told him how King Wen had left the district of Bin.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">此岂有意阿世俗苟合而已哉！</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这些人哪里有一点阿谀逢迎、希求苟合的样子呢？</td>
+                <td class="english-cell col-english" data-lang="english">These men certainly never tried to follow the fashion or compromise with it.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">持方柄欲内圜凿，其能人乎？</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这就像是拿着一个方榫往圆槽里插，那怎么会插得进去呢？</td>
+                <td class="english-cell col-english" data-lang="english">How can you fit a square peg into a round hole?</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">或曰，伊尹负鼎而勉汤以王，百里奚饭牛车下而缪公用霸，作先合，然后引之大道。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">也有人说：伊尹曾背着饭锅去求见汤，结果辅佐汤统一了天下；百里奚也曾以在车下喂牛的办法接近了秦穆公，后来帮着秦穆公成就了霸业，都是先设法接近，而后再慢慢地引导国君走上正道。</td>
+                <td class="english-cell col-english" data-lang="english">Some point out, however, that Yi Yin served Tang as a cook before making him a king, and Baili Xi grazed his oxen in front of Duke Mu's chariot before serving him and making him a conqueror; for they had to meet the ruler first before leading him to the right path.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">驺衍其言虽不轨，傥亦有牛鼎之意乎？</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">驺衍学说的这种不合常轨，也许就是伊尹负鼎、百里饭牛的那种意思吧？</td>
+                <td class="english-cell col-english" data-lang="english">Although Zou Yan's teachings were unorthodox, he may have had the same idea as these men.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">自驺衍与齐之稷下先生，如淳于髡、慎到、环渊、接子、田骈、驺奭之徒，各著书言治乱之事，以干世主，岂可胜道哉！</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">自从驺衍和齐国稷下的淳于髡、慎到、环渊、接子、田骈、驺奭等人著书立说，探讨治乱兴亡，以此求得国君的赏识以来，这样的人就越来越多，没法说了。</td>
+                <td class="english-cell col-english" data-lang="english">After Zou Yan came the scholars of the Ji Xia Academy in Qi, men like Chunyu Kun, Shen Dao, Huan Yuan, Jie Zi, Tian Pian and Zou shi, who wrote about government to advise the princes of their time. They are too many to enumerate here.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">淳于髡，齐人也。博闻强记，学无所主。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">淳于髡是齐国人，见识多记性好，做学问不专注于一家。</td>
+                <td class="english-cell col-english" data-lang="english">Chunyu Kun, a native of Qi, had wide knowledge and a retentive memory and belonged to no particular school of thought.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其谏说，慕晏婴之为人也，然而承意观色为务。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">爱给国君提意见，仰慕并且努力学习晏婴的做事和为人，所不同的是，他特别注意察言观色，寻找适当的时机。</td>
+                <td class="english-cell col-english" data-lang="english">In offering advice he took Yan Ying as his model, but paid careful attention to the ruler's reactions.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">客有见髡于梁惠王，惠王屏左右，独坐而再见之，终无言也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">有人把他引见给了梁惠王，梁惠王支开了身边的人，单独地两次接见了他。结果他都一言未发。</td>
+                <td class="english-cell col-english" data-lang="english">Once someone introduced him to King Hui of Liang, who twice dismissed everyone else to receive him in private, but not a word did Chunyu Kun say.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">惠王怪之，以让客曰：“子之称淳于先生，管、晏不及，及见寡人，寡人未有得也。岂寡人不足为言邪？何故哉？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">梁惠王很奇怪，就责备当初引见的那个人说：“你曾向我称赞淳于髡，说连管仲、晏婴都比不上他，可是淳于髡见过了我，我却一无所获。难道是我不配和他说话吗？他为什么见了我一言不发呢？”</td>
+                <td class="english-cell col-english" data-lang="english">The astonished king told the man who had introduced him, "You recommended Master Chunyu as superior even to Guan Zhong and Yan Ying, but I have learned nothing from him. Am I unworthy of his advice? Or what is the reason?"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">客以谓髡。髡曰：“固也。吾前见王，王志在驱逐；后复见王，王志在音声：吾是以默然。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这个人回去把梁惠王的话转告给了淳于髡。淳于髡说：“我的确没说话。那是因为我第一次见到你们大王时，他正想着骑马奔跑；第二次我见到他时，他正想着美妙的旋律，所以我只好不说话了。”</td>
+                <td class="english-cell col-english" data-lang="english">When this was repeated to Chunyu Kun, he said, "True. The first time I saw the king his thoughts were on charioteering. The second time his thoughts were on music. So I kept quiet."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">客具以报王，王大骇，曰：“嗟乎，淳于先生诚圣人也！前淳于先生之来，人有献善马者，寡人未及视，会先生至。后先生之来，人有献讴者，未及试，亦会先生来。寡人虽屏人，然私心在彼，有之。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这个人回去又把淳于髡的话报告了梁惠王。梁惠王一听大吃一惊，说：“啊呀！淳于先生可真是个圣人啊！头一次他来见我之前，有人送给我一匹好马，我还没有来得及去看，正好这时淳于髡来了；第二次淳于髡来之前，又正好有人献我一名歌女，我还没有来得及去试听，也刚好这时淳于髡来了；那时我虽打发开了身边的人，但我心里的确还是在想着别的事，这是实情。”</td>
+                <td class="english-cell col-english" data-lang="english">As soon as the king was informed of this, he exclaimed in astonishment, "Ah, Master Chunyu must certainly be a sage! When he first came, I had just been given a fine horse and had no time to examine it. The second time, I had just been given some musicians but had no time to hear them. Although I dismissed everyone else, it is true that my thoughts were elsewhere."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后淳于髡见，壹语连三日三夜无倦。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来淳于髡又见到了梁惠王，这次和梁惠王一口气谈了三天三夜，两人都不觉得疲倦。</td>
+                <td class="english-cell col-english" data-lang="english">Chunyu Kun subsequently saw the king again and they talked for three days and three nights without wearying.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">惠王欲以卿相位待之，髡因谢去。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">梁惠王想让淳于髡在齐国充任公卿宰相，淳于髡不愿接受，要求回家。</td>
+                <td class="english-cell col-english" data-lang="english">King Hui wished to make him a high minister, but he declined and withdrew.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">于是送以安车驾驷，束帛加璧，黄金百镒。终身不仕。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是梁惠王便给他安排了一辆很舒适的四匹马拉的车子，送给了他十匹缯帛外加璧玉的礼品，还有黄金两千多斤。淳于髡一辈子没有做过官。</td>
+                <td class="english-cell col-english" data-lang="english">Then the king presented him with a fine carriage drawn by four horses, as well as rolls of silk, some jade and two thousand yi of gold. He accepted no official post all his life.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">慎到，赵人。田骈、接子，齐人。环渊，楚人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">慎到是赵国人，田骈、接子是齐国人，环渊则是楚国人。</td>
+                <td class="english-cell col-english" data-lang="english">Shen Dao came from Zhao, Tian Pian and Jie Zi from Qi, and Huan Yuan from Chu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">皆学黄老道德之术，因发明序其指意。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他们都是学习黄帝老子的道德之学，为了阐述发挥黄帝老子的学说。</td>
+                <td class="english-cell col-english" data-lang="english">These men studied the doctrines of the Yellow Emperor and Lao Zi and propounded their own ideas according to these.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">故慎到著十二论，环渊著上下篇，而田骈、接子皆有所论焉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">慎到著有《慎子》十二论，环渊著有《环子》上下篇，其他如田骈、接子等也都有著述。</td>
+                <td class="english-cell col-english" data-lang="english">Shen Dao was the author of twelve essays, Huan Yuan left two books of writing, and Tian Pian and Jie Zi both wrote essays too.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">驺奭者，齐诸驺子，亦颇采驺衍之术以纪文。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">驺奭也是齐国驺姓的学者，也多采用驺衍的学说来撰写文章。</td>
+                <td class="english-cell col-english" data-lang="english">Zou Shi, another of the Zou scholars of Qi, recorded the teachings of Zou Yan in his writings.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">于是齐王嘉之，自如淳于髡以下，皆命曰列大夫，为开第康庄之衢，高门大屋，尊宠之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">因此齐王赏识他们，从淳于髡以下的这些人，都被任命为列大夫，齐王还为他们在宽阔平坦的大街上修建府第，都是高大门户的大宅，对他们非常尊崇宠爱。</td>
+                <td class="english-cell col-english" data-lang="english">The king of Qi favoured these scholars. From Chunyu Kun down he gave them all the rank of ministers and honoured them by building large mansions, broad avenues and imposing gates for them.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">览天下诸侯宾客，言齐能致天下贤士也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">（这样做是为了）让天下诸侯的宾客看到，表明齐国能招纳天下贤才。</td>
+                <td class="english-cell col-english" data-lang="english">This was to show the protégés of other rulers that the king of Qi was a good patron.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">荀卿，赵人。年五十始来游学于齐。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">荀卿是赵国人，五十岁时才到齐国游学。</td>
+                <td class="english-cell col-english" data-lang="english">Xun Qing was a native of Zhao who went to Qi when he was fifty to spread his teachings.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">驺衍之术迂大而闳辩；奭也文具难施；淳于髡久与处，时有得善言。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">驺衍的学说迂阔宏大且善于雄辩；驺奭的文章完备但难以施行；和淳于髡相处久了，时常能听到有益的言论。</td>
+                <td class="english-cell col-english" data-lang="english">Zou Yan's arguments were diffuse and highflown, Zou Shi had literary talent but his theories were difficult to put into practice, and if you spent long enough with Chunyu Kun you could occasionally catch words of wisdom.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">故齐人颂曰：“谈天衍，雕龙奭，炙毂过髡。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">所以齐国人称颂道：“谈天说地数驺衍，雕琢文辞看驺奭，言谈风趣属淳于髡。”</td>
+                <td class="english-cell col-english" data-lang="english">Hence the men of Qi commented, "Zou Yan talks about heaven, Zou Shi is a fine stylist, and Chunyu Kun is a fluent speaker."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">田骈之属皆已死。齐襄王时，而荀卿最为老师。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">田骈这类人都已经去世。齐襄王时，荀卿成了最年长的学者。</td>
+                <td class="english-cell col-english" data-lang="english">Tian Pian and the scholars associated with him were dead by the time of King Xiang of Qi, so that Xun Qing was the doyen of the philosophers.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">齐尚修列大夫之缺，而荀卿三为祭酒焉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">齐国还在补列大夫的空缺，荀卿曾三次担任祭酒。</td>
+                <td class="english-cell col-english" data-lang="english">Qi was filling vacancies in the ranks of its ministers, and Xun Qing was three times appointed chief libationer.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">齐人或谗荀卿，荀卿乃适楚，而春申君以为兰陵令。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">齐国有⼈诋毁荀卿，荀卿就去到楚国，春申君让他做了兰陵令。</td>
+                <td class="english-cell col-english" data-lang="english">When some men of Qi slandered him he went to Chu, where Lord Chunshen made him magistrate of Lanling.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">春申君死而荀卿废，因家兰陵。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">春申君死后，荀卿被罢官，于是就在兰陵安了家。</td>
+                <td class="english-cell col-english" data-lang="english">a position he lost at the death of Lord Chunshen.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">李斯尝为弟子，已而相秦。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">李斯曾是他的弟子，后来做了秦国的丞相。</td>
+                <td class="english-cell col-english" data-lang="english">Li Si, later prime minister of Qin, was one of Xun Qing's pupils.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">荀卿嫉浊世之政，亡国乱君相属，不遂大道而营于巫祝，信祥，鄙儒小拘，如庄周等又猾稽乱俗贤，于是推儒、墨、道德之行事兴坏，序列著数万言而卒。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">荀卿痛恨乱世的政治，亡国昏君接连不断，他们不遵循治国正道却热衷于巫术祈祷，迷信吉凶征兆，浅陋的儒生拘泥小节，像庄周等人又用诙谐的言辞扰乱世俗，于是荀卿推究儒家、墨家、道家学说的成败得失，编写著述了几万字后去世。</td>
+                <td class="english-cell col-english" data-lang="english">Xun Qing hated the corrupt governments of his day, the decadent states and evil princes who did not follow the Way but gave their attention to magic and prayers and believed in omens and luck. The Confucian scholars of his generation were petty and narrow-minded, while thinkers such as Zhuang Zhou were wild and destructive of public morality. So Xun Qing expounded the advantages and disadvantages of practising the Confucian, Mohist and Taoist teachings. By the time of his death he had written tens of thousands of words.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">因葬兰陵。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">就葬在了兰陵。</td>
+                <td class="english-cell col-english" data-lang="english">He was buried in Lanling.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">而赵亦有公孙龙为坚白同异之辩，剧子之言；</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时赵国有个公孙龙，研究“坚白”“同异”的论辩，还有剧子的学说；</td>
+                <td class="english-cell col-english" data-lang="english">Gongsun Long was another man of Zhao. He argued about similarities and differences and about solidity and whiteness. Zhao also produced the philosophy of Ju Zi.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">魏有李悝，尽地力之教；</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">魏国有个李悝，推行充分利用土地肥力的学说；</td>
+                <td class="english-cell col-english" data-lang="english">In Wei (403B.C.-225B.C.) there was Li Kui, who taught the proper use of natural resources.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">楚有尸子、长卢；齐有阿之吁子焉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">楚国有尸子、长卢；齐国有东阿的吁子。</td>
+                <td class="english-cell col-english" data-lang="english">In Chu there were Shi Zi, Chang Lu and Yu Zi of A.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">自如孟子至于吁子，世多有其书，故不论其传云。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">从孟子到吁子，世间大多有他们的著作，所以不再论述他们的传记。</td>
+                <td class="english-cell col-english" data-lang="english">Since the writings of these men from Mencius to Yu Zi are well known, I shall not discuss them here.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">盖墨翟，宋之大夫，善守御，为节用。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">至于墨翟，是宋国的大夫，擅长防守抵御之术，主张节俭用度。</td>
+                <td class="english-cell col-english" data-lang="english">Mo Di was a minister of Song who was skilled in military defence and advocated economy.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">或曰并孔子时，或曰在其后。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">有人说他和孔子同时代，有人说他在孔子之后。</td>
+                <td class="english-cell col-english" data-lang="english">Some say he was a contemporary of Confucius, and others that he lived later.</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
       </main>
 
       <nav class="chapter-nav">
@@ -101,8 +564,139 @@ Gongsun Long was another man of Zhao. He argued about similarities and differenc
       </nav>
 
       <footer>
-        <small>并排三列显示</small>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
       </footer>
     </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>

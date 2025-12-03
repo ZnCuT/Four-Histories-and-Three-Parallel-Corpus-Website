@@ -4,117 +4,574 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>史记 — 第4章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
     <link rel="stylesheet" href="/static/style.css">
   </head>
   <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
       <header>
         <h1>史记 — 第4章 列传 吕不韦列传第二十五</h1>
       </header>
 
-      <main class="parallel">
-        <section>
-          <h3>文言文</h3>
-          <div class="txt">吕不韦者，阳翟大贾人也。往来贩贱卖贵，家累千金。
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
 
-秦昭王四十年，太子死。其四十二年，以其次子安国君为太子。安国君有子二十余人。安国君有所甚爱姬，立以为正夫人，号曰华阳夫人。华阳夫人无子。安国君中男名子楚，子楚母曰夏姬，毋爱。子楚为秦质子于赵。秦数攻赵，赵不甚礼子楚。
-
-子楚，秦诸庶孽孙，质于诸侯，车乘进用不饶，居处困，不得意。吕不韦贾邯郸，见而怜之，曰 “此奇货可居也”。乃往见子楚，说曰：“吾能大子之门。” 子楚笑曰：“且自大君之门，而乃大吾门！” 吕不韦曰：“子不知也，吾门待子门而大。” 子楚心知所谓，乃引与坐，深语。吕不韦曰：“秦王老矣，安国君得为太子。窃闻安国君爱幸华阳夫人，华阳夫人无子，能立適嗣者独华阳夫人耳。今子兄弟二十余人，子又居中，不甚见幸，久质诸侯。即大王薨，安国君立为王，则子毋几得与长子及诸子旦暮在前者争为太子矣。” 子楚曰：“然。为之奈何？” 吕不韦曰：“子贫，客于此，非有以奉献于亲及结宾客也。不韦虽贫，请以千金为子西游，事安国君及华阳夫人，立子为適嗣。” 子楚乃顿首曰：“必如君策，请得分秦国与君共之。”
-
-吕不韦乃以五百金与子楚，为进用，结宾客；而复以五百金买奇物玩好，自奉而西游秦，求见华阳夫人姊，而皆以其物献华阳夫人。因言子楚贤智，结诸侯宾客遍天下，常曰 “楚也以夫人为天，日夜泣思太子及夫人”。夫人大喜。不韦因使其姊说夫人曰:“吾闻之，以色事人者，色衰而爱弛。今夫人事太子，甚爱而无子，不以此时蚤自结于诸子中贤孝者，举立以为適而子之，夫在则重尊，夫百岁之后，所子者为王，终不失势，此所谓一言而万世之利也。不以繁华时树本，即色衰爱弛后，虽欲开一语，尚可得乎？今子楚贤，而自知中男也，次不得为適，其母又不得幸，自附夫人，夫人诚以此时拔以为適，夫人则竟世有宠于秦矣。” 华阳夫人以为然，承太子闲，从容言子楚质于赵者绝贤，来往者皆称誉之。乃因涕泣曰：“妾幸得充后宫，不幸无子，愿得子楚立以为適嗣，以托妾身。” 安国君许之，乃与夫人刻玉符，约以为適嗣。安国君及夫人因厚馈遗子楚，而请吕不韦傅之，子楚以此名誉益盛于诸侯。
-
-吕不韦取邯郸诸姬绝好善舞者与居，知有身。子楚从不韦饮，见而说之，因起为寿，请之。吕不韦怒，念业已破家为子楚，欲以钓奇，乃遂献其姬。姬自匿有身，至大期时，生子政。子楚遂立姬为夫人。
-
-秦昭王五十年，使王崎围邯郸，急，赵欲杀子楚。子楚与吕不韦谋，行金六百斤予守者吏，得脱，亡赴秦军，遂以得归。赵欲杀子楚妻子，子楚夫人，赵豪家女也，得匿，以故母子竟得活。秦昭王五十六年，薨，太子安国君立为王，华阳夫人为王后，子楚为太子。赵亦奉子楚夫人及子政归秦。
-
-秦王立一年，薨，谥为孝文王。太子子楚代立，是为庄襄王。庄襄王所母华阳后为华阳太后，真母夏姬尊以为夏太后。庄襄王元年，以吕不韦为丞相，封为文信侯，食河南雒阳十万户。
-
-庄襄王即位三年，薨，太子政立为王，尊吕不韦为相国，号称“仲父”。秦王年少，太后时时窃私通吕不韦。不韦家僮万人。
-
-当是时，魏有信陵君，楚有春申君，赵有平原君，齐有孟尝君，皆下士喜宾客以相倾。吕不韦以秦之强，羞不如，亦招致士，厚遇之，至食客三千人。是时诸侯多辩士，如荀卿之徒，著书布天下。吕不韦乃使其客人人著所闻，集论以为八览、六论、十二纪，二十余万言。以为备天地万物古今之事，号曰《吕氏春秋》。布咸阳市门，悬千金其上，延诸侯游士宾客有能增损一字者予千金。
-
-始皇帝益壮，太后淫不止。吕不韦恐觉祸及己，乃私求大阴人嫪毒以为舍人，时纵倡乐，使以其阴关桐轮而行，令太后闻之，以啗太后。太后闻，果欲私得之。吕不韦乃进嫪毒，诈令人以腐罪告之。不韦又阴谓太后曰：“可事诈腐，则得给事中。”太后乃阴厚赐主腐者吏，诈论之，拔其须眉为宦者，遂得侍太后。太后私与通，绝爱之。有身，太后恐人知之，诈卜当避时，徙宫居雍。嫪毒常从，赏赐甚厚，事皆决于嫪毒。嫪毒家僮数千人，诸客求宦为嫪舍人千余人。
-
-始皇七年，庄襄王母夏太后薨。孝文王后曰华阳太后，与孝文王会葬寿陵。夏太后子庄襄王葬芷阳，故夏太后独别葬杜东，曰“东望吾子，西望吾夫。后百年，旁当有万家邑”。
-
-始皇九年，有告嫪毒实非宦者，常与太后私乱，生子二人，皆匿之。与太后谋曰：“王即薨，以子为后”。于是秦王下吏治，具得情实，事连相国吕不韦。九月，夷嫪毒三族，杀太后所生两子，而遂迁太后于雍。诸嫪舍人皆没其家而迁之蜀。王欲诛相国，为其奉先王功大，及宾客辩士为游说者众，王不忍致法。
-
-秦王十年十月，免相国吕不韦。及齐人茅焦说秦王，秦王乃迎太后于雍，归复咸阳，而出文信侯就国河南。
-
-岁余，诸侯宾客使者相望于道，请文信侯。秦王恐其为变，乃赐文信侯书曰：“君何功于秦？秦封君河南，食十万户。君何亲于秦？号称仲父。其与家属徙处蜀！”吕不韦自度稍侵，恐诛，乃饮鸩而死。秦王所加怒吕不韦、嫪毒皆已死，乃皆复归嫪毒舍人迁蜀者。
-
-始皇十九年，太后薨，谥为帝太后，与庄襄王会葬芷阳。
-
-太史公曰：不韦及嫪毒贵，封号文信侯。人之告嫪毒，嫪毒闻之。秦王验左右，未发。王之雍郊，恐祸起，乃与党谋，矫太后玺发卒以反蕲年宫。王知之，发吏攻毒，毒败亡走，追斩之好畤，遂灭其宗。而吕不韦由此绌矣。孔子之所谓“闻”者，其吕子乎？</div>
-        </section>
-        <section>
-          <h3>现代汉语</h3>
-          <div class="txt">吕不韦是韩国阳翟的一个大商人。到处贱买贵卖地做买卖，以至于使家中积蓄了千金的财富。
-
-秦昭王四十年，太子病故。秦昭王四十二年，立他的第二个儿子安国君做了太子。而安国君这时已经是有二十多个儿子的父亲了。他有个最喜爱的小老婆，后来把她立为正夫人，人称华阳夫人。而华阳夫人偏偏没有儿子。安国君有个排行居中的儿子叫子楚，子楚的母亲叫夏姬，不被安国君宠爱，因而子楚被秦国送到赵国去做人质。后来由于秦国又屡次进攻赵国，所以赵国对子楚很不尊重。
-
-由于子楚本来就不是秦王的正根，再加上是在国外做人质，因而他的车马用度都不富裕，日常生活很困难，心中闷闷不乐。这时吕不韦正好到邯郸做生意，他一见子楚的样子，对他很可怜，心想：“这倒是件奇货，值得收藏。” 于是就去见子楚说：“我能让您的门庭光大。” 子楚见他是个商人，不由得笑了，说：“还是先去光大你自己的门庭吧，配说什么光大我的门庭！" 吕不韦说：“我的门庭得靠着您门庭的光大而光大。” 子楚明白了吕不韦说话的意思，于是就请他坐下，和他进一步地进行了交谈。吕不韦说：“秦王已经老了，安国君现在是太子。我听说安国君宠爱华阳夫人，华阳夫人没有儿子。而能够为安国君树立接班人的又只有华阳夫人。如今您的兄弟有二十多个，您又排行居中，不怎么受宠爱，长久地在国外当人质。等到某一天秦王去世，安国君即位为王，到那时您就不可能去同您的长兄和那些朝夕在安国君面前的弟兄们去争太子的位置了。” 子楚说：“是的。那怎么办呢？” 吕不韦说：“您本来就穷，又是在赵国做客，您当然拿不出什么东西去孝敬您的父母和结交宾客了。我虽然也不富裕，但我可以带着千金替您到你们国家去向安国君和华阳夫人进行活动，想法让他们立您为接班人。” 子楚一听立即向吕不韦叩头说：“如果真能实现您的计划，我愿意把秦国分一半给您。”
-
-于是吕不韦就拿出五百金给了子楚，作为他的日常生活以及结交宾客之用；又用了五百金买了一批奇珍异宝，自己带着到了秦国。他先找到了华阳夫人的姐姐，托她把那些珍宝送给了华阳夫人，并顺便说了些子楚如何贤能智慧，已经结交了各个国家的许多宾客等等。并说子楚经常对人们说，他爱戴华阳夫人就像爱戴老天爷一样，他不分白天黑夜，只要一想到太子和夫人就哭。华阳夫人听了非常高兴。吕不韦又乘势请华阳夫人的姐姐劝华阳夫人说：“俗话说，靠着美貌侍候人的，等到一老就会失宠。现在太子虽然特别喜欢你，可是你没有儿子，你为什么不在这时及早在那些公子中挑一个贤能孝顺的，把他认为儿子立为接班人呢？这样，你丈夫在世时，你的地位可以更加尊贵；你丈夫去世后，是你所认的儿子继位为王，你的权势也不会消失，这不是说一句话就可以得到永久性的利益吗？你不趁着风华正茂的时候为自己立下根基，等到年老失宠时，即使再想说话，还会有人听吗？现在子楚为人不错，自己又知道排行居中，按次序也轮不到他，他的母亲也不受宠幸，所以他愿意来归附你。你如果能趁此时机认他为子，立他为接班人，那么你这辈子就会在秦国永远受宠了。” 华阳夫人觉得有理，于是就找机会，自然地对安国君讲起了在赵国当人质的子楚的事情，说子楚为人非常好，说来往于秦、赵两国之间的人们都称赞他。说着说着，华阳夫人又哭了起来，说：“我很幸运能够进了您的后宫，可是我非常不幸的是没有儿子，我现在想把子楚认为儿子，让他做您的接班人，这样也可以让我终身有靠。” 安国君答应了，于是给华阳夫人刻了玉符，约定将子楚立为接班人。接着安国君和华阳夫人派人送给了子楚许多东西，并请吕不韦去调护辅导他，从此子楚在各国之间的名声就越来越大了。
-
-后来吕不韦在邯郸娶了一个美貌而又善舞的女子，不久这个女子怀孕了。这时有一天，子楚到吕不韦家来喝酒，看到这个女子很喜欢她，于是就起身向吕不韦敬酒，请求吕不韦把这个女子给他。吕不韦开始很生气，但后来一想，自己为了子楚连家产都快变卖光了，现在难道还能舍不得一个女子吗？再说他也想通过这个女子作诱饵钓一条大鱼，于是就把这个女子给了子楚。这个女子也故意隐瞒了她已经怀孕的事实，这样过了十二个月，她生了一个儿子，取名为政。于是子楚把这个女子立为夫人。
-
-秦昭王五十年，派王崎带兵包围了邯郸，赵国的形势紧急，想杀子楚。子楚和吕不韦商量后，花了六百斤金子给监守他的小吏，因而得以脱身，逃到了秦国的军队中，终于回到了秦国。这时赵国想杀掉子楚的夫人和儿子，子楚夫人本来是赵国一家豪富的女儿，就跑到娘家藏了起来，最后母子俩都脱险了。秦昭王五十六年，昭王去世了，太子安国君继位为王，华阳夫人当了王后，子楚成了太子。这时赵国也只好把子楚夫人及她的儿子政送到了秦国。
-
-安国君只做了一年秦王就去世了，被谥为孝文王。太子子楚继承了王位，这就是历史上所说的庄襄王。庄襄王所认的母亲华阳王后被称为华阳太后，他的亲生母亲夏姬被尊为夏太后。庄襄王元年，任吕不韦为丞相，并封之为文信侯，把河南雒阳一带的十万户封给他作为领地。
-
-庄襄王在位三年去世，太子政也就是后来的秦始皇继立为王，他又尊吕不韦为相国，恭敬地称他为“仲父”。当时秦始皇年纪小，太后还经常与吕不韦私通。吕不韦家里的奴仆多达上万人。
-
-这时候，魏国有信陵君，楚国有春申君，赵国有平原君，齐国有孟尝君，都是以礼贤下士、招纳宾客相竞争。吕不韦觉得秦国有如此之强的实力，在这方面也不能比别国差，于是也招纳士人，优礼相待，于是他门下的食客竟达到了三千多。当时其他国家有许多善辩的学者，如荀况等人，他们的著作都是四海皆知。吕不韦见此光景，也让他的宾客们人人动笔，把自己知道的事情都写出来，他把这些论著编辑成了八览、六论、十二纪，共二十多万字。他认为天地之间、古往今来的万事万物在这部书里无所不包，所以称之为《吕氏春秋》。他把这部书公布在咸阳市场的大门上，并在上面悬赏千金，邀请各国的游士宾客们来看，说是谁能够给这部书增加或删掉一个字，就把这千金送给他。
-
-后来秦始皇的年龄越来越大了，而太后还是不停地跟吕不韦私通。吕不韦害怕事情给秦始皇发现自己遭殃，于是就暗中找到了一个生殖器特别粗大的名叫嫪毒的男人，做他的门客，吕不韦每当在家里举行歌舞杂技表演的时候，就让嫪毒用阴茎挑着一个桐木做的车轮子当众行走，并有意地让太后听说这件事，以引诱太后。太后听说后，果然想暗中得到嫪毒。于是吕不韦就把嫪毒送给了太后，同时又假意让人控告了嫪毒一个应受宫刑的罪。而后吕不韦又暗中告诉太后说：“先假装给他来个宫刑，而后就可以让他在宫内服侍你了。”于是太后就暗中赏给了主管动刑的人许多东西，让他们假装给嫪毒施了刑，给嫪毒拔去了胡子、眉毛，使他成了一个太监的样子，然后就让他去伺候太后。太后和嫪毒私通后，对他非常喜欢。很快地就怀了孕，太后为了怕人知道，就谎称从占卜中得知应该离开宫廷到外地躲避一段时间。就这样她搬到雍县的离宫中去住了。嫪毒经常跟着太后，得到的赏赐很多，国家的许多事情都是嫪毒说了算。嫪毒家里的奴仆达到几千人，那些找到门上想为嫪毒当舍人的宾客也有上千个。
-
-秦始皇七年，庄襄王的母亲夏太后死了。因为在此以前孝文王的王后华阳太后已经和孝文王合葬在寿陵，而夏太后的儿子庄襄王是葬在芷阳，因此夏太后生前就告诉人们，叫人们等她死后把她单独地埋葬在杜县城东，她说“这样向东可以看到儿子，向西可以看到丈夫，而且这个地方百年以后将会形成一个有万户住家的城市”。
-
-秦始皇九年，有人告发嫪毒不是一个真正的太监，说他经常跟太后私通，已经生了两个儿子，都在某个地方藏着。还说嫪毒已经和太后商量定了，等到大王死后，就让他们的孩子为王。秦始皇一听就把嫪毒下了狱。经过审问，了解了实情，事情牵连到了相国吕不韦。当年九月，秦始皇下令诛灭了嫪毒的三族，并杀掉了他跟太后所生的两个儿子，而把太后放逐到了雍县的离宫去居住。所有嫪毒的门客都一律被抄没家产流放到蜀地。秦始皇也想杀掉吕不韦，但因为他侍候先王的功劳较大，此外还有许多宾客辩士为他说情，所以秦始皇也就不忍心再杀他了。
-
-秦始皇十年十月，免去了相国吕不韦的职位。后来齐国人茅焦劝说秦始皇，秦始皇才到雍县把太后接回了咸阳，而同时下令让吕不韦到他河南的封地上去住。
-
-在这以后的一年多里，各国的宾客使者们络绎不绝地到河南封地上去拜会吕不韦。秦始皇怕吕不韦再闹乱子，于是给他写了一封信说：“你对秦国有什么功劳，以至于享用着河南的封地十万户？你跟秦国有什么亲缘？以至于被称为仲父。你要带着你的家属都给我搬到蜀地去！”吕不韦考虑着自己这样受逼迫越来越紧，最后可能要被砍头，于是就自已喝毒酒死了。秦始皇一见他所恨的吕不韦和嫪毒都已经死了，于是就下令放回了那些被流放到蜀地去的嫪毒的门客。
-
-秦始皇十九年，太后去世，被谥为帝太后，跟庄襄王一同合葬在了芷阳。
-
-太史公说：吕不韦和嫪毒显贵时，被封为文信侯。当有人告发嫪毒，嫪毒很快就知道了。秦始皇先是悄悄地审问了一些太后与嫪毒周围的人，还没有对嫪毒动手，就到雍县祭天去了。这时嫪毒害怕秦始皇回来大祸难免，于是就和他的党羽们商量，盗盖了太后的印玺，假传太后的命令发兵在蕲年宫叛乱。秦始皇闻讯后，派兵讨伐嫪毒，嫪毒被打败逃走了，秦始皇的人追到好畤，杀掉了嫪毒，又灭了他的满门。而吕不韦从此也就跟着失势了。孔子在《论语》中曾说过一种名声不小而行为很坏的所谓“闻人”，吕不韦大概就是属于这一种吧！</div>
-        </section>
-        <section>
-          <h3>English</h3>
-          <div class="txt">Lü Buwei was a great merchant of Yangdi who, by travelling here and there, buying cheap and selling dear, had accumulated a fortune amounting to thousands in gold.
-
-In the fortieth year of the reign of King Zhaoxiang of Qin (267 BC), the crown prince died, and two years later, in the forty-second year of his reign, the king designated his second son, Lord Anguo, as crown prince. Lord Anguo had over twenty sons. He had a concubine of whom he was extremely fond and whom he had designated as his consort with the title of Lady Huayang, but she had borne him no sons. By another concubine, of the Xia family, who no longer enjoyed his favour he had a son named Zichu, one of the younger among his twenty or more sons. Zichu had been sent by the state of Qin to be a hostage at the court of Zhao, and since, in spite of this, Qin had several times invaded Zhao, the Zhao court accordingly treated Zichu with scant respect.
-
-Being merely a grandson of the king of Qin and the son of a concubine, and having been sent as hostage to one of the other feudal states, Zichu was poorly provided with carriages and other equipment and had to live in straightened circumstances, unable to do as he pleased. Lü Buwei, visiting Handan, the capital of Zhao, on business, saw him and was moved to pity. “Here is a rare piece of goods to put in my warehouse!” he exclaimed. He then went and called on Zichu, remarking, “I know how to enlarge your gate for you!” Zichu laughed and said, “You’d better enlarge your own gate before you worry about mine!” “You don’t understand,” said Lü Buwei. “The enlarging of my gate depends on the enlarging of yours!” Zichu, guessing what was in his mind, led him to a seat in an inner room and the two were soon deep in conversation. “The king of Qin is old and Lord Anguo has been designated crown prince,” Lü Buwei said. “I am told that Lord Anguo is very much in love with Lady Huayang, and since she has no son of her own, it will be up to her alone to decide which son shall be appointed as the rightful heir. Now you have twenty or more brothers, and from the point of view of age, you are about halfway down the line. You enjoy no particular favour and have been a hostage at the court of one of the other feudal lords for a long time. If your grandfather, the old king, should pass away and Lord Anguo become king, I’m afraid you would have little chance of competing for the position of crown prince with your elder brothers or with your other brothers who are there in person morning and evening to wait upon your father.” “True,” said Zichu. “But what can I do about it?” Lü Buwei said, “You are poor and living in a foreign land. You have nothing to use as gifts to present to the members of your family or to attract a band of followers about you. I too am poor, but with your permission I would like to take a thousand measures of gold and travel west on your behalf to Qin, where I will wait upon Lord Anguo and Lady Huayang and see to it that you are made the rightful heir.” Zichu bowed his head and said, “If indeed it should turn out as you say, when the day comes I hope you will allow me to divide the state of Qin and share it with you !”
-
-Lü Buwei accordingly took 500 measures of gold and presented it to Zichu to be used as expense money in attracting a band of followers, and with another 500 he purchased various rare objects, trinkets, and toys, which he took with him west on a trip to Qin. There he sought an interview with the elder sister of Lady Huayang and asked that the gifts he had brought be presented to Lady Huayang. He took the opportunity to mention how virtuous and wise Zichu was, how he had friends among the followers of the various feudal lords all over the world, how he was constantly heard to exclaim, “Her Ladyship is as precious as Heaven itself to me!”, and how he wept day and night with longing for his father, the crown prince, and Lady Huayang. Lady Huayang was very pleased with this message. Lü Buwei then persuaded the elder sister to speak to Lady Huayang to this effect: “They say that one who has only beauty to offer a man will find, as beauty fades, that his love grows cold. Now you wait upon the crown prince but, though he loves you dearly, you have no son. Before it is too late, should you not take this opportunity to choose one of his sons whom you deem worthy and befriend him, seeing to it that he is elevated to the position of rightful heir and treating him as your own son? Then, as long as your husband lives, you will enjoy honour; and when his hundred years of life are ended and the one whom you call son becomes king, you need never fear any loss of position. This is what they call ‘speaking one word that brings ten thousand years of gain.’ But if now in blossom time you do not make certain that your roots are firm, then when beauty has faded and love grown cold, though you might hope for a chance to ‘speak one word’, how could you gain a hearing? Now Zichu is a worthy man and, being far down the line, knows that he cannot hope to become heir by the normal order of succession. In addition, his mother enjoys no favour, and so he offers all his devotion to you. If you were truly willingly to use this moment to pluck him from the line of succession and make him the heir, then to the end of your days you would enjoy favour in the state of Qin!” Lady Huayang, convinced of the truth of this argument, waited until her husband, the crown prince, was at leisure and then casually mentioned that Zichu, who had been sent as hostage to Zhao, was a man of outstanding worth and that everyone coming from abroad praised him highly. Then, with tears in her eyes, she said, “I have been fortunate enough to be assigned to your women’s quarters, but not so fortunate as to bear a son. I beg you to give me Zichu for a son and to set him up as the rightful heir so that I may have someone to entrust my fate to!” Lord Anguo gave his consent and had a jade tally engraved to this effect which he divided with Lady Huayang, promising that he would make Zichu his rightful heir. Then Lord Auguo and Lady Huayang sent rich gifts to Zichu and asked Lü Buwei to act as his tutor. As a result, Zichu became increasingly renowned among the feudal lords.
-
-Lü Buwei had selected from among the ladies of Handan one of matchless beauty and great skill in dancing and had lived with her, and in time he learned that she was pregnant. Zichu, joining Lü Buwei in a drinking bout, happened to catch sight of her and was pleased. Immediately he stood up, proposed a toast to Lü’s long life, and asked if he might have her. Lü Buwei was outraged, but soon recalled that he had by now invested all of his family’s wealth in Zichu in hopes of fishing up some wonderful prize, and so in the end he presented the woman to him. She concealed the fact that she was pregnant, and when her time was up, she bore a son who was named Zheng. Zichu eventually made her his consort.
-
-In the fiftieth year of his reign (257 BC) King Zhaoxiang of Qin sent Wang Yi to lay siege to Handan and, when the situation grew critical, the men of Zhao wanted to kill Zichu. Zichu and Lü Buwei plotted together, however, and distributed 600 catties of gold to the officers who were in charge of guarding them. In this way Zichu managed to escape, make his way to the Qin army, and eventually return home. The men of Zhao then proposed to kill Zichu’s wife and child, but because his wife was the daughter of a wealthy family in Zhao, she was able to go into hiding; thus both mother and son escaped alive. King Zhaoxiang of Qin passed away in the fifty-sixth year of his reign (251 BC). The crown prince, Lord Anguo, succeeded him as king, Lady Huayang became queen, and Zichu was made crown prince. The state of Zhao obliged by sending Zichu’s wife and son Zheng to their new home in Qin.
-
-The king of Qin passed away after one year of rule and was given the posthumous title of King Xiaowen. The crown prince Zichu succeeded him and is known as King Zhuangxiang. Queen Huayang, whom King Zhuangxiang had come to treat as a mother, was given the title of Queen Dowager Huayang, and his real mother, whose family name was Xia, was called Queen Dowager Xia. In the first year of his reign (250 BC), King Zhuangxiang made Lü Buwei his chancellor and enfeoffed him as marquis of Wenxin with the revenue from 100,000 households in Henan and Luoyang.
-
-King Zhuangxiang passed away after three years on the throne and the crown prince Zheng became king. He honoured Lü Buwei with the position of prime minister and as a mark of respect addressed him as Zhongfu or Uncle. The new king of Qin was still young and his mother, the former concubine of Lü Buwei, who had now become queen dowager, from time to time had sexual relations with Lü Buwei in secret. Lü Buwei had some 10,000 male servants in his household.
-
-This was the period of Lord Xinling of Wei, Lord Chunshen of Chu, Lord Pingyuan of Zhao, and Lord Mengchang of Qi, all men who were willing to humble themselves before others and who delighted in gathering bands of followers about them, seeking in this way to outdo one another. Lü Buwei felt that, since Qin was a powerful state, it was disgraceful for it not to do likewise, and so he too set about attracting gentlemen to his service with offers of generous rewards and treatment, and in time gathered as many as 3,000 men who lived and ate at his expense. This was also the period when there were many skilled debaters in the various feudal states, men such as Xun Qing who wrote books and circulated them throughout the world. Lü Buwei accordingly ordered each of his retainers to write down what he himself had learned, and then collected and edited the results into a work comprising eight lan or “surveys”, six lun or “discussions”, and twelve ji or “records”, totalling over 20,000 characters. It was intended to embrace all the affairs of heaven, earth, the ten thousand things, yesterday, and today, and was entitled “The Spring and Autumn of Mr Lü.” The text was posted on the market gate of Xianyang, the Qin capital, with 1,000 pieces of gold suspended above it. An invitation to the wandering scholars and retainers of the various feudal lords informed them that the 1,000 in gold would be awarded to anyone who could add or subtract a single character from it.
-
-The king of Qin, who was later to bear the title of First Emperor of the Qin, in time grew to manhood, but his mother, the queen dowager, did not cease her wanton behaviour. Lü Buwei began to fear that, if her conduct were ever brought to light, he himself would become involved in the scandal. He therefore searched about in secret until he found a man named Lao Ai who had an unusually large penis, and made him a servant in his household. Then, when an occasion arose, he had suggestive music performed and, instructing Lao Ai to stick his penis through the centre of a wheel made of paulownia wood, had him walk about with it, making certain that the report of this reached the ears of the queen dowager so as to excite her interest. She received the report and, as had been expected, wanted to have the man smuggled into her quarters. Lü Buwei then presented Lao Ai, at the same time getting someone to pretend to accuse him of a crime for which the punishment was castration. Lü Buwei spoke to the queen dowager in private, pointing out that, if the man were subjected to a mock castration, he could then be taken into service in the queen’s private apartments. The queen accordingly sent lavish gifts in secret to the official who was in charge of performing the castration, who then pretended to carry out the sentence, plucking out the man’s beard and eyebrows and making him into a “eunuch”. In this way he eventually came to wait on the queen, who carried on clandestine relations with him and grew to love him greatly. In time she became pregnant and, fearing discovery, pretended to conduct a divination that indicated that, in order to avoid a period of evil influences, she should move from the palace and take up residence in Yong. Lao Ai was constantly in attendance on her and received lavish gifts and awards. All decisions were made by Lao Ai, who was waited upon by an entourage of several thousand male servants. His followers numbered over 1,000, all men who flocked to him in hopes of attaining government office.
-
-In the seventh year of the king’s reign (240 BC) Queen Dowager Xia, the mother of King Zhuangxiang, passed away. Earlier Queen Dowager Huayang, the queen of King Xiaowen, had been buried with her husband, King Xiaowen, at Shouling, and Queen Dowager Xia’s son, King Zhuangxiang, had been buried at Zhiyang. Accordingly, Queen Dowager Xia was buried separately at a spot east of Du where, in her words, “I may look eastward to my son and westward to my husband. After 100 years, a city of 10,000 households will surely grow up by my side.”
-
-In the ninth year of the king’s reign someone reported that Lao Ai was not a real eunuch at all, but had constantly been engaging in secret misconduct with the queen dowager, and that she had borne him two sons, both of whom were being kept in hiding. “He and the queen dowager have agreed,” said the report, “that, when the present king passes on, one of these sons shall succeed him.” The king thereupon referred the matter to his officials for investigation and all the facts were brought to light, including those that implicated the prime minister Lü Buwei. In the ninth month Lao Ai and his three sets of relatives were executed, the two sons whom the queen dowager had borne were put to death, and the residence of the queen was officially transferred to Yong. Lao Ai’s followers were all deprived of their household goods and sent into exile in Shu. The king of Qin wanted to put the prime minister Lü Buwei to death as well but, because he had won great distinction in the service of the former king, and because so many followers and men of eloquence came forward to speak on his behalf, the king could not bring himself to apply the death penalty.
-
-In the tenth month of the tenth year of his reign the king of Qin removed Lü Buwei from the office of prime minister. Later Mao Jiao, a man of Qi, spoke to the king of Qin and persuaded him to send to Yong for his mother, the queen dowager, and allow her to return to residence in Xianyang. The king also ordered Lü Buwei, the marquis of Wenxin, to leave the capital and proceed to his fief in Henan.
-
-A year or so later he learned that so many of the followers and envoys of the various feudal lords were travelling to Henan to call on Lü Buwei that their carriages were never out of sight of each other on the road. Fearful that there might be some plot afoot, the king sent a letter to Lü Buwei saying, “What did you ever do for the state of Qin that Qin should enfeoff you in Henan with the revenue from a 100,000 households? What relation are you to the ruler of Qin that you should be addressed as ‘Uncle’? Be so good as to take your family and retinue and move your residence to Shu!” Lü Buwei judged that he would only have to suffer increasing insult and, fearing the death penalty, he drank poison and died. With Lü Buwei and Lao Ai, the two men who had been the butt of his anger, both dead, the king recalled Lao Ai’s retainers who had been exiled to Shu.
-
-In the nineteenth year of his reign his mother, the queen dowager, passed away and was given the posthumous title of Empress Dowager. She was buried with her husband, King Zhuangxiang, at Zhiyang.
-
-The Grand Historian remarks: Lü Buwei and Lao Ai were both honoured with fiefs, the former receiving the title of marquis of Wenxin. When accusations were first made against Lao Ai, Lao got word of it. The king of Qin questioned those about him as to the truth of the charges but had not yet uncovered any definite evidence when he set off for Yong to perform the suburban sacrifice. Lao Ai, fearful that calamity was about to befall him, plotted with the members of his clique and, using the queen dowager’s seal of authority without her permission, called out troops and initiated a revolt in the Qinian Palace. The king dispatched officers to attack Lao Ai’s forces and Lao Ai fled in defeat. He was pursued and cut down at Haozhi, and eventually his whole clan was wiped out. This marked the beginning of Lü Buwei’s fall from power. What Confucius said about the “man of fame” might well apply to this Master Lü, might it not?</div>
-        </section>
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吕不韦者，阳翟大贾人也。往来贩贱卖贵，家累千金。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">吕不韦是韩国阳翟的一个大商人。到处贱买贵卖地做买卖，以至于使家中积蓄了千金的财富。</td>
+                <td class="english-cell col-english" data-lang="english">Lü Buwei was a great merchant of Yangdi who, by travelling here and there, buying cheap and selling dear, had accumulated a fortune amounting to thousands in gold.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦昭王四十年，太子死。其四十二年，以其次子安国君为太子。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦昭王四十年，太子病故。秦昭王四十二年，立他的第二个儿子安国君做了太子。</td>
+                <td class="english-cell col-english" data-lang="english">In the fortieth year of the reign of King Zhaoxiang of Qin (267 BC), the crown prince died, and two years later, in the forty-second year of his reign, the king designated his second son, Lord Anguo, as crown prince.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">安国君有子二十余人。安国君有所甚爱姬，立以为正夫人，号曰华阳夫人。华阳夫人无子。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">而安国君这时已经是有二十多个儿子的父亲了。他有个最喜爱的小老婆，后来把她立为正夫人，人称华阳夫人。而华阳夫人偏偏没有儿子。</td>
+                <td class="english-cell col-english" data-lang="english">Lord Anguo had over twenty sons. He had a concubine of whom he was extremely fond and whom he had designated as his consort with the title of Lady Huayang, but she had borne him no sons.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">安国君中男名子楚，子楚母曰夏姬，毋爱。子楚为秦质子于赵。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">安国君有个排行居中的儿子叫子楚，子楚的母亲叫夏姬，不被安国君宠爱，因而子楚被秦国送到赵国去做人质。</td>
+                <td class="english-cell col-english" data-lang="english">By another concubine, of the Xia family, who no longer enjoyed his favour he had a son named Zichu, one of the younger among his twenty or more sons. Zichu had been sent by the state of Qin to be a hostage at the court of Zhao.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦数攻赵，赵不甚礼子楚。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来由于秦国又屡次进攻赵国，所以赵国对子楚很不尊重。</td>
+                <td class="english-cell col-english" data-lang="english">and since, in spite of this, Qin had several times invaded Zhao, the Zhao court accordingly treated Zichu with scant respect.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">子楚，秦诸庶孽孙，质于诸侯，车乘进用不饶，居处困，不得意。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">由于子楚本来就不是秦王的正根，再加上是在国外做人质，因而他的车马用度都不富裕，日常生活很困难，心中闷闷不乐。</td>
+                <td class="english-cell col-english" data-lang="english">Being merely a grandson of the king of Qin and the son of a concubine, and having been sent as hostage to one of the other feudal states, Zichu was poorly provided with carriages and other equipment and had to live in straightened circumstances, unable to do as he pleased.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吕不韦贾邯郸，见而怜之，曰 “此奇货可居也”。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时吕不韦正好到邯郸做生意，他一见子楚的样子，对他很可怜，心想：“这倒是件奇货，值得收藏。”</td>
+                <td class="english-cell col-english" data-lang="english">Lü Buwei, visiting Handan, the capital of Zhao, on business, saw him and was moved to pity. “Here is a rare piece of goods to put in my warehouse!” he exclaimed.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">乃往见子楚，说曰：“吾能大子之门。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是就去见子楚说：“我能让您的门庭光大。”</td>
+                <td class="english-cell col-english" data-lang="english">He then went and called on Zichu, remarking, “I know how to enlarge your gate for you!”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">子楚笑曰：“且自大君之门，而乃大吾门！”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">子楚见他是个商人，不由得笑了，说：“还是先去光大你自己的门庭吧，配说什么光大我的门庭！"</td>
+                <td class="english-cell col-english" data-lang="english">Zichu laughed and said, “You’d better enlarge your own gate before you worry about mine!”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吕不韦曰：“子不知也，吾门待子门而大。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">吕不韦说：“我的门庭得靠着您门庭的光大而光大。”</td>
+                <td class="english-cell col-english" data-lang="english">“You don’t understand,” said Lü Buwei. “The enlarging of my gate depends on the enlarging of yours!”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">子楚心知所谓，乃引与坐，深语。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">子楚明白了吕不韦说话的意思，于是就请他坐下，和他进一步地进行了交谈。</td>
+                <td class="english-cell col-english" data-lang="english">Zichu, guessing what was in his mind, led him to a seat in an inner room and the two were soon deep in conversation.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吕不韦曰：“秦王老矣，安国君得为太子。窃闻安国君爱幸华阳夫人，华阳夫人无子，能立適嗣者独华阳夫人耳。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">吕不韦说：“秦王已经老了，安国君现在是太子。我听说安国君宠爱华阳夫人，华阳夫人没有儿子。而能够为安国君树立接班人的又只有华阳夫人。</td>
+                <td class="english-cell col-english" data-lang="english">“ The king of Qin is old and Lord Anguo has been designated crown prince,” Lü Buwei said. “I am told that Lord Anguo is very much in love with Lady Huayang, and since she has no son of her own, it will be up to her alone to decide which son shall be appointed as the rightful heir.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">今子兄弟二十余人，子又居中，不甚见幸，久质诸侯。即大王薨，安国君立为王，则子毋几得与长子及诸子旦暮在前者争为太子矣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">如今您的兄弟有二十多个，您又排行居中，不怎么受宠爱，长久地在国外当人质。等到某一天秦王去世，安国君即位为王，到那时您就不可能去同您的长兄和那些朝夕在安国君面前的弟兄们去争太子的位置了。”</td>
+                <td class="english-cell col-english" data-lang="english">Now you have twenty or more brothers, and from the point of view of age, you are about halfway down the line. You enjoy no particular favour and have been a hostage at the court of one of the other feudal lords for a long time. If your grandfather, the old king, should pass away and Lord Anguo become king, I’m afraid you would have little chance of competing for the position of crown prince with your elder brothers or with your other brothers who are there in person morning and evening to wait upon your father.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">子楚曰：“然。为之奈何？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">子楚说：“是的。那怎么办呢？”</td>
+                <td class="english-cell col-english" data-lang="english">“True,” said Zichu. “But what can I do about it?”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吕不韦曰：“子贫，客于此，非有以奉献于亲及结宾客也。不韦虽贫，请以千金为子西游，事安国君及华阳夫人，立子为適嗣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">吕不韦说：“您本来就穷，又是在赵国做客，您当然拿不出什么东西去孝敬您的父母和结交宾客了。我虽然也不富裕，但我可以带着千金替您到你们国家去向安国君和华阳夫人进行活动，想法让他们立您为接班人。”</td>
+                <td class="english-cell col-english" data-lang="english">Lü Buwei said, “You are poor and living in a foreign land. You have nothing to use as gifts to present to the members of your family or to attract a band of followers about you. I too am poor, but with your permission I would like to take a thousand measures of gold and travel west on your behalf to Qin, where I will wait upon Lord Anguo and Lady Huayang and see to it that you are made the rightful heir.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">子楚乃顿首曰：“必如君策，请得分秦国与君共之。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">子楚一听立即向吕不韦叩头说：“如果真能实现您的计划，我愿意把秦国分一半给您。”</td>
+                <td class="english-cell col-english" data-lang="english">Zichu bowed his head and said, “If indeed it should turn out as you say, when the day comes I hope you will allow me to divide the state of Qin and share it with you !”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吕不韦乃以五百金与子楚，为进用，结宾客；</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是吕不韦就拿出五百金给了子楚，作为他的日常生活以及结交宾客之用；</td>
+                <td class="english-cell col-english" data-lang="english">Lü Buwei accordingly took 500 measures of gold and presented it to Zichu to be used as expense money in attracting a band of followers.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">而复以五百金买奇物玩好，自奉而西游秦，求见华阳夫人姊，而皆以其物献华阳夫人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">又用了五百金买了一批奇珍异宝，自己带着到了秦国。他先找到了华阳夫人的姐姐，托她把那些珍宝送给了华阳夫人。</td>
+                <td class="english-cell col-english" data-lang="english">and with another 500 he purchased various rare objects, trinkets, and toys, which he took with him west on a trip to Qin. There he sought an interview with the elder sister of Lady Huayang and asked that the gifts he had brought be presented to Lady Huayang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">因言子楚贤智，结诸侯宾客遍天下，常曰 “楚也以夫人为天，日夜泣思太子及夫人”。夫人大喜。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">并顺便说了些子楚如何贤能智慧，已经结交了各个国家的许多宾客等等。并说子楚经常对人们说，他爱戴华阳夫人就像爱戴老天爷一样，他不分白天黑夜，只要一想到太子和夫人就哭。华阳夫人听了非常高兴。</td>
+                <td class="english-cell col-english" data-lang="english">He took the opportunity to mention how virtuous and wise Zichu was, how he had friends among the followers of the various feudal lords all over the world, how he was constantly heard to exclaim, “Her Ladyship is as precious as Heaven itself to me!”, and how he wept day and night with longing for his father, the crown prince, and Lady Huayang. Lady Huayang was very pleased with this message.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">不韦因使其姊说夫人曰:“吾闻之，以色事人者，色衰而爱弛。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">吕不韦又乘势请华阳夫人的姐姐劝华阳夫人说：“俗话说，靠着美貌侍候人的，等到一老就会失宠。</td>
+                <td class="english-cell col-english" data-lang="english">Lü Buwei then persuaded the elder sister to speak to Lady Huayang to this effect: “They say that one who has only beauty to offer a man will find, as beauty fades, that his love grows cold.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">今夫人事太子，甚爱而无子，不以此时蚤自结于诸子中贤孝者，举立以为適而子之，夫在则重尊，夫百岁之后，所子者为王，终不失势，此所谓一言而万世之利也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">现在太子虽然特别喜欢你，可是你没有儿子，你为什么不在这时及早在那些公子中挑一个贤能孝顺的，把他认为儿子立为接班人呢？这样，你丈夫在世时，你的地位可以更加尊贵；你丈夫去世后，是你所认的儿子继位为王，你的权势也不会消失，这不是说一句话就可以得到永久性的利益吗？</td>
+                <td class="english-cell col-english" data-lang="english">Now you wait upon the crown prince but, though he loves you dearly, you have no son. Before it is too late, should you not take this opportunity to choose one of his sons whom you deem worthy and befriend him, seeing to it that he is elevated to the position of rightful heir and treating him as your own son? Then, as long as your husband lives, you will enjoy honour; and when his hundred years of life are ended and the one whom you call son becomes king, you need never fear any loss of position. This is what they call ‘speaking one word that brings ten thousand years of gain.’</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">不以繁华时树本，即色衰爱弛后，虽欲开一语，尚可得乎？</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">你不趁着风华正茂的时候为自己立下根基，等到年老失宠时，即使再想说话，还会有人听吗？</td>
+                <td class="english-cell col-english" data-lang="english">But if now in blossom time you do not make certain that your roots are firm, then when beauty has faded and love grown cold, though you might hope for a chance to ‘speak one word’, how could you gain a hearing?</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">今子楚贤，而自知中男也，次不得为適，其母又不得幸，自附夫人，夫人诚以此时拔以为適，夫人则竟世有宠于秦矣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">现在子楚为人不错，自己又知道排行居中，按次序也轮不到他，他的母亲也不受宠幸，所以他愿意来归附你。你如果能趁此时机认他为子，立他为接班人，那么你这辈子就会在秦国永远受宠了。”</td>
+                <td class="english-cell col-english" data-lang="english">Now Zichu is a worthy man and, being far down the line, knows that he cannot hope to become heir by the normal order of succession. In addition, his mother enjoys no favour, and so he offers all his devotion to you. If you were truly willingly to use this moment to pluck him from the line of succession and make him the heir, then to the end of your days you would enjoy favour in the state of Qin!”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">华阳夫人以为然，承太子闲，从容言子楚质于赵者绝贤，来往者皆称誉之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">华阳夫人觉得有理，于是就找机会，自然地对安国君讲起了在赵国当人质的子楚的事情，说子楚为人非常好，说来往于秦、赵两国之间的人们都称赞他。</td>
+                <td class="english-cell col-english" data-lang="english">Lady Huayang, convinced of the truth of this argument, waited until her husband, the crown prince, was at leisure and then casually mentioned that Zichu, who had been sent as hostage to Zhao, was a man of outstanding worth and that everyone coming from abroad praised him highly.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">乃因涕泣曰：“妾幸得充后宫，不幸无子，愿得子楚立以为適嗣，以托妾身。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">说着说着，华阳夫人又哭了起来，说：“我很幸运能够进了您的后宫，可是我非常不幸的是没有儿子，我现在想把子楚认为儿子，让他做您的接班人，这样也可以让我终身有靠。”</td>
+                <td class="english-cell col-english" data-lang="english">Then, with tears in her eyes, she said, “I have been fortunate enough to be assigned to your women’s quarters, but not so fortunate as to bear a son. I beg you to give me Zichu for a son and to set him up as the rightful heir so that I may have someone to entrust my fate to!”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">安国君许之，乃与夫人刻玉符，约以为適嗣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">安国君答应了，于是给华阳夫人刻了玉符，约定将子楚立为接班人。</td>
+                <td class="english-cell col-english" data-lang="english">Lord Anguo gave his consent and had a jade tally engraved to this effect which he divided with Lady Huayang, promising that he would make Zichu his rightful heir.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">安国君及夫人因厚馈遗子楚，而请吕不韦傅之，子楚以此名誉益盛于诸侯。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">接着安国君和华阳夫人派人送给了子楚许多东西，并请吕不韦去调护辅导他，从此子楚在各国之间的名声就越来越大了。</td>
+                <td class="english-cell col-english" data-lang="english">Then Lord Auguo and Lady Huayang sent rich gifts to Zichu and asked Lü Buwei to act as his tutor. As a result, Zichu became increasingly renowned among the feudal lords.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吕不韦取邯郸诸姬绝好善舞者与居，知有身。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">吕不韦从邯郸城中挑选了一位容貌绝美且擅长舞蹈的女子，与她同居，后来知道她怀了身孕。</td>
+                <td class="english-cell col-english" data-lang="english">Lü Buwei had selected from among the ladies of Handan one of matchless beauty and great skill in dancing and had lived with her, and in time he learned that she was pregnant.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">子楚从不韦饮，见而说之，因起为寿，请之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">子楚到吕不韦家赴宴饮酒，见到这位女子，心中喜爱，于是起身敬酒祝寿，请求吕不韦将她赐给自己。</td>
+                <td class="english-cell col-english" data-lang="english">Zichu, joining Lü Buwei in a drinking bout, happened to catch sight of her and was pleased. Immediately he stood up, proposed a toast to Lü’s long life, and asked if he might have her.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吕不韦怒，念业已破家为子楚，欲以钓奇，乃遂献其姬。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">吕不韦起初很生气，但转念一想，自己已经为子楚耗尽家产，想要借此实现“钓取奇货”的谋划，于是就把这位女子献给了子楚。</td>
+                <td class="english-cell col-english" data-lang="english">Lü Buwei was outraged, but soon recalled that he had by now invested all of his family’s wealth in Zichu in hopes of fishing up some wonderful prize, and so in the end he presented the woman to him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">姬自匿有身，至大期时，生子政。子楚遂立姬为夫人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这位女子隐瞒了自己怀孕的事实，等到足月时，生下一个儿子，取名为“政”。子楚于是立她为夫人。</td>
+                <td class="english-cell col-english" data-lang="english">She concealed the fact that she was pregnant, and when her time was up, she bore a son who was named Zheng. Zichu eventually made her his consort.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦昭王五十年，使王崎围邯郸，急，赵欲杀子楚。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦昭王五十年，（秦国）派王崎率军包围邯郸，形势危急，赵国想杀死子楚。</td>
+                <td class="english-cell col-english" data-lang="english">In the fiftieth year of his reign (257 BC) King Zhaoxiang of Qin sent Wang Yi to lay siege to Handan and, when the situation grew critical, the men of Zhao wanted to kill Zichu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">子楚与吕不韦谋，行金六百斤予守者吏，得脱，亡赴秦军，遂以得归。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">子楚与吕不韦商议，拿出六百斤黄金贿赂看守他的官吏，得以脱身，逃到秦军阵营中，最终得以返回秦国。</td>
+                <td class="english-cell col-english" data-lang="english">Zichu and Lü Buwei plotted together, however, and distributed 600 catties of gold to the officers who were in charge of guarding them. In this way Zichu managed to escape, make his way to the Qin army, and eventually return home.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赵欲杀子楚妻子，子楚夫人，赵豪家女也，得匿，以故母子竟得活。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵国又想杀死子楚的妻子和儿子，子楚的夫人本是赵国豪门之女，得以躲藏起来，因此母子二人最终保全了性命。</td>
+                <td class="english-cell col-english" data-lang="english">The men of Zhao then proposed to kill Zichu’s wife and child, but because his wife was the daughter of a wealthy family in Zhao, she was able to go into hiding; thus both mother and son escaped alive.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦昭王五十六年，薨，太子安国君立为王，华阳夫人为王后，子楚为太子。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦昭王五十六年，昭王去世，太子安国君继位为王，华阳夫人被立为王后，子楚被立为太子。</td>
+                <td class="english-cell col-english" data-lang="english">King Zhaoxiang of Qin passed away in the fifty-sixth year of his reign (251 BC). The crown prince, Lord Anguo, succeeded him as king, Lady Huayang became queen, and Zichu was made crown prince.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赵亦奉子楚夫人及子政归秦。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵国也护送子楚的夫人和儿子政回到秦国。</td>
+                <td class="english-cell col-english" data-lang="english">The state of Zhao obliged by sending Zichu’s wife and son Zheng to their new home in Qin.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦王立一年，薨，谥为孝文王。太子子楚代立，是为庄襄王。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">安国君（秦孝文王）继位仅一年就去世了，谥号为“孝文王”。太子子楚继位，这就是庄襄王。</td>
+                <td class="english-cell col-english" data-lang="english">The king of Qin passed away after one year of rule and was given the posthumous title of King Xiaowen. The crown prince Zichu succeeded him and is known as King Zhuangxiang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">庄襄王所母华阳后为华阳太后，真母夏姬尊以为夏太后。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">庄襄王认作母亲的华阳王后，被尊为华阳太后；他的亲生母亲夏姬，被尊为夏太后。</td>
+                <td class="english-cell col-english" data-lang="english">Queen Huayang, whom King Zhuangxiang had come to treat as a mother, was given the title of Queen Dowager Huayang, and his real mother, whose family name was Xia, was called Queen Dowager Xia.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">庄襄王元年，以吕不韦为丞相，封为文信侯，食河南雒阳十万户。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">庄襄王元年，任命吕不韦为丞相，封他为“文信侯”，把河南洛阳十万户的赋税作为他的食邑。</td>
+                <td class="english-cell col-english" data-lang="english">In the first year of his reign (250 BC), King Zhuangxiang made Lü Buwei his chancellor and enfeoffed him as marquis of Wenxin with the revenue from 100,000 households in Henan and Luoyang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">庄襄王即位三年，薨，太子政立为王，尊吕不韦为相国，号称“仲父”。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">庄襄王继位三年后去世，太子政继位为王，尊奉吕不韦为相国，称他为“仲父”（仅次于父亲的长辈）。</td>
+                <td class="english-cell col-english" data-lang="english">King Zhuangxiang passed away after three years on the throne and the crown prince Zheng became king. He honoured Lü Buwei with the position of prime minister and as a mark of respect addressed him as Zhongfu or Uncle.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦王年少，太后时时窃私通吕不韦。不韦家僮万人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时秦王政年纪尚小，太后（子楚的夫人，嬴政生母）时常私下与吕不韦通奸。吕不韦家中的奴仆多达一万人。</td>
+                <td class="english-cell col-english" data-lang="english">The new king of Qin was still young and his mother, the former concubine of Lü Buwei, who had now become queen dowager, from time to time had sexual relations with Lü Buwei in secret. Lü Buwei had some 10,000 male servants in his household.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">当是时，魏有信陵君，楚有春申君，赵有平原君，齐有孟尝君，皆下士喜宾客以相倾。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时，魏国有信陵君，楚国有春申君，赵国有平原君，齐国有孟尝君，他们都礼贤下士、喜爱招揽宾客，相互比拼（谁更能吸引人才）。</td>
+                <td class="english-cell col-english" data-lang="english">This was the period of Lord Xinling of Wei, Lord Chunshen of Chu, Lord Pingyuan of Zhao, and Lord Mengchang of Qi, all men who were willing to humble themselves before others and who delighted in gathering bands of followers about them, seeking in this way to outdo one another.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吕不韦以秦之强，羞不如，亦招致士，厚遇之，至食客三千人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">吕不韦认为秦国如此强大，自己在招揽人才方面却不如他们，心中羞愧，于是也招纳士人，优厚地对待他们，门下的食客多达三千人。</td>
+                <td class="english-cell col-english" data-lang="english">Lü Buwei felt that, since Qin was a powerful state, it was disgraceful for it not to do likewise, and so he too set about attracting gentlemen to his service with offers of generous rewards and treatment, and in time gathered as many as 3,000 men who lived and ate at his expense.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">是时诸侯多辩士，如荀卿之徒，著书布天下。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时各诸侯国中有很多能言善辩的学者，像荀卿（荀子）这类人，他们著书立说，著作流传天下。</td>
+                <td class="english-cell col-english" data-lang="english">This was also the period when there were many skilled debaters in the various feudal states, men such as Xun Qing who wrote books and circulated them throughout the world.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吕不韦乃使其客人人著所闻，集论以为八览、六论、十二纪，二十余万言。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">吕不韦于是让门下的宾客每人把自己所知道的事情写下来，将这些论述汇集编辑，整理成“八览”“六论”“十二纪”，共二十多万字。</td>
+                <td class="english-cell col-english" data-lang="english">Lü Buwei accordingly ordered each of his retainers to write down what he himself had learned, and then collected and edited the results into a work comprising eight lan or “surveys”, six lun or “discussions”, and twelve ji or “records”, totalling over 20,000 characters.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">以为备天地万物古今之事，号曰《吕氏春秋》。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他认为这部书涵盖了天地万物、古往今来的所有事情，于是将其命名为《吕氏春秋》。</td>
+                <td class="english-cell col-english" data-lang="english">It was intended to embrace all the affairs of heaven, earth, the ten thousand things, yesterday, and today, and was entitled “The Spring and Autumn of Mr Lü.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">布咸阳市门，悬千金其上，延诸侯游士宾客有能增损一字者予千金。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">吕不韦把这部书公布在咸阳城的市场大门上，在书的上方悬挂着一千金，邀请各诸侯国的游士、宾客前来，宣称若有人能对书中内容增加或删减一个字，就赏赐他一千金。</td>
+                <td class="english-cell col-english" data-lang="english">The text was posted on the market gate of Xianyang, the Qin capital, with 1,000 pieces of gold suspended above it. An invitation to the wandering scholars and retainers of the various feudal lords informed them that the 1,000 in gold would be awarded to anyone who could add or subtract a single character from it.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦王怒，不许。于是相如前进緸，因跪请秦王。秦王不肯击瓴。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦王发怒，不答应。于是蔺相如上前献上盆瓴，又跪着请求秦王演奏。秦王不肯击瓴。</td>
+                <td class="english-cell col-english" data-lang="english">The king of Qin angrily refused. But Lin Xiangru went forward with the pitcher and, kneeling, requested the king to play. The king still refused.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">相如曰：“五步之内，相如请得以颈血溅大王矣!”左右欲刃相如，相如张目叱之，左右皆靡。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">蔺相如说：“五步之内，我就要把脖子上的鲜血溅到大王身上了!”左右的人想要杀蔺相如，蔺相如瞪眼呵斥，他们都退开了。</td>
+                <td class="english-cell col-english" data-lang="english">Lin Xiangru said, “Within five steps, I shall spatter my own blood onto Your Majesty!” The attendants wanted to attack Lin Xiangru, but he glared at them and shouted, and they all shrank back.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">于是秦王不怿，为一击瓴。相如顾召赵御史书曰：“某年月日，秦王为赵王击瓴。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是秦王不高兴，只敲了一下瓴。蔺相如回头召来赵国御史，记载道：“某年某月某日，秦王为赵王击瓴。”</td>
+                <td class="english-cell col-english" data-lang="english">The king of Qin, displeased, then struck the pitcher once. Lin Xiangru turned to summon the Zhao chronicler and recorded, “On such-and-such a date, the king of Qin played the pitcher for the king of Zhao.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦之群臣曰：“请以赵十五城为秦王寿!”蔺相如亦曰：“请以秦之咸阳为赵王寿!”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦国群臣说：“请赵国用十五座城邑为秦王祝寿!”蔺相如也说：“请秦国用咸阳为赵王祝寿!”</td>
+                <td class="english-cell col-english" data-lang="english">The ministers of Qin said, “Let Zhao present fifteen cities to the king of Qin as a birthday gift!” Lin Xiangru replied, “Then let Qin present Xianyang to the king of Zhao as a birthday gift!”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦王竟酒，终不能加胜于赵。赵亦盛设兵以待秦，秦不敢动。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">整个酒宴结束，秦王始终不能压服赵国。赵国又布置重兵防备秦国，秦国因此不敢轻举妄动。</td>
+                <td class="english-cell col-english" data-lang="english">By the end of the banquet, the king of Qin had failed to dominate Zhao. Zhao had also deployed a strong army to guard against Qin, so Qin did not dare make a move.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">既罢归国，以相如功大，拜为上卿，位在廉颇之右。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">会见结束回到赵国后，赵王因蔺相如功劳卓著，任命他为上卿，职位在廉颇之上。</td>
+                <td class="english-cell col-english" data-lang="english">After returning to Zhao, the king appointed Lin Xiangru as chief minister for his great merit, placing him above Lian Po.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">廉颇曰：“我为赵将，有攻城野战之大功，而蔺相如徒以口舌为劳，而位居我上，且相如素贱人，吾羞，不忍为之下。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">廉颇说：“我作为赵国将军，在攻城野战上有大功，而蔺相如只是凭口舌立功，却位居我之上，而且蔺相如本是卑贱之人，我觉得羞耻，不能容忍他的职位在我之上。”</td>
+                <td class="english-cell col-english" data-lang="english">Lian Po said, “I am a general of Zhao, with great achievements in siege and field battles, yet Lin Xiangru has only used his tongue to gain merit, and now ranks above me. Moreover, Lin Xiangru comes from a humble background. I feel ashamed and cannot tolerate being below him.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">宣言曰：“我见相如，必辱之。”相如闻，不肯与会。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">并宣称：“我见到蔺相如，必定要羞辱他。”蔺相如听闻，不愿与廉颇同席。</td>
+                <td class="english-cell col-english" data-lang="english">He proclaimed, “If I see Lin Xiangru, I will humiliate him.” Lin Xiangru heard of this and refused to attend the same gatherings as Lian Po.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">相如每朝时，常称病，不欲与廉颇争列。已而相如出，望见廉颇，相如引车避匿。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">在每次朝会中，他常称病，不愿与廉颇争列。后来蔺相如出门，看见廉颇时，便引车避开隐藏。</td>
+                <td class="english-cell col-english" data-lang="english">At court, he often feigned illness to avoid competing with Lian Po for precedence. Later, when Lin Xiangru went out and saw Lian Po, he deliberately avoided him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">于是舍人相与谏曰：“臣所以去亲戚而事君者，徒慕君之高义也。今君与廉颇同列，廉君宣恶言而君畏匿之，恐惧殊甚，且庸人尚羞之，况于将相乎!臣等不肖，请辞去。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是他的舍人劝谏说：“我们离开亲戚而事奉君主，是因为仰慕君的高义。如今您与廉颇同列，而廉颇说恶言，您又畏惧隐藏，恐惧极大；即使是普通人都会感到羞耻，何况是将相呢？我们这些不才的臣子，请求辞去。”</td>
+                <td class="english-cell col-english" data-lang="english">Then his attendants advised, “We serve our lord only out of admiration for your high virtue. Now that you are ranked alongside Lian Po, and he speaks ill of you while you shrink in fear, the shame is extreme; even ordinary men would feel ashamed, let alone generals and ministers. We, your unworthy attendants, request to resign.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">蔺相如固止之，曰：“公之视廉将军孰与秦王?”曰：“不若也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">蔺相如坚决阻止他们，说：“你们看廉颇将军和秦王，谁更厉害?”他们回答说：“秦王厉害。”</td>
+                <td class="english-cell col-english" data-lang="english">Lin Xiangru firmly stopped them and asked, “In your eyes, General Lian Po or the king of Qin, who is more powerful?” They replied, “The king of Qin is more powerful.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">相如曰：“夫以秦王之威，而相如廷叱之，辱其群臣，相如虽驽，独畏廉将军哉?</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">蔺相如说：“像秦王那样威风，我还当廷叱责他，羞辱他的臣子，我蔺相如虽然笨拙，难道单单害怕廉颇将军吗?</td>
+                <td class="english-cell col-english" data-lang="english">Lin Xiangru said, “If, useless as I am, I can rebuke the mighty king of Qin in court and insult his ministers, why should I be afraid of General Lian Po?</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">顾吾念之，强秦之所以不敢加兵于赵者，徒以吾两人在也。今两虎共斗，其势不俱生。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">我这样考虑，是因为强大的秦国之所以不敢对赵用兵，只因为有我们两个人在。如今两虎发生争斗，势必不可能共存。</td>
+                <td class="english-cell col-english" data-lang="english">To my mind, the reason powerful Qin has not dared to attack Zhao is solely because of the two of us. Now if two tigers fight, both cannot survive.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吾所以为此者，以先国家之急而后私仇也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">我之所以这样做，是把国家的安危放在前面，把私怨放在后面。”</td>
+                <td class="english-cell col-english" data-lang="english">I act as I do because I put the state’s urgent matters before personal grudges.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">廉颇闻之，肉袒负荆，因宾客至蔺相如门谢罪，曰：“鄙贱之人，不知将军宽之至此”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">廉颇听说以后，光着膀子背着荆条，由宾客带着来到蔺相如家门口谢罪，说：“我是鄙贱之人，不知道将军能宽容至此。”</td>
+                <td class="english-cell col-english" data-lang="english">When Lian Po heard this, he bared his shoulders, fastened a thorned switch to his back, and, accompanied by his attendants, went to Lin Xiangru’s gate to apologize, saying, “Contemptible boor that I am, I did not understand your magnanimity, sir!”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">卒相与欢，为刎颈之交。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">终于相互和好，结成生死之交。</td>
+                <td class="english-cell col-english" data-lang="english">They became close friends, ready to die for each other.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">是岁，廉颇东攻齐，破其一军。居二年，廉颇复伐齐幾,拔之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">那一年，廉颇向东攻打齐国，打败了齐国的一支军队。两年后，廉颇又攻打齐国的幾邑，并攻占它。</td>
+                <td class="english-cell col-english" data-lang="english">That year, Lian Po attacked Qi in the east and defeated one of its armies. Two years later he captured another city of Qi.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后三年，廉颇攻魏之防陵、安阳，拔之。后四年，蔺相如将而攻齐，至平邑而罢。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">三年后，廉颇攻打魏国的防陵和安阳，并攻占它们。四年后，蔺相如率军攻打齐国，到平邑就撤军。</td>
+                <td class="english-cell col-english" data-lang="english">Three years later he stormed Fangling and Anyang in Wei and seized them. Four years later Lin Xiangru led an army against Qi but withdrew after reaching Pingyi.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其明年，赵奢破秦军阏与下。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">第二年，赵奢在阏与城下击败了秦军。</td>
+                <td class="english-cell col-english" data-lang="english">The following year Zhao She defeated the Qin army at Yuyu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赵奢者，赵之田部吏也。收租税而平原君家不肯出租，奢以法治之，杀平原君用事者九人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵奢是赵国负责田赋的官员。当平原君家不肯缴纳租税时，赵奢依法处理，杀掉了平原君家里管理事务的九个人。</td>
+                <td class="english-cell col-english" data-lang="english">Zhao She was an official in charge of land taxation in Zhao. When Lord Pingyuan’s family refused to pay taxes, Zhao She enforced the law and executed nine stewards.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君怒，将杀奢。奢因说曰：“君于赵为贵公子，今纵君家而不奉公则法削，法削则国弱，国弱则诸侯加兵。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君十分愤怒，想要杀赵奢。赵奢劝说道：“您在赵国是贵公子，如果纵容家族而不守公法，法律被削弱，则国家会衰弱，国家衰弱则诸侯会用兵攻击赵国。</td>
+                <td class="english-cell col-english" data-lang="english">Lord Pingyuan became angry and wanted to kill Zhao She. Zhao She reasoned with him, “You are a noble of Zhao, but if you let your family ignore the law, then the law is weakened, the state becomes weak, and other lords may invade.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">诸侯加兵，是无赵也，君安得有此富乎?</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">一旦诸侯用兵，赵国就不复存在，您哪还有现在的财富呢?</td>
+                <td class="english-cell col-english" data-lang="english">If Zhao falls, how will you preserve your wealth?</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">以君之贵，奉公如法则上下平，上下平则国强，国强则赵固，而君为贵戚，岂轻于天下邪?”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">以您的尊贵身份，依法办事，则国内上下公平，上下公平则国家强盛，国家强盛则赵国稳固，而您作为贵戚，也不会被天下轻视。”</td>
+                <td class="english-cell col-english" data-lang="english">If you, as a noble, follow the law, society will be just, the state strong, Zhao secure, and you as a royal relative will not be despised by the world.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君以为贤，言之于王。王用之治国赋，国赋大平，民富而府库实。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君认为赵奢贤能，于是向赵王推荐他。赵王任命赵奢治理国家赋税，国家的赋税治理平稳，百姓富足，国库充实。</td>
+                <td class="english-cell col-english" data-lang="english">Impressed by Zhao She’s wisdom, Lord Pingyuan recommended him to the king, who put him in charge of taxation. Under Zhao She’s management, taxes were fairly collected, the people prospered, and the treasury was full.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦王十年十月，免相国吕不韦。及齐人茅焦说秦王，秦王乃迎太后于雍，归复咸阳，而出文信侯就国河南。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦始皇十年十月，免去了相国吕不韦的职位。后来齐国人茅焦劝说秦始皇，秦始皇才到雍县把太后接回了咸阳，而同时下令让吕不韦到他河南的封地上去住。</td>
+                <td class="english-cell col-english" data-lang="english">In the tenth month of the tenth year of his reign the king of Qin removed Lü Buwei from the office of prime minister. Later Mao Jiao, a man of Qi, spoke to the king of Qin and persuaded him to send to Yong for his mother, the queen dowager, and allow her to return to residence in Xianyang. The king also ordered Lü Buwei, the marquis of Wenxin, to leave the capital and proceed to his fief in Henan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">岁余，诸侯宾客使者相望于道，请文信侯。秦王恐其为变，乃赐文信侯书曰：“君何功于秦？秦封君河南，食十万户。君何亲于秦？号称仲父。其与家属徙处蜀！”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">在这以后的一年多里，各国的宾客使者们络绎不绝地到河南封地上去拜会吕不韦。秦始皇怕吕不韦再闹乱子，于是给他写了一封信说：“你对秦国有什么功劳，以至于享用着河南的封地十万户？你跟秦国有什么亲缘？以至于被称为仲父。你要带着你的家属都给我搬到蜀地去！”</td>
+                <td class="english-cell col-english" data-lang="english">A year or so later he learned that so many of the followers and envoys of the various feudal lords were travelling to Henan to call on Lü Buwei that their carriages were never out of sight of each other on the road. Fearful that there might be some plot afoot, the king sent a letter to Lü Buwei saying, “What did you ever do for the state of Qin that Qin should enfeoff you in Henan with the revenue from a 100,000 households? What relation are you to the ruler of Qin that you should be addressed as ‘Uncle’? Be so good as to take your family and retinue and move your residence to Shu!”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吕不韦自度稍侵，恐诛，乃饮鸩而死。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">吕不韦考虑着自己这样受逼迫越来越紧，最后可能要被砍头，于是就自己喝毒酒死了。</td>
+                <td class="english-cell col-english" data-lang="english">Lü Buwei judged that he would only have to suffer increasing insult and, fearing the death penalty, he drank poison and died.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦王所加怒吕不韦、嫪毒皆已死，乃皆复归嫪毒舍人迁蜀者。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦始皇一见他所恨的吕不韦和嫪毒都已经死了，于是就下令放回了那些被流放到蜀地去的嫪毒的门客。</td>
+                <td class="english-cell col-english" data-lang="english">With Lü Buwei and Lao Ai, the two men who had been the butt of his anger, both dead, the king recalled Lao Ai’s retainers who had been exiled to Shu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">始皇十九年，太后薨，谥为帝太后，与庄襄王会葬芷阳。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦始皇十九年，太后去世，被谥为帝太后，跟庄襄王一同合葬在了芷阳。</td>
+                <td class="english-cell col-english" data-lang="english">In the nineteenth year of his reign his mother, the queen dowager, passed away and was given the posthumous title of Empress Dowager. She was buried with her husband, King Zhuangxiang, at Zhiyang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太史公曰：不韦及嫪毒贵，封号文信侯。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">太史公说：吕不韦和嫪毒显贵时，吕不韦被封为文信侯。</td>
+                <td class="english-cell col-english" data-lang="english">The Grand Historian remarks: Lü Buwei and Lao Ai were both honoured with fiefs, the former receiving the title of marquis of Wenxin.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">人之告嫪毒，嫪毒闻之。秦王验左右，未发。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当有人告发嫪毒，嫪毒很快就知道了。秦始皇先是悄悄地审问了太后与嫪毒周围的人，还没有对嫪毒动手。</td>
+                <td class="english-cell col-english" data-lang="english">When accusations were first made against Lao Ai, Lao got word of it. The king of Qin questioned those about him as to the truth of the charges but had not yet uncovered any definite evidence.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">王之雍郊，恐祸起，乃与党谋，矫太后玺发卒以反蕲年宫。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦始皇到雍县祭天去了，这时嫪毒害怕大祸临头，于是就和他的党羽们商量，盗盖了太后的印玺，假传太后命令发兵在蕲年宫叛乱。</td>
+                <td class="english-cell col-english" data-lang="english">when he set off for Yong to perform the suburban sacrifice. Lao Ai, fearful that calamity was about to befall him, plotted with the members of his clique and, using the queen dowager’s seal of authority without her permission, called out troops and initiated a revolt in the Qinian Palace.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">王知之，发吏攻毒，毒败亡走，追斩之好畤，遂灭其宗。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦始皇闻讯后，派兵讨伐嫪毒，嫪毒战败逃走，秦始皇的人追到好畤杀了他，又灭了他的全族。</td>
+                <td class="english-cell col-english" data-lang="english">The king dispatched officers to attack Lao Ai’s forces and Lao Ai fled in defeat. He was pursued and cut down at Haozhi, and eventually his whole clan was wiped out.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">而吕不韦由此绌矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">吕不韦也因此失势了。</td>
+                <td class="english-cell col-english" data-lang="english">This marked the beginning of Lü Buwei’s fall from power.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">孔子之所谓“闻”者，其吕子乎？</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">孔子在《论语》中所说的那种“有名声却言行不一”的“闻人”，大概就是指吕不韦这样的人吧！</td>
+                <td class="english-cell col-english" data-lang="english">What Confucius said about the “man of fame” might well apply to this Master Lü, might it not?</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
       </main>
 
       <nav class="chapter-nav">
@@ -131,8 +588,139 @@ The Grand Historian remarks: Lü Buwei and Lao Ai were both honoured with fiefs,
       </nav>
 
       <footer>
-        <small>并排三列显示</small>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
       </footer>
     </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>

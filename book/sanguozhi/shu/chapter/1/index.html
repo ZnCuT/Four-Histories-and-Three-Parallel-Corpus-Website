@@ -4,51 +4,735 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>三国志 — 第1章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
     <link rel="stylesheet" href="/static/style.css">
   </head>
   <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
       <header>
-        <h1>三国志 — 第1章 先主传</h1>
+        <h1>三国志 — 第1章 姜维传</h1>
       </header>
 
-      <main class="parallel">
-        <section>
-          <h3>文言文</h3>
-          <div class="txt">先主姓刘，讳备，字玄德，涿郡涿县人，汉景帝子中山靖王胜之后也。
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
 
-胜子贞，元狩六年封涿县陆城亭侯，坐酎金失侯，因家焉。</div>
-        </section>
-        <section>
-          <h3>现代汉语</h3>
-          <div class="txt">先主姓刘，名备，字玄德，涿郡涿县人，是汉景帝儿子中山靖王胜的后代。
-
-胜的儿子贞，元狩六年被封为涿县陆城亭侯，因酎金事件失去侯爵，因此在那里安家。</div>
-        </section>
-        <section>
-          <h3>English</h3>
-          <div class="txt">The First Ruler's surname was Liu, given name Bei, style name Xuande, from Zhuo County in Zhuo Commandery, a descendant of Liu Sheng, the Jing King of Zhongshan, son of Emperor Jing of Han.
-
-Sheng's son Zhen was enfeoffed as Marquis of Lucheng Pavilion in Zhuo County in the sixth year of Yuanshou, but lost his marquisate due to the zhoujin incident and settled there.</div>
-        </section>
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">姜维字伯约，天水冀人也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">姜维字伯约，天水郡冀县人。</td>
+                <td class="english-cell col-english" data-lang="english">Jiang Wei, also know as Boyue, was a native of Ji in Tianshui.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">少孤，与母居。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">幼年丧父，与寡母一起生活。</td>
+                <td class="english-cell col-english" data-lang="english">His father died when he was young, and he lived with his mother.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">好郑氏学。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">喜好郑玄的经学。</td>
+                <td class="english-cell col-english" data-lang="english">He liked to read Zheng Xuan’s classical studies.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">仕郡上计掾，州辟为从事。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">最初担任天水郡的上计掾，后来州里征召他为从事。</td>
+                <td class="english-cell col-english" data-lang="english">He was once the evaluator of the prefectural premier, and later the provincial governor summoned him as his secretary.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">以父冏昔为郡功曹，值羌、戎叛乱，身卫郡将，没于战场，赐维官中郎，参本郡军事。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">由于他的父亲姜冏曾是天水郡的功曹，正赶上羌、戎族叛乱，挺身保护郡将，身死战场，因此赐给姜维中郎一职，参与本郡军事。</td>
+                <td class="english-cell col-english" data-lang="english">His father Jiang Jiong was once the vice prefect during the Qiang and Rong tribes’ rebellion, and he died in the battlefield while sacrificing himself to protect the prefectural general. Thus Jiang Wei was bestowed the title of an imperial guard and became a military attaché in the prefecture.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">建兴六年，丞相诸葛亮军向祁山，时天水太守适出案行，维及功曹梁绪、主簿尹赏、主记梁虔等从行。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">建兴六年，丞相诸葛亮出师祁山，当时天水太守恰好外出巡视，姜维和功曹梁绪、主簿尹赏、主记梁虔等都随行。</td>
+                <td class="english-cell col-english" data-lang="english">In the sixth year of the Jianxing Period, Prime Minister Zhuge Liang marched to the Qi Mountain. It so happened that at this time the prefect of Tianshui was on an inspection tour, and Jiang Wei, vice prefect Liang Xu, chief secretary Yin Shang, chief recorder Liang Qian and others accompanied him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太守闻蜀军垂至而诸县响应，疑维等皆有异心，于是夜亡保上邽。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">太守听说蜀军即将来而各县都起来响应诸葛亮，怀疑姜维等随行的人都怀有二心，于是趁着夜色跑到上邽谋求自保。</td>
+                <td class="english-cell col-english" data-lang="english">The prefect was told that the Shu armies were coming and several counties responded to them. He doubted the loyalty of Jiang Wei et al., so he fled in the night to Shanggui to seek protection for his own life.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">维等觉太守去，追迟，至城门，城门已闭，不纳。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">姜维等发觉太守离去，追赶已迟了一步，等他们追到上邽城外，城门已关闭，城内不肯接纳他们。</td>
+                <td class="english-cell col-english" data-lang="english">When Jiang Wei discovered the departure of the prefect, they ran after him, but it was too late. When they arrived at the town gate, it was already shut and they were denied admittance.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">维等相率还冀，冀亦不入维。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">姜维一行又一同返回冀县，冀县同样也不肯放他们进城。</td>
+                <td class="english-cell col-english" data-lang="english">Jiang Wei and his men returned to Ji, and Ji also refused their entry.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">维等乃俱诣诸葛亮。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是姜维等人一同去见诸葛亮。</td>
+                <td class="english-cell col-english" data-lang="english">Together they went to see Zhuge Liang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">会马谡败于街亭，亮拔将西县千余家及维等还，故维遂与母相失。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">正赶上马谡在街亭战败，诸葛亮带着西县一千余家百姓以及姜维等人收兵返回，因此姜维就与老母失散了。</td>
+                <td class="english-cell col-english" data-lang="english">It was right after Ma Su’s defeat at Jieting, and because of this Zhuge Liang decided to return, along with him over one thousand families in the west counties, and Jiang Wei and his men also. Because of this migration, Jiang Wei lost contact with his mother.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">亮辟维为仓曹掾，加奉义将军，封当阳亭侯，时年二十七。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">诸葛亮征召姜维为仓曹掾，加官奉义将军，封为当阳亭侯，当时姜维年仅二十七岁。</td>
+                <td class="english-cell col-english" data-lang="english">Zhuge Liang appointed Jiang Wei vice-director of Imperial Granaries, promoted him to righteousness-pursuing general, and conferred on him Marquis of Dangyangting. This year he was 27.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">亮与留府长史张裔、参军蒋琬书曰：“姜伯约忠勤时事，思虑精密，考其所有，永南、季常诸人不如也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">其诸葛亮给留府长史张裔、参军蒋琬写信说：“姜伯约对自己的职事忠心勤奋，思虑问题精细周密，考察他所具有的人品才能，李绍和马良也比不上他，</td>
+                <td class="english-cell col-english" data-lang="english">Zhuge Liang wrote a letter to Zhang Yi, chief historian of the rear government, and Jiang Wan, a military advisor. In the letter, he wrote, “Jiang Boyue is diligent and devoted to his cause, and is circumspect in his thinking. I have tested his ability. Li Shao and Ma Liang and others cannot be compared with him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">人，凉州上士也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他的确是凉州道德高尚的人。”</td>
+                <td class="english-cell col-english" data-lang="english">This man is an integrated citizen of Liang Province.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">又曰：“须先教中虎步兵五六千人。姜伯约甚敏于军事，既有胆义，深解兵意。此人心存汉室，而才兼于人，毕教军事，当遣诣宫，觐见主上。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">又说：“必须先让他教练中虎步兵五六千人。姜伯约在军事方面非常敏锐，既有胆识而明义理，又精通用兵之道。此人忠于汉室，而且才力过人。等他结束军事教练后，应派他进宫，觐见陛下。”</td>
+                <td class="english-cell col-english" data-lang="english">He added, “You must let him coach five or six thousand soldiers of the Imperial Tiger infantry. Jiang Boyue is quite sensitive in military affairs. Not only does he have courage and a sense of righteousness, but he also has insight on the military. This man is loyal to the Han Dynasty, and is more talented than others. After military coaching, he should be received in audience by the emperor.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后迁中监军、征西将军。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来姜维升为中监军、征西将军。</td>
+                <td class="english-cell col-english" data-lang="english">Later, he was promoted to imperial military superintendent and west-expedition general.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">十二年，亮卒，维还成都，为右监军、辅汉将军，统诸军，进封平襄侯。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">建兴十二年，诸葛亮去世，姜维回到成都，任右监军、辅汉将军，统帅诸军，又进封他为平襄侯。</td>
+                <td class="english-cell col-english" data-lang="english">In the twelfth year, Zhuge Liang passed away, and Jiang Wei returned to Chengdu. He was appointed as right military superintendent, as well as the Han-assisting general to command all the armies. He was also conferred on Marquis of Pingxiang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">延熙元年，随大将军蒋琬住汉中。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">延熙元年，跟随大将军蒋琬驻扎在汉中郡。</td>
+                <td class="english-cell col-english" data-lang="english">In the first year of the Yanxi Period, he followed Great General Jiang Wan to be garrisoned in Hanzhong.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">琬既迁大司马，以维为司马，数率偏军西入。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">蒋琬升为大司马后，让姜维担任司马，多次率领一支部队进入西部。</td>
+                <td class="english-cell col-english" data-lang="english">When Jiang Wan was promoted to the marshal, he appointed Jiang Wei minister of War Ministry. Several times, he led an auxiliary army into the west.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">六年，迁镇西大将军，领凉州刺史。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">延熙六年，升为镇西将军，兼凉州刺史。</td>
+                <td class="english-cell col-english" data-lang="english">In the sixth year, he was promoted to west-suppressing great general and governor of Liang Province.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">十年，迁卫将军，与大将军费祎共录尚书事。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">十年，升为卫将军，与大将军费祎共同执掌尚书台事务。</td>
+                <td class="english-cell col-english" data-lang="english">In the tenth year, he was promoted to defense general, and shared the work with Great General Fei Yi in supervising the Secretariat.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">是岁，汶山平康夷反，维率众讨定之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这一年，汶山郡平康县夷人造反，姜维率军前去平定。</td>
+                <td class="english-cell col-english" data-lang="english">This year, the Yi tribes in Pingkang of Wenshan staged a rebellion, Jiang Wei led the army to suppress and settle it.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">又出陇西、南安、金城界，与魏大将郭淮、夏侯霸等战于洮西。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">又出兵陇西、南安和金城一带，在洮西与魏国大将军郭淮、夏侯霸交战。</td>
+                <td class="english-cell col-english" data-lang="english">Again he went to Longxi, Nan’an and the Jincheng areas, where he battled against the famous generals of the Wei Empire Guo Huai and Xiahou Ba in Taoxi.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">胡王治无戴等举部落降，维将还安处之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">胡王治无戴等人带领整个部落投降姜维，姜维带领他们返回并且给予了很好的安置。</td>
+                <td class="english-cell col-english" data-lang="english">Zhi Wudai, chieftain of the Hu tribes and others surrendered with their tribes, and Jiang Wei led them to return to their own places and made good arrangements for their settlement.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">十二年，假维节，复出西平，不克而还。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">延熙十二年，假以姜维皇帝符节，又出兵西平，不胜而还。</td>
+                <td class="english-cell col-english" data-lang="english">In the twelfth year, Jiang Wei was given provisional imperial tallies to lead his army to Xiping, and he returned without victory.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">维自以练西方风俗，兼负其才武，欲诱诸羌、胡以为羽翼，谓自陇以西可断而有也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">姜维自认为熟习西部地区的风土民情，加上自负才能和勇武，打算诱使各羌、胡部落作为羽翼，认为这样一来自陇以西地域都可截断而被占有。</td>
+                <td class="english-cell col-english" data-lang="english">Jiang Wei thought himself an expert of the western customs, and in addition to his confidence in his talent and military knowledge, he also wanted to lure the Hu and Qiang tribes as his wings. He said that the western areas from the Gansu border could be cut off and possessed.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">每欲兴军大举，费祎常裁制不从，与其兵不过万人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">姜维每次想大举兴兵，费祎却经常制止不准，给他的士兵不超过一万人。</td>
+                <td class="english-cell col-english" data-lang="english">Each time Jiang Wei wanted to launch a big attack, he was often prohibited by Fei Yi, and each time he was given less than ten thousand soldiers.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">十六年春，祎卒。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">延熙十六年，费祎被刺身亡。</td>
+                <td class="english-cell col-english" data-lang="english">In the spring of the sixteenth year, Fei Yi was dead in an assassination.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夏，维率将数万人出石营，经董亭，围南安，</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当年夏天，姜维率领数万人从石营出击，经过董亭，包围南安。</td>
+                <td class="english-cell col-english" data-lang="english">In the summer, Jiang Wei led several ten thousand soldiers out of Shiying, through Dongting, and laid a siege to Nan’an.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">魏雍州刺史陈泰解围至洛门，维粮尽退还。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">魏国雍州刺史陈泰到洛门解围，姜维因粮尽而退兵。</td>
+                <td class="english-cell col-english" data-lang="english">Chen Tai, governor of Yong Province of the Wei Empire, came to Luomen to rescue Nan’an, and Jiang Wei withdrew due to exhaustion of their food supplies.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">明年，加督中外军事。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">次年，加官为督中外军事。</td>
+                <td class="english-cell col-english" data-lang="english">The next year, he was promoted to internal and external military superintendent.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">复出陇西，守狄道长李简举城降。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">又出兵陇西，狄道代理县长李简全城投降</td>
+                <td class="english-cell col-english" data-lang="english">。He again led his army into the west of Gansu, and Li Jian, acting magistrate of Didao, surrendered with the town.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">进围襄武，与魏将徐质交锋，斩首破敌，魏军败退。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">又进兵包围襄武县，与魏国将领徐质交锋，斩首破敌，魏军败退。</td>
+                <td class="english-cell col-english" data-lang="english">Jiang Wei marched further to lay siege to Xiangwu, and fought with Xu Zhi, the general of the Wei Empire, cutting off his head and defeating the enemy. The enemy retreated.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">维乘胜多所降下，拔河间、狄道、临洮三县民还。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">姜维乘胜推进降服了很多敌人，并迁移河间、狄道、临洮三县百姓返回。</td>
+                <td class="english-cell col-english" data-lang="english">He continued his triumphant advances, accepted more surrenders, and returned with the people from three counties of Hejian, Didao and Lintao.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后十八年，复与车骑将军夏侯霸等俱出狄道，大破魏雍州刺史王经于洮西，经众死者数万人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">十八年，又与车骑将军夏侯霸一起出兵狄道，在洮西大败魏国雍州刺史王经，王经的部队死亡数万人。</td>
+                <td class="english-cell col-english" data-lang="english">Later in the eighteenth year, he marched again with Carriage-cavalry General Xiahou Ba through Didao, and routed the army of Wang Jing, and supervisor of Yong Province of the Wei Empire, at Taoxi. Several ten thousand soldiers in his army died.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">经退保狄道城，维围之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">王经退守狄道城，姜维实施围困。</td>
+                <td class="english-cell col-english" data-lang="english">When Wang Jing retreated to defend himself in the town of Didao, Jiang Wei laid siege to him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">魏征西将军陈泰进兵解围，维却住钟题。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">魏征西将军陈泰带领军队前来解围，姜维退到钟题驻扎。</td>
+                <td class="english-cell col-english" data-lang="english">Chen Tai, west-expedition general of the Wei Empire rushed to rescue Didao, and Jiang Wei withdrew to station his troops at Zhongti.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">十九年春，就迁维为大将军。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">延熙十九年春，就在姜维驻地任命他为大将军。</td>
+                <td class="english-cell col-english" data-lang="english">In the spring of the nineteenth year, Jiang Wei was promoted to great general at his stationed camp.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">更整勒戎马，与镇西大将军胡济期会上邽，济失誓不至，故维为魏大将邓艾所破于段谷，星散流离，死者甚众。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是又整顿人马，与镇西大将军胡济约定会师于上邽，胡济却失约不到，所以姜维在段谷被魏国大将邓艾击败，士卒四散逃命，伤亡惨重。</td>
+                <td class="english-cell col-english" data-lang="english">He reorganized his armies and cavalry, and made an appointment with West-suppressing Great General Hu Ji to meet at Shanggui. Hu Ji broke his promise and did not appear at the appointed time. As a result, Jiang Wei was routed at Duan Valley by Deng Ai, great general of the Wei Empire. As his soldiers were scattered widely, a great number died.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">众庶由是怨讟，而陇已西亦骚动不宁，维谢过引负，求自贬削。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">众人由此怨恨诽谤，而陇以西地区也骚动不宁，姜维引咎自责，请求自行贬官削爵。</td>
+                <td class="english-cell col-english" data-lang="english">Common people and soldiers complained about and resented about the defeat, and the western areas from the Gansu border were disturbed. Jiang Wei expressed his apology and accepted the responsibility, pleading to be demoted.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">为后将军，行大将军事。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">降为后将军，代行大将军事。</td>
+                <td class="english-cell col-english" data-lang="english">as as rear general, but acting as the great general.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">二十年，魏征东大将军诸葛诞反于淮南，分关中兵东下。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">延熙二十年，魏国征东大将军诸葛诞在淮南造反，魏国分派关中的一部分军队东下淮南。</td>
+                <td class="english-cell col-english" data-lang="english">In the twentieth year, Zhuge Dan, east-expedition general of the Wei Empire rebelled in Huainan. A part of the garrison troops of the Wei Empire in Guanzhong was separated and dispatched to the east.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">维欲乘虚向秦川，复率数万人出骆谷，径至沈岭。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">姜维想乘敌空虚进兵秦川，于是又率数万人出兵骆谷，径直来到沈岭。</td>
+                <td class="english-cell col-english" data-lang="english">Jiang Wei tried to exploit this weakness. He marched to Qinchuan, led several ten thousand soldiers through Luo Valley and went straight to Shen Ridge.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">时长城积谷甚多而守兵乃少，闻维方到，众皆惶惧。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时长城所囤积大量粮食而守兵很少，听说姜维到了，全都惊恐万状。</td>
+                <td class="english-cell col-english" data-lang="english">At that time, a great quantity of grain was stored along the Great Walls where it was guarded by a small number of soldiers. When the soldiers heard Jiang Wei coming, they all went into a panic.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">魏大将军司马望拒之，邓艾亦自陇右，皆军于长城。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">魏大将军司马望带兵抵御姜维，邓艾也从陇右赶来，都驻军于长城。</td>
+                <td class="english-cell col-english" data-lang="english">Sima Wang, great general of the Wei Empire, stood against the challenge, and Deng Ai, also from Longyou, moved to gather and station his troops along the Great Walls.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">维前住芒水，皆倚山为营。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">姜维率军进驻芒水，都倚山扎营。</td>
+                <td class="english-cell col-english" data-lang="english">Jiang Wei’s front troops were stationed at the side of the Mang River, and all camped along the mountain slopes.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">望、艾傍渭坚围，维数下挑战，望、艾不应。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">司马望、邓艾临渭水修建坚固壁垒，姜维多次下山挑战，司马望和邓艾都置之不理。</td>
+                <td class="english-cell col-english" data-lang="english">Sima Wang and Deng Ai constructed strong fortresses, and several times Jiang Wei went to challenge them, but both did not respond to him at all.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">景耀元年，维闻诞破败，乃还成都。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">景耀元年，姜维得到诸葛诞已被击败的消息，于是返回成都。</td>
+                <td class="english-cell col-english" data-lang="english">In the first year of the Jingyao Period, after Jiang Wei heard Zhuge Dan’s army had been routed, he returned to Chengdu,</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">复拜大将军。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">又任命他为大将军。</td>
+                <td class="english-cell col-english" data-lang="english">and was again appointed great general.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">初，先主留魏延镇汉中，皆实兵诸围以御外敌，敌若来攻，使不得入。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当初，先主刘备留魏延镇守汉中，都采用重兵坚守各个营寨以防御外敌，敌人若来进攻，使他们不能越过防线。</td>
+                <td class="english-cell col-english" data-lang="english">Early on, Founding Master left Wei Yan to be garrisoned in Hanzhong, and heavy forces were deployed to hold the camps, arranging themselves as walls against the external enemies. If the enemies came to attack, they would find no way in.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">及兴势之役，王平捍拒曹爽，皆承此制。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">直到兴势战役，王平抵抗曹爽，都袭用这种办法。</td>
+                <td class="english-cell col-english" data-lang="english">It was up until the Xingshi Battle when Wang Ping still inherited this defense system firmly against Cao Shuang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">维建议，以为错守诸围，虽合《周易》“重门” 之义，然适可御敌，不获大利。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">姜维建议，认为交错防守各个营寨，虽然合乎《周易》“重门” 所说的道理，但只可防御，却不可以获得更大的胜利。</td>
+                <td class="english-cell col-english" data-lang="english">Jiang Wei suggested that although the interlacing camp defense system was in correspondence with the definition of “double or triple gate” defense in The Zhou Book of Change in the sense that it could properly defend against enemy attack, it could not be considered a great benefit.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">不若使闻敌至，诸围皆敛兵聚谷，退就汉、乐二城，使敌不得入平，且重关镇守以捍之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">不如在得知敌兵来到之际，各营寨都约束兵马积聚粮食，退守汉城和乐城，使敌人不能进入平坦地带，并且再用多层关卡镇守来抵御来敌。</td>
+                <td class="english-cell col-english" data-lang="english">It would be better for all the camps to gather soldiers and collect grains in order to withdraw into Hancheng and Lecheng so that, upon learning of the enemy’s arrival, they could guard against the entry of the enemy into the plain areas. In addition, a series of passes would be built to defend them.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">有事之日，令游军并进以伺其虚。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">有敌来犯时，让游击部队同时推进等待时机攻击敌人。</td>
+                <td class="english-cell col-english" data-lang="english">When the war broke out, the maneuvering forces would be able to coordinate with each other to seek out the weak points of the enemy’s attack.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">敌攻关不克，野无散谷，千里县粮，自然疲乏。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">敌人攻关不下，四野又找不到粮食，依靠千里之外运粮，自然疲乏。</td>
+                <td class="english-cell col-english" data-lang="english">Once the enemy discovered that they could neither take over the passes, nor find any grain in the fields, and could only rely on the transportation of grain from a thousand li away, as a consequence, they would be physically exhausted.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">引退之日，然后诸城并出，与游军并力搏之，此殄敌之术也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">敌人退却的时候，各城中士兵一齐出动，与游击部队并力杀敌，这是消灭敌人的好办法。</td>
+                <td class="english-cell col-english" data-lang="english">As the enemy began to retreat, all forces from different towns would come out to coordinate with the maneuvering forces to battle against the enemy. This was the stratagem for annihilating the enemy.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">于是令督汉中胡济却住汉寿，监军王含守乐城，护军蒋斌守汉城，又于西安、建威、武卫、石门、武城、建昌、临远皆立围守。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是命令督汉中的胡济退往汉寿县，将军王含驻守乐城，护军蒋斌驻守汉城，又在西安、建威、武卫、石门、武城、建昌、临远等地建立防御工事。</td>
+                <td class="english-cell col-english" data-lang="english">With this in mind, he ordered Hu Ji, military superintendent in Hanzhong to withdraw and station himself at Hanshou. Wan Han, military supervisor, was ordered to defend Lecheng, and Jiang Bin, defense commander, was ordered to guard Hancheng. He also undertook defensive constructions in Xi’an, Jianwei, Wuwei, Shimen, Wucheng, Jianchang and Linyuan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">五年，维率众出汉、侯和，为邓艾所破，还住沓中。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">景耀五年，姜维率军出汉城、侯和，被邓艾打败，退到沓中屯扎。</td>
+                <td class="english-cell col-english" data-lang="english">In the fifth year, Jiang Wei headed the armies out of Hancheng and Houhe, but he was defeated by Deng Ai, whereupon he returned to his station at Tazhong.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">维本羁旅托国，累年攻战，功绩不立，而宦官黄皓等弄权于内，右大将军阎宇与皓协比，而皓阴欲废维树宇。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">姜维本属托身他国的流寓之人，连年征战，没能建立奇功，而宦官黄皓等人在朝内玩弄权术，右大将军阎宇又跟黄皓相互勾结，黄皓阴谋废掉姜维以阎宇取而代之。</td>
+                <td class="english-cell col-english" data-lang="english">Jiang Wei was a foreigner who devoted himself to the cause of another country, but the successive expeditions and battles did not bring him great deeds. While the eunuch Huang Hao usurped the power within the court, Yan Yu, right great general, worked closely with him. Huang Hao secretly wanted to replace Jiang Wei with Yan Yu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">维亦疑之，故自危惧，不复还成都。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">姜维也怀疑黄皓，因此他自己感到忧惧，不再返回成都。</td>
+                <td class="english-cell col-english" data-lang="english">Jiang Wei suspected this, and filled with apprehension, he did not return to Chengdu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">六年，维表后主：“闻钟会治兵关中，欲规进取，宜并遣张翼、廖化督诸军分护阳安关口、阴平桥头以防未然。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">六年，姜维上表刘禅说：“听说钟会在关中练兵，想是要准备进攻我国。应该派张翼、廖化督诸军分别守卫阳安关口、阴平桥头，以防患于未然。”</td>
+                <td class="english-cell col-english" data-lang="english">In the sixth year, Jiang Wei sent a memorial to Later Master: “I heard Zhong Hui was training soldiers in Guanzhong and preparing to invade our empire. We should take action to order Zhang Yi and Liao Hua to command the armies separately when defending the mouth of Yang’an Pass and the bridgehead of Yinping as a precaution.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">皓征信鬼巫，谓敌终不自致，启后主寝其事，而群臣不知。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">黄皓取信于装神弄鬼的巫师，说敌人终究不会前来侵犯，他劝说刘禅不理会姜维所奏请的军事行动，而朝中大臣都全然不知道这件事情。</td>
+                <td class="english-cell col-english" data-lang="english">Huang Hao, believing in the sorcerers, said that in the end the enemy would not invade the Shu Empire, and told Later Master to ignore his suggestion. All the ministers were unaware of the situation.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">及钟会将向骆谷，邓艾将入沓中，然后乃遣右车骑廖化诣沓中为维援，左车骑张翼、辅国大将军董厥等诣阳安关口以为诸围外援。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">等到钟会将要杀奔骆谷，邓艾将要进入沓中的时候，才派右车骑廖化赶赴沓中援助姜维，派左车骑张翼、辅国大将军董厥等前往阳安关口作为各营防线的外援。</td>
+                <td class="english-cell col-english" data-lang="english">It was not until Zhong Hui had marched to Luo Valley and Deng Ai had entered Tazhong that the court would dispatch Right Carriage-cavalry General Liao Hua to Tazhong in support of Jiang Wei, and Left Carriage-cavalry General Zhang Yi, State-assisting Great General Dong Jue and several others to the mouth of Yang’an Pass to support the stationed troops.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">比至阴平，闻魏将诸葛绪向建威，故住待之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">诸军刚到阴平，听说魏国将领诸葛绪正向建威杀来，所以就驻扎下来原地等待敌人到来。</td>
+                <td class="english-cell col-english" data-lang="english">When the army arrived at Yinping, they learned General Zhuge Xu of the Wei Empire was marching toward Jianwei, so they were stationed to wait for the enemy.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">月余，维为邓艾所摧，还住阴平。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">过了一个来月，姜维被邓艾打得大败，也撤到阴平驻扎。</td>
+                <td class="english-cell col-english" data-lang="english">In over a month, Jiang Wei was defeated by Deng Ai and returned to station his troops at Yinping.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">钟会攻围汉、乐二城，遣别将进攻关口，蒋舒开城出降，傅佥格斗而死。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">钟会围攻汉、乐二城，另派将领进攻关口，蒋舒打开城门投降，傅佥奋战而死。</td>
+                <td class="english-cell col-english" data-lang="english">Zhong Hui laid siege to both cities of Hancheng and Lecheng, and at the same time sent a detachment to attack the mouth of the Yang’an Pass. Jiang Shu opened the city gate and surrendered while Fu Qian combated to death.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">会攻乐城，不能克，闻关口已下，长驱而前。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">钟会攻打乐城，没有攻下，听说阳安关口已经攻破，便率领部队长驱而入。</td>
+                <td class="english-cell col-english" data-lang="english">ZhongHui attacked Lecheng but could not succeed.When he heard the mouth of the Yanng'an Pass had fallen.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">翼、厥甫至汉寿，维、化亦舍阴平而退，适与翼、厥合，皆退保剑阁以拒会。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">张翼、董厥才到汉寿，姜维、廖化也舍弃阴平后撤，恰与张翼和董厥会合，都退保剑阁以抵御钟会。</td>
+                <td class="english-cell col-english" data-lang="english">Zhang Yi and Dong Jue had just arrived at Hanshou, while Jiang Wei and Liao Hua, having given up Yinping, retreated to join their forces with them in a timely manner. They all withdrew to the Sword Pavilion to resist Zhong Hui.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">会与维书曰：“公侯以文武之德，怀迈世之略，功济巴、汉，声畅华夏，远近莫不归名。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">钟会给姜维写信说：“公侯您文武全才，有超世之谋略，功业成就于巴蜀和汉中，威名远扬到华夏各地，远远近近的人们没有谁不推崇您的。</td>
+                <td class="english-cell col-english" data-lang="english">Zhong Hui wrote to Jiang Wei, saying, “Your honorable marquis is talented for your civil accomplishments and military prowess, and you possess great ability for extraordinary strategy. You have established meritorious deeds in Ba and Hanzhong; your fame has spread to every corner of the whole land; everyone, near and far, admires you.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">每惟畴昔，尝同大化，吴札、郑乔，能喻斯好。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">每常想起往昔的时光，我们曾同浴王化，吴季札、郑子产当年那样的关系，能够用来说明你我的友谊。”</td>
+                <td class="english-cell col-english" data-lang="english">Every time I recall the old times when we shared the same imperial grace, the good relation between Wu Jizha and Zheng Zichan can be used to describe the nature of our relationship.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">维不答书，列营守险。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">姜维拒不回信，部署各部守卫险要。</td>
+                <td class="english-cell col-english" data-lang="english">Jiang Wei did not give any reply, and lined his camps to guard the risky pass.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">会不能克，粮运县远，将议还归。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">钟会攻打不下，粮运又路途遥远供应不及，准备商议撤兵回去。</td>
+                <td class="english-cell col-english" data-lang="english">Zhong Hui could not conquer him, and because of the long distance of grain transportation, he discussed with his subordinates the idea of withdrawing and returning.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">而邓艾自阴平由景谷道傍入，遂破诸葛瞻于绵竹。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">而邓艾已从阴平经由景谷道走捷径进入蜀境，随后在绵竹击败诸葛瞻。</td>
+                <td class="english-cell col-english" data-lang="english">Deng Ai entered the inland of the Shu Empire from the side of the Jing Valley road in Yinping. Afterwards, he defeated Zhuge Zhan in Mianzhu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后主请降于艾，艾前据成都。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">刘禅向邓艾请求投降，于是邓艾进驻成都。</td>
+                <td class="english-cell col-english" data-lang="english">Later Master pleaded with Deng Ai for surrender, so Deng Ai marched forward to Chengdu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">维等初闻瞻破，或闻后主欲固守成都，或闻欲东入吴，或闻欲南入建宁，于是引军由广汉、郪道以审虚实。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">姜维等人最初听说诸葛瞻战败之后，传言有说刘禅准备坚守成都，也有说刘禅要东入吴国，还有说刘禅要南奔建宁，于是都率兵由广汉、郪道后撤以便查探虚实。</td>
+                <td class="english-cell col-english" data-lang="english">When Jiang Wei and others were at first told that Zhuge Zhan was defeated, there were dozens of rumours that Later Master intended to firmly defend Chengdu, or Later Master might go to the Wu Empire, or Later Master would go into Jianning in the south. With all the rumors floating about, Jiang Wei decided to lead his army into Guanghan and Qidao to discover the truth.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">寻被后主敕令，乃投戈放甲，诣会于涪军前，将士咸怒，拔刀斫石。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">不久接到刘禅命令，姜维等人才放下武器脱下铠甲，到涪县钟会的军营前投降，将士们都内心郁愤，拔刀砍石。</td>
+                <td class="english-cell col-english" data-lang="english">Soon after, he was ordered by Later Master to put down his weapons, take off armors, and go to Fucheng to surrender to Zhong Hui. The generals and soldiers were all in such a rage that they drew out their broad knives to chop stones.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">会厚待维等，皆权还其印号节盖。会与维出则同舆，坐则同席，谓长史杜预曰：“以伯约比中土名士，公休、太初不能胜也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">钟会厚待姜维等人，而且从权将他们各自原来的印号节盖都归还本人。钟会跟姜维出则同乘一个车子，坐则同坐一个席子。钟会对长史杜预说：“拿姜伯约来跟中原名士相比，就是诸葛诞、夏侯玄也赶不上他。”</td>
+                <td class="english-cell col-english" data-lang="english">Zhong Hui treated Jiang Wei et al. generously, and returned all their seals, tallies and carriage tops for the time being. Zhong Hui and Jiang Wei rode in the same carriage when they went out and sat on the same mat inside. Zhong Hui said to Head Historian Du Yu, “The famous men in the Middle Plains, even Zhuge Dan and Xiahou Xuan cannot be compared with Jiang Boyue.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">会既构邓艾，艾槛车征，因将维等诣成都，自称益州牧以叛。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">钟会既已陷害了邓艾，邓艾被押在囚车中送回魏国，因而带着姜维等人来到成都，自称益州牧，反叛魏国。</td>
+                <td class="english-cell col-english" data-lang="english">Zhong Hui had already framed Deng Ai when Deng Ai was sent back to the Wei Empire in a prison cart. Therefore, Zhong Hui led Jiang Wei and others to Chengdu, and declared himself governor of Yi Province, rebelling against the Wei Empire.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">欲授维兵五万人，使为前驱。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">钟会打算给姜维五万人马，作为部队的前驱。</td>
+                <td class="english-cell col-english" data-lang="english">Zhong Hui planned to give Jiang Wei fifty thousand soldiers for use as the front troops.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">魏将士愤发，杀会及维，维妻子皆伏诛。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">魏国的将士群情激愤，杀死了钟会和姜维，姜维的妻儿也都被杀。</td>
+                <td class="english-cell col-english" data-lang="english">The commanders and soldiers of the Wei Empire were so raged that they killed Zhong Hui, Jiang Wei, and Jiang Wei’s wife and children.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">郤正著论论维曰：“姜伯约据上将之重，处群臣之右，宅舍弊薄，资财无余，侧室无妾媵之亵，后庭无声乐之娱，衣服取供，舆马取备，饮食节制，不奢不约，官给费用，随手消尽；察其所以然者，非以激贪厉浊，抑情自割也，直谓如是为足，不在多求。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郤正写了一篇文章论述姜维说：“姜伯约身居上将的重任，位列群臣之首，住所破败，家产无余，侧室中没有侍妾婢女，后院里没有声乐消遣，衣服仅求够用，车马仅求具备，饮食克制，不奢不俭，官家供给的俸禄费用，随手用尽而不留节余；考察他这样做的原因，并非为了激励贪浊之人，抑制欲望加强自制，只是表示如此便已足够，不必贪多苛求。</td>
+                <td class="english-cell col-english" data-lang="english">Xi Zheng in his essay commented on Jiang Wei:“Jiang Boyue was in the important position of great general above all the other court officials. He lived in a dilapidated house and left no property. His residence kept no concubines or maids; his backyard provided no entertainment of songs and music. His clothes and necessities were just enough for his use, and his carriages and horses were only equipped well enough for his employment. He restricted his diet and drink, and was neither extravagant nor thrifty. His official salary and subsidies were all expended without savings to suit his convenience. If we observe the reasons of his behaviors, we will see that he restricted himself because he just thought it was enough for living and there was no need for seeking unnecessarilly rather than he set a good example to warn those greedy and corrupted.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">凡人之谈，常誉成毁败，扶高抑下，咸以姜维投厝无所，身死宗灭，以是贬削，不复料擿，异乎《春秋》褒贬之义矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">大凡人们纵谈古今，习惯于夸赞成功而诋毁失败，褒扬高官显爵而贬抑人微言轻者，都以为姜维错奔蜀国，落得身死于乱兵之手，宗族也同时毁灭的下场，因此而贬抑他，不加任何分辨，这同《春秋》褒贬人物的旨趣很不一致。</td>
+                <td class="english-cell col-english" data-lang="english">Usually when people talk about history, they often praise success and despise failure, praise high officials and distinguished nobles, and despise humble and low men. People thought Jiang Wei made a wrong choice to seek shelter in the Shu Empire. As a result, he died, and at the same time brought disaster to his clan. People despise him without distinction, and this is quite different from the principles of praise and denigration of appraisal of people in The Spring and Autumn Annals.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">如姜维之乐学不倦，清素节约，自一时之仪表也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">”像姜维如此好学不倦，清正廉洁而节制自律，自应是一时之楷模了。”</td>
+                <td class="english-cell col-english" data-lang="english">Moreover, Jiang Wei, never tired of learning, was upright and incorruptible, and was a good example for his contemporaries.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">维昔所俱至蜀，梁绪官至大鸿胪，尹赏执金吾，梁虔大长秋，皆先蜀亡没。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当年和姜维一起来到蜀国的人中，梁绪官至大鸿胪，尹赏为执金吾，梁虔任大长秋，都在蜀国灭亡以前去世了。</td>
+                <td class="english-cell col-english" data-lang="english">Among those who went into the Shu Empire with Jiang Wei, Liang Xu eventually rose to the official position of minister of Rites, Yin Shang commander of Imperial Guard of Honor, and Liang Qian empress steward. They all died before the subjugation of the Shu Empire.</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
       </main>
 
       <nav class="chapter-nav">
         
         &nbsp; <a href="/book/sanguozhi/shu/">蜀书章节列表</a> &nbsp;
-        
+        <a href="/book/sanguozhi/shu/chapter/2/">下一章 →</a>
       </nav>
 
       <nav class="breadcrumb">
         <a href="/">首页</a> &gt; 
         <a href="/book/sanguozhi/">三国志</a> &gt; 
         <a href="/book/sanguozhi/shu/">蜀书</a> &gt;
-        第1章 先主传
+        第1章 姜维传
       </nav>
 
       <footer>
-        <small>并排三列显示</small>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
       </footer>
     </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>

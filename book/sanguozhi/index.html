@@ -1,50 +1,145 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>三国志 — 分类</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>三国志 - 四史三平行语料库</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
     <link rel="stylesheet" href="/static/style.css">
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1>三国志</h1>
-      </header>
-
-      <main>
-        <div class="category-list">
-          <h3>分类</h3>
-          
-          <div class="category-item">
-            <a href="/book/sanguozhi/shu/">
-              <h4>蜀书</h4>
-              <span class="chapter-count">共1章</span>
-            </a>
-          </div>
-          
-          <div class="category-item">
-            <a href="/book/sanguozhi/wei/">
-              <h4>魏书</h4>
-              <span class="chapter-count">共1章</span>
-            </a>
-          </div>
-          
-          <div class="category-item">
-            <a href="/book/sanguozhi/wu/">
-              <h4>吴书</h4>
-              <span class="chapter-count">共1章</span>
-            </a>
-          </div>
-          
+</head>
+<body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="/">四史三平行语料库</a>
+            </div>
+            
+            <div class="nav-books">
+                
+            </div>
+            
+            <div class="nav-search">
+                <form action="/search" method="GET" class="search-form">
+                    <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+                    <select name="scope" class="search-scope">
+                        <option value="all">全部</option>
+                        <option value="title">篇目</option>
+                        <option value="content">内容</option>
+                    </select>
+                    <button type="submit" class="search-btn">搜索</button>
+                </form>
+            </div>
         </div>
-      </main>
+    </nav>
 
-      <p><a href="/">← 返回首页</a></p>
+    <div class="container">
+        <!-- 书籍信息 -->
+        <header class="book-header">
+            <h1>三国志</h1>
+            <p class="book-description">点击分类查看具体内容</p>
+        </header>
 
-      <footer>
-        <small>欢迎使用四史语料库</small>
-      </footer>
+        <!-- 分类列表 -->
+        <main class="book-categories">
+            <h2>分类目录</h2>
+            <div class="category-grid">
+                
+                <div class="category-card">
+                    <a href="/book/sanguozhi/shu/">
+                        <div class="category-header">
+                            <h3>蜀书</h3>
+                            <span class="chapter-count">4篇</span>
+                        </div>
+                        <div class="category-preview">
+                            
+                            <p>包含：姜维传、张嶷传、李恢传等</p>
+                            
+                        </div>
+                        <div class="category-stats">
+                            <span class="read-time">约20分钟</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="category-card">
+                    <a href="/book/sanguozhi/wei/">
+                        <div class="category-header">
+                            <h3>魏书</h3>
+                            <span class="chapter-count">10篇</span>
+                        </div>
+                        <div class="category-preview">
+                            
+                            <p>包含：三国志-乌丸鲜卑传、三国志-仓慈传、三国志-任峻传等</p>
+                            
+                        </div>
+                        <div class="category-stats">
+                            <span class="read-time">约50分钟</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="category-card">
+                    <a href="/book/sanguozhi/wu/">
+                        <div class="category-header">
+                            <h3>吴书</h3>
+                            <span class="chapter-count">5篇</span>
+                        </div>
+                        <div class="category-preview">
+                            
+                            <p>包含：吕蒙传、吴主传、周瑜传等</p>
+                            
+                        </div>
+                        <div class="category-stats">
+                            <span class="read-time">约25分钟</span>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+        </main>
+
+        <!-- 面包屑导航 -->
+        <nav class="breadcrumb">
+            <a href="/">首页</a> &gt; 三国志
+        </nav>
+
+        <footer class="main-footer">
+            <p>&copy; 四史三平行语料库 - 中华古典文献数字化平台</p>
+        </footer>
     </div>
-  </body>
+
+    <script>
+        // 导航菜单功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+            
+            dropdowns.forEach(dropdown => {
+                const btn = dropdown.querySelector('.nav-book-btn');
+                const content = dropdown.querySelector('.nav-dropdown-content');
+                
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // 关闭其他下拉菜单
+                    dropdowns.forEach(other => {
+                        if (other !== dropdown) {
+                            other.querySelector('.nav-dropdown-content').style.display = 'none';
+                        }
+                    });
+                    // 切换当前下拉菜单
+                    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+            
+            // 点击其他地方关闭下拉菜单
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.nav-book-dropdown')) {
+                    dropdowns.forEach(dropdown => {
+                        dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+                    });
+                }
+            });
+        });
+    </script>
+</body>
 </html>

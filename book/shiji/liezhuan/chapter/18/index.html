@@ -4,117 +4,724 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>史记 — 第18章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
     <link rel="stylesheet" href="/static/style.css">
   </head>
   <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
       <header>
         <h1>史记 — 第18章 列传 游侠列传六十四</h1>
       </header>
 
-      <main class="parallel">
-        <section>
-          <h3>文言文</h3>
-          <div class="txt">韩子曰:“儒以文乱法，而侠以武犯禁。”二者皆讥,而学士多称于世云。至如以术取宰相卿大夫,辅翼其世主，功名俱著于春秋,固无可言者。及若季次、原宪,闾巷人也，读书怀独行君子之德，义不苟合当世,当世亦笑之”。故季次、原宪终身空室蓬户，褐衣疏食不厌。死而已四百余年，而弟子志之不倦。今游侠，其行虽不轨于正义,然其言必信，其行必果，已诺必诚，不爱其躯，赴士之厄困，既已存亡死生矣,而不矜其能，羞伐其德,盖亦有足多者焉。
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
 
-且缓急,人之所时有也。昔者虞舜窘于井廪,伊尹负于鼎俎,傅说匿于傅险,吕尚困于棘津,夷吾桎梏,百里饭牛,仲尼畏匡,菜色陈、蔡。此皆学士所谓有道仁人也，犹然遭此蓄,况以中材而涉乱世之末流乎?其遇害何可胜道哉!
-
-鄙人有言曰:“何知仁义，已飨其利者为有德。”故伯夷丑周,饿死首阳山,而文武不以其故贬王；跖、跡暴戾,其徒诵义无穷。由此观之，“窃钩者诛，窃国者侯，侯之门仁义存”,非虚言也。
-
-今拘学或抱咫尺之义,久孤于世,岂若卑论侪俗，与世沉浮而取荣名哉!而布衣之徒，设取予然诺,千里诵义，为死不顾世,此亦有所长，非苟而已也。故士穷窘而得委命，此岂非人之所谓贤豪间者邪?诚使乡曲之侠,予季次、原宪比权量力,效功于当世，不同日而论矣。要以功见言信，侠客之义又曷可少哉!
-
-古布衣之侠,靡得而闻已。近世孟尝、春申、平原、信陵之徒,皆因王者亲属,藉于有土卿相之富厚，招天下贤者，显名诸侯，不可谓不贤者矣。比如顺风而呼，声非加疾，其势激也。至如闾巷之侠，修行砥名,声施于天下,莫不称贤，是为难耳。然儒、墨皆排摈不载。自秦以前，匹夫之侠，湮灭不见，余甚恨之。以余所闻，汉兴有朱家、田仲、王公、剧孟、郭解之徒，虽时扞当世之文罔,然其私义廉洁退让，有足称者。名不虚立，士不虚附。至如朋党宗强比周,设财役贫，豪暴侵凌孤弱，恣欲自快，游侠亦丑之。余悲世俗不察其意，而猥以朱家、郭解等令与暴豪之徒同类而共笑之也”。
-
-鲁朱家者,与高祖同时。鲁人皆以儒教，而朱家用侠闻。所藏活豪士以百数,其余庸人不可胜言。然终不伐其能，歆其德,诸所尝施，唯恐见之。振人不赡,先从贫贱始。家无余财，衣不完采,食不重味，乘不过输牛。专趋人之急，甚己之私。既阴脱季布将军之厄，及布尊贵，终身不见也。自关以东,莫不延颈愿交焉。
-
-楚田仲以侠闻,喜剑，父事朱家，自以为行弗及。田仲已死，而雒阳有剧孟。周人以商贾为资,而剧孟以任侠显诸侯。吴楚反时,条侯为太尉,乘传车将至河南,得剧孟，喜曰：“吴楚举大事而不求孟,吾知其无能为已矣。天下骚动，宰相得之，若得一敌国云。”剧孟行大类朱家，而好博，多少年之戏。然剧孟母死，自远方送丧盖千乘。及剧孟死，家无余十金之财。而符离人王孟亦以侠称江淮之间。
-
-是时济南晌氏、陈周庸亦以豪闻,景帝闻之，使使尽诛此属。其后代诸白、梁韩无辟、阳翟薛兄、郏韩孺纷纷复出焉。
-
-郭解，轵人也,字翁伯，善相人者许负外孙也。解父以任侠，孝文时诛死。解为人短小精悍，不饮酒。少时阴贼，慨不快意,身所杀甚众。以躯借交报仇,藏命作奸剽攻,休乃铸钱掘冢,固不可胜数。适有天幸，窘急常得脱，若遇赦。及解年长，更折节为俭,以德报怨，厚施而薄望。然其自喜为侠益甚。既已振人之命，不矜其功，其阴贼著于心，卒发于睚眦如故云。而少年慕其行，亦辄为报仇，不使知也。解姊子负解之势，与人饮，使之嚼。非其任，强必灌之。人怒，拔刀刺杀解姊子，亡去。解姊怒曰：“以翁伯之义,人杀吾子，贼不得。”弃其尸于道，弗葬，欲以辱解。解使人微知贼处。贼窘自归，具以实告解。解曰：“公杀之固当，吾儿不直。”遂去其贼，罪其姊子，乃收而葬之。诸公闻之，皆多解之义，益附焉。
-
-解出入，人皆避之。有一人独箕踞视之,解遣人问其名姓。客欲杀之。解曰：“居邑屋至不见敬,是吾德不修也，彼何罪!”乃阴属尉史曰:“是人，吾所急也,至践更时脱之。”每至践更，数过，吏弗求。怪之，问其故，乃解使脱之。箕踞者乃肉袒谢罪。少年闻之，愈益慕解之行。
-
-雒阳人有相仇者，邑中贤豪居间者以十数,终不听。客乃见郭解。解夜见仇家，仇家曲听解。解乃谓仇家曰：“吾闻雒阳诸公在此间，多不听者。今子幸而听解，解奈何乃从他县夺人邑中贤大夫权乎!”乃夜去，不使人知，曰：“且无用，待我去，令雒阳豪居其间，乃听之。”
-
-解执恭敬，出未尝有骑，不敢乘车入其县廷。之旁郡国，为人请求事，事可出,出之；不可者，各厌其意，然后乃敢尝酒食。诸公以故严重之,争为用。邑中少年及旁近县贤豪，夜半过门常十余车，请得解客舍养之。
-
-及徙豪富茂陵也,解家贫，不中訾,吏恐，不敢不徙。卫将军为言:“郭解家贫不中徙。”上曰：“布衣权至使将军为言，此其家不贫。”解家遂徙。诸公送者出千余万。轵人杨季主子为县掾，举徙解。解兄子断杨掾头。由此杨氏与郭氏为仇。
-
-解入关，关中贤豪知与不知，闻其声，争交獾解。已又杀杨季主。杨季主家上书，人又杀之阙下。上闻，乃下吏捕解。解亡，置其母家室夏阳,身至临晋。临晋籍少公素不知解,解冒,因求出关。籍少公已出解，解转入太原,所过辄告主人家。吏逐之，迹至籍少公。少公自杀，口绝。久之，乃得解。穷治所犯,为解所杀，皆在赦前。轵有儒生侍使者坐，客誉郭解，生曰：“郭解专以奸犯公法，何谓贤!”解客闻，杀此生，断其舌。吏以此责解，解实不知杀者。杀者亦竟绝，莫知为谁。吏奏解无罪。御史大夫公孙弘议曰:“解布衣为任侠行权”,以睚眦杀人，解虽弗知，此罪甚于解杀之。当大逆无道。”遂族郭解翁伯。
-
-自是之后，为侠者极众，敖而无足数者。然关中长安樊仲子,槐里赵王孙,长陵高公子,西河郭公仲,太原卤公孺,临淮兒长卿,东阳田君孺,虽为侠而逡逡有退让君子之风。至若北道姚氏四，西道诸杜,南道仇景，东道赵他、羽公子,南阳赵调之徒，此盗跖居民间者耳，曷足道哉!此乃乡者朱家之羞也。
-
-太史公曰：吾视郭解,状貌不及中人，言语不足采者。然天下无贤与不肖，知与不知，皆慕其声，言侠者皆引以为名。谚曰：“人貌荣名，岂有既乎!”於戏,惜哉!</div>
-        </section>
-        <section>
-          <h3>现代汉语</h3>
-          <div class="txt">韩非子说过：“儒生舞文弄墨扰乱国家法度，游侠逞用武功违犯国家禁令。”这两种人韩非子都是批评的，但儒生们在今天往往被世人所称赞。至于那些凭儒术取得宰相卿大夫，辅佐君主，功名载于青史的，当然不用我们说了。即使像季次、原宪那样的里巷书生，他们当时谨守节操，不与世俗同流合污，曾被许多人所嘲笑，所以他们一辈子住着柴门陋室，穿着粗布短衣，连吃饭都没有保证。可是他们虽然已经死去四百多年了，但他们的弟子却至今仍然不停地称道着他们。再看看游侠，他们的行为虽然不合今天的时宜，但是他们说话算数，办事一定要有结果，凡是答应人家的事情一定要兑现，他们不惜牺牲自己的生命去解救别人的危急，等到濒于死亡的人得到了新生，仗势害人的人得到了惩罚，他们却不夸耀自己的才能，不去吹嘘自己的德行，这也有值得称赞的地方吧!
-
-再说，紧急情况是人们所常有的。例如舜在淘井和修仓的时候被人暗算过，伊尹曾沦落为当厨师，傅说曾被埋没在傅险，吕尚曾困居在棘津，管仲当过俘虏，百里奚给人放过牛，孔子曾在匡地遭到围困，又在陈国和蔡国饿过肚子。这些都是儒生们所称赞的有崇高仁义道德的人，他们尚且遭到这样的灾难，至于那些只有中等才干而又生活在乱世中的人当然就更不用说了，他们所遇到的灾难，又怎么说得完呢?
-
-有俗话说：“管它什么仁义不仁义，谁对我有好处，我就说谁是好人。”因此尽管伯夷反对过武王伐纣，而且又饿死在首阳山，但文王、武王的声誉却并不因此而降低；盗跖、庄跡凶狠残暴，可是他们的党徒却长久地传颂着他们的功德。这样看来，“偷钩子的人被杀，偷国家的人封侯；哪里有王侯之家，哪里就有仁义”,这不是一句假话啊!
-
-现在有些拘谨的学者，死守着一点小小的道义，孤单穷困地生活在世界上，哪如降低调门，随波逐流地也去猎取功名富贵呢?而那些平民出身的游侠，他们谨慎对待取予，对别人说话算数，因而使千里之外的人都在称赞他们的义气。他们为急人之难而不怕牺牲，不怕世人如何议论，这也有他们的长处，不是什么人随随便便都可以做到的。所以当人们走投无路时，就去求救于他们，这不就是人们所赞扬的英雄好汉吗?假如拿这些平民之侠去和季次、原宪比较在社会上的权力、影响，以及对社会的贡献，那是不可同日而语的。如果从办事见效果，说话能兑现看，那些游侠的行为又怎么可以轻视呢?
-
-古代平民之侠的事迹，已经没办法知道了。近代的孟尝君、春申君、平原君、信陵君等人，都因为是国君的亲属，凭借他们封地的收入和卿相的地位，招揽天下的贤士，使自己扬名于诸侯，这不能说他们不是贤能的人；但这好比顺着风向呼喊，声音没有加强，但风势却使声音显得很响，传得很远。至于平民之侠，他们是靠着修炼自己的品德，提高自己的名节，来扬名于天下，博得天下人的称赞的，这才是不容易的呀!然而儒家和墨家的著作都不记载他们的事迹，使秦朝以前的平民之侠的事迹都埋没了，真叫人遗憾。据我所知，汉朝建立以来，有朱家、田仲、王公、剧孟、郭解等人，这些人虽然有时触犯国家的法律，但是他们的道德信义和廉洁谦让的人品，有值得称赞之处。他们的名声不是凭空吹起来的，人们依附他们也不是无缘无故的。至于那些结党营私的强宗豪族，他们彼此勾结，依仗家财奴役穷人，凭借权势欺负孤弱，肆无忌惮地为所欲为，真正的游侠对他们也是鄙视的。我感叹世人竟看不出上述两种人的区别，竟然错误地把朱家、郭解等同那些土豪恶霸们混在一起而加以嘲笑。
-
-鲁国的朱家，是汉高祖那个时候的人。鲁国人都喜欢讲儒术，而朱家却是以任侠闻名。先后被他掩护救活的，光豪杰之士就有几百人之多，其他一般的人就无法计算了。但他从不自我夸耀，自我欣赏。凡是被他救助过的人，他都尽量避免与他们再见面。他救济人，总是先从最贫困的开始。他自己家里没有任何多余的钱财，穿的衣服又破又旧，吃饭桌上从没见过两盘菜，出门坐的是牛车。但是他奔救别人的危急，超过了自己的一切。他曾在暗中帮助季布将军解脱了困境，等到季布地位尊贵了，朱家到死也没有再去看他。因此函谷关以东的人们，没有一个不企慕他，希望和他交朋友。
-
-楚国的田仲也以任侠闻名，他喜欢击剑，对待朱家像对待父亲一样，觉得自己的行为远远赶不上朱家。田仲死后，雒阳又出了个剧孟。雒阳人本来都靠着经商为生，而剧孟却以好打抱不平而扬名于各郡国。吴楚七国之乱时，条侯周亚夫做太尉，他正乘着驿车到河南去，半路上遇到了剧孟，高兴地说：“吴楚造反居然没有想到把剧孟找去，我可以断定他们成不了什么大气候了。”当时天下动乱，周亚夫得到剧孟，就像得到了一个与自己势均力敌的国家一样喜悦。剧孟的行为很像朱家，但喜好六博，大多是青年人玩的游戏。剧孟的母亲死时，从远方来奔丧的马车差不多有千余辆。等到剧孟死时，家里没有十锭黄铜的遗产。当时还有个符离人王孟，也以任侠闻名于江淮一带。
-
-当时，济南的晌氏、陈县的周庸，也以豪侠闻名，汉景帝听说后，就派人把他们全都杀掉了。后来代县有几个姓白的、梁地有韩无辟、阳翟有薛兄、郏县有韩孺等，又纷纷出现了。
-
-郭解是轵县人，字翁伯，是当时著名相士许负的外孙。郭解的父亲因为任侠，在孝文帝时被处死。郭解为人矮小，精明勇健，不喝酒。他少年时残忍狠毒，稍不如意就动手杀人，被他杀掉的人很多。他不惜豁出命去为朋友报仇，又常窝藏亡命，犯法抢劫，以及私造钱币，挖掘坟墓等，难以指说。但他运气好，每次碰到危难，总是能够逃脱，不然就是遇上朝廷大赦。到郭解长大成人时，一下子变成了一个谨慎守法的人。他用恩德回报别人的仇怨，他给别人的多而希望取得的少，但他行侠尚义的本性却更加突出了。他救完了人家的命，从不夸耀自己的功劳。他把残忍深藏在心底，说不定什么时候会因一点小事而突然爆发。许多年轻人仰慕他的行为，也常常为他报仇，而又不让郭解本人知道。郭解姐姐的儿子倚仗郭解的势力，劝人喝酒，人家喝不了，他非灌人家，逼得人急了，动手杀了郭解的外甥，而后逃走了。郭解的姐姐对郭解说：“凭你这么大的名气，有人杀了我的儿子，凶手竟然抓不到?”于是故意把她儿子的尸体扔在道上，不埋葬，想让郭解难堪。郭解暗中派人探听到了凶手的去向，凶手没有办法了，只好来向郭解自首，他如实地说明了真相。郭解说：“你杀的对，是我们的孩子没有道理。”于是放走了凶手，归罪于自己的外甥，把他的尸体收起来埋葬了。大家听说这件事后，都称赞郭解的义气，归附他的人就越来越多了。
-
-郭解每次出门，人们都给他让路表示尊敬，唯有一个人傲慢地叉着腿坐在那里看着郭解，不给他让路。郭解叫人去问那人的姓名，门下的人想要杀他，郭解说：“同住在一个县城而不受人敬重，是我的德行没有修好，他有什么罪!”于是暗中告诉县尉说：“那个人是我所关心的，等轮到该他出徭役时请免掉他。”因此那个人好几次该着去服徭役了，县吏都不找他。他很奇怪，去问是什么缘故，这才知道是郭解说情免了他徭役的。于是这个人就光着背来向郭解请罪。当地的青年们听说这件事，对郭解的行为就更加仰慕了。
-
-雒阳有两个人结了仇，当地的贤豪十几个人都来给他们调解过，但始终没能解决。于是有人就去请郭解来办。郭解夜间去找这两家仇人谈，两个仇家看着郭解的面子，勉强接受了调停。郭解对这两个仇家说：“我听说雒阳的许多贤豪都给你们调解过，你们都不肯听；现在你们听从我的调停和解了，我怎么能侵夺人家城镇贤豪的调停权力呢?”于是连夜离开了雒阳，不愿意让别人知道此事，临走时还说：“你们暂时先别听我的话，等我走后，当洛阳的贤豪们再来调解时，那时你们再照办。”
-
-郭解为人谦敬，出门从不骑马，更不敢坐着车子进县衙。到其他郡国为人办事时，事情可以解决的，就尽量解决好；不能解决的，也都设法让人们得到一定程度的满意，然后他才吃得下饭去。大家因此更加尊重他，争着为他效力。本城的少年以及其他邻县的贤豪，一夜之间往往就有十来起人赶着车子到郭解家去接一些被掩护的人回去供养。
-
-等到汉武帝下令强迫各地的富翁往茂陵搬迁时，郭解家里贫穷，财产的数目够不上搬迁的标准，但是名单上却有郭解的名字。这是因为下面办事的官吏害怕上面怪罪，不敢不让他搬迁。这时大将军卫青替郭解求情说：“郭解家里贫苦，不够搬迁条件。”皇帝说：“一个平民居然能使将军替他说情，说明这个人家绝不穷。”于是郭解就被勒令搬迁了。上路的时候，有成千上万的人来送他。轵县人杨季主的儿子在县里为吏，是他提出让郭解搬迁的。于是郭解哥哥的儿子就杀了这个县吏的头，从此杨家与郭家结了仇。
-
-郭解搬迁入关后，关中的贤豪无论认识的还是不认识的，都因为郭解的名声争先恐后地来和郭解交朋友。后来又有人杀了杨季主，杨季主家里的人上书告郭解。这时又有人把上告郭解的人杀死在皇宫大门外。皇帝知道后，下令逮捕郭解，郭解逃跑了。他把他的母亲家属安置在了夏阳，自己逃到了临晋。把守临晋的籍少公平时不认识郭解，今天冒然来投，请求出关，籍少公就仗义地放走了他。郭解辗转到了太原，所过之处，他都把自己的去向告诉给招待过他的人家。官府一路上追查郭解，待至追查到籍少公这里，籍少公自杀了，线索从此断绝。很久以后，官府才抓到了郭解。他们四处调查郭解的罪行，结果发现郭解杀人的事都发生在大赦以前。这时轵县有一个儒生，陪着前来访查郭解罪行的使者谈话，座中有人称赞郭解是好人，这个儒生说：“郭解专门作奸犯科，怎么能说是好人!”郭解的门客听说此事后，很快地又杀了这个儒生，而且割去了他的舌头。法吏们向郭解追问此事，但郭解实在不知道杀人者是谁。而杀人者也从此销声匿迹，根本查不出是谁了。法官们只好宣布郭解无罪。这时御史大夫公孙弘说：“郭解作为一个平民百姓，居然敢充好汉使威权，因为一点小事杀人。这一次他虽然不知道，但其罪过比他自己杀人还要重，应该判他个大逆不道。”就这样，郭解被满门抄斩了。
-
-从此以后，做游侠的人数还有不少，但都傲慢无礼，不值得一说。只有关中长安的樊仲子、槐里的赵王孙、长陵的高公子、西河的郭公仲、太原的卤公孺、临淮的兒长卿、东阳的田君孺，他们虽然是游侠，但谦逊退让有君子的风度。至于北方那个姓姚的，西方那几个姓杜的，以及南方的仇景，东方的赵他、羽公子，南阳的赵调等人，那完全像是隐藏在民间的一伙盗跖，哪值得一说呢?这都是以往朱家所看不上眼的人。
-
-太史公说：我见过郭解，他的体貌比不上一个中等人，说话也不引人注意。但是天下不论有出息的、没出息的，认识郭解的、不认识郭解的，都仰慕他的名声；当游侠的人都标榜郭解以提高自己的身份。俗话说：“人要是能以声誉作为自己的容貌，那就可以永世长存了。”可惜啊，竟落了个这样的结局。</div>
-        </section>
-        <section>
-          <h3>English</h3>
-          <div class="txt">Han Fei Zi has said, “Confucian scholars with their writings con- fuse the law, gallant citizens with their weapons infringe the rules." But although Han FeiZi ridicules both, Confucian scholars often win praise in the world. We need not speak of those who through their arts rise to become prime ministers or high officials assisting their sovereigns,those whose feats and fame are recorded in the annals of the state. But men like JiCi and Yuan Xian were ordinary citizens engaged in studying the classics, who held aloof from the world and practiced the virtues of a gentleman. Too upright to pander to the age, they were laughed at in their day. They lived all their lives in bare rooms with matting doors, content with coarse garments and the simplest fare. Now more than four hundred years have passed since their death, yet their disciples still commemorate them. As for the gallant citizens, although they do not always do what is right, their word can be trusted. They keep all their promises, honour all their pledges, and hasten to rescue those in distress regardless of their own safety. They risk their lives without boasting, not stooping to speak of their good deeds. So there is much to be said for them, especially as anyone may find himself in trouble sooner or later!
-
-he Grand Historian comments: In days gone by, Emperor Shun was trapped in a well and caught in a granary; Yi Yin toiled as a scullion; Fu Yue worked as a convict at Fuxian; Lü Shang sold food at Jijin; Guan Zhong was shackled; Baili Xi herded cattle;Confucius was threatened by the men of Kuang and grew pale from hunger in Chen and Cai. If such hardships befell these men so esteemed by scholars for their moral character, there must be no end to the sufferings of men of lesser stature who live in decadent and troubled times.
-
-The common people say, "Don't talk about humanity and justice. Whoever does you a good turn is a good man." So although Bo Yi so hated the Zhou Dynasty that he starved to death on Shouyang Mountain, people thought none the worse of King Wen and King Wu.Although Zhi and Jiao were cruel brigand chiefs, their followers extolled their merits. This illustrates the truth of the saying,"The man who steals a knife is killed but the man who steals a kingdom is ennobled, and virtue and justice are on the side of the nobles.”
-
-Scrupulous, punctilious scholars isolate themselves from the world, when they could win glory and fame by lowering themselves to the level of the vulgar and pandering to the fashions of the time. But when common citizens pledge themselves to a just cause and will travel a thousand li to die for it, not caring what the world thinks, this has its merits too.Such men have not lived for nothing. That is why people who are hard pressed entrust their fate to them, for these are worthy and outstanding men. Indeed, if we compare the power and influence of these gallant citizens with JiCi and Yuan Xian's, they render society a much greater service. The main thing is that they do all they promise, proving as good as their word. How can the world belittle such men?
-
-The names of gallant citizens of ancient times are lost. In recent ages there have been men like Lord Yan Ling, Lord Mengchang, Lord Chunshen, Lord Pingyuan and Lord Xinling, all related to royal houses or high ministers with rich fiefs, who used their wealth to gather men of talent from all parts of the empire to spread their fame through the states. These were certainly worthy men, but their winning themselves fame was like calling down the wind: even if the sound itself was not loud,the wind carried it a long way. t was much more difficult for the common citizens to practise virtue till their fame spread everywhere and their praise was on all lips. These men were brushed aside, moreover, by both Confucians and Mohists, who scorned to record their actions.That is why these gallant citizens who lived before the Qin Dynasty are lost in oblivion—much to my regret. From what I have heard, men like Zhu Jia, Tian Zhong, Wang Meng, Ju Meng and Guo Xie at the beginning of the Han Dynasty were admirably honest, scrupulous and modest in their private lives although they often broke the law of their time.Their fame was well deserved and it was not for nothing that others sought their protection. As for those gangs and powerful families who band together and use their wealth to enslave the poor and bully the weak and helpless, with no thought of anything but their own pleasure, such men are also despised by the gallant citizens. I consider it a pity that no distinction is generally made between the two, and that men class Zhu Jia and Guo Xie with those local bullies and sneer at both groups.
-
-Zhu Jia of Lu lived during the region of Emperor Gaozu, but while most men of Lu observe the teachings of Confucius Zhu Jia made a name as a gallant man. He protected and saved several hundred eminent men, to say nothing of ordinary people. Yet he never boasted of his ability or made much of his kindness. He tried, indeed, to avoid those whom he had helped. In aiding those in distress he started with the poor and humble. There was no spare money in his home, his clothes were shabby and faded, he ate no more than one dish at each meal and travelled in a small ox-cart. He secretly aided General Ji Bu when he was in trouble, but after Ji Bu became a great nobleman Zhu Jia never went to see him. All who lived east of the Hangu Pass craned their necks in their eagerness to get to know him.
-
-Tian Zhong of Chu, who made a name as a gallant man and loved swordsmanship, looked up to Zhu Jia as to his father and regarded himself as much inferior. After Tian Zhong's death there was Ju Meng of Luoyang. Most of the men of Zhou were traders, but Ju Meng won fame among the feudal lords by his gallant deeds of daring. When the princes of Wu and Chu rebelled, Zhou Yafu the marquis of Tiao was made the grand marshal. As he was approaching Henan by relay carriages he was de- lighted to meet Ju Meng and said, "The princes of Wu and Chu have raised a rebellion without seeking out Ju Meng. NowI know they will not accomplish anything.” For in those unsettled times a prime minister considered Ju Meng's help as equivalent to the conquest of an enemy state. Ju Meng behaved like Zhu Jia, except that he was fond of gam- bling and other young men’s amusements. When his mother died, about a thousand carriages came from distant parts to the funeral. When Ju Meng himself died, his family was left without so much as ten pieces of gold. Wang Meng of Fuli was also famed as a gallant citizen between the Yangtse and the Huai Rivers.
-
-Men of the Jian family of Jinan and Zhou Yong of Chen were also known at that time for their gallant deeds. When Emperor Jing learned of this, he sent and had them killed. They were followed later by others like the Bai family in Dai, Han Wubi of Liang, Xue Kuang of Yangdi and Han Ru of Shan.
-
-Guo Xie of Zhi, whose courtesy name was Wengbo, was the grand- son on his mother's side of the successful physiognomist Xu Fu.His father was executed for his daring deeds in the reign of Emperor Wen. Guo Xie was short but agile and intrepid. He never drank wine. In his youth he was sullen and vindictive. He killed many men when his anger was aroused but would risk his life to avenge friends. He sheltered outlaws, conspired against the authorities, was always going in for armed robbery, and was guilty time and again of counterfeiting money and robbing tombs. As luck would have it, however, he always contrived to extricate himself from trouble or to be pardoned by an amnesty. As Guo Xie grew older he became more humble and repaid evil with kindness, giving much and asking little in return. He grew fonder than ever of noble deeds of daring. But although he no longer boasted of the lives he had saved, he remained vindictive and prone to sudden bursts of anger over trivial humiliations. The young men who admired him would often avenge his wrongs without his knowledge. Guo Xie's elder sister had a son who took advantage of his uncle's influence. One day while drinking, this lad insisted that his companion should drain his cup, and although the other declared himself unable to do so he forced the wine down his throat. In a fury the man drew his dagger and stabbed the boy to death, after which he fled. Guo Xie's sister flew into a passion." Who says my brother is an honourable man?“ she exclaimed. “He lets my son's murderer go free!”She left the corpse unburied on the road in order to shame her brother. Guo Xie sent men to find out the whereabouts of the murderer. And the latter, knowing that he could not escape, came to Guo Xie of his own accord and told him what had happened. "You were right to kill him," said Guo Xie. "The boy was in the wrong,” So he let the man go, declaring that his nephew was to blame, and gave the dead body burial. When this became known, men were so impressed by his sense of justice that more admirers flocked to him.
-
-Whenever Guo Xie went out, people usually kept out of his way. One day, however, a man squatted insolently by the roadside to stare at him,and Guo Xie sent to inquire this stranger's name. His followers wanted to kill the man but Guo Xie said, "If someone in my own district treats me rudely, it must mean that I am lacking in virtue. Why do you blame him?" And he secretly told the local officers,“I have a high regard for this man. When his turn comes for conscription, let him off.” So every time men were conscripted, this fellow was surprised to find that the officers passed him by. When he discovered to whom he owed his exemption, he went with bared shoulders to apologize to Guo Xie. And the young men, hearing of this,admired Guo more than ever.
-
-Two men in Luoyang were carrying on a feud, and although a dozen or more of the chief citizens had tried to act as peacemakers they refused to be reconciled. When the matter was taken to Guo Xie he went by night to see the two enemies, and they brought themselves to accept his mediation. "I hear that many citizens of Luoyang have interceded with you, yet you did not listen to them," said Guo Xie. "I am glad that you are willing to take my advice. But it is not right for a stranger from another district to outshine your own worthies and detract from their prestige.” He left under cover of darkness so that no one might know of his visit."Go ahead without me," he told the two men. “Once I have gone and the chief citizens of Luoyang come again to reason with you, do as they say.”
-
-Guo Xie was a stickler for etiquette and would never ride into the district court in his carriage. When he went to neighbouring districts at his friends'request, if he could solve their problems, well and good; if not, he made a point of satisfying them in different ways before tasting food and wine. Thus he was highly respected and many people were only too eager to serve him. Often ten or more carriages came to his gate in one night, bringing young men of his district or prominent citizens from neighbouring provinces who offered to take away some of his protegés and look after them.
-
-When it was decided to move the wealthiest and most powerful citizens of the empire to Maoling, Guo Xie's family was not rich enough to be included, but the officer in charge dared not leave him out. General Wei Qing spoke up for him, saying that he was a poor man and should not be moved. But the emperor retorted, "If a private citizen is influential enough to prevail on the grand marshal to speak for him, he cannot be very poor!” So his family was finally forced to move, and the people who saw him off presented him with more than ten million cash. The district officer who had recommended Guo Xie's removal was the son of Yang Jizhu, a native of Zhi. His head was cut off by Guo Xie's nephew, and after that the two families were enemies.
-
-The chief citizens west of the Hangu Pass, whether they. Knew Guo Xie or not, soon heard of his fame and vied with one another to befriend him. Some time later, Yang Jizhu was murdered. His family wrote a memorial to the throne, but their messenger was killed outside the palace.When news of this came to the ears of Emperor Wu, he sent officers to arrest Guo Xie,who fled to Linjin, leaving his mother and family in Xiayang. Since Ji Shaogong, the officer at Linjin, did not know him and Guo Xie had assumed a false name, he was able to escape through the Pass and make his way east to Taiyuan. Because Guo Xie told his hosts each night where he was heading, the authorities were able to trace him as far as Ji Shaogong; but as the latter had committed suicide the trail was lost and it was some time before Guo Xie was captured. During Guo Xie's trial, it was found that he had committed no murders since the last amnesty. A Confucian scholar from Zhi was sitting with the officers during the investigation. When one of Guo Xie's admirers praised him, this scholar said, “Guo Xie has done nothing but break the law and commit crimes. What good can there be in such a man?” One of Guo's followers killed this scholar and cut out his tongue. The officers laid the blame for this on Guo Xie, although in fact he did not know the murderer, who was never found. The officers reported that Guo Xie was not guilty of the charges against him. Gongsun Hong the chief counsellor protested, “Guo Xie is a common citizen who sets himself up as the arbiter of justice and kills men for the most trivial offences. The fact that he does not know the murderer makes the case more serious than if he had killed the scholar himself. He is guilty of high treason."So Guo Xie and his clan were put to death.
-
-here have since been many gallant citizens, too arrogant in their behaviour to be worth mentioning. But there was Fan Zhongzi of Chang'an, Zhao Wangsun of Huaili, Gao Gongzi of Changling, Guo Gongzhong of Xihe, Lu Gongru of Taiyuan, Ni Changqing of Linhuai and Tian Junru of Dongyang. Although these men acted in a daring way,they were courteous and unassuming gentlemen. The Yao family in the north, the Du family in the west, Qiu Jing in the south, Zao Tayu or Zhao Gongzi in the east, andand Zhao Tiao in Nanyang were virtually brigands quite beneath our notice and utterly unfit to be compared with Zhu Jia of earlier times.
-
-The Grand Historian comments:When I saw Guo Xie,his ap- pearance was in noway striking,neither was his conversation memorable. Yet everybody in the empire,high or low,whether he knew him or not,admires him and cites him as an example of gallant daring."Fame sheds lustre on beauty,"says the proverb."It is fame that endures.” Alas,that he came to such an endl.</div>
-        </section>
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">韩子曰：“儒以文乱法，而侠以武犯禁。”二者皆讥，而学士多称于世云。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">韩非子说：“儒生用文辞扰乱法度，游侠用武力违犯禁令。”两种人都被他批评，但儒生却大多在世上被称赞。</td>
+                <td class="english-cell col-english" data-lang="english">Han Fei Zi has said, “Confucian scholars with their writings confuse the law, gallant citizens with their weapons infringe the rules." But although Han Fei Zi ridicules both, Confucian scholars often win praise in the world.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">至如以术取宰相卿大夫，辅翼其世主，功名俱著于春秋，固无可言者。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">至于那些凭借儒术当上宰相、卿大夫，辅佐君主，功名被记载在史书上的人，本来就没什么可多说的。</td>
+                <td class="english-cell col-english" data-lang="english">We need not speak of those who through their arts rise to become prime ministers or high officials assisting their sovereigns, those whose feats and fame are recorded in the annals of the state.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">及若季次、原宪，闾巷人也，读书怀独行君子之德，义不苟合当世，当世亦笑之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">至于像季次、原宪这样的民间读书人，他们读书时坚守君子的独特品德，坚守道义不与世俗苟合，当时的人也嘲笑他们。</td>
+                <td class="english-cell col-english" data-lang="english">But men like Ji Ci and Yuan Xian were ordinary citizens engaged in studying the classics, who held aloof from the world and practiced the virtues of a gentleman. Too upright to pander to the age, they were laughed at in their day.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">故季次、原宪终身空室蓬户，褐衣疏食不厌。死而已四百余年，而弟子志之不倦。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">所以季次、原宪一辈子住在空荡的茅屋中，粗布衣服、简陋饭食也不满足。他们死后四百多年，弟子们仍然不断铭记他们。</td>
+                <td class="english-cell col-english" data-lang="english">They lived all their lives in bare rooms with matting doors, content with coarse garments and the simplest fare. Now more than four hundred years have passed since their death, yet their disciples still commemorate them.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">今游侠，其行虽不轨于正义，然其言必信，其行必果，已诺必诚，不爱其躯，赴士之厄困，既已存亡死生矣，而不矜其能，羞伐其德，盖亦有足多者焉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">如今的游侠，他们的行为虽然不符合正道，但他们说话一定守信，做事一定有结果，承诺必定真诚，不惜牺牲自己，解救士人的危难，在让人脱离死亡、保全生命后，却不夸耀自己的才能，羞于宣扬自己的恩德，大概也有值得称赞的地方。</td>
+                <td class="english-cell col-english" data-lang="english">As for the gallant citizens, although they do not always do what is right, their word can be trusted. They keep all their promises, honour all their pledges, and hasten to rescue those in distress regardless of their own safety. They risk their lives without boasting, not stooping to speak of their good deeds. So there is much to be said for them.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">且缓急，人之所时有也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">况且紧急情况，是人们时常会遇到的。</td>
+                <td class="english-cell col-english" data-lang="english">In days gone by... (此处结合后文，补充完整语义) Emergency situations are something everyone may encounter from time to time.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">昔者虞舜窘于井廪，伊尹负于鼎俎，傅说匿于傅险，吕尚困于棘津，夷吾桎梏，百里饭牛，仲尼畏匡，菜色陈、蔡。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">从前虞舜在水井和粮仓中受困，伊尹背着鼎俎做厨师，傅说隐藏在傅险（做苦役），吕尚在棘津受困，管仲被戴上脚镣手铐，百里奚给人喂牛，孔子在匡地受威胁，在陈国、蔡国饿得面黄肌瘦。</td>
+                <td class="english-cell col-english" data-lang="english">Emperor Shun was trapped in a well and caught in a granary; Yi Yin toiled as a scullion; Fu Yue worked as a convict at Fuxian; Lü Shang sold food at Jijin; Guan Zhong was shackled; Baili Xi herded cattle; Confucius was threatened by the men of Kuang and grew pale from hunger in Chen and Cai.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">此皆学士所谓有道仁人也，犹然遭此菑，况以中材而涉乱世之末流乎？其遇害何可胜道哉！</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这些都是学者所说的有道德的仁人，尚且遭遇这样的灾难，何况是中等才能的人，又处在乱世的衰败时期呢？他们遭受的灾祸怎么能说得完呢！</td>
+                <td class="english-cell col-english" data-lang="english">If such hardships befell these men so esteemed by scholars for their moral character, there must be no end to the sufferings of men of lesser stature who live in decadent and troubled times.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">鄙人有言曰：“何知仁义，已飨其利者为有德。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">老百姓有句话说：“哪知道什么仁义，自己得到好处的人就是有德行的。”</td>
+                <td class="english-cell col-english" data-lang="english">The common people say, "Don't talk about humanity and justice. Whoever does you a good turn is a good man."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">故伯夷丑周，饿死首阳山，而文武不以其故贬王；跖、蹻暴戾，其徒诵义无穷。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">所以伯夷认为周朝（伐纣）可耻，饿死在首阳山，但周文王、周武王的王业并不因此被贬损；盗跖、庄蹻凶狠残暴，他们的门徒却不断称颂他们的道义。</td>
+                <td class="english-cell col-english" data-lang="english">So although Bo Yi so hated the Zhou Dynasty that he starved to death on Shouyang Mountain, people thought none the worse of King Wen and King Wu. Although Zhi and Jiao were cruel brigand chiefs, their followers extolled their merits.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">由此观之，“窃钩者诛，窃国者侯，侯之门仁义存”，非虚言也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">由此看来，“偷钩子的人被处死，偷国家的人封侯，诸侯的门庭里才有仁义”，这话不是假话。</td>
+                <td class="english-cell col-english" data-lang="english">This illustrates the truth of the saying, "The man who steals a knife is killed but the man who steals a kingdom is ennobled, and virtue and justice are on the side of the nobles.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">今拘学或抱咫尺之义，久孤于世，岂若卑论侪俗，与世沉浮而取荣名哉！</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">如今有些拘泥于学问的人，坚守微小的道义，长久地在世上孤立，哪里比得上降低论调、迎合世俗，随波逐流来获取荣耀名声呢！</td>
+                <td class="english-cell col-english" data-lang="english">Scrupulous, punctilious scholars isolate themselves from the world, when they could win glory and fame by lowering themselves to the level of the vulgar and pandering to the fashions of the time.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">而布衣之徒，设取予然诺，千里诵义，为死不顾世，此亦有所长，非苟而已也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">但平民出身的人，在取予和承诺上坚守原则，千里之外的人都称颂他们的道义，为道义献身而不顾世人看法，这也有他们的长处，不是随便就能做到的。</td>
+                <td class="english-cell col-english" data-lang="english">But when common citizens pledge themselves to a just cause and will travel a thousand li to die for it, not caring what the world thinks, this has its merits too. Such men have not lived for nothing.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">故士穷窘而得委命，此岂非人之所谓贤豪间者邪？</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">所以士人在穷困窘迫时能把性命托付给他们，这难道不是人们所说的贤能豪杰一类的人吗？</td>
+                <td class="english-cell col-english" data-lang="english">That is why people who are hard pressed entrust their fate to them, for these are worthy and outstanding men.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">诚使乡曲之侠，予季次、原宪比权量力，效功于当世，不同日而论矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">如果真的让乡里的游侠，和季次、原宪比较权势和能力，以及对当世的贡献，那是不能相提并论的。</td>
+                <td class="english-cell col-english" data-lang="english">Indeed, if we compare the power and influence of these gallant citizens with Ji Ci and Yuan Xian's, they render society a much greater service.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">要以功见言信，侠客之义又曷可少哉！</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">总之，从办事有成效、说话守信用来看，侠客的道义又怎么能缺少呢！</td>
+                <td class="english-cell col-english" data-lang="english">The main thing is that they do all they promise, proving as good as their word. How can the world belittle such men?</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">古布衣之侠，靡得而闻已。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">古代平民之侠的事迹，已经没办法知道了。</td>
+                <td class="english-cell col-english" data-lang="english">The names of gallant citizens of ancient times are lost.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">近世孟尝、春申、平原、信陵之徒，皆因王者亲属，藉于有土卿相之富厚，招天下贤者，显名诸侯，不可谓不贤者矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">近代的孟尝君、春申君、平原君、信陵君等人，都因为是国君的亲属，凭借他们封地的收入和卿相的地位，招揽天下的贤士，使自己扬名于诸侯，这不能说他们不是贤能的人。</td>
+                <td class="english-cell col-english" data-lang="english">In recent ages there have been men like Lord Mengchang, Lord Chunshen, Lord Pingyuan and Lord Xinling, all related to royal houses or high ministers with rich fiefs, who used their wealth to gather men of talent from all parts of the empire to spread their fame through the states. These were certainly worthy men.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">比如顺风而呼，声非加疾，其势激也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">但这好比顺着风向呼喊，声音没有加强，但风势却使声音显得很响，传得很远。</td>
+                <td class="english-cell col-english" data-lang="english">but their winning themselves fame was like calling down the wind: even if the sound itself was not loud, the wind carried it a long way.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">至如闾巷之侠，修行砥名，声施于天下，莫不称贤，是为难耳。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">至于平民之侠，他们是靠着修炼自己的品德，提高自己的名节，来扬名于天下，博得天下人的称赞的，这才是不容易的呀！</td>
+                <td class="english-cell col-english" data-lang="english">It was much more difficult for the common citizens to practise virtue till their fame spread everywhere and their praise was on all lips.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">然儒、墨皆排摈不载。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">然而儒家和墨家的著作都不记载他们的事迹。</td>
+                <td class="english-cell col-english" data-lang="english">These men were brushed aside, moreover, by both Confucians and Mohists, who scorned to record their actions.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">自秦以前，匹夫之侠，湮灭不见，余甚恨之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">使秦朝以前的平民之侠的事迹都埋没了，真叫人遗憾。</td>
+                <td class="english-cell col-english" data-lang="english">That is why these gallant citizens who lived before the Qin Dynasty are lost in oblivion—much to my regret.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">以余所闻，汉兴有朱家、田仲、王公、剧孟、郭解之徒，虽时扞当世之文罔，然其私义廉洁退让，有足称者。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">据我所知，汉朝建立以来，有朱家、田仲、王公、剧孟、郭解等人，这些人虽然有时触犯国家的法律，但是他们的道德信义和廉洁谦让的人品，有值得称赞之处。</td>
+                <td class="english-cell col-english" data-lang="english">From what I have heard, men like Zhu Jia, Tian Zhong, Wang Meng, Ju Meng and Guo Xie at the beginning of the Han Dynasty were admirably honest, scrupulous and modest in their private lives although they often broke the law of their time.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">名不虚立，士不虚附。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他们的名声不是凭空吹起来的，人们依附他们也不是无缘无故的。</td>
+                <td class="english-cell col-english" data-lang="english">Their fame was well deserved and it was not for nothing that others sought their protection.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">至如朋党宗强比周，设财役贫，豪暴侵凌孤弱，恣欲自快，游侠亦丑之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">至于那些结党营私的强宗豪族，他们彼此勾结，依仗家财奴役穷人，凭借权势欺负孤弱，肆无忌惮地为所欲为，真正的游侠对他们也是鄙视的。</td>
+                <td class="english-cell col-english" data-lang="english">As for those gangs and powerful families who band together and use their wealth to enslave the poor and bully the weak and helpless, with no thought of anything but their own pleasure, such men are also despised by the gallant citizens.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">余悲世俗不察其意，而猥以朱家、郭解等令与暴豪之徒同类而共笑之也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">我感叹世人竟看不出上述两种人的区别，竟然错误地把朱家、郭解等同那些土豪恶霸们混在一起而加以嘲笑。</td>
+                <td class="english-cell col-english" data-lang="english">I consider it a pity that no distinction is generally made between the two, and that men class Zhu Jia and Guo Xie with those local bullies and sneer at both groups.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">鲁朱家者，与高祖同时。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">鲁国的朱家，是汉高祖那个时候的人。</td>
+                <td class="english-cell col-english" data-lang="english">Zhu Jia of Lu lived during the reign of Emperor Gaozu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">鲁人皆以儒教，而朱家用侠闻。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">鲁国人都喜欢讲儒术，而朱家却是以任侠闻名。</td>
+                <td class="english-cell col-english" data-lang="english">but while most men of Lu observe the teachings of Confucius, Zhu Jia made a name as a gallant man.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">所藏活豪士以百数，其余庸人不可胜言。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">先后被他掩护救活的，光豪杰之士就有几百人之多，其他一般的人就无法计算了。</td>
+                <td class="english-cell col-english" data-lang="english">He protected and saved several hundred eminent men, to say nothing of ordinary people.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">然终不伐其能，歆其德，诸所尝施，唯恐见之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">但他从不自我夸耀，自我欣赏。凡是被他救助过的人，他都尽量避免与他们再见面。</td>
+                <td class="english-cell col-english" data-lang="english">Yet he never boasted of his ability or made much of his kindness. He tried, indeed, to avoid those whom he had helped.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">振人不赡，先从贫贱始。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他救济人，总是先从最贫困的开始。</td>
+                <td class="english-cell col-english" data-lang="english">In aiding those in distress he started with the poor and humble.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">家无余财，衣不完采，食不重味，乘不过输牛。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他自己家里没有任何多余的钱财，穿的衣服又破又旧，吃饭桌上从没见过两盘菜，出门坐的是牛车。</td>
+                <td class="english-cell col-english" data-lang="english">There was no spare money in his home, his clothes were shabby and faded, he ate no more than one dish at each meal and travelled in a small ox-cart.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">专趋人之急，甚己之私。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">但是他奔救别人的危急，超过了自己的一切。</td>
+                <td class="english-cell col-english" data-lang="english">He devoted himself to helping those in urgent need, putting others' troubles above his own.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">既阴脱季布将军之厄，及布尊贵，终身不见也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他曾在暗中帮助季布将军解脱了困境，等到季布地位尊贵了，朱家到死也没有再去看他。</td>
+                <td class="english-cell col-english" data-lang="english">He secretly aided General Ji Bu when he was in trouble, but after Ji Bu became a great nobleman, Zhu Jia never went to see him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">自关以东，莫不延颈愿交焉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">因此函谷关以东的人们，没有一个不企慕他，希望和他交朋友。</td>
+                <td class="english-cell col-english" data-lang="english">All who lived east of the Hangu Pass craned their necks in their eagerness to get to know him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">楚田仲以侠闻，喜剑，父事朱家，自以为行弗及。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">楚国的田仲也以任侠闻名，他喜欢击剑，对待朱家像对待父亲一样，觉得自己的行为远远赶不上朱家。</td>
+                <td class="english-cell col-english" data-lang="english">Tian Zhong of Chu, who made a name as a gallant man and loved swordsmanship, looked up to Zhu Jia as to his father and regarded himself as much inferior.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">田仲已死，而雒阳有剧孟。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">田仲死后，雒阳又出了个剧孟。</td>
+                <td class="english-cell col-english" data-lang="english">After Tian Zhong's death there was Ju Meng of Luoyang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">周人以商贾为资，而剧孟以任侠显诸侯。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">雒阳人本来都靠着经商为生，而剧孟却以好打抱不平而扬名于各郡国。</td>
+                <td class="english-cell col-english" data-lang="english">Most of the men of Zhou were traders, but Ju Meng won fame among the feudal lords by his gallant deeds of daring.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吴楚反时，条侯为太尉，乘传车将至河南，得剧孟，喜曰：“吴楚举大事而不求孟，吾知其无能为已矣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">吴楚七国之乱时，条侯周亚夫做太尉，他正乘着驿车到河南去，半路上遇到了剧孟，高兴地说：“吴楚造反居然没有想到把剧孟找去，我可以断定他们成不了什么大气候了。”</td>
+                <td class="english-cell col-english" data-lang="english">When the princes of Wu and Chu rebelled, Zhou Yafu the marquis of Tiao was made the grand marshal. As he was approaching Henan by relay carriages, he was delighted to meet Ju Meng and said, "The princes of Wu and Chu have raised a rebellion without seeking out Ju Meng. Now I know they will not accomplish anything."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">天下骚动，宰相得之，若得一敌国云。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时天下动乱，周亚夫得到剧孟，就像得到了一个与自己势均力敌的国家一样喜悦。</td>
+                <td class="english-cell col-english" data-lang="english">For in those unsettled times a prime minister considered Ju Meng's help as equivalent to the conquest of an enemy state.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">剧孟行大类朱家，而好博，多少年之戏。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">剧孟的行为很像朱家，但喜好六博，大多是青年人玩的游戏。</td>
+                <td class="english-cell col-english" data-lang="english">Ju Meng behaved like Zhu Jia, except that he was fond of gambling and other young men’s amusements.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">然剧孟母死，自远方送丧盖千乘。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">剧孟的母亲死时，从远方来奔丧的马车差不多有千余辆。</td>
+                <td class="english-cell col-english" data-lang="english">When his mother died, about a thousand carriages came from distant parts to the funeral.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">及剧孟死，家无余十金之财。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">等到剧孟死时，家里没有十锭黄铜的遗产。</td>
+                <td class="english-cell col-english" data-lang="english">When Ju Meng himself died, his family was left without so much as ten pieces of gold.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">而符离人王孟亦以侠称江淮之间。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时还有个符离人王孟，也以任侠闻名于江淮一带。</td>
+                <td class="english-cell col-english" data-lang="english">Wang Meng of Fuli was also famed as a gallant citizen between the Yangtze and the Huai Rivers.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">是时济南晌氏、陈周庸亦以豪闻,景帝闻之，使使尽诛此属。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当时，济南的晌氏、陈县的周庸，也以豪侠闻名，汉景帝听说后，就派人把他们全都杀掉了。</td>
+                <td class="english-cell col-english" data-lang="english">Men of the Jian family of Jinan and Zhou Yong of Chen were also known at that time for their gallant deeds. When Emperor Jing learned of this, he sent and had them killed.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其后代诸白、梁韩无辟、阳翟薛兄、郏韩孺纷纷复出焉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来代县有几个姓白的、梁地有韩无辟、阳翟有薛兄、郏县有韩孺等，又纷纷出现了。</td>
+                <td class="english-cell col-english" data-lang="english">They were followed later by others like the Bai family in Dai, Han Wubi of Liang, Xue Kuang of Yangdi and Han Ru of Shan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">郭解，轵人也,字翁伯，善相人者许负外孙也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郭解是轵县人，字翁伯，是当时著名相士许负的外孙。</td>
+                <td class="english-cell col-english" data-lang="english">Guo Xie of Zhi, whose courtesy name was Wengbo, was the grandson on his mother's side of the successful physiognomist Xu Fu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">解父以任侠，孝文时诛死。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郭解的父亲因为任侠，在孝文帝时被处死。</td>
+                <td class="english-cell col-english" data-lang="english">His father was executed for his daring deeds in the reign of Emperor Wen.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">解为人短小精悍，不饮酒。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郭解为人矮小，精明勇健，不喝酒。</td>
+                <td class="english-cell col-english" data-lang="english">Guo Xie was short but agile and intrepid. He never drank wine.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">少时阴贼，慨不快意,身所杀甚众。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他少年时残忍狠毒，稍不如意就动手杀人，被他杀掉的人很多。</td>
+                <td class="english-cell col-english" data-lang="english">In his youth he was sullen and vindictive. He killed many men when his anger was aroused.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">以躯借交报仇,藏命作奸剽攻,休乃铸钱掘冢,固不可胜数。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他不惜豁出命去为朋友报仇，又常窝藏亡命，犯法抢劫，以及私造钱币，挖掘坟墓等，难以指说。</td>
+                <td class="english-cell col-english" data-lang="english">but would risk his life to avenge friends. He sheltered outlaws, conspired against the authorities, was always going in for armed robbery, and was guilty time and again of counterfeiting money and robbing tombs.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">适有天幸，窘急常得脱，若遇赦。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">但他运气好，每次碰到危难，总是能够逃脱，不然就是遇上朝廷大赦。</td>
+                <td class="english-cell col-english" data-lang="english">As luck would have it, however, he always contrived to extricate himself from trouble or to be pardoned by an amnesty.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">及解年长，更折节为俭,以德报怨，厚施而薄望。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">到郭解长大成人时，一下子变成了一个谨慎守法的人。他用恩德回报别人的仇怨，他给别人的多而希望取得的少。</td>
+                <td class="english-cell col-english" data-lang="english">As Guo Xie grew older he became more humble and repaid evil with kindness, giving much and asking little in return.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">然其自喜为侠益甚。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">但他行侠尚义的本性却更加突出了。</td>
+                <td class="english-cell col-english" data-lang="english">He grew fonder than ever of noble deeds of daring.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">既已振人之命，不矜其功，其阴贼著于心，卒发于睚眦如故云。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他救完了人家的命，从不夸耀自己的功劳。他把残忍深藏在心底，说不定什么时候会因一点小事而突然爆发。</td>
+                <td class="english-cell col-english" data-lang="english">But although he no longer boasted of the lives he had saved, he remained vindictive and prone to sudden bursts of anger over trivial humiliations.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">而少年慕其行，亦辄为报仇，不使知也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">许多年轻人仰慕他的行为，也常常为他报仇，而又不让郭解本人知道。</td>
+                <td class="english-cell col-english" data-lang="english">The young men who admired him would often avenge his wrongs without his knowledge.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">解姊子负解之势，与人饮，使之嚼。非其任，强必灌之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郭解姐姐的儿子倚仗郭解的势力，劝人喝酒，人家喝不了，他非灌人家。</td>
+                <td class="english-cell col-english" data-lang="english">Guo Xie's elder sister had a son who took advantage of his uncle's influence. One day while drinking, this lad insisted that his companion should drain his cup, and although the other declared himself unable to do so he forced the wine down his throat.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">人怒，拔刀刺杀解姊子，亡去。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">逼得人急了，动手杀了郭解的外甥，而后逃走了。</td>
+                <td class="english-cell col-english" data-lang="english">In a fury the man drew his dagger and stabbed the boy to death, after which he fled.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">解姊怒曰：“以翁伯之义,人杀吾子，贼不得。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郭解的姐姐对郭解说：“凭你这么大的名气，有人杀了我的儿子，凶手竟然抓不到?”</td>
+                <td class="english-cell col-english" data-lang="english">Guo Xie's sister flew into a passion. "Who says my brother is an honourable man?" she exclaimed. "He lets my son's murderer go free!"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">弃其尸于道，弗葬，欲以辱解。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是故意把她儿子的尸体扔在道上，不埋葬，想让郭解难堪。</td>
+                <td class="english-cell col-english" data-lang="english">She left the corpse unburied on the road in order to shame her brother.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">解使人微知贼处。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郭解暗中派人探听到了凶手的去向。</td>
+                <td class="english-cell col-english" data-lang="english">Guo Xie sent men to find out the whereabouts of the murderer.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">贼窘自归，具以实告解。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">凶手没有办法了，只好来向郭解自首，他如实地说明了真相。</td>
+                <td class="english-cell col-english" data-lang="english">And the latter, knowing that he could not escape, came to Guo Xie of his own accord and told him what had happened.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">解曰：“公杀之固当，吾儿不直。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郭解说：“你杀的对，是我们的孩子没有道理。”</td>
+                <td class="english-cell col-english" data-lang="english">"You were right to kill him," said Guo Xie. "The boy was in the wrong."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">遂去其贼，罪其姊子，乃收而葬之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是放走了凶手，归罪于自己的外甥，把他的尸体收起来埋葬了。</td>
+                <td class="english-cell col-english" data-lang="english">So he let the man go, declaring that his nephew was to blame, and gave the dead body burial.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">诸公闻之，皆多解之义，益附焉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">大家听说这件事后，都称赞郭解的义气，归附他的人就越来越多了。</td>
+                <td class="english-cell col-english" data-lang="english">When this became known, men were so impressed by his sense of justice that more admirers flocked to him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">解出入，人皆避之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郭解每次出门，人们都给他让路表示尊敬。</td>
+                <td class="english-cell col-english" data-lang="english">Whenever Guo Xie went out, people usually kept out of his way.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">有一人独箕踞视之,解遣人问其名姓。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">唯有一个人傲慢地叉着腿坐在那里看着郭解，不给他让路。郭解叫人去问那人的姓名。</td>
+                <td class="english-cell col-english" data-lang="english">One day, however, a man squatted insolently by the roadside to stare at him, and Guo Xie sent to inquire this stranger's name.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">客欲杀之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">门下的人想要杀他。</td>
+                <td class="english-cell col-english" data-lang="english">His followers wanted to kill the man.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">解曰：“居邑屋至不见敬,是吾德不修也，彼何罪!”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郭解说：“同住在一个县城而不受人敬重，是我的德行没有修好，他有什么罪!”</td>
+                <td class="english-cell col-english" data-lang="english">but Guo Xie said, "If someone in my own district treats me rudely, it must mean that I am lacking in virtue. Why do you blame him?"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">乃阴属尉史曰:“是人，吾所急也,至践更时脱之。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是暗中告诉县尉说：“那个人是我所关心的，等轮到该他出徭役时请免掉他。”</td>
+                <td class="english-cell col-english" data-lang="english">And he secretly told the local officers, "I have a high regard for this man. When his turn comes for conscription, let him off."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">每至践更，数过，吏弗求。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">因此那个人好几次该着去服徭役了，县吏都不找他。</td>
+                <td class="english-cell col-english" data-lang="english">So every time men were conscripted, this fellow was surprised to find that the officers passed him by.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">怪之，问其故，乃解使脱之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他很奇怪，去问是什么缘故，这才知道是郭解说情免了他徭役的。</td>
+                <td class="english-cell col-english" data-lang="english">When he discovered to whom he owed his exemption.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">箕踞者乃肉袒谢罪。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是这个人就光着背来向郭解请罪。</td>
+                <td class="english-cell col-english" data-lang="english">he went with bared shoulders to apologize to Guo Xie.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">少年闻之，愈益慕解之行。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当地的青年们听说这件事，对郭解的行为就更加仰慕了。</td>
+                <td class="english-cell col-english" data-lang="english">And the young men, hearing of this, admired Guo more than ever.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">雒阳人有相仇者，邑中贤豪居间者以十数,终不听。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">洛阳有结仇的两个人，城中十几位贤能豪杰从中调解，（两人）始终不肯听从。</td>
+                <td class="english-cell col-english" data-lang="english">Two men in Luoyang were carrying on a feud, and although a dozen or more of the chief citizens had tried to act as peacemakers they refused to be reconciled.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">客乃见郭解。解夜见仇家，仇家曲听解。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">有人就去拜见郭解。郭解连夜去见仇家，仇家勉强听从了郭解的调解。</td>
+                <td class="english-cell col-english" data-lang="english">When the matter was taken to Guo Xie he went by night to see the two enemies, and they brought themselves to accept his mediation.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">解乃谓仇家曰：“吾闻雒阳诸公在此间，多不听者。今子幸而听解，解奈何乃从他县夺人邑中贤大夫权乎!”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郭解对仇家说：“我听说洛阳各位贤士在此调解，你们大多不听从。现在你们有幸听从我的调解，我怎能从别的县来侵夺人家城中贤士大夫的调解权力呢！”</td>
+                <td class="english-cell col-english" data-lang="english">"I hear that many citizens of Luoyang have interceded with you, yet you did not listen to them," said Guo Xie. "I am glad that you are willing to take my advice. But it is not right for a stranger from another district to outshine your own worthies and detract from their prestige.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">乃夜去，不使人知，曰：“且无用，待我去，令雒阳豪居其间，乃听之。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是（郭解）连夜离开，不让人知道，说：“暂时先不要按我的话做，等我离开后，让洛阳的贤豪从中调解，那时你们再听从。”</td>
+                <td class="english-cell col-english" data-lang="english">He left under cover of darkness so that no one might know of his visit. "Go ahead without me," he told the two men. “Once I have gone and the chief citizens of Luoyang come again to reason with you, do as they say.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">解执恭敬，出未尝有骑，不敢乘车入其县廷。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郭解待人恭敬，出门从未骑马，更不敢乘车进入本县的官署。</td>
+                <td class="english-cell col-english" data-lang="english">Guo Xie was a stickler for etiquette and would never ride into the district court in his carriage.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">之旁郡国，为人请求事，事可出,出之；不可者，各厌其意，然后乃敢尝酒食。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">到邻近的郡国，为别人办事，事情能解决的，就解决；不能解决的，也设法让每个人都满意，之后才敢吃饭喝酒。</td>
+                <td class="english-cell col-english" data-lang="english">When he went to neighbouring districts at his friends' request, if he could solve their problems, well and good; if not, he made a point of satisfying them in different ways before tasting food and wine.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">诸公以故严重之,争为用。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">大家因此越发敬重他，争相为他效力。</td>
+                <td class="english-cell col-english" data-lang="english">Thus he was highly respected and many people were only too eager to serve him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">邑中少年及旁近县贤豪，夜半过门常十余车，请得解客舍养之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">城中的年轻人以及邻近各县的贤豪，半夜里到郭解家来的常常有十几辆车，请求把郭解收留的门客接到自家供养。</td>
+                <td class="english-cell col-english" data-lang="english">Often ten or more carriages came to his gate in one night, bringing young men of his district or prominent citizens from neighbouring provinces who offered to take away some of his protegés and look after them.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">及徙豪富茂陵也,解家贫，不中訾,吏恐，不敢不徙。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">到了迁徙富豪到茂陵的时候，郭解家境贫穷，财产不够迁徙的标准，但官吏害怕（上面怪罪），不敢不迁徙他。</td>
+                <td class="english-cell col-english" data-lang="english">When it was decided to move the wealthiest and most powerful citizens of the empire to Maoling, Guo Xie's family was not rich enough to be included, but the officer in charge dared not leave him out.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">卫将军为言:“郭解家贫不中徙。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">卫将军为他求情说：“郭解家贫，不够迁徙的标准。”</td>
+                <td class="english-cell col-english" data-lang="english">General Wei Qing spoke up for him, saying that he was a poor man and should not be moved.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上曰：“布衣权至使将军为言，此其家不贫。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">皇上说：“一个平民的权势竟能让将军为他求情，这说明他家里并不贫穷。”</td>
+                <td class="english-cell col-english" data-lang="english">But the emperor retorted, "If a private citizen is influential enough to prevail on the grand marshal to speak for him, he cannot be very poor!”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">解家遂徙。诸公送者出千余万。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郭解家最终还是被迁徙了。为他送行的人出资达一千多万。</td>
+                <td class="english-cell col-english" data-lang="english">So his family was finally forced to move, and the people who saw him off presented him with more than ten million cash.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">轵人杨季主子为县掾，举徙解。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">轵县人杨季主的儿子担任县掾，是他提议迁徙郭解的。</td>
+                <td class="english-cell col-english" data-lang="english">The district officer who had recommended Guo Xie's removal was the son of Yang Jizhu, a native of Zhi.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">解兄子断杨掾头。由此杨氏与郭氏为仇。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郭解哥哥的儿子砍了这位县掾的头。从此杨家和郭家结了仇。</td>
+                <td class="english-cell col-english" data-lang="english">His head was cut off by Guo Xie's nephew, and after that the two families were enemies.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">解入关，关中贤豪知与不知，闻其声，争交欢解。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郭解进入函谷关后，关中的贤能豪杰无论认识还是不认识他，听说他的名声，都争相与他结交。</td>
+                <td class="english-cell col-english" data-lang="english">The chief citizens west of the Hangu Pass, whether they knew Guo Xie or not, soon heard of his fame and vied with one another to befriend him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">已又杀杨季主。杨季主家上书，人又杀之阙下。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来又有人杀了杨季主。杨季主的家人上书朝廷（告状），（结果）上书的人又在皇宫门外被杀死。</td>
+                <td class="english-cell col-english" data-lang="english">Some time later, Yang Jizhu was murdered. His family wrote a memorial to the throne, but their messenger was killed outside the palace.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">上闻，乃下吏捕解。解亡，置其母家室夏阳，身至临晋。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">皇帝听说后，就下令官吏逮捕郭解。郭解逃跑了，把他的母亲和家属安置在夏阳，自己逃到了临晋。</td>
+                <td class="english-cell col-english" data-lang="english">When news of this came to the ears of Emperor Wu, he sent officers to arrest Guo Xie, who fled to Linjin, leaving his mother and family in Xiayang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">临晋籍少公素不知解，解冒，因求出关。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">临晋的籍少公一向不认识郭解，郭解冒名（求见），趁机请求出关。</td>
+                <td class="english-cell col-english" data-lang="english">Since Ji Shaogong, the officer at Linjin, did not know him and Guo Xie had assumed a false name, he was able to escape through the Pass.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">籍少公已出解，解转入太原，所过辄告主人家。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">籍少公放走郭解后，郭解辗转到了太原，所经过的地方，总会把自己的行踪告诉留宿他的人家。</td>
+                <td class="english-cell col-english" data-lang="english">... and make his way east to Taiyuan. Because Guo Xie told his hosts each night where he was heading.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吏逐之，迹至籍少公。少公自杀，口绝。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">官吏追捕郭解，追踪线索到了籍少公那里。籍少公自杀，（追查的）口供断绝。</td>
+                <td class="english-cell col-english" data-lang="english">the authorities were able to trace him as far as Ji Shaogong; but as the latter had committed suicide the trail was lost.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">久之，乃得解。穷治所犯，为解所杀，皆在赦前。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">过了很久，才抓到郭解。（官吏）彻底追查他的罪行，发现被郭解所杀的人，都在（朝廷）大赦之前。</td>
+                <td class="english-cell col-english" data-lang="english">it was some time before Guo Xie was captured. During Guo Xie's trial, it was found that he had committed no murders since the last amnesty.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">轵有儒生侍使者坐，客誉郭解，生曰：“郭解专以奸犯公法，何谓贤！”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">轵县有个儒生陪侍前来办案的使者坐着，有门客称赞郭解，这个儒生说：“郭解专门凭借奸诈触犯国法，怎么能说贤能呢！”</td>
+                <td class="english-cell col-english" data-lang="english">A Confucian scholar from Zhi was sitting with the officers during the investigation. When one of Guo Xie's admirers praised him, this scholar said, “Guo Xie has done nothing but break the law and commit crimes. What good can there be in such a man?”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">解客闻，杀此生，断其舌。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郭解的门客听说后，杀了这个儒生，并割掉了他的舌头。</td>
+                <td class="english-cell col-english" data-lang="english">One of Guo's followers killed this scholar and cut out his tongue.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吏以此责解，解实不知杀者。杀者亦竟绝，莫知为谁。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">官吏因此责问郭解，郭解确实不知道杀人者是谁。杀人者也最终销声匿迹，没人知道是谁。</td>
+                <td class="english-cell col-english" data-lang="english">The officers laid the blame for this on Guo Xie, although in fact he did not know the murderer, who was never found.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吏奏解无罪。御史大夫公孙弘议曰：“解布衣为任侠行权，以睚眦杀人，解虽弗知，此罪甚于解杀之。当大逆无道。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">官吏上奏说郭解无罪。御史大夫公孙弘议论说：“郭解作为平民行侠弄权，因为一点小事就杀人，郭解即使不知道（这件事），这个罪过也比他自己杀人还重。应当判定为大逆无道。”</td>
+                <td class="english-cell col-english" data-lang="english">The officers reported that Guo Xie was not guilty of the charges against him. Gongsun Hong the chief counsellor protested, “Guo Xie is a common citizen who sets himself up as the arbiter of justice and kills men for the most trivial offences. The fact that he does not know the murderer makes the case more serious than if he had killed the scholar himself. He is guilty of high treason."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">遂族郭解翁伯。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是就把郭解（字翁伯）全族诛杀了。</td>
+                <td class="english-cell col-english" data-lang="english">So Guo Xie and his clan were put to death.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">自是之后，为侠者极众，敖而无足数者。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">从此以后，行侠的人非常多，但都傲慢无礼，不值得一提。</td>
+                <td class="english-cell col-english" data-lang="english">There have since been many gallant citizens, too arrogant in their behaviour to be worth mentioning.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">然关中长安樊仲子，槐里赵王孙，长陵高公子，西河郭公仲，太原卤公孺，临淮兒长卿，东阳田君孺，虽为侠而逡逡有退让君子之风。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">但关中长安的樊仲子、槐里的赵王孙、长陵的高公子、西河的郭公仲、太原的卤公孺、临淮的兒长卿、东阳的田君孺，虽然行侠，却谦逊恭谨，有君子退让的风度。</td>
+                <td class="english-cell col-english" data-lang="english">But there was Fan Zhongzi of Chang'an, Zhao Wangsun of Huaili, Gao Gongzi of Changling, Guo Gongzhong of Xihe, Lu Gongru of Taiyuan, Ni Changqing of Linhuai and Tian Junru of Dongyang. Although these men acted in a daring way, they were courteous and unassuming gentlemen.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">至若北道姚氏，西道诸杜，南道仇景，东道赵他、羽公子，南阳赵调之徒，此盗跖居民间者耳，曷足道哉！</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">至于北方道路上的姚氏、西方道路上的各杜姓（游侠）、南方道路上的仇景、东方道路上的赵他和羽公子、南阳的赵调这类人，不过是些藏在民间的盗跖罢了，哪里值得一提呢！</td>
+                <td class="english-cell col-english" data-lang="english">The Yao family in the north, the Du family in the west, Qiu Jing in the south, Zao Tayu or Zhao Gongzi in the east, and Zhao Tiao in Nanyang were virtually brigands quite beneath our notice.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">此乃乡者朱家之羞也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这些人是过去朱家那样的（贤侠）所感到羞耻的。</td>
+                <td class="english-cell col-english" data-lang="english">... and utterly unfit to be compared with Zhu Jia of earlier times.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太史公曰：吾视郭解，状貌不及中人，言语不足采者。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">太史公说：我看郭解，相貌赶不上普通人，言谈也没什么可取之处。</td>
+                <td class="english-cell col-english" data-lang="english">The Grand Historian comments: When I saw Guo Xie, his appearance was in no way striking, neither was his conversation memorable.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">然天下无贤与不肖，知与不知，皆慕其声，言侠者皆引以为名。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">但天下无论贤能还是无能的人，认识还是不认识他的人，都仰慕他的名声，谈论游侠的人都把他当作榜样来标榜自己。</td>
+                <td class="english-cell col-english" data-lang="english">Yet everybody in the empire, high or low, whether he knew him or not, admires him and cites him as an example of gallant daring.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">谚曰：“人貌荣名，岂有既乎！”於戏，惜哉！</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">俗话说：“人的容貌和荣誉名声，难道有穷尽吗！”唉，太可惜了！</td>
+                <td class="english-cell col-english" data-lang="english">"Fame sheds lustre on beauty," says the proverb. "It is fame that endures.” Alas, that he came to such an end!</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
       </main>
 
       <nav class="chapter-nav">
@@ -131,8 +738,139 @@ The Grand Historian comments:When I saw Guo Xie,his ap- pearance was in noway st
       </nav>
 
       <footer>
-        <small>并排三列显示</small>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
       </footer>
     </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>

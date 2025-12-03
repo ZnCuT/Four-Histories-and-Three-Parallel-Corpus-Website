@@ -4,57 +4,484 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>史记 — 第20章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
     <link rel="stylesheet" href="/static/style.css">
   </head>
   <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
       <header>
         <h1>史记 — 第20章 列传 田单列传第二十二</h1>
       </header>
 
-      <main class="parallel">
-        <section>
-          <h3>文言文</h3>
-          <div class="txt">田单者，齐诸田疏属也。缗王时，单为临蓄市掾，不见知。及燕使乐毅伐破齐，齐滑王出奔，已而保莒城。燕师长驱平齐，而田单走安平，令其宗人尽断其车轴末而傅铁笼。己而燕军攻安平，城坏，齐人走，争途，以辖折车败，为燕所虏。唯田单宗人以铁笼故得脱，东保即墨。燕既尽降齐城，唯独莒、即墨不下。燕军闻齐王在莒，并兵攻之。淖齿既杀缗王于莒，因坚守距燕军，数年不下。燕引兵东围即墨，即墨大夫出与战，败死。城中相与推田单，曰：“安平之战，田单宗人以铁笼得全，习兵。”立以为将军，以即墨距燕。
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
 
-以为将军，以即墨距燕。顷之，燕昭王卒，惠王立，与乐毅有隙。田单闻之，乃纵反间于燕，宣言曰：“齐王已死，城之不拔者二耳。乐毅畏诛而不敢归，以伐齐为名，实欲连兵南面而王齐。齐人未附，故且缓攻即墨以待其事。齐人所惧，唯恐他将之来，即墨残矣。”燕王以为然，使骑劫代乐毅。乐毅因归赵，燕人士卒忿。而田单乃令城中人食必祭其先祖于庭，飞鸟悉翔舞城中下食。燕人怪之。田单因宣言曰：“神来下教我。”乃令城中人曰：“当有神人为我师。”有一卒曰：“臣可以为师乎?”因反走。田单乃起，引还，东乡坐，师事之。卒曰：“臣欺君，诚无能也。”田单曰：“子勿言也!”因师之。每出约束，必称神师。
-
-乃宣言曰：“吾唯惧燕军之劓所得齐卒，置之前行，与我战，即墨败矣。”燕人闻之，如其言。城中人见齐诸降者尽劓，皆怒，坚守，唯恐见得。单又纵反间曰：“吾惧燕人掘吾城外冢墓，侮先人，可为寒心。”燕军尽掘垄墓，烧死人。即墨人从城上望见，皆涕泣，俱欲出战，怒自十倍。田单知士卒之可用，乃身操版插，与士卒分功，妻妾编于行伍之间，尽散饮食飨士。令甲卒皆伏，使老弱女子乘城，遣使约降于燕，燕军皆呼万岁。田单又收民金，得千溢，令即墨富豪遗燕将，曰：“即墨即降，愿无虏掠吾族家妻妾，令安堵。”燕将大喜，许之。
-
-燕军由此益懈。田单乃收城中得千余牛，为绛缯衣，画以五彩龙文，束兵刃于其角，而灌脂束苇于尾，烧其端。凿城数十穴，夜纵牛，壮士五千人随其后。牛尾热，怒而奔燕军，燕军夜大惊。牛尾炬火光明炫耀，燕军视之皆龙文，所触尽死伤。五千人因衔枚击之，而城中鼓噪从之，老弱皆击铜器为声，声动天地。燕军大骇，败走。齐人遂夷杀其将骑劫。燕军扰乱奔走，齐人追亡逐北，所过城邑皆畔燕而归田单，兵日益多，乘胜，燕日败亡，卒至河上，而齐七十余城皆复为齐。乃迎襄王于莒，入临蓄而听政。襄王封田单，号曰安平君。
-
-太史公曰：兵以正合，以奇胜。善之者，出奇无穷。奇正还相生，如环之无端。夫始如处女，适人开户；后如脱兔，适不及距：其田单之谓邪! 初，淖齿之杀滑王也，莒人求滑王子法章，得之太史嫩之家，为人灌园。嫩女怜而善遇之。后法章私以情告女，女遂与通。及莒人共立法章为齐王，以莒距燕，而太史氏女遂为后，所谓“君王后”也。燕之初入齐，闻画邑人王蟠贤，令军中曰“环画邑三十里无入”，以王蜀之故。已而使人谓蟠曰：“齐人多高子之义，吾以子为将，封子万家。”
-
-蜀固谢。燕人曰：“子不听，吾引三军而屠画邑!”王蟠曰：“忠臣不事二君，贞女不更二夫。齐王不听吾谏，故退而耕于野。国既破亡，吾不能存；今又劫之以兵为君将，是助桀为暴也。与其生而无义，固不如烹!”遂经其颈于树枝，自奋绝胆而死。齐亡大夫闻之，曰：“王蟠，布衣也，义不北面于燕，况在位食禄者乎!”乃相聚如莒，求诸子，立为襄王。</div>
-        </section>
-        <section>
-          <h3>现代汉语</h3>
-          <div class="txt">田单，是齐国田氏王族的远亲。齐滑王时，田单作临蓄市场的掾吏，不为人所知。等到燕国派乐毅攻破齐国，齐滑王出逃，后来在莒城保守城池。燕军长驱直入平定了齐国，田单逃到安平，让他的同族人把他们的车轴的两头全都锯断，裹上铁箍。不久燕军攻打安平，城被攻破，齐国人逃跑，争道，因为车轴头撞折、车子毁坏，被燕军俘虏了，只有田单的同族人用铁箍裹住车轴头得以逃脱，向东退守即墨。燕国已经完全降服了齐国城邑，只有莒城、即墨没有攻下。燕军听说齐王在莒城，就合兵攻打他们。淖齿已经在莒城杀死了齐滑王，就坚守抵抗燕军，好几年没有攻下。燕国领兵向东包围了即墨，即墨大夫出来和燕军交战，战败被杀死。城中的人共同推举田单作长官，说：“安平之战，田单的同族人因为用铁箍裹住车轴头得以保全，他熟悉军事。”就立田单为将军，以即墨城防抵抗燕军。
-
-立田单为将军，以即墨城防抵抗燕军。不久，燕昭王去世，燕惠王继位，和乐毅有嫌隙。田单听说了，就派人到燕国去行使反间计，扬言说：“齐王已经死了，城邑没有攻下的只有两座了。乐毅害怕被杀不敢回来，他以伐齐为名，实际想联合军队在齐国称王。齐国百姓尚未归附，所以姑且缓攻即墨来等待他们归顺。齐国人害怕的，只担心别的将领过来，即墨就要残破了。”燕王认为对，派骑劫代替乐毅。乐毅就归附了赵国，燕国士兵忿忿不平。田单就下令城里的人吃饭时必须先在庭院里祭祀他们的祖先，飞鸟都翱翔飞舞到城中下去啄食，燕军感到奇怪。田单就扬言说：“有神人下来教我。”就下令告知城里人说：“会有神人作我的老师。”有一个士兵说：“我可以作老师吗？”说完转身就跑。田单就站起来，招他回来，向东坐下，以对老师的礼节事奉他。士兵说：“我骗了您，确实没有才能。”田单说：“您不要说了！”就尊他为师。每当发布号令，一定要称是神师的主意。
-
-田单扬言说：“我们只害怕燕军把俘虏的齐国士兵割去鼻子，摆到最前列和我们交战，那么，即墨就会败。”燕军听到消息，就照他说的去做。城里的人看到齐国投降的人全都被割鼻子，人人愤怒，严密防守，唯恐被俘。田单又派人反间说：“我们担心燕军挖掘城外祖宗的坟墓，侮辱先人，这会让人寒心。”燕军果真掘开坟墓，焚烧尸体。即墨人从城上望见，伤心流泪，都希望出战，愤怒增加十倍。田单知道士兵可以使用，于是亲自拿着夹板和铲子与士兵分工劳动，把妻妾编入队伍，散发饮食犒劳士兵。让全副武装的士兵埋伏，使老弱妇女登城防守，并派使者与燕军约定投降，燕军都高呼万岁。田单还收集百姓的黄金，得到一千镒，让即墨的富豪送给燕将，说：“即墨将要投降，希望不要掳掠我们家族的妻妾，让我们安居。”燕将大喜，答应了。
-
-燕军因此更加松懈。田单就在城里收集到一千多头牛，给它们披上大红绢衣，画着五彩的蛟龙花纹，在它们角上捆上兵刃，把灌满油脂的芦苇绑到牛尾上，点燃芦苇的末端。把城墙凿了几十个洞，夜里放出牛，有五千名壮士跟随在火牛之后。牛尾着火，牛群发怒奔向燕军，燕军夜里大为惊骇。牛尾火炬光亮耀眼，燕军看到的都像是龙形图案，触及的士兵尽死伤。五千人趁机咬住牙签冲击燕军，城中人跟着鼓噪，老弱者敲铜器助阵，声音震动天地。燕军大为惊恐，溃败逃跑。齐军遂杀死燕将骑劫。燕军混乱逃窜，齐军追击北上，所经过的城邑皆背叛燕国归顺田单，军队日益增多，乘胜追击，燕军日益败亡，最终退至黄河边，齐国七十余城都恢复为齐国所辖。随后迎接襄王自莒城回到临蓄处理政务，齐襄王封田单为安平君。
-
-太史公说：作战要以正面交锋与敌，同时出奇兵以取胜。善于用兵的人，奇兵变化无穷，奇正互生，如环无端。开始时如处女般柔弱，使敌人不设防；随后如脱兔般迅捷，使敌措手不及——这就是田单的奇计。起初，淖齿杀了齐滑王，莒城的人寻找齐滑王之子法章，在太史嫩家中找到了他，当时他在替人灌园。太史嫩的女儿怜悯他，对他很好。后来法章私下告诉她自己的身份，他们便私通。当莒人共同立法章为齐王以守莒城抵御燕国时，太史嫩的女儿便成为王后，这就是所谓“君王后”。燕国初入齐时，听说画邑人王蟠贤良，便下令军中：“环绕画邑三十里不要进入”，这是因为王蜀的关系。不久又派人对王蜀说：“齐国人多赞赏你的高义，我任命你为将，封你万家。”
-
-“我谢绝了。”燕国人说：“你不听从，我就率三军屠杀画邑！”王蜀说：“忠臣不能事奉两个君王，贞女不能更换两个丈夫。齐王没有采纳我的劝谏，所以我退隐田野耕作。国家已经破亡，我已无所保全；现在你们又要用兵逼我做你们的将领，这无异于助桀作恶。与其活着却失去道义，不如自焚而死！”于是他把脖子挂在树枝上，奋力自尽。齐国流亡的大夫们听闻后说：“王蜀只是布衣百姓，却坚守道义不向燕国称臣，更何况我们这些在位领取俸禄的人呢！”于是大家聚集在莒城，寻找齐王的儿子，将他拥立为齐襄王。</div>
-        </section>
-        <section>
-          <h3>English</h3>
-          <div class="txt">Tian Dan belonged to a distant branch of the royal house of Tian in the state of Qi. During the reign of King Min, he was a minor official in Linzi. When Yue Yi, a general of the state of Yan, defeated the army of Qi, King Min fled from his capital to the city of Ju, while the soldiers of Yan advanced unopposed to conquer Qi. Then Tian Dan fled to Anping and ordered his clansmen to saw off the projecting ends of their chariot-axles and fit iron guards around the stumps. When the troops of Yan took Anping by storm, the men of Qi fled, and in the melee on the road, the other chariots’ axle ends broke and their occupants were captured. Tian Dan and his kinsmen were the only ones to escape, thanks to their reinforced axles, and they went east to defend Jimo. Alone of all the cities of Qi, Ju and Jimo were holding out against Yan. As the men of Yan knew that King Min was in Ju, they attacked the city in strength. Nao Chi assassinated the king and defended Ju stubbornly, holding out against the besiegers for several years. Yan’s troops then marched east to lay siege to Jimo. Its governor going out to give battle was defeated and killed. The defenders at once chose Tian Dan to lead them, saying, “In the battle of Anping, Tian Dan’s kinsmen escaped because of the iron guards fitted to their axles. He understands warfare.” They made him their commander to defend Jimo.
-
-Soon after this, King Zhao of Yan died. His successor, King Hui, had an aversion to Yue Yi, and when Tian Dan knew this, he sowed further dissension between them by declaring, “Qi’s king is dead and only two of its cities remain to be taken. But Yue Yi dares not return for fear of punishment. Under the pretext of subjugating Qi, he is hoping to combine his forces with those of Qi and make himself king here. He is delaying his attack so that the men of Qi may come over to his side. The one thing we fear is that another general might be appointed, for then Jimo must be destroyed.” The king of Yan believed this and made Qi Jie take over Yue Yi’s command, and Yue Yi went back to Zhao, to the great indignation of the soldiers of Yan. Then Tian Dan ordered the citizens of Jimo to sacrifice to their ancestors in the courtyard before each meal, so that birds flocked down to the city to find food, to the astonishment of the besiegers. “I have been granted a divine revelation,” announced Tian Dan. Then he told the citizens, “A man with supernatural powers will be our teacher.” “Can I be that teacher?” cried a soldier, and was running off when Tian Dan stood up and led him to a seat facing east, treating him as a teacher. “I was fooling, sir. I have no special powers,” said the soldier. “Hush!” whispered Tian Dan. He treated the man as a teacher with divine powers, and attributed all the orders he gave to his divine teacher.
-
-Tian Dan also declared, “My one fear is lest the soldiers of Yan cut off the noses of the captured Qi soldiers and place them in the front ranks against us. For then Jimo is doomed.” The men of Yan, hearing this, acted accordingly. When the defenders saw that all the surrendered men had their noses cut off, they were furious and fortified their defenses, determined not to be captured. Tian Dan also spread a rumor, saying, “We fear the invaders will dig up the graves outside the city and desecrate our ancestors, which would chill our hearts.” The Yan army proceeded to dig up the graves and burn the corpses. The people of Jimo, seeing this from the city walls, wept and were eager to fight, their anger tenfold. Knowing that the soldiers were ready, Tian Dan himself worked with them, wielding tools and sharing the labor. He organized his wives and concubines into the ranks, distributed food and drink to the soldiers, and had the armored men lie in ambush while the old and weak and women mounted the walls. Envoys were sent to negotiate surrender with the Yan army, prompting great cheers from the enemy. Tian Dan also collected a thousand yi of gold from the populace, which the wealthy citizens of Jimo presented to the Yan general, saying, “Jimo is about to surrender. Please spare our wives, concubines, and kinsmen, so that we may live in peace.” The Yan general was delighted and agreed.
-
-The Yan army became increasingly lax. Tian Dan gathered more than a thousand bulls inside the city, swathed them in red silk, painted them with multicolored dragon patterns, tied daggers to their horns, and attached oil-soaked reeds to their tails, setting the reeds on fire. Dozens of breaches were made in the city walls, and at night the bulls were released, followed by five thousand brave soldiers. Enraged by their burning tails, the bulls charged the Yan troops, who were greatly alarmed in the night. The flaming tails shone brightly, and to the Yan soldiers, the patterns looked like dragons, killing or wounding all they touched. The five thousand soldiers then charged, holding sticks in their mouths, and the city residents shouted and beat drums in unison, while the old and weak beat copper vessels to make a thunderous noise. The Yan army, terrified, fled in disorder. The Qi forces killed the Yan general Qi Jie. As the Yan troops fled north in confusion, every city they passed defected to Tian Dan, whose army grew daily. Taking advantage of successive victories, the Yan forces were repeatedly defeated, and eventually retreated to the Yellow River, leaving all seventy-plus cities of Qi restored. Tian Dan then escorted King Xiang from Ju to Linzi to govern, and the king enfeoffed Tian Dan as Lord of Anping.
-
-The Grand Historian comments: In war, one engages the enemy head-on with regular tactics while employing surprise tactics to win. A skilled commander’s use of surprise is boundless, and the interplay between regular and surprise tactics is endless, like a circle without beginning or end. Initially passive like a young girl, lulling the enemy into complacency, then swift as an escaped hare, overtaking them unexpectedly—this describes Tian Dan’s surprise tactics. When Nao Chi assassinated King Min, the people of Ju sought out his son Fazhang, finding him working as a gardener in the house of Taishi Nen. The daughter of the family took pity on him and treated him kindly. Fazhang privately revealed his identity to her, and they became lovers. Later, when the people of Ju crowned Fazhang as king to hold the city against Yan, she became the queen, the so-called “Chief Lady.” When Yan first entered Qi, they heard that Wang Pan of Huayi was virtuous, and issued an order forbidding troops to enter a thirty-li area around his residence, because of Wang Shu’s connection. Soon after, messengers told Wang Shu, “The people of Qi praise your virtue. We appoint you as a general and grant you ten thousand households.”
-
-Wang Chu firmly declined. The envoys said, “If you do not agree, we shall lead three armies to destroy Huayi district!” Wang Chu replied, “A loyal minister cannot serve two masters, and a chaste woman cannot change husbands. Since the king of Qi ignored my advice, I retired to till the fields. The kingdom is already lost and I have nothing to preserve; now you try to force me to be your general, which is aiding a tyrant in his oppression. Rather than live without virtue, I choose to die!” He then tied his neck to a tree branch and broke it with a strong effort, ending his life. When the exiled ministers of Qi heard of this, they said, “Wang Chu was a commoner, yet he refused to submit to Yan. How much more should those of us in office with salaries uphold righteousness!” They then gathered at Ju, sought out the prince, and crowned him as King Xiang of Qi.</div>
-        </section>
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">田单者，齐诸田疏属也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">田单，是齐国田氏王族的远亲。</td>
+                <td class="english-cell col-english" data-lang="english">Tian Dan belonged to a distant branch of the royal house of Tian in the state of Qi.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">缗王时，单为临蓄市掾，不见知。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">齐湣王时，田单作临淄市场的掾吏，不为人所知。</td>
+                <td class="english-cell col-english" data-lang="english">During the reign of King Min, he was a minor official in Linzi.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">及燕使乐毅伐破齐，齐湣王出奔，已而保莒城。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">等到燕国派乐毅攻破齐国，齐湣王出逃，后来在莒城坚守城池。</td>
+                <td class="english-cell col-english" data-lang="english">When Yue Yi, a general of the state of Yan, defeated the army of Qi, King Min fled from his capital to the city of Ju.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">燕师长驱平齐，而田单走安平，令其宗人尽断其车轴末而傅铁笼。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">燕军长驱直入平定了齐国，田单逃到安平，让他的同族人把他们的车轴两头全都锯断，裹上铁箍。</td>
+                <td class="english-cell col-english" data-lang="english">while the soldiers of Yan advanced unopposed to conquer Qi. Then Tian Dan fled to Anping and ordered his clansmen to saw off the projecting ends of their chariot-axles and fit iron guards around the stumps.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">己而燕军攻安平，城坏，齐人走，争途，以辖折车败，为燕所虏。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">不久燕军攻打安平，城被攻破，齐国人逃跑，争着赶路，因为车轴头撞折、车子毁坏，被燕军俘虏。</td>
+                <td class="english-cell col-english" data-lang="english">When the troops of Yan took Anping by storm, the men of Qi fled, and in the melee on the road, the other chariots’ axle ends broke and their occupants were captured.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">唯田单宗人以铁笼故得脱，东保即墨。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">只有田单的同族人用铁箍裹住车轴头得以逃脱，向东退守即墨。</td>
+                <td class="english-cell col-english" data-lang="english">Tian Dan and his kinsmen were the only ones to escape, thanks to their reinforced axles, and they went east to defend Jimo.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">燕既尽降齐城，唯独莒、即墨不下。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">燕国已经完全降服了齐国的城邑，只有莒城、即墨没有攻下。</td>
+                <td class="english-cell col-english" data-lang="english">Alone of all the cities of Qi, Ju and Jimo were holding out against Yan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">燕军闻齐王在莒，并兵攻之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">燕军听说齐王在莒城，就合兵攻打莒城。</td>
+                <td class="english-cell col-english" data-lang="english">As the men of Yan knew that King Min was in Ju, they attacked the city in strength.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">淖齿既杀缗王于莒，因坚守距燕军，数年不下。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">淖齿已经在莒城杀死了齐湣王，就坚守莒城抵抗燕军，好几年没有被攻下。</td>
+                <td class="english-cell col-english" data-lang="english">Nao Chi assassinated the king and defended Ju stubbornly, holding out against the besiegers for several years.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">燕引兵东围即墨，即墨大夫出与战，败死。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">燕国领兵向东包围了即墨，即墨大夫出城和燕军交战，战败被杀。</td>
+                <td class="english-cell col-english" data-lang="english">Yan’s troops then marched east to lay siege to Jimo. Its governor going out to give battle was defeated and killed.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">城中相与推田单，曰：“安平之战，田单宗人以铁笼得全，习兵。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">城中的人共同推举田单，说：“安平之战时，田单的同族人因为用铁箍裹车轴得以保全，他熟悉军事。”</td>
+                <td class="english-cell col-english" data-lang="english">The defenders at once chose Tian Dan to lead them, saying, “In the battle of Anping, Tian Dan’s kinsmen escaped because of the iron guards fitted to their axles. He understands warfare.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">立以为将军，以即墨距燕。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">就立田单为将军，让他凭借即墨抵抗燕军。</td>
+                <td class="english-cell col-english" data-lang="english">They made him their commander to defend Jimo.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">以为将军，以即墨距燕。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">（田单被）立为将军，凭借即墨抵抗燕军。</td>
+                <td class="english-cell col-english" data-lang="english">( Tian Dan was ) made commander to defend Jimo against Yan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">顷之，燕昭王卒，惠王立，与乐毅有隙。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">不久，燕昭王去世，燕惠王继位，（惠王）和乐毅有嫌隙。</td>
+                <td class="english-cell col-english" data-lang="english">Soon after this, King Zhao of Yan died. His successor, King Hui, had an aversion to Yue Yi.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">田单闻之，乃纵反间于燕，宣言曰：“齐王已死，城之不拔者二耳。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">田单听说这件事，就派人到燕国施行反间计，扬言说：“齐王已经死了，齐国没被攻下的城邑只有两座了。”</td>
+                <td class="english-cell col-english" data-lang="english">and when Tian Dan knew this, he sowed further dissension between them by declaring, “Qi’s king is dead and only two of its cities remain to be taken.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">宣言曰：“乐毅畏诛而不敢归，以伐齐为名，实欲连兵南面而王齐。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">（田单让人）扬言说：“乐毅害怕被杀死而不敢回燕国，他以讨伐齐国为名，实际想联合齐国兵力在齐国称王。”</td>
+                <td class="english-cell col-english" data-lang="english">( Tian Dan had people ) declare, “But Yue Yi dares not return for fear of punishment. Under the pretext of subjugating Qi, he is hoping to combine his forces with those of Qi and make himself king here.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">宣言曰：“齐人未附，故且缓攻即墨以待其事。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">（田单让人）扬言说：“齐国百姓还没归附他，所以他暂且缓攻即墨来等待时机。”</td>
+                <td class="english-cell col-english" data-lang="english">( Tian Dan had people ) declare, “He is delaying his attack so that the men of Qi may come over to his side.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">宣言曰：“齐人所惧，唯恐他将之来，即墨残矣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">（田单让人）扬言说：“齐国人害怕的，只是担心其他将领来（攻打即墨），那样即墨就会被攻破了。”</td>
+                <td class="english-cell col-english" data-lang="english">( Tian Dan had people ) declare, “The one thing we fear is that another general might be appointed, for then Jimo must be destroyed.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">燕王以为然，使骑劫代乐毅。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">燕惠王认为（这些话）是对的，派骑劫代替乐毅（担任将领）。</td>
+                <td class="english-cell col-english" data-lang="english">The king of Yan believed this and made Qi Jie take over Yue Yi’s command.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">乐毅因归赵，燕人士卒忿。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">乐毅于是归附赵国，燕国的士兵们都很愤怒。</td>
+                <td class="english-cell col-english" data-lang="english">and Yue Yi went back to Zhao, to the great indignation of the soldiers of Yan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">而田单乃令城中人食必祭其先祖于庭，飞鸟悉翔舞城中下食。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">田单就下令让城里的人吃饭时一定要在庭院里祭祀祖先，（这样）飞鸟都飞到城中盘旋飞舞着啄食。</td>
+                <td class="english-cell col-english" data-lang="english">Then Tian Dan ordered the citizens of Jimo to sacrifice to their ancestors in the courtyard before each meal, so that birds flocked down to the city to find food.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">燕人怪之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">燕军士兵对此感到奇怪。</td>
+                <td class="english-cell col-english" data-lang="english">to the astonishment of the besiegers.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">田单因宣言曰：“神来下教我。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">田单于是扬言说：“有神人下来教导我。”</td>
+                <td class="english-cell col-english" data-lang="english">“A man with supernatural powers will be our teacher.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">乃令城中人曰：“当有神人为我师。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">（田单）就对城里的人下令说：“会有神人来做我的老师。”</td>
+                <td class="english-cell col-english" data-lang="english">Then he told the citizens, “A man with supernatural powers will be our teacher.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">有一卒曰：“臣可以为师乎？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">有一个士兵说：“我可以做（您的）老师吗？”</td>
+                <td class="english-cell col-english" data-lang="english">“Can I be that teacher?” cried a soldier.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">因反走。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">（说完）就转身跑开。</td>
+                <td class="english-cell col-english" data-lang="english">and was running off.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">田单乃起，引还，东乡坐，师事之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">田单就站起来，把他拉回来，让他面向东坐下，像对待老师一样侍奉他。</td>
+                <td class="english-cell col-english" data-lang="english">when Tian Dan stood up and led him to a seat facing east, treating him as a teacher.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">卒曰：“臣欺君，诚无能也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">那个士兵说：“我欺骗了您，实在没有什么本事。”</td>
+                <td class="english-cell col-english" data-lang="english">“I was fooling, sir. I have no special powers,” said the soldier.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">田单曰：“子勿言也！”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">田单说：“您不要说了！”</td>
+                <td class="english-cell col-english" data-lang="english">“Hush!” whispered Tian Dan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">因师之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是就把他当作老师。</td>
+                <td class="english-cell col-english" data-lang="english">He treated the man as a teacher with divine powers.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">每出约束，必称神师。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">每次发布号令，一定说是神师的指示。</td>
+                <td class="english-cell col-english" data-lang="english">and attributed all the orders he gave to his divine teacher.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">乃宣言曰：“吾唯惧燕军之劓所得齐卒，置之前行，与我战，即墨败矣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">（田单）就扬言说：“我们只害怕燕军把俘虏的齐国士兵割去鼻子，把他们放在队伍前列来和我们交战，那样即墨就会失败了。”</td>
+                <td class="english-cell col-english" data-lang="english">Tian Dan also declared, “My one fear is lest the soldiers of Yan cut off the noses of the captured Qi soldiers and place them in the front ranks against us. For then Jimo is doomed.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">燕人闻之，如其言。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">燕军士兵听说了这话，就照着田单说的做了。</td>
+                <td class="english-cell col-english" data-lang="english">The men of Yan, hearing this, acted accordingly.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">城中人见齐诸降者尽劓，皆怒，坚守，唯恐见得。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">城里的人看到齐国投降的士兵全都被割了鼻子，都很愤怒，严密防守，唯恐被（燕军）俘虏。</td>
+                <td class="english-cell col-english" data-lang="english">When the defenders saw that all the surrendered men had their noses cut off, they were furious and fortified their defenses, determined not to be captured.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">单又纵反间曰：“吾惧燕人掘吾城外冢墓，侮先人，可为寒心。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">田单又派人施行反间计说：“我们担心燕军挖掘我们城外的祖坟，侮辱我们的祖先，这会让人感到寒心。”</td>
+                <td class="english-cell col-english" data-lang="english">Tian Dan also spread a rumor, saying, “We fear the invaders will dig up the graves outside the city and desecrate our ancestors, which would chill our hearts.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">燕军尽掘垄墓，烧死人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">燕军把城外的坟墓全都挖开，焚烧尸体。</td>
+                <td class="english-cell col-english" data-lang="english">The Yan army proceeded to dig up the graves and burn the corpses.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">即墨人从城上望见，皆涕泣，俱欲出战，怒自十倍。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">即墨人从城墙上望见（这情景），都痛哭流涕，全都想出城作战，愤怒之情增加了十倍。</td>
+                <td class="english-cell col-english" data-lang="english">The people of Jimo, seeing this from the city walls, wept and were eager to fight, their anger tenfold.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">田单知士卒之可用，乃身操版插，与士卒分功，妻妾编于行伍之间，尽散饮食飨士。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">田单知道士兵们可以任用了，就亲自拿着夹板和铲子（参与修筑工事），和士兵们分担劳动，把自己的妻妾编入军队，把全部饮食都拿出来犒劳士兵。</td>
+                <td class="english-cell col-english" data-lang="english">Knowing that the soldiers were ready, Tian Dan himself worked with them, wielding tools and sharing the labor. He organized his wives and concubines into the ranks, distributed food and drink to the soldiers.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">令甲卒皆伏，使老弱女子乘城，遣使约降于燕，燕军皆呼万岁。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">（田单）命令全副武装的士兵都埋伏起来，让老弱妇孺登上城墙（防守），派使者到燕军那里约定投降，燕军士兵都高呼万岁。</td>
+                <td class="english-cell col-english" data-lang="english">and had the armored men lie in ambush while the old and weak and women mounted the walls. Envoys were sent to negotiate surrender with the Yan army, prompting great cheers from the enemy.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">田单又收民金，得千溢，令即墨富豪遗燕将，曰：“即墨即降，愿无虏掠吾族家妻妾，令安堵。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">田单又收集百姓的黄金，得到一千镒，让即墨的富豪把黄金送给燕军将领，说：“即墨就要投降了，希望（您）不要掳掠我们家族的妻妾，让我们能平安居住。”</td>
+                <td class="english-cell col-english" data-lang="english">Tian Dan also collected a thousand yi of gold from the populace, which the wealthy citizens of Jimo presented to the Yan general, saying, “Jimo is about to surrender. Please spare our wives, concubines, and kinsmen, so that we may live in peace.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">燕将大喜，许之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">燕军将领非常高兴，答应了（他们的请求）。</td>
+                <td class="english-cell col-english" data-lang="english">The Yan general was delighted and agreed.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">燕军由此益懈。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">燕军因此更加松懈。</td>
+                <td class="english-cell col-english" data-lang="english">The Yan army became increasingly lax.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">田单乃收城中得千余牛，为绛缯衣，画以五彩龙文，束兵刃于其角，而灌脂束苇于尾，烧其端。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">田单就在城里收集到一千多头牛，给它们披上大红绢衣，画着五彩的蛟龙花纹，在它们角上捆上兵刃，把灌满油脂的芦苇绑到牛尾上，点燃芦苇的末端。</td>
+                <td class="english-cell col-english" data-lang="english">Tian Dan gathered more than a thousand bulls inside the city, swathed them in red silk, painted them with multicolored dragon patterns, tied daggers to their horns, and attached oil-soaked reeds to their tails, setting the reeds on fire.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">凿城数十穴，夜纵牛，壮士五千人随其后。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">把城墙凿了几十个洞，夜里放出牛，有五千名壮士跟随在火牛之后。</td>
+                <td class="english-cell col-english" data-lang="english">Dozens of breaches were made in the city walls, and at night the bulls were released, followed by five thousand brave soldiers.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">牛尾热，怒而奔燕军，燕军夜大惊。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">牛尾着火，牛群发怒奔向燕军，燕军夜里大为惊骇。</td>
+                <td class="english-cell col-english" data-lang="english">Enraged by their burning tails, the bulls charged the Yan troops, who were greatly alarmed in the night.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">牛尾炬火光明炫耀，燕军视之皆龙文，所触尽死伤。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">牛尾火炬光亮耀眼，燕军看到的都像是龙形图案，触及的士兵尽死伤。</td>
+                <td class="english-cell col-english" data-lang="english">The flaming tails shone brightly, and to the Yan soldiers, the patterns looked like dragons, killing or wounding all they touched.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">五千人因衔枚击之，而城中鼓噪从之，老弱皆击铜器为声，声动天地。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">五千人趁机咬住牙签冲击燕军，城中人跟着鼓噪，老弱者敲铜器助阵，声音震动天地。</td>
+                <td class="english-cell col-english" data-lang="english">The five thousand soldiers then charged, holding sticks in their mouths, and the city residents shouted and beat drums in unison, while the old and weak beat copper vessels to make a thunderous noise.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">燕军大骇，败走。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">燕军大为惊恐，溃败逃跑。</td>
+                <td class="english-cell col-english" data-lang="english">The Yan army, terrified, fled in disorder.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">齐人遂夷杀其将骑劫。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">齐军遂杀死燕将骑劫。</td>
+                <td class="english-cell col-english" data-lang="english">The Qi forces killed the Yan general Qi Jie.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">燕军扰乱奔走，齐人追亡逐北，所过城邑皆畔燕而归田单，兵日益多，乘胜，燕日败亡，卒至河上，而齐七十余城皆复为齐。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">燕军混乱逃窜，齐军追击北上，所经过的城邑皆背叛燕国归顺田单，军队日益增多，乘胜追击，燕军日益败亡，最终退至黄河边，齐国七十余城都恢复为齐国所辖。</td>
+                <td class="english-cell col-english" data-lang="english">As the Yan troops fled north in confusion, every city they passed defected to Tian Dan, whose army grew daily. Taking advantage of successive victories, the Yan forces were repeatedly defeated, and eventually retreated to the Yellow River, leaving all seventy-plus cities of Qi restored.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">乃迎襄王于莒，入临蓄而听政。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">随后迎接襄王自莒城回到临蓄处理政务。</td>
+                <td class="english-cell col-english" data-lang="english">Tian Dan then escorted King Xiang from Ju to Linzi to govern.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">襄王封田单，号曰安平君。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">齐襄王封田单为安平君。</td>
+                <td class="english-cell col-english" data-lang="english">and the king enfeoffed Tian Dan as Lord of Anping.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太史公曰：兵以正合，以奇胜。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">太史公说：作战要以正面交锋与敌，同时出奇兵以取胜。</td>
+                <td class="english-cell col-english" data-lang="english">The Grand Historian comments: In war, one engages the enemy head-on with regular tactics while employing surprise tactics to win.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">善之者，出奇无穷。奇正还相生，如环之无端。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">善于用兵的人，奇兵变化无穷，奇正互生，如环无端。</td>
+                <td class="english-cell col-english" data-lang="english">A skilled commander’s use of surprise is boundless, and the interplay between regular and surprise tactics is endless, like a circle without beginning or end.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夫始如处女，适人开户；后如脱兔，适不及距：其田单之谓邪!</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">开始时如处女般柔弱，使敌人不设防；随后如脱兔般迅捷，使敌措手不及——这就是田单的奇计。</td>
+                <td class="english-cell col-english" data-lang="english">Initially passive like a young girl, lulling the enemy into complacency, then swift as an escaped hare, overtaking them unexpectedly—this describes Tian Dan’s surprise tactics.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">初，淖齿之杀滑王也，莒人求滑王子法章，得之太史嫩之家，为人灌园。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">起初，淖齿杀了齐滑王，莒城的人寻找齐滑王之子法章，在太史嫩家中找到了他，当时他在替人灌园。</td>
+                <td class="english-cell col-english" data-lang="english">When Nao Chi assassinated King Min, the people of Ju sought out his son Fazhang, finding him working as a gardener in the house of Taishi Nen.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">嫩女怜而善遇之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">太史嫩的女儿怜悯他，对他很好。</td>
+                <td class="english-cell col-english" data-lang="english">The daughter of the family took pity on him and treated him kindly.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">后法章私以情告女，女遂与通。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来法章私下告诉她自己的身份，他们便私通。</td>
+                <td class="english-cell col-english" data-lang="english">Fazhang privately revealed his identity to her, and they became lovers.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">及莒人共立法章为齐王，以莒距燕，而太史氏女遂为后，所谓“君王后”也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当莒人共同立法章为齐王以守莒城抵御燕国时，太史嫩的女儿便成为王后，这就是所谓“君王后”。</td>
+                <td class="english-cell col-english" data-lang="english">Later, when the people of Ju crowned Fazhang as king to hold the city against Yan, she became the queen, the so-called “Chief Lady.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">燕之初入齐，闻画邑人王蟠贤，令军中曰“环画邑三十里无入”，以王蜀之故。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">燕国初入齐时，听说画邑人王蟠贤良，便下令军中：“环绕画邑三十里不要进入”，这是因为王蜀的关系。</td>
+                <td class="english-cell col-english" data-lang="english">When Yan first entered Qi, they heard that Wang Pan of Huayi was virtuous, and issued an order forbidding troops to enter a thirty-li area around his residence, because of Wang Shu’s connection.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">已而使人谓蟠曰：“齐人多高子之义，吾以子为将，封子万家。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">不久又派人对王蜀说：“齐国人多赞赏你的高义，我任命你为将，封你万家。”</td>
+                <td class="english-cell col-english" data-lang="english">Soon after, messengers told Wang Shu, “The people of Qi praise your virtue. We appoint you as a general and grant you ten thousand households.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">蜀固谢。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">“我谢绝了。”</td>
+                <td class="english-cell col-english" data-lang="english">Wang Chu firmly declined.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">燕人曰：“子不听，吾引三军而屠画邑!”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">燕国人说：“你不听从，我就率三军屠杀画邑！”</td>
+                <td class="english-cell col-english" data-lang="english">The envoys said, “If you do not agree, we shall lead three armies to destroy Huayi district!”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">王蟠曰：“忠臣不事二君，贞女不更二夫。齐王不听吾谏，故退而耕于野。国既破亡，吾不能存；今又劫之以兵为君将，是助桀为暴也。与其生而无义，固不如烹!”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">王蜀说：“忠臣不能事奉两个君王，贞女不能更换两个丈夫。齐王没有采纳我的劝谏，所以我退隐田野耕作。国家已经破亡，我已无所保全；现在你们又要用兵逼我做你们的将领，这无异于助桀作恶。与其活着却失去道义，不如自焚而死！”</td>
+                <td class="english-cell col-english" data-lang="english">Wang Chu replied, “A loyal minister cannot serve two masters, and a chaste woman cannot change husbands. Since the king of Qi ignored my advice, I retired to till the fields. The kingdom is already lost and I have nothing to preserve; now you try to force me to be your general, which is aiding a tyrant in his oppression. Rather than live without virtue, I choose to die!”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">遂经其颈于树枝，自奋绝胆而死。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是他把脖子挂在树枝上，奋力自尽。</td>
+                <td class="english-cell col-english" data-lang="english">He then tied his neck to a tree branch and broke it with a strong effort, ending his life.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">齐亡大夫闻之，曰：“王蟠，布衣也，义不北面于燕，况在位食禄者乎!”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">齐国流亡的大夫们听闻后说：“王蜀只是布衣百姓，却坚守道义不向燕国称臣，更何况我们这些在位领取俸禄的人呢！”</td>
+                <td class="english-cell col-english" data-lang="english">When the exiled ministers of Qi heard of this, they said, “Wang Chu was a commoner, yet he refused to submit to Yan. How much more should those of us in office with salaries uphold righteousness!”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">乃相聚如莒，求诸子，立为襄王。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是大家聚集在莒城，寻找齐王的儿子，将他拥立为齐襄王。</td>
+                <td class="english-cell col-english" data-lang="english">They then gathered at Ju, sought out the prince, and crowned him as King Xiang of Qi.</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
       </main>
 
       <nav class="chapter-nav">
@@ -71,8 +498,139 @@ Wang Chu firmly declined. The envoys said, “If you do not agree, we shall lead
       </nav>
 
       <footer>
-        <small>并排三列显示</small>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
       </footer>
     </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>

@@ -4,135 +4,994 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>史记 — 第9章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
     <link rel="stylesheet" href="/static/style.css">
   </head>
   <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
       <header>
         <h1>史记 — 第9章 列传 平原君虞卿列传第十六</h1>
       </header>
 
-      <main class="parallel">
-        <section>
-          <h3>文言文</h3>
-          <div class="txt">平原君赵胜者，赵之诸公子也。诸子中胜最贤，喜宾客，宾客盖至者数千人。平原君相赵惠文王及孝成王，三去相，三复位，封于东武城。
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
 
-平原君家楼临民家。民家有蹙者，槃散行汲。平原君美人居楼上，临见，大笑之。明日，蹙者至平原君门，请曰：“臣闻君之喜士，士不远千里而至者，以君能贵士而贱妾也。臣不幸有罢癃之病，而君之后宫临而笑臣，臣愿得笑臣者头。”平原君笑应曰：“诺。”蹙者去，平原君笑曰：“观此竖子，乃欲以一笑之故杀吾美人，不亦甚乎！”终不杀。居岁余，宾客门下舍人稍稍引去者过半。平原君怪之，曰：“胜所以待诸君者未尝敢失礼，而去者何多也？”门下一人前对曰：“以君之不杀笑蹙者，以君为爱色而贱士，士即去耳。”于是平原君乃斩笑蹙者美人头，自造门进蹙者，因谢焉。其后门下乃复稍稍来。是时齐有孟尝，魏有信陵，楚有春申，故争相倾以待士。
-
-秦之围邯郸，赵使平原君求救，合从于楚，约与食客门下有勇力文武备具者二十人偕。平原君曰：“使文能取胜，则善矣。文不能取胜，则歃血于华屋之下，必得定从而还。士不外索，取于食客门下足矣。”得十九人，余无可取者，无以满二十人。门下有毛遂者，前，自赞于平原君曰：“遂闻君将合从于楚，约与食客门下二十人偕，不外索。今少一人，愿君即以遂备员而行矣。”平原君曰：“先生处胜之门下几年于此矣？”毛遂曰：“三年于此矣。”平原君曰：“夫贤士之处世也，譬若锥之处囊中，其末立见。今先生处胜之门下三年于此矣，左右未有所称诵，胜未有所闻，是先生无所有也。先生不能，先生留。”毛遂曰：“臣乃今日请处囊中耳。使遂蚤得处囊中，乃颖脱而出，非特其末见而已。”平原君竟与毛遂偕。十九人相与目笑之而未废也。
-
-毛遂比至楚，与十九人论议，十九人皆服。平原君与楚合从，言其利害，日出而言之，日中不决。十九人谓毛遂曰：“先生上。”毛遂按剑历阶而上，谓平原君曰：“从之利害，两言而决耳。今日出而言从，日中不决，何也？”楚王谓平原君曰：“客何为者也？”平原君曰：“是胜之舍人也。”楚王叱曰：“胡不下！吾乃与而君言，汝何为者也！”毛遂按剑而前曰：“王之所以叱遂者，以楚国之众也。今十步之内，王不得恃楚国之众也，王之命悬于遂手。吾君在前，叱者何也？且遂闻汤以七十里之地王天下，文王以百里之壤而臣诸侯，岂其士卒众多哉，诚能据其势而奋其威。今楚地方五千里，持戟百万，此霸王之资也。以楚之强，天下弗能当。白起，小竖子耳，率数万之众，兴师以与楚战，一战而举鄢郢，再战而烧夷陵，三战而辱王之先人。此百世之怨而赵之所羞，而王弗知恶焉。合从者为楚，非为赵也。吾君在前，叱者何也？”楚王曰：“唯唯，诚若先生之言，谨奉社稷以从。”毛遂曰：“从定乎？”楚王曰：“定矣。”毛遂谓楚王之左右曰：“取鸡狗马之血来。”毛遂奉铜槃而跪进之楚王曰：“王当歃血而定从，次者吾君，次者遂。”遂定从于殿上。毛遂左手持槃血而右手招十九人曰：“公相与歃此血于堂下。公等录录，所谓因人成事者也。”
-
-平原君已定从而归，归至于赵，曰：“胜不敢复相士。胜相士多者千人，寡者百数，自以为不失天下之士，今乃于毛先生而失之也。毛先生一至楚，而使赵重于九鼎大吕。毛先生以三寸之舌，强于百万之师。胜不敢复相士。”遂以为上客。
-
-平原君既返赵，楚使春申君将兵赴救赵，魏信陵君亦矫夺晋鄙军往救赵，皆未至。秦急围邯郸，邯郸急，且降，平原君甚患之。邯郸传舍吏子李同说平原君曰：“君不忧赵亡邪？”平原君曰：“赵亡则胜为虏，何为不忧乎？”李同曰：“邯郸之民，炊骨易子而食，可谓急矣，而君之后宫以百数，婢妾被绮縠，余粱肉，而民褐衣不完，糟糠不厌。民困兵尽，或剡木为矛矢，而君器物钟磬自若。使秦破赵，君安得有此？使赵得全，君何患无有？今君诚能令夫人以下编于士卒之间，分功而作，家之所有尽散以飨士，士方其危苦之时，易德耳。”于是平原君从之，得敢死之士三千人。李同遂与三千人赴秦军，秦军为之却三十里。亦会楚、魏救至，秦兵遂罢，邯郸复存。李同战死，封其父为李侯。
-
-虞卿欲以信陵君之存邯郸为平原君请封。公孙龙闻之，夜驾见平原君曰：“龙闻虞卿欲以信陵君之存邯郸为君请封，有之乎？”平原君曰：“然。”龙曰：“此甚不可。且王举君而相赵者，非以君之智能为赵国无有也。割东武城而封君者，非以君为有功也，而以国人无勋，乃以君为亲戚故也。君受相印不辞无能，割地不言无功者，亦自以为亲戚故也。今信陵君存邯郸而请封，是亲戚受城而国人计功也。此甚不可。且虞卿操其两权，事成，操右券以责；事不成，以虚名德君。君必勿听也。”平原君遂不听虞卿。
-
-平原君以赵孝成王十五年卒。子孙代，后竟与赵俱亡。
-
-平原君厚待公孙龙。公孙龙善为坚白之辩，及邹衍过赵言至道，乃绌公孙龙。
-
-虞卿者，游说之士也。蹑屏檐签说赵孝成王。一见，赐黄金百镒，白璧一双；再见，为赵上卿，故号为虞卿。
-
-秦赵战于长平，赵不胜，亡一都尉。赵王召楼昌与虞卿曰：“军战不胜，尉复死，寡人使束甲而趋之，何如？”楼昌曰：“无益也，不如发重使为媾。”虞卿曰：“昌言媾者，以为不媾军必破也。而制媾者在秦。且王之论秦也，欲破赵之军乎，不邪？”王曰：“秦不遗余力矣，必且欲破赵军。”虞卿曰：“王听臣，发使出重宝以附楚、魏，楚、魏欲得王之重宝，必内吾使。赵使入楚、魏，秦必疑天下之合从，且必恐。如此，则媾乃可为也。”赵王不听，与平阳君为媾，发郑朱入秦。秦内之。赵王召虞卿曰：“寡人使平阳君为媾于秦，秦已内郑朱矣，卿以为奚如？”虞卿对曰：“王不得媾，军必破矣。天下贺战胜者皆在秦矣。郑朱，贵人也，入秦，秦王与应侯必显重以示天下。楚、魏以赵为媾，必不救王。秦知天下不救王，则媾不可得成也。”应侯果显郑朱以示天下贺战胜者，终不肯媾。长平大败，遂围邯郸，为天下笑。
-
-秦既解邯郸围，而赵王入朝，使赵郝约事于秦，割六县而媾。虞卿谓赵王曰：“秦之攻王也，倦而归乎？王以其力尚能进，爱王而弗攻乎？”王曰：“秦之攻我也，不遗余力矣，必以倦而归也。”虞卿曰：“秦以其力攻其所不能取，倦而归，王又以其力之所不能取以送之，是助秦自攻也。来年秦复攻王，王无救矣。”王以虞卿之言告赵郝。赵郝曰：“虞卿诚能尽秦力之所至乎？诚知秦力之所不能进，此弹丸之地弗予，令秦来年复攻王，王得无割其内而媾乎？”王曰：“请听子割矣，子能必使来年秦之不复攻我乎？”赵郝对曰：“此非臣之所敢任也。他日三晋之交于秦，相善也。今秦善韩、魏而攻王，王之所以事秦必不如韩、魏也。今臣为足下解负亲之攻，开关通币，齐交韩、魏，至来年而王独取攻于秦，此王之所以事秦必在韩、魏之后也。此非臣之所敢任也。”
-
-王以告虞卿。虞卿对曰：“郝言‘不媾，来年秦复攻王，王得无割其内而媾乎’。今媾，郝又以不能必秦之不复攻也。今虽割六城，何益！来年复攻，又割其力之所不能取而媾，此自尽之术也，不如无媾。秦虽善攻，不能取六县；赵虽不能守，终不失六城。秦倦而归，兵必罢。我以六城收天下以攻罢秦，是我失之于天下而取偿于秦也。吾国尚利，孰与坐而割地，自弱以强秦哉？今郝曰‘秦善韩、魏而攻赵者，必王之事秦不如韩、魏也’，是使王岁以六城事秦也，即坐而城尽。来年秦复求割地，王将与之乎？弗与，是弃前功而挑秦祸也；与之，则无地而给之。语曰‘强者善攻，弱者不能守’。今坐而听秦，秦兵不敝而多得地，是强秦而弱赵也。以益强之秦而割愈弱之赵，其计故不止矣。且王之地有尽而秦之求无已，以有尽之地而给无已之求，其势必无赵矣。”
-
-赵王计未定，楼缓从秦来，赵王与楼缓计之，曰：“予秦地如毋予，孰吉？”缓辞让曰：“此非臣之所能知也。”王曰：“虽然，试言公之私。”楼缓对曰：“王亦闻夫公甫文伯母乎？公甫文伯仕于鲁，病死，女子为自杀于房中者二人。其母闻之，弗哭也。其相室曰：‘焉有子死而弗哭者乎？’其母曰：‘孔子，贤人也，逐于鲁，而是人不随也。今死而妇人为之自杀者二人，若是者必其于长者薄而于妇人厚也。’故从母言之，是为贤母；从妻言之，是必不免为妒妻。故其言一也，言者异则人心变矣。今臣新从秦来而言勿予，则非计也；言予之，恐王以臣为为秦也：故不敢对。使臣得为大王计，不如予之。”王曰：“诺。”
-
-虞卿闻之，入见王曰：“此饰说也，王慎勿予！”楼缓闻之，往见王。王又以虞卿之言告楼缓。楼缓对曰：“不然。虞卿得其一，不得其二。夫秦赵构难而天下皆说，何也？曰‘吾且因强而乘弱矣’。今赵兵困于秦，天下之贺战胜者则必尽在于秦矣。故不如亟割地为和，以疑天下而慰秦之心。不然，天下将因强秦之怒，乘赵之敝，瓜分之。赵且亡，何秦之图乎？故曰虞卿得其一，不得其二。愿王以此决之，勿复计也。”
-
-虞卿闻之，往见王曰：“危哉楼子之所以为秦者，是愈疑天下，而何慰秦之心哉？独不言其示天下弱乎？且臣言勿予者，非固勿予而已也。秦索六城于王，而王以六城赂齐。齐，秦之深仇也，得王之六城，并力西击秦，齐之听王，不待辞之毕也。则是王失之于齐而取偿于秦也。而齐、赵之深仇可以报矣，而示天下有能为也。王以此发声，兵未窥于境，臣见秦之重赂至赵而反媾于王也。从秦为媾，韩、魏闻之，必尽重王；重王，必出重宝以先于王，则是王一举而结三国之亲，而与秦易道也。”赵王曰：“善。”则使虞卿东见齐王，与之谋秦。虞卿未返，秦使者已在赵矣。楼缓闻之，亡去。赵于是封虞卿以一城。
-
-居顷之，而魏请为从。赵孝成王召虞卿谋。过平原君，平原君曰：“愿卿之论从也。”虞卿入见王。王曰：“魏请为从。”对曰：“魏过。”王曰：“寡人固未之许。”对曰：“王过。”王曰：“魏请从，卿曰魏过，寡人未之许，又曰寡人过，然则从终不可乎？”对曰：“臣闻小国之与大国从事也，有利则大国受其福，有败则小国受其祸。今魏以小国请其祸，而王以大国辞其福，臣故曰王过，魏亦过。窃以为从便。”王曰：“善。”乃合魏为从。
-
-虞卿既以魏齐之故，不重万户侯卿相之印，与魏齐间行，卒去赵，困于梁。魏齐已死，不得意，乃著书，上采《春秋》，下观近世，曰《节义》、《称号》、《揣摩》、《政谋》，凡八篇，以刺讥国家得失，世传之曰《虞氏春秋》。
-
-太史公曰：平原君，翩翩浊世之佳公子也，然未睹大体。鄙语曰“利令智昏”，平原君贪冯亭邪说，使赵陷长平兵四十余万众，邯郸几亡。虞卿料事揣情，为赵画策，何其工也！及不忍魏齐，卒困于大梁。庸夫且知其不可，况贤人乎？然虞卿非穷愁，亦不能著书以自见于后世云。</div>
-        </section>
-        <section>
-          <h3>现代汉语</h3>
-          <div class="txt">平原君赵胜，是赵武灵王的儿子。在武灵王的儿子中，赵胜最能干，他喜欢结交宾客，到过他门下的宾客先后可以达到几千人。平原君相继做过赵惠文王和赵孝成王的宰相，曾经三次被免官，又三次被重新起用，他的封地在东武城。
-
-平原君家的高楼下临一家普通百姓的房子。这家有个瘸子，每天一拐一拐地到井边去打水。有一天，平原君的一个美人在楼上看到了这种情景，不由得大声笑了出来。第二天，这个瘸子就来到平原君家向平原君请求说：“我听说您是喜欢养士的，并且听说士人们所以不顾千里之远来投奔您，就是因为您能够重人才而不重女色。我不幸得了这种残疾，而您的美人竟然公开地耻笑我，我希望得到那个笑话我的女人的人头。”平原君笑着答应说：“好吧！”瘸子走后，平原君对左右的人说：“看这小子，居然就因为笑了他一声，他就来让我杀我的美人，这不也太过分了吗？”说罢也就搁下完事了。过了一年多，他发现门下的宾客和侍役的人们渐渐走掉了一半以上。平原君很奇怪，他问人们：“我对待他们从不敢有一点失礼的地方，可是离开的人为什么越来越多呢？”这时有一个门下的客人过来说：“就因为您没有杀那个嘲笑瘸子的美人，大家都认为您是重女色而不重人才，所以大家都走了。”平原君一听，赶紧杀了那个笑话瘸子的女人，提着她的人头亲自到那个瘸子家去登门道歉。这以后，那些走了的人们才又慢慢地回来了。这个时候，齐国有孟尝君，魏国有信陵君，楚国有春申君，他们都以招纳宾客而互相竞争。
-
-当秦国军队包围了赵国首都邯郸的时候，赵王派平原君去楚国求救，与楚国建立共同抗秦的联盟。平原君想从自己的门客中挑选二十个文武兼备的人作为随员。他说：“如果能用和平的方式完成任务，当然是最好不过了；万一不能用和平的方式解决问题，那也一定要用武力强迫楚王在朝廷上与我们签订盟约，总之是一定要完成任务才能回来。这些随员用不着到别处去找，我门下的宾客就足够用了。”结果只挑到了十九个，其余的都不行，没有办法凑满二十个。这时，有个叫毛遂的自己走出来对平原君说：“我听说您要去和楚国订立盟约，想从您的门下宾客中挑选二十个随员，不再向外面去找，而现在还缺一个。那我希望您就把我添在里头，人数一够，咱就马上出发了。”平原君说：“您在我这里住了几年了？”毛遂说：“三年了。”平原君说：“大凡一个有本事的人活在世界上，那就好像一把锥子装在口袋里，锥子尖总是立刻就会露出来。您在我这里都已经三年了，大家居然都没有对您说过一句赞美的话，我也没有听到过您有什么才干的传闻，那就说明您的确没有什么本领。您不能去，您还是留在家里吧！”毛遂说：“我是今天才请求您把我这把‘锥子'装进口袋！如果您要是早把我装进了口袋，那我必然连整个锥子头都会露出来，岂只是露出一个锥子尖呢！”平原君无法，只好同意，带着他一起出发了。其余的十九个人都看不起他，互相看着笑，只是没有笑出声罢了。
-
-等到毛遂等到达了楚国，经过一路上毛遂与十九个人的不断谈论，他们对毛遂已经心服了。平原君与楚王谈判结盟的事情，平原君反复向楚王申说楚、赵联盟的好处，从太阳刚出就说，一直说到正午楚王仍未接受。这时那十九个人就对毛遂说：“你去！”于是毛遂就手按剑柄一步一级地迅速走上了大殿，向平原君说：“合纵抗秦的必要性是两句话就可以说清的，今天从早上说起，到现在已经中午了，还定不了，这是为什么呢？”楚王转脸问平原君：“这个人是干什么的？”平原君说：“他是我的一个门客。”楚王呵斥道：“你给我滚下去！我是在和你的主人讲话，你来干什么！”毛遂手按剑柄跨前一步说：“大王所以敢于这么呵叱我，是仗恃着楚国人多。可是现在您在这十步之内，是倚靠不上楚国的人多的。您的命就攥在我的手里。我的主人就在跟前，您怎么能这么不顾礼节的呵叱我呢？再说，当初商汤凭着七十里的地盘，就灭了夏桀统一了天下；周文王当初凭着百数里的地盘，就灭掉了殷纣使普天下的诸侯们臣服，他们是靠的人多吗？他们都是由于能够很好地把握住了当时的形势，而趁机发挥了他们的威力。现在楚国有五千里见方的地盘，有上百万的军队，这本来是可以成为霸主的资本。像楚国目前这种强大的形势，按理说它应该是天下无敌的，可是谁知道就凭白起这么个小子，领着几万人来和楚国作战，居然一下子就攻克了鄢陵、郢都，再战又烧毁了夷陵，三战连楚国的先王都受到了侮辱。这是一百辈子也报不完的仇，连我们赵国都为你们感到羞耻，可是您自己却居然不知道痛恨。联盟抗秦，更主要的是为了你们楚国，而不是为了我们赵国。我的主人就在跟前，您呵叱我作什么？”楚王赶紧说：“好，好，确实就像你说的那样，我愿意带着我们整个国家和你们建立联盟。”毛遂说：“您决定了吗？”楚王说：“决定了。”毛遂立即招呼楚王身边的人说：“赶紧拿鸡、狗、马的血来。”毛遂双手捧着盛着鸡、狗、马血的铜盘子先是跪送到了楚王面前，说：“请大王第一个歃血，其次是我的主人，再次是我。”于是定盟的仪式就这样在大殿上进行完了。而后毛遂左手端着铜盘子，右手招呼下面的那十九个人说：“你们也都在下面歃血，算是参加订盟。你们这些人平庸透顶，也就是些专门靠着别人吃现成饭的家伙！”
-
-平原君完成了与楚国订盟的任务回到赵国后，他对人们说：“我再也不敢说我能够识别人了。我识别过的人多者上千，少说也得有几百，我总以为我不会漏掉有本事的人了，谁料想这回却漏掉了毛先生。毛先生一到楚国，使我们赵国的地位比九鼎、大吕都还要尊贵。毛先生的舌头比百万军队还要厉害。我再也不敢说我能识别人了。”从此毛遂就成了平原君门下的上客。
-
-平原君回到赵国后，楚国就派了春申君带领军队来援救赵国，魏国的信陵君也假传王命夺取了晋鄙所统率的军队赶来救助赵国，但是他们都还在路上，还没有到达。这时秦国的军队对邯郸加紧攻击，邯郸像是很快就要失守了，平原君很着急。这时邯郸招待所管理员的儿子李同对平原君说：“您不担心赵国灭亡吗？”平原君说：“赵国灭亡我就会成为俘虏，我怎么不担心呢？”李同说：“现在邯郸的老百姓已经艰难到了拿人骨头当柴烧，互相交换着小孩吃的地步，已经是山穷水尽了！可是您的家里光是姬妾就有上百人，您家里的丫头仆人都穿着绫罗绸缎，都有吃不完的好菜好饭，而百姓们却连件完整的粗布短衣都没有，连糟糠都吃不上。现在士兵们连武器都没有，只好拿着刀削的棍子棒子作战，可是您家中各种宝物各种乐器却仍和从前一样件件不缺。如果让秦国灭了赵国，到那时您还能够占有这些东西吗？反之，如果赵国得到了保全，以后您还用担心有什么东西得不到吗？现在您要是能把您夫人以下的全家人都编入军队，让他们与别人一样地分担各种劳务，把您家里的全部财产都拿出来犒赏军队，处在危难关头的人们，是最容易取得他们的感戴的。”平原君立刻就按李同的意见办了。在平原君这种行为的感召下，很快地组成了一支三千人的敢死队。李同就带着这三千人猛烈地攻击秦军，秦军被他们的精神所震慑，被迫后退了三十里，正好这时楚国和魏国的救兵也到了，秦军只好撤兵而去，邯郸得到了保全。李同在战斗中牺牲了，他的父亲被赵国封为李侯。
-
-虞卿想因为信陵君救赵这件事情替平原君向赵王请求封赏。公孙龙听说后，连夜乘车来见平原君说：“我听说虞卿想因为信陵君救了邯郸这件事为您请封，有这件事吗？”平原君说：“有。”公孙龙说：“这绝对不行。当初赵王让您做宰相，并不是因为您的智慧才能在赵国独一无二；当初把东武城封给您当领地，也不是因为您有什么别人所没有的功劳，归根到底，就因为您是赵王的亲戚。而当您接受相印的时候并没有推说自己无能，当您接受封地的时候也没有推说自己无功，从您来说也是认为自己是赵王的亲戚。现在您如果因为信陵君解救了邯郸而请求封赏，那您就是既要凭着亲戚的身份受职受地，又要以普通人的身份去和国家计算功劳，这是绝对不行的。现在虞卿让您这么做，他是想左右逢源。如果您果真受到了封赏，他就会以此居功，向您索取报酬；如果您没有受到封赏，他也可以捞到一个为您着想的虚名，让您念他的好处。您千万别听他那一套！”于是平原君拒绝了虞卿的建议。
-
-平原君死于赵孝成王十五年。他的后代相继为平原君，一直到最后赵国灭亡时平原君的封地才跟着一同被取消。
-
-平原君很优待公孙龙，公孙龙是一个以分辨“坚”、“白”闻名的学者，后来邹衍经过赵国时，面对着公孙龙发了一通有关“大道”的高论，从此，公孙龙才被冷淡了。
-
-虞卿是一个善于言辞的辩士。他穿着草鞋打着雨伞去见赵孝成王。头一次见面，赵王就赐给了他黄金百镒，白璧一对；第二次见面，赵王竟封他作了赵国的上卿，所以人们都叫他虞卿。
-
-秦国和赵国在长平打了一场小仗，赵国失败了，死了一名都尉。赵王把楼昌和虞卿叫来说：“长平的军队在初次交锋中被秦国打败了，我们还死了一个都尉，我打算集中长平的军队再次突袭秦军，你们看怎么样？”楼昌说：“没有什么用处，不如派一个规格较高的使团去向秦国求和。”虞卿说：“楼昌所以主张马上求和，是因为他认为如果我们不求和就要大败，可是这么一来在和与不和的问题就让秦国掌握主动权了。大王您分析一下秦国，它是想打败我们呢，还是不想呢？”赵王说：“秦国已经是全力以赴，当然是想要打败我们了。”虞卿说：“那么大王您听我的建议，您可以派使者带着珍贵宝物去结好楚国和魏国。楚国和魏国想得到咱们的宝贝，就一定会接纳咱们的使者。赵国的使者一进入楚国和魏国，秦国势必就会怀疑山东六国又联合起来了，它肯定会害怕。到那时我们再求和才能成功。”赵王不听虞卿的话，而与平阳君赵豹决定立即派郑朱入秦向秦国求和，秦国接纳了郑朱。于是赵王召见虞卿说：“我让平阳君派人去向秦国求和，秦国已经接纳郑朱了，您看怎么样？”虞卿说：“大王的求和不会成功，我们的军队也肯定要被秦军打败，天下诸侯很快就将去向秦国祝贺胜利了。因为郑朱是我国的一位显贵人物，他到了秦国，秦王和应侯范雎一定会在各国诸侯面前假意作出一种尊重郑朱的样子，这样，楚国和魏国觉得赵国已经向秦国求和了，他们就不可能再来支援我们。当秦国知道大家都不会再来支援我们时，也就不会再答应我们的求和了。”应侯范雎果然开始时很尊重郑朱，把他介绍给各国前来向秦国祝贺的人们，而最后果然没有答应赵国的求和，以至于赵军在长平大败，邯郸也被秦军所围，整个赵国被天下人所耻笑。
-
-待至秦国解除了对邯郸的包围，赵王准备去秦国朝见秦王，派赵郝去和秦国谈判，说是愿意割给秦国六个县，从此两国讲和。这时虞卿对赵王说：“秦国这次的退兵，是因为他们自己疲惫无力再战而回去的呢？还是有力量再战，只是出于爱您才回去的呢？”赵王说：“秦国攻打我们，已经是用尽了全力，这是他们自己不能再战了才撤回去的。”虞卿说：“秦国用尽力气来夺他想要得到的东西，结果没有得到，疲劳不堪地回去了，而大王您现在却想把他们用了力气都得不到的东西送给他们，这是帮着秦国来打自己啊。这样下去，到明年秦国再来打您，您恐怕就没救啦。”赵王把虞卿的话告诉了赵郝。赵郝说：“虞卿能准确地判断秦国的力量是已经用尽了吗？如果他能准确判断秦国已经没有力量再来打我们那当然好了，假如不能，我们今天心疼这块小小的地盘不给秦国，而秦国明年再来打我们，那时大王是不是不止割这六个县，而是还要割更靠后的地盘给秦国才能求和呢！”赵王说：“那就听你的话把土地割让给秦国吧，但这样做之后，你能保证明年秦国就不会再来打我们了吗？”赵郝说：“这不是我敢担保的。过去韩、赵、魏三国和秦国的关系，都是好的。现在秦国和韩、魏友好而专门来打大王，那说明您对秦国恭敬服从的程度赶不上韩、魏两国。我现在只能是为您解除由于您过去对秦国的背叛而招来的攻击，并为您打开两国的边关，互相通使，让赵国与秦国的关系能够和韩、魏与秦国的关系一样；如果到明年您又惹得秦国来攻了，那就说明您对秦国恭敬侍候的程度肯定是又比韩、魏两国差了。所以我对此负不了责任。”
-
-赵王又把赵郝的话告诉了虞卿。虞卿说：“赵郝说‘如果我们不求和，明年秦国就会再来攻大王，大王就得割更多的土地才能够求和’。可是现在求和了，赵郝又不敢保证明年秦国不再来打我们。那我们现在白白送掉这六个县，又有什么用！明年秦国再来攻，我们再割给它一些秦国用战争也得不到的东西来求和，这样下去是自取灭亡，还不如不求和。秦国即使善战，它也不能轻易地夺得我们的六个县；赵国虽然不善守，我们也不会轻易地丢掉六个城。秦军所以自己回去，那是因为他们太疲惫不堪了。如果我们豁出这六个城，用它们去收买拉拢东方的国家来一起去攻打疲惫的秦国，这些为收买东方各国所付出的代价就一定可以从秦国那里得到补偿。这对于我们说不定还有一定好处，我们怎么能够平白无故地甘心割地给人家，来削弱自己以扩大秦国的势力呢？赵郝说‘秦国之所以和韩国、魏国友好而只攻赵国，那是因为大王对秦国恭敬侍候的程度不如韩、魏’，他这是想叫大王每年都拿六个城去送给秦国，这样不用动弹很快就把国土割送完了。转过年来秦国再来要求割地，您还给不给它呢？不给，那就前功尽弃，秦国就又有了打我们的理由；想给，可是我们已经没有土地可割了。俗话说‘强者善于进攻，弱者就无法防守’。如果我们坐在那里听任秦国摆布，秦国不费一点劲，就可以得到越来越多的土地，那就让秦国越来越强，而我们赵国也就越来越弱。让越来越强的秦国来宰割越来越弱的赵国，那它的心思就永远不会满足了。到头来您的土地是有限的，而秦国的欲望是无边的，以有限的土地去填它无限的贪求，这样下去，赵国肯定就完蛋了。”
-
-赵王的主意还没有拿定，刚好楼缓从秦国来了。于是赵王就和楼缓商量说：“割地给秦国还是不割地给秦国，你看哪个好？”楼缓推辞说：“这不是我所应该回答的。”赵王说：“尽管如此，你还是谈一下你个人的意见。”楼缓说：“大王听说过春秋时代公甫文伯母亲的事情吗？公甫文伯在鲁国做官，后来生病死了。他一死，他屋里的两个姬妾随即跟着他自杀了。他的母亲一见如此，就再也没有哭她的儿子。她家的保姆说：‘哪里有儿子死了母亲不哭的呢？’公甫文伯的母亲说：‘孔子是个大贤人，当他被鲁国驱逐出境时，我的儿子没有跟着孔子去一道流亡。现在他死了，却有两个女子为他自杀，这说明他肯定是对贤人无情无义而在女人身上倒是肯下功夫的。’这个话出于当母亲的嘴里，可以说是个良母；倘若出在当妻子的嘴里，恐怕就不免会被人们说是妒嫉了。所以同样的一句话，随着说话的人地位不同，别人的看法也就不一样了。如今我刚从秦国来，如果我要说不给它，那不是好办法；如果我说给它，我又怕大王会认为我是在替秦国说话，所以我开始不敢回答。如果真要是为大王考虑，我看还是不如给它为好。”赵王说：“好。”
-
-虞卿听说这件事，立刻去见赵王说：“楼缓说的这些都是骗人的，大王千万不要向秦国割地！”楼缓听说虞卿拦阻，就又去见赵王。赵王又把虞卿的话告诉了楼缓。楼缓说：“不对！虞卿只知其一，不知其二。现在秦国和赵国发生冲突，其他各国都高兴，这是为什么呢？因为许多人都说‘这样一来，我们就可以趁机顺着强大的秦国来一道收拾软弱的赵国了’。如今赵国的军队已经被秦国整治得够呛，各国诸侯早都派人到秦国去祝贺胜利了，所以我们不如赶紧割地求和，这样可以让东方各国疑心赵国已经与秦国和好了，同时也可以让秦国得到安慰。不然的话，东方各国就会趁着秦国发怒，赵国疲惫的时机，瓜分赵国。赵国马上就要灭亡了，还能谈到什么算计秦国呢？所以说虞卿只知其一，不知其二。希望大王就这么决定，不要再考虑了。”
-
-虞卿听说后，又去见赵王说：“楼缓为秦国打算，他给您出的这个主意可真够毒啊！这么做就将更加引起东方各国对赵国的怀疑，又哪里能安慰秦国呢？他让您这么做，难道就不怕在各国面前暴露赵国的虚弱吗？再说，我说不要给秦土地，也并不是简单地不给秦国就完了。秦向大王要六个城邑，大王您就拿这六个城邑去贿赂齐国。齐国是秦国的死对头，他们既能够得到赵国的六个城邑，又能够和赵国协力共同抗秦，这是他们求之不得的。他们对您的请求，等不到您说完就会表示同意。这样您在齐国丢失的东西就可以在秦国捞回来。齐国和赵国对秦国的深仇大恨也就可以报了，同时还可以在各国面前表明我们赵国是有作为的。大王您只要把这个消息一放出去，那就不用等到我们出兵接近秦国的边境，我就可以看到秦国人带着重礼到我们赵国来向我们求和了。到那时，我们再答应秦国的求和，那么韩国和魏国也就会看重您；他们看重大王，也就一定会带着重宝来争着向您讨好，这样您一下子就结交了三个国家，到那时您和秦国的关系地位就和现在完全倒过来了。”赵王说：“好！”于是立即派了虞卿去见齐王，和齐王商量共同抗秦的事。虞卿还没有回到赵国，秦国派来向赵国求和的使者就已经来到赵国了。楼缓听说后，赶紧悄悄逃走了。赵王于是把一座城赏给了虞卿。
-
-过了些日子，魏国请求与赵国联合（推行合纵策略）。赵孝成王召虞卿来商议。虞卿先去拜访平原君，平原君说：“希望您能在大王面前主张合纵。”虞卿进宫拜见赵王，赵王说：“魏国请求和我们合纵。”虞卿回答：“魏国做错了。”赵王说：“我本来就没答应它。”虞卿又说：“大王也做错了。”赵王问：“魏国请求合纵，您说魏国错了；我没答应它，您又说我错了，难道合纵终究是不能推行的吗？”虞卿解释：“我听说小国与大国合作，若事情顺利，好处是大国享用；若事情失败，灾祸是小国承担。如今魏国作为小国，主动来承担潜在灾祸（请求合纵抗秦），而大王作为大国，却拒绝享用可能的好处（拒绝合纵），所以我说大王错了，魏国也错了。依我看，合纵对赵国是有利的。”赵王说：“好。”于是就和魏国缔结了合纵盟约。
-
-后来虞卿因为魏齐（受迫害）的缘故，不看重万户侯的爵位和卿相的官印，与魏齐悄悄同行，最终离开赵国，在大梁陷入困境。魏齐死后，虞卿越发不得志，于是开始著书。他向上取材于《春秋》，向下观察近代史实，撰写了《节义》《称号》《揣摩》《政谋》等共八篇文章，用以讥评各国政治的得失，这部书在后世流传，被称为《虞氏春秋》。
-
-太史公（司马迁）评论：平原君是乱世中风度翩翩的贤公子，但没能看清大局。俗话说“利令智昏”（利益使人丧失理智），平原君贪图冯亭的邪说（劝赵国接受上党之地，引发秦赵冲突），使赵国在长平之战中损失四十多万士兵，邯郸几乎沦陷。虞卿分析形势、揣摩情理，为赵国谋划策略，是多么精妙啊！但他因为不忍心抛下魏齐，最终在大梁陷入困境。就算是普通人也该知道这样做不可行，何况是贤能之人呢？不过，虞卿若不是经历穷愁潦倒，也不会著书立说，使自己的名声显扬于后世啊。</div>
-        </section>
-        <section>
-          <h3>English</h3>
-          <div class="txt">Zhao Sheng, Lord Pingyuan, was a member of the royal house of Zhao, the ablest of all the young lords. He was a great patron whose protégés numbered thousands. Prime minister under King Huiwen and King Xiaocheng, he resigned three times and three times was reappointed. His fief was Dongwucheng.
-
-Lord Pingyuan's storeyed mansion stood next to a commoner’s house from which a lame man once limped out to draw water, only to be heartily laughed at by one of the lord's concubines. Next day the lame man came to the lord's gate and said, "I hear you are such a great patron that worthy men come to you from a thousand li away, because you value them more than your concubines. It is my misfortune to be lame, but one of your concubines has laughed at me. I want that lady's head.” Lord Pingyuan consented with a smile. Once the lame man had gone, however, he said with a laugh, "What a fool, wanting me to kill my beauty because of one laugh! Ridiculous!" And he did not kill her. Within a year or so, more than half of his protégés and retainers had left one after the other. "I have never treated you gentlemen impolitely. Why are you all leaving like this?" he asked in surprise. One of them stepped forward to answer, "By not killing the lady who laughed at the lame man you showed that you love feminine beauty but despise worthy men. That is why so many are leaving.” Then the lord cut off the head of the offending concubine and himself presented it with apologies to the lame man. After that his protégés gradually returned. At this time, Lord Mengchang in Qi, Lord Xinling in Wei (403B.C.-225B.C.) and Lord Chunshen in Chu were trying to outdo each other in their treatment of worthy men.
-
-When the army of Qin besieged Handan, Zhao ordered Lord Pingyuan to seek aid by entering into an alliance with Chu. He decided to take with him twenty strong, fearless protégés skilled in the arts of peace as well as of war. "If we can succeed by peaceful means, well and good," he said. “If not, let us take an oath on blood in the hall to bring back an agreement. I shall not seek men elsewhere, only in my own household." He selected nineteen men, but could not decide on the twentieth. Then one of his retainers, Mao Sui, came forward and recommended himself, saying, "I hear you want to join Chu in an alliance against Qin, my lord, and that you mean to choose twenty men from your own household but are still one short. Will you take me to make up the number?” "How many years have you been here?" asked Lord Pingyuan. Mao Sui answered, "Three." “An able man in this world, like an awl kept in a bag, quickly shows himself. If you have been here for three years, praised by none and unknown to me, you can hardly have any talent. No, no, you had better stay here.” "I am asking now to be put in the bag," said Mao Sui. “Had I been put there earlier, the awl would have thrust right through instead of simply showing its tip outside." So finally the lord agreed to take him. The other nineteen exchanged amused glances in silence.
-
-By the time they reached Chu, Mao Sui had convinced the other nineteen of his ability in argument. At sunrise Lord Pingyuan and the king of Chu began to discuss the advantages and disadvantages of an alliance, but no agreement had been reached by noon. Then the nineteen others urged Mao Sui, “Go up, sir!” Mao Sui, his hand on his sword, mounted the steps and said to Lord Pingyuan, "Whether this alliance is advantageous or not can be settled in two words. How is it that negotiations started at sunrise yet no agreement has been reached by noon?” The king of Chu demanded, “Who is this man?” Lord Pingyuan answered, “One of my retainers.” "What impudence!" shouted the king of Chu. “I am discussing matters with your master. What business have you here?” His hand on his sword, Mao Sui advanced and said, "Your Majesty dares to shout at me because Chu has powerful forces; but within these ten paces they are no help to you. Your life is in my hands. How dare you shout at me in my master's presence? I have heard that King Tang ruled the world although he only started with seventy li of land, and King Wen with his kingdom of a hundred li ruled over all other states. These kings had no great armies, yet they could control events and exercise their might. Now with Chu's five thousand li of territory and million halberdiers, you have the resources to become a great conqueror. The whole world should be powerless to withstand you. Yet that young cur Bai Qi with a few tens of thousands of men in one battle took the cities Yan and Ying, in another burned the royal tombs at Yiling, and in a third brought shame upon your ancestors. We blush for you over this undying disgrace, yet you are not ashamed. We are proposing this alliance for your sake, not for our own. How dare you shout at me in my master's presence?" "Yes, yes," said the king of Chu. "Just as you say. My state shall ally with yours.” "Is that settled, then?" asked Mao Sui. The king said, "It is." Then Mao Sui ordered the king's followers to fetch the blood of a cock, dog and horse. On his knees he presented the bronze dish of blood to the king of Chu, saying, "You must make a blood pact, sir. Then my master will pledge himself, then I." So the alliance was concluded in the court. Then holding the dish of blood in his left hand, Mao Sui beckoned to the other nineteen with his right. "You shall swear with blood too," he said. “You yes-men can only reap what others have sown.”
-
-Having made the alliance and returned to Zhao,Lord Pingyuan said,“I shall never set myself up as a judge ofmen again.I have judged perhaps a thousand men,or several hundreds at least,and thought I could not miss any man of talent;but I was mistaken in my judgement of Mao Sui.His going to Chu has made our prestige higher than that of the nine tripods of Xia or the great bell of Zhou.His three inches of tongue have proved mightier than an army a million strong!I shall never set myself up as a judge  of men again."Thereafter he treated Mao Sui as his most honoured guest.
-
-After Lord Pingyuan's return to Zhao the king of Chu sent Lord Chunshen with an army to Zhao's rescue, while Lord Xinling of Wei took over General Jin Bi's army by trickery to aid Zhao. Before the arrival of these forces, however, the troops of Qin were pressing Handan so hard that the city was on the verge of surrender, and Lord Pingyuan was desperately worried. Li Tong, the son of a steward in a hostel, asked, "Don't you care if the state of Zhao is overthrown?" "If Zhao falls I shall be captured," replied Lord Pingyuan. "Of course I care." "The citizens of Handan are in such straits they are using bones for fuel and exchanging their sons to eat," rejoined Li Tong. "Yet in your inner palace are hundreds of slave girls and concubines who wear silk and embroidery and have grain and meat and to spare, while the people lack sackcloth to cover their nakedness and would welcome husks to eat. Exhausted, with no weapons left, they are sharpening sticks to serve as spears and arrows; yet your bronze vessels, bells and chimes remain intact. All these will be lost if Qin conquers Zhao. But if Zhao is saved, you will have no lack of such things. You should make your ladies take part in the work of the troops and distribute all you have to supply our men. In their desperate state, it is easy to win their gratitude.” Lord Pingyuan took his advice and assembled three thousand men ready to risk their lives. With Li Tong they charged the soldiers of Qin and made them fall back thirty li. Just at that juncture Chu and Wei came to their assistance. Then the men of Qin raised the siege and Handan was saved. Li Tong fell in battle, but his father was enfeoffed as marquis of Li.
-
-Because Lord Xinling had saved Handan, Yu Qing decided to ask for a larger fief for Lord Pingyuan. When Gongsun Long heard this he drove by night to see Lord Pingyuan and said, "I hear that Yu Qing means to ask for a larger fief for you because Lord Xinling saved Handan. Is this true?" Told that it was, he said, "That would be very wrong. It was not because you are the wisest man in Zhao that the king made you his chief minister, nor was it because you had achieved much and all others nothing that he gave you Dongwucheng as your fief. He did so because you are his kinsman. And you accepted the chief minister's seal and fief without declining on the grounds of unworthiness, also because you are his kinsman. Now if you accept a fief because Lord Xinling saved the capital, this would mean that you had accepted cities in the past as a member of the royal family and were now asking for a reward like a common citizen. That would be most improper. Yu Qing stands to gain either way. If he succeeds you will be indebted to him; if he fails you will have to be grateful to him for trying. You must not listen to him, sir!" So Lord Pingyuan declined Yu Qing's offer.
-
-Lord Pingyuan died in the fifteenth year of Xiaocheng. His descendants held the title after him until the fall of Zhao.
-
-Lord Pingyuan gave very generous treatment to Gongsun Long, a skilled logician, until he was ousted from favour by Zou Yan, who came to Zhao to expound the origin of things.
-
-Yu Qing was an itinerant politician. Shod in straw sandals and carrying an umbrella, he spoke with King Xiaocheng of Zhao. After one interview he was given a hundred yi of gold and a pair of white jade discs, while after a second interview he was made chief minister. Thus he was known as Yu Qing or Minister Yu.
-
-In the battle against Qin at Changping, the men of Zhao were worsted and lost their commander. The king consulted Lou Chang and Yu Qing, saying, "Our army has been defeated and our commander killed. What if I attack with all our men at arms?" "That would be useless," said Lou Chang. "Better send some high-ranking envoy to treat for peace." But Yu Qing said, "Lou Chang proposes peace for fear our army will be beaten, but making peace depends on Qin. In your view, does Qin want to destroy our army or not?" “Qin is going all out to destroy us,” replied the king. Yu Qing said, "If you take my advice, you will send envoys with rich gifts to Chu and Wei. Wanting our gifts, these states will admit our envoys. Once our envoys enter Chu and Wei, Qin will take fright, suspecting that all the other states have allied against it. That is the only way to achieve peace." The king did not accept this advice, however, but told Lord Pingyuan to negotiate and sent Zheng Zhu to Qin. When Qin accepted his envoy, the king of Zhao summoned Yu Qing and said, “I have asked Lord Pingyuan to negotiate for us, and Qin has accepted our envoy Zheng Zhu. What do you say to that?" Yu Qing answered, “You will fail to make peace, the army will be destroyed, and all the world will go to congratulate Qin on its victory. Zheng Zhu is a nobleman, and the king of Qin and the marquis of Ying (Fan Sui) are bound to make a great show of respect for him. When Chu and Wei see you are treating for peace with Qin they will not come to your rescue, and when Qin sees that it will not agree to make peace.” Sure enough, the marquis of Ying paraded Zheng Zhu before all the envoys from different states who came to congratulate Qin on its victory, and Qin refused to make peace. Then the great defeat at Changping was followed by the siege of Handan, so that Zhao became the laughing-stock of the world.
-
-After Qin raised the siege of Handan, the king of Zhao held court and told Zhao Hao to sue for peace and offer Qin six counties. Yu Qing asked, "Has Qin withdrawn because it is exhausted? Or do you think it is still strong enough to advance but has called off the attack for your sake?" The king answered, "Qin went all out in its attack. This withdrawal must be owing to exhaustion." "So Qin attacked as hard as it could, yet was unable to take the city and has withdrawn, exhausted. If you give it what it was unable to take, you are helping Qin to attack us. Next year it will attack again, and you will be doomed." The king repeated this to Zhao Hao, who said, "Can Yu Qing really know the strength of Qin? Suppose, knowing that Qin can do no more, we keep back these small patches of land, if it attacks again next year you will have to give up your palace to obtain peace." "If I take your advice and give Qin these counties, can you guarantee no further attack next year?" "I can't promise that," said Zhao Hao. "In the past the three states of Jin were on good terms with Qin, whereas now Qin is friendly with Han and Wei but has attacked us. This shows that we have not served Qin as well as Han and Wei have done. Now I can enter the Pass, present gifts, and serve Qin as well as Han and Wei have done. If there is an attack on us alone next year, that will mean you are still not serving Qin as well as Han and Wei—I cannot be responsible for that."
-
-The king repeated this to Yu Qing, who countered, "Zhao Hao says that if we do not make peace, next year when Qin attacks again we shall have to give up your palace to obtain peace; but if we make peace with Qin, he cannot guarantee no further attack. What is the use, then, of giving up six cities? If Qin attacks again next year and to make peace we give up more land which it cannot take, we shall be cutting our own throats! Better not make peace. Although Qin launches strong attacks, it cannot take our six cities. Although we have given ground, we have not lost these six cities. Now Qin has withdrawn, exhausted, its troops tired out. If we use these cities to induce other states to attack Qin, exhausted as it is, we shall receive compensation for our cities from Qin. Our country is still strong. Why should we tamely surrender territory weakening ourselves and making Qin even more powerful? "Zhao Hao says Qin is friendly with Han and Wei but has attacked Zhao, implying that Han and Wei will not help us, that we are standing alone, and that this shows we have not served Qin as well as Han and Wei. He wants you to give up six cities to Qin each year, which will soon amount to taking the surrender of all our cities lying down. Next year when Qin asks for cities, will you give them to it or not? If you refuse, all past efforts will have been wasted and you will be asking for trouble. If you agree, you will soon have no more to give. "The proverb says, 'When the powerful launch strong attacks, the weak must give ground.' If you let Qin have its way, it will add to its territory without fighting, and that will strengthen Qin while weakening Zhao. Qin as it grows stronger will never cease seizing land from us as we grow weaker. There is a limit to your territory, but none to their ambition. If things go on like this, Zhao will disappear."
-
-Unable to make up his mind, the king consulted Lou Huan, just back from Qin. “Which is better, to give Qin land or not?” "That is not for me to say," replied Huan. “Still, what is your private opinion?” "Does Your Majesty know the story of Gongfu Wenbo's mother? Gongfu served in the state of Lu, and when he fell ill and died two women killed themselves in their chambers. His mother, receiving word of this, did not mourn for him. Asked the reason by his nurse she said, 'The sage Confucius was driven away from Lu, but he did not follow Confucius. Now two of his wives have killed themselves because of his death, which shows how little he thought of elders, how much of women.' These words spoken by his mother prove that she was a good mother, whereas if spoken by his wife they would simply have shown jealousy. Thus the same words may have a different meaning, depending upon the speaker. Now I have just come from Qin. If I urge you not to cede these cities, it would be bad advice. If I urge you to cede them, you may suspect me of speaking on behalf of Qin. So I dare say nothing. If I were you, I would give up these cities.” The king agreed with him.
-
-When Yu Qing knew this he went to the king and said, "He is hiding his real motives. You must not agree!" Lou Huan, learning of this, went back to see the king, who told him what Yu Qing had said. Lou Huan replied, “No, Yu Qing sees one side only, not the other. Now all other states are gloating over this trouble between Qin and Zhao. Why? They hope to side with the stronger to take advantage of the weaker. They have sent congratulations to Qin on defeating our army. We had better give up some land at once to make peace, to sow doubts in the others and placate Qin. Otherwise they will take advantage of Qin's might and of our weakness to carve up our state as if it were a melon. That would mean the end of Zhao and all these speculations about Qin. This is why I say Yu Qing sees one side only, not the other. I hope Your Majesty will make up your mind and not hesitate any longer.”
-
-Word of this reached Yu Qing, who went back to the king and said, "What a dangerous proposal! Lou Huan is working for Qin. This would make the other states suspect you more without placating Qin. Why didn't he say that this would show the world your weakness? Besides, when I advised you not to cede those cities, I had something else in mind. Qin has asked you for six cities. Well then, offer six to Qi, Qin's sworn enemy. For then, if asked to join in an attack on Qin in the west, Qi will agree before you finish your speech. In this way you will cede something to Qi but gain compensation from Qin, while both you and Qi can take your revenge and display your power to the world. If you make known your intention then Qin will send rich gifts and sue for peace before your armies set out. When you accept and Han and Wei hear of it, they will think highly of you and send rich gifts too. So at one stroke you will make friends with three states, while your position and Qin's will be reversed.” The king approved and sent Yu Qing eastwards to the king of Qi to discuss an alliance against Qin. Before Yu Qing's return, an envoy from Qin had reached Zhao. When Lou Huan knew this, he fled. The king enfeoffed Yu Qing with a city.
-
-Later Wei offered to ally with Zhao (to pursue the vertical alliance strategy) and the king summoned Yu Qing to consult him. Yu Qing first saw Lord Pingyuan, who said, “I hope you will speak in favour of the alliance.” Then he went in to the king. When told of the proposal Yu Qing said, "Wei is making a mistake." "That is why I have not agreed," rejoined the king. “Then Your Majesty is making a mistake.” "You say Wei is mistaken in seeking an alliance, and I am mistaken in refusing. Are we then not to consider an alliance at all?" Yu Qing replied, "I have heard that when a small state allies with a large one, it is the large state that benefits if all goes well, while if there is trouble the small state suffers. Now Wei as a small state is asking for trouble (by requesting the alliance to resist Qin), while you with your large state are missing a golden opportunity (by refusing the alliance). That is why I say that both Wei and Your Majesty are mistaken. I think the alliance would be to our advantage." The king approved and entered into an alliance with Wei.
-
-For the sake of Wei Qi (who was being persecuted), Yu Qing gave up his fief of ten thousand families and the seal of a chief minister. He fled secretly with Wei Qi from Zhao and found himself in difficulties at Daliang. After Wei Qi's death, Yu Qing became even more frustrated, so he started to write a book. Drawing on the *Spring and Autumn Annals* for ancient materials and observing recent historical events, he composed eight chapters in total, including *On Righteousness*, *On Titles*, *On Speculation*, and *On Policy*. This book, which passes judgement on the political gains and losses of various states, has been handed down to later generations as the *Yu Clan's Spring and Autumn Annals*.
-
-The Grand Historian (Sima Qian) comments: Lord Pingyuan was a refined and virtuous nobleman in troubled times, but he failed to grasp the overall situation. As the proverb says, “Profit blinds the wise.” Tempted by Feng Ting's pernicious advice (urging Zhao to accept the Shangdang region, triggering conflict with Qin), Lord Pingyuan caused Zhao to lose more than four hundred thousand soldiers in the Battle of Changping, and Handan nearly fell. Yu Qing analyzed situations, discerned intentions, and devised strategies for Zhao with remarkable subtlety! Yet because he could not bear to abandon Wei Qi, he ended up trapped in Daliang. Even an ordinary man should have known this was unwise, let alone a man of his talent! However, if Yu Qing had not endured hardship and despair, he would not have written books to make his name known to later generations.</div>
-        </section>
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君赵胜者，赵之诸公子也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君赵胜，是赵武灵王的儿子。</td>
+                <td class="english-cell col-english" data-lang="english">Zhao Sheng, Lord Pingyuan, was a member of the royal house of Zhao.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">诸子中胜最贤，喜宾客，宾客盖至者数千人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">在武灵王的儿子中，赵胜最能干，他喜欢结交宾客，到过他门下的宾客先后可以达到几千人。</td>
+                <td class="english-cell col-english" data-lang="english">the ablest of all the young lords. He was a great patron whose protégés numbered thousands.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君相赵惠文王及孝成王，三去相，三复位，封于东武城。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君相继做过赵惠文王和赵孝成王的宰相，曾经三次被免官，又三次被重新起用，他的封地在东武城。</td>
+                <td class="english-cell col-english" data-lang="english">Prime minister under King Huiwen and King Xiaocheng, he resigned three times and three times was reappointed. His fief was Dongwucheng.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君家楼临民家。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君家的高楼下临一家普通百姓的房子。</td>
+                <td class="english-cell col-english" data-lang="english">Lord Pingyuan's storeyed mansion stood next to a commoner’s house.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">民家有蹙者，槃散行汲。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这家有个瘸子，每天一拐一拐地到井边去打水。</td>
+                <td class="english-cell col-english" data-lang="english">from which a lame man once limped out to draw water.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君美人居楼上，临见，大笑之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">有一天，平原君的一个美人在楼上看到了这种情景，不由得大声笑了出来。</td>
+                <td class="english-cell col-english" data-lang="english">only to be heartily laughed at by one of the lord's concubines.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">明日，蹙者至平原君门，请曰：“臣闻君之喜士，士不远千里而至者，以君能贵士而贱妾也。臣不幸有罢癃之病，而君之后宫临而笑臣，臣愿得笑臣者头。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">第二天，这个瘸子就来到平原君家向平原君请求说：“我听说您是喜欢养士的，并且听说士人们所以不顾千里之远来投奔您，就是因为您能够重人才而不重女色。我不幸得了这种残疾，而您的美人竟然公开地耻笑我，我希望得到那个笑话我的女人的人头。”</td>
+                <td class="english-cell col-english" data-lang="english">Next day the lame man came to the lord's gate and said, "I hear you are such a great patron that worthy men come to you from a thousand li away, because you value them more than your concubines. It is my misfortune to be lame, but one of your concubines has laughed at me. I want that lady's head.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君笑应曰：“诺。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君笑着答应说：“好吧！”</td>
+                <td class="english-cell col-english" data-lang="english">Lord Pingyuan consented with a smile.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">蹙者去，平原君笑曰：“观此竖子，乃欲以一笑之故杀吾美人，不亦甚乎！”终不杀。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">瘸子走后，平原君对左右的人说：“看这小子，居然就因为笑了他一声，他就来让我杀我的美人，这不也太过分了吗？”说罢也就搁下完事了。</td>
+                <td class="english-cell col-english" data-lang="english">Once the lame man had gone, however, he said with a laugh, "What a fool, wanting me to kill my beauty because of one laugh! Ridiculous!" And he did not kill her.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">居岁余，宾客门下舍人稍稍引去者过半。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">过了一年多，他发现门下的宾客和侍役的人们渐渐走掉了一半以上。</td>
+                <td class="english-cell col-english" data-lang="english">Within a year or so, more than half of his protégés and retainers had left one after the other.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君怪之，曰：“胜所以待诸君者未尝敢失礼，而去者何多也？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君很奇怪，他问人们：“我对待他们从不敢有一点失礼的地方，可是离开的人为什么越来越多呢？”</td>
+                <td class="english-cell col-english" data-lang="english">"I have never treated you gentlemen impolitely. Why are you all leaving like this?" he asked in surprise.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">门下一人前对曰：“以君之不杀笑蹙者，以君为爱色而贱士，士即去耳。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时有一个门下的客人过来说：“就因为您没有杀那个嘲笑瘸子的美人，大家都认为您是重女色而不重人才，所以大家都走了。”</td>
+                <td class="english-cell col-english" data-lang="english">One of them stepped forward to answer, "By not killing the lady who laughed at the lame man you showed that you love feminine beauty but despise worthy men. That is why so many are leaving.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">于是平原君乃斩笑蹙者美人头，自造门进蹙者，因谢焉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君一听，赶紧杀了那个笑话瘸子的女人，提着她的人头亲自到那个瘸子家去登门道歉。</td>
+                <td class="english-cell col-english" data-lang="english">Then the lord cut off the head of the offending concubine and himself presented it with apologies to the lame man.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其后门下乃复稍稍来。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这以后，那些走了的人们才又慢慢地回来了。</td>
+                <td class="english-cell col-english" data-lang="english">After that his protégés gradually returned.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">是时齐有孟尝，魏有信陵，楚有春申，故争相倾以待士。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这个时候，齐国有孟尝君，魏国有信陵君，楚国有春申君，他们都以招纳宾客而互相竞争。</td>
+                <td class="english-cell col-english" data-lang="english">At this time, Lord Mengchang in Qi, Lord Xinling in Wei (403B.C.-225B.C.) and Lord Chunshen in Chu were trying to outdo each other in their treatment of worthy men.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦之围邯郸，赵使平原君求救，合从于楚，约与食客门下有勇力文武备具者二十人偕。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">当秦国军队包围了赵国首都邯郸的时候，赵王派平原君去楚国求救，与楚国建立共同抗秦的联盟。平原君想从自己的门客中挑选二十个文武兼备的人作为随员。</td>
+                <td class="english-cell col-english" data-lang="english">When the army of Qin besieged Handan, Zhao ordered Lord Pingyuan to seek aid by entering into an alliance with Chu. He decided to take with him twenty strong, fearless protégés skilled in the arts of peace as well as of war.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君曰：“使文能取胜，则善矣。文不能取胜，则歃血于华屋之下，必得定从而还。士不外索，取于食客门下足矣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他说：“如果能用和平的方式完成任务，当然是最好不过了；万一不能用和平的方式解决问题，那也一定要用武力强迫楚王在朝廷上与我们签订盟约，总之是一定要完成任务才能回来。这些随员用不着到别处去找，我门下的宾客就足够用了。”</td>
+                <td class="english-cell col-english" data-lang="english">"If we can succeed by peaceful means, well and good," he said. “If not, let us take an oath on blood in the hall to bring back an agreement. I shall not seek men elsewhere, only in my own household."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">得十九人，余无可取者，无以满二十人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">结果只挑到了十九个，其余的都不行，没有办法凑满二十个。</td>
+                <td class="english-cell col-english" data-lang="english">He selected nineteen men, but could not decide on the twentieth.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">门下有毛遂者，前，自赞于平原君曰：“遂闻君将合从于楚，约与食客门下二十人偕，不外索。今少一人，愿君即以遂备员而行矣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时，有个叫毛遂的自己走出来对平原君说：“我听说您要去和楚国订立盟约，想从您的门下宾客中挑选二十个随员，不再向外面去找，而现在还缺一个。那我希望您就把我添在里头，人数一够，咱就马上出发了。”</td>
+                <td class="english-cell col-english" data-lang="english">Then one of his retainers, Mao Sui, came forward and recommended himself, saying, "I hear you want to join Chu in an alliance against Qin, my lord, and that you mean to choose twenty men from your own household but are still one short. Will you take me to make up the number?”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君曰：“先生处胜之门下几年于此矣？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君说：“您在我这里住了几年了？”</td>
+                <td class="english-cell col-english" data-lang="english">"How many years have you been here?" asked Lord Pingyuan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">毛遂曰：“三年于此矣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">毛遂说：“三年了。”</td>
+                <td class="english-cell col-english" data-lang="english">Mao Sui answered, "Three."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君曰：“夫贤士之处世也，譬若锥之处囊中，其末立见。今先生处胜之门下三年于此矣，左右未有所称诵，胜未有所闻，是先生无所有也。先生不能，先生留。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君说：“大凡一个有本事的人活在世界上，那就好像一把锥子装在口袋里，锥子尖总是立刻就会露出来。您在我这里都已经三年了，大家居然都没有对您说过一句赞美的话，我也没有听到过您有什么才干的传闻，那就说明您的确没有什么本领。您不能去，您还是留在家里吧！”</td>
+                <td class="english-cell col-english" data-lang="english">“An able man in this world, like an awl kept in a bag, quickly shows himself. If you have been here for three years, praised by none and unknown to me, you can hardly have any talent. No, no, you had better stay here.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">毛遂曰：“臣乃今日请处囊中耳。使遂蚤得处囊中，乃颖脱而出，非特其末见而已。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">毛遂说：“我是今天才请求您把我这把‘锥子'装进口袋！如果您要是早把我装进了口袋，那我必然连整个锥子头都会露出来，岂只是露出一个锥子尖呢！”</td>
+                <td class="english-cell col-english" data-lang="english">"I am asking now to be put in the bag," said Mao Sui. “Had I been put there earlier, the awl would have thrust right through instead of simply showing its tip outside."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君竟与毛遂偕。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君无法，只好同意，带着他一起出发了。</td>
+                <td class="english-cell col-english" data-lang="english">So finally the lord agreed to take him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">十九人相与目笑之而未废也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">其余的十九个人都看不起他，互相看着笑，只是没有笑出声罢了。</td>
+                <td class="english-cell col-english" data-lang="english">The other nineteen exchanged amused glances in silence.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">毛遂比至楚，与十九人论议，十九人皆服。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">等到毛遂等到达了楚国，经过一路上毛遂与十九个人的不断谈论，他们对毛遂已经心服了。</td>
+                <td class="english-cell col-english" data-lang="english">By the time they reached Chu, Mao Sui had convinced the other nineteen of his ability in argument.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君与楚合从，言其利害，日出而言之，日中不决。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君与楚王谈判结盟的事情，平原君反复向楚王申说楚、赵联盟的好处，从太阳刚出就说，一直说到正午楚王仍未接受。</td>
+                <td class="english-cell col-english" data-lang="english">At sunrise Lord Pingyuan and the king of Chu began to discuss the advantages and disadvantages of an alliance, but no agreement had been reached by noon.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">十九人谓毛遂曰：“先生上。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时那十九个人就对毛遂说：“你去！”</td>
+                <td class="english-cell col-english" data-lang="english">Then the nineteen others urged Mao Sui, “Go up, sir!”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">毛遂按剑历阶而上，谓平原君曰：“从之利害，两言而决耳。今日出而言从，日中不决，何也？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是毛遂就手按剑柄一步一级地迅速走上了大殿，向平原君说：“合纵抗秦的必要性是两句话就可以说清的，今天从早上说起，到现在已经中午了，还定不了，这是为什么呢？”</td>
+                <td class="english-cell col-english" data-lang="english">Mao Sui, his hand on his sword, mounted the steps and said to Lord Pingyuan, "Whether this alliance is advantageous or not can be settled in two words. How is it that negotiations started at sunrise yet no agreement has been reached by noon?”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">楚王谓平原君曰：“客何为者也？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">楚王转脸问平原君：“这个人是干什么的？”</td>
+                <td class="english-cell col-english" data-lang="english">The king of Chu demanded, “Who is this man?”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君曰：“是胜之舍人也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君说：“他是我的一个门客。”</td>
+                <td class="english-cell col-english" data-lang="english">Lord Pingyuan answered, “One of my retainers.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">楚王叱曰：“胡不下！吾乃与而君言，汝何为者也！”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">楚王呵斥道：“你给我滚下去！我是在和你的主人讲话，你来干什么！”</td>
+                <td class="english-cell col-english" data-lang="english">"What impudence!" shouted the king of Chu. “I am discussing matters with your master. What business have you here?”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">毛遂按剑而前曰：“王之所以叱遂者，以楚国之众也。今十步之内，王不得恃楚国之众也，王之命悬于遂手。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">毛遂手按剑柄跨前一步说：“大王所以敢于这么呵叱我，是仗恃着楚国人多。可是现在您在这十步之内，是倚靠不上楚国的人多的。您的命就攥在我的手里。”</td>
+                <td class="english-cell col-english" data-lang="english">His hand on his sword, Mao Sui advanced and said, "Your Majesty dares to shout at me because Chu has powerful forces; but within these ten paces they are no help to you. Your life is in my hands."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吾君在前，叱者何也？</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">我的主人就在跟前，您怎么能这么不顾礼节的呵叱我呢？</td>
+                <td class="english-cell col-english" data-lang="english">How dare you shout at me in my master's presence?</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">且遂闻汤以七十里之地王天下，文王以百里之壤而臣诸侯，岂其士卒众多哉，诚能据其势而奋其威。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">再说，当初商汤凭着七十里的地盘，就灭了夏桀统一了天下；周文王当初凭着百数里的地盘，就灭掉了殷纣使普天下的诸侯们臣服，他们是靠的人多吗？他们都是由于能够很好地把握住了当时的形势，而趁机发挥了他们的威力。</td>
+                <td class="english-cell col-english" data-lang="english">I have heard that King Tang ruled the world although he only started with seventy li of land, and King Wen with his kingdom of a hundred li ruled over all other states. These kings had no great armies, yet they could control events and exercise their might.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">今楚地方五千里，持戟百万，此霸王之资也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">现在楚国有五千里见方的地盘，有上百万的军队，这本来是可以成为霸主的资本。</td>
+                <td class="english-cell col-english" data-lang="english">Now with Chu's five thousand li of territory and million halberdiers, you have the resources to become a great conqueror.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">以楚之强，天下弗能当。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">像楚国目前这种强大的形势，按理说它应该是天下无敌的。</td>
+                <td class="english-cell col-english" data-lang="english">The whole world should be powerless to withstand you.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">白起，小竖子耳，率数万之众，兴师以与楚战，一战而举鄢郢，再战而烧夷陵，三战而辱王之先人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">可是谁知道就凭白起这么个小子，领着几万人来和楚国作战，居然一下子就攻克了鄢陵、郢都，再战又烧毁了夷陵，三战连楚国的先王都受到了侮辱。</td>
+                <td class="english-cell col-english" data-lang="english">Yet that young cur Bai Qi with a few tens of thousands of men in one battle took the cities Yan and Ying, in another burned the royal tombs at Yiling, and in a third brought shame upon your ancestors.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">此百世之怨而赵之所羞，而王弗知恶焉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这是一百辈子也报不完的仇，连我们赵国都为你们感到羞耻，可是您自己却居然不知道痛恨。</td>
+                <td class="english-cell col-english" data-lang="english">We blush for you over this undying disgrace, yet you are not ashamed.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">合从者为楚，非为赵也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">联盟抗秦，更主要的是为了你们楚国，而不是为了我们赵国。</td>
+                <td class="english-cell col-english" data-lang="english">We are proposing this alliance for your sake, not for our own.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吾君在前，叱者何也？</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">我的主人就在跟前，您呵叱我作什么？</td>
+                <td class="english-cell col-english" data-lang="english">How dare you shout at me in my master's presence?</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">楚王曰：“唯唯，诚若先生之言，谨奉社稷以从。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">楚王赶紧说：“好，好，确实就像你说的那样，我愿意带着我们整个国家和你们建立联盟。”</td>
+                <td class="english-cell col-english" data-lang="english">"Yes, yes," said the king of Chu. "Just as you say. My state shall ally with yours.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">毛遂曰：“从定乎？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">毛遂说：“您决定了吗？”</td>
+                <td class="english-cell col-english" data-lang="english">"Is that settled, then?" asked Mao Sui.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">楚王曰：“定矣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">楚王说：“决定了。”</td>
+                <td class="english-cell col-english" data-lang="english">The king said, "It is."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">毛遂谓楚王之左右曰：“取鸡狗马之血来。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">毛遂立即招呼楚王身边的人说：“赶紧拿鸡、狗、马的血来。”</td>
+                <td class="english-cell col-english" data-lang="english">Then Mao Sui ordered the king's followers to fetch the blood of a cock, dog and horse.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">毛遂奉铜槃而跪进之楚王曰：“王当歃血而定从，次者吾君，次者遂。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">毛遂双手捧着盛着鸡、狗、马血的铜盘子先是跪送到了楚王面前，说：“请大王第一个歃血，其次是我的主人，再次是我。”</td>
+                <td class="english-cell col-english" data-lang="english">On his knees he presented the bronze dish of blood to the king of Chu, saying, "You must make a blood pact, sir. Then my master will pledge himself, then I."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">遂定从于殿上。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是定盟的仪式就这样在大殿上进行完了。</td>
+                <td class="english-cell col-english" data-lang="english">So the alliance was concluded in the court.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">毛遂左手持槃血而右手招十九人曰：“公相与歃此血于堂下。公等录录，所谓因人成事者也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">而后毛遂左手端着铜盘子，右手招呼下面的那十九个人说：“你们也都在下面歃血，算是参加订盟。你们这些人平庸透顶，也就是些专门靠着别人吃现成饭的家伙！”</td>
+                <td class="english-cell col-english" data-lang="english">Then holding the dish of blood in his left hand, Mao Sui beckoned to the other nineteen with his right. "You shall swear with blood too," he said. “You yes-men can only reap what others have sown.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君已定从而归，归至于赵，曰：“胜不敢复相士。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君完成了与楚国订盟的任务回到赵国后，他对人们说：“我再也不敢说我能够识别人了。”</td>
+                <td class="english-cell col-english" data-lang="english">Having made the alliance and returned to Zhao, Lord Pingyuan said, “I shall never set myself up as a judge of men again.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">胜相士多者千人，寡者百数，自以为不失天下之士，今乃于毛先生而失之也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">我识别过的人多者上千，少说也得有几百，我总以为我不会漏掉有本事的人了，谁料想这回却漏掉了毛先生。</td>
+                <td class="english-cell col-english" data-lang="english">I have judged perhaps a thousand men, or several hundreds at least, and thought I could not miss any man of talent; but I was mistaken in my judgement of Mao Sui.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">毛先生一至楚，而使赵重于九鼎大吕。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">毛先生一到楚国，使我们赵国的地位比九鼎、大吕都还要尊贵。</td>
+                <td class="english-cell col-english" data-lang="english">His going to Chu has made our prestige higher than that of the nine tripods of Xia or the great bell of Zhou.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">毛先生以三寸之舌，强于百万之师。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">毛先生的舌头比百万军队还要厉害。</td>
+                <td class="english-cell col-english" data-lang="english">His three inches of tongue have proved mightier than an army a million strong!</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">胜不敢复相士。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">我再也不敢说我能识别人了。</td>
+                <td class="english-cell col-english" data-lang="english">I shall never set myself up as a judge of men again.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">遂以为上客。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">从此毛遂就成了平原君门下的上客。</td>
+                <td class="english-cell col-english" data-lang="english">Thereafter he treated Mao Sui as his most honoured guest.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君既返赵，楚使春申君将兵赴救赵，魏信陵君亦矫夺晋鄙军往救赵，皆未至。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君回到赵国后，楚国就派了春申君带领军队来援救赵国，魏国的信陵君也假传王命夺取了晋鄙所统率的军队赶来救助赵国，但是他们都还在路上，还没有到达。</td>
+                <td class="english-cell col-english" data-lang="english">After Lord Pingyuan's return to Zhao the king of Chu sent Lord Chunshen with an army to Zhao's rescue, while Lord Xinling of Wei took over General Jin Bi's army by trickery to aid Zhao. Before the arrival of these forces.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦急围邯郸，邯郸急，且降，平原君甚患之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时秦国的军队对邯郸加紧攻击，邯郸像是很快就要失守了，平原君很着急。</td>
+                <td class="english-cell col-english" data-lang="english">however, the troops of Qin were pressing Handan so hard that the city was on the verge of surrender, and Lord Pingyuan was desperately worried.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">邯郸传舍吏子李同说平原君曰：“君不忧赵亡邪？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时邯郸招待所管理员的儿子李同对平原君说：“您不担心赵国灭亡吗？”</td>
+                <td class="english-cell col-english" data-lang="english">Li Tong, the son of a steward in a hostel, asked, "Don't you care if the state of Zhao is overthrown?"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君曰：“赵亡则胜为虏，何为不忧乎？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君说：“赵国灭亡我就会成为俘虏，我怎么不担心呢？”</td>
+                <td class="english-cell col-english" data-lang="english">"If Zhao falls I shall be captured," replied Lord Pingyuan. "Of course I care."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">李同曰：“邯郸之民，炊骨易子而食，可谓急矣，而君之后宫以百数，婢妾被绮縠，余粱肉，而民褐衣不完，糟糠不厌。民困兵尽，或剡木为矛矢，而君器物钟磬自若。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">李同说：“现在邯郸的老百姓已经艰难到了拿人骨头当柴烧，互相交换着小孩吃的地步，已经是山穷水尽了！可是您的家里光是姬妾就有上百人，您家里的丫头仆人都穿着绫罗绸缎，都有吃不完的好菜好饭，而百姓们却连件完整的粗布短衣都没有，连糟糠都吃不上。现在士兵们连武器都没有，只好拿着刀削的棍子棒子作战，可是您家中各种宝物各种乐器却仍和从前一样件件不缺。</td>
+                <td class="english-cell col-english" data-lang="english">"The citizens of Handan are in such straits they are using bones for fuel and exchanging their sons to eat," rejoined Li Tong. "Yet in your inner palace are hundreds of slave girls and concubines who wear silk and embroidery and have grain and meat and to spare, while the people lack sackcloth to cover their nakedness and would welcome husks to eat. Exhausted, with no weapons left, they are sharpening sticks to serve as spears and arrows; yet your bronze vessels, bells and chimes remain intact.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">使秦破赵，君安得有此？使赵得全，君何患无有？今君诚能令夫人以下编于士卒之间，分功而作，家之所有尽散以飨士，士方其危苦之时，易德耳。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">如果让秦国灭了赵国，到那时您还能够占有这些东西吗？反之，如果赵国得到了保全，以后您还用担心有什么东西得不到吗？现在您要是能把您夫人以下的全家人都编入军队，让他们与别人一样地分担各种劳务，把您家里的全部财产都拿出来犒赏军队，处在危难关头的人们，是最容易取得他们的感戴的。”</td>
+                <td class="english-cell col-english" data-lang="english">All these will be lost if Qin conquers Zhao. But if Zhao is saved, you will have no lack of such things. You should make your ladies take part in the work of the troops and distribute all you have to supply our men. In their desperate state, it is easy to win their gratitude.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">于是平原君从之，得敢死之士三千人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君立刻就按李同的意见办了。在平原君这种行为的感召下，很快地组成了一支三千人的敢死队。</td>
+                <td class="english-cell col-english" data-lang="english">Lord Pingyuan took his advice and assembled three thousand men ready to risk their lives.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">李同遂与三千人赴秦军，秦军为之却三十里。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">李同就带着这三千人猛烈地攻击秦军，秦军被他们的精神所震慑，被迫后退了三十里。</td>
+                <td class="english-cell col-english" data-lang="english">With Li Tong they charged the soldiers of Qin and made them fall back thirty li.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">亦会楚、魏救至，秦兵遂罢，邯郸复存。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">正好这时楚国和魏国的救兵也到了，秦军只好撤兵而去，邯郸得到了保全。</td>
+                <td class="english-cell col-english" data-lang="english">Just at that juncture Chu and Wei came to their assistance. Then the men of Qin raised the siege and Handan was saved.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">李同战死，封其父为李侯。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">李同在战斗中牺牲了，他的父亲被赵国封为李侯。</td>
+                <td class="english-cell col-english" data-lang="english">Li Tong fell in battle, but his father was enfeoffed as marquis of Li.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">虞卿欲以信陵君之存邯郸为平原君请封。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">虞卿想因为信陵君救赵这件事情替平原君向赵王请求封赏。</td>
+                <td class="english-cell col-english" data-lang="english">Because Lord Xinling had saved Handan, Yu Qing decided to ask for a larger fief for Lord Pingyuan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">公孙龙闻之，夜驾见平原君曰：“龙闻虞卿欲以信陵君之存邯郸为君请封，有之乎？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">公孙龙听说后，连夜乘车来见平原君说：“我听说虞卿想因为信陵君救了邯郸这件事为您请封，有这件事吗？”</td>
+                <td class="english-cell col-english" data-lang="english">When Gongsun Long heard this he drove by night to see Lord Pingyuan and said, "I hear that Yu Qing means to ask for a larger fief for you because Lord Xinling saved Handan. Is this true?"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君曰：“然。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君说：“有。”</td>
+                <td class="english-cell col-english" data-lang="english">Told that it was.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">龙曰：“此甚不可。且王举君而相赵者，非以君之智能为赵国无有也。割东武城而封君者，非以君为有功也，而以国人无勋，乃以君为亲戚故也。君受相印不辞无能，割地不言无功者，亦自以为亲戚故也。今信陵君存邯郸而请封，是亲戚受城而国人计功也。此甚不可。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">公孙龙说：“这绝对不行。当初赵王让您做宰相，并不是因为您的智慧才能在赵国独一无二；当初把东武城封给您当领地，也不是因为您有什么别人所没有的功劳，归根到底，就因为您是赵王的亲戚。而当您接受相印的时候并没有推说自己无能，当您接受封地的时候也没有推说自己无功，从您来说也是认为自己是赵王的亲戚。现在您如果因为信陵君解救了邯郸而请求封赏，那您就是既要凭着亲戚的身份受职受地，又要以普通人的身份去和国家计算功劳，这是绝对不行的。</td>
+                <td class="english-cell col-english" data-lang="english">he said, "That would be very wrong. It was not because you are the wisest man in Zhao that the king made you his chief minister, nor was it because you had achieved much and all others nothing that he gave you Dongwucheng as your fief. He did so because you are his kinsman. And you accepted the chief minister's seal and fief without declining on the grounds of unworthiness, also because you are his kinsman. Now if you accept a fief because Lord Xinling saved the capital, this would mean that you had accepted cities in the past as a member of the royal family and were now asking for a reward like a common citizen. That would be most improper.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">且虞卿操其两权，事成，操右券以责；事不成，以虚名德君。君必勿听也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">现在虞卿让您这么做，他是想左右逢源。如果您果真受到了封赏，他就会以此居功，向您索取报酬；如果您没有受到封赏，他也可以捞到一个为您着想的虚名，让您念他的好处。您千万别听他那一套！”</td>
+                <td class="english-cell col-english" data-lang="english">Yu Qing stands to gain either way. If he succeeds you will be indebted to him; if he fails you will have to be grateful to him for trying. You must not listen to him, sir!"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君遂不听虞卿。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是平原君拒绝了虞卿的建议。</td>
+                <td class="english-cell col-english" data-lang="english">So Lord Pingyuan declined Yu Qing's offer.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君以赵孝成王十五年卒。子孙代，后竟与赵俱亡。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君死于赵孝成王十五年。他的后代相继为平原君，一直到最后赵国灭亡时平原君的封地才跟着一同被取消。</td>
+                <td class="english-cell col-english" data-lang="english">Lord Pingyuan died in the fifteenth year of Xiaocheng. His descendants held the title after him until the fall of Zhao.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平原君厚待公孙龙。公孙龙善为坚白之辩，及邹衍过赵言至道，乃绌公孙龙。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">平原君很优待公孙龙，公孙龙是一个以分辨“坚”、“白”闻名的学者，后来邹衍经过赵国时，面对着公孙龙发了一通有关“大道”的高论，从此，公孙龙才被冷淡了。</td>
+                <td class="english-cell col-english" data-lang="english">Lord Pingyuan gave very generous treatment to Gongsun Long, a skilled logician, until he was ousted from favour by Zou Yan, who came to Zhao to expound the origin of things.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">虞卿者，游说之士也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">虞卿是一个善于言辞的辩士。</td>
+                <td class="english-cell col-english" data-lang="english">Yu Qing was an itinerant politician.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">蹑屏檐签说赵孝成王。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他穿着草鞋打着雨伞去见赵孝成王。</td>
+                <td class="english-cell col-english" data-lang="english">Shod in straw sandals and carrying an umbrella, he spoke with King Xiaocheng of Zhao.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">一见，赐黄金百镒，白璧一双；</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">头一次见面，赵王就赐给了他黄金百镒，白璧一对；</td>
+                <td class="english-cell col-english" data-lang="english">After one interview he was given a hundred yi of gold and a pair of white jade discs.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">再见，为赵上卿，故号为虞卿。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">第二次见面，赵王竟封他作了赵国的上卿，所以人们都叫他虞卿。</td>
+                <td class="english-cell col-english" data-lang="english">while after a second interview he was made chief minister. Thus he was known as Yu Qing or Minister Yu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦赵战于长平，赵不胜，亡一都尉。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦国和赵国在长平打了一场仗，赵国失败了，死了一名都尉。</td>
+                <td class="english-cell col-english" data-lang="english">In the battle against Qin at Changping, the men of Zhao were worsted and lost their commander.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赵王召楼昌与虞卿曰：“军战不胜，尉复死，寡人使束甲而趋之，何如？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵王把楼昌和虞卿叫来说：“军队打仗失败，都尉又战死，我打算让士兵们整顿铠甲奔赴前线（再战），怎么样？”</td>
+                <td class="english-cell col-english" data-lang="english">The king consulted Lou Chang and Yu Qing, saying, "Our army has been defeated and our commander killed. What if I attack with all our men at arms?"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">楼昌曰：“无益也，不如发重使为媾。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">楼昌说：“没有用处，不如派一个重要的使者去求和。”</td>
+                <td class="english-cell col-english" data-lang="english">"That would be useless," said Lou Chang. "Better send some high-ranking envoy to treat for peace."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">虞卿曰：“昌言媾者，以为不媾军必破也。而制媾者在秦。且王之论秦也，欲破赵之军乎，不邪？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">虞卿说：“楼昌主张求和，是认为不求和军队就一定会被打败。但掌握求和主动权的是秦国。况且大王分析秦国，它是想打败赵国的军队，还是不想呢？”</td>
+                <td class="english-cell col-english" data-lang="english">But Yu Qing said, "Lou Chang proposes peace for fear our army will be beaten, but making peace depends on Qin. In your view, does Qin want to destroy our army or not?"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">王曰：“秦不遗余力矣，必且欲破赵军。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵王说：“秦国已经不遗余力了，肯定是想打败赵军。”</td>
+                <td class="english-cell col-english" data-lang="english">“Qin is going all out to destroy us,” replied the king.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">虞卿曰：“王听臣，发使出重宝以附楚、魏，楚、魏欲得王之重宝，必内吾使。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">虞卿说：“大王听我的建议，派使者带着贵重宝物去亲附楚国、魏国，楚国、魏国想得到大王的贵重宝物，一定会接纳我们的使者。</td>
+                <td class="english-cell col-english" data-lang="english">Yu Qing said, "If you take my advice, you will send envoys with rich gifts to Chu and Wei. Wanting our gifts, these states will admit our envoys.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赵使入楚、魏，秦必疑天下之合从，且必恐。如此，则媾乃可为也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵国的使者进入楚国、魏国，秦国一定会怀疑天下诸侯合纵抗秦，并且一定会害怕。这样一来，求和才能成功。”</td>
+                <td class="english-cell col-english" data-lang="english">Once our envoys enter Chu and Wei, Qin will take fright, suspecting that all the other states have allied against it. That is the only way to achieve peace."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赵王不听，与平阳君为媾，发郑朱入秦。秦内之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵王不听从（虞卿的建议），和平阳君决定求和，派郑朱进入秦国。秦国接纳了郑朱。</td>
+                <td class="english-cell col-english" data-lang="english">The king did not accept this advice, however, but told Lord Pingyuan to negotiate and sent Zheng Zhu to Qin. When Qin accepted his envoy.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赵王召虞卿曰：“寡人使平阳君为媾于秦，秦已内郑朱矣，卿以为奚如？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵王召见虞卿说：“我让平阳君去和秦国求和，秦国已经接纳郑朱了，您认为怎么样？”</td>
+                <td class="english-cell col-english" data-lang="english">the king of Zhao summoned Yu Qing and said, “I have asked Lord Pingyuan to negotiate for us, and Qin has accepted our envoy Zheng Zhu. What do you say to that?"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">虞卿对曰：“王不得媾，军必破矣。天下贺战胜者皆在秦矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">虞卿回答说：“大王得不到求和，军队一定会被打败。天下祝贺战胜的人都会到秦国去。</td>
+                <td class="english-cell col-english" data-lang="english">Yu Qing answered, “You will fail to make peace, the army will be destroyed, and all the world will go to congratulate Qin on its victory.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">郑朱，贵人也，入秦，秦王与应侯必显重以示天下。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">郑朱是显贵之人，进入秦国，秦王和应侯一定会隆重地接待他，来向天下人显示。</td>
+                <td class="english-cell col-english" data-lang="english">Zheng Zhu is a nobleman, and the king of Qin and the marquis of Ying (Fan Sui) are bound to make a great show of respect for him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">楚、魏以赵为媾，必不救王。秦知天下不救王，则媾不可得成也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">楚国、魏国因为赵国求和，一定不会援救大王。秦国知道天下诸侯不援救大王，那么求和就不可能成功了。”</td>
+                <td class="english-cell col-english" data-lang="english">When Chu and Wei see you are treating for peace with Qin they will not come to your rescue, and when Qin sees that it will not agree to make peace.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">应侯果显郑朱以示天下贺战胜者，终不肯媾。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">应侯果然隆重地接待郑朱，来向天下祝贺战胜的人显示，最终不肯求和。</td>
+                <td class="english-cell col-english" data-lang="english">Sure enough, the marquis of Ying paraded Zheng Zhu before all the envoys from different states who came to congratulate Qin on its victory, and Qin refused to make peace.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">长平大败，遂围邯郸，为天下笑。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵军在长平大败，接着邯郸被包围，被天下人耻笑。</td>
+                <td class="english-cell col-english" data-lang="english">Then the great defeat at Changping was followed by the siege of Handan, so that Zhao became the laughing-stock of the world.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦既解邯郸围，而赵王入朝，使赵郝约事于秦，割六县而媾。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">待至秦国解除了对邯郸的包围，赵王准备去秦国朝见秦王，派赵郝去和秦国谈判，说是愿意割给秦国六个县，从此两国讲和。</td>
+                <td class="english-cell col-english" data-lang="english">After Qin raised the siege of Handan, the king of Zhao held court and told Zhao Hao to sue for peace and offer Qin six counties.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">虞卿谓赵王曰：“秦之攻王也，倦而归乎？王以其力尚能进，爱王而弗攻乎？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时虞卿对赵王说：“秦国这次的退兵，是因为他们自己疲惫无力再战而回去的呢？还是有力量再战，只是出于爱您才回去的呢？”</td>
+                <td class="english-cell col-english" data-lang="english">Yu Qing asked, "Has Qin withdrawn because it is exhausted? Or do you think it is still strong enough to advance but has called off the attack for your sake?"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">王曰：“秦之攻我也，不遗余力矣，必以倦而归也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵王说：“秦国攻打我们，已经是用尽了全力，这是他们自己不能再战了才撤回去的。”</td>
+                <td class="english-cell col-english" data-lang="english">The king answered, "Qin went all out in its attack. This withdrawal must be owing to exhaustion."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">虞卿曰：“秦以其力攻其所不能取，倦而归，王又以其力之所不能取以送之，是助秦自攻也。来年秦复攻王，王无救矣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">虞卿说：“秦国用尽力气来夺他想要得到的东西，结果没有得到，疲劳不堪地回去了，而大王您现在却想把他们用了力气都得不到的东西送给他们，这是帮着秦国来打自己啊。这样下去，到明年秦国再来打您，您恐怕就没救啦。”</td>
+                <td class="english-cell col-english" data-lang="english">"So Qin attacked as hard as it could, yet was unable to take the city and has withdrawn, exhausted. If you give it what it was unable to take, you are helping Qin to attack us. Next year it will attack again, and you will be doomed."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">王以虞卿之言告赵郝。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵王把虞卿的话告诉了赵郝。</td>
+                <td class="english-cell col-english" data-lang="english">The king repeated this to Zhao Hao.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赵郝曰：“虞卿诚能尽秦力之所至乎？诚知秦力之所不能进，此弹丸之地弗予，令秦来年复攻王，王得无割其内而媾乎？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵郝说：“虞卿能准确地判断秦国的力量是已经用尽了吗？如果他能准确判断秦国已经没有力量再来打我们那当然好了，假如不能，我们今天心疼这块小小的地盘不给秦国，而秦国明年再来打我们，那时大王是不是不止割这六个县，而是还要割更靠后的地盘给秦国才能求和呢！”</td>
+                <td class="english-cell col-english" data-lang="english">who said, "Can Yu Qing really know the strength of Qin? Suppose, knowing that Qin can do no more, we keep back these small patches of land, if it attacks again next year you will have to give up your palace to obtain peace."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">王曰：“请听子割矣，子能必使来年秦之不复攻我乎？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵王说：“那就听你的话把土地割让给秦国吧，但这样做之后，你能保证明年秦国就不会再来打我们了吗？”</td>
+                <td class="english-cell col-english" data-lang="english">"If I take your advice and give Qin these counties, can you guarantee no further attack next year?"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赵郝对曰：“此非臣之所敢任也。他日三晋之交于秦，相善也。今秦善韩、魏而攻王，王之所以事秦必不如韩、魏也。今臣为足下解负亲之攻，开关通币，齐交韩、魏，至来年而王独取攻于秦，此王之所以事秦必在韩、魏之后也。此非臣之所敢任也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵郝说：“这不是我敢担保的。过去韩、赵、魏三国和秦国的关系，都是好的。现在秦国和韩、魏友好而专门来打大王，那说明您对秦国恭敬服从的程度赶不上韩、魏两国。我现在只能是为您解除由于您过去对秦国的背叛而招来的攻击，并为您打开两国的边关，互相通使，让赵国与秦国的关系能够和韩、魏与秦国的关系一样；如果到明年您又惹得秦国来攻了，那就说明您对秦国恭敬侍候的程度肯定是又比韩、魏两国差了。所以我对此负不了责任。”</td>
+                <td class="english-cell col-english" data-lang="english">"I can't promise that," said Zhao Hao. "In the past the three states of Jin were on good terms with Qin, whereas now Qin is friendly with Han and Wei but has attacked us. This shows that we have not served Qin as well as Han and Wei have done. Now I can enter the Pass, present gifts, and serve Qin as well as Han and Wei have done. If there is an attack on us alone next year, that will mean you are still not serving Qin as well as Han and Wei—I cannot be responsible for that."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">王以告虞卿。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵王又把赵郝的话告诉了虞卿。</td>
+                <td class="english-cell col-english" data-lang="english">The king repeated this to Yu Qing.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">虞卿对曰：“郝言‘不媾，来年秦复攻王，王得无割其内而媾乎’。今媾，郝又以不能必秦之不复攻也。今虽割六城，何益！来年复攻，又割其力之所不能取而媾，此自尽之术也，不如无媾。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">虞卿说：“赵郝说‘如果我们不求和，明年秦国就会再来攻大王，大王就得割更多的土地才能够求和’。可是现在求和了，赵郝又不敢保证明年秦国不再来打我们。那我们现在白白送掉这六个县，又有什么用！明年秦国再来攻，我们再割给它一些秦国用战争也得不到的东西来求和，这样下去是自取灭亡，还不如不求和。</td>
+                <td class="english-cell col-english" data-lang="english">who countered, "Zhao Hao says that if we do not make peace, next year when Qin attacks again we shall have to give up your palace to obtain peace; but if we make peace with Qin, he cannot guarantee no further attack. What is the use, then, of giving up six cities? If Qin attacks again next year and to make peace we give up more land which it cannot take, we shall be cutting our own throats! Better not make peace.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦虽善攻，不能取六县；赵虽不能守，终不失六城。秦倦而归，兵必罢。我以六城收天下以攻罢秦，是我失之于天下而取偿于秦也。吾国尚利，孰与坐而割地，自弱以强秦哉？</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦国即使善战，它也不能轻易地夺得我们的六个县；赵国虽然不善守，我们也不会轻易地丢掉六个城。秦军所以自己回去，那是因为他们太疲惫不堪了。如果我们豁出这六个城，用它们去收买拉拢东方的国家来一起去攻打疲惫的秦国，这些为收买东方各国所付出的代价就一定可以从秦国那里得到补偿。这对于我们说不定还有一定好处，我们怎么能够平白无故地甘心割地给人家，来削弱自己以扩大秦国的势力呢？</td>
+                <td class="english-cell col-english" data-lang="english">Although Qin launches strong attacks, it cannot take our six cities. Although we have given ground, we have not lost these six cities. Now Qin has withdrawn, exhausted, its troops tired out. If we use these cities to induce other states to attack Qin, exhausted as it is, we shall receive compensation for our cities from Qin. Our country is still strong. Why should we tamely surrender territory weakening ourselves and making Qin even more powerful?</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">今郝曰‘秦善韩、魏而攻赵者，必王之事秦不如韩、魏也’，是使王岁以六城事秦也，即坐而城尽。来年秦复求割地，王将与之乎？弗与，是弃前功而挑秦祸也；与之，则无地而给之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵郝说‘秦国之所以和韩国、魏国友好而只攻赵国，那是因为大王对秦国恭敬侍候的程度不如韩、魏’，他这是想叫大王每年都拿六个城去送给秦国，这样不用动弹很快就把国土割送完了。转过年来秦国再来要求割地，您还给不给它呢？不给，那就前功尽弃，秦国就又有了打我们的理由；想给，可是我们已经没有土地可割了。</td>
+                <td class="english-cell col-english" data-lang="english">"Zhao Hao says Qin is friendly with Han and Wei but has attacked Zhao, implying that Han and Wei will not help us, that we are standing alone, and that this shows we have not served Qin as well as Han and Wei. He wants you to give up six cities to Qin each year, which will soon amount to taking the surrender of all our cities lying down. Next year when Qin asks for cities, will you give them to it or not? If you refuse, all past efforts will have been wasted and you will be asking for trouble. If you agree, you will soon have no more to give.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">语曰‘强者善攻，弱者不能守’。今坐而听秦，秦兵不敝而多得地，是强秦而弱赵也。以益强之秦而割愈弱之赵，其计故不止矣。且王之地有尽而秦之求无已，以有尽之地而给无已之求，其势必无赵矣。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">俗话说‘强者善于进攻，弱者就无法防守’。如果我们坐在那里听任秦国摆布，秦国不费一点劲，就可以得到越来越多的土地，那就让秦国越来越强，而我们赵国也就越来越弱。让越来越强的秦国来宰割越来越弱的赵国，那它的心思就永远不会满足了。到头来您的土地是有限的，而秦国的欲望是无边的，以有限的土地去填它无限的贪求，这样下去，赵国肯定就完蛋了。”</td>
+                <td class="english-cell col-english" data-lang="english">"The proverb says, 'When the powerful launch strong attacks, the weak must give ground.' If you let Qin have its way, it will add to its territory without fighting, and that will strengthen Qin while weakening Zhao. Qin as it grows stronger will never cease seizing land from us as we grow weaker. There is a limit to your territory, but none to their ambition. If things go on like this, Zhao will disappear."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赵王计未定，楼缓从秦来，赵王与楼缓计之，曰：“予秦地如毋予，孰吉？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵王的主意还没有拿定，刚好楼缓从秦国来了。于是赵王就和楼缓商量说：“割地给秦国还是不割地给秦国，你看哪个好？”</td>
+                <td class="english-cell col-english" data-lang="english">Unable to make up his mind, the king consulted Lou Huan, just back from Qin. “Which is better, to give Qin land or not?”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">缓辞让曰：“此非臣之所能知也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">楼缓推辞说：“这不是我所应该回答的。”</td>
+                <td class="english-cell col-english" data-lang="english">"That is not for me to say," replied Huan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">王曰：“虽然，试言公之私。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵王说：“尽管如此，你还是谈一下你个人的意见。”</td>
+                <td class="english-cell col-english" data-lang="english">“Still, what is your private opinion?”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">楼缓对曰：“王亦闻夫公甫文伯母乎？公甫文伯仕于鲁，病死，女子为自杀于房中者二人。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">楼缓说：“大王听说过春秋时代公甫文伯母亲的事情吗？公甫文伯在鲁国做官，后来生病死了。他一死，他屋里的两个姬妾随即跟着他自杀了。”</td>
+                <td class="english-cell col-english" data-lang="english">"Does Your Majesty know the story of Gongfu Wenbo's mother? Gongfu served in the state of Lu, and when he fell ill and died two women killed themselves in their chambers.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其母闻之，弗哭也。其相室曰：‘焉有子死而弗哭者乎？’</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他的母亲一见如此，就再也没有哭她的儿子。她家的保姆说：‘哪里有儿子死了母亲不哭的呢？’</td>
+                <td class="english-cell col-english" data-lang="english">His mother, receiving word of this, did not mourn for him. Asked the reason by his nurse she said,</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其母曰：‘孔子，贤人也，逐于鲁，而是人不随也。今死而妇人为之自杀者二人，若是者必其于长者薄而于妇人厚也。’</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">公甫文伯的母亲说：‘孔子是个大贤人，当他被鲁国驱逐出境时，我的儿子没有跟着孔子去一道流亡。现在他死了，却有两个女子为他自杀，这说明他肯定是对贤人无情无义而在女人身上倒是肯下功夫的。’</td>
+                <td class="english-cell col-english" data-lang="english">'The sage Confucius was driven away from Lu, but he did not follow Confucius. Now two of his wives have killed themselves because of his death, which shows how little he thought of elders, how much of women.'</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">故从母言之，是为贤母；从妻言之，是必不免为妒妻。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这个话出于当母亲的嘴里，可以说是个良母；倘若出在当妻子的嘴里，恐怕就不免会被人们说是妒嫉了。</td>
+                <td class="english-cell col-english" data-lang="english">These words spoken by his mother prove that she was a good mother, whereas if spoken by his wife they would simply have shown jealousy.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">故其言一也，言者异则人心变矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">所以同样的一句话，随着说话的人地位不同，别人的看法也就不一样了。</td>
+                <td class="english-cell col-english" data-lang="english">Thus the same words may have a different meaning, depending upon the speaker.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">今臣新从秦来而言勿予，则非计也；言予之，恐王以臣为为秦也：故不敢对。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">如今我刚从秦国来，如果我要说不给它，那不是好办法；如果我说给它，我又怕大王会认为我是在替秦国说话，所以我开始不敢回答。</td>
+                <td class="english-cell col-english" data-lang="english">Now I have just come from Qin. If I urge you not to cede these cities, it would be bad advice. If I urge you to cede them, you may suspect me of speaking on behalf of Qin. So I dare say nothing.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">使臣得为大王计，不如予之。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">如果真要是为大王考虑，我看还是不如给它为好。”</td>
+                <td class="english-cell col-english" data-lang="english">If I were you, I would give up these cities.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">王曰：“诺。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵王说：“好。”</td>
+                <td class="english-cell col-english" data-lang="english">The king agreed with him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">虞卿闻之，入见王曰：“此饰说也，王慎勿予！”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">虞卿听说这件事，立刻去见赵王说：“楼缓说的这些都是骗人的，大王千万不要向秦国割地！”</td>
+                <td class="english-cell col-english" data-lang="english">When Yu Qing knew this he went to the king and said, "He is hiding his real motives. You must not agree!"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">楼缓闻之，往见王。王又以虞卿之言告楼缓。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">楼缓听说虞卿拦阻，就又去见赵王。赵王又把虞卿的话告诉了楼缓。</td>
+                <td class="english-cell col-english" data-lang="english">Lou Huan, learning of this, went back to see the king, who told him what Yu Qing had said.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">楼缓对曰：“不然。虞卿得其一，不得其二。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">楼缓说：“不对！虞卿只知其一，不知其二。</td>
+                <td class="english-cell col-english" data-lang="english">Lou Huan replied, “No, Yu Qing sees one side only, not the other.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">夫秦赵构难而天下皆说，何也？曰‘吾且因强而乘弱矣’。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">现在秦国和赵国发生冲突，其他各国都高兴，这是为什么呢？因为许多人都说‘这样一来，我们就可以趁机顺着强大的秦国来一道收拾软弱的赵国了’。</td>
+                <td class="english-cell col-english" data-lang="english">Now all other states are gloating over this trouble between Qin and Zhao. Why? They hope to side with the stronger to take advantage of the weaker.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">今赵兵困于秦，天下之贺战胜者则必尽在于秦矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">如今赵国的军队已经被秦国整治得够呛，各国诸侯早都派人到秦国去祝贺胜利了，</td>
+                <td class="english-cell col-english" data-lang="english">They have sent congratulations to Qin on defeating our army.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">故不如亟割地为和，以疑天下而慰秦之心。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">所以我们不如赶紧割地求和，这样可以让东方各国疑心赵国已经与秦国和好了，同时也可以让秦国得到安慰。</td>
+                <td class="english-cell col-english" data-lang="english">We had better give up some land at once to make peace, to sow doubts in the others and placate Qin.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">不然，天下将因强秦之怒，乘赵之敝，瓜分之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">不然的话，东方各国就会趁着秦国发怒，赵国疲惫的时机，瓜分赵国。</td>
+                <td class="english-cell col-english" data-lang="english">Otherwise they will take advantage of Qin's might and of our weakness to carve up our state as if it were a melon.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赵且亡，何秦之图乎？</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵国马上就要灭亡了，还能谈到什么算计秦国呢？</td>
+                <td class="english-cell col-english" data-lang="english">That would mean the end of Zhao and all these speculations about Qin.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">故曰虞卿得其一，不得其二。愿王以此决之，勿复计也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">所以说虞卿只知其一，不知其二。希望大王就这么决定，不要再考虑了。”</td>
+                <td class="english-cell col-english" data-lang="english">This is why I say Yu Qing sees one side only, not the other. I hope Your Majesty will make up your mind and not hesitate any longer.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">虞卿闻之，往见王曰：“危哉楼子之所以为秦者，是愈疑天下，而何慰秦之心哉？</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">虞卿听说后，又去见赵王说：“楼缓为秦国打算，他给您出的这个主意可真够毒啊！这么做就将更加引起东方各国对赵国的怀疑，又哪里能安慰秦国呢？</td>
+                <td class="english-cell col-english" data-lang="english">Word of this reached Yu Qing, who went back to the king and said, "What a dangerous proposal! Lou Huan is working for Qin. This would make the other states suspect you more without placating Qin.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">独不言其示天下弱乎？</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他让您这么做，难道就不怕在各国面前暴露赵国的虚弱吗？</td>
+                <td class="english-cell col-english" data-lang="english">Why didn't he say that this would show the world your weakness?</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">且臣言勿予者，非固勿予而已也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">再说，我说不要给秦土地，也并不是简单地不给秦国就完了。</td>
+                <td class="english-cell col-english" data-lang="english">Besides, when I advised you not to cede those cities, I had something else in mind.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">秦索六城于王，而王以六城赂齐。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">秦向大王要六个城邑，大王您就拿这六个城邑去贿赂齐国。</td>
+                <td class="english-cell col-english" data-lang="english">Qin has asked you for six cities. Well then, offer six to Qi, Qin's sworn enemy.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">齐，秦之深仇也，得王之六城，并力西击秦，齐之听王，不待辞之毕也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">齐国是秦国的死对头，他们既能够得到赵国的六个城邑，又能够和赵国协力共同抗秦，这是他们求之不得的。他们对您的请求，等不到您说完就会表示同意。</td>
+                <td class="english-cell col-english" data-lang="english">For then, if asked to join in an attack on Qin in the west, Qi will agree before you finish your speech.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">则是王失之于齐而取偿于秦也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这样您在齐国丢失的东西就可以在秦国捞回来。</td>
+                <td class="english-cell col-english" data-lang="english">In this way you will cede something to Qi but gain compensation from Qin,</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">而齐、赵之深仇可以报矣，而示天下有能为也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">齐国和赵国对秦国的深仇大恨也就可以报了，同时还可以在各国面前表明我们赵国是有作为的。</td>
+                <td class="english-cell col-english" data-lang="english">while both you and Qi can take your revenge and display your power to the world.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">王以此发声，兵未窥于境，臣见秦之重赂至赵而反媾于王也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">大王您只要把这个消息一放出去，那就不用等到我们出兵接近秦国的边境，我就可以看到秦国人带着重礼到我们赵国来向我们求和了。</td>
+                <td class="english-cell col-english" data-lang="english">If you make known your intention then Qin will send rich gifts and sue for peace before your armies set out.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">从秦为媾，韩、魏闻之，必尽重王；</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">到那时，我们再答应秦国的求和，那么韩国和魏国也就会看重您；</td>
+                <td class="english-cell col-english" data-lang="english">When you accept and Han and Wei hear of it, they will think highly of you</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">重王，必出重宝以先于王，则是王一举而结三国之亲，而与秦易道也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">他们看重大王，也就一定会带着重宝来争着向您讨好，这样您一下子就结交了三个国家，到那时您和秦国的关系地位就和现在完全倒过来了。”</td>
+                <td class="english-cell col-english" data-lang="english">and send rich gifts too. So at one stroke you will make friends with three states, while your position and Qin's will be reversed.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赵王曰：“善。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵王说：“好！”</td>
+                <td class="english-cell col-english" data-lang="english">The king approved</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">则使虞卿东见齐王，与之谋秦。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">于是立即派了虞卿去见齐王，和齐王商量共同抗秦的事。</td>
+                <td class="english-cell col-english" data-lang="english">and sent Yu Qing eastwards to the king of Qi to discuss an alliance against Qin.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">虞卿未返，秦使者已在赵矣。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">虞卿还没有回到赵国，秦国派来向赵国求和的使者就已经来到赵国了。</td>
+                <td class="english-cell col-english" data-lang="english">Before Yu Qing's return, an envoy from Qin had reached Zhao.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">楼缓闻之，亡去。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">楼缓听说后，赶紧悄悄逃走了。</td>
+                <td class="english-cell col-english" data-lang="english">When Lou Huan knew this, he fled.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">赵于是封虞卿以一城。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵王于是把一座城赏给了虞卿。</td>
+                <td class="english-cell col-english" data-lang="english">The king enfeoffed Yu Qing with a city.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">居顷之，而魏请为从。赵孝成王召虞卿谋。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">过了些日子，魏国请求与赵国联合（推行合纵策略）。赵孝成王召虞卿来商议。</td>
+                <td class="english-cell col-english" data-lang="english">Later Wei offered to ally with Zhao (to pursue the vertical alliance strategy) and the king summoned Yu Qing to consult him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">过平原君，平原君曰：“愿卿之论从也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">虞卿先去拜访平原君，平原君说：“希望您能在大王面前主张合纵。”</td>
+                <td class="english-cell col-english" data-lang="english">Yu Qing first saw Lord Pingyuan, who said, “I hope you will speak in favour of the alliance.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">虞卿入见王。王曰：“魏请为从。”对曰：“魏过。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">虞卿进宫拜见赵王，赵王说：“魏国请求和我们合纵。”虞卿回答：“魏国做错了。”</td>
+                <td class="english-cell col-english" data-lang="english">Then he went in to the king. When told of the proposal Yu Qing said, "Wei is making a mistake."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">王曰：“寡人固未之许。”对曰：“王过。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵王说：“我本来就没答应它。”虞卿又说：“大王也做错了。”</td>
+                <td class="english-cell col-english" data-lang="english">"That is why I have not agreed," rejoined the king. “Then Your Majesty is making a mistake.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">王曰：“魏请从，卿曰魏过，寡人未之许，又曰寡人过，然则从终不可乎？”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵王问：“魏国请求合纵，您说魏国错了；我没答应它，您又说我错了，难道合纵终究是不能推行的吗？”</td>
+                <td class="english-cell col-english" data-lang="english">"You say Wei is mistaken in seeking an alliance, and I am mistaken in refusing. Are we then not to consider an alliance at all?"</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">对曰：“臣闻小国之与大国从事也，有利则大国受其福，有败则小国受其祸。今魏以小国请其祸，而王以大国辞其福，臣故曰王过，魏亦过。窃以为从便。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">虞卿解释：“我听说小国与大国合作，若事情顺利，好处是大国享用；若事情失败，灾祸是小国承担。如今魏国作为小国，主动来承担潜在灾祸（请求合纵抗秦），而大王作为大国，却拒绝享用可能的好处（拒绝合纵），所以我说大王错了，魏国也错了。依我看，合纵对赵国是有利的。”</td>
+                <td class="english-cell col-english" data-lang="english">Yu Qing replied, "I have heard that when a small state allies with a large one, it is the large state that benefits if all goes well, while if there is trouble the small state suffers. Now Wei as a small state is asking for trouble (by requesting the alliance to resist Qin), while you with your large state are missing a golden opportunity (by refusing the alliance). That is why I say that both Wei and Your Majesty are mistaken. I think the alliance would be to our advantage."</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">王曰：“善。”乃合魏为从。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">赵王说：“好。”于是就和魏国缔结了合纵盟约。</td>
+                <td class="english-cell col-english" data-lang="english">The king approved and entered into an alliance with Wei.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">虞卿既以魏齐之故，不重万户侯卿相之印，与魏齐间行，卒去赵，困于梁。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来虞卿因为魏齐（受迫害）的缘故，不看重万户侯的爵位和卿相的官印，与魏齐悄悄同行，最终离开赵国，在大梁陷入困境。</td>
+                <td class="english-cell col-english" data-lang="english">For the sake of Wei Qi (who was being persecuted), Yu Qing gave up his fief of ten thousand families and the seal of a chief minister. He fled secretly with Wei Qi from Zhao and found himself in difficulties at Daliang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">魏齐已死，不得意，乃著书，上采《春秋》，下观近世，曰《节义》、《称号》、《揣摩》、《政谋》，凡八篇，以刺讥国家得失，世传之曰《虞氏春秋》。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">魏齐死后，虞卿越发不得志，于是开始著书。他向上取材于《春秋》，向下观察近代史实，撰写了《节义》《称号》《揣摩》《政谋》等共八篇文章，用以讥评各国政治的得失，这部书在后世流传，被称为《虞氏春秋》。</td>
+                <td class="english-cell col-english" data-lang="english">After Wei Qi's death, Yu Qing became even more frustrated, so he started to write a book. Drawing on the *Spring and Autumn Annals* for ancient materials and observing recent historical events, he composed eight chapters in total, including *On Righteousness*, *On Titles*, *On Speculation*, and *On Policy*. This book, which passes judgement on the political gains and losses of various states, has been handed down to later generations as the *Yu Clan's Spring and Autumn Annals*.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太史公曰：平原君，翩翩浊世之佳公子也，然未睹大体。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">太史公（司马迁）评论：平原君是乱世中风度翩翩的贤公子，但没能看清大局。</td>
+                <td class="english-cell col-english" data-lang="english">The Grand Historian (Sima Qian) comments: Lord Pingyuan was a refined and virtuous nobleman in troubled times, but he failed to grasp the overall situation.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">鄙语曰“利令智昏”，平原君贪冯亭邪说，使赵陷长平兵四十余万众，邯郸几亡。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">俗话说“利令智昏”（利益使人丧失理智），平原君贪图冯亭的邪说（劝赵国接受上党之地，引发秦赵冲突），使赵国在长平之战中损失四十多万士兵，邯郸几乎沦陷。</td>
+                <td class="english-cell col-english" data-lang="english">As the proverb says, “Profit blinds the wise.” Tempted by Feng Ting's pernicious advice (urging Zhao to accept the Shangdang region, triggering conflict with Qin), Lord Pingyuan caused Zhao to lose more than four hundred thousand soldiers in the Battle of Changping, and Handan nearly fell.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">虞卿料事揣情，为赵画策，何其工也！及不忍魏齐，卒困于大梁。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">虞卿分析形势、揣摩情理，为赵国谋划策略，是多么精妙啊！但他因为不忍心抛下魏齐，最终在大梁陷入困境。</td>
+                <td class="english-cell col-english" data-lang="english">Yu Qing analyzed situations, discerned intentions, and devised strategies for Zhao with remarkable subtlety! Yet because he could not bear to abandon Wei Qi, he ended up trapped in Daliang.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">庸夫且知其不可，况贤人乎？</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">就算是普通人也该知道这样做不可行，何况是贤能之人呢？</td>
+                <td class="english-cell col-english" data-lang="english">Even an ordinary man should have known this was unwise, let alone a man of his talent!</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">然虞卿非穷愁，亦不能著书以自见于后世云。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">不过，虞卿若不是经历穷愁潦倒，也不会著书立说，使自己的名声显扬于后世啊。</td>
+                <td class="english-cell col-english" data-lang="english">However, if Yu Qing had not endured hardship and despair, he would not have written books to make his name known to later generations.</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
       </main>
 
       <nav class="chapter-nav">
@@ -149,8 +1008,139 @@ The Grand Historian (Sima Qian) comments: Lord Pingyuan was a refined and virtuo
       </nav>
 
       <footer>
-        <small>并排三列显示</small>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
       </footer>
     </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>

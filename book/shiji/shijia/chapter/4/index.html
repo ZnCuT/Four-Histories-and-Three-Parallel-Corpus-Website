@@ -4,189 +4,250 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>史记 — 第4章</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/book-icon.png">
     <link rel="stylesheet" href="/static/style.css">
   </head>
   <body>
+    <!-- 导航栏（独立于主容器） -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="/">四史三平行语料库</a>
+        </div>
+        
+        <div class="nav-books">
+          
+        </div>
+        
+        <div class="nav-search">
+          <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="搜索篇目或句子..." class="search-input">
+            <select name="scope" class="search-scope">
+              <option value="all">全部</option>
+              <option value="title">篇目</option>
+              <option value="content">内容</option>
+            </select>
+            <button type="submit" class="search-btn">搜索</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
       <header>
         <h1>史记 — 第4章 世家 陈丞相世家第二十六</h1>
       </header>
 
-      <main class="parallel">
-        <section>
-          <h3>文言文</h3>
-          <div class="txt">陈丞相平者，阳武户牖乡人也。少时家贫，好读书，有田三十亩，独与兄伯居。伯常耕田，纵平使游学。平为人长大美色。人或谓陈平曰：“贫何食而肥若是?”其嫂嫉平之不视家生产,曰：“亦食糠聂耳。有叔如此，不如无有。”伯闻之，逐其妇而弃之。
-
-及平长，可娶妻，富人莫肯与者，贫者平亦耻之。久之，户牖富人有张负，张负女孙五嫁而夫辄死,人莫敢娶。平欲得之。邑中有丧，平贫，侍丧，以先往后罢为助。张负既见之丧所，独视伟平，平亦以故后去。负随平至其家，家乃负郭穷巷，以弊席为门，然门外多有长者车辙。张负归，谓其子仲曰:“吾欲以女孙予陈平。”张仲曰：“平贫不事事,一县中尽笑其所为，独奈何予女乎?”负曰：“人固有好美如陈平而长贫贱者乎?”卒与女。为平贫，乃假贷币以聘，予酒肉之资以内妇。负诫其孙曰：“毋以贫故，事人不谨。事兄伯如事父，事嫂如母。”平既娶张氏女，赍用益饶，游道日广。
-
-里中社,平为宰,分肉甚均。父老曰：“善，陈孺子之为宰!”平曰：“嗟乎，使平得宰天下，亦如是肉矣!”
-
-陈涉起而王陈,使周市略定魏地,立魏咎为魏王,与秦军相攻于临济。陈平固已前谢其兄伯，从少年往事魏王咎于临济。魏王以为太仆。说魏王不听，人或谗之，陈平亡去。
-
-久之，项羽略地至河上,陈平往归之，从入破秦，赐平爵卿。项羽之东王彭城也,汉王还定三秦而东,殷王反楚。项羽乃以平为信武君,将魏王咎客在楚者以往，击降殷王而还。项王使项悍拜平为都尉，赐金二十溢。居无何，汉王攻下殷。项王怒，将诛定殷者将吏。陈平惧诛，乃封其金与印，使使归项王，而平身间行杖剑亡。渡河,船人见其美丈夫独行，疑其亡将，要中当有金玉宝器,目之，欲杀平。平恐，乃解衣裸而佐刺船。船人知其无有，乃止。
-
-平遂至修武降汉，因魏无知求见汉王，汉王召入。是时万石君奋为汉王中涓，受平谒，入见平。平等七人俱进，赐食。王曰：“罢，就舍矣。”平曰：“臣为事来，所言不可以过今日。”于是汉王与语而说之，问曰：“子之居楚何官?”曰：“为都尉。”是日乃拜平为都尉，使为参乘，典护军。诸将尽谨,曰：“大王一日得楚之亡卒，未知其高下，而即与同载，反使监护长者!"汉王闻之，愈益幸平。遂与东伐项王，至彭城，为楚所败。引而还，收散兵至荥阳，以平为亚将，属于韩王信，军广武。
-
-绛侯、灌婴等咸谗陈平曰:“平虽美丈夫，如冠玉耳,其中未必有也。臣闻平居家时，盗其嫂;事魏不容，亡归楚；归楚不中，又亡归汉。今日大王尊官之,令护军。臣闻平受诸将金，金多者得善处，金少者得恶处。平，反覆乱臣也，愿王察之。”汉王疑之，召让魏无知。无知曰：“臣所言者，能也；陛下所问者，行也。今有尾生、孝己之行而无益处于胜负之数,陛下何暇用之乎?楚汉相距，臣进奇谋之士，顾其计诚足以利国家不耳。且盗嫂受金又何足疑乎?”汉王召让平曰：“先生事魏不中，遂事楚而去，今又从吾游，信者固多心乎四?”平曰：“臣事魏王，魏王不能用臣说，故去事项王。项王不能信人，其所任爱，非诸项即妻之昆弟,虽有奇士不能用，平乃去楚。闻汉王之能用人，故归大王。臣裸身来，不受金无以为资。诚臣计画有可采者，愿大王用之；使无可用者，金具在，请封输官，得请骸骨。”汉王乃谢，厚赐，拜为护军中尉，尽护诸将。诸将乃不敢复言。
-
-其后，楚急攻，绝汉甬道，围汉王于荥阳城。久之，汉王患之，请割荥阳以西以和。项王不听。汉王谓陈平曰：“天下纷纷，何时定乎?”陈平曰：“项王为人，恭敬爱人,士之廉节好礼者多归之。至于行功爵邑，重之,士亦以此不附。今大王慢而少礼，士廉节者不来；然大王能饶人以爵邑，士之顽钝嗜利无耻者亦多归汉。诚各去其两短，袭其两长，天下指麾则定矣。然大王恣侮人，不能得廉节之士，顾楚有可乱者。彼项王骨鲠之臣亚父、钟离眛、龙且、周殷之属,不过数人耳。大王诚能出捐数万斤金，行反间，间其君臣，以疑其心，项王为人意忌信谗,必内相诛。汉因举兵而攻之，破楚必矣。”汉王以为然，乃出黄金四万斤，与陈平，恣所为，不问其出入。
-
-陈平既多以金纵反间于楚军，宣言诸将钟离眛等为项王将，功多矣，然而终不得裂地而王，欲与汉为一，以灭项氏而分王其地。项羽果意不信钟离眛等。项王既疑之，使使至汉。汉王为太牢具,举进。见楚使，即详惊曰:“吾以为亚父使，乃项王使!”复持去，更以恶草具进楚使。楚使归，具以报项王。项王果大疑亚父。亚父欲急攻下荥阳城，项王不信，不肯听。亚父闻项王疑之，乃怒曰：“天下事大定矣，君王自为之!愿请骸骨归!”归未至彭城，疽发背而死。陈平乃夜出女子二千人荥阳城东门，楚因击之，陈平乃与汉王从城西门夜出，去。遂入关，收散兵复东。
-
-其明年，淮阴侯破齐，自立为齐王，使使言之汉王。汉王大怒而骂，陈平蹑汉王。汉王亦悟，乃厚遇齐使，使张子房卒立信为齐王。封平以户牖乡。用其奇计策，卒灭楚。常以护军中尉从定燕王臧荼。
-
-汉六年，人有上书告楚王韩信反。高帝问诸将，诸将曰：“亟发兵坑竖子耳。”高帝默然。问陈平，平固辞谢，曰：“诸将云何?”上具告之。陈平曰：“人之上书言信反，有知之者乎?”曰：“未有。”曰：“信知之乎?”曰：“不知。”陈平曰：“陛下精兵孰与楚?”上曰：“不能过。”平曰：“陛下将用兵有能过韩信者乎?”上曰：“莫及也。”平曰：“今兵不如楚精，而将不能及，而举兵攻之，是趣之战也,窃为陛下危之。”上曰：“为之奈何?”平曰：“古者天子巡狩,会诸侯。南方有云梦，陛下弟出伪游云梦，会诸侯于陈。陈，楚之西界，信闻天子以好出游，其势必无事而郊迎谒。谒，而陛下因禽之，此特一力士之事耳。”高帝以为然，乃发使告诸侯会陈，“吾将南游云梦”。上因随以行。行未至陈，楚王信果郊迎道中。高帝豫具武士,见信至，即执缚之，载后车。信呼曰：“天下已定，我固当烹!”高帝顾谓信曰：“若毋声!而反，明矣!”武士反接之。遂会诸侯于陈，尽定楚地。还至雒阳，赦信以为淮阴侯,而与功臣剖符定封。
-
-于是与平剖符，世世勿绝，为户牖侯。平辞曰：“此非臣之功也。”上曰：“吾用先生谋计,战胜克敌，非功而何?”平曰：“非魏无知臣安得进?”上曰：“若子可谓不背本矣。”乃复赏魏无知。其明年，以护军中尉从攻反者韩王信于代。卒至平城，为匈奴所围,七日不得食。高帝用陈平奇计，使单于阏氏，围以得开。高帝既出，其计秘，世莫得闻。
-
-高帝南过曲逆,上其城，望见其屋室甚大，曰：“壮哉县!吾行天下，独见洛阳与是耳。”顾问御史曰:“曲逆户口几何?”对曰：“始秦时三万余户，间者兵数起，多亡匿，今见五千户。”于是乃诏御史，更以陈平为曲逆侯,尽食之，除前所食户牖。
-
-其后常以护军中尉从攻陈豨及黥布。凡六出奇计,辄益邑，凡六益封。奇计或颇秘，世莫能闻也。
-
-高帝从破布军还，病创，徐行至长安。燕王卢绾反，上使樊哙以相国将兵攻之。既行，人有短恶哙者。高帝怒曰：“哙见吾病，乃冀我死也。”用陈平谋而召绛侯周勃受诏床下,曰：“陈平亟驰传载勃代哙将,平至军中即斩哙头!”二人既受诏，驰传未至军，行计之曰：“樊哙，帝之故人也，功多，且又乃吕后弟吕婴之夫,有亲且贵，帝以忿怒故，欲斩之，则恐后悔。宁囚而致上，上自诛之。”未至军，为坛，以节召樊哙。哙受诏，即反接载槛车，传诣长安，而令绛侯勃代将，将兵定燕反县。
-
-平行闻高帝崩，平恐吕太后及吕婆谗怒，乃驰传先去。逢使者诏平与灌婴屯于荥阳。平受诏，立复驰至宫，哭甚哀，因奏事丧前。吕太后哀之，曰：“君劳，出休矣。”平畏谗之就，因固请得宿卫中。太后乃以为郎中令,曰：“傅教孝惠。”是后吕婴谗乃不得行。樊哙至，则赦复爵邑。
-
-孝惠帝六年,相国曹参卒,以安国侯王陵为右丞相，陈平为左丞相。
-
-王陵者，故沛人，始为县豪，高祖微时，兄事陵。陵少文，任气，好直言。及高祖起沛，入至咸阳,陵亦自聚党数千人，居南阳，不肯从沛公。及汉王之还攻项籍，陵乃以兵属汉。项羽取陵母置军中，陵使至，则东乡坐陵母,欲以招陵。陵母既私送使者，泣曰：“为老妾语陵，谨事汉王。汉王，长者也，无以老妾故，持二心。妾以死送使者。”遂伏剑而死。项王怒，烹陵母。陵卒从汉王定天下。以善雍齿，雍齿，高帝之仇,而陵本无意从高帝，以故晚封，为安国侯。
-
-安国侯既为右丞相，二岁，孝惠帝崩。高后欲立诸吕为王，问王陵，王陵曰：“不可。”问陈平，陈平曰：“可。”吕太后怒，乃详迁陵为帝太傅,实不用陵。陵怒，谢疾免，杜门竟不朝请，七年而卒。
-
-陵之免丞相，吕太后乃徙平为右丞相，以辟阳侯审食其为左丞相。左丞相不治，常给事于中。
-
-食其亦沛人。汉王之败彭城，西,楚取太上皇、吕后为质,食其以舍人侍吕后。其后从破项籍为侯,幸于吕太后。及为相，居中，百官皆因决事。
-
-吕婆常以前陈平为高帝谋执樊哙，数谗曰：“陈平为相非治事，日饮醇酒，戏妇女。”陈平闻，日益甚。吕太后闻之，私独喜。面质吕婴于陈平曰:“鄙语曰‘儿妇人口不可用’,顾君与我何如耳。无畏吕婆之谗也。”
-
-吕太后立诸吕为王,陈平伪听之。及吕太后崩，平与太尉勃合谋，卒诛诸吕,立孝文皇帝,陈平本谋也。审食其免相。
-
-孝文帝立,以为太尉勃亲以兵诛吕氏，功多；陈平欲让勃尊位，乃谢病。孝文帝初立，怪平病,问之。平曰：“高祖时，勃功不如臣平。及诛诸吕，臣功亦不如勃。愿以右丞相让勃。”于是孝文帝乃以绛侯勃为右丞相，位次第一；平徙为左丞相，位次第二。赐平金千斤，益封三千户。
-
-居顷之，孝文皇帝既益明习国家事，朝而问右丞相勃曰：“天下一岁决狱几何?”勃谢曰:“不知。”问：“天下一岁钱谷出入几何?”勃又谢不知，汗出沾背，愧不能对。于是上亦问左丞相平。平曰：“有主者。”上曰：“主者谓谁?”平曰：“陛下即问决狱，责廷尉；问钱谷，责治粟内史。”上曰：“苟各有主者，而君所主者何事也?”平谢曰：“主臣!陛下不知其驽下，使待罪宰相。宰相者，上佐天子理阴阳，顺四时，下育万物之宜,外镇抚四夷诸侯，内亲附百姓，使卿大夫各得任其职焉。”孝文帝乃称善。右丞相大惭，出而让陈平曰:“君独不素教我对!”陈平笑曰：“君居其位，不知其任邪?且陛下即问长安中盗贼数，君欲强对邪?”于是绛侯自知其能不如平远矣。居顷之，绛侯谢病请免相，陈平专为一丞相。
-
-孝文帝二年，丞相陈平卒，谥为献侯。子共侯买代侯。二年卒,子简侯恢代侯。二十三年卒,子何代侯。二十三年，何坐略人妻，弃市，国除。
-
-始陈平曰：“我多阴谋，是道家之所禁。吾世即废，亦已矣，终不能复起，以吾多阴祸也。”然其后曾孙陈掌以卫氏亲贵戚,愿得续封陈氏，然终不得。
-
-太史公曰：“陈丞相平少时，本好黄帝、老子之术。方其割肉俎上之时,其意固已远矣。倾侧扰攘楚、魏之间,卒归高帝。常出奇计，救纷纠之难，振国家之患。及吕后时，事多故矣，然平竟自脱,定宗庙，以荣名终，称贤相，岂不善始善终哉!非知谋孰能当此者乎?</div>
-        </section>
-        <section>
-          <h3>现代汉语</h3>
-          <div class="txt">陈丞相名平，是阳武县户牖乡人。小时候家境贫困，喜欢读书。家里有田地三十亩，陈平与他大哥一同生活。他大哥在家以耕田为业，而让陈平随意出外游学。陈平身材高大，相貌堂堂。有人开玩笑问他：“你们家里这么穷，你是吃些什么长得这么胖?”他的嫂子早就恨他不在家里劳动，于是就顺口说：“也不过是吃糠咽菜罢了。有这样的小叔子，还不如没有的好。”陈平的大哥听到这话，就把他的妻子赶出家去，休掉了。
-
-等到陈平长大成人，可以娶妻子了，富裕人家没有人肯把闺女嫁给他；而娶穷人家的闺女，陈平又不愿意，就这样一直过了很久。后来户牖乡有个富户名叫张负，张负的孙女曾五次嫁人，而五个丈夫都死了，于是再没有人敢娶她了。陈平听到这个消息，很想得到她。正巧这时候户牖乡里有人办丧事，因为陈平家穷，他就去给丧家帮忙，他总是去得最早，撤得最晚，以求多得一点生活补助。张负在办丧事的人家见到了陈平，对陈平特别看重，而陈平也因此故意走得最晚。有一天张负跟着陈平到他家里看了看，原来他家住在一条靠近城墙的穷巷子里，门是用一张破草席做的，然而他家门口却有不少有身份的人的车子印。张负回到家对他的儿子张仲说：“我想把孙女嫁给陈平。”张仲说：“陈平家里穷而且又什么事都不干，全县的人都耻笑他的所作所为，为什么偏偏把我们的女儿嫁给他呢?”张负说：“像陈平那样相貌出众的人，有贫穷一辈子的吗?”最后还是坚持着把孙女嫁给了他。因为陈平家穷，张负就借钱给他让他备办聘礼，给他办酒席的钱让他举办婚礼。张负还特别告诫她的孙女说：“不要因为人家穷，就对人家不礼貌。对待大哥要像对待父亲一样，对待大嫂要像对待母亲一样。”而陈平自从娶了张家的闺女以后，家里的生活日用比从前富裕了，因此他的交游也就越来越广泛了。
-
-陈平所在的里巷每当社日祭完土地神的时候，总是由陈平来给大家分配祭肉，他分得很公平。老人们都夸他说：“好!陈家这小子分祭肉分得公平。”陈平感慨地说：“唉!有朝一日让我主持分割天下，我也能像今天分配祭肉这样的公平!”
-
-陈涉起兵到陈郡称王后，派周市北入魏地，拥立魏咎做了魏王，并与秦朝军队会战于临济。陈平早些时候便已辞别了他的哥哥与一批年轻人去临济投奔了魏王，魏王让陈平给他做太仆。这期间陈平曾给魏王出过许多主意，魏王不听，再加上有人说陈平的坏话，于是陈平就离开了他们。
-
-过了好长一段时间，项羽率军拓地来到了黄河边上，陈平就又去投奔了项羽。这以后陈平就跟着项羽一直打败了秦朝，被项羽封了个卿一级的爵位。当项羽自称西楚霸王东归彭城后，被封到汉中去的刘邦又趁机杀回来夺取了关中，并进而率兵东下，殷王司马卬也背叛了项羽。于是项羽就封陈平为信武君，让他率领着魏王咎留在彭城的旧部前去讨伐，陈平收服了司马印，胜利而回。项羽大喜，派项悍前去拜陈平为都尉，赏给他黄金二十镒。没过多久，殷王又被刘邦降服。项王大怒，将要杀掉上次去平殷地的将官。陈平害怕被杀，于是就把项羽封赏自己的黄金和印信包好，派人送还了项羽，而自己只身一人提着宝剑从小路逃走了。过黄河的时候，船夫见他这样一个魁梧的美男子单人行走，怀疑他是个开小差的将军，估计他一定带有金珠宝器，因而眼睛盯着，想杀他。陈平很害怕，便故意地脱掉衣服，光着膀子帮着他划船。船夫知道他身上没有什么东西，这才没有伤害他。
-
-陈平逃到了修武县，请求魏无知把他引见给刘邦，刘邦叫他进去。这时候万石君石奋正做刘邦的侍从，他接过了陈平的名片，让陈平进去。陈平等七个人一同受到了刘邦的接见，并被招待吃了饭。刘邦说：“吃完饭，大家都到客舍去休息吧。”陈平说：“我是为了一件急事才来的，我的事不能过今天。”于是刘邦立即同他谈了一回，谈得很高兴。刘邦问他：“您在项羽那里身居何职?”陈平说：“做都尉。”于是刘邦也立即任命陈平为都尉，让他陪着自己同乘一辆车，负责协调监督军队。部将们一齐大哗，都说：“大王忽然得到了项羽的一个逃兵，还不知道他的本事大小，马上就和他同乘一辆车，还要让他来监督我们这些老将!”刘邦听说后反而更加亲近和重用陈平。于是陈平就跟着刘邦一起东进，攻打项羽，结果在彭城被项羽打得大败。刘邦收集残兵败将退到了荥阳，任命陈平为亚将，让他跟着韩王信驻扎在广武。
-
-这时绛侯、灌婴等人都说陈平的坏话，他们对刘邦说：“陈平虽然是个美男子，但这就像帽子上镶的那块玉一样，他的肚子里不一定有什么真货色。我们还听说陈平在家时，和他的嫂嫂通奸；后来到魏王那里干事，人家不要他，他就又投奔了项羽；后来在项羽那里也不行，这才又跑来投奔大王。现在大王封他大官，让他监护军队。可是我们又听说他常常接受将军们的贿赂，谁给他送钱送得多谁就得到好处；谁送得少谁就受到刁难。陈平是个反复无常的家伙，希望大王好好了解观察一下。”刘邦听罢心里有怀疑，于是就把魏无知找来，责备他。魏无知说：“当初我向您推荐他，是说他有本事；现在您要责问的，是他的品行。假如陈平空有尾生、孝已那样的品行，而对于我们战场上的胜败丝毫没有好处，对于这种人您有闲工夫用他么?现在是楚、汉相抗，我推荐的是有奇谋的人，现在的关键是要看他的计谋是不是对国家有利。至于说和嫂嫂通奸，接受一点贿赂，这又有什么值得大惊小怪呢?”刘邦又把陈平找来责问说：“您过去替魏王办事，办得不好，就又去投奔了项羽，现在您又来找我。一个讲信义的人，能够像你这样三心二意吗?”陈平说：“我过去替魏王办事，魏王不采用我的意见，所以我去投奔了项王。项王也不能信用人，他所信用的不是项家的子弟就是他妻子那边的亲戚，别的人哪怕有奇才他也不能用，所以我才离开了他。我听说您能够知人善任，所以才来投奔您。我是光身一个人来的，如果不接受一些金钱，我就连一点活动的资本都没有。如果我的主意有可用的，那就请您采用它；如果没有可用的，我所接受的钱财还都在那里，请您没收归公，我自己请求辞职还乡。”刘邦一听赶紧赔礼道歉，又厚厚地赏赐了他，同时正式地封拜他为护军中尉，让他进一步监督协调所有的将领。这一来将军们才不敢再说三道四了。
-
-后来，楚军加紧进攻汉军，切断了汉军运输粮饷的通道，把刘邦包围在荥阳城中。这样持续了很长一段时间，刘邦很着急，于是请求划荥阳为界，荥阳以东属楚，荥阳以西属汉，两下讲和。项羽不答应。刘邦对陈平说：“天下这么乱哄哄的，什么时候才能安定呢?”陈平说，“项羽的秉性是待人慈和而又恭敬，所以一些有棱角、有气节的人，都去投奔他。可是等到要论功行赏的时候，他又特别吝啬，因此很多人又不愿意跟着他。现在大王您尽管对人傲慢，缺少礼貌，一些有棱角有气节的人不来；但是您却能够慷慨地把爵位封土分给人们，因此那些不讲礼节只顾贪图利益的人们又都会跑到您这里来。假如你们两位谁能够去掉自己短处，吸收对方的长处，那么他马上就可夺得天下，就可以太平无事了。现在您常常任意侮辱人，虽然不易得到廉正守节的好汉，但是现在楚军内部也有容易被我们挑起矛盾的地方。忠于项羽，给项羽起主心骨作用的大臣，也不过就是亚父范增和钟离眛、龙且、周殷等几个人，您如果能豁出去用几万斤金，去挑拨离间项羽君臣之间的关系，让他们互相猜忌，项羽本来就为人多疑，好听谗言，这样他们很快地就会自相残杀起来。到那时您再趁机出兵从外面攻他，这就肯定可以打败楚军了。”刘邦觉得很好，便拿出黄金四万斤，让陈平任意使用，从不过问他是怎么开销的。
-
-陈平用了很多钱在楚军中进行离间活动，放出谣言说钟离眛等人作为项王的战将，功劳很多，然而到头来却不能够分地为王，因此他们想同汉王联合，消灭项氏，从而分割楚国的土地，各自称王。项羽一听果然不信任钟离眛等人了。在此以后，项羽曾有一次派使者到刘邦那里去，当时刘邦安排了猪、羊、牛三牲齐备的筵席来招待他们，等到摆开桌子上莱时，他们假意地好像是才发现来人是项羽派来的，就假装惊讶说：“我们还以为是亚父范增派来的人呢，原来是项王派来的!”于是就把好菜端了回去，另端来一些粗劣的饭菜给项羽的使者吃。使者回去后，把所见所闻都报告了项羽。项羽果然开始怀疑范增。按范增的主意是希望赶快攻下荥阳城，但是项羽不信任他，根本不听他的。等范增知道项羽怀疑自己时，生气地说：“整个国家的形势基本定局了，以后的事情您自己好好看着办吧!我请求告老还乡!”于是范增东归，还没有走到彭城，因为背上的毒疮突然迸发而死。这个时候陈平故意在夜里派两千女子出荣阳东门诱敌，楚军不知虚实，集中兵力往攻，陈平与刘邦等趁机开荥阳西门逃走了。刘邦、陈平等回到关中，招集起了逃散的队伍，很快地又回到荥阳。
-
-第二年，韩信灭掉齐国后，先自己当了齐王，而后才派使者来向刘邦报告。刘邦一听就气得大骂起来，这时陈平暗踩刘邦的脚，刘邦也立刻省悟了，于是便好好地招待了韩信的使者，并立刻派张良前去封韩信做齐王，同时把户牖乡给了陈平作封地。刘邦采用了陈平的不少奇谋妙策，终于消灭了项羽。后来陈平还曾以护军中尉的身份跟着刘邦平定过燕王臧荼的叛乱。
-
-汉高祖六年，有人写信告发楚王韩信造反。刘邦问将军们该怎么办，将军们异口同声地说：“立即发兵活埋了这小子!”刘邦沉默不语，又问陈平。陈平推辞了半天，说：“将军们怎么说?”刘邦把将军们的意思说了一遍。陈平说：“有人写信告韩信造反，这件事有别人知道吗?”刘邦说：“没有。”陈平又问：“韩信知道有人告他吗?”刘邦说：“不知道。”陈平又问：“您的军队同韩信的军队比较谁的战斗力更强?”刘邦说：“我的军队比不上。”陈平又问：“您的将领们指挥打仗的才能有超过韩信的吗?”刘邦说：“没有。”陈平说：“您的兵不如韩信的兵精，您的将又比不上韩信，您还要出兵去打他，这不是逼着他同我们决战吗，我替您感到危险!”刘邦说：“那怎么办呢?”陈平说：“古时候有天子外出巡视在外面会见诸侯的制度。现在南方有个云梦泽，您就假说要到云梦地区视察，并在陈郡同各地的诸侯们会见。陈郡就在楚国西界。韩信听说您这是一次和平愉快的出游，他一定会毫无防范地到郊外来迎接您，到那时，您就趁势逮捕他，这么做只要一个武士就够了!”刘邦觉得有理，便派人通知各地的诸侯们到陈郡相会，“我要到云梦地区巡游”。于是刘邦就带着陈平出发了。还没有到达陈郡，楚王韩信果然到郊外路旁来迎接了。这时刘邦早已经埋伏下了武士，见韩信一到，便立即把他捆绑起来，放在了刘邦后面的车子上。韩信大声喊到：“天下已经安定，我是应该被你们所杀了!”刘邦回头对韩信说：“你不用喊叫，你要造反的事情已经很清楚了!”武士们把韩信的双手反绑起来。刘邦在陈郡会见了各地的诸侯，并把楚地全部稳定住。待至回到洛阳，刘邦又把韩信放了，把他降为淮阴侯，而与其他功臣们剖符立誓确定了他们各自的封爵。
-
-刘邦与陈平剖符为信，封陈平为户牖侯，立誓让陈平世世代代相传不断。陈平推辞说：“这不是我的功劳!”刘邦说：“我是因为采用了你的计策，所以才克敌制胜，这不是你的功劳是什么呢?”陈平说：“当初如果没有魏无知的引荐，我怎么能够来到您的跟前呢?”刘邦说：“你可真称得上是一个不忘本的人了!”于是立即赏赐了魏无知。第二年，陈平以护军中尉的身份随刘邦到代国讨伐韩王信的叛乱，一直到了平城，结果遭到了匈奴军队的包围，一连七天没吃上饭。这时刘邦又采用了陈平的计谋，派人到单于的妻子那里进行了活动，包围才得以解除。刘邦这次是出来了，但究竟他们是用了什么计策，由于太秘密了，局外人无法知道。
-
-刘邦从平城脱险南归，路过曲逆县时，登上城楼远望，见到城里的房屋都很高大，不禁赞叹说：“多么雄伟的一座县城啊!这样的城邑，我走遍天下，只在洛阳和这里看到过。”他回头问御史说：“曲逆县的户口有多少?”御史答道：“当初秦朝的时候有三万多户，近年来由于不断的战争，许多人都逃走了，如今只有五千户。”于是刘邦马上让御史改封陈平为曲逆侯，全县的一切赋税都归陈平享用，撤销以前划给陈平的户牖乡。
-
-在此以后，陈平还曾经以护军中尉的身份跟随刘邦去平定过陈豨和黥布的叛乱。陈平一共给刘邦出了六次奇计，每次事成之后都能使他的封地有所增加。只是他的奇计有的太秘密了，人们没法儿知道。
-
-刘邦从打败黥布的前线回来，由于受了伤，只能慢慢地回到长安。这时，燕王卢绾造反了，刘邦派樊哙以相国的身份率兵前去讨伐。军队出发后，有人向刘邦说樊哙的坏话。刘邦一听大怒说：“樊哙见我生病，原来竟盼着我早死啊!"于是按照陈平的意见，把绛侯周勃叫到了床前，对他们二人说：“陈平你赶快乘传车送周勃前去代替樊哙领兵，而你到达樊哙军中后，立即斩他的人头回来报告!”陈平、周勃接受密令后乘着传车出发了。半道上两个人商量说：“樊哙，是皇上的老朋友，功劳很多，而且又是吕后的妹妹吕婴的丈夫，他既是皇亲，又是权贵，刚才皇上只不过是因为一时的愤怒，让我们去杀他，这件事恐怕他会后悔。因此我们宁可用囚车把他活着带回来交给皇上，让皇上自己杀他。”于是他们在快到樊哙兵营的地方搭起了台子，派人持符节把樊哙请了来。他们向樊哙宣读了刘邦的诏书后，立即捆起了他的双手，把他装上囚车，押回了长安。同时宣布让绛侯周勃代替樊哙统兵，前往平定燕国各县的叛乱。
-
-陈平在押送樊哙回长安的路上，听说刘邦死了，他害怕吕后、吕婆姐妹二人因樊哙问题说他的坏话，于是就赶快乘传车先回长安。半道上正遇见朝廷的使者，使者传令让陈平与灌婴一道去驻守荥阳。陈平接受命令后，没有直奔荥阳，而是立即赶到长安皇宫哭灵，他悲痛欲绝地当着刘邦的灵柩向吕后报告了受命处置樊哙事情的经过。吕后很同情他，就说：“您很累了，出去休息吧。”陈平害怕趁他不在有人向吕后说他的坏话，因而坚决请求守卫宫廷。于是吕后就任命他为郎中令，并说：“你要好好地保护教导我的儿子。”这样，才使吕婆攻击诽谤的坏话没能再说。樊哙押回长安后，立即被吕后宣布无罪，恢复了原来的爵位和封地。
-
-孝惠帝六年，相国曹参去世，安国侯王陵被任为右丞相，陈平为左丞相。
-
-王陵也是沛县人，开始是沛县的一个豪绅，刘邦贫贱时，把他当作兄长一样对待。王陵不大讲究礼节，重义气，爱直言不讳。刘邦从沛县起兵，后来西入咸阳时，王陵也聚集了几千人，正占据着南阳，他不愿跟随刘邦西进。等到刘邦二次收复关中率军东攻项羽时，王陵才率部归属了刘邦。项羽听说后就派人去把王陵的母亲掠来放在军中当人质，王陵派人到项羽军中探听母亲的消息，项羽故意表示恭敬，让王陵的母亲坐在朝东的长者的席位上，想用这种办法来招引王陵降楚。王陵的母亲在给使者送别时，暗中流着泪对使者说：“你们回去替我告诉王陵，叫他好好地为汉王效力。汉王是个宽厚慈爱的人，叫王陵不要因为我而对汉王有什么三心二意。我现在就用一死来给你送行吧。”说罢自刎而死。项羽大怒，派人把王陵母亲的尸体扔到锅里煮了。王陵从此便死心塌地地追随刘邦去打天下了。王陵和雍齿关系好，而雍齿是刘邦的仇人，再加上王陵开始时曾有一段时间不愿意追随刘邦，所以刘邦嫉恨他，在分封功臣时，对王陵封得较晚，封他为安国侯。
-
-王陵做右丞相两年，孝惠帝死了。这时吕后想封她娘家姓吕的人们为王，先征求王陵的意见，王陵回答说：“不行!”吕后又问陈平，陈平说：“可以。”于是吕后深恨王陵，她名义上是提升王陵为太傅，实际是疏远他，把他的右丞相职务免掉了。王陵很生气，于是称病辞职，闭门不出，连朝也不上了。一直到七年后死去了。
-
-王陵被罢免丞相之后，吕后就提升陈平做右丞相，任命辟阳侯审食其为左丞相。审食其为相后不管丞相职份内的事，仍是经常在内廷中服务。
-
-审食其也是沛县人。当刘邦在彭城被项羽打败向西逃时，项羽把刘邦的父亲和吕后俘虏去了，押在军中当人质，从那时起审食其就以一个侍从的身份侍候吕后。后来又跟随刘邦打败了项羽，被封为辟阳侯，他特别受吕后的宠爱。到他做了丞相时，仍经常住在宫中，文武百官不论什么事都要去向他请示。
-
-吕婴因为陈平曾为刘邦设计捉拿过樊哙，所以一直嫉恨在心，她多次攻击陈平说：“陈平做丞相，根本不过问国家大事，整天饮酒作乐，玩弄妇女。”陈平听说后，就故意做得更过分。吕后看到这种情形，心中暗自高兴。有一天她当着吕缨的面对陈平说：“俗话说‘小孩子和女人的话不可听’,关键就看你对我怎么样了，你不要害怕吕婴说你的坏话。”
-
-后来吕后公开封立吕氏家族的人们为王，陈平都假装同意。等到吕后一死，陈平就与太尉周勃合谋，最后消灭了吕氏一党，拥立了孝文帝，在这个事件中陈平是主谋人。而审食其从此被免掉了左丞相。
-
-孝文帝即位后，因为太尉周勃亲自率军消灭了吕氏一党，功劳最大；而陈平当时也有意把最高的职位让给周勃，于是自己就称病不朝。当时孝文帝刚刚即位，对于陈平的称病感到奇怪，问他为什么。陈平说：“在跟着高帝打天下的时候，周勃的功劳没有我大。等到消灭吕氏一党时，我的功劳又没有周勃大。因此我情愿把右丞相的尊位让给他。”孝文帝一见如此，就任命绛侯周勃为右丞相，位列第一；任命陈平为左丞相，位列第二。同时又赏赐陈平金千斤，给他增加了封邑三千户。
-
-过了一段时间，孝文帝已经越来越熟悉国家大事了，有一次在上朝的时候他问右丞相周勃：“全国一年中要审理多少案件?”周勃惶恐地说：“不知道。”孝文帝又问：“全国一年的钱粮收支各有多少?”周勃又惶恐地说：“不知道。”说罢吓得汗流浃背，自愧没能回答皇帝的问题。于是孝文帝又问左丞相陈平。陈平回答说：“有专门主管这方面事情的人。”孝文帝说：“主管这方面事情的人是谁?”陈平说：“您如果要问审理案件的事，可以问廷尉；您要了解钱粮收支情况，可以问治粟内史。”孝文帝说：“如果各种事情各有别的人管，那么你管什么呢?”陈平说：“主管群臣。您不以为我的才能低下，把我放在了宰相的位置上。所谓宰相，他的职责是对上要辅佐天子调理阴阳，顺应四时变化；对下要培育万物生长，不失时机；对外要镇抚诸侯，安定四夷；对内要使百姓亲附，使卿大夫各尽其职。”孝文帝听罢点头称善。而右丞相周勃相比之下，觉得惭愧极了。出朝后他责怪陈平说：“你平常为什么不教给我该怎么回答皇上说话!”陈平笑道：“您身为宰相，难道还不明白它的任务是什么吗?假如皇上再问长安城里有多少盗贼，你也非要勉强回答吗?”这一来绛侯周勃知道自己的才能比陈平差远了。过了不久，周勃便称病辞去了右丞相，从此丞相的职务便由陈平一个人独当了。
-
-孝文帝二年，陈平去世，被谥为“献侯”。他的儿子共侯陈买继位为侯。过了两年，陈买去世，陈买的儿子简侯陈恢继位为侯。过了二十三年陈恢去世，陈恢的儿子陈何继位为侯；又过了二十三年，陈何因抢夺他人的妻子被斩首示众，从此曲逆侯的封地被废除。
-
-早在很久以前陈平就自己说过：“我一生好搞阴谋，这是道家所忌讳的。如果在我自己这一辈，我的侯爵被废除，我估计那也差不多了，而且永远也不能再复兴，因为我阴谋搞得多，阴祸也就该多啊。”后来他的曾孙陈掌因为是大将军卫青的亲戚，又贵幸一时，他曾经请求重续曲逆的爵邑，但始终没有得到。
-
-太史公说：丞相陈平从年轻的时候就爱好黄帝、老子的学说。当他在里巷祭祀切肉的时候，就已经表现出他的远大志向了。他先是在楚国、魏国经历了许多艰难险阻，最后投奔了高皇帝。他曾为高皇帝出过许多奇谋，解决过许多非常复杂的问题，挽救了国家的危急。到了吕后时期，国家处于多事之秋，然而陈平却始终能够自免于祸，到头来还是靠着他稳定了汉室江山，他自己也获得了很高的荣誉，被后世称为贤相，这不是一种少有的善始善终吗!如果不是有足够的智谋，怎么能够获得这种结果呢?</div>
-        </section>
-        <section>
-          <h3>English</h3>
-          <div class="txt">Prime Minister Chen Ping was a citizen of Huyouin Yangwu county. In his boyhood his family was poor but he loved reading.He lived with his elder brother,who tilled their thirty mu of land,letting him leave home to study. Chen Ping was tall and handsome.Once someone asked,“What do you eat to grow so plump,poor as you are?” His sister-in-law,who disliked him because he did nothing to help on the farm,replied,"He eats both the grain and the busks.Such a brother is worse than none!” When her husband heard this he drove her away and divorced her.
-
-When Chen Ping was old enough to take a wife,no rich family would give him a daughter and he scorned to marry a poor girl.There was a wealthy old woman in Huyou,Dame Zhang,whose grand- daughter had been betrothed five times but all of her betrotheds had died,so that no one dared marry her.Chen Ping,however,wanted her as his wife.Whenever there was a funeral in the town,Chen Ping,being poor,would hire out his services,going early and leaving late in the hope ofgetting better payment Atone funeral Dame Zhang was struck by him and,late as it was when he left,she followed him to his home. She found he lived in a poor lane at the foot of the city wall with only some worn-out matting as a door,yet with many wheel marks outside made by the carriages of prominent men. Upon her return home,Dame Zhang told her son Zhong,"I mean to marry my grand-daughter to Chen Ping." "That pauper who does nothing for a living!"protested her son. "He is the laughing-stock of the whole county.Why give him my daughter?” But Dame Zhang said,“A fine-looking man like Chen Ping will not always be poor."She married her grand-daughter to him,and since Chen Ping was poor she lent him money for the betrothal gifts as well as providing wine and meat at the wedding.Moreover she warned her grand-daughter,"Don't be disrespectful to him because he is poor. You must wait on his elder brother as if he were your father and on his sister-in-law as if she were your mother."After marrying this daughter of the Zhang family,Chen Ping be- come better off and acquired more connections.
-
-He officiated at the local sacrifices and made a fair division of the sacrificial meat. All the elders said,"How well young Chen takes charge!" "Ah!"replied Chen Ping."Put me in charge of the government and I should do equally well.”
-
-When Chen She rose in revolt and became king of Chen,he sent Zhou She to conquer Wei (403B.C.-225B.C.),set up Wei Jiu as king there,and fought the Qin troops at Linji.Chen Ping,who had already left his brother,went with some other young men to join the king of Wei at Linji.He was appointed master of the carriages,but his advice to the king was not accepted;so when someone slandered him he went away.
-
-Later,when Xiang Yu advanced to the Yellow River,Chen Ping joined him and accompanied him to Qin,where he was made a minister. Xiang Yu went east to make Pengcheng his capital,while Liu Bang turned back to conquer the land of Qin and advanced east,and the king of Yin revolted against Chu.Then Xiang Yu made Chen Ping the lord of Xinwu and sent him with the king of Wei's troops in Chu to attack the king of Yin,who surrendered. Upon Chen Ping's return,Xiang Yu sent Xiang Han to appoint him a chief commander and present him with twenty yiof gold.Almost at once,however,Liu Bang conquered Yin,and Xiang Yu in his rage decided to punish the officers in charge there.Chen Ping,afraid he would be executed,returned his gold and seal through a messenger to Xiang Yu and armed only with a sword fled alone by secret ways. When he was crossing the river,the boatman suspected that this fine-looking man travelling alone must be some run-away officer carrying gold,jade or other treasures.There was murder in the ferryman's eyes.Chen Ping stripped off his clothes in alarm and helped to punt the boat.The boatman saw that he had nothing,and gave up his plan.
-
-Chen Ping went to Xiuwu and surrendered to Liu Bang,gaining an audience through the good offices of Wei Wuzhi.Liu Bang's chamber- lain at this time was Shi Fen,known as the Lord of Ten Thousand Piculs,who interviewed Chen Ping and introduced him. After Chen Ping and six others had been received and given food, Liu Bang dismissed them saying,"All right,go back now to your hostel.” "I have come on business,"objected Chen Ping."What I have to say cannot wait until tomorrow." Liu Bang talked with him and was favourably impressed. "What post did you have in Chu?"he asked. Chen Ping answered,“I was an army officer.” That same day Liu Bang appointed him an army officer and his attendant in the royal carriage,making him the officer in charge of army discipline.The other officers were dumbfounded and complained, "The king has just got hold of this deserter from Chu and,with no idea of his ability,he is letting him share the royal carriage and control us." When Liu Bang heard this,he showed even greater favour to Chen Ping.The men of Han(206B.C.-8A.D.)marched east to attack Xiang Yu but suffered a reverse at Pengcheng and withdrew,regrouping their scattered forces at Xingyang.Chen Ping,made lieutenant general under King Xin of Han(403B.C.-230B.C.),encamped his troops at Guangwu.
-
-Then Zhou Bo,Guan Ying and others spoke slightingly of him. “Chen Ping is a fine-looking fellow,"they said,"but jade ornaments on a cap do not mean there is anything inside the head.We hear that at home he had an affair with his sister-in-law;not doing well in Wei he fled to Xiang Yu;but failing to please him,he fled to us.Now Your Majesty has honoured and trusted him,making him the officerin charge of army discipline,yet hear that he accepts bribes from the officers. Those who give the most get good jobs,those who give little get infe- rior posts.He is obviously a dangerous turncoat.We hope you will look into this,sir." Liu Bang,his suspicions aroused,summoned Wei Wuzhi and re- proached him for recommending Chen Ping. "I recommended him for his ability,"replied Wei Wuzhi. "But Your Majesty is questioning his private conduct.If you had men with the virtue of Wei Sheng and Xiao Ji who could not help to win the war,what use would they be to you,sir?Now that Chu and Han(206B.C.-8A.D.)are fighting it out,all I consider when I recom- mend a brilliant strategist is whether his plans will benefit out state or not.What does it matter if he had an affair with his sister-in-law or accepted bribes?” Then Liu Bang sent for Chen Ping and reproached him saying, "You failed to do well in the service of Wei,then left the service of Chu,and now you have come to me.Is it right to chop and change so often?”"The king of Wei would not take my advice:that is why I left him to serve Xiang Yu,"said Chen Ping."But Xiang Yu is incapable of trusting others and employs or favours only his own clan or his wives' relatives,and is unable to make use of men of talent.That is why I left him.I came here because Your Majesty had the reputation of knowing how to use men.I arrived empty-handed and should have had nothing to live on had I not accepted some money.If my plans are any good, you can adopt them.If not,I still have the money and shall give it to the treasury,and then beg leave to go home.” Liu Bang apologized and loaded him with gifts,appointing him provost marshal to supervise the actions of all his generals,who after that dared say no more.
-
-Later the Chu army launched a sudden attack,cut off Han's grain supply and besieged Liu Bang at Xingyang tillin his alarm he sued for peace,offering Xiang Yu all the land west of Xingyang.But Xiang Yu refused his terms. The king said to Chen Ping,"The land is in utter confusion—shall we never have peace?” "King Xiang Yu is courteous and considerate,"answered Chen Ping."That is why men of honour who value ceremony flock to him. But when it comes to rewarding distinguished service with ranks and fiefs,he is tight-fisted,and for this reason no one stays with him long. You,sir,are so insulting and rude that men of honour do not come to you,while your generosity with fiefs make shameless fools who are out for profit flock to you.Could you get rid of both faults and adopt both virtues,you might pacify the empire as easily as raising a finger. But your overbearing ways will never win over men of honour.Of course,Chu is vulnerable too.Xiang Yu has only a few officers as staunch as Fan Zeng,Zhongli Mo,LongJu and Zhou Yin.If you,sir, would spend a few tens of thousands of pieces of gold to spread rumours and sow dissension between him and these men,he will doubt their loyalty.What with Xiang Yu's suspicious nature and his proneness to listen to slander,they are bound to be set at odds.Then if you raise an army to attack them,you will undoubtedly triumph.” Liu Bang,approving this plan,gave him forty thousand pieces of gold to use at his discretion,not asking for any account.
-
-Chen Ping used most of this gold to sow dissension in the Chu army.Word was spread that generals like Zhongli Mo,who had served Xiang Yu well yet never been granted fiefs or made princes,meant to join Han to destroy Xiang Yuand divide uphis land.Then,sure enough, Xiang Yu began to distrust these men. Xiang Yu,his misgivings already aroused,sent an envoy to Liu Bang,who prepared a great feast for him.But when the man entered, Liu Bang made a show of surprise."I thought you were from the Patriarch Fan Zeng,”he said."But I see you come from Xiang Yu." The feast was removed and poorer dishes brought in. When the envoy went back and reported this,Xiang Yugrew very suspicious of Fan Zeng and,not trusting him,would not allow him to attack the city of Xingyang. As soon as he knew that Xiang Yu doubted him,Fan Zeng told him angrily,"Now that the fate of the empire is virtually settled you can manage for yourself,sir.Please allow me to go home."Sohe left, but an abscess broke out on his back and he died before reaching Pengcheng. Then Chen Ping sent two thousand women out by night through the east gate of Xingyang,and while the Chu army attacked them he and Liu Bang slipped out by the west gate.Re-entering the Pass,they collected their scattered troops and marched east again.
-
-The following year Han Xin conqueredQi,made himself the king there and sent an envoy to announce this to Liu Bang.Liu Bang flew into a passion and started swearing,till Chen Ping trod on his foot and he took the hint.Having treated the envoy handsomely,he sent Zhang Liang to confirm Han Xin's new title.He gave Chen Ping the fief of Huyou,and by using his strategies finally defeated Chu.Chen Ping later accompanied the emperor as provost marshal to crush the revolt of Zang Tu,king of Yan.
-
-In the sixth year of Han,someone submitted a letter reporting that Han Xin was plotting revolt.The emperor consulted his generals,all of whom advised,"Send out a force at once to destroy the upstart." The emperor was silent for a time,then summoned Chen Ping to ask for his opinion.Declining to give it,Chen Ping inquired,"What do your generals say?"When told he asked,"Does anyone know that this letter has been sent?” "No,"said the emperor. “Does Han Xin know?” "Not yet." "How do your troops compare with his?" “They are no better.” “Have you any commanders who can out-general him?” "No,they are no match for him." “So neither your troops nor your generals are as good as his.If you lead an army against him you will be forcing his hand.That strikes me as risky.” “Then what shallI do?”“The emperors of old used to make imperial tours of inspection and summon all the nobles to meet them.You can give out that you are going south to Yunmeng Marsh to meet the nobles of different states at Chen on the western boundary of Chu.When Han Xin hears that you are on a goodwill trip,he will feel secure and come out to pay homage.Then you can have him seized.All you need for that is a strong man." The emperor,approving,sent envoys to summon different nobles to Chen on his way south to Yunmeng.He set out with a retinue and was met by Han Xin on the road to Chen.The emperor had guards ready.They arrested Han Xin and bound him to a rear carriage. "Now the empire is won,"cried Han Xin,"I suppose I deserve to be thrown into the cauldron!” "Hold your tongue!”shouted the emperor,looking back."Your treason is known.” Then the guards trussed Han Xin up and took him away,while the emperor went on to meet other nobles at Chen and pacified the land of Chu.Returning to Luoyang,he pardoned Han Xin and made him marquis of Huaiyin.This was when the emperor gave tallies of office and fiefs to his followers according to their merit.
-
-A tally was given to Chen Ping with the promise that his title,mat- quis of Huyou,should be retained by his descendants. Chen Ping declined,saying,“I have done nothing to merit this.” "It was through using your plans that I defeated my enemy,"re- torted the emperor.“Isn't that your merit?” "But if not for Wei Wuzhi's recommendation,I could never have entered your service,"said Chen Ping."I am glad you don't forget the man to whom you owe your advancement,"replied the emperor and rewarded Wei Wuzhi too. The following year Chen Ping accompanied the emperor as pro- vost marshal to Dai to suppress the revolt of King Xin of Han.Sud- denly surrounded by the Huns at Pingcheng,they were cut off from supplies for seven days.Chen Ping suggested a ruse to the emperor who sent a message to the wife of the Hunnish khan so that the siege was raised and they escaped.What this ruse was is still a mystery.
-
-The emperor,traveling south,ascended the city wall ofQuni and was impressed by the number of large buildings there.“What a mag- nificent town!"he exclaimed."In all my journeys through the empire I have seen no place but Luoyang to compare with this."He turned to his secretary and asked,“What is the population of Quni?” "Under Qin there were more than thirty thousand households," was the answer.“Since then,many citizens have fled or gone into hid- ing because ofall the fighting.There are now only five thousand house- holds.”The emperor ordered his secretary to appoint Chen Ping marquis of Quni with the whole district as his fief instead of Huyou.
-
-In his capacity as provost marshal Chen Ping later accompanied the emperor on his expeditions against Chen Xiand Ying Bu.In all he suggested six ingenious ruses and his fief was six times enlarged.But these ruses were closely guarded secrets,not known to the world.
-
-The emperor,wounded while fighting against Ying Bu,travelled back by easy stages to Chang'an.Then King Lu Wan of Yan rebelled and the emperor sent the state chancellor Fan Kuai with an army to attack him.After Fan Kuai's departure,some men spoke ill of him to the emperor,who exclaimed in anger,"Fan Kuai knows I am ill and is hoping I will die!”On Chen Ping's advice he summoned Zhou Bo, marquis ofJiang,to his bedside and gave these orders:“Chen Ping will escort you at once by post carriage to take over Fan Kuai's command. When you reach the army Chen Ping will cut off Fan Kuai's head.” Having received these orders,the two men set off with all speed. But on the road they talked things over and said,"Fan Kuai is an old friend of the emperor and has many achievements to his credit.Besides, he is the husband of LüXu,younger sister to Emperess Lü.He is close to the throne and high in rank.In his rage the emperor has ordered his death,but he may regret it later,We had better arrest Fan Kuai and take him to court for the emperor to mete out the punishment himself."So before reaching the army they erected a dais and summoned Fan Kuai with the imperial credentials.Having announced the imperial command, they arrested Fan Kuai,put him in a cage on a cart and sent him to Chang'an while Zhou Bo took over the army and led it to subdue the insurgent districts of Yan.
-
-On his way back Chen Ping received news of the emperor's death and,afraid that the empress and her sister might slander him in their anger,he travelled post-haste.On the road he met a messenger and received orders to station himself with Guan Ying at Xingyang.But instead he went straight to the palace where,having lamented bitterly before the coffin,he reported to Empress Lüall that had passed. "You have done your best,"she said,taking pity on him."Now go and rest."But Chen Ping,fearing defamation,begged to be allowed to stay in the palace. The empress appointed him chief of the palace guard and told him,"You must help to educate the young emperor."After that Lü Xu could no longer speak evil of him.Fan Kuai upon arriving was par- doned and his fiefs were restored to him.
-
-In the sixth year of Emperor Hui,the chancellor Cao Shen died and Wang Ling,marquis of Anguo,was made senior pirme minister, with Chen Ping as junior prime minister.
-
-Wang Ling was a native of Pei and a prominent figure in that district.Before the First Emperor of Han (206B.C.-8A.D.)rose to power he treated Wang Ling as his elder brother.Wang Ling was unconventional,impulsive,and frank in his speech.When the emperor raised an army at Pei to march against Xianyang,Wang Ling had a troop several thousand strong at Nanyang but he did not follow the emperor.Not tillthe emperor turned east to attack Xiang Yu did Wang Ling and his men come over to Han.Xiang Yu detained Wang Iing's mother in his army,and when WangLing's messenger arrived he placed her in a seat of honour,hoping to win her son over to his side.Wang Ling's mother secretly saw the messenger off and,weeping,said,"Tell my son to serve his prince well.The king of Han is a good man and Ling must not break faith with him because of me.Let my death speed you on your way!”With that she drew a sword and killed herself. Xiang Yu in his fury threw her corpse into the cauldron.So Wang Ling helped Liu Bang win the empire.But because he was friendly with Yong Chi,whom the emperor hated,and had not at first intended to follow the emperor,he was not enfeoffed as marquis of Anguo till late.
-
-After he had served as senior prime minister for two years,Emperor Hui died and Emperess Lü consulted Wang Ling as to whether she might make the members of her family princes.His an- swer was “No”.But when she consulted Chen Ping,he approved. Then the empress in her displeasure transferred Wang Ling to the post of senior tutor,which was in fact a sinecure.Angrily resigning on grounds of illness,he stayed at home,absenting himself from the court, dying seven years later.
-
-After Wang Ling's dismissal,Empress Lü made Chen Ping the senior prime minister and Shen Yiji,marquis of Piyang,the junior prime minister.Shen Yiji did not work in the ministry but in the palace.
-
-Shen Yiji,too,was a native of Pei. When Liu Bang was defeated west of Pengcheng and the Chu army seized his father and wife as hostages, Shen Yiji served as steward to the empress.He later joined the army which defeated Xiang Yu and was made a marquis.The empress favoured him.So when he became prime minister and wotked in the palace,all officials had to go to him to get anything done.
-
-Lü Xu still bore a grudge against Chen Ping for advising the first Emperor to arrest Fan Kuai.She spread rumours about him saying, “Chen Ping does none of the wotk of a minister but spends his days drinking and playing about with women." Chen Ping,knowing this,only indulged himself more each day. And when the empress heard this she was secretly pleased.One day in LüXu's presence she told him,"The proverb says,Ignore the tattle of children and women.'I judge you by the way you behave to me.Never mind my sister's slander.”
-
-Chen Ping had pretended to agree when the empress made mem- bers of her family princes,but after her death it was he who drew up the plan whereby he and Grand Marshal Zhou Bo had all the Lü family killed and set Emperor Wen on the throne.Then Shen Yiji was dis- missed from office.
-
-After Emperor Wen came to the throne he considered that Grand Marshal Zhou Bo had rendered him the greatest service by command- ing the troops which killed the princes of the Lü clan.Chen Ping,to defer to Zhou Bo,resigned on the pretext of illness.The emperor, who was newly enthroned,questioned him about this in surprise. "In the time of the First Emperor,"said Chen Ping,“Zhou Bo did less than I.But in overthrowing the Lü family he did more.I would like to resign my position as senior prime minister in favour of him." Then Emperor Wen gave Zhou Bo the highest post of senior prime minister while Chen Ping ranked second as junior prime minister. Chen Ping also received a thousand catties of gold and had his fief increased by three thousand households.
-
-Some time later,when the emperor was more acquainted with affairs of state,he asked his senior prime minister at court,"How many law-suits are settled in the empire every year?” Zhou Bo answered ruefully,“I do not know.” "What is the empire's annual revenue and expenditure in terms of money and grain?” Again Zhou Bo had to adimt,"I do not know."He was sweating with embarrassment at being unable to answer. When the emperor put the same question to the junior prime minister,Chen Ping replied,"There are officers in charge of such matters.” "What officers?"asked the emperor. "If you want to know about law-suits,sir,ask the chief justice," said Chen Ping."If you want to know about money and grain,ask the minister of revenue.” "If there are officers in charge of these matters,what is your function?"asked the emperor."Pardon my presumption,"answered Chen Ping humbly."Your Majesty,overestimating my mean capacity,has honoured me with the post of prime minister.The prime minister’s duty is to help his sover- eign to regulate the principles of yin and yang,to carry out projects according to the four seasons,to nurture all things,to control foreign tribes and the nobles,to rule the people with kindness and see that the ministers and officers perform their duties well.” The emperor approved of this answer.Zhou Bo,however,was thoroughly morified and once they were outside he reproached Chen Ping,saying,“You never taught me how to answer such questions.” Chen Ping retorted with a laugh,"You should know what your post entails.If His Majesty asked you the number of thieves and rob- bers in the capital,would you try to answer that too?” Then Zhou Bo realized how much inferior he was to Chen Ping. Later he asked to resign on the grounds ofillness and Chen Ping be- came the sole prime minister
-
-In the second year of Emperor Wen,Chen Ping died and was given the posthumous title of Marquis Xian.He was succeeded by his son Mai,Marquis Gong,who died two years later.Mai was succeeded by his son Hui,Marquis Jian,who died twenty-three years later.Hui was succeeded by his son He;but twenty-three years later He was ex- ecuted on the charge of abducting another man's wife,and the fief was abolished.
-
-Chen Ping once said,“All my crafty devices run counter to the Taoist Way.Once my descendants decline,they will never rise again, because of all the evil I have done."His great-grandson Chen Zhang,it is true,became related by marriage to the noble house of Wei and asked to have the old fief restored,but this was never done.
-
-The Grand Historian comments:Prime Minister Chen Ping in his youth was attracted to the teachings of the Yellow Emperor and Lao Zi.While carving up the sacrificial meat he already had high ambitions. He vacillated between Chu and Wei before finally joining the First Emperor of Han,and he devised many ingenious plans to overcome difficulties and to save the state from danger.In the time of Empress Lü,although troubles beset him,he not only succeeded in extricating himself but restored the dynasty so that he died a dignitary and was known to posterity as an able minister.Truly,“a good beginning makes a good ending."None but a wise man could have accomplished this.</div>
-        </section>
+      <!-- 语言选择控制器 -->
+      <div class="language-selector">
+        <div class="selector-title">选择显示语言：</div>
+        <div class="selector-options">
+          <label class="lang-option">
+            <input type="checkbox" id="show-wenyan" checked>
+            <span class="checkmark"></span>
+            文言文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-baihua" checked>
+            <span class="checkmark"></span>
+            白话文
+          </label>
+          <label class="lang-option">
+            <input type="checkbox" id="show-english" checked>
+            <span class="checkmark"></span>
+            英文
+          </label>
+        </div>
+        <div class="selector-actions">
+          <button id="select-all" class="selector-btn">全选</button>
+          <button id="select-none" class="selector-btn">全不选</button>
+        </div>
+      </div>
+
+      <main class="parallel-table">
+        
+          <!-- 使用表格显示语义对齐的段落组 -->
+          <table class="parallel-content">
+            <thead>
+              <tr>
+                <th class="col-wenyan" data-lang="wenyan">文言文</th>
+                <th class="col-baihua" data-lang="baihua">现代汉语</th>
+                <th class="col-english" data-lang="english">English</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">陈丞相平者，阳武户牖乡人也。少时家贫，好读书，有田三十亩，独与兄伯居。伯常耕田，纵平使游学。平为人长大美色。人或谓陈平曰：“贫何食而肥若是?”其嫂嫉平之不视家生产,曰：“亦食糠聂耳。有叔如此，不如无有。”伯闻之，逐其妇而弃之。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">陈丞相名平，是阳武县户牖乡人。小时候家境贫困，喜欢读书。家里有田地三十亩，陈平与他大哥一同生活。他大哥在家以耕田为业，而让陈平随意出外游学。陈平身材高大，相貌堂堂。有人开玩笑问他：“你们家里这么穷，你是吃些什么长得这么胖?”他的嫂子早就恨他不在家里劳动，于是就顺口说：“也不过是吃糠咽菜罢了。有这样的小叔子，还不如没有的好。”陈平的大哥听到这话，就把他的妻子赶出家去，休掉了。</td>
+                <td class="english-cell col-english" data-lang="english">Prime Minister Chen Ping was a citizen of Huyouin Yangwu county. In his boyhood his family was poor but he loved reading.He lived with his elder brother,who tilled their thirty mu of land,letting him leave home to study. Chen Ping was tall and handsome.Once someone asked,“What do you eat to grow so plump,poor as you are?” His sister-in-law,who disliked him because he did nothing to help on the farm,replied,"He eats both the grain and the busks.Such a brother is worse than none!” When her husband heard this he drove her away and divorced her.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">及平长，可娶妻，富人莫肯与者，贫者平亦耻之。久之，户牖富人有张负，张负女孙五嫁而夫辄死,人莫敢娶。平欲得之。邑中有丧，平贫，侍丧，以先往后罢为助。张负既见之丧所，独视伟平，平亦以故后去。负随平至其家，家乃负郭穷巷，以弊席为门，然门外多有长者车辙。张负归，谓其子仲曰:“吾欲以女孙予陈平。”张仲曰：“平贫不事事,一县中尽笑其所为，独奈何予女乎?”负曰：“人固有好美如陈平而长贫贱者乎?”卒与女。为平贫，乃假贷币以聘，予酒肉之资以内妇。负诫其孙曰：“毋以贫故，事人不谨。事兄伯如事父，事嫂如母。”平既娶张氏女，赍用益饶，游道日广。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">等到陈平长大成人，可以娶妻子了，富裕人家没有人肯把闺女嫁给他；而娶穷人家的闺女，陈平又不愿意，就这样一直过了很久。后来户牖乡有个富户名叫张负，张负的孙女曾五次嫁人，而五个丈夫都死了，于是再没有人敢娶她了。陈平听到这个消息，很想得到她。正巧这时候户牖乡里有人办丧事，因为陈平家穷，他就去给丧家帮忙，他总是去得最早，撤得最晚，以求多得一点生活补助。张负在办丧事的人家见到了陈平，对陈平特别看重，而陈平也因此故意走得最晚。有一天张负跟着陈平到他家里看了看，原来他家住在一条靠近城墙的穷巷子里，门是用一张破草席做的，然而他家门口却有不少有身份的人的车子印。张负回到家对他的儿子张仲说：“我想把孙女嫁给陈平。”张仲说：“陈平家里穷而且又什么事都不干，全县的人都耻笑他的所作所为，为什么偏偏把我们的女儿嫁给他呢?”张负说：“像陈平那样相貌出众的人，有贫穷一辈子的吗?”最后还是坚持着把孙女嫁给了他。因为陈平家穷，张负就借钱给他让他备办聘礼，给他办酒席的钱让他举办婚礼。张负还特别告诫她的孙女说：“不要因为人家穷，就对人家不礼貌。对待大哥要像对待父亲一样，对待大嫂要像对待母亲一样。”而陈平自从娶了张家的闺女以后，家里的生活日用比从前富裕了，因此他的交游也就越来越广泛了。</td>
+                <td class="english-cell col-english" data-lang="english">When Chen Ping was old enough to take a wife,no rich family would give him a daughter and he scorned to marry a poor girl.There was a wealthy old woman in Huyou,Dame Zhang,whose grand- daughter had been betrothed five times but all of her betrotheds had died,so that no one dared marry her.Chen Ping,however,wanted her as his wife.Whenever there was a funeral in the town,Chen Ping,being poor,would hire out his services,going early and leaving late in the hope ofgetting better payment Atone funeral Dame Zhang was struck by him and,late as it was when he left,she followed him to his home. She found he lived in a poor lane at the foot of the city wall with only some worn-out matting as a door,yet with many wheel marks outside made by the carriages of prominent men. Upon her return home,Dame Zhang told her son Zhong,"I mean to marry my grand-daughter to Chen Ping." "That pauper who does nothing for a living!"protested her son. "He is the laughing-stock of the whole county.Why give him my daughter?” But Dame Zhang said,“A fine-looking man like Chen Ping will not always be poor."She married her grand-daughter to him,and since Chen Ping was poor she lent him money for the betrothal gifts as well as providing wine and meat at the wedding.Moreover she warned her grand-daughter,"Don't be disrespectful to him because he is poor. You must wait on his elder brother as if he were your father and on his sister-in-law as if she were your mother."After marrying this daughter of the Zhang family,Chen Ping be- come better off and acquired more connections.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">里中社,平为宰,分肉甚均。父老曰：“善，陈孺子之为宰!”平曰：“嗟乎，使平得宰天下，亦如是肉矣!”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">陈平所在的里巷每当社日祭完土地神的时候，总是由陈平来给大家分配祭肉，他分得很公平。老人们都夸他说：“好!陈家这小子分祭肉分得公平。”陈平感慨地说：“唉!有朝一日让我主持分割天下，我也能像今天分配祭肉这样的公平!”</td>
+                <td class="english-cell col-english" data-lang="english">He officiated at the local sacrifices and made a fair division of the sacrificial meat. All the elders said,"How well young Chen takes charge!" "Ah!"replied Chen Ping."Put me in charge of the government and I should do equally well.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">陈涉起而王陈,使周市略定魏地,立魏咎为魏王,与秦军相攻于临济。陈平固已前谢其兄伯，从少年往事魏王咎于临济。魏王以为太仆。说魏王不听，人或谗之，陈平亡去。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">陈涉起兵到陈郡称王后，派周市北入魏地，拥立魏咎做了魏王，并与秦朝军队会战于临济。陈平早些时候便已辞别了他的哥哥与一批年轻人去临济投奔了魏王，魏王让陈平给他做太仆。这期间陈平曾给魏王出过许多主意，魏王不听，再加上有人说陈平的坏话，于是陈平就离开了他们。</td>
+                <td class="english-cell col-english" data-lang="english">When Chen She rose in revolt and became king of Chen,he sent Zhou She to conquer Wei (403B.C.-225B.C.),set up Wei Jiu as king there,and fought the Qin troops at Linji.Chen Ping,who had already left his brother,went with some other young men to join the king of Wei at Linji.He was appointed master of the carriages,but his advice to the king was not accepted;so when someone slandered him he went away.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">久之，项羽略地至河上,陈平往归之，从入破秦，赐平爵卿。项羽之东王彭城也,汉王还定三秦而东,殷王反楚。项羽乃以平为信武君,将魏王咎客在楚者以往，击降殷王而还。项王使项悍拜平为都尉，赐金二十溢。居无何，汉王攻下殷。项王怒，将诛定殷者将吏。陈平惧诛，乃封其金与印，使使归项王，而平身间行杖剑亡。渡河,船人见其美丈夫独行，疑其亡将，要中当有金玉宝器,目之，欲杀平。平恐，乃解衣裸而佐刺船。船人知其无有，乃止。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">过了好长一段时间，项羽率军拓地来到了黄河边上，陈平就又去投奔了项羽。这以后陈平就跟着项羽一直打败了秦朝，被项羽封了个卿一级的爵位。当项羽自称西楚霸王东归彭城后，被封到汉中去的刘邦又趁机杀回来夺取了关中，并进而率兵东下，殷王司马卬也背叛了项羽。于是项羽就封陈平为信武君，让他率领着魏王咎留在彭城的旧部前去讨伐，陈平收服了司马印，胜利而回。项羽大喜，派项悍前去拜陈平为都尉，赏给他黄金二十镒。没过多久，殷王又被刘邦降服。项王大怒，将要杀掉上次去平殷地的将官。陈平害怕被杀，于是就把项羽封赏自己的黄金和印信包好，派人送还了项羽，而自己只身一人提着宝剑从小路逃走了。过黄河的时候，船夫见他这样一个魁梧的美男子单人行走，怀疑他是个开小差的将军，估计他一定带有金珠宝器，因而眼睛盯着，想杀他。陈平很害怕，便故意地脱掉衣服，光着膀子帮着他划船。船夫知道他身上没有什么东西，这才没有伤害他。</td>
+                <td class="english-cell col-english" data-lang="english">Later,when Xiang Yu advanced to the Yellow River,Chen Ping joined him and accompanied him to Qin,where he was made a minister. Xiang Yu went east to make Pengcheng his capital,while Liu Bang turned back to conquer the land of Qin and advanced east,and the king of Yin revolted against Chu.Then Xiang Yu made Chen Ping the lord of Xinwu and sent him with the king of Wei's troops in Chu to attack the king of Yin,who surrendered. Upon Chen Ping's return,Xiang Yu sent Xiang Han to appoint him a chief commander and present him with twenty yiof gold.Almost at once,however,Liu Bang conquered Yin,and Xiang Yu in his rage decided to punish the officers in charge there.Chen Ping,afraid he would be executed,returned his gold and seal through a messenger to Xiang Yu and armed only with a sword fled alone by secret ways. When he was crossing the river,the boatman suspected that this fine-looking man travelling alone must be some run-away officer carrying gold,jade or other treasures.There was murder in the ferryman's eyes.Chen Ping stripped off his clothes in alarm and helped to punt the boat.The boatman saw that he had nothing,and gave up his plan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平遂至修武降汉，因魏无知求见汉王，汉王召入。是时万石君奋为汉王中涓，受平谒，入见平。平等七人俱进，赐食。王曰：“罢，就舍矣。”平曰：“臣为事来，所言不可以过今日。”于是汉王与语而说之，问曰：“子之居楚何官?”曰：“为都尉。”是日乃拜平为都尉，使为参乘，典护军。诸将尽谨,曰：“大王一日得楚之亡卒，未知其高下，而即与同载，反使监护长者!"汉王闻之，愈益幸平。遂与东伐项王，至彭城，为楚所败。引而还，收散兵至荥阳，以平为亚将，属于韩王信，军广武。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">陈平逃到了修武县，请求魏无知把他引见给刘邦，刘邦叫他进去。这时候万石君石奋正做刘邦的侍从，他接过了陈平的名片，让陈平进去。陈平等七个人一同受到了刘邦的接见，并被招待吃了饭。刘邦说：“吃完饭，大家都到客舍去休息吧。”陈平说：“我是为了一件急事才来的，我的事不能过今天。”于是刘邦立即同他谈了一回，谈得很高兴。刘邦问他：“您在项羽那里身居何职?”陈平说：“做都尉。”于是刘邦也立即任命陈平为都尉，让他陪着自己同乘一辆车，负责协调监督军队。部将们一齐大哗，都说：“大王忽然得到了项羽的一个逃兵，还不知道他的本事大小，马上就和他同乘一辆车，还要让他来监督我们这些老将!”刘邦听说后反而更加亲近和重用陈平。于是陈平就跟着刘邦一起东进，攻打项羽，结果在彭城被项羽打得大败。刘邦收集残兵败将退到了荥阳，任命陈平为亚将，让他跟着韩王信驻扎在广武。</td>
+                <td class="english-cell col-english" data-lang="english">Chen Ping went to Xiuwu and surrendered to Liu Bang,gaining an audience through the good offices of Wei Wuzhi.Liu Bang's chamber- lain at this time was Shi Fen,known as the Lord of Ten Thousand Piculs,who interviewed Chen Ping and introduced him. After Chen Ping and six others had been received and given food, Liu Bang dismissed them saying,"All right,go back now to your hostel.” "I have come on business,"objected Chen Ping."What I have to say cannot wait until tomorrow." Liu Bang talked with him and was favourably impressed. "What post did you have in Chu?"he asked. Chen Ping answered,“I was an army officer.” That same day Liu Bang appointed him an army officer and his attendant in the royal carriage,making him the officer in charge of army discipline.The other officers were dumbfounded and complained, "The king has just got hold of this deserter from Chu and,with no idea of his ability,he is letting him share the royal carriage and control us." When Liu Bang heard this,he showed even greater favour to Chen Ping.The men of Han(206B.C.-8A.D.)marched east to attack Xiang Yu but suffered a reverse at Pengcheng and withdrew,regrouping their scattered forces at Xingyang.Chen Ping,made lieutenant general under King Xin of Han(403B.C.-230B.C.),encamped his troops at Guangwu.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">绛侯、灌婴等咸谗陈平曰:“平虽美丈夫，如冠玉耳,其中未必有也。臣闻平居家时，盗其嫂;事魏不容，亡归楚；归楚不中，又亡归汉。今日大王尊官之,令护军。臣闻平受诸将金，金多者得善处，金少者得恶处。平，反覆乱臣也，愿王察之。”汉王疑之，召让魏无知。无知曰：“臣所言者，能也；陛下所问者，行也。今有尾生、孝己之行而无益处于胜负之数,陛下何暇用之乎?楚汉相距，臣进奇谋之士，顾其计诚足以利国家不耳。且盗嫂受金又何足疑乎?”汉王召让平曰：“先生事魏不中，遂事楚而去，今又从吾游，信者固多心乎四?”平曰：“臣事魏王，魏王不能用臣说，故去事项王。项王不能信人，其所任爱，非诸项即妻之昆弟,虽有奇士不能用，平乃去楚。闻汉王之能用人，故归大王。臣裸身来，不受金无以为资。诚臣计画有可采者，愿大王用之；使无可用者，金具在，请封输官，得请骸骨。”汉王乃谢，厚赐，拜为护军中尉，尽护诸将。诸将乃不敢复言。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">这时绛侯、灌婴等人都说陈平的坏话，他们对刘邦说：“陈平虽然是个美男子，但这就像帽子上镶的那块玉一样，他的肚子里不一定有什么真货色。我们还听说陈平在家时，和他的嫂嫂通奸；后来到魏王那里干事，人家不要他，他就又投奔了项羽；后来在项羽那里也不行，这才又跑来投奔大王。现在大王封他大官，让他监护军队。可是我们又听说他常常接受将军们的贿赂，谁给他送钱送得多谁就得到好处；谁送得少谁就受到刁难。陈平是个反复无常的家伙，希望大王好好了解观察一下。”刘邦听罢心里有怀疑，于是就把魏无知找来，责备他。魏无知说：“当初我向您推荐他，是说他有本事；现在您要责问的，是他的品行。假如陈平空有尾生、孝已那样的品行，而对于我们战场上的胜败丝毫没有好处，对于这种人您有闲工夫用他么?现在是楚、汉相抗，我推荐的是有奇谋的人，现在的关键是要看他的计谋是不是对国家有利。至于说和嫂嫂通奸，接受一点贿赂，这又有什么值得大惊小怪呢?”刘邦又把陈平找来责问说：“您过去替魏王办事，办得不好，就又去投奔了项羽，现在您又来找我。一个讲信义的人，能够像你这样三心二意吗?”陈平说：“我过去替魏王办事，魏王不采用我的意见，所以我去投奔了项王。项王也不能信用人，他所信用的不是项家的子弟就是他妻子那边的亲戚，别的人哪怕有奇才他也不能用，所以我才离开了他。我听说您能够知人善任，所以才来投奔您。我是光身一个人来的，如果不接受一些金钱，我就连一点活动的资本都没有。如果我的主意有可用的，那就请您采用它；如果没有可用的，我所接受的钱财还都在那里，请您没收归公，我自己请求辞职还乡。”刘邦一听赶紧赔礼道歉，又厚厚地赏赐了他，同时正式地封拜他为护军中尉，让他进一步监督协调所有的将领。这一来将军们才不敢再说三道四了。</td>
+                <td class="english-cell col-english" data-lang="english">Then Zhou Bo,Guan Ying and others spoke slightingly of him. “Chen Ping is a fine-looking fellow,"they said,"but jade ornaments on a cap do not mean there is anything inside the head.We hear that at home he had an affair with his sister-in-law;not doing well in Wei he fled to Xiang Yu;but failing to please him,he fled to us.Now Your Majesty has honoured and trusted him,making him the officerin charge of army discipline,yet hear that he accepts bribes from the officers. Those who give the most get good jobs,those who give little get infe- rior posts.He is obviously a dangerous turncoat.We hope you will look into this,sir." Liu Bang,his suspicions aroused,summoned Wei Wuzhi and re- proached him for recommending Chen Ping. "I recommended him for his ability,"replied Wei Wuzhi. "But Your Majesty is questioning his private conduct.If you had men with the virtue of Wei Sheng and Xiao Ji who could not help to win the war,what use would they be to you,sir?Now that Chu and Han(206B.C.-8A.D.)are fighting it out,all I consider when I recom- mend a brilliant strategist is whether his plans will benefit out state or not.What does it matter if he had an affair with his sister-in-law or accepted bribes?” Then Liu Bang sent for Chen Ping and reproached him saying, "You failed to do well in the service of Wei,then left the service of Chu,and now you have come to me.Is it right to chop and change so often?”"The king of Wei would not take my advice:that is why I left him to serve Xiang Yu,"said Chen Ping."But Xiang Yu is incapable of trusting others and employs or favours only his own clan or his wives' relatives,and is unable to make use of men of talent.That is why I left him.I came here because Your Majesty had the reputation of knowing how to use men.I arrived empty-handed and should have had nothing to live on had I not accepted some money.If my plans are any good, you can adopt them.If not,I still have the money and shall give it to the treasury,and then beg leave to go home.” Liu Bang apologized and loaded him with gifts,appointing him provost marshal to supervise the actions of all his generals,who after that dared say no more.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其后，楚急攻，绝汉甬道，围汉王于荥阳城。久之，汉王患之，请割荥阳以西以和。项王不听。汉王谓陈平曰：“天下纷纷，何时定乎?”陈平曰：“项王为人，恭敬爱人,士之廉节好礼者多归之。至于行功爵邑，重之,士亦以此不附。今大王慢而少礼，士廉节者不来；然大王能饶人以爵邑，士之顽钝嗜利无耻者亦多归汉。诚各去其两短，袭其两长，天下指麾则定矣。然大王恣侮人，不能得廉节之士，顾楚有可乱者。彼项王骨鲠之臣亚父、钟离眛、龙且、周殷之属,不过数人耳。大王诚能出捐数万斤金，行反间，间其君臣，以疑其心，项王为人意忌信谗,必内相诛。汉因举兵而攻之，破楚必矣。”汉王以为然，乃出黄金四万斤，与陈平，恣所为，不问其出入。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来，楚军加紧进攻汉军，切断了汉军运输粮饷的通道，把刘邦包围在荥阳城中。这样持续了很长一段时间，刘邦很着急，于是请求划荥阳为界，荥阳以东属楚，荥阳以西属汉，两下讲和。项羽不答应。刘邦对陈平说：“天下这么乱哄哄的，什么时候才能安定呢?”陈平说，“项羽的秉性是待人慈和而又恭敬，所以一些有棱角、有气节的人，都去投奔他。可是等到要论功行赏的时候，他又特别吝啬，因此很多人又不愿意跟着他。现在大王您尽管对人傲慢，缺少礼貌，一些有棱角有气节的人不来；但是您却能够慷慨地把爵位封土分给人们，因此那些不讲礼节只顾贪图利益的人们又都会跑到您这里来。假如你们两位谁能够去掉自己短处，吸收对方的长处，那么他马上就可夺得天下，就可以太平无事了。现在您常常任意侮辱人，虽然不易得到廉正守节的好汉，但是现在楚军内部也有容易被我们挑起矛盾的地方。忠于项羽，给项羽起主心骨作用的大臣，也不过就是亚父范增和钟离眛、龙且、周殷等几个人，您如果能豁出去用几万斤金，去挑拨离间项羽君臣之间的关系，让他们互相猜忌，项羽本来就为人多疑，好听谗言，这样他们很快地就会自相残杀起来。到那时您再趁机出兵从外面攻他，这就肯定可以打败楚军了。”刘邦觉得很好，便拿出黄金四万斤，让陈平任意使用，从不过问他是怎么开销的。</td>
+                <td class="english-cell col-english" data-lang="english">Later the Chu army launched a sudden attack,cut off Han's grain supply and besieged Liu Bang at Xingyang tillin his alarm he sued for peace,offering Xiang Yu all the land west of Xingyang.But Xiang Yu refused his terms. The king said to Chen Ping,"The land is in utter confusion—shall we never have peace?” "King Xiang Yu is courteous and considerate,"answered Chen Ping."That is why men of honour who value ceremony flock to him. But when it comes to rewarding distinguished service with ranks and fiefs,he is tight-fisted,and for this reason no one stays with him long. You,sir,are so insulting and rude that men of honour do not come to you,while your generosity with fiefs make shameless fools who are out for profit flock to you.Could you get rid of both faults and adopt both virtues,you might pacify the empire as easily as raising a finger. But your overbearing ways will never win over men of honour.Of course,Chu is vulnerable too.Xiang Yu has only a few officers as staunch as Fan Zeng,Zhongli Mo,LongJu and Zhou Yin.If you,sir, would spend a few tens of thousands of pieces of gold to spread rumours and sow dissension between him and these men,he will doubt their loyalty.What with Xiang Yu's suspicious nature and his proneness to listen to slander,they are bound to be set at odds.Then if you raise an army to attack them,you will undoubtedly triumph.” Liu Bang,approving this plan,gave him forty thousand pieces of gold to use at his discretion,not asking for any account.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">陈平既多以金纵反间于楚军，宣言诸将钟离眛等为项王将，功多矣，然而终不得裂地而王，欲与汉为一，以灭项氏而分王其地。项羽果意不信钟离眛等。项王既疑之，使使至汉。汉王为太牢具,举进。见楚使，即详惊曰:“吾以为亚父使，乃项王使!”复持去，更以恶草具进楚使。楚使归，具以报项王。项王果大疑亚父。亚父欲急攻下荥阳城，项王不信，不肯听。亚父闻项王疑之，乃怒曰：“天下事大定矣，君王自为之!愿请骸骨归!”归未至彭城，疽发背而死。陈平乃夜出女子二千人荥阳城东门，楚因击之，陈平乃与汉王从城西门夜出，去。遂入关，收散兵复东。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">陈平用了很多钱在楚军中进行离间活动，放出谣言说钟离眛等人作为项王的战将，功劳很多，然而到头来却不能够分地为王，因此他们想同汉王联合，消灭项氏，从而分割楚国的土地，各自称王。项羽一听果然不信任钟离眛等人了。在此以后，项羽曾有一次派使者到刘邦那里去，当时刘邦安排了猪、羊、牛三牲齐备的筵席来招待他们，等到摆开桌子上莱时，他们假意地好像是才发现来人是项羽派来的，就假装惊讶说：“我们还以为是亚父范增派来的人呢，原来是项王派来的!”于是就把好菜端了回去，另端来一些粗劣的饭菜给项羽的使者吃。使者回去后，把所见所闻都报告了项羽。项羽果然开始怀疑范增。按范增的主意是希望赶快攻下荥阳城，但是项羽不信任他，根本不听他的。等范增知道项羽怀疑自己时，生气地说：“整个国家的形势基本定局了，以后的事情您自己好好看着办吧!我请求告老还乡!”于是范增东归，还没有走到彭城，因为背上的毒疮突然迸发而死。这个时候陈平故意在夜里派两千女子出荣阳东门诱敌，楚军不知虚实，集中兵力往攻，陈平与刘邦等趁机开荥阳西门逃走了。刘邦、陈平等回到关中，招集起了逃散的队伍，很快地又回到荥阳。</td>
+                <td class="english-cell col-english" data-lang="english">Chen Ping used most of this gold to sow dissension in the Chu army.Word was spread that generals like Zhongli Mo,who had served Xiang Yu well yet never been granted fiefs or made princes,meant to join Han to destroy Xiang Yuand divide uphis land.Then,sure enough, Xiang Yu began to distrust these men. Xiang Yu,his misgivings already aroused,sent an envoy to Liu Bang,who prepared a great feast for him.But when the man entered, Liu Bang made a show of surprise."I thought you were from the Patriarch Fan Zeng,”he said."But I see you come from Xiang Yu." The feast was removed and poorer dishes brought in. When the envoy went back and reported this,Xiang Yugrew very suspicious of Fan Zeng and,not trusting him,would not allow him to attack the city of Xingyang. As soon as he knew that Xiang Yu doubted him,Fan Zeng told him angrily,"Now that the fate of the empire is virtually settled you can manage for yourself,sir.Please allow me to go home."Sohe left, but an abscess broke out on his back and he died before reaching Pengcheng. Then Chen Ping sent two thousand women out by night through the east gate of Xingyang,and while the Chu army attacked them he and Liu Bang slipped out by the west gate.Re-entering the Pass,they collected their scattered troops and marched east again.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其明年，淮阴侯破齐，自立为齐王，使使言之汉王。汉王大怒而骂，陈平蹑汉王。汉王亦悟，乃厚遇齐使，使张子房卒立信为齐王。封平以户牖乡。用其奇计策，卒灭楚。常以护军中尉从定燕王臧荼。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">第二年，韩信灭掉齐国后，先自己当了齐王，而后才派使者来向刘邦报告。刘邦一听就气得大骂起来，这时陈平暗踩刘邦的脚，刘邦也立刻省悟了，于是便好好地招待了韩信的使者，并立刻派张良前去封韩信做齐王，同时把户牖乡给了陈平作封地。刘邦采用了陈平的不少奇谋妙策，终于消灭了项羽。后来陈平还曾以护军中尉的身份跟着刘邦平定过燕王臧荼的叛乱。</td>
+                <td class="english-cell col-english" data-lang="english">The following year Han Xin conqueredQi,made himself the king there and sent an envoy to announce this to Liu Bang.Liu Bang flew into a passion and started swearing,till Chen Ping trod on his foot and he took the hint.Having treated the envoy handsomely,he sent Zhang Liang to confirm Han Xin's new title.He gave Chen Ping the fief of Huyou,and by using his strategies finally defeated Chu.Chen Ping later accompanied the emperor as provost marshal to crush the revolt of Zang Tu,king of Yan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">汉六年，人有上书告楚王韩信反。高帝问诸将，诸将曰：“亟发兵坑竖子耳。”高帝默然。问陈平，平固辞谢，曰：“诸将云何?”上具告之。陈平曰：“人之上书言信反，有知之者乎?”曰：“未有。”曰：“信知之乎?”曰：“不知。”陈平曰：“陛下精兵孰与楚?”上曰：“不能过。”平曰：“陛下将用兵有能过韩信者乎?”上曰：“莫及也。”平曰：“今兵不如楚精，而将不能及，而举兵攻之，是趣之战也,窃为陛下危之。”上曰：“为之奈何?”平曰：“古者天子巡狩,会诸侯。南方有云梦，陛下弟出伪游云梦，会诸侯于陈。陈，楚之西界，信闻天子以好出游，其势必无事而郊迎谒。谒，而陛下因禽之，此特一力士之事耳。”高帝以为然，乃发使告诸侯会陈，“吾将南游云梦”。上因随以行。行未至陈，楚王信果郊迎道中。高帝豫具武士,见信至，即执缚之，载后车。信呼曰：“天下已定，我固当烹!”高帝顾谓信曰：“若毋声!而反，明矣!”武士反接之。遂会诸侯于陈，尽定楚地。还至雒阳，赦信以为淮阴侯,而与功臣剖符定封。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">汉高祖六年，有人写信告发楚王韩信造反。刘邦问将军们该怎么办，将军们异口同声地说：“立即发兵活埋了这小子!”刘邦沉默不语，又问陈平。陈平推辞了半天，说：“将军们怎么说?”刘邦把将军们的意思说了一遍。陈平说：“有人写信告韩信造反，这件事有别人知道吗?”刘邦说：“没有。”陈平又问：“韩信知道有人告他吗?”刘邦说：“不知道。”陈平又问：“您的军队同韩信的军队比较谁的战斗力更强?”刘邦说：“我的军队比不上。”陈平又问：“您的将领们指挥打仗的才能有超过韩信的吗?”刘邦说：“没有。”陈平说：“您的兵不如韩信的兵精，您的将又比不上韩信，您还要出兵去打他，这不是逼着他同我们决战吗，我替您感到危险!”刘邦说：“那怎么办呢?”陈平说：“古时候有天子外出巡视在外面会见诸侯的制度。现在南方有个云梦泽，您就假说要到云梦地区视察，并在陈郡同各地的诸侯们会见。陈郡就在楚国西界。韩信听说您这是一次和平愉快的出游，他一定会毫无防范地到郊外来迎接您，到那时，您就趁势逮捕他，这么做只要一个武士就够了!”刘邦觉得有理，便派人通知各地的诸侯们到陈郡相会，“我要到云梦地区巡游”。于是刘邦就带着陈平出发了。还没有到达陈郡，楚王韩信果然到郊外路旁来迎接了。这时刘邦早已经埋伏下了武士，见韩信一到，便立即把他捆绑起来，放在了刘邦后面的车子上。韩信大声喊到：“天下已经安定，我是应该被你们所杀了!”刘邦回头对韩信说：“你不用喊叫，你要造反的事情已经很清楚了!”武士们把韩信的双手反绑起来。刘邦在陈郡会见了各地的诸侯，并把楚地全部稳定住。待至回到洛阳，刘邦又把韩信放了，把他降为淮阴侯，而与其他功臣们剖符立誓确定了他们各自的封爵。</td>
+                <td class="english-cell col-english" data-lang="english">In the sixth year of Han,someone submitted a letter reporting that Han Xin was plotting revolt.The emperor consulted his generals,all of whom advised,"Send out a force at once to destroy the upstart." The emperor was silent for a time,then summoned Chen Ping to ask for his opinion.Declining to give it,Chen Ping inquired,"What do your generals say?"When told he asked,"Does anyone know that this letter has been sent?” "No,"said the emperor. “Does Han Xin know?” "Not yet." "How do your troops compare with his?" “They are no better.” “Have you any commanders who can out-general him?” "No,they are no match for him." “So neither your troops nor your generals are as good as his.If you lead an army against him you will be forcing his hand.That strikes me as risky.” “Then what shallI do?”“The emperors of old used to make imperial tours of inspection and summon all the nobles to meet them.You can give out that you are going south to Yunmeng Marsh to meet the nobles of different states at Chen on the western boundary of Chu.When Han Xin hears that you are on a goodwill trip,he will feel secure and come out to pay homage.Then you can have him seized.All you need for that is a strong man." The emperor,approving,sent envoys to summon different nobles to Chen on his way south to Yunmeng.He set out with a retinue and was met by Han Xin on the road to Chen.The emperor had guards ready.They arrested Han Xin and bound him to a rear carriage. "Now the empire is won,"cried Han Xin,"I suppose I deserve to be thrown into the cauldron!” "Hold your tongue!”shouted the emperor,looking back."Your treason is known.” Then the guards trussed Han Xin up and took him away,while the emperor went on to meet other nobles at Chen and pacified the land of Chu.Returning to Luoyang,he pardoned Han Xin and made him marquis of Huaiyin.This was when the emperor gave tallies of office and fiefs to his followers according to their merit.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">于是与平剖符，世世勿绝，为户牖侯。平辞曰：“此非臣之功也。”上曰：“吾用先生谋计,战胜克敌，非功而何?”平曰：“非魏无知臣安得进?”上曰：“若子可谓不背本矣。”乃复赏魏无知。其明年，以护军中尉从攻反者韩王信于代。卒至平城，为匈奴所围,七日不得食。高帝用陈平奇计，使单于阏氏，围以得开。高帝既出，其计秘，世莫得闻。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">刘邦与陈平剖符为信，封陈平为户牖侯，立誓让陈平世世代代相传不断。陈平推辞说：“这不是我的功劳!”刘邦说：“我是因为采用了你的计策，所以才克敌制胜，这不是你的功劳是什么呢?”陈平说：“当初如果没有魏无知的引荐，我怎么能够来到您的跟前呢?”刘邦说：“你可真称得上是一个不忘本的人了!”于是立即赏赐了魏无知。第二年，陈平以护军中尉的身份随刘邦到代国讨伐韩王信的叛乱，一直到了平城，结果遭到了匈奴军队的包围，一连七天没吃上饭。这时刘邦又采用了陈平的计谋，派人到单于的妻子那里进行了活动，包围才得以解除。刘邦这次是出来了，但究竟他们是用了什么计策，由于太秘密了，局外人无法知道。</td>
+                <td class="english-cell col-english" data-lang="english">A tally was given to Chen Ping with the promise that his title,mat- quis of Huyou,should be retained by his descendants. Chen Ping declined,saying,“I have done nothing to merit this.” "It was through using your plans that I defeated my enemy,"re- torted the emperor.“Isn't that your merit?” "But if not for Wei Wuzhi's recommendation,I could never have entered your service,"said Chen Ping."I am glad you don't forget the man to whom you owe your advancement,"replied the emperor and rewarded Wei Wuzhi too. The following year Chen Ping accompanied the emperor as pro- vost marshal to Dai to suppress the revolt of King Xin of Han.Sud- denly surrounded by the Huns at Pingcheng,they were cut off from supplies for seven days.Chen Ping suggested a ruse to the emperor who sent a message to the wife of the Hunnish khan so that the siege was raised and they escaped.What this ruse was is still a mystery.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">高帝南过曲逆,上其城，望见其屋室甚大，曰：“壮哉县!吾行天下，独见洛阳与是耳。”顾问御史曰:“曲逆户口几何?”对曰：“始秦时三万余户，间者兵数起，多亡匿，今见五千户。”于是乃诏御史，更以陈平为曲逆侯,尽食之，除前所食户牖。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">刘邦从平城脱险南归，路过曲逆县时，登上城楼远望，见到城里的房屋都很高大，不禁赞叹说：“多么雄伟的一座县城啊!这样的城邑，我走遍天下，只在洛阳和这里看到过。”他回头问御史说：“曲逆县的户口有多少?”御史答道：“当初秦朝的时候有三万多户，近年来由于不断的战争，许多人都逃走了，如今只有五千户。”于是刘邦马上让御史改封陈平为曲逆侯，全县的一切赋税都归陈平享用，撤销以前划给陈平的户牖乡。</td>
+                <td class="english-cell col-english" data-lang="english">The emperor,traveling south,ascended the city wall ofQuni and was impressed by the number of large buildings there.“What a mag- nificent town!"he exclaimed."In all my journeys through the empire I have seen no place but Luoyang to compare with this."He turned to his secretary and asked,“What is the population of Quni?” "Under Qin there were more than thirty thousand households," was the answer.“Since then,many citizens have fled or gone into hid- ing because ofall the fighting.There are now only five thousand house- holds.”The emperor ordered his secretary to appoint Chen Ping marquis of Quni with the whole district as his fief instead of Huyou.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">其后常以护军中尉从攻陈豨及黥布。凡六出奇计,辄益邑，凡六益封。奇计或颇秘，世莫能闻也。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">在此以后，陈平还曾经以护军中尉的身份跟随刘邦去平定过陈豨和黥布的叛乱。陈平一共给刘邦出了六次奇计，每次事成之后都能使他的封地有所增加。只是他的奇计有的太秘密了，人们没法儿知道。</td>
+                <td class="english-cell col-english" data-lang="english">In his capacity as provost marshal Chen Ping later accompanied the emperor on his expeditions against Chen Xiand Ying Bu.In all he suggested six ingenious ruses and his fief was six times enlarged.But these ruses were closely guarded secrets,not known to the world.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">高帝从破布军还，病创，徐行至长安。燕王卢绾反，上使樊哙以相国将兵攻之。既行，人有短恶哙者。高帝怒曰：“哙见吾病，乃冀我死也。”用陈平谋而召绛侯周勃受诏床下,曰：“陈平亟驰传载勃代哙将,平至军中即斩哙头!”二人既受诏，驰传未至军，行计之曰：“樊哙，帝之故人也，功多，且又乃吕后弟吕婴之夫,有亲且贵，帝以忿怒故，欲斩之，则恐后悔。宁囚而致上，上自诛之。”未至军，为坛，以节召樊哙。哙受诏，即反接载槛车，传诣长安，而令绛侯勃代将，将兵定燕反县。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">刘邦从打败黥布的前线回来，由于受了伤，只能慢慢地回到长安。这时，燕王卢绾造反了，刘邦派樊哙以相国的身份率兵前去讨伐。军队出发后，有人向刘邦说樊哙的坏话。刘邦一听大怒说：“樊哙见我生病，原来竟盼着我早死啊!"于是按照陈平的意见，把绛侯周勃叫到了床前，对他们二人说：“陈平你赶快乘传车送周勃前去代替樊哙领兵，而你到达樊哙军中后，立即斩他的人头回来报告!”陈平、周勃接受密令后乘着传车出发了。半道上两个人商量说：“樊哙，是皇上的老朋友，功劳很多，而且又是吕后的妹妹吕婴的丈夫，他既是皇亲，又是权贵，刚才皇上只不过是因为一时的愤怒，让我们去杀他，这件事恐怕他会后悔。因此我们宁可用囚车把他活着带回来交给皇上，让皇上自己杀他。”于是他们在快到樊哙兵营的地方搭起了台子，派人持符节把樊哙请了来。他们向樊哙宣读了刘邦的诏书后，立即捆起了他的双手，把他装上囚车，押回了长安。同时宣布让绛侯周勃代替樊哙统兵，前往平定燕国各县的叛乱。</td>
+                <td class="english-cell col-english" data-lang="english">The emperor,wounded while fighting against Ying Bu,travelled back by easy stages to Chang'an.Then King Lu Wan of Yan rebelled and the emperor sent the state chancellor Fan Kuai with an army to attack him.After Fan Kuai's departure,some men spoke ill of him to the emperor,who exclaimed in anger,"Fan Kuai knows I am ill and is hoping I will die!”On Chen Ping's advice he summoned Zhou Bo, marquis ofJiang,to his bedside and gave these orders:“Chen Ping will escort you at once by post carriage to take over Fan Kuai's command. When you reach the army Chen Ping will cut off Fan Kuai's head.” Having received these orders,the two men set off with all speed. But on the road they talked things over and said,"Fan Kuai is an old friend of the emperor and has many achievements to his credit.Besides, he is the husband of LüXu,younger sister to Emperess Lü.He is close to the throne and high in rank.In his rage the emperor has ordered his death,but he may regret it later,We had better arrest Fan Kuai and take him to court for the emperor to mete out the punishment himself."So before reaching the army they erected a dais and summoned Fan Kuai with the imperial credentials.Having announced the imperial command, they arrested Fan Kuai,put him in a cage on a cart and sent him to Chang'an while Zhou Bo took over the army and led it to subdue the insurgent districts of Yan.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">平行闻高帝崩，平恐吕太后及吕婆谗怒，乃驰传先去。逢使者诏平与灌婴屯于荥阳。平受诏，立复驰至宫，哭甚哀，因奏事丧前。吕太后哀之，曰：“君劳，出休矣。”平畏谗之就，因固请得宿卫中。太后乃以为郎中令,曰：“傅教孝惠。”是后吕婴谗乃不得行。樊哙至，则赦复爵邑。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">陈平在押送樊哙回长安的路上，听说刘邦死了，他害怕吕后、吕婆姐妹二人因樊哙问题说他的坏话，于是就赶快乘传车先回长安。半道上正遇见朝廷的使者，使者传令让陈平与灌婴一道去驻守荥阳。陈平接受命令后，没有直奔荥阳，而是立即赶到长安皇宫哭灵，他悲痛欲绝地当着刘邦的灵柩向吕后报告了受命处置樊哙事情的经过。吕后很同情他，就说：“您很累了，出去休息吧。”陈平害怕趁他不在有人向吕后说他的坏话，因而坚决请求守卫宫廷。于是吕后就任命他为郎中令，并说：“你要好好地保护教导我的儿子。”这样，才使吕婆攻击诽谤的坏话没能再说。樊哙押回长安后，立即被吕后宣布无罪，恢复了原来的爵位和封地。</td>
+                <td class="english-cell col-english" data-lang="english">On his way back Chen Ping received news of the emperor's death and,afraid that the empress and her sister might slander him in their anger,he travelled post-haste.On the road he met a messenger and received orders to station himself with Guan Ying at Xingyang.But instead he went straight to the palace where,having lamented bitterly before the coffin,he reported to Empress Lüall that had passed. "You have done your best,"she said,taking pity on him."Now go and rest."But Chen Ping,fearing defamation,begged to be allowed to stay in the palace. The empress appointed him chief of the palace guard and told him,"You must help to educate the young emperor."After that Lü Xu could no longer speak evil of him.Fan Kuai upon arriving was par- doned and his fiefs were restored to him.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">孝惠帝六年,相国曹参卒,以安国侯王陵为右丞相，陈平为左丞相。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">孝惠帝六年，相国曹参去世，安国侯王陵被任为右丞相，陈平为左丞相。</td>
+                <td class="english-cell col-english" data-lang="english">In the sixth year of Emperor Hui,the chancellor Cao Shen died and Wang Ling,marquis of Anguo,was made senior pirme minister, with Chen Ping as junior prime minister.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">王陵者，故沛人，始为县豪，高祖微时，兄事陵。陵少文，任气，好直言。及高祖起沛，入至咸阳,陵亦自聚党数千人，居南阳，不肯从沛公。及汉王之还攻项籍，陵乃以兵属汉。项羽取陵母置军中，陵使至，则东乡坐陵母,欲以招陵。陵母既私送使者，泣曰：“为老妾语陵，谨事汉王。汉王，长者也，无以老妾故，持二心。妾以死送使者。”遂伏剑而死。项王怒，烹陵母。陵卒从汉王定天下。以善雍齿，雍齿，高帝之仇,而陵本无意从高帝，以故晚封，为安国侯。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">王陵也是沛县人，开始是沛县的一个豪绅，刘邦贫贱时，把他当作兄长一样对待。王陵不大讲究礼节，重义气，爱直言不讳。刘邦从沛县起兵，后来西入咸阳时，王陵也聚集了几千人，正占据着南阳，他不愿跟随刘邦西进。等到刘邦二次收复关中率军东攻项羽时，王陵才率部归属了刘邦。项羽听说后就派人去把王陵的母亲掠来放在军中当人质，王陵派人到项羽军中探听母亲的消息，项羽故意表示恭敬，让王陵的母亲坐在朝东的长者的席位上，想用这种办法来招引王陵降楚。王陵的母亲在给使者送别时，暗中流着泪对使者说：“你们回去替我告诉王陵，叫他好好地为汉王效力。汉王是个宽厚慈爱的人，叫王陵不要因为我而对汉王有什么三心二意。我现在就用一死来给你送行吧。”说罢自刎而死。项羽大怒，派人把王陵母亲的尸体扔到锅里煮了。王陵从此便死心塌地地追随刘邦去打天下了。王陵和雍齿关系好，而雍齿是刘邦的仇人，再加上王陵开始时曾有一段时间不愿意追随刘邦，所以刘邦嫉恨他，在分封功臣时，对王陵封得较晚，封他为安国侯。</td>
+                <td class="english-cell col-english" data-lang="english">Wang Ling was a native of Pei and a prominent figure in that district.Before the First Emperor of Han (206B.C.-8A.D.)rose to power he treated Wang Ling as his elder brother.Wang Ling was unconventional,impulsive,and frank in his speech.When the emperor raised an army at Pei to march against Xianyang,Wang Ling had a troop several thousand strong at Nanyang but he did not follow the emperor.Not tillthe emperor turned east to attack Xiang Yu did Wang Ling and his men come over to Han.Xiang Yu detained Wang Iing's mother in his army,and when WangLing's messenger arrived he placed her in a seat of honour,hoping to win her son over to his side.Wang Ling's mother secretly saw the messenger off and,weeping,said,"Tell my son to serve his prince well.The king of Han is a good man and Ling must not break faith with him because of me.Let my death speed you on your way!”With that she drew a sword and killed herself. Xiang Yu in his fury threw her corpse into the cauldron.So Wang Ling helped Liu Bang win the empire.But because he was friendly with Yong Chi,whom the emperor hated,and had not at first intended to follow the emperor,he was not enfeoffed as marquis of Anguo till late.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">安国侯既为右丞相，二岁，孝惠帝崩。高后欲立诸吕为王，问王陵，王陵曰：“不可。”问陈平，陈平曰：“可。”吕太后怒，乃详迁陵为帝太傅,实不用陵。陵怒，谢疾免，杜门竟不朝请，七年而卒。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">王陵做右丞相两年，孝惠帝死了。这时吕后想封她娘家姓吕的人们为王，先征求王陵的意见，王陵回答说：“不行!”吕后又问陈平，陈平说：“可以。”于是吕后深恨王陵，她名义上是提升王陵为太傅，实际是疏远他，把他的右丞相职务免掉了。王陵很生气，于是称病辞职，闭门不出，连朝也不上了。一直到七年后死去了。</td>
+                <td class="english-cell col-english" data-lang="english">After he had served as senior prime minister for two years,Emperor Hui died and Emperess Lü consulted Wang Ling as to whether she might make the members of her family princes.His an- swer was “No”.But when she consulted Chen Ping,he approved. Then the empress in her displeasure transferred Wang Ling to the post of senior tutor,which was in fact a sinecure.Angrily resigning on grounds of illness,he stayed at home,absenting himself from the court, dying seven years later.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">陵之免丞相，吕太后乃徙平为右丞相，以辟阳侯审食其为左丞相。左丞相不治，常给事于中。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">王陵被罢免丞相之后，吕后就提升陈平做右丞相，任命辟阳侯审食其为左丞相。审食其为相后不管丞相职份内的事，仍是经常在内廷中服务。</td>
+                <td class="english-cell col-english" data-lang="english">After Wang Ling's dismissal,Empress Lü made Chen Ping the senior prime minister and Shen Yiji,marquis of Piyang,the junior prime minister.Shen Yiji did not work in the ministry but in the palace.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">食其亦沛人。汉王之败彭城，西,楚取太上皇、吕后为质,食其以舍人侍吕后。其后从破项籍为侯,幸于吕太后。及为相，居中，百官皆因决事。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">审食其也是沛县人。当刘邦在彭城被项羽打败向西逃时，项羽把刘邦的父亲和吕后俘虏去了，押在军中当人质，从那时起审食其就以一个侍从的身份侍候吕后。后来又跟随刘邦打败了项羽，被封为辟阳侯，他特别受吕后的宠爱。到他做了丞相时，仍经常住在宫中，文武百官不论什么事都要去向他请示。</td>
+                <td class="english-cell col-english" data-lang="english">Shen Yiji,too,was a native of Pei. When Liu Bang was defeated west of Pengcheng and the Chu army seized his father and wife as hostages, Shen Yiji served as steward to the empress.He later joined the army which defeated Xiang Yu and was made a marquis.The empress favoured him.So when he became prime minister and wotked in the palace,all officials had to go to him to get anything done.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吕婆常以前陈平为高帝谋执樊哙，数谗曰：“陈平为相非治事，日饮醇酒，戏妇女。”陈平闻，日益甚。吕太后闻之，私独喜。面质吕婴于陈平曰:“鄙语曰‘儿妇人口不可用’,顾君与我何如耳。无畏吕婆之谗也。”</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">吕婴因为陈平曾为刘邦设计捉拿过樊哙，所以一直嫉恨在心，她多次攻击陈平说：“陈平做丞相，根本不过问国家大事，整天饮酒作乐，玩弄妇女。”陈平听说后，就故意做得更过分。吕后看到这种情形，心中暗自高兴。有一天她当着吕缨的面对陈平说：“俗话说‘小孩子和女人的话不可听’,关键就看你对我怎么样了，你不要害怕吕婴说你的坏话。”</td>
+                <td class="english-cell col-english" data-lang="english">Lü Xu still bore a grudge against Chen Ping for advising the first Emperor to arrest Fan Kuai.She spread rumours about him saying, “Chen Ping does none of the wotk of a minister but spends his days drinking and playing about with women." Chen Ping,knowing this,only indulged himself more each day. And when the empress heard this she was secretly pleased.One day in LüXu's presence she told him,"The proverb says,Ignore the tattle of children and women.'I judge you by the way you behave to me.Never mind my sister's slander.”</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">吕太后立诸吕为王,陈平伪听之。及吕太后崩，平与太尉勃合谋，卒诛诸吕,立孝文皇帝,陈平本谋也。审食其免相。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">后来吕后公开封立吕氏家族的人们为王，陈平都假装同意。等到吕后一死，陈平就与太尉周勃合谋，最后消灭了吕氏一党，拥立了孝文帝，在这个事件中陈平是主谋人。而审食其从此被免掉了左丞相。</td>
+                <td class="english-cell col-english" data-lang="english">Chen Ping had pretended to agree when the empress made mem- bers of her family princes,but after her death it was he who drew up the plan whereby he and Grand Marshal Zhou Bo had all the Lü family killed and set Emperor Wen on the throne.Then Shen Yiji was dis- missed from office.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">孝文帝立,以为太尉勃亲以兵诛吕氏，功多；陈平欲让勃尊位，乃谢病。孝文帝初立，怪平病,问之。平曰：“高祖时，勃功不如臣平。及诛诸吕，臣功亦不如勃。愿以右丞相让勃。”于是孝文帝乃以绛侯勃为右丞相，位次第一；平徙为左丞相，位次第二。赐平金千斤，益封三千户。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">孝文帝即位后，因为太尉周勃亲自率军消灭了吕氏一党，功劳最大；而陈平当时也有意把最高的职位让给周勃，于是自己就称病不朝。当时孝文帝刚刚即位，对于陈平的称病感到奇怪，问他为什么。陈平说：“在跟着高帝打天下的时候，周勃的功劳没有我大。等到消灭吕氏一党时，我的功劳又没有周勃大。因此我情愿把右丞相的尊位让给他。”孝文帝一见如此，就任命绛侯周勃为右丞相，位列第一；任命陈平为左丞相，位列第二。同时又赏赐陈平金千斤，给他增加了封邑三千户。</td>
+                <td class="english-cell col-english" data-lang="english">After Emperor Wen came to the throne he considered that Grand Marshal Zhou Bo had rendered him the greatest service by command- ing the troops which killed the princes of the Lü clan.Chen Ping,to defer to Zhou Bo,resigned on the pretext of illness.The emperor, who was newly enthroned,questioned him about this in surprise. "In the time of the First Emperor,"said Chen Ping,“Zhou Bo did less than I.But in overthrowing the Lü family he did more.I would like to resign my position as senior prime minister in favour of him." Then Emperor Wen gave Zhou Bo the highest post of senior prime minister while Chen Ping ranked second as junior prime minister. Chen Ping also received a thousand catties of gold and had his fief increased by three thousand households.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">居顷之，孝文皇帝既益明习国家事，朝而问右丞相勃曰：“天下一岁决狱几何?”勃谢曰:“不知。”问：“天下一岁钱谷出入几何?”勃又谢不知，汗出沾背，愧不能对。于是上亦问左丞相平。平曰：“有主者。”上曰：“主者谓谁?”平曰：“陛下即问决狱，责廷尉；问钱谷，责治粟内史。”上曰：“苟各有主者，而君所主者何事也?”平谢曰：“主臣!陛下不知其驽下，使待罪宰相。宰相者，上佐天子理阴阳，顺四时，下育万物之宜,外镇抚四夷诸侯，内亲附百姓，使卿大夫各得任其职焉。”孝文帝乃称善。右丞相大惭，出而让陈平曰:“君独不素教我对!”陈平笑曰：“君居其位，不知其任邪?且陛下即问长安中盗贼数，君欲强对邪?”于是绛侯自知其能不如平远矣。居顷之，绛侯谢病请免相，陈平专为一丞相。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">过了一段时间，孝文帝已经越来越熟悉国家大事了，有一次在上朝的时候他问右丞相周勃：“全国一年中要审理多少案件?”周勃惶恐地说：“不知道。”孝文帝又问：“全国一年的钱粮收支各有多少?”周勃又惶恐地说：“不知道。”说罢吓得汗流浃背，自愧没能回答皇帝的问题。于是孝文帝又问左丞相陈平。陈平回答说：“有专门主管这方面事情的人。”孝文帝说：“主管这方面事情的人是谁?”陈平说：“您如果要问审理案件的事，可以问廷尉；您要了解钱粮收支情况，可以问治粟内史。”孝文帝说：“如果各种事情各有别的人管，那么你管什么呢?”陈平说：“主管群臣。您不以为我的才能低下，把我放在了宰相的位置上。所谓宰相，他的职责是对上要辅佐天子调理阴阳，顺应四时变化；对下要培育万物生长，不失时机；对外要镇抚诸侯，安定四夷；对内要使百姓亲附，使卿大夫各尽其职。”孝文帝听罢点头称善。而右丞相周勃相比之下，觉得惭愧极了。出朝后他责怪陈平说：“你平常为什么不教给我该怎么回答皇上说话!”陈平笑道：“您身为宰相，难道还不明白它的任务是什么吗?假如皇上再问长安城里有多少盗贼，你也非要勉强回答吗?”这一来绛侯周勃知道自己的才能比陈平差远了。过了不久，周勃便称病辞去了右丞相，从此丞相的职务便由陈平一个人独当了。</td>
+                <td class="english-cell col-english" data-lang="english">Some time later,when the emperor was more acquainted with affairs of state,he asked his senior prime minister at court,"How many law-suits are settled in the empire every year?” Zhou Bo answered ruefully,“I do not know.” "What is the empire's annual revenue and expenditure in terms of money and grain?” Again Zhou Bo had to adimt,"I do not know."He was sweating with embarrassment at being unable to answer. When the emperor put the same question to the junior prime minister,Chen Ping replied,"There are officers in charge of such matters.” "What officers?"asked the emperor. "If you want to know about law-suits,sir,ask the chief justice," said Chen Ping."If you want to know about money and grain,ask the minister of revenue.” "If there are officers in charge of these matters,what is your function?"asked the emperor."Pardon my presumption,"answered Chen Ping humbly."Your Majesty,overestimating my mean capacity,has honoured me with the post of prime minister.The prime minister’s duty is to help his sover- eign to regulate the principles of yin and yang,to carry out projects according to the four seasons,to nurture all things,to control foreign tribes and the nobles,to rule the people with kindness and see that the ministers and officers perform their duties well.” The emperor approved of this answer.Zhou Bo,however,was thoroughly morified and once they were outside he reproached Chen Ping,saying,“You never taught me how to answer such questions.” Chen Ping retorted with a laugh,"You should know what your post entails.If His Majesty asked you the number of thieves and rob- bers in the capital,would you try to answer that too?” Then Zhou Bo realized how much inferior he was to Chen Ping. Later he asked to resign on the grounds ofillness and Chen Ping be- came the sole prime minister</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">孝文帝二年，丞相陈平卒，谥为献侯。子共侯买代侯。二年卒,子简侯恢代侯。二十三年卒,子何代侯。二十三年，何坐略人妻，弃市，国除。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">孝文帝二年，陈平去世，被谥为“献侯”。他的儿子共侯陈买继位为侯。过了两年，陈买去世，陈买的儿子简侯陈恢继位为侯。过了二十三年陈恢去世，陈恢的儿子陈何继位为侯；又过了二十三年，陈何因抢夺他人的妻子被斩首示众，从此曲逆侯的封地被废除。</td>
+                <td class="english-cell col-english" data-lang="english">In the second year of Emperor Wen,Chen Ping died and was given the posthumous title of Marquis Xian.He was succeeded by his son Mai,Marquis Gong,who died two years later.Mai was succeeded by his son Hui,Marquis Jian,who died twenty-three years later.Hui was succeeded by his son He;but twenty-three years later He was ex- ecuted on the charge of abducting another man's wife,and the fief was abolished.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">始陈平曰：“我多阴谋，是道家之所禁。吾世即废，亦已矣，终不能复起，以吾多阴祸也。”然其后曾孙陈掌以卫氏亲贵戚,愿得续封陈氏，然终不得。</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">早在很久以前陈平就自己说过：“我一生好搞阴谋，这是道家所忌讳的。如果在我自己这一辈，我的侯爵被废除，我估计那也差不多了，而且永远也不能再复兴，因为我阴谋搞得多，阴祸也就该多啊。”后来他的曾孙陈掌因为是大将军卫青的亲戚，又贵幸一时，他曾经请求重续曲逆的爵邑，但始终没有得到。</td>
+                <td class="english-cell col-english" data-lang="english">Chen Ping once said,“All my crafty devices run counter to the Taoist Way.Once my descendants decline,they will never rise again, because of all the evil I have done."His great-grandson Chen Zhang,it is true,became related by marriage to the noble house of Wei and asked to have the old fief restored,but this was never done.</td>
+              </tr>
+              
+              <tr class="parallel-row">
+                <td class="wenyan-cell col-wenyan" data-lang="wenyan">太史公曰：“陈丞相平少时，本好黄帝、老子之术。方其割肉俎上之时,其意固已远矣。倾侧扰攘楚、魏之间,卒归高帝。常出奇计，救纷纠之难，振国家之患。及吕后时，事多故矣，然平竟自脱,定宗庙，以荣名终，称贤相，岂不善始善终哉!非知谋孰能当此者乎?</td>
+                <td class="chinese-cell col-baihua" data-lang="baihua">太史公说：丞相陈平从年轻的时候就爱好黄帝、老子的学说。当他在里巷祭祀切肉的时候，就已经表现出他的远大志向了。他先是在楚国、魏国经历了许多艰难险阻，最后投奔了高皇帝。他曾为高皇帝出过许多奇谋，解决过许多非常复杂的问题，挽救了国家的危急。到了吕后时期，国家处于多事之秋，然而陈平却始终能够自免于祸，到头来还是靠着他稳定了汉室江山，他自己也获得了很高的荣誉，被后世称为贤相，这不是一种少有的善始善终吗!如果不是有足够的智谋，怎么能够获得这种结果呢?</td>
+                <td class="english-cell col-english" data-lang="english">The Grand Historian comments:Prime Minister Chen Ping in his youth was attracted to the teachings of the Yellow Emperor and Lao Zi.While carving up the sacrificial meat he already had high ambitions. He vacillated between Chu and Wei before finally joining the First Emperor of Han,and he devised many ingenious plans to overcome difficulties and to save the state from danger.In the time of Empress Lü,although troubles beset him,he not only succeeded in extricating himself but restored the dynasty so that he died a dignitary and was known to posterity as an able minister.Truly,“a good beginning makes a good ending."None but a wise man could have accomplished this.</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        
       </main>
 
       <nav class="chapter-nav">
@@ -203,8 +264,139 @@ The Grand Historian comments:Prime Minister Chen Ping in his youth was attracted
       </nav>
 
       <footer>
-        <small>并排三列显示</small>
+        <small>四史三平行语料库 - 中华古典文献数字化平台</small>
       </footer>
     </div>
+
+    <script>
+      // 语言选择功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const wenyangCheckbox = document.getElementById('show-wenyan');
+        const baihuaCheckbox = document.getElementById('show-baihua');
+        const englishCheckbox = document.getElementById('show-english');
+        const selectAllBtn = document.getElementById('select-all');
+        const selectNoneBtn = document.getElementById('select-none');
+        const toggleLayoutBtn = document.getElementById('toggle-layout');
+        
+        let isTableView = true;
+        
+        // 更新显示
+        function updateDisplay() {
+          const showWenyan = wenyangCheckbox.checked;
+          const showBaihua = baihuaCheckbox.checked;
+          const showEnglish = englishCheckbox.checked;
+          
+          // 控制表格列显示
+          const wenyangCols = document.querySelectorAll('.col-wenyan');
+          const baihuaCols = document.querySelectorAll('.col-baihua');
+          const englishCols = document.querySelectorAll('.col-english');
+          
+          wenyangCols.forEach(col => {
+            col.style.display = showWenyan ? '' : 'none';
+          });
+          
+          baihuaCols.forEach(col => {
+            col.style.display = showBaihua ? '' : 'none';
+          });
+          
+          englishCols.forEach(col => {
+            col.style.display = showEnglish ? '' : 'none';
+          });
+          
+          // 控制回退布局显示
+          const wenyangFallback = document.querySelector('.fallback-wenyan');
+          const baihuaFallback = document.querySelector('.fallback-baihua');
+          const englishFallback = document.querySelector('.fallback-english');
+          
+          if (wenyangFallback) wenyangFallback.style.display = showWenyan ? '' : 'none';
+          if (baihuaFallback) baihuaFallback.style.display = showBaihua ? '' : 'none';
+          if (englishFallback) englishFallback.style.display = showEnglish ? '' : 'none';
+          
+          // 调整表格列宽
+          const visibleCount = [showWenyan, showBaihua, showEnglish].filter(Boolean).length;
+          if (visibleCount > 0) {
+            const percentage = Math.floor(100 / visibleCount) + '%';
+            document.querySelectorAll('.parallel-content th, .parallel-content td').forEach(cell => {
+              if (cell.style.display !== 'none') {
+                cell.style.width = percentage;
+              }
+            });
+          }
+        }
+        
+        // 全选功能
+        selectAllBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = true;
+          baihuaCheckbox.checked = true;
+          englishCheckbox.checked = true;
+          updateDisplay();
+        });
+        
+        // 全不选功能
+        selectNoneBtn.addEventListener('click', function() {
+          wenyangCheckbox.checked = false;
+          baihuaCheckbox.checked = false;
+          englishCheckbox.checked = false;
+          updateDisplay();
+        });
+/*
+        // 切换布局功能
+        toggleLayoutBtn.addEventListener('click', function() {
+          const tableView = document.querySelector('.parallel-table');
+          const fallbackView = document.querySelector('.parallel-fallback');
+          
+          if (isTableView) {
+            // 切换到列布局
+            if (tableView) tableView.style.display = 'none';
+            if (fallbackView) fallbackView.style.display = 'grid';
+            toggleLayoutBtn.textContent = '表格视图';
+          } else {
+            // 切换到表格布局
+            if (tableView) tableView.style.display = 'block';
+            if (fallbackView) fallbackView.style.display = 'none';
+            toggleLayoutBtn.textContent = '列布局';
+          }
+          isTableView = !isTableView;
+          updateDisplay();
+        });
+*/
+        // 监听复选框变化
+        wenyangCheckbox.addEventListener('change', updateDisplay);
+        baihuaCheckbox.addEventListener('change', updateDisplay);
+        englishCheckbox.addEventListener('change', updateDisplay);
+        
+        // 初始化显示
+        updateDisplay();
+        
+        // 导航菜单功能
+        const dropdowns = document.querySelectorAll('.nav-book-dropdown');
+        
+        dropdowns.forEach(dropdown => {
+          const btn = dropdown.querySelector('.nav-book-btn');
+          const content = dropdown.querySelector('.nav-dropdown-content');
+          
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // 关闭其他下拉菜单
+            dropdowns.forEach(other => {
+              if (other !== dropdown) {
+                other.querySelector('.nav-dropdown-content').style.display = 'none';
+              }
+            });
+            // 切换当前下拉菜单
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+          });
+        });
+        
+        // 点击其他地方关闭下拉菜单
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.nav-book-dropdown')) {
+            dropdowns.forEach(dropdown => {
+              dropdown.querySelector('.nav-dropdown-content').style.display = 'none';
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>
